@@ -28,10 +28,23 @@ SCRIPT_DIR="${SCRIPT_PATH:h}"
 SCRIPT_NAME="${SCRIPT_PATH:t}"
 WINEPREFIX="${WINEPREFIX:-$SCRIPT_DIR/wine-prefix-centrix}"
 WINE="${WINE:-/Applications/Wine Stable.app/Contents/Resources/wine/bin/wine}"
-APP_DIR="$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User"
+# Resolve Wine user dir (username differs per Mac)
+_wine_user_base=""
+for _u in "$USER" pat; do
+  if [[ -d "$WINEPREFIX/drive_c/users/$_u/AppData" ]]; then
+    _wine_user_base="$WINEPREFIX/drive_c/users/$_u"
+    break
+  fi
+done
+if [[ -z "$_wine_user_base" ]]; then
+  _cand=("$WINEPREFIX"/drive_c/users/*/AppData(N))
+  (( ${#_cand} > 0 )) && _wine_user_base="${_cand[1]:h}"
+fi
+_wine_user_base="${_wine_user_base:-$WINEPREFIX/drive_c/users/$USER}"
+APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX App User"
 ASAR="$APP_DIR/resources/app.asar"
 ASAR_BAK="$APP_DIR/resources/app.asar.bak-cookie-export"
-USERDATA="$WINEPREFIX/drive_c/users/pat/AppData/Roaming/mkvhszparoue"
+USERDATA="${_wine_user_base}/AppData/Roaming/mkvhszparoue"
 OUT_DIR="${OUT_DIR:-$HOME/Desktop/centrix-cookie-export}"
 TMP_ASAR="${TMPDIR:-/tmp}/centrix-asar-cookie-export-$$"
 MARKER_NAME="REQUEST_COOKIE_DUMP"

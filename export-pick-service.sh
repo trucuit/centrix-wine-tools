@@ -22,10 +22,24 @@ SCRIPT_PATH="${0:A}"
 SCRIPT_DIR="${SCRIPT_PATH:h}"
 
 WINEPREFIX="${WINEPREFIX:-$SCRIPT_DIR/wine-prefix-centrix}"
-USERDATA="${USERDATA:-$WINEPREFIX/drive_c/users/pat/AppData/Roaming/mkvhszparoue}"
+# Resolve Wine userdata (username differs per Mac)
+if [[ -z "${USERDATA:-}" ]]; then
+  USERDATA=""
+  for _u in "$USER" pat; do
+    if [[ -d "$WINEPREFIX/drive_c/users/$_u/AppData/Roaming/mkvhszparoue" ]]; then
+      USERDATA="$WINEPREFIX/drive_c/users/$_u/AppData/Roaming/mkvhszparoue"
+      break
+    fi
+  done
+  if [[ -z "$USERDATA" ]]; then
+    _c=("$WINEPREFIX"/drive_c/users/*/AppData/Roaming/mkvhszparoue(N))
+    (( ${#_c} > 0 )) && USERDATA="${_c[1]}"
+  fi
+  USERDATA="${USERDATA:-$WINEPREFIX/drive_c/users/$USER/AppData/Roaming/mkvhszparoue}"
+fi
 OUT_DIR="${OUT_DIR:-$HOME/Desktop/centrix-cookie-export}"
 SERVICES_DIR="$OUT_DIR/services"
-J2TEAM_DIR="${J2TEAM_OUT_DIR:-/Volumes/m2/Documents/centriq-cookies-injector}"
+J2TEAM_DIR="${J2TEAM_OUT_DIR:-$HOME/Desktop/centriq-cookies-injector}"
 CONVERT_SH="${CONVERT_SH:-$SCRIPT_DIR/export-centrix-cookies.sh}"
 
 # Known catalog (id|display|default_url)
