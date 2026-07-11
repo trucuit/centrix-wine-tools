@@ -1,103 +1,152 @@
 # CentriX Wine tools (macOS)
 
-Scripts to run **CentriX App User** (Windows build) under Wine on Apple Silicon, dump service cookies, and export **J2TEAM**-compatible JSON.
+Chạy **CentriX App User** (Windows `.exe`) trên Mac bằng Wine, dump cookie theo service, export JSON kiểu **J2TEAM**.
 
-## Requirements
+Repo private: dùng được trên **nhiều Mac** — clone → setup → run.
 
-- macOS (Apple Silicon tested: M4)
-- [Wine Stable](https://wiki.winehq.org/MacOS) (`/Applications/Wine Stable.app`)
-- `python3`, `npx` (for asar hook install)
-- CentriX App User installed into a Wine prefix (see below)
+---
 
-## Scripts
+## Máy Mac mới (quick start)
 
-| Script | Purpose |
-|--------|---------|
-| `run-centrix.sh` | Launch CentriX App User in a Wine virtual desktop |
-| `export-centrix-cookies.sh` | Install dump hook, watch dumps, convert to J2TEAM, export-all |
-| `export-pick-service.sh` | Interactive / CLI pick service → export offline (no app UI) |
+```bash
+# 1) Clone
+git clone https://github.com/trucuit/centrix-wine-tools.git
+cd centrix-wine-tools
 
-### Launch app
+# 2) Cài Wine + cài .exe vào Wine prefix local
+./setup-centrix-mac.sh
+
+# 3) Chạy app
+./run-centrix.sh
+```
+
+Lần đầu:
+
+- Cần **Homebrew**
+- Apple Silicon: **Rosetta 2** (script hỏi cài nếu thiếu)
+- Login CentriX (Google) trên máy đó
+
+Reinstall app:
+
+```bash
+./setup-centrix-mac.sh --force-reinstall
+```
+
+---
+
+## Files trong repo
+
+| File | Việc |
+|------|------|
+| **`setup-centrix-mac.sh`** | Bootstrap Mac: Wine + cài `CentriX-App-User-Setup-*.exe` |
+| **`run-centrix.sh`** | Launch app (prefix portable, không hardcode `/Volumes/m2`) |
+| **`export-centrix-cookies.sh`** | Hook dump cookie mỗi lần mở service + `watch` / convert |
+| **`export-pick-service.sh`** | Chọn service → export offline (ChatGPT → + `auth.openai.com`) |
+| **`CentriX-App-User-Setup-3.6.16.exe`** | Installer Windows (~93 MB) |
+| **`README.md`** | Doc này |
+
+**Không** có trong git (mỗi máy tự tạo):
+
+```text
+wine-prefix-centrix/     # session, cookies, device-key (secret)
+.centrix-env             # path local do setup ghi ra
+```
+
+---
+
+## Scripts chi tiết
+
+### setup-centrix-mac.sh
+
+```bash
+./setup-centrix-mac.sh
+./setup-centrix-mac.sh --force-reinstall
+```
+
+Steps:
+
+1. Check macOS + Rosetta (arm64)  
+2. `brew install --cask wine-stable` nếu chưa có  
+3. `WINEPREFIX=./wine-prefix-centrix`  
+4. Cài silent: `CentriX-App-User-Setup-*.exe /VERYSILENT …`  
+5. Ghi `.centrix-env` cho `run-centrix.sh`
+
+### run-centrix.sh
 
 ```bash
 ./run-centrix.sh
 ```
 
-Uses:
+- Đọc `.centrix-env` nếu có  
+- Tự tìm `CentriX App User.exe` (username Wine khác nhau từng Mac)  
+- Virtual desktop 1440×900 + flag GPU (tránh cửa sổ trắng)
 
-- `WINEPREFIX` default: `./wine-prefix-centrix` (local, **not** in git)
-- GPU flags for blank-window workaround on Wine
-
-### Cookie dump hook + watch
+### Cookie tools
 
 ```bash
-# Install hook into app.asar (overwrites dump on every service open)
+# Hook: mỗi lần mở service → ghi đè cookies-dump-<id>.json
 ./export-centrix-cookies.sh install-hook
-
-# Watch dumps → write J2TEAM files to Desktop + optional injector dir
-export OUT_DIR="$HOME/Desktop/centrix-cookie-export"
-export J2TEAM_OUT_DIR="/path/to/centriq-cookies-injector"  # optional
 ./export-centrix-cookies.sh watch
-```
 
-Other modes:
-
-```bash
-./export-centrix-cookies.sh export-all
-./export-centrix-cookies.sh convert /path/to/cookies-dump-chatgpt.json
-./export-centrix-cookies.sh uninstall-hook
-```
-
-### Pick service (no app window)
-
-Uses dumps already on disk under the Wine userdata folder:
-
-```bash
-./export-pick-service.sh           # menu
-./export-pick-service.sh chatgpt   # ChatGPT → chatgpt.com.json + auth.openai.com.json
+# Export offline (không cần mở UI — cần dump đã có)
+./export-pick-service.sh
+./export-pick-service.sh chatgpt   # → chatgpt.com.json + auth.openai.com.json
 ./export-pick-service.sh all
-./export-pick-service.sh --list
 ```
 
-## Local Wine prefix (not in git)
+Output mặc định: `~/Desktop/centrix-cookie-export/services/<serviceId>.json`
 
-Create / keep locally:
+---
+
+## Yêu cầu
+
+| | |
+|--|--|
+| OS | macOS (test: Apple Silicon M4) |
+| Wine | Wine Stable app (x86_64 + Rosetta trên ARM) |
+| Tools | `brew`, `python3`, `npx` (hook asar) |
+| Disk | ~1–2 GB (Wine prefix + app) |
+
+---
+
+## Cấu trúc sau setup
 
 ```text
-./wine-prefix-centrix/
-  drive_c/users/.../AppData/Local/Programs/CentriX App User/
-  drive_c/users/.../AppData/Roaming/mkvhszparoue/   # dumps, session (secret)
+centrix-wine-tools/
+├── setup-centrix-mac.sh
+├── run-centrix.sh
+├── export-centrix-cookies.sh
+├── export-pick-service.sh
+├── CentriX-App-User-Setup-3.6.16.exe
+├── README.md
+├── .gitignore
+├── .centrix-env                 # local (gitignored)
+└── wine-prefix-centrix/         # local (gitignored)
+    └── drive_c/users/<you>/.../CentriX App User/
 ```
 
-**Do not commit** the prefix: it contains `session.bin`, `device-key.bin`, and live cookie dumps.
+---
 
-Installer (Windows):
+## Troubleshooting
 
-```text
-CentriX-App-User-Setup-3.6.16.exe
-# install silent example:
-#   WINEPREFIX=./wine-prefix-centrix wine setup.exe /VERYSILENT
-```
+| Vấn đề | Cách xử lý |
+|--------|------------|
+| `Wine not found` | `./setup-centrix-mac.sh` hoặc cài cask `wine-stable` |
+| Rosetta missing | `softwareupdate --install-rosetta --agree-to-license` |
+| Cửa sổ trắng | `run-centrix.sh` đã bật software GL; đợi session-restore |
+| `exe not found` | `./setup-centrix-mac.sh --force-reinstall` |
+| brew gstreamer cần sudo | Script dùng `--skip-cask-deps` khi cài Wine |
 
-## Output layout (local)
-
-```text
-~/Desktop/centrix-cookie-export/
-  services/
-    chatgpt.json
-    claude.json
-    ...
-  chatgpt.com.json
-  auth.openai.com.json
-  chat.deepseek.com.json
-```
+---
 
 ## Security
 
-- Repo is **private**; still exclude secrets via `.gitignore`.
-- Cookie dumps may be shared pool sessions — handle carefully (ToS / privacy).
-- DeepSeek often needs **localStorage** in addition to cookies for browser import.
+- Repo **private**; vẫn **không** commit wine prefix / cookie dumps.  
+- Cookie dump có thể là session pool — cẩn thận ToS / privacy.  
+- DeepSeek browser import thường cần **localStorage**, không chỉ cookie.
+
+---
 
 ## License
 
-Private use. CentriX / third-party apps remain their owners' property.
+Private use. CentriX và app bên thứ ba thuộc chủ sở hữu tương ứng.
