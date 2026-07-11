@@ -45,11 +45,12 @@ Reinstall app:
 | **`CentriX-App-User-Setup-3.6.16.exe`** | Installer Windows (~93 MB) |
 | **`README.md`** | Doc này |
 
-**Không** có trong git (mỗi máy tự tạo):
+**Không** commit (mỗi máy tự tạo / secret):
 
 ```text
-wine-prefix-centrix/     # session, cookies, device-key (secret)
-.centrix-env             # path local do setup ghi ra
+wine-prefix-centrix/     # session, device-key, raw dumps
+cookies/*                # exported JSON (giữ cookies/.gitkeep)
+.centrix-env
 ```
 
 ---
@@ -83,18 +84,32 @@ Steps:
 
 ### Cookie tools
 
+Mọi export mặc định vào **`./cookies/`** trong project (không còn Desktop).
+
 ```bash
-# Hook: mỗi lần mở service → ghi đè cookies-dump-<id>.json
+# Hook: mỗi lần mở service → dump → ghi đè ./cookies/
 ./export-centrix-cookies.sh install-hook
 ./export-centrix-cookies.sh watch
 
 # Export offline (không cần mở UI — cần dump đã có)
 ./export-pick-service.sh
-./export-pick-service.sh chatgpt   # → chatgpt.com.json + auth.openai.com.json
+./export-pick-service.sh chatgpt   # → cookies/chatgpt.com.json + cookies/auth.openai.com.json
 ./export-pick-service.sh all
+./export-centrix-cookies.sh export-all
 ```
 
-Output mặc định: `~/Desktop/centrix-cookie-export/services/<serviceId>.json`
+```text
+cookies/
+  services/
+    chatgpt.json
+    claude.json
+    ...
+  chatgpt.com.json
+  auth.openai.com.json
+```
+
+Override path: `OUT_DIR=/other/path ./export-pick-service.sh chatgpt`  
+Optional copy ra injector: `J2TEAM_OUT_DIR=/path/to/injector`
 
 ---
 
@@ -120,6 +135,9 @@ centrix-wine-tools/
 ├── CentriX-App-User-Setup-3.6.16.exe
 ├── README.md
 ├── .gitignore
+├── cookies/                     # exports (gitignored contents)
+│   ├── .gitkeep
+│   └── services/
 ├── .centrix-env                 # local (gitignored)
 └── wine-prefix-centrix/         # local (gitignored)
     └── drive_c/users/<you>/.../CentriX App User/

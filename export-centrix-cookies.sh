@@ -45,7 +45,8 @@ APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX App User"
 ASAR="$APP_DIR/resources/app.asar"
 ASAR_BAK="$APP_DIR/resources/app.asar.bak-cookie-export"
 USERDATA="${_wine_user_base}/AppData/Roaming/mkvhszparoue"
-OUT_DIR="${OUT_DIR:-$HOME/Desktop/centrix-cookie-export}"
+# Cookie exports live inside the project (override with OUT_DIR=...)
+OUT_DIR="${OUT_DIR:-$SCRIPT_DIR/cookies}"
 TMP_ASAR="${TMPDIR:-/tmp}/centrix-asar-cookie-export-$$"
 MARKER_NAME="REQUEST_COOKIE_DUMP"
 DUMP_GLOB="cookies-dump-*.json"
@@ -86,7 +87,7 @@ convert_dump() {
   local editor="$OUT_DIR/${base}.cookie-editor.json"
   local j2team="$OUT_DIR/${nice}.j2team.json"
   local curljar="$OUT_DIR/${base}.curl.txt"
-  local j2team_dir="${J2TEAM_OUT_DIR:-/Volumes/m2/Documents/centriq-cookies-injector}"
+  local j2team_dir="${J2TEAM_OUT_DIR:-}"
 
   python3 - "$src" "$netscape" "$editor" "$j2team" "$curljar" "$force_url" "$j2team_dir" <<'PY'
 import json, sys, re
@@ -324,47 +325,46 @@ for reg, pairs in by_reg.items():
         (out_dir / f"{reg}.json").write_text(json.dumps(per, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 # 3) Copy into centriq-cookies-injector
-jdir = Path(j2team_dir)
-if jdir.is_dir():
-    # root: domain files + service file
-    (jdir / f"{svc_slug}.json").write_text(
-        json.dumps(j2team_bare, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
-    # prefer chatgpt.com.json when service is chatgpt
-    if "chatgpt" in svc_slug or svc_slug in ("notebooklm",):
-        host_cookies = [c for c in j2 if "chatgpt" in c["domain"] or "openai" in c["domain"]]
-        if host_cookies:
-            (jdir / "chatgpt.com.json").write_text(
-                json.dumps({"url": "https://chatgpt.com", "cookies": host_cookies}, indent=2, ensure_ascii=False) + "\n",
-                encoding="utf-8",
-            )
-    if "claude" in svc_slug:
-        host_cookies = [c for c in j2 if "claude" in c["domain"] or "anthropic" in c["domain"]]
-        if host_cookies:
-            (jdir / "claude.ai.json").write_text(
-                json.dumps({"url": "https://claude.ai", "cookies": host_cookies}, indent=2, ensure_ascii=False) + "\n",
-                encoding="utf-8",
-            )
-    cdir = jdir / "centrix"
-    if cdir.is_dir():
-        (cdir / f"{svc_slug}.json").write_text(
+# Optional external injector dir (only if J2TEAM_OUT_DIR set and exists)
+if j2team_dir:
+    jdir = Path(j2team_dir)
+    if jdir.is_dir():
+        (jdir / f"{svc_slug}.json").write_text(
             json.dumps(j2team_bare, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
         )
-        # human-friendly aliases
-        aliases = {
-            "chatgpt": ["chatgpt.json", "chatgpt.pro.json"],
-            "notebooklm": ["chatgpt.gpt55-pro.json", "gpt-5.5-pro.json"],
-            "claude": ["claude.json", "claude.max.json"],
-            "gemini": ["gemini.json"],
-            "perplexity": ["perplexity.json"],
-            "envato-elements": ["envato.json", "envato-elements.json"],
-        }
-        for key, names in aliases.items():
-            if key in svc_slug or svc_slug == key:
-                for name in names:
-                    (cdir / name).write_text(
-                        json.dumps(j2team_bare, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-                    )
+        if "chatgpt" in svc_slug or svc_slug in ("notebooklm",):
+            host_cookies = [c for c in j2 if "chatgpt" in c["domain"] or "openai" in c["domain"]]
+            if host_cookies:
+                (jdir / "chatgpt.com.json").write_text(
+                    json.dumps({"url": "https://chatgpt.com", "cookies": host_cookies}, indent=2, ensure_ascii=False) + "\n",
+                    encoding="utf-8",
+                )
+        if "claude" in svc_slug:
+            host_cookies = [c for c in j2 if "claude" in c["domain"] or "anthropic" in c["domain"]]
+            if host_cookies:
+                (jdir / "claude.ai.json").write_text(
+                    json.dumps({"url": "https://claude.ai", "cookies": host_cookies}, indent=2, ensure_ascii=False) + "\n",
+                    encoding="utf-8",
+                )
+        cdir = jdir / "centrix"
+        if cdir.is_dir():
+            (cdir / f"{svc_slug}.json").write_text(
+                json.dumps(j2team_bare, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+            )
+            aliases = {
+                "chatgpt": ["chatgpt.json", "chatgpt.pro.json"],
+                "notebooklm": ["chatgpt.gpt55-pro.json", "gpt-5.5-pro.json"],
+                "claude": ["claude.json", "claude.max.json"],
+                "gemini": ["gemini.json"],
+                "perplexity": ["perplexity.json"],
+                "envato-elements": ["envato.json", "envato-elements.json"],
+            }
+            for key, names in aliases.items():
+                if key in svc_slug or svc_slug == key:
+                    for name in names:
+                        (cdir / name).write_text(
+                            json.dumps(j2team_bare, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+                        )
 
 print(f"cookies={len(j2)}")
 print(f"service={svc_slug}")
@@ -377,13 +377,14 @@ print(f"domains={','.join(sorted(by_reg))}")
 print(f"top={domain_counter.most_common(5)}")
 PY
 
+  log "OUT_DIR=$OUT_DIR"
   log "Service JSON: $OUT_DIR/services/<serviceId>.json  (+ $OUT_DIR/<serviceId>.json)"
   log "J2TEAM full: $j2team"
   log "Domain files: $OUT_DIR/*.com.json etc."
   log "Cookie-Editor array: $editor"
   log "Netscape: $netscape"
-  if [[ -d "$j2team_dir" ]]; then
-    log "Copied → $j2team_dir/  and  $j2team_dir/centrix/"
+  if [[ -n "$j2team_dir" && -d "$j2team_dir" ]]; then
+    log "Also copied → $j2team_dir/"
   fi
 }
 
@@ -603,10 +604,11 @@ watch_dumps() {
   set +x 2>/dev/null || true
   need python3
   ensure_out
-  local j2team_dir="${J2TEAM_OUT_DIR:-/Volumes/m2/Documents/centriq-cookies-injector}"
-  export J2TEAM_OUT_DIR="$j2team_dir"
+  local j2team_dir="${J2TEAM_OUT_DIR:-}"
+  [[ -n "$j2team_dir" ]] && export J2TEAM_OUT_DIR="$j2team_dir"
   log "Watching $USERDATA/cookies-dump-*.json"
-  log "On each service open → overwrite Desktop + $j2team_dir"
+  log "On each service open → overwrite $OUT_DIR/ (project cookies/)"
+  [[ -n "$j2team_dir" ]] && log "Also copy → $j2team_dir"
   log "Ctrl+C to stop"
 
   # seed: process existing dumps once

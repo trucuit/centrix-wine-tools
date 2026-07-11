@@ -14,6 +14,10 @@ wine-prefix-centrix/
 **/Code Cache/
 **/Dawn*/
 
+# Project cookie exports (secrets) — keep folder, ignore contents
+cookies/*
+!cookies/.gitkeep
+
 # Extracted installer payload (optional local extract)
 CentriX-3.6.16/
 

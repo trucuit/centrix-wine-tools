@@ -37,9 +37,11 @@ if [[ -z "${USERDATA:-}" ]]; then
   fi
   USERDATA="${USERDATA:-$WINEPREFIX/drive_c/users/$USER/AppData/Roaming/mkvhszparoue}"
 fi
-OUT_DIR="${OUT_DIR:-$HOME/Desktop/centrix-cookie-export}"
+# Cookie exports inside project (override with OUT_DIR=...)
+OUT_DIR="${OUT_DIR:-$SCRIPT_DIR/cookies}"
 SERVICES_DIR="$OUT_DIR/services"
-J2TEAM_DIR="${J2TEAM_OUT_DIR:-$HOME/Desktop/centriq-cookies-injector}"
+# Optional external injector copy (empty = only project cookies/)
+J2TEAM_DIR="${J2TEAM_OUT_DIR:-}"
 CONVERT_SH="${CONVERT_SH:-$SCRIPT_DIR/export-centrix-cookies.sh}"
 
 # Known catalog (id|display|default_url)
@@ -78,7 +80,7 @@ need_python() {
 }
 
 mkdir -p "$OUT_DIR" "$SERVICES_DIR"
-[[ -d "$J2TEAM_DIR" ]] && mkdir -p "$J2TEAM_DIR/centrix"
+[[ -n "$J2TEAM_DIR" && -d "$J2TEAM_DIR" ]] && mkdir -p "$J2TEAM_DIR/centrix"
 
 # ── discover dumps ──────────────────────────────────────────
 discover_dumps() {
@@ -207,7 +209,6 @@ from collections import defaultdict
 sid, dump_path, url_hint, out_dir, services_dir, j2team_dir = sys.argv[1:7]
 out_dir = Path(out_dir)
 services_dir = Path(services_dir)
-j2team_dir = Path(j2team_dir)
 services_dir.mkdir(parents=True, exist_ok=True)
 out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -370,24 +371,25 @@ if host:
         p = write_j2team(out_dir / f"{host}.json", url if url.startswith("http") else f"https://{host}", host_cookies)
         written.append(p)
 
-# copy into injector repo
-if j2team_dir.is_dir():
-    centrix = j2team_dir / "centrix"
-    centrix.mkdir(exist_ok=True)
-    # primary service file
-    write_j2team(j2team_dir / f"{svc_slug}.json", url, all_j2)
-    write_j2team(centrix / f"{svc_slug}.json", url, all_j2)
-    if is_chatgpt_family:
-        if chatgpt_cookies:
-            write_j2team(j2team_dir / "chatgpt.com.json", "https://chatgpt.com", chatgpt_cookies)
-            write_j2team(centrix / "chatgpt.json", "https://chatgpt.com", all_j2)
-            write_j2team(centrix / "chatgpt.pro.json", "https://chatgpt.com", all_j2)
-        if auth_cookies:
-            write_j2team(j2team_dir / "auth.openai.com.json", "https://auth.openai.com/log-in", auth_cookies)
-    if "claude" in svc_slug:
-        write_j2team(centrix / "claude.json", url, all_j2)
-    if "gemini" in svc_slug:
-        write_j2team(centrix / "gemini.json", url, all_j2)
+# optional external injector copy
+if j2team_dir and str(j2team_dir).strip():
+    j2p = Path(j2team_dir)
+    if j2p.is_dir():
+        centrix = j2p / "centrix"
+        centrix.mkdir(exist_ok=True)
+        write_j2team(j2p / f"{svc_slug}.json", url, all_j2)
+        write_j2team(centrix / f"{svc_slug}.json", url, all_j2)
+        if is_chatgpt_family:
+            if chatgpt_cookies:
+                write_j2team(j2p / "chatgpt.com.json", "https://chatgpt.com", chatgpt_cookies)
+                write_j2team(centrix / "chatgpt.json", "https://chatgpt.com", all_j2)
+                write_j2team(centrix / "chatgpt.pro.json", "https://chatgpt.com", all_j2)
+            if auth_cookies:
+                write_j2team(j2p / "auth.openai.com.json", "https://auth.openai.com/log-in", auth_cookies)
+        if "claude" in svc_slug:
+            write_j2team(centrix / "claude.json", url, all_j2)
+        if "gemini" in svc_slug:
+            write_j2team(centrix / "gemini.json", url, all_j2)
 
 print(f"service={svc_slug}")
 print(f"name={svc_name}")
