@@ -15,9 +15,13 @@ wine-prefix-centrix/
 
 # Extracted Windows installer payload (re-download / re-extract locally)
 CentriX-3.6.16/
-*.exe
+
+# Binary installers (allow CentriX App User setup in-repo)
 *.dmg
 *.zip
+# track: CentriX-App-User-Setup-*.exe
+*.exe
+!CentriX-App-User-Setup*.exe
 
 # OS / editor
 .DS_Store
