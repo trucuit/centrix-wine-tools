@@ -1,4 +1,6 @@
 # --- NEVER commit (secrets + huge runtime) ---
+wine-prefix-centrix/
+.centrix-env
 **/cookies-dump-*.json
 **/session.bin
 **/device-key.bin
@@ -12,14 +14,14 @@
 **/Code Cache/
 **/Dawn*/
 
-# Extracted Windows installer payload (re-download / re-extract locally)
+# Extracted installer payload (optional local extract)
+CentriX-3.6.16/
 
-
-# Binary installers (allow CentriX App User setup in-repo)
+# Binary installers — track CentriX setup only
 *.dmg
 *.zip
-# track: CentriX-App-User-Setup-*.exe
 *.exe
+!CentriX-App-User-Setup*.exe
 
 # OS / editor
 .DS_Store
@@ -30,4 +32,3 @@
 
 # Logs
 *.log
-/tmp/
