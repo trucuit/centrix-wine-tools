@@ -1,0 +1,18 @@
+{
+  "url": "https://run.app",
+  "cookies": [
+    {
+      "domain": ".sgtm-prod-985009374134.us-central1.run.app",
+      "expirationDate": 1818338974,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_dcid",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "dcid.1.1783778973686.313681815"
+    }
+  ]
+}

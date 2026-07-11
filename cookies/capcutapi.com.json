@@ -1,0 +1,18 @@
+{
+  "url": "https://capcutapi.com",
+  "cookies": [
+    {
+      "domain": ".capcutapi.com",
+      "expirationDate": 1784642974,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "msToken",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "iMc8WkTTaTbjR-8aR8kMbLzDlg3EUFvEBiKZlrftoJqjxRLzdgjfSN8c_2JzOPXE5K3dVkXhammHpQ86Xk0ekI3ODAJhJGHXv7limxRH2QCZ-qM4PgtSZPPs5fB0YH4q4vPpwmP_XWLROEo4OHt6yBoRjw=="
+    }
+  ]
+}

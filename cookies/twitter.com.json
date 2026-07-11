@@ -1,0 +1,70 @@
+{
+  "url": "https://twitter.com",
+  "cookies": [
+    {
+      "domain": ".twitter.com",
+      "expirationDate": 1818338813,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "guest_id_marketing",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "v1%3A178377881338691098"
+    },
+    {
+      "domain": ".twitter.com",
+      "expirationDate": 1818338813,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "guest_id_ads",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "v1%3A178377881338691098"
+    },
+    {
+      "domain": ".twitter.com",
+      "expirationDate": 1818338813,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "personalization_id",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "\"v1_bbF1YVub43pk37nR1MUT8Q==\""
+    },
+    {
+      "domain": ".twitter.com",
+      "expirationDate": 1818338813,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "guest_id",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "v1%3A178377881338691098"
+    },
+    {
+      "domain": ".twitter.com",
+      "expirationDate": 1783780613,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "t5kx9E41T6_1VdwDA5MvtzcZDgH7D.p8csSlCts8bl8-1783778813.294323-1.0.1.1-Xo8WaY..bqRjBEtJ1PiAOj_sli1JxXG8qy.dy.TmrAnjAuQAaJDSPmGwub7qmPpmctaILerrsAvO7Ld.xccmp6ANwDLyjp9s1xchevXE4o9NDZlhTKc8NMe_bixDaeCn"
+    }
+  ]
+}

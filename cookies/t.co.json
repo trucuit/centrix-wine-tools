@@ -1,0 +1,31 @@
+{
+  "url": "https://t.co",
+  "cookies": [
+    {
+      "domain": ".t.co",
+      "expirationDate": 1818338813,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "muc_ads",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "a78c7cd8-6175-4deb-91d0-72ba96efc5fe"
+    },
+    {
+      "domain": ".t.co",
+      "expirationDate": 1783780613,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "_mCW.IK9MRonE2dR_3Ept3JlunCRLuUeP.YWvlCzTLI-1783778813.2988477-1.0.1.1-1VDfjAHuFWMShHo_8N4Gtml_vneD7pLnWJf3lGIIGnkoFv_Aq7McGQpPpCWdEs9QhIDJp44E6NYOKbPhT.2e2ZsJZ5x1bpii4H6Qvvp2wND.VcIBwcZJYq00SYrWCqgI"
+    }
+  ]
+}

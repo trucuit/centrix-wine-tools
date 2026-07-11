@@ -1,0 +1,18 @@
+{
+  "url": "https://cloudflareaccess.com",
+  "cookies": [
+    {
+      "domain": "perplexity-ai.cloudflareaccess.com",
+      "expirationDate": 1783792618,
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "CF_Session",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "n2en41falmhJuquK1"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://paddle.com",
+  "cookies": [
+    {
+      "domain": ".paddle.com",
+      "expirationDate": 1783780620,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "ynfROzs_sUhejcimZjAyGsCMlANZMuMoVbOpFGV5uVo-1783778820-1.0.1.1-1n4rQrbhp5dZhh8_QW46QnV5w4Zdr8uSf1TIA_dodVAqU3U.pRjMO5GEDob0oUUhb9wQwJpAP4ENPwIXkVXlixxYBb8lX03u4yImUZ6s9zs"
+    }
+  ]
+}

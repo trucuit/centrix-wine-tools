@@ -1,0 +1,18 @@
+{
+  "url": "https://poecdn.net",
+  "cookies": [
+    {
+      "domain": ".poecdn.net",
+      "expirationDate": 1783780722,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "gVR7LFlT841mMovR.pNIxbkH_5HV_9zd3mMOHzOQuvY-1783778922.3906624-1.0.1.1-5J2sL9TAyn0tkHeYR7DVFa.otaPMun4FW2KVTrwAJnEpcGprEkZHhX8ujJ54EFpEy8MCl9WqskYM_8qANL8wxOXvghJ.IR3cGS0Ut6xjEeuaki2CrfUFckacRrIef5_7"
+    }
+  ]
+}

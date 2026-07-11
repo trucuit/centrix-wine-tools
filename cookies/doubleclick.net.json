@@ -1,0 +1,18 @@
+{
+  "url": "https://doubleclick.net",
+  "cookies": [
+    {
+      "domain": ".doubleclick.net",
+      "expirationDate": 1818338812,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "IDE",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "AHWqTUkKXUc1T2fGLE5zyYh05j3dfI8CTd9btdP0-lL4YfAAWeLmrGoqzr7OGnpX"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "url": "https://naver.com",
+  "cookies": [
+    {
+      "domain": ".wcs.naver.com",
+      "expirationDate": 1818338819,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "NWB",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "075a983a7a0debb19f3ed1ee0cc7a18c.1783778813477"
+    },
+    {
+      "domain": ".naver.com",
+      "expirationDate": 1818338819,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "NAC",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "IY77BIxjuM70"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://stripe.com",
+  "cookies": [
+    {
+      "domain": "m.stripe.com",
+      "expirationDate": 1818338979,
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "m",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "2b8352f7-a520-43fe-abdf-3ff5021dae7ed6f03c"
+    }
+  ]
+}

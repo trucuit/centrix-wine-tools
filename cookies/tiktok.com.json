@@ -1,0 +1,18 @@
+{
+  "url": "https://tiktok.com",
+  "cookies": [
+    {
+      "domain": ".tiktok.com",
+      "expirationDate": 1817474805,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_ttp",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "3GMQ9Lr4YkxGUEePd0vXXlmt57o"
+    }
+  ]
+}

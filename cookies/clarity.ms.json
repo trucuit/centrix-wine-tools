@@ -1,0 +1,70 @@
+{
+  "url": "https://clarity.ms",
+  "cookies": [
+    {
+      "domain": "www.clarity.ms",
+      "expirationDate": 1815314813,
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "CLID",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "f2f59f8f77b14b369cd38e041d942655.20260711.20270711"
+    },
+    {
+      "domain": ".c.clarity.ms",
+      "expirationDate": null,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "SM",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": true,
+      "storeId": "0",
+      "value": "C"
+    },
+    {
+      "domain": ".clarity.ms",
+      "expirationDate": 1817474821,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "MUID",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "2B03A3BBDBBB635D3E70B428DAA96275"
+    },
+    {
+      "domain": ".c.clarity.ms",
+      "expirationDate": 1784383621,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "MR",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "0"
+    },
+    {
+      "domain": ".c.clarity.ms",
+      "expirationDate": 1783779421,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "ANONCHK",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "0"
+    }
+  ]
+}
