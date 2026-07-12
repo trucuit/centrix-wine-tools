@@ -3,7 +3,7 @@
   "cookies": [
     {
       "domain": ".capcutapi.com",
-      "expirationDate": 1784642974,
+      "expirationDate": 1784641705,
       "hostOnly": false,
       "httpOnly": false,
       "name": "msToken",
@@ -12,7 +12,7 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "iMc8WkTTaTbjR-8aR8kMbLzDlg3EUFvEBiKZlrftoJqjxRLzdgjfSN8c_2JzOPXE5K3dVkXhammHpQ86Xk0ekI3ODAJhJGHXv7limxRH2QCZ-qM4PgtSZPPs5fB0YH4q4vPpwmP_XWLROEo4OHt6yBoRjw=="
+      "value": "O_0HH139DeZUvlbWtKWoN7yEp_G1s9NUoj_HtxJA1kkqHnKmO7aNVl6JD1cfy-Po_rRzGnrmFi9GArqKLhqU1gBmF2OaVRnlyyZpU257xrk="
     }
   ]
 }

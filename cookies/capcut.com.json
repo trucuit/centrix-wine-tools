@@ -3,7 +3,7 @@
   "cookies": [
     {
       "domain": ".capcut.com",
-      "expirationDate": 1818338943,
+      "expirationDate": 1818337701,
       "hostOnly": false,
       "httpOnly": false,
       "name": "faceu-commerce-user-info",
@@ -12,11 +12,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "1Z_ZWmbnnDgzoJJeTfvfaZXDgUwaC_fw7FBVdQHlxZczXDd-AtZoYIpYkE21YfX-Lsc-9VmXiMQkWkEnIavaWj0cagm5Yb_kVcuGjEWfZM4J8vTM_CD1vkonEa4zgleLkYvhK6OXyQwdG9FZWRXwU3MdTDYWCDmAUqQjrhYzGbSz_ffS79HWCiR7_uE72KPlispxeDp40jHZORWa3DV04QHsq4CzRRwmzO3TniunHO8RgsfTWzc65EB_3Lu_BYLF5HA5ghn6T7Xirp-Qe2N_rT3WZtw7WN50jThFRlo5UfYanoi6cgmLskmaFHkXMjR-9AQigmavNWsgY8q9B8l8EfAoypSMmkwvq8LQ4CdgNcppcaxJyC9usc9Gk_62Te78UMhqvbELknFekolAFJ0UJ3RjSNrH0TYu1HQtvTo7nSHHWzlS_TqVmRncb5OjaJXne10Zg3j7wXwMjYwZybirVFc7rX0W5U3kbN_KpKxEnynAHHiMiF5Se2vRmdmswYee6Sv5mm93X08ViPksfgoxDvzmosISnQMGVo85_kbKElkBlyr-TiekILqS1j7kuy9ewayxoA3EqqDg3eOY3Lw0G1D6JFv8YK_MZFV8GTk82w"
+      "value": "Z6J46V7LG-VueKdIs93ZfjnFgkfJQ6PCznqdZspI8O4lgY3Z8D-nRS2wTvmnlBhWUa5qJv5Q1zhCRDAONivBZhO-IJgdNdcy_QGt_vF3Zs4mcdQGi0gjcQFMOy7NGxWrFxIea_hjlXhLhFU6KKl3Sf6dKshekmNHvqGkvc3Ok1R2ELVMn8KWIpf-_Q26-r_lZ7oLoqXYEYh2bQ2J_IKUuWZGXBZYp99TjPK1m8NNAba2L28dGepOIJIZk0oIFWjwOz4qxbjWasXvl2i4FhWBO1AAmh8aZ6F_MuF3epOqeBPjLHbbt3PUdDpQ_7LVEs2fVpKTrY764cBmu7JV0UPUSrtJ2EL3GKBpmtRjHuUwkQJj8w8MgNZh-M61OJP82vps2jsCe42WX2knu4z289yYSAFzWAtxDoT6K0i8IyRcntal0yXQvz1vptRvwbXwoqlIQJEqVqeVKRJ4ocMPQmh_Ck8P_JCEVEtc-2CZGubJVV9hyFTs5NKYDl2ZBW_CGAvhTAxgygtIKEZkfupPw5BPrTSSKMRjXWHl7h2bZVqZ92bMBbqCiEmR26mbafdbzHxAZs5wsgfDBQ8nHn3JKMc4shj6yRniVlwIRUGDcNN3"
     },
     {
       "domain": "www.capcut.com",
-      "expirationDate": 1815314939,
+      "expirationDate": 1815313696,
       "hostOnly": true,
       "httpOnly": false,
       "name": "capcut_locale",
@@ -29,7 +29,7 @@
     },
     {
       "domain": "www.capcut.com",
-      "expirationDate": 1815314939,
+      "expirationDate": 1815313696,
       "hostOnly": true,
       "httpOnly": false,
       "name": "ug_capcut_locale",
@@ -81,7 +81,7 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1818338940,
+      "expirationDate": 1818337696,
       "hostOnly": false,
       "httpOnly": false,
       "name": "uifid",
@@ -120,7 +120,7 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1815314948,
+      "expirationDate": 1815313705,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga",
@@ -302,7 +302,7 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1788529746,
+      "expirationDate": 1788529747,
       "hostOnly": false,
       "httpOnly": true,
       "name": "store-idc",
@@ -315,7 +315,7 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1788529746,
+      "expirationDate": 1788529747,
       "hostOnly": false,
       "httpOnly": true,
       "name": "store-country-code",
@@ -328,7 +328,7 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1788529746,
+      "expirationDate": 1788529747,
       "hostOnly": false,
       "httpOnly": true,
       "name": "store-country-code-src",
@@ -341,7 +341,7 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1788529746,
+      "expirationDate": 1788529747,
       "hostOnly": false,
       "httpOnly": true,
       "name": "cc-target-idc",
@@ -406,7 +406,7 @@
     },
     {
       "domain": "www.capcut.com",
-      "expirationDate": 1783865340,
+      "expirationDate": 1783864096,
       "hostOnly": true,
       "httpOnly": false,
       "name": "_tea_web_id",
@@ -419,7 +419,7 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1815314932,
+      "expirationDate": 1815313693,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_clck",
@@ -432,7 +432,20 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1815314940,
+      "expirationDate": 1783864094,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_clsk",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "r4imde%5E1783777694553%5E1%5E0%5Ee.clarity.ms%2Fcollect"
+    },
+    {
+      "domain": ".capcut.com",
+      "expirationDate": 1815313696,
       "hostOnly": false,
       "httpOnly": true,
       "name": "ttwid",
@@ -441,11 +454,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "1|bYgXnV7jcwYnZU7S1WH67BsTUHjG17X4OrIHiKHyYD0|1783778939|83fd51aa1b15e34cfe760e082c516254978faf5954ffd03d6d9b59d093098227"
+      "value": "1|bYgXnV7jcwYnZU7S1WH67BsTUHjG17X4OrIHiKHyYD0|1783777696|15691c9572009b841e3e53ab8aaacbfe4b1c0f1c57adfbc843386222b7504dd9"
     },
     {
       "domain": "www.capcut.com",
-      "expirationDate": 1786370941,
+      "expirationDate": 1786369698,
       "hostOnly": true,
       "httpOnly": false,
       "name": "cc_client_viewport_width",
@@ -458,7 +471,33 @@
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1815314950,
+      "expirationDate": 1788529747,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "store-country-sign",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "MEIEDF7rDv3mvAGPuT2dOQQgcm2jZOay81ON8K87PF67ChKpchLGsCPu64bJHF9QtwoEEPdKXmFaxN7So66EDscf4-Q"
+    },
+    {
+      "domain": "www.capcut.com",
+      "expirationDate": 1783777825,
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "x_logid",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "20260711214825C680C7566C1EBF41BB76"
+    },
+    {
+      "domain": ".capcut.com",
+      "expirationDate": 1815313706,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga_F9J0QP63RB",
@@ -467,11 +506,24 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "GS2.1.s1783778931$o2$g1$t1783778950$j41$l0$h0"
+      "value": "GS2.1.s1783777691$o2$g1$t1783777705$j46$l0$h0"
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1783865350,
+      "expirationDate": 1784641707,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "msToken",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "c1863HSKJoshY55QnIH0JPPf8HTQ3X8LkGsx4RvaAM1p6W70DTovU2KqlE9_6Lbk1hongH7Uu9eTVx34rILzTk41H_5mfB7Q2rhwgirku7XVi-lj_AaQG_uBUUoTxPs8NnEiDQPUf4Ct"
+    },
+    {
+      "domain": ".capcut.com",
+      "expirationDate": 1783864108,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_uetsid",
@@ -480,11 +532,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "0ad783907d3211f19f8a517cfaa6f7aa"
+      "value": "27cad2607d2f11f1ac777fcda3503db3"
     },
     {
       "domain": ".capcut.com",
-      "expirationDate": 1817474950,
+      "expirationDate": 1817473708,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_uetvid",
@@ -494,71 +546,6 @@
       "session": false,
       "storeId": "0",
       "value": "545c5b00794111f188e5b3721cc9fa19"
-    },
-    {
-      "domain": ".capcut.com",
-      "expirationDate": 1783865357,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "_clsk",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "1lc9yx7%5E1783778957491%5E2%5E0%5Ee.clarity.ms%2Fcollect"
-    },
-    {
-      "domain": ".capcut.com",
-      "expirationDate": 1784642966,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "msToken",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "tfZ0qqmGmzSyHbWVNanfy87Mx-ot4384ihmiHcpq6OC_vyDB5tdRUYg770hesopoiWauXHmJfp5BBftf_G5g7Ynd0d7zkXUMxd9vhWOkY9dmkDHt_kZlGv6MHWI17T1n35EDKPbjjxEz"
-    },
-    {
-      "domain": "www.capcut.com",
-      "expirationDate": 1791554974,
-      "hostOnly": true,
-      "httpOnly": false,
-      "name": "msToken",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "iMc8WkTTaTbjR-8aR8kMbLzDlg3EUFvEBiKZlrftoJqjxRLzdgjfSN8c_2JzOPXE5K3dVkXhammHpQ86Xk0ekI3ODAJhJGHXv7limxRH2QCZ-qM4PgtSZPPs5fB0YH4q4vPpwmP_XWLROEo4OHt6yBoRjw=="
-    },
-    {
-      "domain": ".capcut.com",
-      "expirationDate": 1788529746,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "store-country-sign",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "MEIEDG9cwRtd-RV2pIhrNwQgAYjUR11-cbaVOuZ-GqS5huukl0KZL9jZwTwGAQWKQUgEEEfXTQdDeXwUoYDDMfglQB8"
-    },
-    {
-      "domain": "www.capcut.com",
-      "expirationDate": 1783779109,
-      "hostOnly": true,
-      "httpOnly": false,
-      "name": "x_logid",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "20260711220949754A32787A81524ACA2B"
     }
   ]
 }

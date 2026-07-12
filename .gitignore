@@ -1,6 +1,7 @@
 # --- NEVER commit (secrets + huge runtime) ---
 wine-prefix-centrix/
 .centrix-env
+.chrome-cookie-profile/
 **/cookies-dump-*.json
 **/session.bin
 **/device-key.bin

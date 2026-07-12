@@ -182,6 +182,8 @@ print_next() {
     ./export-centrix-cookies.sh install-hook
     ./export-centrix-cookies.sh watch
     ./export-pick-service.sh
+    ./export-pick-service.sh grok      # grok.com + accounts.x.ai SSO
+    ./export-pick-service.sh deepseek  # chat.deepseek.com/sign_in
 
   Prefix (local, not in git):
     $WINEPREFIX

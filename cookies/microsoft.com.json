@@ -46,7 +46,7 @@
       "hostOnly": true,
       "httpOnly": false,
       "name": "_C_Auth",
-      "path": "/cl/ncus-c",
+      "path": "/cl/eus2-b",
       "sameSite": "unspecified",
       "secure": false,
       "session": true,
@@ -185,7 +185,7 @@
     },
     {
       "domain": "copilot.microsoft.com",
-      "expirationDate": 1791554902,
+      "expirationDate": 1791552522,
       "hostOnly": true,
       "httpOnly": false,
       "name": "hasBeenMsalAuthenticated",
@@ -224,7 +224,7 @@
     },
     {
       "domain": ".copilot.microsoft.com",
-      "expirationDate": 1783780682,
+      "expirationDate": 1783778313,
       "hostOnly": false,
       "httpOnly": true,
       "name": "__cf_bm",
@@ -233,24 +233,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "84fk6etJFDk3sYtXNIoBHbgkcvbO38OvjsXcpWQswF8-1783778882.9010541-1.0.1.1-deinab9Lp_9KE5SDkjqtDjty6WdyHvga8M4Bx1zV6xHKBYHKBmoMczkSfNlPZQOVJPHfphBLuwfr7NPN57svHwLuAX2YqPkSt1.L6gFVb5Q5s1fkr6qiEJn9njMgMifI"
+      "value": "h2TnkjfHmtSlxlC_h3eeQCDgVXio7_v4QmMe5nU9FKE-1783776513.8653767-1.0.1.1-grExZbDGeYMQtfsClsBdCljWiTgUD6Tsh_Ip5UzudAF0vNucRu57pWI1CMmBzbI.GzsYGPSgPfSG9Q.cR.N9.UmW3x9ovZp7iEkaBy6vbtXE2NI1eF5hXNNKK0D0vde4"
     },
     {
       "domain": ".microsoft.com",
-      "expirationDate": 1783865293,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "_uetsid",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "6f4409807d2c11f18935ad2810ff6083|l1lbft|2|g7n|0|2383"
-    },
-    {
-      "domain": ".microsoft.com",
-      "expirationDate": 1817474893,
+      "expirationDate": 1817472522,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_uetvid",
@@ -263,7 +250,20 @@
     },
     {
       "domain": ".microsoft.com",
-      "expirationDate": 1783780694,
+      "expirationDate": 1783862922,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_uetsid",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "6f4409807d2c11f18935ad2810ff6083|l1lbft|2|g7n|0|2383"
+    },
+    {
+      "domain": ".microsoft.com",
+      "expirationDate": 1783778323,
       "hostOnly": false,
       "httpOnly": false,
       "name": "MS0",
@@ -272,7 +272,7 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "ab5672068f8149b8b17b63756fc68365"
+      "value": "92e4285361cc4ee981fac795db00e92a"
     },
     {
       "domain": "copilot.microsoft.com",

@@ -3,7 +3,7 @@
   "cookies": [
     {
       "domain": "m.stripe.com",
-      "expirationDate": 1818338979,
+      "expirationDate": 1818336660,
       "hostOnly": true,
       "httpOnly": true,
       "name": "m",
@@ -12,7 +12,7 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "2b8352f7-a520-43fe-abdf-3ff5021dae7ed6f03c"
+      "value": "df95ce92-d540-4ca5-b2bd-0b4207a3e7904fc76d"
     }
   ]
 }

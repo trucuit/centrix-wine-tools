@@ -2,32 +2,6 @@
   "url": "https://openai.com",
   "cookies": [
     {
-      "domain": ".bzrcdn.openai.com",
-      "expirationDate": 1783780604,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "__cf_bm",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": ".SQ1SzYmTWg7S9BgFhYx1Ut8VbCp24FQVji1SeFiR2o-1783778804.9141135-1.0.1.1-8KNemUWe9ThbWdG_dtgHWLevHN5VG6AlZ8na55lEznGtubjSWvqBouW3kukuY7oBUCTmjgO1aNWKPdxYQCG0Z7j6GUOQSfcHTrWtOAai_eBJZWz0qw51F89qycInE8Lz"
-    },
-    {
-      "domain": ".bzrcdn.openai.com",
-      "expirationDate": null,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "_cfuvid",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": true,
-      "storeId": "0",
-      "value": "sX5ROxLCH_D_W9AxU6PHdj3L7Do5YJtXbCnQay31oV0-1783778804.9141135-1.0.1.1-5K8zqHBxSkfWnHgezeyLqn4G_vVb6MCDMIn7KVl0NXM"
-    },
-    {
       "domain": ".openai.com",
       "expirationDate": 1815309632,
       "hostOnly": false,

@@ -29,7 +29,7 @@
     },
     {
       "domain": "claude.ai",
-      "expirationDate": 1809698985,
+      "expirationDate": 1809696193,
       "hostOnly": true,
       "httpOnly": false,
       "name": "anthropic-device-id",
@@ -42,7 +42,7 @@
     },
     {
       "domain": "claude.ai",
-      "expirationDate": 1783822185,
+      "expirationDate": 1783819393,
       "hostOnly": true,
       "httpOnly": false,
       "name": "activitySessionId",
@@ -94,7 +94,7 @@
     },
     {
       "domain": ".claude.ai",
-      "expirationDate": 1815314988,
+      "expirationDate": 1815312196,
       "hostOnly": false,
       "httpOnly": false,
       "name": "ajs_anonymous_id",
@@ -146,7 +146,7 @@
     },
     {
       "domain": ".claude.ai",
-      "expirationDate": 1815314990,
+      "expirationDate": 1815312197,
       "hostOnly": false,
       "httpOnly": false,
       "name": "lastActiveOrg",
@@ -172,7 +172,7 @@
     },
     {
       "domain": ".claude.ai",
-      "expirationDate": 1815314989,
+      "expirationDate": 1815312196,
       "hostOnly": false,
       "httpOnly": false,
       "name": "CH-prefers-color-scheme",
@@ -194,24 +194,11 @@
       "secure": true,
       "session": true,
       "storeId": "0",
-      "value": "L8TwhJP5Tg4ah6Y.NMdrN3Tow5U1OD9qPP8EgkQhLxI-1783778988.4983356-1.0.1.1-d1Fo.Ef_1X6BMRObg_.ENUcOUthsdhiZHvh_RDr9_HY"
+      "value": "z4kHoQq3NypPj5gJ9Xh3cJ_wtf1MHRUQrClZKZrhFjk-1783776190.6529617-1.0.1.1-YKFW4txBB9XJV0EJcC6wUNBEcgie8rCDSGmlMEjeDL0"
     },
     {
       "domain": ".claude.ai",
-      "expirationDate": 1815314989,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "user-sidebar-visible-on-load",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "false"
-    },
-    {
-      "domain": ".claude.ai",
-      "expirationDate": 1815314990,
+      "expirationDate": 1815312197,
       "hostOnly": false,
       "httpOnly": true,
       "name": "cf_clearance",
@@ -220,11 +207,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "yIAl.e62ugmQ04bkWn0nyWdhWAt.gNdcFtpWsFM7H0E-1783778990-1.2.1.1-So5VT19E8LwtB_WduDr8Ka6Vm.BsYw.OJxitwj9602W5NmPn7tNG0xVwLnXyNtZi4qwIYFgEsXWSukNJ_lzgkwIqChmtYwQv8uhfWQj_g6Gm3NkeGxZYLjYukhh42SjGtC0nXhFltzeE48Ft84Oy3Omf19.gv76yUS6kU.u1AHCe9xa_HnS9Qx4TJEOdAlB.uGuM445Krxk1.tXe.uHe8oqMwOJTvGK_QrpSgQ13xdfLoWkBBZMbq6wrzHlPaWNWL3nEPzJYGSx5BPkdhez_ygfie.iqM52pUZZYLk.Au5ktfzrg_dtwqkg8p_useKISA9YTBYkI.bj8HCVdxfZhOQ"
+      "value": "c0DCR2JYncYoAX8fZRWsqok.HusKzspsek25gpWfHi8-1783776197-1.2.1.1-x_OdNUZCd9.OXVx0bqv4T80oh79rkhlk7mfjjLWwjMQi49hjPeW5jUWxgXquey8rur4k6s_7pu8uaeKOX2_hX5YWfOPd.EtGyOI1QNhOXDyUtguS5UjIqO1fQKgZRQCLh8r0pVej.9B2jpzOh7mrTBmHsnwxDGxtO0hIrI65Apc7M6scqbc42RaKOcNFwaPo4GdDvUUk0yYvrH4VfpFGqLbXEPUQSZyf6RCSSeuFbTNDCHusmqU1_SSqj.so.JXRaOCeJl.RJkrlwugbiAeXcjL_lq5Ewjc0QLsRVJgMU2NV27WaYbgdWl128jD1JUFfSrR0viu4ZPMfXTtT7RkCwQ"
     },
     {
       "domain": ".claude.ai",
-      "expirationDate": 1783780790,
+      "expirationDate": 1783777997,
       "hostOnly": false,
       "httpOnly": true,
       "name": "__cf_bm",
@@ -233,11 +220,24 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "Axo3NX2XpJY738kGCodKC4Fw7KnhDHiTXjeHIXswDKQ-1783778990.1388743-1.0.1.1-1fNrdPoyxIC3j9br_dY4SjxN.9jhy_IUhP3oCZBwzozC7LMK1LhgTcjfU7yqQyqGuc1JGE5cxnVu2atNPCt1yuuACOZgappzuJ1MtuiD1yUdLhkDh9Yy7PPhMtHqJDWl"
+      "value": "pwAUn5sK7WDcUmP3WlHjBgoLSBtBIKT_T4mlt5ERmEo-1783776197.5768383-1.0.1.1-JNrnvvj92tgU3e2LwEzmb4Wr6UuEt8MfU8L645Y2dfSO1DwtYmAW.AIpy5i1BjoIjeZmQ9l99fOUxXEp4ycrmMY96T8LBWLk5RJFxnOuE7a.EWi6Z1ielMbvzCBtLjt1"
+    },
+    {
+      "domain": ".claude.ai",
+      "expirationDate": 1815312200,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "user-sidebar-visible-on-load",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "true"
     },
     {
       "domain": "claude.ai",
-      "expirationDate": 1815314990,
+      "expirationDate": 1815313673,
       "hostOnly": true,
       "httpOnly": false,
       "name": "_dd_s",
@@ -246,7 +246,7 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "aid=81a1f97e-85a1-473e-abc3-d87a6b41d98e&rum=2&id=60cbfa39-0020-4edf-bc27-243be864de72&created=1783778983299&expire=1783779890469"
+      "value": "isExpired=1&aid=81a1f97e-85a1-473e-abc3-d87a6b41d98e"
     }
   ]
 }

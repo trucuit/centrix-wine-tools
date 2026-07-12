@@ -42,6 +42,7 @@ Reinstall app:
 | **`run-centrix.sh`** | Launch app (prefix portable, không hardcode `/Volumes/m2`) |
 | **`export-centrix-cookies.sh`** | Hook dump cookie mỗi lần mở service + `watch` / convert |
 | **`export-pick-service.sh`** | Chọn service → export offline (ChatGPT → + `auth.openai.com`) |
+| **`import-cookies-to-chrome.sh`** | Import cookie vào Chrome profile riêng qua CDP |
 | **`CentriX-App-User-Setup-3.6.16.exe`** | Installer Windows (~93 MB) |
 | **`README.md`** | Doc này |
 
@@ -93,23 +94,60 @@ Mọi export mặc định vào **`./cookies/`** trong project (không còn Desk
 
 # Export offline (không cần mở UI — cần dump đã có)
 ./export-pick-service.sh
-./export-pick-service.sh chatgpt   # → cookies/chatgpt.com.json + cookies/auth.openai.com.json
+./export-pick-service.sh chatgpt   # → cookies/chatgpt/
+./export-pick-service.sh grok      # → cookies/grok/
+./export-pick-service.sh deepseek  # → cookies/deepseek/
 ./export-pick-service.sh all
 ./export-centrix-cookies.sh export-all
 ```
 
 ```text
 cookies/
-  services/
-    chatgpt.json
-    claude.json
-    ...
-  chatgpt.com.json
-  auth.openai.com.json
+  chatgpt/
+    chatgpt.json              # cookie scoped cho service, an toàn để inject
+    chatgpt.full.json         # raw partition dump, chỉ dùng chẩn đoán
+    chatgpt.com.json
+    auth.openai.com.json
+  grok/
+    grok.json
+    grok.full.json
+    grok.com.json
+    accounts.x.ai.json
 ```
 
 Override path: `OUT_DIR=/other/path ./export-pick-service.sh chatgpt`  
 Optional copy ra injector: `J2TEAM_OUT_DIR=/path/to/injector`
+
+### Import tự động vào Chrome
+
+Tool dùng Chrome profile riêng tại `./.chrome-cookie-profile`; không điều khiển profile Chrome mặc định.
+
+```bash
+# Import cookie đã export, mở hoặc reload service
+./import-cookies-to-chrome.sh grok
+./import-cookies-to-chrome.sh chatgpt
+
+# Export rồi import bằng một lệnh
+./export-pick-service.sh grok --chrome
+./export-centrix-cookies.sh export-all --chrome
+
+# Kiểm tra JSON/domain mà không mở Chrome
+./import-cookies-to-chrome.sh grok --dry-run
+```
+
+Tuỳ chọn hữu ích:
+
+```text
+--profile-dir <path>   Chrome profile riêng
+--port <number>        CDP port, mặc định 9222
+--chrome <path>        Chrome executable
+--no-open              Import nhưng không mở/reload tab
+--json                 Kết quả machine-readable
+```
+
+Tool chỉ đọc `cookies/<serviceId>/*.json`, bỏ qua `.full.json`, kiểm tra allowlist domain và không in giá trị cookie ra log.
+
+Alias mặc định: `grok` luôn dùng nguồn `grok-heavy`; `chatgpt` luôn dùng nguồn `notebooklm` (GPT-5.5 Pro).
 
 ---
 
@@ -160,6 +198,8 @@ centrix-wine-tools/
 ## Security
 
 - Repo **private**; vẫn **không** commit wine prefix / cookie dumps.  
+- Mỗi service được export vào `cookies/<serviceId>/`; file được giới hạn theo domain và đặt permission `0600`.
+- File `<serviceId>.full.json` trong từng folder vẫn chứa raw partition, không đưa vào injector.
 - Cookie dump có thể là session pool — cẩn thận ToS / privacy.  
 - DeepSeek browser import thường cần **localStorage**, không chỉ cookie.
 
