@@ -41,7 +41,9 @@ Reinstall app:
 | **`setup-centrix-mac.sh`** | Bootstrap Mac: Wine + cài `CentriX-App-User-Setup-*.exe` |
 | **`run-centrix.sh`** | Launch app (prefix portable, không hardcode `/Volumes/m2`) |
 | **`export-centrix-cookies.sh`** | Hook dump cookie mỗi lần mở service + `watch` / convert |
+| **`export-centrix-api.sh`** | API trực tiếp: login Google + `/profile/export` (không mở UI) |
 | **`export-pick-service.sh`** | Chọn service → export offline (ChatGPT → + `auth.openai.com`) |
+| **`scripts/lib/centrix_cookie_export.py`** | **Pattern export chung** — pick / API / export-centrix-cookies reuse |
 | **`import-cookies-to-chrome.sh`** | Import cookie vào Chrome profile riêng qua CDP |
 | **`CentriX-App-User-Setup-3.6.16.exe`** | Installer Windows (~93 MB) |
 | **`README.md`** | Doc này |
@@ -88,11 +90,21 @@ Steps:
 Mọi export mặc định vào **`./cookies/`** trong project (không còn Desktop).
 
 ```bash
-# Hook: mỗi lần mở service → dump → ghi đè ./cookies/
+# A) API trực tiếp — không mở App UI, không patch asar
+./export-centrix-api.sh login            # Google OAuth 1 lần
+./export-centrix-api.sh export grok      # → cookies/grok-heavy/
+./export-centrix-api.sh export chatgpt   # alias → notebooklm
+./export-centrix-api.sh export all
+./export-centrix-api.sh status
+./export-centrix-api.sh logout
+# session: .centrix-api-session.json (gitignored, mode 600)
+# nếu device đang lock bởi App User: đóng app hoặc ./export-centrix-api.sh takeover
+
+# B) Hook asar — mỗi lần mở service → dump
 ./export-centrix-cookies.sh install-hook
 ./export-centrix-cookies.sh watch
 
-# Export offline (không cần mở UI — cần dump đã có)
+# C) Offline từ dump đã có
 ./export-pick-service.sh
 ./export-pick-service.sh chatgpt   # → cookies/chatgpt/
 ./export-pick-service.sh grok      # → cookies/grok/

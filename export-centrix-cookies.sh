@@ -81,12 +81,9 @@ chrome_ts_to_unix() {
 }
 
 # ── Convert Electron cookie array OR profile snapshot
-#    → J2TEAM format {url, cookies[]}  + Netscape + Cookie-Editor ──
-#
-# J2TEAM / Cookie-Editor compatible fields (matches
-# /Volumes/m2/Documents/centriq-cookies-injector/chatgpt.com.json):
-#   domain, expirationDate, hostOnly, httpOnly, name, path,
-#   sameSite, secure, session, storeId, value
+#    → shared pattern: scripts/lib/centrix_cookie_export.py
+#    (same as export-pick-service.sh + export-centrix-api.sh)
+#    + sidecars: Netscape / Cookie-Editor / curl / j2team / cookie-header.*
 #
 convert_dump() {
   local src="$1"
@@ -94,440 +91,41 @@ convert_dump() {
   [[ -f "$src" ]] || die "file not found: $src"
   ensure_out
   local base="${src:t:r}"
-  # strip leading cookies-dump- for nicer names
   local nice="${base#cookies-dump-}"
-  local service_out="$OUT_DIR/$nice"
-  mkdir -p "$service_out"
-  local netscape="$service_out/${base}.cookies.txt"
-  local editor="$service_out/${base}.cookie-editor.json"
-  local j2team="$service_out/${nice}.j2team.json"
-  local curljar="$service_out/${base}.curl.txt"
-  local j2team_dir="${J2TEAM_OUT_DIR:-}"
-
-  python3 - "$src" "$netscape" "$editor" "$j2team" "$curljar" "$force_url" "$j2team_dir" <<'PY'
-import json, os, sys, re
-from pathlib import Path
-from collections import defaultdict, Counter
-from datetime import datetime, timezone
-from urllib.parse import urlparse
-
-src, netscape_path, editor_path, j2team_path, curl_path, force_url, j2team_dir = sys.argv[1:8]
-raw = json.loads(Path(src).read_text(encoding="utf-8"))
-
-def write_private_text(path: Path, content: str):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(content, encoding="utf-8")
-    os.chmod(path, 0o600)
-    return path
-
-def write_private_json(path: Path, obj):
-    return write_private_text(path, json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
-
-# Normalize to list of Electron-like cookie dicts
-cookies_in = []
-url_hint = (force_url or "").strip()
-if isinstance(raw, list):
-    cookies_in = raw
-elif isinstance(raw, dict):
-    if isinstance(raw.get("cookies"), list):
-        cookies_in = raw["cookies"]
-        url_hint = url_hint or str(raw.get("url") or "")
-    elif "name" in raw and ("domain" in raw or "host_key" in raw):
-        cookies_in = [raw]
-    else:
-        for v in raw.values():
-            if isinstance(v, list) and v and isinstance(v[0], dict) and "name" in v[0]:
-                cookies_in.extend(v)
-
-def host_of(c):
-    return (c.get("domain") or c.get("host_key") or c.get("host") or "").strip()
-
-def path_of(c):
-    return c.get("path") or "/"
-
-def exp_unix(c):
-    # Electron: expirationDate (sec). Chromium SQLite: expires_utc (chrome epoch µs)
-    if c.get("expirationDate") is not None:
-        try:
-            v = float(c["expirationDate"])
-            # if ms-ish, compress
-            if v > 1e12:
-                v = v / 1000.0
-            return int(v)
-        except Exception:
-            pass
-    if c.get("expires") is not None:
-        try:
-            return int(float(c["expires"]))
-        except Exception:
-            pass
-    if c.get("expires_utc") is not None:
-        try:
-            v = int(c["expires_utc"])
-            if v <= 0:
-                return 0
-            return int(v / 1_000_000 - 11644473600)
-        except Exception:
-            pass
-    return 0
-
-def same_site_of(c):
-    raw = c.get("sameSite")
-    if raw is None:
-        raw = c.get("samesite")
-    # Electron may use 0/1/2 or strings
-    if isinstance(raw, int):
-        return {0: "unspecified", 1: "no_restriction", 2: "lax", 3: "strict"}.get(raw, "unspecified")
-    s = str(raw or "unspecified").strip().lower()
-    mapping = {
-        "no_restriction": "no_restriction",
-        "none": "no_restriction",
-        "lax": "lax",
-        "strict": "strict",
-        "unspecified": "unspecified",
-        "no_restriction".lower(): "no_restriction",
-    }
-    if s in ("no_restriction", "none"):
-        return "no_restriction"
-    if s in mapping:
-        return mapping[s]
-    if s in ("lax", "strict", "unspecified"):
-        return s
-    return "unspecified"
-
-def secure(c):
-    return bool(c.get("secure") or c.get("is_secure"))
-
-def httponly(c):
-    return bool(c.get("httpOnly") or c.get("is_httponly"))
-
-def to_j2team(c):
-    domain = host_of(c)
-    exp = exp_unix(c)
-    host_only = bool(c.get("hostOnly")) if "hostOnly" in c else (not domain.startswith("."))
-    session = bool(c.get("session")) if "session" in c else (exp <= 0)
-    # j2team sample uses null-less expirationDate as number; session cookies often omit/0
-    item = {
-        "domain": domain,
-        "expirationDate": exp if exp > 0 else 0,
-        "hostOnly": host_only,
-        "httpOnly": httponly(c),
-        "name": c.get("name") or "",
-        "path": path_of(c),
-        "sameSite": same_site_of(c),
-        "secure": secure(c),
-        "session": session if exp <= 0 else False,
-        "storeId": str(c.get("storeId") or "0"),
-        "value": "" if c.get("value") is None else str(c.get("value")),
-    }
-    # Prefer null expiration for pure session cookies to match some importers
-    if item["session"] and not exp:
-        item["expirationDate"] = None
-    return item
-
-j2 = []
-lines = [
-    "# Netscape HTTP Cookie File",
-    "# Generated by export-centrix-cookies.sh (j2team-compatible)",
-    f"# source: {src}",
-    "",
-]
-curl_pairs = []
-by_reg = defaultdict(list)
-domain_counter = Counter()
-
-for c in cookies_in:
-    domain = host_of(c)
-    if not domain or c.get("value") is None and "value" not in c:
-        # still allow empty string values
-        if "value" not in c and c.get("value") is None:
-            # skip encrypted-only blobs with no plaintext
-            if c.get("encrypted_value") and not c.get("value"):
-                continue
-    if not domain:
-        continue
-    name = c.get("name") or ""
-    if not name:
-        continue
-    item = to_j2team(c)
-    # if value missing skip
-    if item["value"] is None:
-        continue
-    j2.append(item)
-    domain_counter[domain] += 1
-
-    exp = item["expirationDate"] or 0
-    sec = "TRUE" if item["secure"] else "FALSE"
-    flag = "TRUE" if domain.startswith(".") else "FALSE"
-    lines.append("\t".join([
-        domain, flag, item["path"], sec, str(int(exp) if exp else 0),
-        item["name"], item["value"]
-    ]))
-    curl_pairs.append(f"{item['name']}={item['value']}")
-
-    d = domain.lstrip(".")
-    parts = d.split(".")
-    reg = ".".join(parts[-2:]) if len(parts) >= 2 else d
-    by_reg[reg].append(f"{item['name']}={item['value']}")
-
-# Infer primary URL for j2team wrapper (like chatgpt.com.json)
-if not url_hint:
-    # prefer registrable domain with most cookies
-    if by_reg:
-        top = max(by_reg.items(), key=lambda kv: len(kv[1]))[0]
-        url_hint = f"https://{top}"
-    else:
-        url_hint = "https://chatgpt.com"
-if not url_hint.startswith("http"):
-    url_hint = "https://" + url_hint.lstrip("/")
-# normalize trailing path lightly
+  # Prefer serviceId from dump meta when present
+  local sid="$nice"
+  local meta_sid=""
+  meta_sid=$(python3 -c 'import json,sys
 try:
-    u = urlparse(url_hint)
-    url_hint = f"{u.scheme}://{u.netloc}"
+ d=json.load(open(sys.argv[1],encoding="utf-8"))
+ print((d.get("serviceId") or "").strip() if isinstance(d,dict) else "")
 except Exception:
-    pass
+ pass' "$src" 2>/dev/null) || true
+  [[ -n "${meta_sid:-}" ]] && sid="$meta_sid"
 
-# Map service dump names → canonical url
-stem = Path(src).stem.lower()
-if "claude" in stem and "claude" not in url_hint:
-    url_hint = "https://claude.ai"
-elif "chatgpt" in stem or stem.endswith("chatgpt"):
-    url_hint = "https://chatgpt.com"
-elif "gemini" in stem:
-    url_hint = "https://gemini.google.com"
-elif "grok" in stem:
-    url_hint = "https://grok.com"
-elif "perplexity" in stem:
-    url_hint = "https://www.perplexity.ai"
+  local j2team_dir="${J2TEAM_OUT_DIR:-}"
+  local -a _py_args=(
+    "$SCRIPT_DIR/scripts/lib/centrix_cookie_export.py"
+    --service "$sid"
+    --dump "$src"
+    --out-dir "$OUT_DIR"
+    --sidecars
+  )
+  [[ -n "${force_url:-}" ]] && _py_args+=(--url "$force_url")
+  [[ -n "${j2team_dir:-}" ]] && _py_args+=(--j2team-dir "$j2team_dir")
 
-# Prefer service meta from dump payload (hook writes serviceId/url)
-svc_id = ""
-svc_name = ""
-if isinstance(raw, dict):
-    svc_id = str(raw.get("serviceId") or "").strip()
-    svc_name = str(raw.get("serviceName") or "").strip()
-    if raw.get("url") and not force_url:
-        url_hint = str(raw.get("url") or url_hint)
-if not svc_id:
-    svc_id = Path(src).stem.replace("cookies-dump-", "").strip() or "unknown"
-# sanitize filename
-svc_slug = re.sub(r"[^a-zA-Z0-9._-]+", "-", svc_id).strip("-").lower() or "unknown"
+  log "Export (shared pattern) service=$sid  ←  $src"
+  python3 "${_py_args[@]}"
 
-host = (urlparse(url_hint).hostname or "").lower()
-service_cookies = [
-    c for c in j2
-    if host and (
-        c["domain"].lstrip(".").lower() == host
-        or host.endswith("." + c["domain"].lstrip(".").lower())
-    )
-]
-
-j2team_obj = {
-    "url": url_hint,
-    "serviceId": svc_id,
-    "serviceName": svc_name or svc_id,
-    "exportedAt": (raw.get("exportedAt") if isinstance(raw, dict) else None) or datetime.now(timezone.utc).isoformat(),
-    "cookies": service_cookies,
-}
-
-scoped_lines = [
-    "# Netscape HTTP Cookie File",
-    "# Generated by export-centrix-cookies.sh (service-scoped)",
-    f"# source: {src}",
-    "",
-]
-scoped_curl_pairs = []
-for item in service_cookies:
-    domain = item["domain"]
-    scoped_lines.append("\t".join([
-        domain,
-        "TRUE" if domain.startswith(".") else "FALSE",
-        item["path"],
-        "TRUE" if item["secure"] else "FALSE",
-        str(int(item["expirationDate"]) if item["expirationDate"] else 0),
-        item["name"],
-        item["value"],
-    ]))
-    scoped_curl_pairs.append(f"{item['name']}={item['value']}")
-
-write_private_text(Path(netscape_path), "\n".join(scoped_lines) + "\n")
-write_private_json(Path(editor_path), service_cookies)
-write_private_json(Path(j2team_path), j2team_obj)
-write_private_text(Path(curl_path), "; ".join(scoped_curl_pairs) + "\n")
-
-out_dir = Path(netscape_path).parent
-service_dir = out_dir
-
-# 1) PRIMARY: one JSON per SERVICE (overwrite) — J2TEAM-compatible + meta
-service_file = service_dir / f"{svc_slug}.json"
-# bare j2team shape for extension (url+cookies only) + keep meta sibling
-j2team_bare = {"url": url_hint, "cookies": service_cookies}
-write_private_json(service_file, j2team_bare)
-full_meta = dict(j2team_obj)
-full_meta["cookies"] = j2
-write_private_json(service_dir / f"{svc_slug}.full.json", full_meta)
-
-# 2) Per-domain files for the selected service only.
-scoped_by_reg = defaultdict(list)
-for c in service_cookies:
-    normalized = c["domain"].lstrip(".").lower()
-    parts = normalized.split(".")
-    reg = ".".join(parts[-2:]) if len(parts) >= 2 else normalized
-    scoped_by_reg[reg].append(c)
-
-for reg, host_cookies in scoped_by_reg.items():
-    pairs = [f"{c['name']}={c['value']}" for c in host_cookies]
-    write_private_text(out_dir / f"cookie-header.{reg}.txt", "; ".join(pairs) + "\n")
-    write_private_json(out_dir / f"{reg}.json", {"url": f"https://{reg}", "cookies": host_cookies})
-
-# ChatGPT authentication lives on a separate OpenAI host.
-is_chatgpt = svc_slug in ("chatgpt", "notebooklm") or "chatgpt" in url_hint.lower()
-auth_openai_cookies = [
-    c for c in j2
-    if c["domain"].lstrip(".").lower() == "auth.openai.com"
-]
-if is_chatgpt and auth_openai_cookies:
-    write_private_json(
-        out_dir / "auth.openai.com.json",
-        {"url": "https://auth.openai.com/log-in", "cookies": auth_openai_cookies},
-    )
-
-# Grok authentication lives on a separate x.ai host.
-is_grok = "grok" in svc_slug or "grok" in url_hint.lower()
-accounts_xai_cookies = [
-    c for c in j2
-    if c["domain"].lstrip(".").lower() in ("x.ai", "accounts.x.ai")
-]
-if is_grok and accounts_xai_cookies:
-    accounts_xai = {"url": "https://accounts.x.ai/sign-in", "cookies": accounts_xai_cookies}
-    write_private_json(out_dir / "accounts.x.ai.json", accounts_xai)
-
-# DeepSeek authentication is scoped to chat.deepseek.com and its parent domain.
-is_deepseek = "deepseek" in svc_slug or "deepseek" in url_hint.lower()
-deepseek_signin_cookies = [
-    c for c in j2
-    if c["domain"].lstrip(".").lower() in ("deepseek.com", "chat.deepseek.com")
-]
-if is_deepseek and deepseek_signin_cookies:
-    deepseek_signin = {"url": "https://chat.deepseek.com/sign_in", "cookies": deepseek_signin_cookies}
-    write_private_json(out_dir / "chat.deepseek.com.json", deepseek_signin)
-
-deepseek_storage_keys = (
-    "userToken",
-    "settingsJwt",
-    "__appKit_@deepseek/chat_lastSessionValue",
-)
-deepseek_local_storage = {}
-if is_deepseek and isinstance(raw, dict) and isinstance(raw.get("localStorage"), dict):
-    deepseek_local_storage = {
-        key: raw["localStorage"][key]
-        for key in deepseek_storage_keys
-        if isinstance(raw["localStorage"].get(key), str) and raw["localStorage"][key]
-    }
-if deepseek_local_storage:
-    write_private_json(
-        out_dir / "deepseek.storage.json",
-        {"url": "https://chat.deepseek.com", "localStorage": deepseek_local_storage},
-    )
-
-# 3) Copy into centriq-cookies-injector
-# Optional external injector dir (only if J2TEAM_OUT_DIR set and exists)
-if j2team_dir:
-    jdir = Path(j2team_dir)
-    if jdir.is_dir():
-        write_private_json(jdir / f"{svc_slug}.json", j2team_bare)
-        if "chatgpt" in svc_slug or svc_slug in ("notebooklm",):
-            chatgpt_cookies = [
-                c for c in j2
-                if "chatgpt.com" in c["domain"].lower()
-                or (
-                    c["domain"].lower().endswith("openai.com")
-                    and "auth.openai.com" not in c["domain"].lower()
-                    and "sentinel.openai.com" not in c["domain"].lower()
-                )
-            ]
-            if chatgpt_cookies:
-                write_private_json(
-                    jdir / "chatgpt.com.json",
-                    {"url": "https://chatgpt.com", "cookies": chatgpt_cookies},
-                )
-            if auth_openai_cookies:
-                write_private_json(
-                    jdir / "auth.openai.com.json",
-                    {"url": "https://auth.openai.com/log-in", "cookies": auth_openai_cookies},
-                )
-        if "claude" in svc_slug:
-            claude_cookies = [
-                c for c in j2
-                if c["domain"].lstrip(".").lower().endswith("claude.ai")
-                or c["domain"].lstrip(".").lower().endswith("anthropic.com")
-            ]
-            if claude_cookies:
-                write_private_json(
-                    jdir / "claude.ai.json",
-                    {"url": "https://claude.ai", "cookies": claude_cookies},
-                )
-        if is_grok and accounts_xai_cookies:
-            write_private_json(
-                jdir / "accounts.x.ai.json",
-                {"url": "https://accounts.x.ai/sign-in", "cookies": accounts_xai_cookies},
-            )
-        if is_deepseek and deepseek_signin_cookies:
-            write_private_json(
-                jdir / "chat.deepseek.com.json",
-                {"url": "https://chat.deepseek.com/sign_in", "cookies": deepseek_signin_cookies},
-            )
-        cdir = jdir / "centrix"
-        if cdir.is_dir():
-            write_private_json(cdir / f"{svc_slug}.json", j2team_bare)
-            aliases = {
-                "chatgpt": ["chatgpt.json", "chatgpt.pro.json"],
-                "notebooklm": ["chatgpt.gpt55-pro.json", "gpt-5.5-pro.json"],
-                "claude": ["claude.json", "claude.max.json"],
-                "gemini": ["gemini.json"],
-                "perplexity": ["perplexity.json"],
-                "envato-elements": ["envato.json", "envato-elements.json"],
-            }
-            for key, names in aliases.items():
-                if key in svc_slug or svc_slug == key:
-                    for name in names:
-                        write_private_json(cdir / name, j2team_bare)
-            if is_grok and accounts_xai_cookies:
-                write_private_json(
-                    cdir / "accounts.x.ai.json",
-                    {"url": "https://accounts.x.ai/sign-in", "cookies": accounts_xai_cookies},
-                )
-            if is_deepseek and deepseek_signin_cookies:
-                write_private_json(
-                    cdir / "chat.deepseek.com.json",
-                    {"url": "https://chat.deepseek.com/sign_in", "cookies": deepseek_signin_cookies},
-                )
-
-print(f"cookies={len(j2)}")
-print(f"service_cookies={len(service_cookies)}")
-print(f"service={svc_slug}")
-print(f"serviceFile={service_file}")
-print(f"url={url_hint}")
-print(f"j2team={j2team_path}")
-print(f"editor={editor_path}")
-print(f"netscape={netscape_path}")
-print(f"domains={','.join(sorted(by_reg))}")
-print(f"top={domain_counter.most_common(5)}")
-if is_grok:
-    print(f"accounts_xai_cookies={len(accounts_xai_cookies)}")
-if is_chatgpt:
-    print(f"auth_openai_cookies={len(auth_openai_cookies)}")
-if is_deepseek:
-    print(f"deepseek_signin_cookies={len(deepseek_signin_cookies)}")
-    print(f"deepseek_local_storage_keys={len(deepseek_local_storage)}")
-PY
+  local service_out="$OUT_DIR/${sid}"
+  # alias folder if nice != sid (e.g. dump name vs meta id)
+  if [[ "$nice" != "$sid" && -d "$OUT_DIR/$sid" && ! -e "$OUT_DIR/$nice" ]]; then
+    ln -sfn "$sid" "$OUT_DIR/$nice" 2>/dev/null || true
+  fi
 
   log "OUT_DIR=$OUT_DIR"
-  log "Service folder: $OUT_DIR/<serviceId>/"
-  log "J2TEAM service-scoped: $j2team"
-  log "Domain files: $OUT_DIR/*.com.json etc."
-  log "Cookie-Editor array: $editor"
-  log "Netscape: $netscape"
+  log "Service folder: $service_out/"
+  log "J2TEAM: $service_out/${sid}.json (+ .full.json, specials, sidecars)"
   if [[ -n "$j2team_dir" && -d "$j2team_dir" ]]; then
     log "Also copied → $j2team_dir/"
   fi

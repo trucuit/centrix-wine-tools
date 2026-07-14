@@ -2,7 +2,7 @@
   "url": "https://grok.com",
   "serviceId": "grok-heavy",
   "serviceName": "Grok Heavy",
-  "exportedAt": "2026-07-12T03:10:06.366Z",
+  "exportedAt": "2026-07-14T02:02:33.098Z",
   "cookies": [
     {
       "domain": ".grok.com",
@@ -162,7 +162,7 @@
     },
     {
       "domain": ".grok.com",
-      "expirationDate": 1783827605,
+      "expirationDate": 1783996351,
       "hostOnly": false,
       "httpOnly": true,
       "name": "__cf_bm",
@@ -171,7 +171,7 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "XxgOjzzzSMoyxzG7bGFya.UAm6.6UT0I4snhsnNz2lQ-1783825805.9090276-1.0.1.1-CZuEoMOUKC_25ED40dnGKzRKC6jVxIjRJkky5WrMg0UFyrh9aqIVK5x.Yxx2EHYnvY3vNZeRIysq9Vaaq0j.yD1jrGHa0lTIYpvVMkUnZjkcFaZzFjFsYBmOMUo1PMCJ"
+      "value": "HbmQiV4tF5XqJFfJ13ZtM2dkSx7XkQ6_HTG91qANaFg-1783994551.6656232-1.0.1.1-vMSVMMHU3cF4B6v2upIzlAahfXE_PiOwV0yX.4NxFp7Nd7p0SP4Ffihu87UBaHc8xiX9IiGFhiPdZ3MDqczZoPfUdLSlDdZ1KyRAytvuYFkNJN5dX6mbNbjaPkF1iRty"
     }
   ]
 }

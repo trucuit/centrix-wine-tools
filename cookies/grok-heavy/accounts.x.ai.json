@@ -106,19 +106,6 @@
       "value": "tw.1783339230979.450465525406532285"
     },
     {
-      "domain": "accounts.x.ai",
-      "expirationDate": 1783944058,
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "referrer",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "grok-com"
-    },
-    {
       "domain": ".x.ai",
       "expirationDate": 1791115231,
       "hostOnly": false,

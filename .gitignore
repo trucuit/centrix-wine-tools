@@ -18,6 +18,9 @@ wine-prefix-centrix/
 # Project cookie exports (secrets) — keep folder, ignore contents
 !cookies/.gitkeep
 
+# API CLI session (token + sessionKey + device PEM)
+.centrix-api-session.json
+
 # Extracted installer payload (optional local extract)
 
 # Binary installers — track CentriX setup only
@@ -34,3 +37,6 @@ wine-prefix-centrix/
 
 # Logs
 *.log
+
+# Extracted CentriX app.asar (contains build secrets)
+exports/

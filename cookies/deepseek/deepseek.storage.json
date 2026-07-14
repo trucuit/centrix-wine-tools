@@ -1,0 +1,8 @@
+{
+  "url": "https://chat.deepseek.com",
+  "localStorage": {
+    "userToken": "{\"value\":\"p7WJ2/hWBKrKh30t6Aq4Gbg+jXr16w+pNOGyacxG46jg88lnxDIqA894wAfbbjj1\",\"__version\":\"0\"}",
+    "settingsJwt": "{\"value\":{\"ownerHash\":\"5604b6b22bb41\",\"jwt\":\"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..Ac4u7TuxJUJeod5G.w__j2PtJKfkV679jJ53oujZ5fa15wnkJHOnkk9QTfz6Z8qVEFUbadSDV8ycRozWk63H_pztnoD5pfRwhBNU2W_A9fFXs5DL3fWBGaEuGJNDOGWbRCNbnPBHQ2gmQqMwEAGevIR-vv4ri3DXPlv2iwCJUKEFGJP4adNIIAPoFhD4aQBM7Zv6CyfDfEoDar6e0v9h4evN9-F-k2F-dDHZj9pCjcyuxw-GQisy0vJDyJNTe8egZUaDvn5ZAjYG9jWRZVwRxm2c7AQ.JnshG1PbjkpGJfNwimyu5Q\"},\"__version\":\"0\"}",
+    "__appKit_@deepseek/chat_lastSessionValue": "{\"value\":{\"userIsMuted\":false,\"userMuteUntil\":0,\"loginMethod\":\"code\",\"siderCollapsed\":false},\"__version\":\"0\"}"
+  }
+}
