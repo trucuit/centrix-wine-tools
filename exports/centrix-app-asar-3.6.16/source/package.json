@@ -1,0 +1,5 @@
+{
+  "name": "centrix-embedded-browser-poc",
+  "version": "0.1.0",
+  "main": "src/remote-user-main.js"
+}

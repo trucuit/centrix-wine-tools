@@ -1,0 +1,56 @@
+account:change-password
+account:logout
+account:me
+activity:list
+browser:back
+browser:forward
+browser:home
+browser:open-service
+browser:reload
+browser:set-bounds
+browser:state
+connection:cancel-takeover
+connection:connect
+connection:disconnect
+connection:login-google
+connection:state
+connection:takeover
+Loi bao cao
+Loi dat han muc
+Loi doc goi cuoc
+Loi doi vai tro
+Loi go thanh vien
+Loi ha cap goi
+Loi khoa thanh vien
+Loi luu thong tin hoa don
+Loi luu thong tin thanh toan
+Loi phan bo
+Loi them phong ban
+Loi them thanh vien
+Loi xoa phong ban
+Loi xoa tai khoan
+portal:livechat-send
+portal:org-structure
+portal:summary
+portal:support-ticket
+portal:topup-request
+profile:pull
+profile:push
+services:list
+services:refresh
+update:cancel
+update:check
+update:install
+update:setAuto
+update:skip
+url-history:list
+url-history:push
+version:current
+version:download
+version:quit
+window:bounds
+window:close
+window:is-maximized
+window:maximize
+window:minimize
+window:move-by
