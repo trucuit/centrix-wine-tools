@@ -1,8 +1,8 @@
 {
-  "url": "https://chatgpt.com",
+  "url": "https://chatgpt.com/",
   "serviceId": "notebooklm",
-  "serviceName": "GPT-5.5 Pro",
-  "exportedAt": "2026-07-14T01:59:32.589Z",
+  "serviceName": "notebooklm",
+  "exportedAt": "2026-07-16T01:48:42.027286+00:00",
   "cookies": [
     {
       "domain": ".chatgpt.com",

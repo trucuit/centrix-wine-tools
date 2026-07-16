@@ -1,8 +1,10 @@
 {
-  "url": "https://grok.com",
+  "url": "https://grok.com/",
   "serviceId": "grok-heavy",
   "serviceName": "Grok Heavy",
   "exportedAt": "2026-07-14T02:02:33.098Z",
+  "sourceDump": "/Users/truc.trantrung3/Documents/centrix-wine-tools/wine-prefix-centrix/drive_c/users/truc.trantrung3/AppData/Roaming/mkvhszparoue/cookies-dump-grok-heavy.json",
+  "source": "dump",
   "cookies": [
     {
       "domain": ".chatgpt.com",

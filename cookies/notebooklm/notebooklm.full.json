@@ -1,8 +1,10 @@
 {
-  "url": "https://chatgpt.com",
+  "url": "https://chatgpt.com/",
   "serviceId": "notebooklm",
   "serviceName": "GPT-5.5 Pro",
   "exportedAt": "2026-07-14T01:59:32.589Z",
+  "sourceDump": "/Users/truc.trantrung3/Documents/centrix-wine-tools/wine-prefix-centrix/drive_c/users/truc.trantrung3/AppData/Roaming/mkvhszparoue/cookies-dump-notebooklm.json",
+  "source": "dump",
   "cookies": [
     {
       "domain": ".chatgpt.com",

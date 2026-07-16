@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CentriX Desktop Admin</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <aside class="admin-sidebar" aria-label="Admin navigation">
+        <header class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img">
+              <rect x="3" y="5" width="26" height="22" rx="5" />
+              <path d="M8 10l8 6 8-6M8 22l7-5M24 22l-7-5" />
+            </svg>
+          </div>
+          <div>
+            <h1>CentriX</h1>
+            <p>Admin v3.5.0</p>
+          </div>
+        </header>
+
+        <nav class="admin-nav">
+          <button class="nav-item active" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16" /></svg>
+            Dịch vụ
+          </button>
+          <button class="nav-item" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.4-2.4 1a7 7 0 0 0-1.7-1L14.5 3h-5l-.3 3.1a7 7 0 0 0-1.7 1l-2.4-1-2 3.4 2 1.5A7 7 0 0 0 5 12c0 .3 0 .7.1 1l-2 1.5 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.3 3.1h5l.3-3.1a7 7 0 0 0 1.7-1l2.4 1 2-3.4-2-1.5c.1-.3.1-.7.1-1Z" /></svg>
+            Cấu hình
+          </button>
+        </nav>
+
+        <section class="config-path">
+          <span>File cấu hình</span>
+          <strong id="configPath">-</strong>
+        </section>
+      </aside>
+
+      <section class="admin-workbench">
+        <header class="admin-header">
+          <div>
+            <h2>URL dịch vụ</h2>
+            <p>Admin chỉnh URL ở đây, bản user sẽ đọc cùng cấu hình này.</p>
+          </div>
+          <div class="header-actions">
+            <button id="resetButton" class="secondary-button" type="button">Khôi phục mặc định</button>
+            <button id="addServiceButton" class="secondary-button" type="button">Thêm dịch vụ</button>
+            <button id="saveButton" class="primary-button" type="button">Lưu thay đổi</button>
+          </div>
+        </header>
+
+        <section class="service-editor" aria-label="Service URL editor">
+          <div class="editor-head">
+            <span>Dịch vụ</span>
+            <span>URL mở trên bản user</span>
+            <span>Icon</span>
+            <span>Bật</span>
+            <span></span>
+          </div>
+          <div id="serviceRows" class="service-rows"></div>
+        </section>
+
+        <div id="statusBar" class="status-bar" role="status">Sẵn sàng.</div>
+      </section>
+    </main>
+    <script src="./admin.js"></script>
+  </body>
+</html>

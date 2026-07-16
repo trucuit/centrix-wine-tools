@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CentriX Desktop App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="desktop-shell">
+      <aside class="sidebar" aria-label="CentriX services">
+        <header class="brand">
+          <img class="brand-logo" src="../desktop-assets/logo.png" alt="CentriX" />
+          <span class="brand-version">v3.5.0</span>
+        </header>
+
+        <section class="panel service-panel" aria-labelledby="serviceTitle">
+          <div class="panel-title">
+            <span class="square-icon" aria-hidden="true">+</span>
+            <h2 id="serviceTitle">D&#7883;ch v&#7909;</h2>
+          </div>
+          <label class="search-field" for="serviceSearch">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M16.5 16.5L21 21" />
+            </svg>
+            <input id="serviceSearch" type="search" placeholder="T&#236;m ki&#7871;m d&#7883;ch v&#7909;" autocomplete="off" />
+          </label>
+          <div id="serviceList" class="service-list" role="list"></div>
+          <button id="addServiceButton" class="secondary-button" type="button">
+            <span aria-hidden="true">+</span>
+            Th&#234;m d&#7883;ch v&#7909;
+          </button>
+        </section>
+
+        <section class="panel account-panel" aria-labelledby="accountTitle">
+          <div class="sidebar-controls" aria-label="Account controls">
+            <button id="reloadButton" class="icon-button" type="button" title="T&#7843;i l&#7841;i">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 12a9 9 0 1 1-2.6-6.4" />
+                <path d="M21 4v7h-7" />
+              </svg>
+            </button>
+            <div class="credit-pill">15,000&#273;</div>
+            <button class="avatar-button" type="button" title="T&#224;i kho&#7843;n">
+              <img src="../desktop-assets/profile.svg" alt="" />
+            </button>
+          </div>
+
+          <h2 id="accountTitle">T&#224;i kho&#7843;n</h2>
+          <button id="logoutButton" class="account-action danger-action" type="button">
+            <span>&#272;&#259;ng xu&#7845;t</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10 7V5h9v14h-9v-2" />
+              <path d="M14 12H4m6-4 4 4-4 4" />
+            </svg>
+          </button>
+          <button id="manageButton" class="account-action" type="button">
+            <span>Qu&#7843;n l&#253; web</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.4-2.4 1a7 7 0 0 0-1.7-1L14.5 3h-5l-.3 3.1a7 7 0 0 0-1.7 1l-2.4-1-2 3.4 2 1.5A7 7 0 0 0 5 12c0 .3 0 .7.1 1l-2 1.5 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.3 3.1h5l.3-3.1a7 7 0 0 0 1.7-1l2.4 1 2-3.4-2-1.5c.1-.3.1-.7.1-1Z" />
+            </svg>
+          </button>
+          <div class="quick-actions" aria-label="Quick actions">
+            <button type="button" title="Qu&#224; t&#7863;ng">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 10h16v11H4zM3 6h18v4H3zM12 6v15M8 6c-2.5 0-3-3 0-3 2 0 4 3 4 3s-2 0-4 0ZM16 6c2.5 0 3-3 0-3-2 0-4 3-4 3s2 0 4 0Z" />
+              </svg>
+            </button>
+            <button type="button" title="Voucher">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4V7Z" />
+                <path d="m9 9 6 6M15 9l-6 6" />
+              </svg>
+            </button>
+            <button type="button" title="C&#224;i &#273;&#7863;t">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.4-2.4 1a7 7 0 0 0-1.7-1L14.5 3h-5l-.3 3.1a7 7 0 0 0-1.7 1l-2.4-1-2 3.4 2 1.5A7 7 0 0 0 5 12c0 .3 0 .7.1 1l-2 1.5 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.3 3.1h5l.3-3.1a7 7 0 0 0 1.7-1l2.4 1 2-3.4-2-1.5c.1-.3.1-.7.1-1Z" />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </aside>
+
+      <section class="workbench" aria-label="Embedded browser">
+        <div id="browserViewport" class="browser-viewport" aria-label="Browser viewport">
+          <div class="empty-browser">
+            <strong>CentriX Browser</strong>
+            <span id="browserStatus">&#272;ang kh&#7903;i t&#7841;o d&#7883;ch v&#7909;...</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./user.js"></script>
+  </body>
+</html>

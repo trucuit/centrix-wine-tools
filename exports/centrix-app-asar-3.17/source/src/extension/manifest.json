@@ -1,0 +1,59 @@
+{
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "author": "CentriX",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; 'wasm-unsafe-eval' 'inline-speculation-rules'"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "injected-scripts/css-inject.js",
+        "vault-content.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "CentriX",
+  "externally_connectable": {
+    "matches": [
+      "<all_urls>"
+    ]
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "manifest_version": 3,
+  "name": "CentriX",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.4",
+  "key": "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDUKVWZ/HjH+Up0chpHq9vsK2zXg4ataK/N2J9ROpV7+tyqZYpJ0i6mKGiGIJwRFOWpnsNZc57LNi4edxQDH2D2lvMs4FL1CxCyedc+1EfIckREP6AxYIMqXtJAyYX3ipoHZsWqNOO5NNcOJU6UD3h+ARXmc97EoM6nbykEnKu5TRjA7VAMZ+RCefZwsB+UcjRqbd5fvHvuAZ6BbFQKV0HyxkTzczKz99wDkr6e1p3TNnJ3dp9uZtTi5bZVEvcGWc9oKwYcM7IwFakJcGWQC2Q7AWSH7PwOhT/MZhRS3Fe/pIKcAOl0lEYhyks6SII4rzjJy3V6/jjcz0olPVFvdisVAgMBAAECggEAB3DdrjVjHQxatqPL1SirYWiSfCqCPjG2PL90svodhQgi1h0SkQ08kppHNDEPmC/F8EF/s3LxJkpjqrDddFCU64EWzUOe1TZKox/P00XJsLeFOmmK2kB6yTEjKZ+HwctMJKdPlm0dcYDva/EWBO5X+P9bv8XfkcDcDpZA94bxJOIFcnxm1qHaTL+r73HkcdqOPbG59REcu1KuGbzfrgQNQFQbJyHwZ73e+gpts2VyDmmC1AMx58+cMQptHq45jMR0gCI9xpP++ik6U0wyJlOP7Xmejb2I3njss56pzBXDe2DQAxqDMt0/+cVLBDA0NQRwFLBmLL+wNCF8AIGCpSBWQQKBgQD5IacGu85rjYwp4DE5UfgXlrzcNsBtnlr5hXJJyRRORtsUSU8NGW4taKMhLV/4Y2QzHwyA29p/lSZ/k9if9YE2z1ZqYlkOvEnYNSN++SfkRzyHaomVfveEELSZlBjvvQ7LuPDZ3VV/9Pf0tuKUGRyY/pAIPwiPXRXYRnHK92jLIQKBgQDaAsBDhPsoHTyT6pAs2GPwIw0ZrwTgituOm03qhlhctqB1TUxZingBJTiYgacLeVYljxkaD59vIFkB80Diu8DmDL875/1ThZf4pMu1lL+4MYW1s/XLIiYT4hPj6b+AKcG4dKE1BvZJGLArPtIzQ4gITpqAiqmnEZt4OEj5gZO1dQKBgB+3CANUbz/D4j8Gel24sKOYHezOz4pk6WHweg8omPwqCwO3HWgmf58qPfIgS6JcTMoxPq88zcEGJMOC98XNRCjNFkwuvvWgRKpQgXdNkqV96Be5GVC9vBbE5ajTcKU8ZSDMJ2Ukxxil/9bYXVnLJJfZeE6Eb7uIdxp0RVI4Us/hAoGAPNGlp3ByzKcTXkSCwi//+V8d6XtdBfNW+vqyium9vuen7fGJijVJ8y/aERmia14HPWUlYJLZLJw+mH+vK1Grp8IIm4LFtkY/tjrrJZYAwjb2kVFKEchODR/14pA0P2HmzDmlO3Dcxlmf1ACrjWeajI65JYEJgTU1RR2WphyTA30CgYEAzB8hhR5Ta/vV2NXMw53O287Wd3yG8mIn1i6nNrkhxUDk5C1UB0hQVqAyXpyT4oYYEx2LetK2+Cc8grfMdPLlMmrcraoOpVE2xbPOv/A77J2CBBKDHth2ZwetgbWspE+zeKWzp9Xqn3gFu/01bkEcCvOI3ImkMilOOy1Wh4o7CL8=",
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "injected-scripts/*"
+      ]
+    }
+  ]
+}

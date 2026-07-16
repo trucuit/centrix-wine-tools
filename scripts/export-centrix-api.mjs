@@ -17,11 +17,12 @@
  *   ./export-centrix-api.sh logout
  *
  * Env:
+ *   CENTRIX_APP_VERSION    default 3.17 (User-Agent CentriXAppUser/<ver>)
  *   CENTRIX_SERVER_URL     default https://api-centrixapp-quang.centrix.asia
  *   CENTRIX_SESSION_FILE   default ./.centrix-api-session.json
  *   CENTRIX_OUT_DIR        default ./cookies
  *   CENTRIX_APP_KEY / CENTRIX_APP_ATTEST_SECRET / CENTRIX_EXPORT_SIGN_KEY
- *     (defaults match App User 3.6.16 shipped values — friction keys, not hard secrets)
+ *     (defaults match App User 3.17 shipped values — friction keys, not hard secrets)
  */
 
 import { createServer } from "node:http";
@@ -37,7 +38,8 @@ import { createInterface } from "node:readline";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-const APP_VERSION = "3.6.16";
+/** Match remote-user-main.js APP_VERSION in App User 3.17 asar. */
+const APP_VERSION = String(process.env.CENTRIX_APP_VERSION || "3.17").trim() || "3.17";
 /** Exact UA App User sends — server uaIsClient / uaIsScript check this string. */
 const USER_AGENT = `CentriXAppUser/${APP_VERSION}`;
 const DEFAULT_SERVER = "https://api-centrixapp-quang.centrix.asia";
@@ -47,7 +49,7 @@ const GOOGLE_CLIENT_ID =
 const GOOGLE_AUTH_ENDPOINT = "https://accounts.google.com/o/oauth2/v2/auth";
 const GOOGLE_SCOPE = "openid email profile";
 
-// Same defaults as App User asar (Cloudflare / friction layer). Override via env if rotated.
+// Same defaults as App User 3.17 asar (shared/app-attest.js). Override via env if rotated.
 const APP_REQUEST_KEY =
   process.env.CENTRIX_APP_KEY || "cxk_28db7719b795d4eaa5a4e00fcb057029a11130eea00ec39a8bbd1467ca2ae5f7";
 const APP_ATTEST_SECRET =
@@ -64,17 +66,17 @@ const SERVER_URL = (process.env.CENTRIX_SERVER_URL || DEFAULT_SERVER).replace(/\
 const MIN_MS_AFTER_LOGIN = 3500;
 const MAX_MS_SINCE_INTERACT = 45000;
 
-/** serviceId → default page URL for J2TEAM export */
+/** serviceId → default page URL for J2TEAM export (App User 3.17 DEFAULT_SERVICES) */
 const SERVICE_URLS = {
   chatgpt: "https://chatgpt.com",
-  notebooklm: "https://chatgpt.com",
+  notebooklm: "https://notebooklm.google.com",
   claude: "https://claude.ai",
   gemini: "https://gemini.google.com",
   perplexity: "https://www.perplexity.ai",
   grok: "https://grok.com",
   "grok-heavy": "https://grok.com",
   "microsoft-copilot": "https://copilot.microsoft.com",
-  deepseek: "https://chat.deepseek.com/sign_in",
+  deepseek: "https://chat.deepseek.com",
   mistral: "https://chat.mistral.ai",
   midjourney: "https://www.midjourney.com",
   poe: "https://poe.com",
@@ -82,6 +84,7 @@ const SERVICE_URLS = {
   "envato-elements": "https://elements.envato.com",
 };
 
+/** Pool profile aliases used by this tooling (server-side profile names). */
 const ALIASES = {
   chatgpt: "notebooklm",
   grok: "grok-heavy",
@@ -697,6 +700,8 @@ async function cmdStatus() {
       {
         ok: true,
         loggedIn: true,
+        appVersion: APP_VERSION,
+        userAgent: USER_AGENT,
         email: session.email,
         serverUrl: session.serverUrl,
         profileId: session.profileId,
@@ -956,6 +961,7 @@ Options (export):
   --no-storage       includeStorage=0 (faster)
 
 Env:
+  CENTRIX_APP_VERSION=${APP_VERSION}   # User-Agent CentriXAppUser/<ver>
   CENTRIX_SERVER_URL=${DEFAULT_SERVER}
   CENTRIX_SESSION_FILE=./.centrix-api-session.json
   CENTRIX_OUT_DIR=./cookies
@@ -980,9 +986,10 @@ async function interactiveMenu() {
   try {
     const summary = await sessionSummaryLine();
     console.log("");
-    console.log("CentriX API export (không mở App UI)");
+    console.log(`CentriX API export · App User ${APP_VERSION} (không mở App UI)`);
     console.log("────────────────────────────────────");
     console.log(`  ${summary}`);
+    console.log(`  UA: ${USER_AGENT}`);
     console.log("────────────────────────────────────");
     console.log("  1) login      — Google OAuth, lưu session");
     console.log("  2) export     — chọn service, pull cookie");

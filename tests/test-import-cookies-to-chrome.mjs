@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { resolve } from "node:path";
-import { domainAllowed, loadServiceCookies, loadServiceStorage, normalizeCookie } from "../scripts/import-cookies-to-chrome.mjs";
+import { domainAllowed, listImportableServices, loadServiceCookies, loadServiceStorage, normalizeCookie } from "../scripts/import-cookies-to-chrome.mjs";
 
 assert.equal(domainAllowed(".grok.com", ["grok.com", "x.ai"]), true);
 assert.equal(domainAllowed("accounts.x.ai", ["grok.com", "x.ai"]), true);
@@ -34,14 +34,46 @@ try {
     url: "https://chat.deepseek.com",
     localStorage: { userToken: "redacted", settingsJwt: "redacted", unexpected: "blocked" },
   }));
+  // mode=service (default): skip *.full.json
   const loaded = await loadServiceCookies(serviceDir, ["grok.com", "x.ai"]);
+  assert.equal(loaded.mode, "service");
   assert.equal(loaded.cookies.length, 2);
   assert.equal(loaded.rejected.duplicate, 1);
   assert.equal(loaded.rejected.invalid, 1);
   assert.equal(loaded.cookies.some((cookie) => cookie.name === "should-not-load"), false);
+
+  // mode=full: only *.full.json
+  const full = await loadServiceCookies(serviceDir, ["grok.com", "x.ai"], "full");
+  assert.equal(full.mode, "full");
+  assert.equal(full.files, 1);
+  assert.equal(full.cookies.length, 1);
+  assert.equal(full.cookies[0].name, "should-not-load");
+
+  // explicit service mode same as default
+  const explicitService = await loadServiceCookies(serviceDir, ["grok.com", "x.ai"], "service");
+  assert.equal(explicitService.cookies.length, 2);
+
   const storage = await loadServiceStorage(serviceDir, "deepseek");
   assert.deepEqual(storage, { userToken: "redacted", settingsJwt: "redacted" });
   assert.deepEqual(await loadServiceStorage(serviceDir, "grok"), {});
+
+  // listImportableServices sees source folder (grok → grok-heavy alias not present here;
+  // we created cookies/grok so only ids whose source dir is "grok" light up)
+  const listed = await listImportableServices(root);
+  const grokRow = listed.find((row) => row.id === "grok");
+  // grok sources from grok-heavy by config — folder named "grok" alone won't match source
+  assert.equal(grokRow.source, "grok-heavy");
+  // create matching source folder name used by alias
+  const heavyDir = resolve(root, "grok-heavy");
+  await mkdir(heavyDir);
+  await writeFile(resolve(heavyDir, "grok-heavy.json"), JSON.stringify({ cookies: [valid] }));
+  await writeFile(resolve(heavyDir, "grok-heavy.full.json"), JSON.stringify({ cookies: [valid] }));
+  const listed2 = await listImportableServices(root);
+  const heavyViaGrok = listed2.find((row) => row.id === "grok");
+  const heavyDirect = listed2.find((row) => row.id === "grok-heavy");
+  assert.equal(heavyViaGrok.hasService, true);
+  assert.equal(heavyViaGrok.hasFull, true);
+  assert.equal(heavyDirect.hasService, true);
 } finally {
   await rm(root, { recursive: true, force: true });
 }

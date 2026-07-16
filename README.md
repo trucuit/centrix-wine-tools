@@ -135,9 +135,17 @@ Optional copy ra injector: `J2TEAM_OUT_DIR=/path/to/injector`
 Tool dùng Chrome profile riêng tại `./.chrome-cookie-profile`; không điều khiển profile Chrome mặc định.
 
 ```bash
-# Import cookie đã export, mở hoặc reload service
+# Menu tương tác: chọn service + mode (service|full)
+./import-cookies-to-chrome.sh
+./import-cookies-to-chrome.sh --pick
+
+# Import cookie đã export, mở hoặc reload service (mode=service mặc định)
 ./import-cookies-to-chrome.sh grok
 ./import-cookies-to-chrome.sh chatgpt
+
+# Import từ *.full.json (raw partition dump)
+./import-cookies-to-chrome.sh grok --full
+./import-cookies-to-chrome.sh chatgpt --mode full
 
 # Export rồi import bằng một lệnh
 ./export-pick-service.sh grok --chrome
@@ -145,11 +153,16 @@ Tool dùng Chrome profile riêng tại `./.chrome-cookie-profile`; không điề
 
 # Kiểm tra JSON/domain mà không mở Chrome
 ./import-cookies-to-chrome.sh grok --dry-run
+./import-cookies-to-chrome.sh grok --full --dry-run
 ```
 
 Tuỳ chọn hữu ích:
 
 ```text
+-i, --pick             Menu chọn service + mode (TTY)
+--mode service|full    service = scoped JSON (mặc định, an toàn inject)
+                       full    = chỉ *.full.json (raw dump, vẫn filter domain)
+--mode-service / --full  alias ngắn cho --mode
 --profile-dir <path>   Chrome profile riêng
 --port <number>        CDP port, mặc định 9222
 --chrome <path>        Chrome executable
@@ -157,7 +170,8 @@ Tuỳ chọn hữu ích:
 --json                 Kết quả machine-readable
 ```
 
-Tool chỉ đọc `cookies/<serviceId>/*.json`, bỏ qua `.full.json`, kiểm tra allowlist domain và không in giá trị cookie ra log.
+Mặc định (`--mode service`): đọc `cookies/<serviceId>/*.json`, **bỏ qua** `.full.json`.  
+`--mode full` / `--full`: chỉ đọc `*.full.json`. Cả hai mode vẫn kiểm tra allowlist domain và không in giá trị cookie ra log.
 
 Alias mặc định: `grok` luôn dùng nguồn `grok-heavy`; `chatgpt` luôn dùng nguồn `notebooklm` (GPT-5.5 Pro).
 

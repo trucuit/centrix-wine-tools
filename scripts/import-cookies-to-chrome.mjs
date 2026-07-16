@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 
 import { spawn } from "node:child_process";
+import { createInterface } from "node:readline/promises";
 import { access, readFile, readdir } from "node:fs/promises";
 import { constants as fsConstants } from "node:fs";
 import { homedir } from "node:os";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import { stdin as input, stdout as output } from "node:process";
 
 const SERVICE_CONFIG = {
   chatgpt: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "notebooklm" },
@@ -50,8 +52,20 @@ export function normalizeCookie(cookie, allowedDomains, now = Date.now() / 1000)
   return result;
 }
 
-export async function loadServiceCookies(serviceDir, allowedDomains) {
-  const files = (await readdir(serviceDir)).filter((name) => name.endsWith(".json") && !name.endsWith(".full.json"));
+/**
+ * Load cookies from a service folder.
+ * @param {"service"|"full"} mode
+ *   - service (default): all *.json except *.full.json (host-scoped, safe inject)
+ *   - full: only *.full.json (raw partition dump; still domain-allowlisted)
+ */
+export async function loadServiceCookies(serviceDir, allowedDomains, mode = "service") {
+  if (mode !== "service" && mode !== "full") {
+    throw new Error(`Invalid cookie mode: ${mode}. Use "service" or "full".`);
+  }
+  const allJson = (await readdir(serviceDir)).filter((name) => name.endsWith(".json"));
+  const files = mode === "full"
+    ? allJson.filter((name) => name.endsWith(".full.json"))
+    : allJson.filter((name) => !name.endsWith(".full.json"));
   const cookies = [];
   const rejected = { invalid: 0, duplicate: 0 };
   const seen = new Set();
@@ -68,7 +82,7 @@ export async function loadServiceCookies(serviceDir, allowedDomains) {
       cookies.push(cookie);
     }
   }
-  return { cookies, rejected, files: files.length };
+  return { cookies, rejected, files: files.length, mode };
 }
 
 export async function loadServiceStorage(serviceDir, service) {
@@ -86,20 +100,34 @@ export async function loadServiceStorage(serviceDir, service) {
 function parseArgs(argv) {
   const options = {
     service: "",
+    mode: "service", // "service" | "full"
+    modeExplicit: false,
+    pick: false,
     cookiesDir: resolve(process.env.CENTRIX_COOKIES_DIR || "cookies"),
     profileDir: resolve(process.env.CENTRIX_CHROME_PROFILE || ".chrome-cookie-profile"),
     port: Number(process.env.CENTRIX_CHROME_PORT || 9222),
     open: true, json: false, dryRun: false,
   };
   const args = [...argv];
-  options.service = args.shift() || "";
-  if (options.service === "-h" || options.service === "--help") { options.help = true; options.service = ""; }
+  // Positional service only if first token is not a flag
+  if (args[0] && !args[0].startsWith("-")) {
+    options.service = args.shift();
+  }
   while (args.length) {
     const flag = args.shift();
     if (flag === "--cookies-dir") options.cookiesDir = resolve(args.shift() || "");
     else if (flag === "--profile-dir") options.profileDir = resolve(args.shift() || "");
     else if (flag === "--port") options.port = Number(args.shift());
     else if (flag === "--chrome") options.chrome = resolve(args.shift() || "");
+    else if (flag === "--mode") {
+      const mode = String(args.shift() || "").toLowerCase();
+      if (mode !== "service" && mode !== "full") throw new Error(`Invalid --mode ${mode}. Use service or full.`);
+      options.mode = mode;
+      options.modeExplicit = true;
+    }
+    else if (flag === "--full") { options.mode = "full"; options.modeExplicit = true; }
+    else if (flag === "--mode-service") { options.mode = "service"; options.modeExplicit = true; }
+    else if (flag === "--pick" || flag === "-i" || flag === "--interactive") options.pick = true;
     else if (flag === "--no-open") options.open = false;
     else if (flag === "--json") options.json = true;
     else if (flag === "--dry-run") options.dryRun = true;
@@ -107,6 +135,131 @@ function parseArgs(argv) {
     else throw new Error(`Unknown option: ${flag}`);
   }
   return options;
+}
+
+async function pathExists(path) {
+  try { await access(path, fsConstants.F_OK); return true; } catch { return false; }
+}
+
+/** List supported services that have cookie data under cookiesDir. */
+export async function listImportableServices(cookiesDir) {
+  const ids = Object.keys(SERVICE_CONFIG);
+  const rows = [];
+  for (const id of ids) {
+    const config = SERVICE_CONFIG[id];
+    const source = config.source || id;
+    const dir = resolve(cookiesDir, source);
+    let hasService = false;
+    let hasFull = false;
+    try {
+      const names = await readdir(dir);
+      hasService = names.some((n) => n.endsWith(".json") && !n.endsWith(".full.json"));
+      hasFull = names.some((n) => n.endsWith(".full.json"));
+    } catch {
+      // missing folder
+    }
+    rows.push({
+      id,
+      source,
+      url: config.url,
+      hasService,
+      hasFull,
+      available: hasService || hasFull,
+    });
+  }
+  return rows;
+}
+
+function printServiceMenu(rows) {
+  console.log("");
+  console.log("=== Import cookies → Chrome ===");
+  console.log("");
+  console.log("Chọn service:");
+  console.log("────────────────────────────────────────────────────────────");
+  rows.forEach((row, index) => {
+    const n = String(index + 1).padStart(2, " ");
+    const marks = [
+      row.hasService ? "service✓" : "service✗",
+      row.hasFull ? "full✓" : "full✗",
+    ].join(" ");
+    const alias = row.source !== row.id ? `  (source: ${row.source})` : "";
+    console.log(`  ${n}) ${row.id.padEnd(18)} ${marks}  ${row.url}${alias}`);
+  });
+  console.log("────────────────────────────────────────────────────────────");
+  console.log("  q) quit");
+  console.log("");
+}
+
+function printModeMenu() {
+  console.log("");
+  console.log("Chọn cookie source:");
+  console.log("  1) service  — scoped JSON (an toàn inject, mặc định)");
+  console.log("  2) full     — *.full.json (raw partition dump)");
+  console.log("");
+}
+
+async function promptLine(rl, question) {
+  const answer = await rl.question(question);
+  return String(answer || "").trim();
+}
+
+/**
+ * Interactive: pick service id + mode (service|full).
+ * Returns { service, mode } or null if cancelled.
+ */
+export async function interactivePick(cookiesDir, { needService = true, needMode = true } = {}) {
+  if (!input.isTTY || !output.isTTY) {
+    throw new Error("Interactive pick requires a TTY. Pass <service> and optionally --mode service|full.");
+  }
+  const rl = createInterface({ input, output });
+  try {
+    let service = "";
+    let mode = "service";
+
+    if (needService) {
+      const rows = await listImportableServices(cookiesDir);
+      if (!rows.some((r) => r.available)) {
+        throw new Error(`No cookie folders under ${cookiesDir}. Export first (export-pick-service / export-centrix-api).`);
+      }
+      printServiceMenu(rows);
+      while (!service) {
+        const ans = await promptLine(rl, "Chọn service [số hoặc id]: ");
+        if (!ans || ans === "q" || ans === "Q") return null;
+        if (/^\d+$/.test(ans)) {
+          const idx = Number(ans) - 1;
+          if (idx >= 0 && idx < rows.length) {
+            service = rows[idx].id;
+            if (!rows[idx].available) {
+              console.log(`  ! ${service}: chưa có cookie folder — vẫn tiếp tục nếu bạn chắc.`);
+            }
+          } else {
+            console.log("  Số không hợp lệ.");
+          }
+        } else if (SERVICE_CONFIG[ans]) {
+          service = ans;
+        } else {
+          console.log(`  Unknown service: ${ans}. Supported: ${Object.keys(SERVICE_CONFIG).join(", ")}`);
+        }
+      }
+    }
+
+    if (needMode) {
+      printModeMenu();
+      while (true) {
+        const ans = await promptLine(rl, "Chọn mode [1/service, 2/full] (Enter = service): ");
+        if (!ans || ans === "1" || ans === "s" || ans === "service") { mode = "service"; break; }
+        if (ans === "2" || ans === "f" || ans === "full") { mode = "full"; break; }
+        if (ans === "q" || ans === "Q") return null;
+        console.log("  Chọn 1 (service) hoặc 2 (full).");
+      }
+    }
+
+    console.log(`→ service=${service || "(set later)"}  mode=${mode}`);
+    console.log("");
+    return { service, mode };
+  } finally {
+    rl.close();
+  }
 }
 
 async function findChrome(explicit) {
@@ -196,20 +349,76 @@ async function applyLocalStorage(port, targetUrl, entries) {
 }
 
 function usage() {
-  return `Usage: ./import-cookies-to-chrome.sh <service> [options]\n\nOptions:\n  --cookies-dir <path>  Cookie root (default: ./cookies)\n  --profile-dir <path>  Isolated Chrome profile\n  --port <number>       CDP port (default: 9222)\n  --chrome <path>       Chrome executable\n  --no-open             Do not open/reload service\n  --dry-run             Validate without starting Chrome\n  --json                Machine-readable result`;
+  return `Usage: ./import-cookies-to-chrome.sh [service] [options]
+       ./import-cookies-to-chrome.sh              # interactive menu (TTY)
+       ./import-cookies-to-chrome.sh --pick       # force interactive menu
+
+Cookie source:
+  --mode service|full   service = scoped JSON (default, safe inject)
+                        full    = only *.full.json (raw dump, still domain-filtered)
+  --mode-service        same as --mode service
+  --full                same as --mode full
+
+Options:
+  -i, --pick            Interactive: chọn service + mode
+  --cookies-dir <path>  Cookie root (default: ./cookies)
+  --profile-dir <path>  Isolated Chrome profile
+  --port <number>       CDP port (default: 9222)
+  --chrome <path>       Chrome executable
+  --no-open             Do not open/reload service
+  --dry-run             Validate without starting Chrome
+  --json                Machine-readable result
+
+Examples:
+  ./import-cookies-to-chrome.sh                 # menu chọn service + mode
+  ./import-cookies-to-chrome.sh grok
+  ./import-cookies-to-chrome.sh grok --full
+  ./import-cookies-to-chrome.sh chatgpt --mode full --dry-run`;
 }
 
 async function main() {
   const options = parseArgs(process.argv.slice(2));
-  if (options.help || !options.service) { console.log(usage()); process.exitCode = options.help ? 0 : 2; return; }
+  if (options.help) { console.log(usage()); process.exitCode = 0; return; }
+
+  const wantInteractive = options.pick || !options.service;
+  if (wantInteractive) {
+    if (!input.isTTY) {
+      console.log(usage());
+      process.exitCode = 2;
+      return;
+    }
+    const picked = await interactivePick(options.cookiesDir, {
+      needService: !options.service,
+      needMode: !options.modeExplicit,
+    });
+    if (!picked) { console.log("Cancelled."); process.exitCode = 0; return; }
+    if (!options.service) options.service = picked.service;
+    if (!options.modeExplicit) options.mode = picked.mode;
+  }
+
+  if (!options.service) { console.log(usage()); process.exitCode = 2; return; }
   const config = SERVICE_CONFIG[options.service];
   if (!config) throw new Error(`Unsupported service: ${options.service}. Supported: ${Object.keys(SERVICE_CONFIG).join(", ")}`);
   const sourceService = config.source || options.service;
   const serviceDir = resolve(options.cookiesDir, sourceService);
-  const loaded = await loadServiceCookies(serviceDir, config.domains);
-  const localStorageEntries = await loadServiceStorage(serviceDir, sourceService);
-  if (!loaded.cookies.length) throw new Error(`No valid cookies found in ${serviceDir}.`);
-  if (options.dryRun) { console.log(JSON.stringify({ service: options.service, sourceService, dryRun: true, files: loaded.files, cookies: loaded.cookies.length, localStorageKeys: Object.keys(localStorageEntries).length, rejected: loaded.rejected }, null, options.json ? 0 : 2)); return; }
+  const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode);
+  const localStorageEntries = options.mode === "service"
+    ? await loadServiceStorage(serviceDir, sourceService)
+    : {};
+  if (!loaded.cookies.length) {
+    const hint = options.mode === "full"
+      ? `No valid cookies in ${sourceService}/*.full.json (mode=full).`
+      : `No valid cookies found in ${serviceDir} (mode=service).`;
+    throw new Error(hint);
+  }
+  if (options.dryRun) {
+    console.log(JSON.stringify({
+      service: options.service, sourceService, mode: options.mode, dryRun: true,
+      files: loaded.files, cookies: loaded.cookies.length,
+      localStorageKeys: Object.keys(localStorageEntries).length, rejected: loaded.rejected,
+    }, null, options.json ? 0 : 2));
+    return;
+  }
   const endpoint = await ensureChrome(options);
   const cdp = await connectCdp(endpoint.webSocketDebuggerUrl);
   let action = "not-opened";
@@ -226,8 +435,13 @@ async function main() {
       localStorageApplied = await applyLocalStorage(options.port, config.url, localStorageEntries);
       action = `${action}+storage`;
     }
-    console.log(JSON.stringify({ service: options.service, sourceService, imported: expected.size, localStorageApplied, files: loaded.files, rejected: loaded.rejected, action, profileDir: options.profileDir, target: config.url }, null, options.json ? 0 : 2));
+    console.log(JSON.stringify({
+      service: options.service, sourceService, mode: options.mode, imported: expected.size,
+      localStorageApplied, files: loaded.files, rejected: loaded.rejected, action,
+      profileDir: options.profileDir, target: config.url,
+    }, null, options.json ? 0 : 2));
   } finally { cdp.close(); }
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) main().catch((error) => { console.error(`ERROR: ${error.message}`); process.exitCode = 1; });
+const isCli = Boolean(process.argv[1]) && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isCli) main().catch((error) => { console.error(`ERROR: ${error.message}`); process.exitCode = 1; });

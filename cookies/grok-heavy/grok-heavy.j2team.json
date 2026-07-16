@@ -1,8 +1,8 @@
 {
-  "url": "https://grok.com",
+  "url": "https://grok.com/",
   "serviceId": "grok-heavy",
-  "serviceName": "Grok Heavy",
-  "exportedAt": "2026-07-14T02:02:33.098Z",
+  "serviceName": "grok-heavy",
+  "exportedAt": "2026-07-16T01:48:41.495670+00:00",
   "cookies": [
     {
       "domain": ".grok.com",
