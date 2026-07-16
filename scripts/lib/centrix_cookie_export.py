@@ -30,30 +30,35 @@ from urllib.parse import urlparse
 
 # ── Catalog / aliases (single source for both CLIs) ─────────────────────
 
+# Keep in sync with scripts/lib/centrix-export-common.sh CENTRIX_KNOWN_SERVICES
 SERVICE_URLS: dict[str, str] = {
-    "chatgpt": "https://chatgpt.com",
-    "notebooklm": "https://chatgpt.com",
-    "claude": "https://claude.ai",
-    "gemini": "https://gemini.google.com",
-    "perplexity": "https://www.perplexity.ai",
-    "grok": "https://grok.com",
-    "grok-heavy": "https://grok.com",
-    "microsoft-copilot": "https://copilot.microsoft.com",
-    "deepseek": "https://chat.deepseek.com/sign_in",
-    "mistral": "https://chat.mistral.ai",
-    "midjourney": "https://www.midjourney.com",
-    "poe": "https://poe.com",
+    "chatgpt": "https://chatgpt.com/",
+    "notebooklm": "https://chatgpt.com/",
+    "claude": "https://claude.ai/new",
+    "gemini": "https://gemini.google.com/",
+    "perplexity": "https://www.perplexity.ai/",
+    "grok": "https://grok.com/",
+    "grok-heavy": "https://grok.com/",
+    "microsoft-copilot": "https://copilot.microsoft.com/",
+    "deepseek": "https://chat.deepseek.com/",
+    "mistral": "https://chat.mistral.ai/",
+    "midjourney": "https://www.midjourney.com/",
+    "poe": "https://poe.com/",
     "elevenlabs": "https://elevenlabs.io/app",
-    "envato-elements": "https://elements.envato.com",
-    "gamma": "https://gamma.app",
-    "monica": "https://monica.im",
-    "semrush": "https://www.semrush.com",
+    "envato-elements": "https://elements.envato.com/",
+    "gamma": "https://gamma.app/",
+    "monica": "https://monica.im/",
+    "semrush": "https://www.semrush.com/",
 }
 
-# CLI alias → canonical service id (pool slot)
+# CLI alias → canonical service id (pool slot). Disable: CENTRIX_NO_ALIASES=1
 SERVICE_ALIASES: dict[str, str] = {
     "chatgpt": "notebooklm",
+    "gpt": "notebooklm",
+    "gpt-5": "notebooklm",
+    "chatgpt-pro": "notebooklm",
     "grok": "grok-heavy",
+    "grok-4": "grok-heavy",
 }
 
 DEEPSEEK_STORAGE_KEYS = (
@@ -65,6 +70,8 @@ DEEPSEEK_STORAGE_KEYS = (
 
 def resolve_service_id(service_id: str) -> str:
     raw = str(service_id or "").strip().lower()
+    if os.environ.get("CENTRIX_NO_ALIASES", "").strip() in ("1", "true", "yes"):
+        return raw
     return SERVICE_ALIASES.get(raw, raw)
 
 

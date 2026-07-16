@@ -43,7 +43,8 @@ Reinstall app:
 | **`export-centrix-cookies.sh`** | Hook dump cookie mỗi lần mở service + `watch` / convert |
 | **`export-centrix-api.sh`** | API trực tiếp: login Google + `/profile/export` (không mở UI) |
 | **`export-pick-service.sh`** | Chọn service → export offline (ChatGPT → + `auth.openai.com`) |
-| **`scripts/lib/centrix_cookie_export.py`** | **Pattern export chung** — pick / API / export-centrix-cookies reuse |
+| **`scripts/lib/centrix-export-common.sh`** | **Shell shared** — paths, aliases, `--chrome`, `convert_dump` |
+| **`scripts/lib/centrix_cookie_export.py`** | **Write pattern chung** — 3 CLI → `cookies/<service>/` + sidecars |
 | **`import-cookies-to-chrome.sh`** | Import cookie vào Chrome profile riêng qua CDP |
 | **`CentriX-App-User-Setup-3.6.16.exe`** | Installer Windows (~93 MB) |
 | **`README.md`** | Doc này |

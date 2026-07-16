@@ -2,144 +2,53 @@
 # export-centrix-cookies.sh
 # Export cookies from CentriX App User (Wine) → files on Mac for curl / Cookie-Editor / browser.
 #
+# Shared write pattern: scripts/lib/centrix-export-common.sh
+#   → scripts/lib/centrix_cookie_export.py --sidecars
+# (same as export-pick-service.sh + export-centrix-api.sh)
+#
 # WHY NOT just read Cookies SQLite?
 #   ChatGPT/Claude sessions live in a RAM-only Electron partition (tgbyhnujmik-*).
 #   Disk DB .../mkvhszparoue/Network/Cookies is usually EMPTY for those services.
 #
 # Modes:
-#   dump-live   (default)  Patch app once → you open service → dump JSON → convert → restore asar
+#   dump-live   (default)  Patch app once → you open service → dump JSON → convert
 #   install-hook           Keep dump hook forever: every service-open overwrites cookie files
-#   watch                  Watch dumps + convert/overwrite J2TEAM on each service open (run alongside app)
+#   watch                  Watch dumps + convert/overwrite on each service open
 #   disk                   Export whatever is already in Cookies SQLite (often empty)
-#   convert                Convert a dump JSON / profile snapshot → cookies.txt + editor JSON
+#   convert                Convert a dump JSON / profile snapshot
 #   uninstall-hook         Remove hook + restore asar.bak if present
+#   export-all             Convert all dumps under userData
 #   import-help            Print how to load files into Mac Chrome/Safari/curl
 #
 # Usage:
-#   ./export-centrix-cookies.sh install-hook    # one-time inject, restart app
-#   ./export-centrix-cookies.sh watch           # auto overwrite j2team when you open services
+#   ./export-centrix-cookies.sh install-hook
+#   ./export-centrix-cookies.sh watch
 #   ./export-centrix-cookies.sh dump-live chatgpt
-#   ./export-centrix-cookies.sh dump-live grok  # also writes accounts.x.ai.json
-#   ./export-centrix-cookies.sh dump-live deepseek # also writes chat.deepseek.com.json
 #   ./export-centrix-cookies.sh convert /path/to/cookies-dump-chatgpt.json
-#   ./export-centrix-cookies.sh export-all --chrome # export + import vào Chrome profile riêng
+#   ./export-centrix-cookies.sh export-all --chrome
 #
 set -euo pipefail
 
 SCRIPT_PATH="${0:A}"
 SCRIPT_DIR="${SCRIPT_PATH:h}"
 SCRIPT_NAME="${SCRIPT_PATH:t}"
-IMPORT_TO_CHROME="${IMPORT_TO_CHROME:-0}"
-typeset -a _positional_args=()
-for _arg in "$@"; do
-  if [[ "$_arg" == "--chrome" ]]; then
-    IMPORT_TO_CHROME=1
-  else
-    _positional_args+=("$_arg")
-  fi
-done
-set -- "${_positional_args[@]}"
-WINEPREFIX="${WINEPREFIX:-$SCRIPT_DIR/wine-prefix-centrix}"
-WINE="${WINE:-/Applications/Wine Stable.app/Contents/Resources/wine/bin/wine}"
-# Resolve Wine user dir (username differs per Mac)
-_wine_user_base=""
-for _u in "$USER" pat; do
-  if [[ -d "$WINEPREFIX/drive_c/users/$_u/AppData" ]]; then
-    _wine_user_base="$WINEPREFIX/drive_c/users/$_u"
-    break
-  fi
-done
-if [[ -z "$_wine_user_base" ]]; then
-  _cand=("$WINEPREFIX"/drive_c/users/*/AppData(N))
-  (( ${#_cand} > 0 )) && _wine_user_base="${_cand[1]:h}"
-fi
-_wine_user_base="${_wine_user_base:-$WINEPREFIX/drive_c/users/$USER}"
-APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX App User"
-ASAR="$APP_DIR/resources/app.asar"
-ASAR_BAK="$APP_DIR/resources/app.asar.bak-cookie-export"
-USERDATA="${_wine_user_base}/AppData/Roaming/mkvhszparoue"
-# Cookie exports live inside the project (override with OUT_DIR=...)
-OUT_DIR="${OUT_DIR:-$SCRIPT_DIR/cookies}"
-TMP_ASAR="${TMPDIR:-/tmp}/centrix-asar-cookie-export-$$"
-MARKER_NAME="REQUEST_COOKIE_DUMP"
-DUMP_GLOB="cookies-dump-*.json"
+
+source "$SCRIPT_DIR/scripts/lib/centrix-export-common.sh"
+centrix_export_init
+centrix_parse_shared_flags "$@"
+set -- "${CENTRIX_POS_ARGS[@]}"
 
 mode="${1:-dump-live}"
 service_filter="${2:-${SERVICE:-}}"
 
-log()  { print -r -- "▸ $*"; }
-die()  { print -r -- "ERROR: $*" >&2; exit 1; }
-need() { command -v "$1" >/dev/null || die "missing dependency: $1"; }
-
-ensure_out() {
-  mkdir -p "$OUT_DIR"
-}
-
-chrome_ts_to_unix() {
-  # Chromium: microseconds since 1601-01-01 → unix seconds
-  python3 -c "v=int('${1:-0}'); print(0 if v<=0 else int(v/1_000_000 - 11644473600))"
-}
-
-# ── Convert Electron cookie array OR profile snapshot
-#    → shared pattern: scripts/lib/centrix_cookie_export.py
-#    (same as export-pick-service.sh + export-centrix-api.sh)
-#    + sidecars: Netscape / Cookie-Editor / curl / j2team / cookie-header.*
-#
-convert_dump() {
-  local src="$1"
-  local force_url="${2:-}"
-  [[ -f "$src" ]] || die "file not found: $src"
-  ensure_out
-  local base="${src:t:r}"
-  local nice="${base#cookies-dump-}"
-  # Prefer serviceId from dump meta when present
-  local sid="$nice"
-  local meta_sid=""
-  meta_sid=$(python3 -c 'import json,sys
-try:
- d=json.load(open(sys.argv[1],encoding="utf-8"))
- print((d.get("serviceId") or "").strip() if isinstance(d,dict) else "")
-except Exception:
- pass' "$src" 2>/dev/null) || true
-  [[ -n "${meta_sid:-}" ]] && sid="$meta_sid"
-
-  local j2team_dir="${J2TEAM_OUT_DIR:-}"
-  local -a _py_args=(
-    "$SCRIPT_DIR/scripts/lib/centrix_cookie_export.py"
-    --service "$sid"
-    --dump "$src"
-    --out-dir "$OUT_DIR"
-    --sidecars
-  )
-  [[ -n "${force_url:-}" ]] && _py_args+=(--url "$force_url")
-  [[ -n "${j2team_dir:-}" ]] && _py_args+=(--j2team-dir "$j2team_dir")
-
-  log "Export (shared pattern) service=$sid  ←  $src"
-  python3 "${_py_args[@]}"
-
-  local service_out="$OUT_DIR/${sid}"
-  # alias folder if nice != sid (e.g. dump name vs meta id)
-  if [[ "$nice" != "$sid" && -d "$OUT_DIR/$sid" && ! -e "$OUT_DIR/$nice" ]]; then
-    ln -sfn "$sid" "$OUT_DIR/$nice" 2>/dev/null || true
-  fi
-
-  log "OUT_DIR=$OUT_DIR"
-  log "Service folder: $service_out/"
-  log "J2TEAM: $service_out/${sid}.json (+ .full.json, specials, sidecars)"
-  if [[ -n "$j2team_dir" && -d "$j2team_dir" ]]; then
-    log "Also copied → $j2team_dir/"
-  fi
-}
-
 # ── Disk SQLite (usually empty for ChatGPT pool) ──
 export_disk() {
   need sqlite3
-  need python3
+  need_python
   ensure_out
   local db="$USERDATA/Network/Cookies"
   [[ -f "$db" ]] || die "Cookies DB not found: $db"
 
-  # Copy to avoid locks
   local copy="$OUT_DIR/Cookies.copy.db"
   cp -f "$db" "$copy" 2>/dev/null || cp -f "$db" "$copy"
   chmod 600 "$copy"
@@ -149,7 +58,7 @@ export_disk() {
   fi
 
   local json="$OUT_DIR/cookies-dump-disk.json"
-  python3 - "$copy" "$json" <<'PY'
+  "$PYTHON" - "$copy" "$json" <<'PY'
 import sqlite3, json, sys
 from pathlib import Path
 db, out = sys.argv[1:3]
@@ -163,7 +72,6 @@ except Exception as e:
 cookies = []
 for r in rows:
     d = dict(r)
-    # map chromium → electron-ish
     cookies.append({
         "name": d.get("name"),
         "value": d.get("value") or "",
@@ -180,13 +88,13 @@ print(len(cookies))
 PY
 
   local n
-  n=$(python3 -c "import json;print(len(json.load(open('$json'))))")
+  n=$("$PYTHON" -c "import json;print(len(json.load(open('$json'))))")
   log "Disk cookies: $n → $json"
   if (( n == 0 )); then
     log "EMPTY — ChatGPT cookies are RAM-only. Use: $SCRIPT_NAME dump-live chatgpt"
     return 0
   fi
-  convert_dump "$json"
+  convert_dump "$json" "" "disk-export"
 }
 
 # Hook body: ALWAYS dump+overwrite on every service-open-ready
@@ -199,7 +107,6 @@ try {
   const __sname = String((activeService && activeService.name) || __sid);
   const __surl = String((activeService && activeService.url) || "");
   const __ud = app.getPath("userData");
-  // Always dump (overwrite) full session cookies for this service open
   const __storagePromise = __sid.includes("deepseek")
     ? tab.webContents.executeJavaScript(`(() => {
         const keys = ["userToken", "settingsJwt", "__appKit_@deepseek/chat_lastSessionValue"];
@@ -216,25 +123,30 @@ try {
         cookies: list || [],
         localStorage: localStorage || {}
       };
-      const out = __path.join(__ud, `cookies-dump-${__sid}.json`);
-      // atomic-ish overwrite
+      const __base = `cookies-dump-${__sid}.json`;
+      const out = __path.join(__ud, __base);
       const tmp = out + ".tmp";
       __fs.writeFileSync(tmp, JSON.stringify(payload, null, 2), { mode: 0o600 });
       __fs.renameSync(tmp, out);
       try { __fs.chmodSync(out, 0o600); } catch (_) {}
-      // touch marker so external watchers wake immediately
-      try { __fs.writeFileSync(__path.join(__ud, "COOKIE_DUMP_LATEST.txt"), `${__sid}\n${out}\n${(list||[]).length}\n`); } catch (_) {}
-      writeUserRuntimeLog("cookie-export-dump", { serviceId: __sid, serviceName: __sname, count: (list || []).length, out, overwrite: true });
+      // Marker: serviceId + basename only (Mac watch; avoid Wine C:\\ paths)
+      try {
+        __fs.writeFileSync(
+          __path.join(__ud, "COOKIE_DUMP_LATEST.txt"),
+          `${__sid}\n${__base}\n${(list || []).length}\n`,
+          { mode: 0o600 }
+        );
+      } catch (_) {}
+      writeUserRuntimeLog("cookie-export-dump", { serviceId: __sid, serviceName: __sname, count: (list || []).length, out: __base, overwrite: true });
     })
     .catch((e) => writeUserRuntimeLog("cookie-export-fail", { serviceId: __sid, error: String(e && e.message || e) }));
 } catch (e) { /* never break openService */ }
 // --- END CENTRIX_COOKIE_EXPORT_HOOK ---
 '
 
-# ── Live dump: asar hook ──
 inject_dump_hook() {
   need npx
-  need python3
+  need_python
   [[ -f "$ASAR" ]] || die "app.asar not found: $ASAR"
 
   if [[ ! -f "$ASAR_BAK" ]]; then
@@ -252,39 +164,54 @@ inject_dump_hook() {
   [[ -f "$main" ]] || die "main not found in asar (unexpected build layout)"
 
   log "Install/refresh cookie dump hook (overwrite on every service open)…"
-  HOOK_JS="$HOOK_JS" python3 - "$main" <<'PY'
+  HOOK_JS="$HOOK_JS" "$PYTHON" - "$main" <<'PY'
 from pathlib import Path
 import os, re, sys
+
 main = Path(sys.argv[1])
 text = main.read_text(encoding="utf-8")
 hook = os.environ["HOOK_JS"]
-# Remove old hook if present
-text2 = re.sub(
+
+text = re.sub(
     r"\n// --- CENTRIX_COOKIE_EXPORT_HOOK.*?// --- END CENTRIX_COOKIE_EXPORT_HOOK ---\n?",
     "\n",
     text,
     flags=re.S,
 )
-text = text2
-needle = 'writeUserRuntimeLog("service-open-ready", {'
-idx = text.find(needle)
-if idx < 0:
+
+m = re.search(
+    r'writeUserRuntimeLog\(\s*"service-open-ready"\s*,\s*\{.*?\n\s*\}\)\s*;',
+    text,
+    flags=re.S,
+)
+if not m:
     raise SystemExit("could not find service-open-ready log site to inject")
-rest = text[idx:]
-close_rel = rest.find("\n        });")
-if close_rel < 0:
-    raise SystemExit("could not find closing }); for service-open-ready")
-insert_at = idx + close_rel + len("\n        });")
+
+insert_at = m.end()
 text = text[:insert_at] + "\n" + hook + text[insert_at:]
 main.write_text(text, encoding="utf-8")
-print("hook installed (always overwrite on service open)")
+print(f"hook installed at offset {insert_at} (always overwrite on service open)")
 PY
 
   log "Repack asar…"
   npx --yes @electron/asar pack "$TMP_ASAR" "$ASAR"
   rm -rf "$TMP_ASAR"
-  # keep permanent enable marker (optional; hook always runs now)
+  mkdir -p "$USERDATA"
   : > "$USERDATA/$MARKER_NAME"
+  if [[ -f "$USERDATA/COOKIE_DUMP_LATEST.txt" ]]; then
+    local _sid _line2 _n _resolved
+    _sid=$(sed -n '1p' "$USERDATA/COOKIE_DUMP_LATEST.txt" 2>/dev/null || true)
+    _line2=$(sed -n '2p' "$USERDATA/COOKIE_DUMP_LATEST.txt" 2>/dev/null || true)
+    _n=$(sed -n '3p' "$USERDATA/COOKIE_DUMP_LATEST.txt" 2>/dev/null || true)
+    if [[ -n "$_sid" ]]; then
+      _resolved=$(resolve_dump_path "$_line2" 2>/dev/null || true)
+      if [[ -n "$_resolved" ]]; then
+        print -r -- "${_sid}"$'\n'"${_resolved:t}"$'\n'"${_n:-0}" > "$USERDATA/COOKIE_DUMP_LATEST.txt"
+      else
+        print -r -- "${_sid}"$'\n'"cookies-dump-${_sid}.json"$'\n'"${_n:-0}" > "$USERDATA/COOKIE_DUMP_LATEST.txt"
+      fi
+    fi
+  fi
   log "Hook active: mỗi lần service-open-ready → ghi đè cookies-dump-<id>.json"
 }
 
@@ -302,103 +229,69 @@ uninstall_hook() {
   log "Hook removed. Restart CentriX to load clean asar."
 }
 
-# Map serviceId → default site URL for j2team
-service_url_hint() {
-  case "$1" in
-    chatgpt|notebooklm|*gpt*) print -r -- "https://chatgpt.com" ;;
-    claude*) print -r -- "https://claude.ai" ;;
-    gemini*) print -r -- "https://gemini.google.com" ;;
-    grok*) print -r -- "https://grok.com" ;;
-    deepseek*) print -r -- "https://chat.deepseek.com/sign_in" ;;
-    perplexity*) print -r -- "https://www.perplexity.ai" ;;
-    envato*) print -r -- "https://elements.envato.com" ;;
-    *) print -r -- "" ;;
-  esac
-}
-
-# Convert one dump and overwrite outputs (Desktop + centriq-cookies-injector)
-process_dump_file() {
-  local f="$1"
-  [[ -f "$f" ]] || return 1
-  local sid="${${f:t}#cookies-dump-}"
-  sid="${sid%.json}"
-  local hint
-  hint=$(service_url_hint "$sid")
-  # prefer url inside dump if present
-  if command -v python3 >/dev/null; then
-    local u
-    u=$(python3 -c "import json;d=json.load(open('$f'));print(d.get('url') or '')" 2>/dev/null || true)
-    [[ -n "$u" ]] && hint="$u"
-  fi
-  log "Overwrite service JSON: $sid ← $f"
-  convert_dump "$f" "$hint"
-  if (( IMPORT_TO_CHROME )); then
-    "$SCRIPT_DIR/import-cookies-to-chrome.sh" "$sid" --cookies-dir "$OUT_DIR"
-  fi
-}
-
-# Rebuild all service JSON files from existing dumps
 export_all_services() {
   ensure_out
-  local n=0
-  local f
-  # Only raw dumps: cookies-dump-<serviceId>.json (skip *.cookie-editor*, disk empty, etc.)
+  local n=0 f base
   for f in "$USERDATA"/cookies-dump-*.json(N); do
     [[ -f "$f" ]] || continue
-    local base="${f:t}"
-    # skip noise
+    base="${f:t}"
     [[ "$base" == *cookie-editor* ]] && continue
     [[ "$base" == "cookies-dump-disk.json" ]] && continue
-    process_dump_file "$f" && (( n++ )) || true
+    process_dump_file "$f" "hook-export" && (( n++ )) || true
   done
   log "Built $n service cookie folder(s) under $OUT_DIR/"
   print -r -- "---- service folders ----"
-  setopt NULL_GLOB 2>/dev/null || true
   ls -lad "$OUT_DIR"/*/ 2>/dev/null || true
 }
 
-# Watch userdata dumps; on change → overwrite j2team files
 watch_dumps() {
   set +x 2>/dev/null || true
-  need python3
+  setopt localoptions noxtrace 2>/dev/null || true
+  need_python
   ensure_out
+  [[ -d "$USERDATA" ]] || die "userData not found: $USERDATA (run CentriX once first)"
   local j2team_dir="${J2TEAM_OUT_DIR:-}"
   [[ -n "$j2team_dir" ]] && export J2TEAM_OUT_DIR="$j2team_dir"
   log "Watching $USERDATA/cookies-dump-*.json"
   log "On each service open → overwrite $OUT_DIR/ (project cookies/)"
   [[ -n "$j2team_dir" ]] && log "Also copy → $j2team_dir"
+  if [[ ! -f "$ASAR_BAK" ]]; then
+    log "NOTE: hook not installed (no asar.bak). New dumps need: $SCRIPT_NAME install-hook"
+  fi
   log "Ctrl+C to stop"
 
-  # seed: process existing dumps once
-  local f
+  typeset -A seen
+  local f _mt _sz _key latest_raw latest
+
   for f in "$USERDATA"/cookies-dump-*.json(N); do
-    process_dump_file "$f" || true
+    _mt=$(stat -f %m "$f" 2>/dev/null || print 0)
+    _sz=$(stat -f %z "$f" 2>/dev/null || print 0)
+    seen[$f]="${_mt}:${_sz}"
+    process_dump_file "$f" "hook-export" || true
   done
 
-  # poll mtimes (portable, no fswatch required)
-  typeset -A seen
   while true; do
     for f in "$USERDATA"/cookies-dump-*.json(N); do
-      local _mt _sz _key
       _mt=$(stat -f %m "$f" 2>/dev/null || print 0)
       _sz=$(stat -f %z "$f" 2>/dev/null || print 0)
       _key="${_mt}:${_sz}"
       if [[ "${seen[$f]:-}" != "$_key" ]]; then
         seen[$f]="$_key"
         sleep 0.3
-        process_dump_file "$f" || true
+        process_dump_file "$f" "hook-export" || true
       fi
     done
     if [[ -f "$USERDATA/COOKIE_DUMP_LATEST.txt" ]]; then
-      local latest
-      latest=$(sed -n '2p' "$USERDATA/COOKIE_DUMP_LATEST.txt" 2>/dev/null)
+      latest_raw=$(sed -n '2p' "$USERDATA/COOKIE_DUMP_LATEST.txt" 2>/dev/null)
+      [[ -z "$latest_raw" ]] && latest_raw=$(sed -n '1p' "$USERDATA/COOKIE_DUMP_LATEST.txt" 2>/dev/null)
+      latest=$(resolve_dump_path "$latest_raw" 2>/dev/null || true)
       if [[ -n "$latest" && -f "$latest" ]]; then
         _mt=$(stat -f %m "$latest" 2>/dev/null || print 0)
         _sz=$(stat -f %z "$latest" 2>/dev/null || print 0)
         _key="${_mt}:${_sz}"
         if [[ "${seen[$latest]:-}" != "$_key" ]]; then
           seen[$latest]="$_key"
-          process_dump_file "$latest" || true
+          process_dump_file "$latest" "hook-export" || true
         fi
       fi
     fi
@@ -409,7 +302,6 @@ watch_dumps() {
 install_hook_and_restart() {
   inject_dump_hook
   log "Restart CentriX to load hook…"
-  # kill without self-match
   pgrep -x wineserver | while read p; do kill "$p" 2>/dev/null; done
   ps -axo pid=,comm= | while read -r pid comm; do
     case "$comm" in
@@ -428,20 +320,24 @@ install_hook_and_restart() {
 
 wait_for_dumps() {
   local timeout="${1:-180}"
+  local since_epoch="${2:-0}"
   local i=0
-  log "Waiting up to ${timeout}s for cookie dumps in userData…"
-  log "→ In CentriX: open (or re-open) the service (e.g. ChatGPT) so the hook fires."
+  log "Waiting up to ${timeout}s for fresh cookie dumps in userData…"
+  log "→ In CentriX: open (or re-open) the service so the hook fires."
   while (( i < timeout )); do
     local found=()
     found=("$USERDATA"/cookies-dump-*.json(N))
     if (( ${#found} > 0 )); then
-      local f
+      local f _mt n
       for f in "${found[@]}"; do
-        # skip empty arrays?
-        local n
-        n=$(python3 -c "import json;d=json.load(open('$f'));print(len(d.get('cookies',d) if isinstance(d,dict) else d))" 2>/dev/null || echo 0)
+        if [[ -n "$service_filter" && "$f" != *"${service_filter}"* ]]; then
+          continue
+        fi
+        _mt=$(stat -f %m "$f" 2>/dev/null || print 0)
+        (( _mt < since_epoch )) && continue
+        n=$("$PYTHON" -c "import json;d=json.load(open('$f'));print(len(d.get('cookies',d) if isinstance(d,dict) else d))" 2>/dev/null || echo 0)
         if (( n > 0 )); then
-          log "Found $f ($n cookies)"
+          log "Found $f ($n cookies, mtime=${_mt})"
           print -r -- "$f"
           return 0
         fi
@@ -456,7 +352,6 @@ wait_for_dumps() {
 
 dump_live() {
   ensure_out
-  # Keep hook after dump (overwrite-on-open is the desired behavior)
   inject_dump_hook
 
   log "Restart CentriX so the hook loads…"
@@ -469,22 +364,26 @@ dump_live() {
   sleep 2
   export WINEPREFIX WINEDEBUG="-all" LIBGL_ALWAYS_SOFTWARE="${LIBGL_ALWAYS_SOFTWARE:-1}"
   local exe="$APP_DIR/CentriX App User.exe"
+  local wait_since
+  wait_since=$(date +%s)
   nohup "$WINE" explorer /desktop=CentriX,1440x900 "$exe" \
     --disable-gpu --disable-gpu-compositing --no-sandbox \
     >/tmp/centrix-cookie-export-run.log 2>&1 &
   log "CentriX launching (pid $!) — open a service to dump+overwrite cookies."
 
   local dump
-  if ! dump=$(wait_for_dumps 180); then
-    die "No cookie dump. Open a service in CentriX, or check /tmp/centrix-cookie-export-run.log"
+  if ! dump=$(wait_for_dumps 180 "$wait_since"); then
+    die "No fresh cookie dump. Open a service in CentriX, or check /tmp/centrix-cookie-export-run.log"
   fi
 
-  local f
+  local f _mt
   for f in "$USERDATA"/cookies-dump-*.json(N); do
     if [[ -n "$service_filter" && "$f" != *"${service_filter}"* ]]; then
       continue
     fi
-    process_dump_file "$f" || true
+    _mt=$(stat -f %m "$f" 2>/dev/null || print 0)
+    (( _mt < wait_since )) && continue
+    process_dump_file "$f" "hook-export" || true
   done
 
   log "Done. Hook stays installed — mỗi lần mở service sẽ ghi đè dump."
@@ -499,27 +398,22 @@ import_help() {
 === Import cookies onto this Mac ===
 
 Output folder: $OUT_DIR
+Shared pattern: scripts/lib/centrix_cookie_export.py (+sidecars)
 
-1) curl / scripts (easiest test)
-   curl -sS -b "$OUT_DIR/cookies-dump-chatgpt.cookies.txt" -L 'https://chatgpt.com/' -o /tmp/cg.html
-   # or header file:
-   # curl -sS -H "Cookie: \$(cat $OUT_DIR/cookie-header.chatgpt.com.txt)" -L 'https://chatgpt.com/'
+1) curl
+   curl -sS -b "$OUT_DIR/<service>/cookies-dump-*.cookies.txt" -L 'https://…'
 
-2) Chrome / Edge / Brave — Cookie-Editor extension
-   - Install "Cookie-Editor" (or EditThisCookie)
-   - Open https://chatgpt.com
-   - Import → paste contents of:
-       $OUT_DIR/*.cookie-editor.json
+2) Chrome — Cookie-Editor or:
+   ./import-cookies-to-chrome.sh <service>
+   ./export-centrix-cookies.sh export-all --chrome
 
-3) Manual
-   - DevTools → Application → Cookies → add rows from the JSON
+3) Related CLIs (same pattern)
+   ./export-pick-service.sh <service>
+   ./export-centrix-api.sh export <service>
 
 NOTES
-   • Session cookies may expire quickly; pool slots may be rotated by CentriX server.
-   • Exporting shared/pool logins may violate CentriX / OpenAI ToS — use only on accounts you own / are allowed to use.
-   • Disk DB is usually empty; prefer dump-live.
-   • Grok exports accounts.x.ai.json with .x.ai SSO cookies for device approval.
-   • DeepSeek exports chat.deepseek.com.json for https://chat.deepseek.com/sign_in.
+   • Disk DB is usually empty; prefer dump-live / install-hook + watch.
+   • Session cookies may expire; pool slots may rotate.
 
 EOF
 }
@@ -533,16 +427,16 @@ case "$mode" in
   disk)                export_disk ;;
   convert)
     [[ -n "${2:-}" ]] || die "usage: $SCRIPT_NAME convert <dump.json>"
-    convert_dump "$2" "${3:-}"
+    convert_dump "$2" "${3:-}" "convert"
     if (( IMPORT_TO_CHROME )); then
       _convert_sid="${${2:t}#cookies-dump-}"
       _convert_sid="${_convert_sid%.json}"
-      "$SCRIPT_DIR/import-cookies-to-chrome.sh" "$_convert_sid" --cookies-dir "$OUT_DIR"
+      import_cookies_to_chrome "$_convert_sid" || true
     fi
     ;;
   import-help|help-import) import_help ;;
   -h|--help|help)
-    sed -n '1,55p' "$SCRIPT_PATH"
+    sed -n '1,40p' "$SCRIPT_PATH"
     ;;
   *)
     die "unknown mode: $mode (dump-live|install-hook|watch|export-all|disk|convert|uninstall-hook|import-help)"

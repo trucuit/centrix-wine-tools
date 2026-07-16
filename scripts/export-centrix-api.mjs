@@ -13,14 +13,17 @@
  *   ./export-centrix-api.sh export grok
  *   ./export-centrix-api.sh export chatgpt claude
  *   ./export-centrix-api.sh export all
+ *   ./export-centrix-api.sh export all --chrome
  *   ./export-centrix-api.sh status
  *   ./export-centrix-api.sh logout
  *
  * Env:
- *   CENTRIX_APP_VERSION    default 3.17 (User-Agent CentriXAppUser/<ver>)
+ *   CENTRIX_APP_VERSION    default from asar / 3.17 (User-Agent CentriXAppUser/<ver>)
  *   CENTRIX_SERVER_URL     default https://api-centrixapp-quang.centrix.asia
  *   CENTRIX_SESSION_FILE   default ./.centrix-api-session.json
  *   CENTRIX_OUT_DIR        default ./cookies
+ *   J2TEAM_OUT_DIR         optional external injector copy dir
+ *   IMPORT_TO_CHROME=1     after export, run import-cookies-to-chrome.sh
  *   CENTRIX_APP_KEY / CENTRIX_APP_ATTEST_SECRET / CENTRIX_EXPORT_SIGN_KEY
  *     (defaults match App User 3.17 shipped values — friction keys, not hard secrets)
  */
@@ -66,29 +69,56 @@ const SERVER_URL = (process.env.CENTRIX_SERVER_URL || DEFAULT_SERVER).replace(/\
 const MIN_MS_AFTER_LOGIN = 3500;
 const MAX_MS_SINCE_INTERACT = 45000;
 
-/** serviceId → default page URL for J2TEAM export (App User 3.17 DEFAULT_SERVICES) */
+/**
+ * serviceId → default page URL for J2TEAM export.
+ * Base list = App User 3.17 DEFAULT_SERVICES (shared/service-store.js)
+ * + pool-only ids seen on this server (grok-heavy, envato-elements, …).
+ */
 const SERVICE_URLS = {
-  chatgpt: "https://chatgpt.com",
-  notebooklm: "https://notebooklm.google.com",
-  claude: "https://claude.ai",
-  gemini: "https://gemini.google.com",
-  perplexity: "https://www.perplexity.ai",
-  grok: "https://grok.com",
-  "grok-heavy": "https://grok.com",
-  "microsoft-copilot": "https://copilot.microsoft.com",
-  deepseek: "https://chat.deepseek.com",
-  mistral: "https://chat.mistral.ai",
-  midjourney: "https://www.midjourney.com",
-  poe: "https://poe.com",
+  chatgpt: "https://chatgpt.com/",
+  claude: "https://claude.ai/new",
+  gemini: "https://gemini.google.com/",
+  perplexity: "https://www.perplexity.ai/",
+  "microsoft-copilot": "https://copilot.microsoft.com/",
+  grok: "https://grok.com/",
+  "grok-heavy": "https://grok.com/",
+  deepseek: "https://chat.deepseek.com/",
+  mistral: "https://chat.mistral.ai/",
+  midjourney: "https://www.midjourney.com/",
+  poe: "https://poe.com/",
+  notebooklm: "https://notebooklm.google.com/",
   elevenlabs: "https://elevenlabs.io/app",
-  "envato-elements": "https://elements.envato.com",
+  // pool / custom services (not always in DEFAULT_SERVICES)
+  "envato-elements": "https://elements.envato.com/",
+  gamma: "https://gamma.app/",
+  monica: "https://monica.im/",
+  semrush: "https://www.semrush.com/",
 };
 
-/** Pool profile aliases used by this tooling (server-side profile names). */
-const ALIASES = {
-  chatgpt: "notebooklm",
-  grok: "grok-heavy",
-};
+/**
+ * Pool profile aliases used by this tooling (server-side profile names).
+ * On this CentriX deploy: ChatGPT pool slot often id=notebooklm (GPT-5.5 Pro),
+ * Grok Heavy slot id=grok-heavy. Override with CENTRIX_NO_ALIASES=1 to export raw ids.
+ */
+const ALIASES =
+  process.env.CENTRIX_NO_ALIASES === "1"
+    ? {}
+    : {
+        chatgpt: "notebooklm",
+        gpt: "notebooklm",
+        "gpt-5": "notebooklm",
+        "chatgpt-pro": "notebooklm",
+        grok: "grok-heavy",
+        "grok-4": "grok-heavy",
+      };
+
+/** Runtime flags (shell sets env; argv --chrome may flip after load). */
+function wantChromeImport() {
+  return process.env.IMPORT_TO_CHROME === "1";
+}
+function j2teamOutDir() {
+  return String(process.env.J2TEAM_OUT_DIR || "").trim();
+}
 
 function b64urlJson(obj) {
   return Buffer.from(JSON.stringify(obj))
@@ -748,10 +778,10 @@ function resolveServiceId(id) {
 const SHARED_EXPORT_PY = join(ROOT, "scripts/lib/centrix_cookie_export.py");
 
 /**
- * Shared write pattern with export-pick-service.sh
- * → scripts/lib/centrix_cookie_export.py
+ * Shared write pattern with export-pick-service.sh + export-centrix-cookies.sh
+ * → scripts/lib/centrix_cookie_export.py (--sidecars for Netscape/curl/editor/j2team)
  */
-function writeCookiesViaSharedPattern(serviceId, payload, { urlHint = "", source = "api-export" } = {}) {
+function writeCookiesViaSharedPattern(serviceId, payload, { urlHint = "", source = "api-export", name = "" } = {}) {
   return new Promise((resolvePromise, reject) => {
     const py =
       process.env.PYTHON ||
@@ -767,8 +797,12 @@ function writeCookiesViaSharedPattern(serviceId, payload, { urlHint = "", source
       urlHint || "",
       "--source",
       source,
+      "--sidecars",
       "--json",
     ];
+    if (name) args.push("--name", name);
+    const j2 = j2teamOutDir();
+    if (j2) args.push("--j2team-dir", j2);
     const child = spawn(py, args, { stdio: ["pipe", "pipe", "inherit"] });
     let stdout = "";
     child.stdout.on("data", (d) => {
@@ -788,6 +822,28 @@ function writeCookiesViaSharedPattern(serviceId, payload, { urlHint = "", source
     });
     child.stdin.write(JSON.stringify(payload));
     child.stdin.end();
+  });
+}
+
+/** Optional: import just-exported service into isolated Chrome profile via CDP. */
+function importToChrome(serviceId) {
+  return new Promise((resolvePromise, reject) => {
+    const sh = join(ROOT, "import-cookies-to-chrome.sh");
+    if (!existsSync(sh)) {
+      log("WARN: import-cookies-to-chrome.sh missing — skip --chrome");
+      resolvePromise(null);
+      return;
+    }
+    log(`Chrome import: ${serviceId}`);
+    const child = spawn("zsh", [sh, serviceId, "--cookies-dir", OUT_DIR], {
+      stdio: "inherit",
+      env: process.env,
+    });
+    child.on("error", reject);
+    child.on("close", (code) => {
+      if (code !== 0) reject(new Error(`import-cookies-to-chrome exit ${code}`));
+      else resolvePromise(true);
+    });
   });
 }
 
@@ -839,28 +895,46 @@ async function exportOne(session, device, serviceId, opts = {}) {
     snapshot = decryptSnapshot(result.encrypted, session.sessionKey);
   }
 
-  // Enrich payload so shared writer has same shape as dump/meta
-  const pageUrl = SERVICE_URLS[sid] || snapshot.url || snapshot.origins?.[0] || "";
+  // Prefer snapshot/server URL (pool may remap notebooklm → chatgpt.com etc.)
+  const pageUrl =
+    snapshot.url ||
+    result.url ||
+    SERVICE_URLS[sid] ||
+    (Array.isArray(snapshot.origins) ? snapshot.origins[0] : "") ||
+    "";
+  const serviceName = snapshot.serviceName || result.serviceName || sid;
   const payload = {
     ...snapshot,
-    url: pageUrl || snapshot.url,
+    url: pageUrl || snapshot.url || "",
     serviceId: sid,
-    serviceName: snapshot.serviceName || sid,
+    serviceName,
     cookies: Array.isArray(snapshot.cookies) ? snapshot.cookies : [],
+    localStorage: snapshot.localStorage || snapshot.storage || {},
+    exportedAt: new Date().toISOString(),
     revision: result.revision,
     assignedProfile: result.assignedProfile || null,
     source: "api-export",
   };
 
-  log(`write via shared pattern → scripts/lib/centrix_cookie_export.py`);
+  log(`write via shared pattern → scripts/lib/centrix_cookie_export.py (+sidecars)`);
   const written = await writeCookiesViaSharedPattern(sid, payload, {
     urlHint: pageUrl,
     source: "api-export",
+    name: serviceName,
   });
 
   log(
     `service=${written.service || sid} cookies=${written.cookies ?? "?"} revision=${result.revision ?? "?"} → ${written.primary || ""}`
   );
+
+  if (wantChromeImport()) {
+    try {
+      await importToChrome(sid);
+    } catch (e) {
+      log(`WARN chrome import ${sid}: ${e.message}`);
+    }
+  }
+
   return { serviceId: sid, cookies: written.cookies, primary: written.primary };
 }
 
@@ -953,18 +1027,22 @@ Commands:
   services           List services from API
   export [ids…]      Pull cookies (default: all enabled)
   export all         Same
-  export grok        Alias → grok-heavy
-  export chatgpt     Alias → notebooklm
+  export grok        Alias → grok-heavy (unless CENTRIX_NO_ALIASES=1)
+  export chatgpt     Alias → notebooklm (pool GPT slot)
   logout             Release + self-revoke + delete session file
 
-Options (export):
+Options (export / shell):
   --no-storage       includeStorage=0 (faster)
+  --chrome           after each service, import into ./.chrome-cookie-profile
 
 Env:
   CENTRIX_APP_VERSION=${APP_VERSION}   # User-Agent CentriXAppUser/<ver>
   CENTRIX_SERVER_URL=${DEFAULT_SERVER}
   CENTRIX_SESSION_FILE=./.centrix-api-session.json
   CENTRIX_OUT_DIR=./cookies
+  J2TEAM_OUT_DIR=                    # optional injector copy
+  IMPORT_TO_CHROME=1                 # same as --chrome
+  CENTRIX_NO_ALIASES=1               # disable chatgpt→notebooklm etc.
 `;
 }
 
@@ -1112,7 +1190,15 @@ async function pickExportServices(rl) {
 }
 
 async function main() {
-  const [cmd, ...rest] = process.argv.slice(2);
+  // Shell may strip --chrome into IMPORT_TO_CHROME; still accept it on argv
+  const argv = process.argv.slice(2).filter((a) => {
+    if (a === "--chrome") {
+      process.env.IMPORT_TO_CHROME = "1";
+      return false;
+    }
+    return true;
+  });
+  const [cmd, ...rest] = argv;
   if (cmd === "-h" || cmd === "--help") {
     console.log(usage());
     process.exit(0);
