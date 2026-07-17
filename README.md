@@ -46,7 +46,7 @@ Reinstall app:
 | **`scripts/lib/centrix-export-common.sh`** | **Shell shared** — paths, aliases, `--chrome`, `convert_dump` |
 | **`scripts/lib/centrix_cookie_export.py`** | **Write pattern chung** — 3 CLI → `cookies/<service>/` + sidecars |
 | **`import-cookies-to-chrome.sh`** | Import cookie vào Chrome profile riêng qua CDP |
-| **`CentriX-App-User-Setup-3.6.16.exe`** | Installer Windows (~93 MB) |
+| **`CentriX-App-User-Setup-3.17.exe`** | Installer Windows (~93 MB) |
 | **`README.md`** | Doc này |
 
 **Không** commit (mỗi máy tự tạo / secret):
@@ -197,7 +197,7 @@ centrix-wine-tools/
 ├── run-centrix.sh
 ├── export-centrix-cookies.sh
 ├── export-pick-service.sh
-├── CentriX-App-User-Setup-3.6.16.exe
+├── CentriX-App-User-Setup-3.17.exe
 ├── README.md
 ├── .gitignore
 ├── cookies/                     # exports (gitignored contents)

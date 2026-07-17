@@ -1,7 +1,0 @@
-appVersion=3.6.16
-electronPackageVersion=0.1.0
-main=src/remote-user-main.js
-extractedAt=2026-07-14T05:56:55Z
-sourceAsar=wine-prefix-centrix/drive_c/users/truc.trantrung3/AppData/Local/Programs/CentriX App User/resources/app.asar
-asarBytes=3430552
-asarSha256=165fbfb767bf83d9a91c502dba6ce29ea04f9b02693bff0b0558fd2e59a5ff48

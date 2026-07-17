@@ -48,8 +48,95 @@ export function normalizeCookie(cookie, allowedDomains, now = Date.now() / 1000)
   const sameSite = { no_restriction: "None", none: "None", lax: "Lax", strict: "Strict" }[String(cookie.sameSite || "").toLowerCase()];
   if (sameSite) result.sameSite = sameSite;
   if (!cookie.session && Number.isFinite(expires) && expires > 0) result.expires = expires;
-  if (cookie.partitionKey?.topLevelSite) result.partitionKey = cookie.partitionKey;
+  // Chrome Network.setCookie requires hasCrossSiteAncestor on partitionKey.
+  if (cookie.partitionKey?.topLevelSite) {
+    result.partitionKey = {
+      topLevelSite: String(cookie.partitionKey.topLevelSite),
+      hasCrossSiteAncestor: Boolean(cookie.partitionKey.hasCrossSiteAncestor),
+    };
+  }
   return result;
+}
+
+/** True when Chrome rejects browser-level Storage cookie APIs (seen on Chrome 150+). */
+export function isBrowserContextUnsupported(error) {
+  return /Browser context management is not supported/i.test(String(error?.message || error || ""));
+}
+
+/** Map normalized cookie → Network.setCookie params. */
+export function toNetworkSetCookieParams(cookie) {
+  const params = {
+    name: cookie.name,
+    value: cookie.value,
+    domain: cookie.domain,
+    path: cookie.path || "/",
+    secure: Boolean(cookie.secure),
+    httpOnly: Boolean(cookie.httpOnly),
+  };
+  if (cookie.sameSite) params.sameSite = cookie.sameSite;
+  if (Number.isFinite(cookie.expires) && cookie.expires > 0) params.expires = cookie.expires;
+  if (cookie.partitionKey?.topLevelSite) {
+    params.partitionKey = {
+      topLevelSite: cookie.partitionKey.topLevelSite,
+      hasCrossSiteAncestor: Boolean(cookie.partitionKey.hasCrossSiteAncestor),
+    };
+  }
+  return params;
+}
+
+function cookieIdentityKey(cookie) {
+  return `${cookie.domain}\t${cookie.path || "/"}\t${cookie.name}`;
+}
+
+/**
+ * Prefer Storage.setCookies (browser target). On Chrome builds that return
+ * "Browser context management is not supported", fall back to per-cookie
+ * Network.setCookie on a page target + Network.getAllCookies verify.
+ */
+export async function injectCookies(browserCdp, cookies, { port }) {
+  try {
+    await browserCdp.call("Storage.setCookies", { cookies });
+    const stored = (await browserCdp.call("Storage.getCookies")).cookies || [];
+    return { method: "Storage", stored };
+  } catch (error) {
+    if (!isBrowserContextUnsupported(error)) throw error;
+  }
+
+  const pageCdp = await connectPageSession(port, browserCdp);
+  try {
+    await pageCdp.call("Network.enable");
+    let failed = 0;
+    for (const cookie of cookies) {
+      const result = await pageCdp.call("Network.setCookie", toNetworkSetCookieParams(cookie));
+      if (!result?.success) failed += 1;
+    }
+    if (failed) {
+      throw new Error(`Network.setCookie failed for ${failed}/${cookies.length} cookies.`);
+    }
+    const stored = (await pageCdp.call("Network.getAllCookies")).cookies || [];
+    return { method: "Network", stored };
+  } finally {
+    pageCdp.close();
+  }
+}
+
+/** Open/reuse any page target and return a CDP session (for Network domain). */
+async function connectPageSession(port, browserCdp) {
+  let targets = await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
+  let page = targets.find((t) => t.type === "page" && t.webSocketDebuggerUrl);
+  if (!page) {
+    await browserCdp.call("Target.createTarget", { url: "about:blank" });
+    for (let attempt = 0; attempt < 40; attempt += 1) {
+      await new Promise((r) => setTimeout(r, 100));
+      targets = await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
+      page = targets.find((t) => t.type === "page" && t.webSocketDebuggerUrl);
+      if (page) break;
+    }
+  }
+  if (!page?.webSocketDebuggerUrl) {
+    throw new Error("Could not open a page target for Network cookie injection.");
+  }
+  return connectCdp(page.webSocketDebuggerUrl);
 }
 
 /**
@@ -424,12 +511,13 @@ async function main() {
   let action = "not-opened";
   let localStorageApplied = 0;
   try {
-    await cdp.call("Storage.setCookies", { cookies: loaded.cookies });
-    const stored = (await cdp.call("Storage.getCookies")).cookies || [];
-    const expected = new Set(loaded.cookies.map((cookie) => `${cookie.domain}\t${cookie.path}\t${cookie.name}`));
-    const storedKeys = new Set(stored.map((cookie) => `${cookie.domain}\t${cookie.path}\t${cookie.name}`));
+    const { method: injectMethod, stored } = await injectCookies(cdp, loaded.cookies, { port: options.port });
+    const expected = new Set(loaded.cookies.map((cookie) => cookieIdentityKey(cookie)));
+    const storedKeys = new Set(stored.map((cookie) => cookieIdentityKey(cookie)));
     const verified = [...expected].filter((key) => storedKeys.has(key)).length;
-    if (verified !== expected.size) throw new Error(`Cookie verification failed: expected ${expected.size}, found ${verified}.`);
+    if (verified !== expected.size) {
+      throw new Error(`Cookie verification failed: expected ${expected.size}, found ${verified} (via ${injectMethod}).`);
+    }
     if (options.open) action = await openOrReload(options.port, config.url, cdp);
     if (options.open && Object.keys(localStorageEntries).length) {
       localStorageApplied = await applyLocalStorage(options.port, config.url, localStorageEntries);
@@ -437,7 +525,7 @@ async function main() {
     }
     console.log(JSON.stringify({
       service: options.service, sourceService, mode: options.mode, imported: expected.size,
-      localStorageApplied, files: loaded.files, rejected: loaded.rejected, action,
+      injectMethod, localStorageApplied, files: loaded.files, rejected: loaded.rejected, action,
       profileDir: options.profileDir, target: config.url,
     }, null, options.json ? 0 : 2));
   } finally { cdp.close(); }
