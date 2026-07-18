@@ -1,8 +1,8 @@
 {
-  "url": "https://gemini.google.com",
+  "url": "https://gemini.google.com/",
   "serviceId": "gemini",
-  "serviceName": "Gemini",
-  "exportedAt": "2026-07-11T13:29:03.330Z",
+  "serviceName": "gemini",
+  "exportedAt": "2026-07-18T02:34:19.226737+00:00",
   "cookies": [
     {
       "domain": ".gemini.google.com",

@@ -1,19 +1,6 @@
 {
-  "url": "https://chat.deepseek.com/sign_in",
+  "url": "https://chat.deepseek.com/",
   "cookies": [
-    {
-      "domain": ".deepseek.com",
-      "expirationDate": 1783821453,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "aws-waf-token",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "ec405234-8e1e-4e1a-8db8-1dc069ad879b:BgoAYZUMqNpTAAAA:kj5qhv14QffgtvxgQb8DtEoGG44nZgnuLaWUIfF44H1gKcm+0J2ZGum2BZhYUKYaECs6KFUW4ltSPF4pDv1qA7U/d0TDnN1w3CNKiteI/MR3OnfmXMty0wDPwDfaL7X7K7ofH6ernpieDMNxxsNnujqffwQ5ZvoskXu9ehxxeMVhA50FF94aj5pvOWsdIRJ15jkzesOyy30Gtof/T8voucWZEnrfmDSHQ1gqjuzgSiztWo+1IYAB3I4t16czLhWnMX4/CpafuKCC6PSmMJs="
-    },
     {
       "domain": "chat.deepseek.com",
       "expirationDate": null,
@@ -42,7 +29,7 @@
     },
     {
       "domain": "chat.deepseek.com",
-      "expirationDate": 1818036141,
+      "expirationDate": 1818386175,
       "hostOnly": true,
       "httpOnly": false,
       "name": ".thumbcache_6b2e5483f9d858d7c661c5e276b6a6ae",
@@ -51,7 +38,7 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "Xt8Eyd3VXI+ZysT8kj1NTdl3QpvUJDANrD7QmVfaKzxfq4enTZS0ecADSoXacA9IAdkdSntHg9K0pRyqpkpJ+g%3D%3D"
+      "value": "YSPxeorMqPoZytImR2vqKRPsWRP3qVNTvljoPr/YhldOPxuQ87f8dHFEk8pGieGfU34m6oWRtvMaxEsCG7xaVA%3D%3D"
     }
   ]
 }

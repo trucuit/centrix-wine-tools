@@ -63,7 +63,8 @@ const EXPORT_SIGN_KEY =
 
 const SESSION_FILE = resolve(process.env.CENTRIX_SESSION_FILE || join(ROOT, ".centrix-api-session.json"));
 const OUT_DIR = resolve(process.env.CENTRIX_OUT_DIR || join(ROOT, "cookies"));
-const SERVER_URL = (process.env.CENTRIX_SERVER_URL || DEFAULT_SERVER).replace(/\/+$/, "");
+const SERVER_URL_OVERRIDE = String(process.env.CENTRIX_SERVER_URL || "").trim().replace(/\/+$/, "");
+const SERVER_URL = SERVER_URL_OVERRIDE || DEFAULT_SERVER;
 
 /** exportRiskScore: +20 if export < 3s after loginAt; +15 if interactedAt > 60s old */
 const MIN_MS_AFTER_LOGIN = 3500;
@@ -143,6 +144,18 @@ function log(msg) {
 function die(msg, code = 1) {
   console.error(`ERROR: ${msg}`);
   process.exit(code);
+}
+
+class ApiEndpointUnavailableError extends Error {
+  constructor(serverUrl, reason) {
+    super(`CentriX API unavailable at ${serverUrl}: ${reason}`);
+    this.name = "ApiEndpointUnavailableError";
+    this.code = "API_ENDPOINT_UNAVAILABLE";
+  }
+}
+
+function apiServerUrl(session, requestedUrl = "") {
+  return (requestedUrl || SERVER_URL_OVERRIDE || session?.serverUrl || DEFAULT_SERVER).replace(/\/+$/, "");
 }
 
 async function writePrivateJson(path, obj) {
@@ -325,7 +338,7 @@ function buildLoginHeaders() {
 }
 
 async function apiRequest(session, device, pathname, options = {}) {
-  const base = (options.serverUrl || session.serverUrl || SERVER_URL).replace(/\/+$/, "");
+  const base = apiServerUrl(session, options.serverUrl);
   const method = options.method || "GET";
   // Path may include query; DPoP htu is origin+pathname only (no query) — match makeDeviceProof URL parse
   const url = pathname.startsWith("http") ? pathname : `${base}${pathname}`;
@@ -343,14 +356,20 @@ async function apiRequest(session, device, pathname, options = {}) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), options.timeoutMs || 60000);
   try {
-    const res = await fetch(url, {
-      method,
-      headers,
-      body: hasBody ? JSON.stringify(options.body) : undefined,
-      signal: controller.signal,
-      // Prevent undici from using a different UA fallback
-      redirect: "follow",
-    });
+    let res;
+    try {
+      res = await fetch(url, {
+        method,
+        headers,
+        body: hasBody ? JSON.stringify(options.body) : undefined,
+        signal: controller.signal,
+        // Prevent undici from using a different UA fallback
+        redirect: "follow",
+      });
+    } catch (error) {
+      const reason = error?.name === "AbortError" ? "request timed out" : "network request failed";
+      throw new ApiEndpointUnavailableError(base, reason);
+    }
     try {
       const nn = res.headers.get("dpop-nonce") || res.headers.get("DPoP-Nonce");
       if (nn) dpopNonce = nn;
@@ -362,7 +381,8 @@ async function apiRequest(session, device, pathname, options = {}) {
     try {
       json = raw ? JSON.parse(raw) : {};
     } catch {
-      throw new Error(`Non-JSON response HTTP ${res.status}: ${raw.slice(0, 200)}`);
+      const contentType = res.headers.get("content-type") || "unknown content type";
+      throw new ApiEndpointUnavailableError(base, `expected JSON but received ${contentType} (HTTP ${res.status})`);
     }
     if (!res.ok || json.ok === false) {
       const err = new Error(json.error || `HTTP ${res.status}`);
@@ -632,17 +652,24 @@ async function cmdLogin() {
     deviceId,
     deviceJkt: device.jkt,
   };
-  const res = await fetch(`${SERVER_URL}/api/auth/google`, {
-    method: "POST",
-    headers: buildLoginHeaders(),
-    body: JSON.stringify(loginBody),
-  });
+  let res;
+  try {
+    res = await fetch(`${SERVER_URL}/api/auth/google`, {
+      method: "POST",
+      headers: buildLoginHeaders(),
+      body: JSON.stringify(loginBody),
+    });
+  } catch (error) {
+    const reason = error?.name === "AbortError" ? "request timed out" : "network request failed";
+    throw new ApiEndpointUnavailableError(SERVER_URL, reason);
+  }
   const raw = await res.text();
   let result = {};
   try {
     result = raw ? JSON.parse(raw) : {};
   } catch {
-    die(`Login non-JSON HTTP ${res.status}: ${raw.slice(0, 200)}`);
+    const contentType = res.headers.get("content-type") || "unknown content type";
+    throw new ApiEndpointUnavailableError(SERVER_URL, `expected JSON but received ${contentType} (HTTP ${res.status})`);
   }
   if (!res.ok || !result.ok) {
     die(result.error || `Google login HTTP ${res.status}`);
@@ -951,6 +978,9 @@ async function cmdExport(args) {
     if (e.code === "DEVICE_ACTIVE" || e.payload?.reason === "device_active" || e.payload?.reason === "takeover_pending") {
       die(`Device lock failed (${e.payload?.reason || e.code}). Close App User or: ./export-centrix-api.sh takeover`);
     }
+    if (e.code === "API_ENDPOINT_UNAVAILABLE") {
+      die(`${e.message}. Set CENTRIX_SERVER_URL to the active CentriX API URL and retry.`);
+    }
     log(`WARN connect: ${e.message} — continuing with best-effort interaction`);
     await apiRequest(session, device, "/api/health", { timeoutMs: 12000 }).catch(() => null);
     await apiRequest(session, device, "/api/services", { timeoutMs: 12000 }).catch(() => null);
@@ -996,6 +1026,7 @@ async function cmdExport(args) {
     }
   }
   log(`Done ok=${ok} fail=${fail} out=${OUT_DIR}`);
+  if (fail > 0) process.exitCode = 1;
 }
 
 async function cmdLogout() {

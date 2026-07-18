@@ -218,6 +218,7 @@ centrix-wine-tools/
 | Rosetta missing | `softwareupdate --install-rosetta --agree-to-license` |
 | Cửa sổ trắng | `run-centrix.sh` đã bật software GL; đợi session-restore |
 | `exe not found` | `./setup-centrix-mac.sh --force-reinstall` |
+| API trả HTML / parked-domain page | Backend cũ không còn chạy. Đặt `CENTRIX_SERVER_URL` thành URL API CentriX đang hoạt động rồi chạy `./export-centrix-api.sh login` lại. |
 | brew gstreamer cần sudo | Script dùng `--skip-cask-deps` khi cài Wine |
 
 ---

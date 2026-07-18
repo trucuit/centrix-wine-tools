@@ -1,8 +1,8 @@
 {
-  "url": "https://www.perplexity.ai",
+  "url": "https://www.perplexity.ai/",
   "serviceId": "perplexity",
-  "serviceName": "Perplexity",
-  "exportedAt": "2026-07-11T13:57:05.838Z",
+  "serviceName": "perplexity",
+  "exportedAt": "2026-07-18T02:34:20.254464+00:00",
   "cookies": [
     {
       "domain": "www.perplexity.ai",

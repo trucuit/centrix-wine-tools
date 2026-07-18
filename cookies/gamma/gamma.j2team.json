@@ -1,8 +1,8 @@
 {
-  "url": "https://gamma.app",
+  "url": "https://gamma.app/vi",
   "serviceId": "gamma",
-  "serviceName": "Gamma",
-  "exportedAt": "2026-07-11T14:06:42.902Z",
+  "serviceName": "gamma",
+  "exportedAt": "2026-07-18T02:34:19.044893+00:00",
   "cookies": [
     {
       "domain": ".gamma.app",

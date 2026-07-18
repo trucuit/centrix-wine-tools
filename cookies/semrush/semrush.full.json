@@ -4,6 +4,7 @@
   "serviceName": "Semrush",
   "exportedAt": "2026-07-11T14:06:28.934Z",
   "sourceDump": "/Volumes/m2/apps/windows/wine-prefix-centrix/drive_c/users/pat/AppData/Roaming/mkvhszparoue/cookies-dump-semrush.json",
+  "source": "dump",
   "cookies": [
     {
       "domain": ".noxtools.com",

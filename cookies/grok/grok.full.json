@@ -4,6 +4,7 @@
   "serviceName": "Grok",
   "exportedAt": "2026-07-11T13:30:25.506Z",
   "sourceDump": "/Volumes/m2/apps/windows/wine-prefix-centrix/drive_c/users/pat/AppData/Roaming/mkvhszparoue/cookies-dump-grok.json",
+  "source": "dump",
   "cookies": [
     {
       "domain": "copilot.microsoft.com",

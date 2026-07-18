@@ -1,8 +1,8 @@
 {
-  "url": "https://chat.deepseek.com",
+  "url": "https://chat.deepseek.com/",
   "serviceId": "deepseek",
-  "serviceName": "DeepSeek",
-  "exportedAt": "2026-07-12T03:16:22.697Z",
+  "serviceName": "deepseek",
+  "exportedAt": "2026-07-18T02:34:18.521284+00:00",
   "cookies": [
     {
       "domain": "chat.deepseek.com",

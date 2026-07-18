@@ -1,8 +1,8 @@
 {
-  "url": "https://copilot.microsoft.com",
+  "url": "https://copilot.microsoft.com/",
   "serviceId": "microsoft-copilot",
-  "serviceName": "Microsoft Copilot",
-  "exportedAt": "2026-07-12T03:34:18.667Z",
+  "serviceName": "microsoft-copilot",
+  "exportedAt": "2026-07-18T02:34:19.782571+00:00",
   "cookies": [
     {
       "domain": "copilot.microsoft.com",

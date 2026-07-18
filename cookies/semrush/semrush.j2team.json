@@ -1,8 +1,8 @@
 {
-  "url": "https://noxtools.com",
+  "url": "https://noxtools.com/secure/page/semrush",
   "serviceId": "semrush",
-  "serviceName": "Semrush",
-  "exportedAt": "2026-07-11T14:06:28.934Z",
+  "serviceName": "semrush",
+  "exportedAt": "2026-07-18T02:34:20.696709+00:00",
   "cookies": [
     {
       "domain": ".noxtools.com",

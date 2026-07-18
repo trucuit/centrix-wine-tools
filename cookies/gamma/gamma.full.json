@@ -4,6 +4,7 @@
   "serviceName": "Gamma",
   "exportedAt": "2026-07-11T14:06:42.902Z",
   "sourceDump": "/Volumes/m2/apps/windows/wine-prefix-centrix/drive_c/users/pat/AppData/Roaming/mkvhszparoue/cookies-dump-gamma.json",
+  "source": "dump",
   "cookies": [
     {
       "domain": ".noxtools.com",
