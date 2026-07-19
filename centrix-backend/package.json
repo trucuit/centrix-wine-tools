@@ -1,0 +1,11 @@
+{
+  "name": "centrix-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CentriX Phase B — standalone Node backend (no Electron). Serves the website + App User API; reads the same DB as the App Server. Cookie EXPORT/IMPORT stays on the Electron browser worker (B3).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": { "node": ">=18" }
+}

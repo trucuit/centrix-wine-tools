@@ -1,0 +1,1352 @@
+[
+  {
+    "plan_id": "plan-free",
+    "service_id": "microsoft-copilot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-02T09:46:36.023500Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "notebooklm",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-02T09:46:46.409064Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "grok",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-02T09:46:49.676798Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "mistral",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-02T09:48:16.260708Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "midjourney",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-02T09:48:16.908928Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "elevenlabs",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-02T09:48:23.864490Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "perplexity",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-02T09:48:25.759895Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "poe",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-02T09:48:28.238861Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "claude",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-04T08:37:58.383680Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "chatgpt",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-04T08:38:00.055659Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "deepseek",
+    "is_enabled": 1,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-04T10:02:55.332787Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "gemini",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-05T08:00:58.811450Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "freepik",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T19:15:11.388800Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "scribd",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T19:15:14.423694Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "centrix",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T19:15:17.321525Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "gamma",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T19:15:18.773828Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "semrush",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T19:15:21.106615Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "centrix",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "claude",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "elevenlabs",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "envato-elements",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "freepik",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "gamma",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "grok-heavy",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "midjourney",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "mistral",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "notebooklm",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "poe",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "quillbot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "scribd",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "semrush",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "zoom",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T21:50:17Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "canva",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "centrix",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "claude",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "elevenlabs",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "envato-elements",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "freepik",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "gamma",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "grok-heavy",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "midjourney",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "mistral",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "monica",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "notebooklm",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "perplexity",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "poe",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "quillbot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "scribd",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "semrush",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "zoom",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:31:37Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "chatgpt",
+    "is_enabled": 1,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:32:05.625126Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "gemini",
+    "is_enabled": 1,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-07T22:40:26.721182Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "canva",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:09:34.622764Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "monica",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:09:34.960082Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "quillbot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:09:35.789512Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "envato-elements",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:09:37.560944Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "grok-heavy",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:09:39.158923Z"
+  },
+  {
+    "plan_id": "plan-free",
+    "service_id": "zoom",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:09:40.958638Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "deepseek",
+    "is_enabled": 1,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:09:56.645020Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "microsoft-copilot",
+    "is_enabled": 1,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:09:59.514179Z"
+  },
+  {
+    "plan_id": "plan-pro-v2",
+    "service_id": "grok",
+    "is_enabled": 1,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:10:10.154881Z"
+  },
+  {
+    "plan_id": "plan-max",
+    "service_id": "deepseek",
+    "is_enabled": 1,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-08T14:10:21.179562Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "chatgpt",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:31:52.336506Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "claude",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:31:53.035718Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "gemini",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:31:54.526823Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "perplexity",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:31:55.278564Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "microsoft-copilot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:31:55.854022Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "grok",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:31:56.601227Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "poe",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:31:58.235980Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "deepseek",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:31:59.538945Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "grok-heavy",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:00.558926Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "semrush",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:01.125803Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "gamma",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:01.683395Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "scribd",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:02.009171Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "monica",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:03.500371Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "quillbot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:04.866415Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "canva",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:06.786870Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "freepik",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:08.140812Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "envato-elements",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:09.165066Z"
+  },
+  {
+    "plan_id": "plan-gpt56pro",
+    "service_id": "zoom",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:32:10.629425Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "chatgpt",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:19.194022Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "gemini",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:20.800574Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "claude",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:21.624326Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "microsoft-copilot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:23.153777Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "perplexity",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:23.554391Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "grok",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:25.991160Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "deepseek",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:27.104523Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "poe",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:28.263761Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "notebooklm",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:28.883052Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "semrush",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:29.802196Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "gamma",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:30.336084Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "scribd",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:30.954481Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "freepik",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:32.495232Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "canva",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:32.940948Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "monica",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:34.427699Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "quillbot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:35.096720Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "zoom",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:36.332333Z"
+  },
+  {
+    "plan_id": "plan-grokheavy",
+    "service_id": "envato-elements",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:33:37.835222Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "chatgpt",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:21.022517Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "claude",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:21.825008Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "perplexity",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:22.893484Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "microsoft-copilot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:23.663136Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "grok",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:25.464295Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "deepseek",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:26.948296Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "poe",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:28.091912Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "notebooklm",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:28.504656Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "grok-heavy",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:29.375194Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "semrush",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:30.107530Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "freepik",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:32.235172Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "scribd",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:32.822145Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "gemini",
+    "is_enabled": 1,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:36.823531Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "canva",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:38.476771Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "gamma",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:40.401612Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "monica",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:42.177424Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "envato-elements",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:45.342385Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "zoom",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:47.520681Z"
+  },
+  {
+    "plan_id": "plan-geminiultra",
+    "service_id": "quillbot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:49.518526Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "chatgpt",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:56.833475Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "gemini",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:57.867537Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "perplexity",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:58.603463Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "microsoft-copilot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:42:59.338687Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "grok",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:00.251439Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "poe",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:01.226947Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "notebooklm",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:01.973409Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "deepseek",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:02.596576Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "grok-heavy",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:03.463101Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "semrush",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:04.117912Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "gamma",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:04.665335Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "scribd",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:05.185456Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "freepik",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:05.889425Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "canva",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:06.403074Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "monica",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:07.040013Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "quillbot",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:07.757063Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "envato-elements",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:09.125255Z"
+  },
+  {
+    "plan_id": "plan-claude",
+    "service_id": "zoom",
+    "is_enabled": 0,
+    "allowed_models": "",
+    "daily_limit": 0,
+    "monthly_limit": 0,
+    "multiplier": 1.0,
+    "updated_at": "2026-07-17T05:43:10.698653Z"
+  }
+]

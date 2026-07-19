@@ -1,0 +1,137 @@
+[
+  {
+    "user_id": "user-a",
+    "service_id": "chatgpt",
+    "enabled": 0,
+    "hide_selectors": "[\"[data-testid='workspace-switcher']\", \"nav a[href*='explore']\"]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-02T09:08:57.167964Z"
+  },
+  {
+    "user_id": "user-b",
+    "service_id": "claude",
+    "enabled": 0,
+    "hide_selectors": "[\"[data-testid='upgrade-button']\", \"a[href*='upgrade']\"]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-02T09:08:57.167964Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "grok",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-06T12:02:35.723319Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "notebooklm",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-06T12:06:49.154740Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "microsoft-copilot",
+    "enabled": 1,
+    "hide_selectors": "[\"div.pe-2\", \"button[data-testid=\\\"dropdown-connector-button\\\"]\"]",
+    "hide_rules": "[{\"id\": \"hide_b741a108fc134388\", \"version\": 1, \"domain\": \"\", \"scope\": {\"urlPattern\": \"\", \"pageState\": \"\"}, \"primarySelector\": \"div.pe-2\", \"anchorSelector\": \"\", \"fingerprint\": {\"tag\": \"\", \"role\": \"\", \"ariaLabel\": \"\", \"textSnippet\": \"\", \"classCount\": 0, \"childTags\": [], \"rectRatio\": 0}, \"expectation\": {\"minMatches\": 1}, \"action\": \"hide\", \"failMode\": \"open\", \"createdAt\": \"2026-07-06T12:40:54.892710Z\", \"lastVerifiedAt\": \"\", \"health\": {\"state\": \"unknown\", \"recentMissRate\": 0, \"lastSeenMatchingAt\": \"\"}, \"enabled\": true, \"note\": \"legacy selector\"}, {\"id\": \"hide_f12fb69fb26ce18c\", \"version\": 1, \"domain\": \"\", \"scope\": {\"urlPattern\": \"\", \"pageState\": \"\"}, \"primarySelector\": \"button[data-testid=\\\"dropdown-connector-button\\\"]\", \"anchorSelector\": \"\", \"fingerprint\": {\"tag\": \"\", \"role\": \"\", \"ariaLabel\": \"\", \"textSnippet\": \"\", \"classCount\": 0, \"childTags\": [], \"rectRatio\": 0}, \"expectation\": {\"minMatches\": 1}, \"action\": \"hide\", \"failMode\": \"open\", \"createdAt\": \"2026-07-06T12:40:54.892764Z\", \"lastVerifiedAt\": \"\", \"health\": {\"state\": \"unknown\", \"recentMissRate\": 0, \"lastSeenMatchingAt\": \"\"}, \"enabled\": true, \"note\": \"legacy selector\"}]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-06T12:40:54.892516Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "perplexity",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-06T13:27:26.008970Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "deepseek",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-06T13:45:16.986246Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "poe",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-06T14:36:26.378596Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "freepik",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-09T06:52:05.785513Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "semrush",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-13T07:50:50.523668Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "envato-elements",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-14T10:18:28.966343Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "gemini",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-14T18:15:02.050861Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "claude",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-16T05:41:50.056342Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "grok-heavy",
+    "enabled": 1,
+    "hide_selectors": "[]",
+    "hide_rules": "[]",
+    "replace_rules": "[]",
+    "updated_at": "2026-07-16T08:04:53.525107Z"
+  },
+  {
+    "user_id": "service-rule",
+    "service_id": "chatgpt",
+    "enabled": 1,
+    "hide_selectors": "[\"button.gap-1\", \"div.relative.flex > div.relative.z-21:nth-of-type(1) > div.relative.flex > nav.flex.h-full > div:nth-of-type(4) > div.group.hoverable\"]",
+    "hide_rules": "[{\"id\": \"hide_6c07e2c50c31b570\", \"version\": 1, \"domain\": \"\", \"scope\": {\"urlPattern\": \"\", \"pageState\": \"\"}, \"primarySelector\": \"button.gap-1\", \"anchorSelector\": \"\", \"fingerprint\": {\"tag\": \"\", \"role\": \"\", \"ariaLabel\": \"\", \"textSnippet\": \"\", \"classCount\": 0, \"childTags\": [], \"rectRatio\": 0}, \"expectation\": {\"minMatches\": 1}, \"action\": \"hide\", \"failMode\": \"open\", \"createdAt\": \"2026-07-16T08:26:03.185699Z\", \"lastVerifiedAt\": \"\", \"health\": {\"state\": \"unknown\", \"recentMissRate\": 0, \"lastSeenMatchingAt\": \"\"}, \"enabled\": true, \"note\": \"legacy selector\"}, {\"id\": \"hide_a779262ef6cff368\", \"version\": 1, \"domain\": \"\", \"scope\": {\"urlPattern\": \"\", \"pageState\": \"\"}, \"primarySelector\": \"div.relative.flex > div.relative.z-21:nth-of-type(1) > div.relative.flex > nav.flex.h-full > div:nth-of-type(4) > div.group.hoverable\", \"anchorSelector\": \"\", \"fingerprint\": {\"tag\": \"\", \"role\": \"\", \"ariaLabel\": \"\", \"textSnippet\": \"\", \"classCount\": 0, \"childTags\": [], \"rectRatio\": 0}, \"expectation\": {\"minMatches\": 1}, \"action\": \"hide\", \"failMode\": \"open\", \"createdAt\": \"2026-07-16T08:26:03.185764Z\", \"lastVerifiedAt\": \"\", \"health\": {\"state\": \"unknown\", \"recentMissRate\": 0, \"lastSeenMatchingAt\": \"\"}, \"enabled\": true, \"note\": \"legacy selector\"}]",
+    "replace_rules": "[{\"selector\": \".group\\\\/sidebar-expando-section:has(a[aria-label*=\\\"pinned conversation\\\"]),\", \"text\": \"\", \"matchText\": \"\", \"enabled\": true, \"updatedAt\": \"2026-07-16T08:26:03.193136Z\"}, {\"selector\": \"a[href^=\\\"/g/g-\\\"][data-discover=\\\"true\\\"],\", \"text\": \"\", \"matchText\": \"\", \"enabled\": true, \"updatedAt\": \"2026-07-16T08:26:03.193158Z\"}, {\"selector\": \"div[role=\\\"grid\\\"][aria-label=\\\"Projects\\\"] + div[data-testid=\\\"infinite-scroll-trigger\\\"],\", \"text\": \"\", \"matchText\": \"\", \"enabled\": true, \"updatedAt\": \"2026-07-16T08:26:03.193170Z\"}, {\"selector\": \"[data-testid=\\\"artifacts-surface-library-list-header\\\"],\", \"text\": \"\", \"matchText\": \"\", \"enabled\": true, \"updatedAt\": \"2026-07-16T08:26:03.193180Z\"}, {\"selector\": \"a[href=\\\"/library\\\"],\", \"text\": \"\", \"matchText\": \"\", \"enabled\": true, \"updatedAt\": \"2026-07-16T08:26:03.193191Z\"}, {\"selector\": \"a[data-testid=\\\"sidebar-item-recall\\\"],\", \"text\": \"\", \"matchText\": \"\", \"enabled\": true, \"updatedAt\": \"2026-07-16T08:26:03.193201Z\"}, {\"selector\": \"div[data-testid=\\\"model-switcher-gpt-5-5-pro\\\"]\", \"text\": \"Pro\\u2022 Extended\", \"matchText\": \"\", \"enabled\": true, \"updatedAt\": \"2026-07-16T08:26:03.193213Z\"}]",
+    "updated_at": "2026-07-16T08:26:03.185568Z"
+  }
+]

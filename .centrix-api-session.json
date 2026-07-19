@@ -1,12 +1,12 @@
 {
   "serverUrl": "https://api-centrixapp-quang.centrix.asia",
-  "token": "sess_f1653075505e7a33d990acb1628126c9cc22d63cfb24931504f360df96e9d281",
-  "sessionKey": "LOVp9xLjLM9E3FTHoewGUzFFYb7/xFjY256jG/yw5KA=",
+  "token": "sess_a68ae9a2b583e70908821618385b07bde106520efa8c1a6786c0cf8db971f03f",
+  "sessionKey": "thhTamch84AfiDalKoJtS7bM89DgRewZc25uUtGGvnE=",
   "profileId": "default",
   "deviceId": "SHO-ADC-MAX-M08-tructt-local-cnfoo4",
-  "expiresAt": "2026-07-25T02:39:38.374902Z",
+  "expiresAt": "2026-07-25T12:44:25.523462Z",
   "devicePem": "-----BEGIN PRIVATE KEY-----\nMC4CAQAwBQYDK2VwBCIEIM1ExMedruR+5naUfUI3W3v6W03XcftNb46azFo1jXV9\n-----END PRIVATE KEY-----\n",
   "email": "trungtruc91@gmail.com",
-  "loggedInAt": 1784342378623,
-  "savedAt": "2026-07-18T02:39:38.623Z"
+  "loggedInAt": 1784378665620,
+  "savedAt": "2026-07-18T12:44:25.621Z"
 }

@@ -1,0 +1,330 @@
+[
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-5",
+    "source": "user",
+    "count": 4608,
+    "first_seen_at": "2026-07-02T11:07:02.008811Z",
+    "last_seen_at": "2026-07-18T15:18:29.605019Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "auto",
+    "source": "user",
+    "count": 633,
+    "first_seen_at": "2026-07-03T11:04:44.986501Z",
+    "last_seen_at": "2026-07-18T12:39:09.073568Z"
+  },
+  {
+    "service_id": "gemini",
+    "model_id": "gemini-2.5-pro",
+    "source": "user",
+    "count": 2762,
+    "first_seen_at": "2026-07-04T09:42:15.808965Z",
+    "last_seen_at": "2026-07-18T15:05:04.664431Z"
+  },
+  {
+    "service_id": "deepseek",
+    "model_id": "deepseek-chat",
+    "source": "user",
+    "count": 1077,
+    "first_seen_at": "2026-07-04T10:04:27.932785Z",
+    "last_seen_at": "2026-07-18T04:47:19.582062Z"
+  },
+  {
+    "service_id": "perplexity",
+    "model_id": "sonar-pro",
+    "source": "user",
+    "count": 154,
+    "first_seen_at": "2026-07-04T10:07:04.784118Z",
+    "last_seen_at": "2026-07-17T09:33:10.916236Z"
+  },
+  {
+    "service_id": "mistral",
+    "model_id": "mistral-large",
+    "source": "user",
+    "count": 6,
+    "first_seen_at": "2026-07-04T21:03:48.088879Z",
+    "last_seen_at": "2026-07-04T21:07:07.042712Z"
+  },
+  {
+    "service_id": "grok",
+    "model_id": "grok-4",
+    "source": "user",
+    "count": 883,
+    "first_seen_at": "2026-07-04T21:11:22.841874Z",
+    "last_seen_at": "2026-07-18T15:08:28.257630Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-5-thinking",
+    "source": "user",
+    "count": 4280,
+    "first_seen_at": "2026-07-02T11:06:13.406751Z",
+    "last_seen_at": "2026-07-18T08:37:26.847134Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-5-instant",
+    "source": "user",
+    "count": 367,
+    "first_seen_at": "2026-07-08T15:14:00.175345Z",
+    "last_seen_at": "2026-07-16T04:18:54.491194Z"
+  },
+  {
+    "service_id": "perplexity",
+    "model_id": "pplx_pro",
+    "source": "user",
+    "count": 263,
+    "first_seen_at": "2026-07-08T15:24:58.443667Z",
+    "last_seen_at": "2026-07-17T11:34:02.428303Z"
+  },
+  {
+    "service_id": "grok",
+    "model_id": "grok-4_expert",
+    "source": "user",
+    "count": 625,
+    "first_seen_at": "2026-07-09T06:06:32.621169Z",
+    "last_seen_at": "2026-07-17T07:05:27.502575Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-5-pro",
+    "source": "user",
+    "count": 145,
+    "first_seen_at": "2026-07-02T11:06:21.581940Z",
+    "last_seen_at": "2026-07-18T14:48:45.487737Z"
+  },
+  {
+    "service_id": "grok",
+    "model_id": "grok-4_fast",
+    "source": "user",
+    "count": 563,
+    "first_seen_at": "2026-07-09T07:47:57.337499Z",
+    "last_seen_at": "2026-07-17T12:09:33.046620Z"
+  },
+  {
+    "service_id": "grok",
+    "model_id": "grok-4_heavy",
+    "source": "user",
+    "count": 316,
+    "first_seen_at": "2026-07-09T15:24:29.134178Z",
+    "last_seen_at": "2026-07-16T13:26:43.347601Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-6-thinking",
+    "source": "user",
+    "count": 20125,
+    "first_seen_at": "2026-07-10T00:41:25.249491Z",
+    "last_seen_at": "2026-07-18T15:38:39.679000Z"
+  },
+  {
+    "service_id": "perplexity",
+    "model_id": "pplx_alpha",
+    "source": "user",
+    "count": 26,
+    "first_seen_at": "2026-07-10T16:12:45.039350Z",
+    "last_seen_at": "2026-07-17T09:29:30.691920Z"
+  },
+  {
+    "service_id": "perplexity",
+    "model_id": "pplx_asi",
+    "source": "user",
+    "count": 5,
+    "first_seen_at": "2026-07-10T16:55:42.901017Z",
+    "last_seen_at": "2026-07-10T16:56:08.371773Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-6-pro",
+    "source": "user",
+    "count": 772,
+    "first_seen_at": "2026-07-10T00:08:20.450886Z",
+    "last_seen_at": "2026-07-18T15:13:55.558258Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-sonnet-5",
+    "source": "user",
+    "count": 44,
+    "first_seen_at": "2026-07-04T08:46:23.692179Z",
+    "last_seen_at": "2026-07-16T13:41:02.011638Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5.6-sol-wm",
+    "source": "user",
+    "count": 1846,
+    "first_seen_at": "2026-07-10T00:56:56.521172Z",
+    "last_seen_at": "2026-07-18T15:05:56.057565Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5.6-terra-wm",
+    "source": "user",
+    "count": 14,
+    "first_seen_at": "2026-07-10T00:57:16.788700Z",
+    "last_seen_at": "2026-07-18T08:04:25.909684Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5.5-wm",
+    "source": "user",
+    "count": 10,
+    "first_seen_at": "2026-07-10T00:57:43.289994Z",
+    "last_seen_at": "2026-07-12T10:01:39.295480Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5.6-luna-wm",
+    "source": "user",
+    "count": 1,
+    "first_seen_at": "2026-07-10T13:07:38.223992Z",
+    "last_seen_at": "2026-07-10T13:07:38.223992Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-opus-4-8",
+    "source": "user",
+    "count": 31,
+    "first_seen_at": "2026-07-11T12:03:58.271548Z",
+    "last_seen_at": "2026-07-16T19:02:34.099038Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-fable-5",
+    "source": "user",
+    "count": 22,
+    "first_seen_at": "2026-07-11T12:04:46.047570Z",
+    "last_seen_at": "2026-07-16T05:42:44.227740Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-haiku-4-5-20251001",
+    "source": "user",
+    "count": 29,
+    "first_seen_at": "2026-07-11T12:05:13.194767Z",
+    "last_seen_at": "2026-07-16T19:16:53.889822Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-opus-4-6",
+    "source": "user",
+    "count": 2,
+    "first_seen_at": "2026-07-11T12:13:48.714433Z",
+    "last_seen_at": "2026-07-11T12:13:49.911090Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-opus-4-7",
+    "source": "user",
+    "count": 2,
+    "first_seen_at": "2026-07-11T12:13:59.820698Z",
+    "last_seen_at": "2026-07-11T12:14:00.696254Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-sonnet-4-6",
+    "source": "user",
+    "count": 2,
+    "first_seen_at": "2026-07-11T12:14:09.566807Z",
+    "last_seen_at": "2026-07-11T12:14:10.608741Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-3-opus-20240229",
+    "source": "user",
+    "count": 1,
+    "first_seen_at": "2026-07-11T12:14:19.648374Z",
+    "last_seen_at": "2026-07-11T12:14:19.648374Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-mini",
+    "source": "user",
+    "count": 1340,
+    "first_seen_at": "2026-07-11T17:59:17.418129Z",
+    "last_seen_at": "2026-07-17T14:16:45.903826Z"
+  },
+  {
+    "service_id": "notebooklm",
+    "model_id": "gpt-4o-mini",
+    "source": "user",
+    "count": 683,
+    "first_seen_at": "2026-07-14T07:01:41.682495Z",
+    "last_seen_at": "2026-07-18T14:24:20.655108Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "chatgpt-image",
+    "source": "user",
+    "count": 44,
+    "first_seen_at": "2026-07-15T14:48:48.848824Z",
+    "last_seen_at": "2026-07-18T06:28:50.239143Z"
+  },
+  {
+    "service_id": "claude",
+    "model_id": "claude-cowork",
+    "source": "user",
+    "count": 14,
+    "first_seen_at": "2026-07-15T21:49:22.341483Z",
+    "last_seen_at": "2026-07-15T21:57:18.212262Z"
+  },
+  {
+    "service_id": "grok",
+    "model_id": "grok-4_imagineagentmodedev",
+    "source": "user",
+    "count": 42,
+    "first_seen_at": "2026-07-16T12:55:55.056005Z",
+    "last_seen_at": "2026-07-18T10:04:03.500632Z"
+  },
+  {
+    "service_id": "testsvc",
+    "model_id": "m1",
+    "source": "user",
+    "count": 5,
+    "first_seen_at": "2026-07-16T16:21:13.382743Z",
+    "last_seen_at": "2026-07-16T18:15:00.932903Z"
+  },
+  {
+    "service_id": "perplexity",
+    "model_id": "pplx_asi_opus",
+    "source": "user",
+    "count": 4,
+    "first_seen_at": "2026-07-17T08:23:15.114721Z",
+    "last_seen_at": "2026-07-17T08:25:58.951872Z"
+  },
+  {
+    "service_id": "perplexity",
+    "model_id": "gpt56_terra_thinking",
+    "source": "user",
+    "count": 2,
+    "first_seen_at": "2026-07-17T08:36:47.178813Z",
+    "last_seen_at": "2026-07-17T08:38:00.934371Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-4-thinking",
+    "source": "user",
+    "count": 1,
+    "first_seen_at": "2026-07-18T08:06:01.171975Z",
+    "last_seen_at": "2026-07-18T08:06:01.171975Z"
+  },
+  {
+    "service_id": "grok",
+    "model_id": "grok-4_imagineagentmode",
+    "source": "user",
+    "count": 27,
+    "first_seen_at": "2026-07-18T10:08:05.909448Z",
+    "last_seen_at": "2026-07-18T10:31:37.343888Z"
+  },
+  {
+    "service_id": "chatgpt",
+    "model_id": "gpt-5-3-instant",
+    "source": "user",
+    "count": 1,
+    "first_seen_at": "2026-07-18T15:16:59.024161Z",
+    "last_seen_at": "2026-07-18T15:16:59.024161Z"
+  }
+]
