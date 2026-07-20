@@ -13,8 +13,15 @@
 # Usage:
 #   cd centrix-wine-tools
 #   ./setup-centrix-mac.sh
+#   ./setup-centrix-mac.sh --upgrade
+#   ./setup-centrix-mac.sh --no-upgrade
 #   ./setup-centrix-mac.sh --force-reinstall
 #   ./run-centrix.sh
+#
+# Options:
+#   --upgrade       Upgrade without asking when a newer installer is available.
+#   --no-upgrade    Keep the installed app; a new Mac is still installed normally.
+#   --force-reinstall  Reinstall the selected installer (cannot combine with --no-upgrade).
 #
 set -euo pipefail
 
@@ -27,6 +34,7 @@ WINE_APP="${WINE_APP:-/Applications/Wine Stable.app}"
 WINE_BIN="${WINE_BIN:-$WINE_APP/Contents/Resources/wine/bin/wine}"
 INSTALLER=""
 FORCE=0
+UPGRADE_MODE="ask"
 DESKTOP_W="${DESKTOP_W:-1440}"
 DESKTOP_H="${DESKTOP_H:-900}"
 
@@ -38,8 +46,10 @@ die()  { print -r -- "ERROR: $*" >&2; exit 1; }
 for arg in "$@"; do
   case "$arg" in
     --force|--force-reinstall) FORCE=1 ;;
+    --upgrade) UPGRADE_MODE="yes" ;;
+    --no-upgrade|--skip-upgrade) UPGRADE_MODE="no" ;;
     --help|-h)
-      sed -n '1,25p' "$SCRIPT_PATH"
+      sed -n '1,30p' "$SCRIPT_PATH"
       exit 0
       ;;
     *)
@@ -48,11 +58,73 @@ for arg in "$@"; do
   esac
 done
 
+[[ "$FORCE" == "1" && "$UPGRADE_MODE" == "no" ]] && die "--no-upgrade cannot be combined with --force-reinstall"
+
 # ── find installer .exe in repo ─────────────────────────────
 find_installer() {
   local installers=("$SCRIPT_DIR"/CentriX-App-User-Setup*.exe(Nn))
   (( ${#installers} > 0 )) || return 1
   INSTALLER="${installers[-1]}"
+}
+
+installer_version() {
+  local name="${INSTALLER:t}"
+  if [[ "$name" =~ '^CentriX-App-User-Setup-([0-9]+(\.[0-9]+)*)\.exe$' ]]; then
+    print -r -- "$match[1]"
+  fi
+}
+
+installed_app_version() {
+  local app="$1"
+  local asar="${app:h}/resources/app.asar"
+  [[ -f "$asar" ]] || return 1
+  LC_ALL=C strings "$asar" | awk '
+    /APP_VERSION[[:space:]]*=/ {
+      sub(/.*APP_VERSION[[:space:]]*=[[:space:]]*"/, "")
+      sub(/".*/, "")
+      if ($0 ~ /^[0-9.]+$/) {
+        print
+        exit
+      }
+    }
+  '
+}
+
+# Success means $1 is newer than $2. Missing version components compare as zero.
+is_newer_version() {
+  local -a wanted_parts current_parts
+  local wanted="$1" current="$2" i wanted_part current_part
+  wanted_parts=("${(@s:.:)wanted}")
+  current_parts=("${(@s:.:)current}")
+
+  for (( i = 1; i <= ${#wanted_parts} || i <= ${#current_parts}; i++ )); do
+    wanted_part="${wanted_parts[i]:-0}"
+    current_part="${current_parts[i]:-0}"
+    if (( 10#$wanted_part > 10#$current_part )); then
+      return 0
+    elif (( 10#$wanted_part < 10#$current_part )); then
+      return 1
+    fi
+  done
+  return 1
+}
+
+confirm_upgrade() {
+  local current="$1" wanted="$2" answer=""
+  case "$UPGRADE_MODE" in
+    yes) return 0 ;;
+    no) return 1 ;;
+  esac
+
+  if [[ ! -t 0 ]]; then
+    warn "Upgrade available ($current → $wanted), skipped because stdin is not interactive"
+    warn "Run with --upgrade to upgrade non-interactively"
+    return 1
+  fi
+
+  print -n "Upgrade CentriX from $current to $wanted? [y/N] "
+  read -r answer
+  [[ "$answer" == "y" || "$answer" == "Y" || "$answer" == "yes" || "$answer" == "YES" ]]
 }
 
 # ── checks ──────────────────────────────────────────────────
@@ -121,19 +193,41 @@ already_installed() {
 install_centrix() {
   find_installer || die "No CentriX-App-User-Setup*.exe in $SCRIPT_DIR — pull latest repo or copy installer here"
   ok "Installer: $INSTALLER ($(du -h "$INSTALLER" | awk '{print $1}'))"
+  local installer_ver
+  installer_ver=$(installer_version)
+  [[ -n "$installer_ver" ]] && log "Installer version: $installer_ver"
 
   export WINEPREFIX
   export WINEDEBUG="-all"
   mkdir -p "$WINEPREFIX"
 
-  local existing
+  local existing existing_ver
   if existing=$(already_installed 2>/dev/null); then
+    existing_ver=$(installed_app_version "$existing" 2>/dev/null || true)
     if (( FORCE == 0 )); then
-      ok "CentriX already installed: $existing"
-      log "Use --force-reinstall to run setup again"
-      return 0
+      if [[ -n "$installer_ver" && -n "$existing_ver" ]] && is_newer_version "$installer_ver" "$existing_ver"; then
+        if confirm_upgrade "$existing_ver" "$installer_ver"; then
+          log "Upgrading CentriX: $existing_ver → $installer_ver"
+        else
+          ok "CentriX already installed (version $existing_ver): $existing"
+          if [[ "$UPGRADE_MODE" == "no" ]]; then
+            log "Upgrade available ($existing_ver → $installer_ver), skipped by --no-upgrade"
+          elif [[ -t 0 ]]; then
+            log "Upgrade available ($existing_ver → $installer_ver), skipped by user"
+          fi
+          return 0
+        fi
+      else
+        ok "CentriX already installed${existing_ver:+ (version $existing_ver)}: $existing"
+        log "Use --force-reinstall to run setup again"
+        return 0
+      fi
     fi
-    warn "Force reinstall…"
+    if (( FORCE )); then
+      warn "Force reinstall…"
+    else
+      log "Running in-place upgrade…"
+    fi
   fi
 
   log "Initializing Wine prefix (first run can take 1–2 min)…"
@@ -145,11 +239,15 @@ install_centrix() {
     warn "Silent install returned non-zero — checking if app exists anyway…"
   fi
 
-  local app
+  local app app_ver
   if ! app=$(already_installed); then
     die "Install finished but CentriX App User.exe not found under $WINEPREFIX"
   fi
-  ok "Installed: $app"
+  app_ver=$(installed_app_version "$app" 2>/dev/null || true)
+  if [[ -n "$installer_ver" && -n "$app_ver" && "$installer_ver" != "$app_ver" ]]; then
+    warn "Installer version $installer_ver completed, but app reports version $app_ver"
+  fi
+  ok "Installed${app_ver:+ (version $app_ver)}: $app"
 }
 
 write_local_env() {

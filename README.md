@@ -13,7 +13,7 @@ Repo private: dùng được trên **nhiều Mac** — clone → setup → run.
 git clone https://github.com/trucuit/centrix-wine-tools.git
 cd centrix-wine-tools
 
-# 2) Cài Wine + cài .exe vào Wine prefix local
+# 2) Cài Wine + cài/cập nhật .exe vào Wine prefix local
 ./setup-centrix-mac.sh
 
 # 3) Chạy app
@@ -26,7 +26,30 @@ Lần đầu:
 - Apple Silicon: **Rosetta 2** (script hỏi cài nếu thiếu)
 - Login CentriX (Google) trên máy đó
 
-Reinstall app:
+### Cập nhật CentriX — một lệnh
+
+Khi có installer mới, chỉ cần chép file `CentriX-App-User-Setup-<version>.exe`
+vào thư mục gốc repo, rồi chạy:
+
+```bash
+./setup-centrix-mac.sh
+```
+
+Script sẽ tự chọn installer có version cao nhất và đọc version của app hiện có
+từ `app.asar`. Khi installer mới hơn, nó hỏi có nâng cấp không (`y` để nâng cấp;
+Enter hoặc `n` để giữ bản hiện tại). Sau đó nó làm mới `.centrix-env`; các script
+export tự đọc `APP_VERSION` từ app nên không cần sửa từng script theo mỗi bản
+CentriX.
+
+Tuỳ chọn nâng cấp:
+
+```bash
+./setup-centrix-mac.sh --upgrade       # nâng cấp không hỏi (hợp với CI/script)
+./setup-centrix-mac.sh --no-upgrade    # giữ version đang cài; máy mới vẫn được cài
+```
+
+Chỉ dùng force reinstall khi muốn cài lại đúng version hiện có hoặc sửa một bản
+cài hỏng. Không kết hợp với `--no-upgrade`:
 
 ```bash
 ./setup-centrix-mac.sh --force-reinstall
@@ -38,7 +61,7 @@ Reinstall app:
 
 | File | Việc |
 |------|------|
-| **`setup-centrix-mac.sh`** | Bootstrap Mac: Wine + cài `CentriX-App-User-Setup-*.exe` |
+| **`setup-centrix-mac.sh`** | Bootstrap Mac và tự nâng cấp theo `CentriX-App-User-Setup-*.exe` mới nhất |
 | **`run-centrix.sh`** | Launch app (prefix portable, không hardcode `/Volumes/m2`) |
 | **`export-centrix-cookies.sh`** | Hook dump cookie mỗi lần mở service + `watch` / convert |
 | **`export-centrix-api.sh`** | API trực tiếp: login Google + `/profile/export` (không mở UI) |
@@ -46,7 +69,7 @@ Reinstall app:
 | **`scripts/lib/centrix-export-common.sh`** | **Shell shared** — paths, aliases, `--chrome`, `convert_dump` |
 | **`scripts/lib/centrix_cookie_export.py`** | **Write pattern chung** — 3 CLI → `cookies/<service>/` + sidecars |
 | **`import-cookies-to-chrome.sh`** | Import cookie vào Chrome profile riêng qua CDP |
-| **`CentriX-App-User-Setup-3.17.exe`** | Installer Windows (~93 MB) |
+| **`CentriX-App-User-Setup-*.exe`** | Installer Windows; có thể giữ nhiều bản, setup tự chọn bản mới nhất |
 | **`README.md`** | Doc này |
 
 **Không** commit (mỗi máy tự tạo / secret):
@@ -65,16 +88,19 @@ cookies/*                # exported JSON (giữ cookies/.gitkeep)
 
 ```bash
 ./setup-centrix-mac.sh
+./setup-centrix-mac.sh --upgrade
+./setup-centrix-mac.sh --no-upgrade
 ./setup-centrix-mac.sh --force-reinstall
 ```
 
 Steps:
 
-1. Check macOS + Rosetta (arm64)  
-2. `brew install --cask wine-stable` nếu chưa có  
-3. `WINEPREFIX=./wine-prefix-centrix`  
-4. Cài silent: `CentriX-App-User-Setup-*.exe /VERYSILENT …`  
-5. Ghi `.centrix-env` cho `run-centrix.sh`
+1. Check macOS + Rosetta (arm64)
+2. `brew install --cask wine-stable` nếu chưa có
+3. `WINEPREFIX=./wine-prefix-centrix`
+4. Chọn installer `CentriX-App-User-Setup-*.exe` có version cao nhất
+5. Đọc `APP_VERSION` của app đã cài; hỏi user trước khi nâng cấp nếu installer mới hơn
+6. Ghi `.centrix-env` cho `run-centrix.sh`; cookie/API scripts tự dùng version của app
 
 ### run-centrix.sh
 
@@ -197,7 +223,7 @@ centrix-wine-tools/
 ├── run-centrix.sh
 ├── export-centrix-cookies.sh
 ├── export-pick-service.sh
-├── CentriX-App-User-Setup-3.17.exe
+├── CentriX-App-User-Setup-3.18.exe  # installer hiện tại; bản mới có thể cùng tồn tại
 ├── README.md
 ├── .gitignore
 ├── cookies/                     # exports (gitignored contents)
@@ -218,6 +244,7 @@ centrix-wine-tools/
 | Rosetta missing | `softwareupdate --install-rosetta --agree-to-license` |
 | Cửa sổ trắng | `run-centrix.sh` đã bật software GL; đợi session-restore |
 | `exe not found` | `./setup-centrix-mac.sh --force-reinstall` |
+| Có installer mới | Chép `CentriX-App-User-Setup-<version>.exe` vào repo rồi chạy `./setup-centrix-mac.sh` một lần |
 | API trả HTML / parked-domain page | Backend cũ không còn chạy. Đặt `CENTRIX_SERVER_URL` thành URL API CentriX đang hoạt động rồi chạy `./export-centrix-api.sh login` lại. |
 | brew gstreamer cần sudo | Script dùng `--skip-cask-deps` khi cài Wine |
 
