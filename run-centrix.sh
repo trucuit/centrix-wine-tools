@@ -11,6 +11,12 @@ if [[ -f "$SCRIPT_DIR/.centrix-env" ]]; then
   source "$SCRIPT_DIR/.centrix-env"
 fi
 
+# Self-healing: if the sourced WINEPREFIX does not exist, fallback to relative path
+if [[ -n "${WINEPREFIX:-}" && ! -d "$WINEPREFIX" ]]; then
+  unset WINEPREFIX
+  unset CENTRIX_EXE
+fi
+
 export WINEPREFIX="${WINEPREFIX:-$SCRIPT_DIR/wine-prefix-centrix}"
 export WINEDEBUG="${WINEDEBUG:--all}"
 export LIBGL_ALWAYS_SOFTWARE="${LIBGL_ALWAYS_SOFTWARE:-1}"

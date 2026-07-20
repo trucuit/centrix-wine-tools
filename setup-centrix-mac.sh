@@ -50,13 +50,9 @@ done
 
 # ── find installer .exe in repo ─────────────────────────────
 find_installer() {
-  local f
-  for f in "$SCRIPT_DIR"/CentriX-App-User-Setup*.exe(N); do
-    [[ -f "$f" ]] || continue
-    INSTALLER="$f"
-    return 0
-  done
-  return 1
+  local installers=("$SCRIPT_DIR"/CentriX-App-User-Setup*.exe(Nn))
+  (( ${#installers} > 0 )) || return 1
+  INSTALLER="${installers[-1]}"
 }
 
 # ── checks ──────────────────────────────────────────────────

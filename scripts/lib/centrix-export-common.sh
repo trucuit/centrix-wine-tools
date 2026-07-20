@@ -26,7 +26,7 @@ warn() { print -r -- "! $*" >&2; }
 die()  { print -r -- "ERROR: $*" >&2; exit 1; }
 need() { command -v "$1" >/dev/null || die "missing dependency: $1"; }
 
-# ── catalog (App User 3.17 DEFAULT_SERVICES + pool ids) ──────
+# ── catalog (App User DEFAULT_SERVICES + pool ids) ───────────
 # Format: id|display|default_url
 typeset -ga CENTRIX_KNOWN_SERVICES=(
   "chatgpt|ChatGPT|https://chatgpt.com/"
@@ -360,7 +360,7 @@ if m:
 ' "$asar" 2>/dev/null || true
     )
   fi
-  print -r -- "${ver:-3.17}"
+  print -r -- "${ver:-3.18}"
 }
 
 # Export env block used by API node CLI
