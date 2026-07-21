@@ -41,11 +41,19 @@ export function normalizeCookie(cookie, allowedDomains, now = Date.now() / 1000)
   if (!cookie?.name || cookie.value == null || !domainAllowed(cookie.domain, allowedDomains)) return null;
   const expires = Number(cookie.expirationDate);
   if (!cookie.session && Number.isFinite(expires) && expires > 0 && expires <= now) return null;
+  const name = String(cookie.name);
+  const rawDomain = String(cookie.domain);
+  // __Host- cookies must be host-only (no Domain attribute / no leading dot).
+  const hostOnly = Boolean(cookie.hostOnly) || name.startsWith("__Host-");
+  const domain = hostOnly ? rawDomain.replace(/^\./, "") : rawDomain;
   const result = {
-    name: String(cookie.name), value: String(cookie.value), domain: String(cookie.domain),
-    path: cookie.path || "/", secure: Boolean(cookie.secure), httpOnly: Boolean(cookie.httpOnly),
+    name, value: String(cookie.value), domain,
+    path: cookie.path || "/", secure: Boolean(cookie.secure) || name.startsWith("__Secure-") || name.startsWith("__Host-"),
+    httpOnly: Boolean(cookie.httpOnly), hostOnly,
   };
-  const sameSite = { no_restriction: "None", none: "None", lax: "Lax", strict: "Strict" }[String(cookie.sameSite || "").toLowerCase()];
+  const sameSiteRaw = String(cookie.sameSite || "").toLowerCase();
+  const sameSite = { no_restriction: "None", none: "None", lax: "Lax", strict: "Strict" }[sameSiteRaw];
+  // "unspecified" / empty → omit (Chrome default); never send invalid enum values.
   if (sameSite) result.sameSite = sameSite;
   if (!cookie.session && Number.isFinite(expires) && expires > 0) result.expires = expires;
   // Chrome Network.setCookie requires hasCrossSiteAncestor on partitionKey.
@@ -65,10 +73,38 @@ export function isBrowserContextUnsupported(error) {
 
 /** Map normalized cookie → Network.setCookie params. */
 export function toNetworkSetCookieParams(cookie) {
+  const path = cookie.path || "/";
   const params = {
     name: cookie.name,
     value: cookie.value,
-    domain: cookie.domain,
+    path,
+    secure: Boolean(cookie.secure),
+    httpOnly: Boolean(cookie.httpOnly),
+  };
+  // Host-only / __Host- : CDP needs url, not Domain attribute.
+  if (cookie.hostOnly) {
+    const host = String(cookie.domain || "").replace(/^\./, "");
+    params.url = `https://${host}${path.startsWith("/") ? path : `/${path}`}`;
+  } else {
+    params.domain = cookie.domain;
+  }
+  if (cookie.sameSite) params.sameSite = cookie.sameSite;
+  if (Number.isFinite(cookie.expires) && cookie.expires > 0) params.expires = cookie.expires;
+  if (cookie.partitionKey?.topLevelSite) {
+    params.partitionKey = {
+      topLevelSite: cookie.partitionKey.topLevelSite,
+      hasCrossSiteAncestor: Boolean(cookie.partitionKey.hasCrossSiteAncestor),
+    };
+  }
+  return params;
+}
+
+/** Map normalized cookie → Storage.Cookie for Storage.setCookies. */
+export function toStorageCookie(cookie) {
+  const params = {
+    name: cookie.name,
+    value: cookie.value,
+    domain: cookie.hostOnly ? String(cookie.domain).replace(/^\./, "") : cookie.domain,
     path: cookie.path || "/",
     secure: Boolean(cookie.secure),
     httpOnly: Boolean(cookie.httpOnly),
@@ -93,11 +129,62 @@ function cookieIdentityKey(cookie) {
  * "Browser context management is not supported", fall back to per-cookie
  * Network.setCookie on a page target + Network.getAllCookies verify.
  */
-export async function injectCookies(browserCdp, cookies, { port }) {
+/**
+ * Wipe every stored cookie under the service domain roots before inject.
+ * Stale twins (old usc_*, session-token vs .0/.1) stack into HTTP 431 and mixed accounts.
+ * Chrome 150: Storage.deleteCookies is missing — use Network.deleteCookies on a page target.
+ */
+export async function clearCookiesForDomains(browserCdp, domainRoots, { port } = {}) {
+  const roots = [...new Set((domainRoots || []).map((d) => String(d).replace(/^\./, "").toLowerCase()).filter(Boolean))];
+  if (!roots.length) return { cleared: 0 };
+  let stored = [];
   try {
-    await browserCdp.call("Storage.setCookies", { cookies });
+    stored = (await browserCdp.call("Storage.getCookies")).cookies || [];
+  } catch {
+    return { cleared: 0 };
+  }
+  const targets = stored.filter((cookie) => domainAllowed(cookie.domain, roots));
+  if (!targets.length) return { cleared: 0 };
+
+  const pageCdp = await connectPageSession(port, browserCdp);
+  let cleared = 0;
+  try {
+    await pageCdp.call("Network.enable");
+    for (const cookie of targets) {
+      const params = {
+        name: cookie.name,
+        domain: cookie.domain,
+        path: cookie.path || "/",
+      };
+      if (cookie.partitionKey?.topLevelSite) {
+        params.partitionKey = {
+          topLevelSite: String(cookie.partitionKey.topLevelSite),
+          hasCrossSiteAncestor: Boolean(cookie.partitionKey.hasCrossSiteAncestor),
+        };
+      }
+      try {
+        await pageCdp.call("Network.deleteCookies", params);
+        cleared += 1;
+      } catch {
+        // best-effort per cookie
+      }
+    }
+  } finally {
+    pageCdp.close();
+  }
+  return { cleared };
+}
+
+export async function injectCookies(browserCdp, cookies, { port, domainRoots = [] }) {
+  const roots = domainRoots.length
+    ? domainRoots
+    : [...new Set(cookies.map((c) => String(c.domain || "").replace(/^\./, "").split(".").slice(-2).join(".")))];
+  const { cleared } = await clearCookiesForDomains(browserCdp, roots, { port });
+  const storageCookies = cookies.map(toStorageCookie);
+  try {
+    await browserCdp.call("Storage.setCookies", { cookies: storageCookies });
     const stored = (await browserCdp.call("Storage.getCookies")).cookies || [];
-    return { method: "Storage", stored };
+    return { method: "Storage", stored, cleared };
   } catch (error) {
     if (!isBrowserContextUnsupported(error)) throw error;
   }
@@ -114,7 +201,7 @@ export async function injectCookies(browserCdp, cookies, { port }) {
       throw new Error(`Network.setCookie failed for ${failed}/${cookies.length} cookies.`);
     }
     const stored = (await pageCdp.call("Network.getAllCookies")).cookies || [];
-    return { method: "Network", stored };
+    return { method: "Network", stored, cleared };
   } finally {
     pageCdp.close();
   }
@@ -139,10 +226,52 @@ async function connectPageSession(port, browserCdp) {
   return connectCdp(page.webSocketDebuggerUrl);
 }
 
+/** Dump / backup noise that must not be mixed into a live inject. */
+export function isCookieSourceNoise(name) {
+  const base = String(name || "");
+  return (
+    base.endsWith(".full.json")
+    || /cookie-editor/i.test(base)
+    || /^cookies-dump-/i.test(base)
+    || /\.bak(\.|$)/i.test(base)
+    || base.endsWith(".storage.json")
+  );
+}
+
+/**
+ * True when filename is a host-scoped export like `auth.openai.com.json`
+ * or `chatgpt.com.json` for one of the service allowlisted roots.
+ */
+export function isHostScopedCookieFile(name, allowedDomains) {
+  if (!name?.endsWith(".json") || isCookieSourceNoise(name)) return false;
+  const host = name.slice(0, -".json".length).toLowerCase();
+  // service/j2team/numbered dumps are not host files
+  if (!host.includes(".") || host.endsWith(".j2team") || /-\d+$/.test(host)) return false;
+  return domainAllowed(host, allowedDomains);
+}
+
+/**
+ * Pick which JSON files to read for inject.
+ * service mode prefers host-scoped files (chatgpt.com.json, auth.openai.com.json)
+ * so bulk dumps with a *different* session cannot overwrite auth cookies.
+ */
+export function selectCookieSourceFiles(allJson, allowedDomains, mode = "service") {
+  if (mode === "full") {
+    return allJson.filter((name) => name.endsWith(".full.json")).sort();
+  }
+  const candidates = allJson
+    .filter((name) => name.endsWith(".json") && !isCookieSourceNoise(name))
+    .sort();
+  const hostFiles = candidates.filter((name) => isHostScopedCookieFile(name, allowedDomains));
+  // Prefer host-scoped only when present — avoids mixing notebooklm.google.com.json
+  // (separate ChatGPT session) with auth.openai.com.json from the current export.
+  return hostFiles.length ? hostFiles : candidates;
+}
+
 /**
  * Load cookies from a service folder.
  * @param {"service"|"full"} mode
- *   - service (default): all *.json except *.full.json (host-scoped, safe inject)
+ *   - service (default): host-scoped JSON when available (safe inject)
  *   - full: only *.full.json (raw partition dump; still domain-allowlisted)
  */
 export async function loadServiceCookies(serviceDir, allowedDomains, mode = "service") {
@@ -150,12 +279,10 @@ export async function loadServiceCookies(serviceDir, allowedDomains, mode = "ser
     throw new Error(`Invalid cookie mode: ${mode}. Use "service" or "full".`);
   }
   const allJson = (await readdir(serviceDir)).filter((name) => name.endsWith(".json"));
-  const files = mode === "full"
-    ? allJson.filter((name) => name.endsWith(".full.json"))
-    : allJson.filter((name) => !name.endsWith(".full.json"));
+  const files = selectCookieSourceFiles(allJson, allowedDomains, mode);
   const cookies = [];
   const rejected = { invalid: 0, duplicate: 0 };
-  const seen = new Set();
+  const seen = new Map(); // key → index in cookies
   for (const file of files) {
     const parsed = JSON.parse(await readFile(resolve(serviceDir, file), "utf8"));
     const list = Array.isArray(parsed) ? parsed : parsed.cookies;
@@ -164,12 +291,21 @@ export async function loadServiceCookies(serviceDir, allowedDomains, mode = "ser
       const cookie = normalizeCookie(rawCookie, allowedDomains);
       if (!cookie) { rejected.invalid += 1; continue; }
       const key = `${cookie.domain}\t${cookie.path}\t${cookie.name}\t${cookie.partitionKey?.topLevelSite || ""}`;
-      if (seen.has(key)) { rejected.duplicate += 1; continue; }
-      seen.add(key);
+      if (seen.has(key)) {
+        // Prefer the cookie that expires later (fresher session).
+        const prevIndex = seen.get(key);
+        const prev = cookies[prevIndex];
+        const prevExp = Number(prev.expires) || 0;
+        const nextExp = Number(cookie.expires) || 0;
+        if (nextExp > prevExp) cookies[prevIndex] = cookie;
+        rejected.duplicate += 1;
+        continue;
+      }
+      seen.set(key, cookies.length);
       cookies.push(cookie);
     }
   }
-  return { cookies, rejected, files: files.length, mode };
+  return { cookies, rejected, files: files.length, mode, sourceFiles: files };
 }
 
 export async function loadServiceStorage(serviceDir, service) {
@@ -501,7 +637,8 @@ async function main() {
   if (options.dryRun) {
     console.log(JSON.stringify({
       service: options.service, sourceService, mode: options.mode, dryRun: true,
-      files: loaded.files, cookies: loaded.cookies.length,
+      files: loaded.files, sourceFiles: loaded.sourceFiles, cookies: loaded.cookies.length,
+      authOpenai: loaded.cookies.filter((c) => String(c.domain).includes("auth.openai")).length,
       localStorageKeys: Object.keys(localStorageEntries).length, rejected: loaded.rejected,
     }, null, options.json ? 0 : 2));
     return;
@@ -511,7 +648,10 @@ async function main() {
   let action = "not-opened";
   let localStorageApplied = 0;
   try {
-    const { method: injectMethod, stored } = await injectCookies(cdp, loaded.cookies, { port: options.port });
+    const { method: injectMethod, stored } = await injectCookies(cdp, loaded.cookies, {
+      port: options.port,
+      domainRoots: config.domains,
+    });
     const expected = new Set(loaded.cookies.map((cookie) => cookieIdentityKey(cookie)));
     const storedKeys = new Set(stored.map((cookie) => cookieIdentityKey(cookie)));
     const verified = [...expected].filter((key) => storedKeys.has(key)).length;
@@ -525,7 +665,9 @@ async function main() {
     }
     console.log(JSON.stringify({
       service: options.service, sourceService, mode: options.mode, imported: expected.size,
-      injectMethod, localStorageApplied, files: loaded.files, rejected: loaded.rejected, action,
+      injectMethod, localStorageApplied, files: loaded.files, sourceFiles: loaded.sourceFiles,
+      authOpenai: loaded.cookies.filter((c) => String(c.domain).includes("auth.openai")).length,
+      rejected: loaded.rejected, action,
       profileDir: options.profileDir, target: config.url,
     }, null, options.json ? 0 : 2));
   } finally { cdp.close(); }

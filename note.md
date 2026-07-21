@@ -1,4 +1,3 @@
-
 Đã ghi vào ~/.claude/settings.json (máy này):
 
 "remoteControlAtStartup": false,
@@ -28,3 +27,12 @@ Tài khoản admin trên http://163.223.224.240:3080:
 Email: admin@centrix.local
 
 Mật khẩu: _838IPT0qaVPoQT8yDGZnhM-
+
+
+===
+
+Dùng cho Codex / auth.openai.com
+
+1. Email: gptpro2@centrix.biz
+2. Password: H#488104983025ow
+3. Nếu hỏi 2FA → code TOTP từ secret trên (Authenticator / oathtool --totp -b N7NM2WTN4DKTZ3VPHI4WM2AN747DYA5F)

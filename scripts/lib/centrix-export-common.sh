@@ -220,32 +220,39 @@ resolve_dump_path() {
 find_dump_for() {
   local sid="$1" f peer
   peer=$(resolve_service_id "$sid")
-  for f in \
-    "$USERDATA/cookies-dump-${sid}.json" \
-    "$USERDATA/cookies-dump-${peer}.json"
-  do
-    [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
-  done
+  # Aliased ids (chatgpt→notebooklm, grok→grok-heavy): prefer the *pool* dump first.
+  # Otherwise cookies-dump-chatgpt.json (old free slot) wins over GPT-5.5 Pro dump.
+  if [[ -n "$peer" && "$peer" != "$sid" ]]; then
+    for f in \
+      "$USERDATA/cookies-dump-${peer}.json" \
+      "$USERDATA/cookies-dump-${sid}.json"
+    do
+      [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
+    done
+  else
+    for f in \
+      "$USERDATA/cookies-dump-${sid}.json" \
+      "$USERDATA/cookies-dump-${peer}.json"
+    do
+      [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
+    done
+  fi
   case "$sid" in
-    notebooklm)
-      [[ -f "$USERDATA/cookies-dump-chatgpt.json" ]] && {
-        print -r -- "$USERDATA/cookies-dump-chatgpt.json"; return 0
-      }
+    notebooklm|chatgpt|gpt|gpt-5|chatgpt-pro)
+      for f in \
+        "$USERDATA/cookies-dump-notebooklm.json" \
+        "$USERDATA/cookies-dump-chatgpt.json"
+      do
+        [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
+      done
       ;;
-    chatgpt)
-      [[ -f "$USERDATA/cookies-dump-notebooklm.json" ]] && {
-        print -r -- "$USERDATA/cookies-dump-notebooklm.json"; return 0
-      }
-      ;;
-    grok-heavy)
-      [[ -f "$USERDATA/cookies-dump-grok.json" ]] && {
-        print -r -- "$USERDATA/cookies-dump-grok.json"; return 0
-      }
-      ;;
-    grok)
-      [[ -f "$USERDATA/cookies-dump-grok-heavy.json" ]] && {
-        print -r -- "$USERDATA/cookies-dump-grok-heavy.json"; return 0
-      }
+    grok-heavy|grok|grok-4)
+      for f in \
+        "$USERDATA/cookies-dump-grok-heavy.json" \
+        "$USERDATA/cookies-dump-grok.json"
+      do
+        [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
+      done
       ;;
   esac
   return 1

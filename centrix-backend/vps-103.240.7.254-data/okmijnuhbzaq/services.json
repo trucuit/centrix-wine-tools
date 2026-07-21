@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-14T14:09:23.062Z",
+  "services": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "loginUrl": "https://chatgpt.com/",
+      "iconUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/openai.png",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": [
+        "chatgpt.com",
+        "openai.com"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "url": "https://claude.ai/new",
+      "loginUrl": "https://claude.ai/new",
+      "iconUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-avatar/avatars/claude.webp",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "claude-3-5-haiku",
+      "defaultCreditCost": 1,
+      "cookieDomains": [
+        "claude.ai",
+        "anthropic.com"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "url": "https://gemini.google.com/",
+      "loginUrl": "https://gemini.google.com/",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "gemini-2.5-pro",
+      "defaultCreditCost": 2,
+      "cookieDomains": [
+        "gemini.google.com",
+        "google.com"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "loginUrl": "https://www.perplexity.ai/",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=www.perplexity.ai&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "sonar-pro",
+      "defaultCreditCost": 2,
+      "cookieDomains": [
+        "perplexity.ai"
+      ]
+    },
+    {
+      "id": "microsoft-copilot",
+      "name": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "loginUrl": "https://copilot.microsoft.com/",
+      "iconUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/copilot-color.png",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "copilot",
+      "defaultCreditCost": 2,
+      "cookieDomains": [
+        "copilot.microsoft.com",
+        "microsoft.com"
+      ]
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "url": "https://grok.com/",
+      "loginUrl": "https://grok.com/",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=grok.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "grok-4",
+      "defaultCreditCost": 3,
+      "cookieDomains": [
+        "grok.com",
+        "x.ai",
+        "x.com"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "url": "https://chat.deepseek.com/",
+      "loginUrl": "https://chat.deepseek.com/",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=chat.deepseek.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "deepseek-chat",
+      "defaultCreditCost": 1,
+      "cookieDomains": [
+        "deepseek.com",
+        "chat.deepseek.com"
+      ]
+    },
+    {
+      "id": "poe",
+      "name": "Capcut",
+      "url": "https://www.capcut.com/",
+      "loginUrl": "https://www.capcut.com/",
+      "iconUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/capcut.png",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 2,
+      "cookieDomains": [
+        "poe.com"
+      ]
+    },
+    {
+      "id": "notebooklm",
+      "name": "GPT-5.5 Pro",
+      "url": "https://chatgpt.com/",
+      "loginUrl": "https://chatgpt.com/",
+      "iconUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/openai.png",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "gpt-4o-mini",
+      "defaultCreditCost": 1,
+      "cookieDomains": [
+        "chatgpt.com",
+        "openai.com"
+      ]
+    },
+    {
+      "id": "grok-heavy",
+      "name": "Grok Heavy",
+      "url": "https://grok.com/",
+      "loginUrl": "https://grok.com/",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=grok.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": [
+        "grok.com",
+        "x.ai",
+        "x.com"
+      ]
+    },
+    {
+      "id": "semrush",
+      "name": "Semrush",
+      "url": "https://noxtools.com/secure/page/semrush",
+      "loginUrl": "https://noxtools.com/secure/page/semrush",
+      "iconUrl": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/semrush-icon.png",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": []
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "url": "https://gamma.app/vi",
+      "loginUrl": "https://gamma.app/vi",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=gamma.app&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": [
+        "gamma.app"
+      ]
+    },
+    {
+      "id": "scribd",
+      "name": "Scribd",
+      "url": "https://www.scribd.com/",
+      "loginUrl": "https://www.scribd.com/",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=www.scribd.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": [
+        "scribd.com"
+      ]
+    },
+    {
+      "id": "freepik",
+      "name": "Freepik",
+      "url": "https://www.magnific.com/stock#from_element=mainmenu",
+      "loginUrl": "https://www.magnific.com/stock#from_element=mainmenu",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=www.magnific.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": [
+        "magnific.com"
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "url": "https://www.canva.com/",
+      "loginUrl": "https://www.canva.com/login/",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=www.canva.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": []
+    },
+    {
+      "id": "monica",
+      "name": "Monica",
+      "url": "https://monica.im/",
+      "loginUrl": "https://monica.im/login",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=monica.im&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": []
+    },
+    {
+      "id": "quillbot",
+      "name": "quillbot",
+      "url": "https://quillbot.com/",
+      "loginUrl": "https://quillbot.com/login",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=quillbot.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": []
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "url": "https://zoom.us/",
+      "loginUrl": "https://zoom.us/signin#/login",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=zoom.us&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": []
+    },
+    {
+      "id": "envato-elements",
+      "name": "Envato Elements",
+      "url": "https://noxtools.com/secure/page/envato",
+      "loginUrl": "https://noxtools.com/secure/page/envato",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=elements.envato.com&sz=64",
+      "enabled": true,
+      "modelPricingEnabled": true,
+      "defaultModel": "",
+      "defaultCreditCost": 1,
+      "cookieDomains": []
+    }
+  ]
+}

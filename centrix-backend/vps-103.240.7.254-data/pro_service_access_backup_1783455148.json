@@ -1,0 +1,53 @@
+{
+  "plan_id": "plan-pro",
+  "rows": [
+    [
+      "chatgpt",
+      0
+    ],
+    [
+      "claude",
+      0
+    ],
+    [
+      "deepseek",
+      0
+    ],
+    [
+      "elevenlabs",
+      0
+    ],
+    [
+      "gemini",
+      0
+    ],
+    [
+      "grok",
+      0
+    ],
+    [
+      "microsoft-copilot",
+      0
+    ],
+    [
+      "midjourney",
+      0
+    ],
+    [
+      "mistral",
+      0
+    ],
+    [
+      "notebooklm",
+      0
+    ],
+    [
+      "perplexity",
+      0
+    ],
+    [
+      "poe",
+      1
+    ]
+  ]
+}

@@ -4,11 +4,23 @@ import assert from "node:assert/strict";
 import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { resolve } from "node:path";
-import { domainAllowed, listImportableServices, loadServiceCookies, loadServiceStorage, normalizeCookie } from "../scripts/import-cookies-to-chrome.mjs";
+import {
+  domainAllowed,
+  isCookieSourceNoise,
+  isHostScopedCookieFile,
+  listImportableServices,
+  loadServiceCookies,
+  loadServiceStorage,
+  normalizeCookie,
+  selectCookieSourceFiles,
+  toNetworkSetCookieParams,
+} from "../scripts/import-cookies-to-chrome.mjs";
 
 assert.equal(domainAllowed(".grok.com", ["grok.com", "x.ai"]), true);
 assert.equal(domainAllowed("accounts.x.ai", ["grok.com", "x.ai"]), true);
 assert.equal(domainAllowed("evilgrok.com", ["grok.com"]), false);
+assert.equal(domainAllowed("auth.openai.com", ["chatgpt.com", "openai.com"]), true);
+assert.equal(domainAllowed(".auth.openai.com", ["chatgpt.com", "openai.com"]), true);
 
 const normalized = normalizeCookie({
   name: "session", value: "redacted", domain: ".grok.com", path: "/",
@@ -16,10 +28,39 @@ const normalized = normalizeCookie({
 }, ["grok.com"]);
 assert.deepEqual(normalized, {
   name: "session", value: "redacted", domain: ".grok.com", path: "/",
-  secure: true, httpOnly: true, sameSite: "None",
+  secure: true, httpOnly: true, hostOnly: false, sameSite: "None",
 });
 assert.equal(normalizeCookie({ name: "x", value: "y", domain: ".example.com" }, ["grok.com"]), null);
 assert.equal(normalizeCookie({ name: "x", value: "y", domain: ".grok.com", expirationDate: 1, session: false }, ["grok.com"], 2), null);
+
+// __Host- → host-only + secure; Network params use url not domain
+const hostCookie = normalizeCookie({
+  name: "__Host-next-auth.csrf-token", value: "tok", domain: "chatgpt.com",
+  path: "/", hostOnly: true, httpOnly: true, sameSite: "lax", session: true,
+}, ["chatgpt.com", "openai.com"]);
+assert.equal(hostCookie.hostOnly, true);
+assert.equal(hostCookie.secure, true);
+const netParams = toNetworkSetCookieParams(hostCookie);
+assert.equal(netParams.url, "https://chatgpt.com/");
+assert.equal(netParams.domain, undefined);
+
+// File selection: prefer host-scoped; skip dump noise
+assert.equal(isCookieSourceNoise("cookies-dump-notebooklm.cookie-editor.json"), true);
+assert.equal(isCookieSourceNoise("auth.openai.com.json"), false);
+assert.equal(isHostScopedCookieFile("auth.openai.com.json", ["openai.com", "chatgpt.com"]), true);
+assert.equal(isHostScopedCookieFile("notebooklm.google.com.json", ["openai.com", "chatgpt.com"]), false);
+assert.equal(isHostScopedCookieFile("notebooklm.json", ["openai.com", "chatgpt.com"]), false);
+assert.deepEqual(
+  selectCookieSourceFiles([
+    "notebooklm.json",
+    "auth.openai.com.json",
+    "chatgpt.com.json",
+    "notebooklm.google.com.json",
+    "cookies-dump-notebooklm.cookie-editor.json",
+    "notebooklm.full.json",
+  ], ["chatgpt.com", "openai.com"], "service"),
+  ["auth.openai.com.json", "chatgpt.com.json"],
+);
 
 const root = await mkdtemp(resolve(tmpdir(), "cookie-import-test-"));
 try {
@@ -34,13 +75,20 @@ try {
     url: "https://chat.deepseek.com",
     localStorage: { userToken: "redacted", settingsJwt: "redacted", unexpected: "blocked" },
   }));
-  // mode=service (default): skip *.full.json
+  // mode=service: host file accounts.x.ai.json wins over grok.json bulk
   const loaded = await loadServiceCookies(serviceDir, ["grok.com", "x.ai"]);
   assert.equal(loaded.mode, "service");
-  assert.equal(loaded.cookies.length, 2);
-  assert.equal(loaded.rejected.duplicate, 1);
-  assert.equal(loaded.rejected.invalid, 1);
+  assert.deepEqual(loaded.sourceFiles, ["accounts.x.ai.json"]);
+  assert.equal(loaded.cookies.length, 1);
+  assert.equal(loaded.cookies[0].name, "sso");
   assert.equal(loaded.cookies.some((cookie) => cookie.name === "should-not-load"), false);
+
+  // without host files, fall back to service json (skip noise/storage)
+  await rm(resolve(serviceDir, "accounts.x.ai.json"));
+  const fallback = await loadServiceCookies(serviceDir, ["grok.com", "x.ai"]);
+  assert.equal(fallback.cookies.length, 1); // valid once (duplicate collapsed)
+  assert.equal(fallback.rejected.duplicate, 1);
+  assert.ok(fallback.sourceFiles.includes("grok.json"));
 
   // mode=full: only *.full.json
   const full = await loadServiceCookies(serviceDir, ["grok.com", "x.ai"], "full");
@@ -49,9 +97,29 @@ try {
   assert.equal(full.cookies.length, 1);
   assert.equal(full.cookies[0].name, "should-not-load");
 
-  // explicit service mode same as default
-  const explicitService = await loadServiceCookies(serviceDir, ["grok.com", "x.ai"], "service");
-  assert.equal(explicitService.cookies.length, 2);
+  // ChatGPT family: auth.openai.com host file + ignore conflicting google dump
+  const nlmDir = resolve(root, "notebooklm");
+  await mkdir(nlmDir);
+  await writeFile(resolve(nlmDir, "auth.openai.com.json"), JSON.stringify({
+    url: "https://auth.openai.com/log-in",
+    cookies: [{ name: "usc_good", value: "a", domain: ".auth.openai.com", path: "/", secure: true, httpOnly: true, sameSite: "lax", session: true }],
+  }));
+  await writeFile(resolve(nlmDir, "chatgpt.com.json"), JSON.stringify({
+    url: "https://chatgpt.com",
+    cookies: [{ name: "__Secure-next-auth.session-token", value: "sess", domain: ".chatgpt.com", path: "/", secure: true, httpOnly: true, sameSite: "lax", expirationDate: 9999999999 }],
+  }));
+  await writeFile(resolve(nlmDir, "notebooklm.google.com.json"), JSON.stringify({
+    url: "https://notebooklm.google.com",
+    cookies: [
+      { name: "usc_bad", value: "b", domain: ".auth.openai.com", path: "/", secure: true, sameSite: "lax", session: true },
+      { name: "usc_good", value: "overwrite-me", domain: ".auth.openai.com", path: "/", secure: true, sameSite: "lax", session: true },
+    ],
+  }));
+  const chatgpt = await loadServiceCookies(nlmDir, ["chatgpt.com", "openai.com"]);
+  assert.deepEqual(chatgpt.sourceFiles, ["auth.openai.com.json", "chatgpt.com.json"]);
+  assert.equal(chatgpt.cookies.some((c) => c.name === "usc_good" && c.value === "a"), true);
+  assert.equal(chatgpt.cookies.some((c) => c.name === "usc_bad"), false);
+  assert.equal(chatgpt.cookies.some((c) => c.name === "__Secure-next-auth.session-token"), true);
 
   const storage = await loadServiceStorage(serviceDir, "deepseek");
   assert.deepEqual(storage, { userToken: "redacted", settingsJwt: "redacted" });

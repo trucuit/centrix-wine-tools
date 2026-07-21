@@ -2,20 +2,8 @@
   "url": "https://gemini.google.com/",
   "cookies": [
     {
-      "domain": "accounts.google.com",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "SMSV",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "ADHTe-AtU81yo34_qaIs2lXGXY1TPJc7zR49d84k3TOtKJZO5SPJdVVzsOUCA-am-Atm6o9z01NudlX0GtLYf80FwOCherIIgYcPKtEqPa1kxcW4I3ohiZE",
-      "expirationDate": 1818603802
-    },
-    {
       "domain": ".gemini.google.com",
+      "expirationDate": 1791297925,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_gcl_au",
@@ -24,11 +12,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "1.1.627725887.1784043805",
-      "expirationDate": 1791819805
+      "value": "1.1.43466017.1783521925"
     },
     {
       "domain": ".gemini.google.com",
+      "expirationDate": 1818336535,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga",
@@ -37,76 +25,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "GA1.1.1670191989.1784043805",
-      "expirationDate": 1819117254
-    },
-    {
-      "domain": "accounts.google.com",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "__Host-GAPS",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "1:jsmNSZtyA4cumhdt5OLKtil4rNCgqJwTqSxUbMtZBaV4r9FHFkpzG0IgZXEMrWyd0h9Tum3A38Iu2TNo_XzOANpjdub8iw:Ep9QMVcIl2ryCmW0",
-      "expirationDate": 1819084506
-    },
-    {
-      "domain": ".gemini.google.com",
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "_ga_BF8Q35BMLM",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "GS2.1.s1784539194$o7$g1$t1784539203$j51$l0$h0",
-      "expirationDate": 1819099203
+      "value": "GA1.1.484564892.1783521926"
     },
     {
       "domain": ".google.com",
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "__Secure-1PSIDTS",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "sidts-CjEBPWEu2fyUUyWxl_2Sq6lvXZ5UUCOawaaffzEoPUaLReYujH8CgAvV9GusR3TRJVaVEAA",
-      "expirationDate": 1816077901
-    },
-    {
-      "domain": ".google.com",
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "__Secure-3PSIDTS",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "sidts-CjEBPWEu2fyUUyWxl_2Sq6lvXZ5UUCOawaaffzEoPUaLReYujH8CgAvV9GusR3TRJVaVEAA",
-      "expirationDate": 1816077901
-    },
-    {
-      "domain": ".google.com",
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "NID",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "533=o-RBhrvAjyB-Z7_T7tXgkFKV6Gr0gbQ3RUIJZ74ZxB2Wj3qOqxDIjUNuTZXQi5xX9r5MDx5qKItmOt2x02NIJ1_00q4YctR3UCFOCpZDlyKiUO_JW2mhWsE1hhfLJebyGoax3EB0_CJ1siYQfNGJXlpV96q3zYc2X4BRUy2lo8LYzkeGTNUS47EpUl6_qdHoUAga-HAYcEyAYRcHyG-i7X_ZqOC609zQ7e99qINbFyA1nvLgx_WVfcmm1oGq0lYk8gGL3RefECJmwxu3A1hAsazJ-7xMuA7Hcma6PSZrTgoyR_BrJbWrEyK-ahIjNm8kSqfohxbNNnPXjCkSG46f_EEyWKLdMJsCTq5ZPMa2LgbgBZuBmXi3eyaZyuKHrXlkGwpo0zjTskx6wgVY6c90vIvcnYR1LqCNKNjbjCQfeTyqppnCHtssEk2mGB1p64yULAgAGQEywvGmhahmmKy0WWB7aC3MIjJrmMhebhkOwQyEnZcD-B4EtAku9VWlZaGGjS6HrRcsemUUttCH7qJzr3OnRT6SoqcRlGYtKBW9BVXcdjKDqiu5hc_nt-bvrjHzj6ebha5WjFOpDSYc_hSwRuRPisCecOgsUqjLWit7hflKmBPqCsTSJiBpRDmZ--FEmhY8_HeG-gFJpa5E7Syxhqen6A",
-      "expirationDate": 1800350365
-    },
-    {
-      "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": false,
       "name": "SID",
@@ -115,11 +38,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "g.a000Aglyr-lfiWLbRHK-Dml2RlzVGOzc1HUpa_zmWacFDaCOx1v4wRur6m47LBfrCu9yZ8_mLgACgYKAboSARUSFQHGX2Mi_q62OXabEov44wPvRkdBOBoVAUF8yKrxLLP2UtBoYYjmjkvSMzBe0076",
-      "expirationDate": 1819117218
+      "value": "g.a000_whyr-PAIXh9Y6WuMmnOZC7RKsKRPDuxwB-rPXX_2sEV4nGRwm7AeiX_VHUhEMfoYR5yjAACgYKAfUSARUSFQHGX2MigkW6tqe49yVHfQgkHye4FRoVAUF8yKqFciivy6f1OQ0QihGduDd40076"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": true,
       "name": "__Secure-1PSID",
@@ -128,11 +51,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "g.a000Aglyr-lfiWLbRHK-Dml2RlzVGOzc1HUpa_zmWacFDaCOx1v4NvNX4aUh0D5LM-GQRAG51gACgYKAawSARUSFQHGX2MiuD7Eb5bFo_Hh35i8qL9BVxoVAUF8yKqdb4Jo5ppdDJETrhJZ_xMv0076",
-      "expirationDate": 1819117218
+      "value": "g.a000_whyr-PAIXh9Y6WuMmnOZC7RKsKRPDuxwB-rPXX_2sEV4nGRQNq0op-1kANMXEkIkd69rAACgYKASgSARUSFQHGX2MiuucDnXQwIQp-rXvQ5yzyoxoVAUF8yKpBRvsP_yHbOhwJ8Kge_Gz_0076"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": true,
       "name": "__Secure-3PSID",
@@ -141,11 +64,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "g.a000Aglyr-lfiWLbRHK-Dml2RlzVGOzc1HUpa_zmWacFDaCOx1v4ywXRzWMD7ZvuzPfa5h6AAgACgYKAcQSARUSFQHGX2Mifb7Z7XlUaUrgiDkwaEYV1xoVAUF8yKrxVO6CLMHDxXzY4XJVoqeq0076",
-      "expirationDate": 1819117218
+      "value": "g.a000_whyr-PAIXh9Y6WuMmnOZC7RKsKRPDuxwB-rPXX_2sEV4nGRPttieEY64w5kzW4KGbaBAAACgYKAVASARUSFQHGX2MilFKa8c_ggWC4-L_D3MACjxoVAUF8yKrlsdxEKn0MzBH-sSUKv9OM0076"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": true,
       "name": "HSID",
@@ -154,11 +77,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "ABCRY2kazsvTzvzuG",
-      "expirationDate": 1819117218
+      "value": "AHdgOgVtX6vTAyFfr"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": true,
       "name": "SSID",
@@ -167,11 +90,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "ATBIutBdJobeqxuYy",
-      "expirationDate": 1819117218
+      "value": "ANKCXnYTXA6FPHQMp"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": false,
       "name": "APISID",
@@ -180,11 +103,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "yunKjVRxoE4MSiC3/AHWY3osY8FTzBlaG_",
-      "expirationDate": 1819117218
+      "value": "Pid08ZH9p95jFzMM/AMGkYMCL03KDe615j"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": false,
       "name": "SAPISID",
@@ -193,11 +116,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "RRDeU3-k38TiwGBv/AjbES4LiFsKJBsUqr",
-      "expirationDate": 1819117218
+      "value": "PCiWhoUccKvNE2d3/AyZstOoFcIOsAgAJb"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": false,
       "name": "__Secure-1PAPISID",
@@ -206,11 +129,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "RRDeU3-k38TiwGBv/AjbES4LiFsKJBsUqr",
-      "expirationDate": 1819117218
+      "value": "PCiWhoUccKvNE2d3/AyZstOoFcIOsAgAJb"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1818292412,
       "hostOnly": false,
       "httpOnly": false,
       "name": "__Secure-3PAPISID",
@@ -219,63 +142,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "RRDeU3-k38TiwGBv/AjbES4LiFsKJBsUqr",
-      "expirationDate": 1819117218
-    },
-    {
-      "domain": "accounts.google.com",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "LSID",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "s.NG|s.VN|s.youtube:g.a000Aglyr4nZcpj2oD5LupIuoYUqgLbBepfeEYak9qXCcgB3IqqT9LkEHfwrt-E-4Enp_Df8TAACgYKAZ4SARUSFQHGX2MivkPavM_qQp15rtxGQUS5shoVAUF8yKodKBt7tZdkvzHKK0zR56Fy0076",
-      "expirationDate": 1819117218
-    },
-    {
-      "domain": "accounts.google.com",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "__Host-1PLSID",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "s.NG|s.VN|s.youtube:g.a000Aglyr4nZcpj2oD5LupIuoYUqgLbBepfeEYak9qXCcgB3IqqT1wI0RURF_X1Kpmfjbf1dDwACgYKAXcSARUSFQHGX2Mix9wxrg4X87LLbyvMDt0bNxoVAUF8yKp1ebt9GaNi2qbM2sIwI1aB0076",
-      "expirationDate": 1819117218
-    },
-    {
-      "domain": "accounts.google.com",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "__Host-3PLSID",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "s.NG|s.VN|s.youtube:g.a000Aglyr4nZcpj2oD5LupIuoYUqgLbBepfeEYak9qXCcgB3IqqTyOQoIBAU5qflRZJvviSEzgACgYKATsSARUSFQHGX2MiiBkSICclOIPtWLua5DgUgxoVAUF8yKqY-pdsYN4wapYOq-fFHVAY0076",
-      "expirationDate": 1819117218
-    },
-    {
-      "domain": "accounts.google.com",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "ACCOUNT_CHOOSER",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "AFx_qI7MZWs47a9qrCISe6dT6P7FHGAXELAAjgxa9MFwCZwxdah9U_bonUNrFa36U4Zp_OprgLsKR-n7NGjwxOQU9YnQ0WETJnVrSuVC1C6lHoUNJRrxO_BL1CPUA6yAKbt_H2FcSY8U",
-      "expirationDate": 1819117218
+      "value": "PCiWhoUccKvNE2d3/AyZstOoFcIOsAgAJb"
     },
     {
       "domain": ".gemini.google.com",
+      "expirationDate": 1784596418,
       "hostOnly": false,
       "httpOnly": true,
       "name": "COMPASS",
@@ -284,24 +155,50 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "gemini-pd=CjwACWuJV93jFYb_b6k1ZbZc5AVi75OXfwVJx6huPFdJgLZgT-iphNSBtyIyTho-2Gurv4U86El7hPmdVFUQoID-0gYaZgAJa4lXpsoJbchlqRw52llk_s8akfkbFp1Jpq0e9ivgFo8wra55WKMIfkr6d9s5AvpBfXq2-TLuhlXZo8g7JGqEPxQi3LPMWYGXkIxCrsaQqy98AjdWNaVj-2mREmCSOGWIqXg1_SABMAE",
-      "expirationDate": 1785421218
+      "value": "gemini-pd=CjwACWuJV93jFYb_b6k1ZbZc5AVi75OXfwVJx6huPFdJgLZgT-iphNSBtyIyTho-2Gurv4U86El7hPmdVFUQwdTL0gYaaAAJa4lXjlTseMtFi0H0Wi_LQqrZLThUo5F5m_IPeRPtPHnPFLiLAq3JWxrgM8AHZtABCHetxfJ9w1gifiE-5aVu_XO5yyu8e3kKmU0yqOKux_74unIwXKlDRvIlFE4KhYQGTh-TMa8LIAEwAQ"
     },
     {
       "domain": ".gemini.google.com",
+      "expirationDate": 1818292421,
       "hostOnly": false,
       "httpOnly": false,
-      "name": "_ga_WC57KJ50ZZ",
+      "name": "_ga_BF8Q35BMLM",
       "path": "/",
       "sameSite": "unspecified",
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "GS2.1.s1784557220$o48$g0$t1784557254$j26$l0$h0",
-      "expirationDate": 1819117254
+      "value": "GS2.1.s1783732392$o4$g1$t1783732420$j32$l0$h0"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1815268421,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__Secure-1PSIDTS",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "sidts-CjIBPWEu2TOLKktyWwaMk0nKNEQ3gEUM7kiKb7_7GdlPRvTlTonPpUUafXDtesHIkajERhAA"
+    },
+    {
+      "domain": ".google.com",
+      "expirationDate": 1815268421,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__Secure-3PSIDTS",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "sidts-CjIBPWEu2TOLKktyWwaMk0nKNEQ3gEUM7kiKb7_7GdlPRvTlTonPpUUafXDtesHIkajERhAA"
+    },
+    {
+      "domain": ".google.com",
+      "expirationDate": 1815268423,
       "hostOnly": false,
       "httpOnly": false,
       "name": "SIDCC",
@@ -310,11 +207,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "AKEyXzWBGMbncd4huXV6fCKQ7n_6MBunBkabEagX_n9W_X3r4aEc1jbmkvgXt15SFIIB1o8xV5w",
-      "expirationDate": 1816093255
+      "value": "AKEyXzXUJ3rUb3N9NZ-4HgWTTEBi5qmA2BcVAtQvPpq7KLWGN56BoKFB4kCTq770OouFyBf3"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1815268423,
       "hostOnly": false,
       "httpOnly": true,
       "name": "__Secure-1PSIDCC",
@@ -323,11 +220,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "AKEyXzUli6inqDI8EyWJhJKjPaz64ybHxJXR1kzmJ6lhj7t5l_Z5IL_urxuQBXflAlo7OQ0cBQ",
-      "expirationDate": 1816093255
+      "value": "AKEyXzXnk_oCEgY_td-RltUxgtD6h281yXPe38E2PHE2v8VixwACdQF7zpVu3aT5UNd1bQvU"
     },
     {
       "domain": ".google.com",
+      "expirationDate": 1815268423,
       "hostOnly": false,
       "httpOnly": true,
       "name": "__Secure-3PSIDCC",
@@ -336,8 +233,33 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "AKEyXzXHk1WCT0CHfVk9rTcLCQjq8Cnci-Z1VkLxVovHmZYpyAvA5NpbsOmsR6AvKOH9Nh9o-NM",
-      "expirationDate": 1816093255
+      "value": "AKEyXzVIkIgXtIb_jnnsx0WpcWrZ7-gn-rXtIN0a0DUai0n3dBrvd58Z2tHmbOYTF8Nkh3uq"
+    },
+    {
+      "domain": ".google.com",
+      "expirationDate": 1799587730,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "NID",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "532=bqfTlEw_WTOemviIaG7g24izE9mOIjuzs-SDPhhMfs5bRHNORsJGTx2NQ8OP2N1DHnVGMEdU3dK9MnclQJbB4OGfzpCFUHvaov5GK7SIccjlrow9EG2W2EBJCSyvnEzQaswdj1ftTlIErX7X-0fxXEqg6xx9MIV4ANuwFjIcPKKtyZuB9r5QQ73htZ_1aJH6vY4kgWUuniCWMqMlGRG6Zb-a0xKcTY3P8G8ApDsiX5scnvoTm3qlV4vSA2KQgRrL29LdN824MoY6d3AmkKKvmkZPNr1TmjmqT6Ls7gJmJyOmZijXsNgwAIAWBTVDLcovjD4BN4pck0Cwm-YU4TrCsljHUro4u_VAKQauVEZZ90SKpXLqvm4leCtELSmcz7sKbUSjCwwxlihAscbYmg2F17C-k7Q9M1PSLB1KY4vLsq0_Tyj6LtFFUWLFn2fG_xmBgbgX9avBWGebEwtroloV-9Bn5KdQMonf8rS8cCebAu2n0vEcnkBZ6K1vVjZl2uIXDgQE9mIqSwpbt9tI4m8sr68U1kMaRFhn381gdH9OsOC1PpIklxXmE9i2bRO7NvMpt7e-aQIdINOK_HRgDLIvWGXoDecp9n3cgOAk537dFU6kPDE0g0qOTVoGPFIFBIOcqbH7bIBwFJN_Fm721ZwZQJXvKQ"
+    },
+    {
+      "domain": ".gemini.google.com",
+      "expirationDate": 1818336535,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_ga_WC57KJ50ZZ",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "GS2.1.s1783776534$o5$g0$t1783776535$j59$l0$h0"
     }
   ]
 }
