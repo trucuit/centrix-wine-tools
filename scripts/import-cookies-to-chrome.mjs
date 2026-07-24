@@ -548,27 +548,58 @@ async function openOrReload(port, targetUrl, browserCdp) {
 async function applyLocalStorage(port, targetUrl, entries) {
   const expectedKeys = Object.keys(entries);
   if (!expectedKeys.length) return 0;
-  let target;
-  for (let attempt = 0; attempt < 50; attempt += 1) {
-    const targets = await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
-    const host = new URL(targetUrl).hostname;
-    target = targets.find((candidate) => candidate.type === "page" && candidate.webSocketDebuggerUrl && (() => { try { return new URL(candidate.url).hostname === host; } catch { return false; } })());
-    if (target) break;
-    await new Promise((resolveWait) => setTimeout(resolveWait, 100));
+  const host = new URL(targetUrl).hostname;
+
+  // Retry outer loop: page may redirect or reload after cookie inject (e.g. DeepSeek sign_in → chat).
+  const MAX_RETRIES = 5;
+  const RETRY_DELAY_MS = 1000;
+
+  for (let retry = 0; retry < MAX_RETRIES; retry += 1) {
+    // 1. Find the page target
+    let target;
+    for (let attempt = 0; attempt < 50; attempt += 1) {
+      const targets = await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
+      target = targets.find((candidate) => candidate.type === "page" && candidate.webSocketDebuggerUrl && (() => { try { return new URL(candidate.url).hostname === host; } catch { return false; } })());
+      if (target) break;
+      await new Promise((resolveWait) => setTimeout(resolveWait, 100));
+    }
+    if (!target) throw new Error(`Could not find a page for ${targetUrl} to import localStorage.`);
+
+    // 2. Wait for page to be at least interactive (handles fresh tab / redirect)
+    const pageCdp = await connectCdp(target.webSocketDebuggerUrl);
+    try {
+      await pageCdp.call("Page.enable");
+      for (let waitAttempt = 0; waitAttempt < 30; waitAttempt += 1) {
+        const readyState = await pageCdp.call("Runtime.evaluate", {
+          returnByValue: true,
+          expression: "document.readyState",
+        });
+        const state = readyState.result?.value;
+        if (state === "interactive" || state === "complete") break;
+        await new Promise((r) => setTimeout(r, 200));
+      }
+
+      // 3. Set localStorage
+      const serialized = JSON.stringify(JSON.stringify(entries));
+      const result = await pageCdp.call("Runtime.evaluate", {
+        returnByValue: true,
+        expression: `(() => { try { const entries = JSON.parse(${serialized}); for (const [key, value] of Object.entries(entries)) localStorage.setItem(key, value); return Object.keys(entries).filter((key) => localStorage.getItem(key) === entries[key]).length; } catch { return 0; } })()`,
+      });
+      const applied = Number(result.result?.value || 0);
+      if (applied === expectedKeys.length) {
+        await pageCdp.call("Page.reload", { ignoreCache: false });
+        return applied;
+      }
+
+      // Verification failed — retry after delay (page may be mid-redirect)
+      if (retry < MAX_RETRIES - 1) {
+        await new Promise((r) => setTimeout(r, RETRY_DELAY_MS));
+        continue;
+      }
+      throw new Error(`localStorage verification failed: expected ${expectedKeys.length}, found ${applied} (after ${MAX_RETRIES} retries).`);
+    } finally { pageCdp.close(); }
   }
-  if (!target) throw new Error(`Could not find a page for ${targetUrl} to import localStorage.`);
-  const pageCdp = await connectCdp(target.webSocketDebuggerUrl);
-  try {
-    const serialized = JSON.stringify(JSON.stringify(entries));
-    const result = await pageCdp.call("Runtime.evaluate", {
-      returnByValue: true,
-      expression: `(() => { const entries = JSON.parse(${serialized}); for (const [key, value] of Object.entries(entries)) localStorage.setItem(key, value); return Object.keys(entries).filter((key) => localStorage.getItem(key) === entries[key]).length; })()`,
-    });
-    const applied = Number(result.result?.value || 0);
-    if (applied !== expectedKeys.length) throw new Error(`localStorage verification failed: expected ${expectedKeys.length}, found ${applied}.`);
-    await pageCdp.call("Page.reload", { ignoreCache: false });
-    return applied;
-  } finally { pageCdp.close(); }
+  return 0;
 }
 
 function usage() {

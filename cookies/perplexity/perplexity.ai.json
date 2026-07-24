@@ -11,34 +11,8 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "cf2ef2de-cc02-4742-9247-d4d6f8511c70",
-      "expirationDate": 1815268557
-    },
-    {
-      "domain": "www.perplexity.ai",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "__cflb",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "02DiuDyvFMmK5p9jVbVnMNSKYZhUL9aGmAdZvtQg1TiGk",
-      "expirationDate": 1783815358
-    },
-    {
-      "domain": "pplx-next-static-public.perplexity.ai",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "CF_AppSession",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "ce8cc8dc4a53d2e0",
-      "expirationDate": 1783818959
+      "value": "596235c9-291e-4067-8afb-3cf0e4e4192f",
+      "expirationDate": 1814696077
     },
     {
       "domain": ".perplexity.ai",
@@ -50,72 +24,8 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "219da05c-fe66-4eb1-9b4d-25922b9692e1",
-      "expirationDate": 1815295853
-    },
-    {
-      "domain": "www.perplexity.ai",
-      "hostOnly": true,
-      "httpOnly": false,
-      "name": "g_state",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "{\"i_l\":0,\"i_ll\":1783732562010,\"i_b\":\"rxSgApCNXhjWSUKgDWa4qV0FnAKC1JW6Xq/4d09bN0w\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1783732562010}",
-      "expirationDate": 1799284562
-    },
-    {
-      "domain": "www.perplexity.ai",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "next-auth.csrf-token",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": true,
-      "storeId": "0",
-      "value": "5778bc01545196e39a2c73552b42c69a6f709fddcf24101e6040f1fd3a7a201d%7C2e03f56203ade25c87d75650b0f9f7fb3361d2198145e34f07a11fd664fb51c0"
-    },
-    {
-      "domain": "www.perplexity.ai",
-      "hostOnly": true,
-      "httpOnly": false,
-      "name": "pplx.session-id",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "2926e986-5f0c-4160-9d25-407342ee353c",
-      "expirationDate": 1783760496
-    },
-    {
-      "domain": ".count.perplexity.ai",
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "__frs",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "ff1226aa-58fc-4959-95a1-7ccc403dc305",
-      "expirationDate": 1783763453
-    },
-    {
-      "domain": ".perplexity.ai",
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "pplx.edge-sid",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "e7013239-4ce2-465c-be22-6d062750befe",
-      "expirationDate": 1783761653
+      "value": "265f4bc6-e75f-4ab0-8aac-79852cbf9e8e",
+      "expirationDate": 1816418097
     },
     {
       "domain": "www.perplexity.ai",
@@ -128,7 +38,33 @@
       "session": false,
       "storeId": "0",
       "value": "true",
-      "expirationDate": 1815295682
+      "expirationDate": 1814879733
+    },
+    {
+      "domain": "www.perplexity.ai",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "pplx.session-id",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "3eebf1da-2ef6-41bd-b4ed-064faa5172a2",
+      "expirationDate": 1784882696
+    },
+    {
+      "domain": "pplx-next-static-public.perplexity.ai",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "CF_AppSession",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "96442e0379899a77",
+      "expirationDate": 1784968473
     },
     {
       "domain": ".perplexity.ai",
@@ -140,34 +76,47 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "Yu2QGbFvnFvXKtc8Qugw6P12tLK62QXz6gU9LOPITtQ-1783759755-1.2.1.1-ovUGhdDV7B4PzZOKOtSfw4vg17IiEpXDiEIWCyJwpWf38jNNe1RgTPDwf4MhL9Hl6jOB_Btv4L0oCIf5ZQLv2iBXLYsH7FckV8r6ulxQCVu.EKSYdP7sMbXA4_hbI9YN._NiLfUi7Op2nkUyjWIcaL0qg_950cmzK69Ot5HASQGA4GyBJulN45quhHyXVJ2RhI8n.TKxskjC4hUYgbffxKfMKo.L0UbpHic07hLlmS.HZ.M21ubyHoBy6iVSZLwd8.fH2TYvUUgSJBiZvp1HIGR8b7ydlNO7FmkF4uxnC0Ge08d2izmr1nmyjIQYoUaohxUUDp6GAfkzIhbKAAhrug",
-      "expirationDate": 1815295755
+      "value": ".oqZfwm1vr6KGkuYczO0Y84nXytHjsf_gTh9lBFpcFI-1784882074-1.2.1.1-uu1rwE3TgsMD08B.CcvqV8e6dMxTNQZ97fYXm2AHsAvbX4ejcc6IGTKAozKcYdqh9eitnQXKuVY5Yu91zGYEF6oVgd64mNXmiw1515mLREA.HAQ5TGlWQuVdKPDH9.W_YtSxui9mYnOV0a4UQQgdqEkbYRabZa8jMGVWfVJVeK3S2vqK82VP6Caddd.oTUh3m5njiu.CS2XKdNs9Gh_hSx340KZfJyWfHZf_FGyXpJpGcnnb1x0ZoWVXpop1wuoM7w3af_Gbjpy9vE0ZXY2duoBTqYHLqD9Dhul49S2qzpqKu._Gbkxq0o7P1CAmK1Rm9x5Q.o6_XKR5VTxJVAfaIHK.ZbjLNjyrUb0xvxsyL.ZS8zRRGy8F7bEiExUbUYiXXf0oDg7ygkqcRnJmlCVRjUYJ0U3IhS8FdfzqSAjVxS.TH42sZI4h88B9zY7Pba3m",
+      "expirationDate": 1816418073
     },
     {
       "domain": "www.perplexity.ai",
       "hostOnly": true,
       "httpOnly": true,
-      "name": "__Secure-next-auth.session-token",
+      "name": "__cflb",
       "path": "/",
-      "sameSite": "lax",
+      "sameSite": "no_restriction",
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..ixhlF4jlNuhUNoD4.DTSuYPjL_LvKLXyWM5rIjGnrh--0R_JDLnnOhifrIVX6AQUUNXhaDa7FgJQffD7CI6TPiU_fUPMzOn0bpmtQK_VyI00zXnBIscI5_ed1L4nHt1e3I2vnERkZYYLD_m70SkbSPbegdvOGZQuyS3otyb3Skyh_CFDER9itQ2zNaVhlA4sBmTwGc4lq4j3N7-F6zBnlpGBdkFZf8x3KxKYjdP7SEshjzkRajswUEmuMjOzRoIGOsCF1HkJVuSr6izdn_y2R8a05_AN63JGQk4WUw9c0ReSs.gpCAIesWpS8Z7Y9M6hg5bQ",
-      "expirationDate": 1786351852
+      "value": "02DiuDyvFMmK5p9jVbVnMNSKYZhUL9aGkXn5RaBbHUe2Y",
+      "expirationDate": 1784964874
     },
     {
-      "domain": "www.perplexity.ai",
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "__Secure-pplx.session.aaf9accd-4c18-4985-8781-6d7db93f5ff7",
+      "domain": ".count.perplexity.ai",
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "__frs",
       "path": "/",
-      "sameSite": "lax",
+      "sameSite": "no_restriction",
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..ixhlF4jlNuhUNoD4.DTSuYPjL_LvKLXyWM5rIjGnrh--0R_JDLnnOhifrIVX6AQUUNXhaDa7FgJQffD7CI6TPiU_fUPMzOn0bpmtQK_VyI00zXnBIscI5_ed1L4nHt1e3I2vnERkZYYLD_m70SkbSPbegdvOGZQuyS3otyb3Skyh_CFDER9itQ2zNaVhlA4sBmTwGc4lq4j3N7-F6zBnlpGBdkFZf8x3KxKYjdP7SEshjzkRajswUEmuMjOzRoIGOsCF1HkJVuSr6izdn_y2R8a05_AN63JGQk4WUw9c0ReSs.gpCAIesWpS8Z7Y9M6hg5bQ",
-      "expirationDate": 1786351852
+      "value": "ea0b9aec-2587-4100-b864-938c91807cb0",
+      "expirationDate": 1784885696
+    },
+    {
+      "domain": ".perplexity.ai",
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "pplx.edge-sid",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "db2328d0-b8a0-4db1-94aa-fa93f9fed914",
+      "expirationDate": 1784883897
     },
     {
       "domain": ".perplexity.ai",
@@ -179,21 +128,33 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "dymSzzsbjq22kjXzdQOGV9XYM6QXMfTxvs9nnB.xa9U-1783759852.9602776-1.0.1.1-suZ6CCo5FKwmnBjIqV9CuL4OIGO1nj4kYKv8RXd_pdf0PXWEYHqDAbP_cWoHvZihpGaqibxLz87HJ9d6o9WBvPntNTAlOVf_XEW6NbIh56YVQEgCBCBoPT8hfRCz3yKc",
-      "expirationDate": 1783761653
+      "value": "ceNy3RG0EbVjlDiAH8jxkwxbd95UtJYmuwIGGl880vc-1784882079.2420697-1.0.1.1-bINWmZqsdRjQ2y_yx2zxEOgIgL24Z2QpvC9Ei2wtl2tLUBZiwC1kTLMdNU9_jYz6bAaiKdaF.82.kXNSOFeZRAtwdhZz06j6ICdbTj0QFQA84.iN0SgJcfGFANu4LLAb",
+      "expirationDate": 1784883879
+    },
+    {
+      "domain": "www.perplexity.ai",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "next-auth.csrf-token",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": true,
+      "storeId": "0",
+      "value": "ddf9ac3b983661e5b36ca17d96c1488b32e64144903dcc8296e2dcdd1952dc14%7C441195665087a8658516193499fe9087e5a9dead9a121ed989deb3a873e395ef"
     },
     {
       "domain": "www.perplexity.ai",
       "hostOnly": true,
       "httpOnly": false,
-      "name": "pplx.metadata",
+      "name": "g_state",
       "path": "/",
       "sameSite": "unspecified",
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "{%22qc%22:1%2C%22qcu%22:4236%2C%22qcm%22:384%2C%22qcc%22:4148%2C%22qcco%22:0%2C%22qccol%22:0%2C%22qcdr%22:0%2C%22qcs%22:0%2C%22qcg%22:0%2C%22qcd%22:0%2C%22hli%22:true%2C%22hcga%22:false%2C%22hcds%22:false%2C%22hso%22:false%2C%22hfo%22:false%2C%22hsco%22:false%2C%22hfco%22:false%2C%22hsma%22:false%2C%22hdc%22:false%2C%22hdttb%22:false%2C%22fqa%22:1783759687243%2C%22lqa%22:1783759687243}",
-      "expirationDate": 1818319853
+      "value": "{\"i_l\":0,\"i_ll\":1784882082950,\"i_b\":\"05Y5FeS/yrTuc5A8uSSdwC/0TruUQ+eDH9vrwMTE+9Y\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1784882082950}",
+      "expirationDate": 1800434082
     },
     {
       "domain": "www.perplexity.ai",
@@ -205,8 +166,47 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "aid=30c5aa88-b5ff-4a5a-9b6a-9b944dab4bec&id=e1b8ad69-4ff0-46d9-b7b5-64c42b072bed&created=1783759679315&expire=1783760753159&c=0",
-      "expirationDate": 1815295853
+      "value": "aid=6427ea7f-11b2-4d38-b43a-6e5ad6f3d5ef&id=07eac8ac-a61c-4a17-ae01-0d3f871667a7&created=1784882073682&expire=1784882996313&c=0",
+      "expirationDate": 1816418096
+    },
+    {
+      "domain": "www.perplexity.ai",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "__Secure-next-auth.session-token",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..BSX32WVg2ZMWgUre.Xwz2sPlHbFmWUU3jVES6rouedAXe7hSoyO7a_ZuxtrwH_3lcssEeHy9v91fDXVzQbOFJNvmLpzAMfeeOEwDFbQPCphRdLusqRW-7KAfNRsPtPzopJa_sojtfPEAz6tN9dP5o7AHuPdMn0t9IkmX_oG-EqQVPdIdunuJmlBv0hDs2W2dQWgYBo4ADvzz9pPqLePNUNR9Oaq1_5DzVxxb6ycFJlAL_NX0msV5R4pqwxgPJ1WKRc7F8VPuW_NO4WfzXdH2ixLY.qJtRQG31paw5FiJJQ0EWtw",
+      "expirationDate": 1787474096
+    },
+    {
+      "domain": "www.perplexity.ai",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "__Secure-pplx.session.a4fb368c-1352-4d1f-a561-c51ec5fc33d4",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..BSX32WVg2ZMWgUre.Xwz2sPlHbFmWUU3jVES6rouedAXe7hSoyO7a_ZuxtrwH_3lcssEeHy9v91fDXVzQbOFJNvmLpzAMfeeOEwDFbQPCphRdLusqRW-7KAfNRsPtPzopJa_sojtfPEAz6tN9dP5o7AHuPdMn0t9IkmX_oG-EqQVPdIdunuJmlBv0hDs2W2dQWgYBo4ADvzz9pPqLePNUNR9Oaq1_5DzVxxb6ycFJlAL_NX0msV5R4pqwxgPJ1WKRc7F8VPuW_NO4WfzXdH2ixLY.qJtRQG31paw5FiJJQ0EWtw",
+      "expirationDate": 1787474096
+    },
+    {
+      "domain": "www.perplexity.ai",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "pplx.metadata",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "{%22qc%22:0%2C%22qcu%22:9533%2C%22qcm%22:350%2C%22qcc%22:9292%2C%22qcco%22:0%2C%22qccol%22:0%2C%22qcdr%22:0%2C%22qcs%22:0%2C%22qcg%22:0%2C%22qcd%22:0%2C%22hli%22:true%2C%22hcga%22:false%2C%22hcds%22:false%2C%22hso%22:false%2C%22hfo%22:false%2C%22hsco%22:false%2C%22hfco%22:false%2C%22hsma%22:false%2C%22hdc%22:false%2C%22hdttb%22:false}",
+      "expirationDate": 1819442097
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "url": "https://chatgpt.com/",
+  "url": "https://notebooklm.google.com/",
   "cookies": [
     {
       "domain": ".chatgpt.com",
@@ -131,6 +131,19 @@
       "value": "0e0d042baae5f2454c3cd0188f52513e19a7f2067797ded9c4eaaad33ea8119c%7Cf7be5225d601dc1b93af010b9f2f392e2bc70f5581072c68c56cc6a591313485"
     },
     {
+      "domain": "chatgpt.com",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "__cflb",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "0H28vzvP5FJafnkHxisyomBKdwqKi1X624QumRrcrtb",
+      "expirationDate": 1784196341
+    },
+    {
       "domain": ".chatgpt.com",
       "hostOnly": false,
       "httpOnly": true,
@@ -153,6 +166,45 @@
       "session": true,
       "storeId": "0",
       "value": "https%3A%2F%2Fchatgpt.com%2F"
+    },
+    {
+      "domain": "auth.openai.com",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "oai-login-csrf_dev_3772291445",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "MTc4NDE5Mjc2M3xLRmk4aVJuTmlGdUpBRUdrREV4WWliTUp6alZJakM5aHZqNURxOTA0MVRxWjJjSmdrS00yZ29HSnhYRTdWRFIteTJPZGdfeUNpY1BkQWdUREhtUGpfcFpUOTRqVFZIY0xNT2FiU1hNZDhMU2tkMHhYUDNjelhKWkFzSzlffGgOa4y_4v2h_HonN3wk0R68jaxjczfzvvXzytWPff4U",
+      "expirationDate": 1784196364
+    },
+    {
+      "domain": ".auth.openai.com",
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "rg_context",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "prim",
+      "expirationDate": 1784195464
+    },
+    {
+      "domain": ".auth.openai.com",
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "iss_context",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "default",
+      "expirationDate": 1784195464
     },
     {
       "domain": ".auth.openai.com",
@@ -180,6 +232,58 @@
       "expirationDate": 1815728765
     },
     {
+      "domain": ".auth.openai.com",
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "s094Ycc.DNtjyCfN3.vM_QTmw.R6pOF1KROMNO9NHzM-1784192765.7880979-1.0.1.1-rE9jJtIIouy8F2PL6RG43qy4IHHlQVqgT8VtKV1L7N7zsq_xgUwHqBSOIs3xTuZY_5uW_f7WtxboiRpkJxs3ro0VEBe61bNdfB.U6bgWfM7h.pVzMlKEJhwdaERVElu2",
+      "expirationDate": 1784194565
+    },
+    {
+      "domain": "sentinel.openai.com",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "__cflb",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "04dTofELUVCxHqRn2XeT2wwLNeTKJAKiK3PRDSh5Kh",
+      "expirationDate": 1784196365
+    },
+    {
+      "domain": ".sentinel.openai.com",
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "e8OGeY.tdodeEOM4MGFCjhgdzmuVbzxmDV27kibsA9g-1784192765.7600095-1.0.1.1-rNeGlsFCaTPKNn4aeMWh79oPbM68Lra4tSQ5He0n.CUWErUogQLdvcjupNz6rPKpgMARe1jv4yuwWa6LiMxzJwoBbVeAIpbGuoa5tdHWVm1NHwMNZfC5F3yLJ9_WAjep",
+      "expirationDate": 1784194565
+    },
+    {
+      "domain": "auth.openai.com",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "__cflb",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "0H28w2ZepuU3KZxNdem3EDnPaGaWxFVtEfPwGzUq5c1",
+      "expirationDate": 1784194568
+    },
+    {
       "domain": ".openai.com",
       "hostOnly": false,
       "httpOnly": false,
@@ -191,6 +295,32 @@
       "storeId": "0",
       "value": "0gAAAAABqWJ8EqWi3MrvrbKW5OTepBDcq-US5uDn8XEXrs9IOYskp_AEaUbAWYeu4XUsGSy5YBWIDcK_PcWZvYdvSzIOgGSU4AYfFgA8Sb_sZJ9DXIxeJ4gyZfSP9hpnHJm9OmD8LxYZ0LK68HqP_Q14e79pLORkWmnYL_nNivmDScWk8gVZQ1kNZdtPzM9d3wSHXu49ylAWUW29Uq750FCth4TtvHthOFq0pjV-t9xnGqwP7jhiAjLh0hA6t90ThlAUBG1vOo8Vx",
       "expirationDate": 1815728773
+    },
+    {
+      "domain": ".auth.openai.com",
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "hydra_redirect",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJvYWktbG9naW4tY3NyZl9kZXZfMzc3MjI5MTQ0NSI6Ik1UYzROREU1TWpjMk0zeExSbWs0YVZKdVRtbEdkVXBCUlVkclJFVjRXV2xpVFVwNmFsWkpha001YUhacU5VUnhPVEEwTVZSeFdqSmpTbWRyUzAweVoyOUhTbmhZUlRkV1JGSXRlVEpQWkdkZmVVTnBZMUJrUVdkVVJFaHRVR3BmY0ZwVU9UUnFWRlpJWTB4TlQyRmlVMWhOWkRoTVUydGtNSGhZVUROamVsaEtXa0Z6U3psZmZHZ09hNHlfNHYyaF9Ib25OM3drMFI2OGpheGpjemZ6dnZYenl0V1BmZjRVIiwib2FpLXNlc3Npb25fZGV2IjoiTVRjNE5ERTVNamM0TUh4V1QwMXZUMk5DVTJoQmJGa3ljVkJ5VkZvd1YxWjFOMDF2WWt0c1VVNWZNRWR4Y1UxdGRYbEhRMWRpYWxoMVgyazBWa2hYUWtneWVITlVXVE5ZWnpaak1WQnVTVmsyYjBkc1ZqbGhPRlV0TUh3a2I2ZVRpOGQyNjJqVnF2a2NWZkpOcWlFQlRCVy1ERm1iTWdDSlRneElDdz09Iiwib2FpLWNvbnNlbnQtY3NyZl9kZXZfMzc3MjI5MTQ0NSI6Ik1UYzROREU1TWpjNE1IeE1WbTFUTTBKeGMwVlNWRkJyUkVoT1FsVlVPVGRoVVU4MFQyaHVkbXRrU1hCSlZVcEpVbWRJZGxSTFoxRmhlSGh1V25WemFrSXRVeTFvVTFKMFNERm9UekYxTkZoSmMzbHRhbGx2Ukc5VGRGZEJiazh0T0hObmVuYzRUVVZYUWtWdmJYSlJTMFo1ZUdSQ1ozWTBSMEV4Tm5GUFRXNVFNM2hLZHpCeGZORkhzSDF5ZzQwblNOb3IxVlg5V1k1TGkxeGpmaEpCNl9pcXpkNWxGRl95In0=.alifDA.2AFo8-38UCi4Ua5fXxaTrL-m7CjR_G94nPEN1YkRG0Y",
+      "expirationDate": 1784195480
+    },
+    {
+      "domain": ".auth.openai.com",
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "oai-client-auth-session",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJhcHBfbmFtZV9lbnVtIjoiY2hhdCIsImF1dGhfc2Vzc2lvbl9sb2dnaW5nX2lkIjoiODJhOTUzYjctYzczZS00OGVkLTk5MjQtNjBiZjcyNjE1NzgzIiwiY291bnRyeV9jb2RlX2hpbnQiOiJWTiIsImRlc3RpbmF0aW9uX2FwcF9uYW1lIjoiQ2hhdEdQVCBXZWIiLCJlbWFpbCI6ImdwdHBybzJAY2VudHJpeC5iaXoiLCJtZmFfY2hhbGxlbmdlX2ZhY3RvcnMiOlt7ImZhY3Rvcl90eXBlIjoidG90cCIsImlkIjoiNmE1MGJmOTZmOGI0ODE5MThjNjQ4YTBhMGIwOTQ2NDQiLCJpc19yZWNvdmVyeSI6ZmFsc2UsIm1ldGFkYXRhIjpudWxsfSx7ImZhY3Rvcl90eXBlIjoiZW1haWwiLCJpZCI6ImVtYWlsLW90cCIsImlzX3JlY292ZXJ5Ijp0cnVlLCJtZXRhZGF0YSI6eyJlbWFpbCI6ImdwdHBybzJAY2VudHJpeC5iaXoifX1dLCJtZmFfZmFjdG9ycyI6W3siZmFjdG9yX3R5cGUiOiJ0b3RwIiwiaWQiOiI2YTUwYmY5NmY4YjQ4MTkxOGM2NDhhMGEwYjA5NDY0NCIsImlzX3JlY292ZXJ5IjpmYWxzZSwibWV0YWRhdGEiOnsiY2hhbGxlbmdlX2lzc3VlX2NvdW50IjoxfX0seyJmYWN0b3JfdHlwZSI6ImVtYWlsIiwiaWQiOiJlbWFpbC1vdHAiLCJpc19yZWNvdmVyeSI6dHJ1ZSwibWV0YWRhdGEiOnsiZW1haWwiOiJncHRwcm8yQGNlbnRyaXguYml6In19XSwibmFtZSI6IkNFTlRSSVgiLCJvcGVuYWlfY2xpZW50X2lkIjoiYXBwX1g4elk2dlcycFE5dFIzZEU3bksxakw1Z0giLCJvcmlnaW5hbF9zY3JlZW5faGludCI6ImxvZ2luX29yX3NpZ251cCIsInBhc3N3b3JkbGVzc19kaXNhYmxlZCI6dHJ1ZSwicHJvbW8iOiIiLCJyZXF1ZXN0ZWRfb2F1dGhfc2NvcGVzIjpbImVtYWlsIiwibW9kZWwucmVhZCIsIm1vZGVsLnJlcXVlc3QiLCJvZmZsaW5lX2FjY2VzcyIsIm9wZW5pZCIsIm9yZ2FuaXphdGlvbi5yZWFkIiwib3JnYW5pemF0aW9uLndyaXRlIiwicHJvZmlsZSJdLCJzZXNzaW9uX2lkIjoiYXV0aHNlc3NfWHNOQWk4WW9KVnA2S3p4SkdoWWVYb3ZoIiwic2lnbnVwX3NvdXJjZSI6IiIsInVzZXJuYW1lIjp7ImtpbmQiOiJlbWFpbCIsInZhbHVlIjoiZ3B0cHJvMkBjZW50cml4LmJpeiJ9fQ==.alifDA.P8MG4fKfLQLrKI62OEO3UQs0SpKAMQxVA5v1dP5lWlo",
+      "expirationDate": 1784195480
     },
     {
       "domain": ".auth.openai.com",
@@ -232,6 +362,19 @@
       "expirationDate": 1818752780
     },
     {
+      "domain": "auth.openai.com",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "_dd_s",
+      "path": "/",
+      "sameSite": "strict",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "aid=ff100a53-0c74-4731-91ec-eeeddc240e5d&rum=2&id=2e3a99df-90dd-413f-82c7-3b019a84d2a9&created=1784192765808&expire=1784193675610",
+      "expirationDate": 1784193683
+    },
+    {
       "domain": ".chatgpt.com",
       "hostOnly": false,
       "httpOnly": true,
@@ -269,6 +412,19 @@
       "storeId": "0",
       "value": "cE6XwryUXCCWTmqQHFXgxQce78JlvBCU_pXFSSDA1Ao-1784192785-1.2.1.1-BQHLzdsEoHoydo9BKy0imCSfYsGnXTLMXciJoVh_xJvQkvO8ECkoDwIZBfIq6EY2uX883ZxAg_L6ADB.y4Q.azTmLfxpPTTgIboz_1pdbuLcUZo1KOMXIphJpVehQ6fquTHyPA3cQf7v9doJ4cOsvPtbCqKWibBzK9UcVz86RvoiXpMSb1.9boEOovU_UY_roVsNfFTGJcZLiADja3wNxDNwxLck6xFo2yXaSh0Lazku.4UdgH3QGedTelQz_bmS.M.uENzhsCiJfIKPwRo5wDvUkHBfh5wctpi6jpaGXQ2M8OVkxNNcBGvajgF4Fp0MFA3fVxeHzj4ZJpx8tGD2Ww",
       "expirationDate": 1815728785
+    },
+    {
+      "domain": ".chatgpt.com",
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "UDm1B9OIvwEhtpr4zWomrByI4iCCMDXhELFRGue8f1g-1784192785.5809379-1.0.1.1-LJU8Yf60r_iylBUDRBMG6dCVj4skzCgzPQ02uZlaq3GzQjGdyFPAmfyL9RL2vv0y9OAbkzqr2G87pW3wdH.lqyv1UDEzqn1VFX0.R6JOUp018IQFjwJQOgXMJiO12zxT",
+      "expirationDate": 1784194585
     },
     {
       "domain": ".chatgpt.com",
@@ -334,6 +490,32 @@
       "storeId": "0",
       "value": "%7B%22model%22%3A%22gpt-5-5-pro%22%2C%22juices%22%3A%7B%22pro%22%3A%22extended%22%7D%7D",
       "expirationDate": 1786784786
+    },
+    {
+      "domain": ".ws.chatgpt.com",
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "wrqItSfWLU3QcX45NitFejEKjMceCggfwRrH1p4VSqk-1784192787-1.0.1.1-T1a4grh5kUDpZU61HJB_gNYFmyQ8DNFKIZrHwRuXoNZ4gB_6s1ObmrC8gWe9Xwvnqn4nCI6LcaPJ_E9lD1nQsPIGb6dWxDttWzQ5ngl3ktw",
+      "expirationDate": 1784194587
+    },
+    {
+      "domain": "ws.chatgpt.com",
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "__cflb",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "0H28ukCBMp4tavf1C74pZfvoLWz259YjiiqbNdG85b3",
+      "expirationDate": 1784194587
     },
     {
       "domain": ".ws.chatgpt.com",
