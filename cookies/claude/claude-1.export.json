@@ -31,7 +31,7 @@
         "secure": true,
         "httpOnly": false,
         "session": false,
-        "expirationDate": 1811168664.842211,
+        "expirationDate": 1811255405.974797,
         "sameSite": "lax",
         "url": "https://claude.ai/"
       },
@@ -44,7 +44,7 @@
         "secure": true,
         "httpOnly": false,
         "session": false,
-        "expirationDate": 1816784665.130221,
+        "expirationDate": 1816871406.2584,
         "sameSite": "lax",
         "url": "https://claude.ai/"
       },
@@ -83,7 +83,7 @@
         "secure": true,
         "httpOnly": false,
         "session": false,
-        "expirationDate": 1785291864.842289,
+        "expirationDate": 1785378605.97488,
         "sameSite": "lax",
         "url": "https://claude.ai/"
       },
@@ -96,7 +96,7 @@
         "secure": true,
         "httpOnly": false,
         "session": false,
-        "expirationDate": 1787840667.021924,
+        "expirationDate": 1787927408.154481,
         "sameSite": "lax",
         "url": "https://claude.ai/"
       },
@@ -122,7 +122,7 @@
         "secure": true,
         "httpOnly": false,
         "session": false,
-        "expirationDate": 1816784663.873208,
+        "expirationDate": 1816871405.109851,
         "sameSite": "lax",
         "url": "https://claude.ai/"
       },
@@ -140,7 +140,7 @@
       },
       {
         "name": "_cfuvid",
-        "value": "Eh7.1sbX2w3Z3bz.alHyPKlHdNdpcc3oVcK66cvWzsg-1785188764.1074913-1.0.1.1-OgdG.KTzI4.S.EDwWqLYoPuelkjoyhIxgSnlFGbsfrc",
+        "value": "g4q_lsg9UVhCxBcHgKJU6d9Hp5v4oAQDxXd6DGbFMA8-1785287483.8574386-1.0.1.1-8rFb.Vf4SCV3D6hUWZefoel3dsgZIu1pQoqzjuuGMx0",
         "domain": ".claude.ai",
         "hostOnly": false,
         "path": "/",
@@ -152,53 +152,53 @@
       },
       {
         "name": "cf_clearance",
-        "value": "yFoKpIN2maIO17gYQaB9BPqe3epWkL3AhhiYGttNe84-1785248271-1.2.1.1-i8D3tamzloJ_TvV_OvPc4RgKgE9WQOYzAnpqcOBAE5g5w0SqLhsB84Aq5jZ8v.K1ORRO60n8I2WeYVBc8EV6KE3ZIYTL8msKxHS.kYZr3v1cmwVJK0WpVz0Y5jmVf0Yo3fsIruuE6UsHMsjv5XlEUyIZyaKXTwkra9s9u5vFG6C6U0BRU9Aps_1dvnJ7NPY4XHO8.cOG_IzWaWEadw0lYr7kQ95Q26Ln7p2MybSshbdi0QCYe5hStQkraZJxVe2MY7t1.7eJrQVWL6cXygV1h4smHfAETGPiZrV9v5WJN3qOwPAE98ePVCpHZln2IiXMbyr7KNMNgHJ9dXENqYqW1ms3IhpmVzbITyWSB7NJ44Y",
+        "value": "vyTl93O958EMeQ30PNzIu_Vc2.D4ibcndp.BUEKyU3U-1785335110-1.2.1.1-KiqZBzzZIl3cH_IwmRd8Q_NEsTVVAxWj90c0BgL.cpSkbPwCZ88BEdldCepl5mZsz2g2W6An8FORe3zH9E63_wACzr3ftw8rwOPUUYASOe4O1qNVLojtZ70n1oWy68J7F4NNjoqDMh9_tFAFuaFm9R_TaQ6xk0fR7Hh.GynVWyRh9VTWViuQm4jU7XQR2JSh87Z7x9FpLSOdrTphzVYfGxrOCnVp5y1M9nM4EM5Jm8UVewLaC0Olr5CvmzYYtudkBsK.UrWc6F.Th0R4dIllBOmRocYdAZy02VIVS5h2kIK_cMscg9Bt0AQS2YPMuEvnrvXyYRyFhGnCqmVXIpop0yWgdL4JUm9s07E91MMoDO8",
         "domain": ".claude.ai",
         "hostOnly": false,
         "path": "/",
         "secure": true,
         "httpOnly": true,
         "session": false,
-        "expirationDate": 1816784273.51518,
+        "expirationDate": 1816871112.61084,
         "sameSite": "no_restriction",
         "url": "https://claude.ai/"
       },
       {
         "name": "__cf_bm",
-        "value": "Itb8lZGkJBxRh88KtYZ8lG4NL1eHmLURxVWjU6d4N2c-1785248271.1660028-1.0.1.1-Ij.9es770Wor1P2_faeKgFQNLvn6YzsojsTMnofdnEjSjmkD9LbZTGu27eQNM96JoMFXdXhuAMh7Cl3yNt7mVHwtRSIjoSNvK0NsOaGD4iTpU3MtcKz5lqbVglz0dMqC",
+        "value": "WdMJKnSD3AfizGtp4tsUhj1oXp8RCcEPV1Qn2p0SQPM-1785335110.246283-1.0.1.1-TjE123joUSvdF61tdq8R8Liv1CoqwqwKUfZvwkRXBM_LCF4rVVxgLglatMv0xMUKobh70msz7AhrIdm8ZImI1uQYK6kG6s4qKuW_fDuvJZv6ENHoKjQTGp202TTFBBoU",
         "domain": ".claude.ai",
         "hostOnly": false,
         "path": "/",
         "secure": true,
         "httpOnly": true,
         "session": false,
-        "expirationDate": 1785250073.515276,
+        "expirationDate": 1785336912.610919,
         "sameSite": "no_restriction",
         "url": "https://claude.ai/"
       },
       {
         "name": "ajs_anonymous_id",
-        "value": "claudeai.v1.8a44523a-17bb-4f84-9bb8-e108ba296cc1",
+        "value": "claudeai.v1.0d5bf13f-a3eb-4291-9f31-136918655f0f",
         "domain": ".claude.ai",
         "hostOnly": false,
         "path": "/",
         "secure": true,
         "httpOnly": false,
         "session": false,
-        "expirationDate": 1816784665.114209,
+        "expirationDate": 1816871406.242141,
         "sameSite": "lax",
         "url": "https://claude.ai/"
       },
       {
         "name": "_dd_s",
-        "value": "aid=73f28c8a-1b21-4d6a-bcc0-5997d1a86c4c&rum=2&id=09e48270-212d-41b6-ace3-0db94354cdc0&created=1785246812472&expire=1785249566108",
+        "value": "aid=73f28c8a-1b21-4d6a-bcc0-5997d1a86c4c&rum=2&id=be403a9d-d6c6-4560-9ec6-8be9d4cfabe5&created=1785325560878&expire=1785336307234",
         "domain": "claude.ai",
         "hostOnly": true,
         "path": "/",
         "secure": false,
         "httpOnly": false,
         "session": false,
-        "expirationDate": 1816784666,
+        "expirationDate": 1816871407,
         "sameSite": "strict",
         "url": "http://claude.ai/"
       }
@@ -210,24 +210,24 @@
         "loadOk": true,
         "loadError": "",
         "localStorage": {
-          "antalytics_anonymous_id": "claudeai.v1.8a44523a-17bb-4f84-9bb8-e108ba296cc1",
-          "epitaxy-context-usage-logout-at": "1785248664701",
+          "antalytics_anonymous_id": "claudeai.v1.0d5bf13f-a3eb-4291-9f31-136918655f0f",
+          "epitaxy-context-usage-logout-at": "1785335405863",
           "spa:i18nSkipEnUsBase": "1",
           "test.localStorageSupported": "true",
           "ant-react-query-devtools": "false",
           "darker-default-latch": "0",
-          "antalytics_queue_v1": "[{\"eventName\":\"claudeai.login.page_viewed\",\"eventId\":\"c92afdff-8231-4fa6-911b-28f1e0afe3e7\",\"eventTimestamp\":\"2026-07-28T14:24:27.044Z\",\"properties\":{\"surface\":\"claude-ai\",\"version\":1,\"variant\":\"cowork\",\"referral_campaign\":null,\"referral_source\":null,\"selected_plan\":null,\"_dual_fire\":true,\"anonymous_id\":\"claudeai.v1.8a44523a-17bb-4f84-9bb8-e108ba296cc1\",\"service_name\":\"claude_ai\",\"path\":\"/login\"}},{\"eventName\":\"page_viewed\",\"eventId\":\"f67a479a-13b3-42e0-8b53-2a40b286d9f6\",\"eventTimestamp\":\"2026-07-28T14:24:27.045Z\",\"properties\":{\"surface\":\"claude-ai\",\"_dual_fire\":true,\"page_name\":\"/login\",\"url\":\"https://claude.ai/login\",\"path\":\"/login\",\"referrer\":\"https://claude.ai/logout\",\"anonymous_id\":\"claudeai.v1.8a44523a-17bb-4f84-9bb8-e108ba296cc1\",\"service_name\":\"claude_ai\",\"canonical_path\":\"/login\",\"canonical_url\":\"https://claude.ai/login\",\"canonical_referrer\":\"https://claude.ai/logout\"}},{\"eventName\":\"page_viewed\",\"eventId\":\"5c460ea2-c4d2-485f-a549-dc8f4268bf3b\",\"eventTimestamp\":\"2026-07-28T14:24:27.045Z\",\"properties\":{\"surface\":\"claude-ai\",\"_dual_fire\":true,\"page_name\":\"/login\",\"url\":\"https://claude.ai/login\",\"path\":\"/login\",\"referrer\":\"https://claude.ai/logout\",\"anonymous_id\":\"claudeai.v1.8a44523a-17bb-4f84-9bb8-e108ba296cc1\",\"service_name\":\"claude_ai\",\"canonical_path\":\"/login\",\"canonical_url\":\"https://claude.ai/login\",\"canonical_referrer\":\"https://claude.ai/logout\"}},{\"eventName\":\"page_viewed\",\"eventId\":\"12ed0e04-7e24-49a0-8ec0-f1441289a90d\",\"eventTimestamp\":\"2026-07-28T14:24:27.188Z\",\"properties\":{\"surface\":\"claude-ai\",\"_dual_fire\":true,\"page_name\":\"/login\",\"url\":\"https://claude.ai/login\",\"path\":\"/login\",\"referrer\":\"https://claude.ai/logout\",\"anonymous_id\":\"claudeai.v1.8a44523a-17bb-4f84-9bb8-e108ba296cc1\",\"service_name\":\"claude_ai\",\"canonical_path\":\"/login\",\"canonical_url\":\"https://claude.ai/login\",\"canonical_referrer\":\"https://claude.ai/logout\"}}]"
+          "antalytics_queue_v1": "[{\"eventName\":\"claudeai.login.page_viewed\",\"eventId\":\"96f2c30b-355c-4e89-bce0-5eacb70c0d51\",\"eventTimestamp\":\"2026-07-29T14:30:08.176Z\",\"properties\":{\"surface\":\"claude-ai\",\"version\":1,\"variant\":\"cowork\",\"referral_campaign\":null,\"referral_source\":null,\"selected_plan\":null,\"_dual_fire\":true,\"anonymous_id\":\"claudeai.v1.0d5bf13f-a3eb-4291-9f31-136918655f0f\",\"service_name\":\"claude_ai\",\"path\":\"/login\"}},{\"eventName\":\"page_viewed\",\"eventId\":\"bd526461-d2e4-450d-815b-091134e732ab\",\"eventTimestamp\":\"2026-07-29T14:30:08.177Z\",\"properties\":{\"surface\":\"claude-ai\",\"_dual_fire\":true,\"page_name\":\"/login\",\"url\":\"https://claude.ai/login\",\"path\":\"/login\",\"referrer\":\"https://claude.ai/logout\",\"anonymous_id\":\"claudeai.v1.0d5bf13f-a3eb-4291-9f31-136918655f0f\",\"service_name\":\"claude_ai\",\"canonical_path\":\"/login\",\"canonical_url\":\"https://claude.ai/login\",\"canonical_referrer\":\"https://claude.ai/logout\"}},{\"eventName\":\"page_viewed\",\"eventId\":\"c6c22055-9b3e-4a45-9d0e-a8dfeab18285\",\"eventTimestamp\":\"2026-07-29T14:30:08.178Z\",\"properties\":{\"surface\":\"claude-ai\",\"_dual_fire\":true,\"page_name\":\"/login\",\"url\":\"https://claude.ai/login\",\"path\":\"/login\",\"referrer\":\"https://claude.ai/logout\",\"anonymous_id\":\"claudeai.v1.0d5bf13f-a3eb-4291-9f31-136918655f0f\",\"service_name\":\"claude_ai\",\"canonical_path\":\"/login\",\"canonical_url\":\"https://claude.ai/login\",\"canonical_referrer\":\"https://claude.ai/logout\"}},{\"eventName\":\"page_viewed\",\"eventId\":\"6cb32252-86c6-4918-b500-c7c540e20311\",\"eventTimestamp\":\"2026-07-29T14:30:08.298Z\",\"properties\":{\"surface\":\"claude-ai\",\"_dual_fire\":true,\"page_name\":\"/login\",\"url\":\"https://claude.ai/login\",\"path\":\"/login\",\"referrer\":\"https://claude.ai/logout\",\"anonymous_id\":\"claudeai.v1.0d5bf13f-a3eb-4291-9f31-136918655f0f\",\"service_name\":\"claude_ai\",\"canonical_path\":\"/login\",\"canonical_url\":\"https://claude.ai/login\",\"canonical_referrer\":\"https://claude.ai/logout\"}}]"
         },
         "sessionStorage": {
-          "spa_nav_loop": "{\"loads\":[{\"p\":\"/login\",\"t\":1785248672856}],\"emitted\":[]}",
+          "spa_nav_loop": "{\"loads\":[{\"p\":\"/login\",\"t\":1785335414038}],\"emitted\":[]}",
           "test.sessionStorageSupported": "true",
-          "claudeai.perf.interaction_slow_draw": "0.10994563130644586"
+          "claudeai.perf.interaction_slow_draw": "0.09989698719041751"
         }
       }
     ],
     "uiRules": []
   },
-  "revision": 936,
+  "revision": 1341,
   "rulesRevision": 0,
   "summary": {
     "profileId": "claude-1",
@@ -237,6 +237,6 @@
     "storage": 1,
     "uiRules": 0
   },
-  "updatedAt": "2026-07-28T14:24:30.819Z",
+  "updatedAt": "2026-07-29T14:30:11.967Z",
   "note": "Offline convert: snapshot is plaintext. Live API returns encrypted with sessionKey instead of snapshot."
 }

@@ -25,7 +25,7 @@
       "session": false,
       "storeId": "0",
       "value": "d6842f6e-d876-4f91-9c88-7b65f88c055c",
-      "expirationDate": 1811168664
+      "expirationDate": 1811255405
     },
     {
       "domain": ".claude.ai",
@@ -38,7 +38,7 @@
       "session": false,
       "storeId": "0",
       "value": "light",
-      "expirationDate": 1816784665
+      "expirationDate": 1816871406
     },
     {
       "domain": ".claude.ai",
@@ -77,7 +77,7 @@
       "session": false,
       "storeId": "0",
       "value": "317a845a-68e8-4124-965a-fe07a2851a7d",
-      "expirationDate": 1785291864
+      "expirationDate": 1785378605
     },
     {
       "domain": ".claude.ai",
@@ -90,7 +90,7 @@
       "session": false,
       "storeId": "0",
       "value": "1",
-      "expirationDate": 1787840667
+      "expirationDate": 1787927408
     },
     {
       "domain": "claude.ai",
@@ -116,7 +116,7 @@
       "session": false,
       "storeId": "0",
       "value": "false",
-      "expirationDate": 1816784663
+      "expirationDate": 1816871405
     },
     {
       "domain": "claude.ai",
@@ -140,7 +140,7 @@
       "secure": true,
       "session": true,
       "storeId": "0",
-      "value": "Eh7.1sbX2w3Z3bz.alHyPKlHdNdpcc3oVcK66cvWzsg-1785188764.1074913-1.0.1.1-OgdG.KTzI4.S.EDwWqLYoPuelkjoyhIxgSnlFGbsfrc"
+      "value": "g4q_lsg9UVhCxBcHgKJU6d9Hp5v4oAQDxXd6DGbFMA8-1785287483.8574386-1.0.1.1-8rFb.Vf4SCV3D6hUWZefoel3dsgZIu1pQoqzjuuGMx0"
     },
     {
       "domain": ".claude.ai",
@@ -152,8 +152,8 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "yFoKpIN2maIO17gYQaB9BPqe3epWkL3AhhiYGttNe84-1785248271-1.2.1.1-i8D3tamzloJ_TvV_OvPc4RgKgE9WQOYzAnpqcOBAE5g5w0SqLhsB84Aq5jZ8v.K1ORRO60n8I2WeYVBc8EV6KE3ZIYTL8msKxHS.kYZr3v1cmwVJK0WpVz0Y5jmVf0Yo3fsIruuE6UsHMsjv5XlEUyIZyaKXTwkra9s9u5vFG6C6U0BRU9Aps_1dvnJ7NPY4XHO8.cOG_IzWaWEadw0lYr7kQ95Q26Ln7p2MybSshbdi0QCYe5hStQkraZJxVe2MY7t1.7eJrQVWL6cXygV1h4smHfAETGPiZrV9v5WJN3qOwPAE98ePVCpHZln2IiXMbyr7KNMNgHJ9dXENqYqW1ms3IhpmVzbITyWSB7NJ44Y",
-      "expirationDate": 1816784273
+      "value": "vyTl93O958EMeQ30PNzIu_Vc2.D4ibcndp.BUEKyU3U-1785335110-1.2.1.1-KiqZBzzZIl3cH_IwmRd8Q_NEsTVVAxWj90c0BgL.cpSkbPwCZ88BEdldCepl5mZsz2g2W6An8FORe3zH9E63_wACzr3ftw8rwOPUUYASOe4O1qNVLojtZ70n1oWy68J7F4NNjoqDMh9_tFAFuaFm9R_TaQ6xk0fR7Hh.GynVWyRh9VTWViuQm4jU7XQR2JSh87Z7x9FpLSOdrTphzVYfGxrOCnVp5y1M9nM4EM5Jm8UVewLaC0Olr5CvmzYYtudkBsK.UrWc6F.Th0R4dIllBOmRocYdAZy02VIVS5h2kIK_cMscg9Bt0AQS2YPMuEvnrvXyYRyFhGnCqmVXIpop0yWgdL4JUm9s07E91MMoDO8",
+      "expirationDate": 1816871112
     },
     {
       "domain": ".claude.ai",
@@ -165,8 +165,8 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "Itb8lZGkJBxRh88KtYZ8lG4NL1eHmLURxVWjU6d4N2c-1785248271.1660028-1.0.1.1-Ij.9es770Wor1P2_faeKgFQNLvn6YzsojsTMnofdnEjSjmkD9LbZTGu27eQNM96JoMFXdXhuAMh7Cl3yNt7mVHwtRSIjoSNvK0NsOaGD4iTpU3MtcKz5lqbVglz0dMqC",
-      "expirationDate": 1785250073
+      "value": "WdMJKnSD3AfizGtp4tsUhj1oXp8RCcEPV1Qn2p0SQPM-1785335110.246283-1.0.1.1-TjE123joUSvdF61tdq8R8Liv1CoqwqwKUfZvwkRXBM_LCF4rVVxgLglatMv0xMUKobh70msz7AhrIdm8ZImI1uQYK6kG6s4qKuW_fDuvJZv6ENHoKjQTGp202TTFBBoU",
+      "expirationDate": 1785336912
     },
     {
       "domain": ".claude.ai",
@@ -178,8 +178,8 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "claudeai.v1.8a44523a-17bb-4f84-9bb8-e108ba296cc1",
-      "expirationDate": 1816784665
+      "value": "claudeai.v1.0d5bf13f-a3eb-4291-9f31-136918655f0f",
+      "expirationDate": 1816871406
     },
     {
       "domain": "claude.ai",
@@ -191,8 +191,8 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "aid=73f28c8a-1b21-4d6a-bcc0-5997d1a86c4c&rum=2&id=09e48270-212d-41b6-ace3-0db94354cdc0&created=1785246812472&expire=1785249566108",
-      "expirationDate": 1816784666
+      "value": "aid=73f28c8a-1b21-4d6a-bcc0-5997d1a86c4c&rum=2&id=be403a9d-d6c6-4560-9ec6-8be9d4cfabe5&created=1785325560878&expire=1785336307234",
+      "expirationDate": 1816871407
     }
   ]
 }

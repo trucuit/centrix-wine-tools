@@ -5,7 +5,7 @@
   "profileId": "canva-1",
   "revision": 2,
   "updatedAt": "2026-07-08T02:11:26.740Z",
-  "exportedAt": "2026-07-28T14:57:09.277Z",
+  "exportedAt": "2026-07-29T14:36:41.012Z",
   "source": "canva-1.json",
   "sourceDump": "centrix-snapshot-at-rest",
   "beParity": "decrypt + cookieScope.scopeSnapshotToServices (no auth/pool/uiRules DB)",

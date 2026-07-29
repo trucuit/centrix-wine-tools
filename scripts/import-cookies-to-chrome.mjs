@@ -10,8 +10,8 @@ import { pathToFileURL } from "node:url";
 import { stdin as input, stdout as output } from "node:process";
 
 const SERVICE_CONFIG = {
-  chatgpt: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "notebooklm" },
-  notebooklm: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
+  chatgpt: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
+  notebooklm: { url: "https://notebooklm.google.com", domains: ["notebooklm.google.com", "google.com", "chatgpt.com", "openai.com"] },
   claude: { url: "https://claude.ai", domains: ["claude.ai", "anthropic.com"] },
   gemini: { url: "https://gemini.google.com", domains: ["gemini.google.com", "google.com"] },
   perplexity: { url: "https://www.perplexity.ai", domains: ["perplexity.ai"] },

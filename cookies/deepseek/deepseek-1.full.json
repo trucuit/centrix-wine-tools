@@ -5,7 +5,7 @@
   "profileId": "deepseek-1",
   "revision": 6,
   "updatedAt": "2026-07-08T02:03:07.763Z",
-  "exportedAt": "2026-07-28T14:57:09.489Z",
+  "exportedAt": "2026-07-29T14:36:41.222Z",
   "source": "deepseek-1.json",
   "sourceDump": "centrix-snapshot-at-rest",
   "beParity": "decrypt + cookieScope.scopeSnapshotToServices (no auth/pool/uiRules DB)",
