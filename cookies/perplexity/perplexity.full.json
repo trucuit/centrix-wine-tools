@@ -5,7 +5,7 @@
   "profileId": "perplexity-1",
   "revision": 11,
   "updatedAt": "2026-07-29T11:54:05.801Z",
-  "exportedAt": "2026-07-29T14:36:41.367Z",
+  "exportedAt": "2026-08-05T13:55:29.675Z",
   "source": "perplexity-1.json",
   "sourceDump": "centrix-snapshot-at-rest",
   "beParity": "decrypt + cookieScope.scopeSnapshotToServices (no auth/pool/uiRules DB)",

@@ -2,60 +2,8 @@
   "url": "https://auth.openai.com/log-in",
   "cookies": [
     {
-      "domain": "auth.openai.com",
-      "expirationDate": 1785011862,
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "oai-login-csrf_dev_3772291445",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "MTc4NTAwODI2M3xQUHdBc056MHFLamxnTlBQSUtOSEpnRWdFSlZHZXY4bjMzREZPRmpJYlRYUV8wLWc2YTZUYlNNR0JrU3JFY3hFaEtNZ0Vua0tEVjZaVWtLUFJWTFNaeUd3MVEyMzlvclVuNk1wQzV1X3ZpRTUxZXJ0aTdjZGpMV1o1SGxzfFpZlFIjRk25q_u1MMdq_dR7TBGnwzdvlT3vxwDL9vea"
-    },
-    {
       "domain": ".auth.openai.com",
-      "expirationDate": 1785010962,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "rg_context",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "prim"
-    },
-    {
-      "domain": ".auth.openai.com",
-      "expirationDate": 1785010962,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "iss_context",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "default"
-    },
-    {
-      "domain": ".auth.openai.com",
-      "expirationDate": null,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "_cfuvid",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": true,
-      "storeId": "0",
-      "value": "yX_udaKUl8yUKFr.iEOdzKOsMMsD.aSBREMATc.sz.c-1785008262.9987576-1.0.1.1-unM.QJR7Dd9f._umkFEozuolGx6tgat7lFyvIAV1u0g"
-    },
-    {
-      "domain": ".auth.openai.com",
-      "expirationDate": 1816544263,
+      "expirationDate": 1816850276,
       "hostOnly": false,
       "httpOnly": true,
       "name": "cf_clearance",
@@ -64,50 +12,11 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "MUpntrMnCasIfHzRCr0.nzMxbYnm7wcQ86jIMEYbyWk-1785008264-1.2.1.1-VnJvSzeWG7xELfjJYLliQNm8SFOsPFNJBlcAmnmcZDDSUWbdIbRsO2N4HopbZ3wI5IQuQqIjVpH80OGaTdPvSZNW74cap_T66c7Yd_4Va8H86gcRl_qjQocXZiDxrdjzo0i05tpitHWaaOTuf07ne1dWDr1J0CU1gADaTROF5tTAc7L991GmLfCzH1ot_FN5exd5w5VQE9e4GCXes76P5Fys3yGuBy9J1LQzuNfRy2DoJMc.ZhyCep4JpZHHIbfYMjd4ojdaUxxEgZQI7IxkQW4vEIuGYeHJ30Zb0B_96yPRMWW_7_ZjVvdQC2L8IM1UbFIbM3euEv4ewYVGho3074Oeq24oPr2aMLl3UbP4eeg"
+      "value": "VsHPMaO0yMVVJRg9qrgI3GALsS6XFjKE7uqOkKGooMM-1785314276-1.2.1.1-KI0Q5sQEKxRGEzIKEfWuR1qKSe2A8uC2HIXiAucaPcP1p0y9iQa3N98VgiBf2GLbriTsNgoLEJczRN1NEOMfSzGhB7DPnQkxnKTmwAgnWp7sld0HNrjk_JiMeuihJzHTgPcF8dVflKjLxqSBL9G09uTcxdjBtIBwor1M9NkcmBx3_FffiPh3p4rcRq07Y_sAN4GC9o4L_pHAdazW0ikLiMgOkG4axSMGt9rPXy6i.THJjeXaBP8dKr9xWeUfzhQkuxkGGeZD2vfaEm.a3DCIB2tF271zelGVZHHzRxd9SjDkw..b36dGAEszAOsYhyyO6QKhaBOZzdn1wEn_IeV1QglFeaW3a6Z8dSUC0eha8zw"
     },
     {
       "domain": ".auth.openai.com",
-      "expirationDate": 1785010063,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "__cf_bm",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "qWcHomCQAwFz4ITfko5CJQK4uHP7CLzFKczA_AZ08EM-1785008264.9706168-1.0.1.1-qR2_VL7CNPEpZgp.ZCZbLk0D.89cm_CfLUKx6y6tRddGoN3JlO4ocMBD78BxRGv_GgoF2wEvmYkDyRrO2cnZVWvgJv7HjGAflbPrBnKDqLKmHKt2_mGkiFpdlIBhMsog"
-    },
-    {
-      "domain": ".auth.openai.com",
-      "expirationDate": 1785010999,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "hydra_redirect",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "eyJvYWktbG9naW4tY3NyZl9kZXZfMzc3MjI5MTQ0NSI6Ik1UYzROVEF3T0RJMk0zeFFVSGRCYzA1Nk1IRkxhbXhuVGxCUVNVdE9TRXBuUldkRlNsWkhaWFk0YmpNelJFWlBSbXBKWWxSWVVWOHdMV2MyWVRaVVlsTk5SMEpyVTNKRlkzaEZhRXROWjBWdWEwdEVWalphVld0TFVGSldURk5hZVVkM01WRXlNemx2Y2xWdU5rMXdRelYxWDNacFJUVXhaWEowYVRkalpHcE1WMW8xU0d4emZGcFpsRklqUmsyNXFfdTFNTWRxX2RSN1RCR253emR2bFQzdnh3REw5dmVhIiwib2FpLXNlc3Npb25fZGV2IjoiTVRjNE5UQXdPRE13TUh4aVFXaGZORmxwVWw5dVptOU1OWHA0YWtSUFdFZHdVREI2T0ZWNVNuRlpSbWhvUlZCR1pHeDRiRmhoWTNwd1kwZExjVWd6VkZweVNXdEdOVE0zZDAxWWQwRjFiMHhYT0hSRU5qTTFRbWhaVjN5QWtuSG5SMEQ3ZUlxTXlRSWJoVjdkR3UzR0lRQ2hPZ0cwYUZSdWhBMjREQT09Iiwib2FpLWNvbnNlbnQtY3NyZl9kZXZfMzc3MjI5MTQ0NSI6Ik1UYzROVEF3T0RNd01IeFBhVnBUVDBremVXNUdXbEl6VTA0NWJqQkZPRE01WkVock9EQjBielpITVc1d2NWUXdWRlZWUlZZemRIWkVUWFZCT0VaSmQwZENMVGRsT0hwQ1pYaEhWMjU0VDFkamFXWTBYMnQzTTA0dFFXMXVlWFpFUmpGRlFWSTFOVk52WTNaeGJIUkNVR1JrV1dSUmVHMU1MWFpKUjNSdVRuRjJkMGw0WDBkUGZDVTdLLXVHTW51YjN1VXozVGIzcTQxN3JJSHppdlhTN195UW8wV0JST1VSIn0=.amUQrA.z4K_acwy2wxrR4yAFgrIX4aI7TtqwWcP1P0TNUxxhZo"
-    },
-    {
-      "domain": ".auth.openai.com",
-      "expirationDate": 1785010999,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "oai-client-auth-session",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "eyJhcHBfbmFtZV9lbnVtIjoiY2hhdCIsImF1dGhfc2Vzc2lvbl9sb2dnaW5nX2lkIjoiZDdhZjA2ZjgtNjFjMC00NGYzLWE5NzUtMmM0ZmNiNjQ0NDY2IiwiY291bnRyeV9jb2RlX2hpbnQiOiJWTiIsImRlc3RpbmF0aW9uX2FwcF9uYW1lIjoiQ2hhdEdQVCBXZWIiLCJlbWFpbCI6ImNoYXRncHQyMkBjZW50cml4LmFzaWEiLCJlbWFpbF92ZXJpZmljYXRpb25fbW9kZSI6InBhc3N3b3JkbGVzc19sb2dpbiIsIm9wZW5haV9jbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsIm9yaWdpbmFsX3NjcmVlbl9oaW50IjoibG9naW5fb3Jfc2lnbnVwIiwicGFzc3dvcmRsZXNzX2Rpc2FibGVkIjpmYWxzZSwicGFzc3dvcmRsZXNzX2xvZ2luX21hZ2ljX2xpbmtfc2VudCI6ZmFsc2UsInBhc3N3b3JkbGVzc19vdHBfZnJvbV9wYXNzd29yZF9yZWRpcmVjdCI6ZmFsc2UsInByb21vIjoiIiwicmVxdWVzdGVkX29hdXRoX3Njb3BlcyI6WyJlbWFpbCIsIm1vZGVsLnJlYWQiLCJtb2RlbC5yZXF1ZXN0Iiwib2ZmbGluZV9hY2Nlc3MiLCJvcGVuaWQiLCJvcmdhbml6YXRpb24ucmVhZCIsIm9yZ2FuaXphdGlvbi53cml0ZSIsInByb2ZpbGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX0pNanljbjRNQ3Y3VWQ3TlhjWUprVHJOeCIsInNpZ251cF9zb3VyY2UiOiIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IkNlbnRyaXgifQ==.amUQrA.pN7DrldNiVGi_8AfdBom6-VXh0bfqFBp5heP9tfOVH0"
-    },
-    {
-      "domain": ".auth.openai.com",
-      "expirationDate": 1787600299,
+      "expirationDate": 1787906326,
       "hostOnly": false,
       "httpOnly": false,
       "name": "oai-client-auth-info",
@@ -116,24 +25,24 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "eyJsYXN0X2xvZ2luX2lkZW50aWZpZXIiOnsidHlwZSI6ImVtYWlsIiwidmFsdWUiOiJjaGF0Z3B0MjJAY2VudHJpeC5hc2lhIn0sImxhc3RfbG9naW5fc3RyYXRlZ3kiOiJhdXRoMCIsImxhc3RfbG9naW5fbWV0aG9kX2J5X3VzZXJfaWQiOnsidXNlci00bDNVbnYybVM1YjlzckFFdVNRQVlFcTUiOiJwYXNzd29yZGxlc3Nfb3RwIiwidXNlci1pNmgzQmVpbGkxbW0zc2J5S0lnY0xmQXgiOiJwYXNzd29yZCJ9fQ==.amUQrA.6sSIiSQ9QsX4ssOhtBblsG2So7Nf5vihEzWq2CwczTw"
+      "value": "eyJsYXN0X2xvZ2luX2lkZW50aWZpZXIiOnsidHlwZSI6ImVtYWlsIiwidmFsdWUiOiJjaGF0Z3B0MjJAY2VudHJpeC5hc2lhIn0sImxhc3RfbG9naW5fc3RyYXRlZ3kiOiJhdXRoMCIsImxhc3RfbG9naW5fbWV0aG9kX2J5X3VzZXJfaWQiOnsidXNlci1nTmhaeHlZTFBiVWF1Nk1RSzlzRlFPSlYiOiJwYXNzd29yZCIsInVzZXItaTZoM0JlaWxpMW1tM3NieUtJZ2NMZkF4IjoicGFzc3dvcmQiLCJ1c2VyLTRsM1VudjJtUzViOXNyQUV1U1FBWUVxNSI6InBhc3N3b3JkbGVzc19vdHAifX0=.amm8Fg.lcpkE77tY0pyeDjlGUesSwvLz9ai85HuTGvhOUjELCA"
     },
     {
       "domain": ".auth.openai.com",
-      "expirationDate": 1819568299,
+      "expirationDate": 1819874326,
       "hostOnly": false,
       "httpOnly": true,
-      "name": "usc_rlOnaF33a7aY2nISw2KXFw9k",
+      "name": "usc_SthW5uiJxxFMY3gah7HPbeJE",
       "path": "/",
       "sameSite": "lax",
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoidXMiLCJwcm90b2NvbF92ZXJzaW9uIjoiMSIsImNvb2tpZV9pZCI6InJsT25hRjMzYTdhWTJuSVN3MktYRnc5ayIsImVuY3J5cHRlZF9hdXRoZW50aWNhdGVkX2RhdGEiOiJ1c19oVzBXeUliNHNvSVR6ZkswY09SWVI5TmQiLCJjbGllbnRfc2VjcmV0IjoiNFdzVDY5ZnhDSWpjeXlhZzJWUFVURVZrIn0.qDVSNd9iT60PuBVpqVxrucDVVMeUoJPEOLxwcDRBN8nGmwztN7l_I7xcLJxy1_kHqkavdomZabqlwGRP2jZFDg"
+      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoidXMiLCJwcm90b2NvbF92ZXJzaW9uIjoiMSIsImNvb2tpZV9pZCI6IlN0aFc1dWlKeHhGTVkzZ2FoN0hQYmVKRSIsImVuY3J5cHRlZF9hdXRoZW50aWNhdGVkX2RhdGEiOiJ1c19mY1hBcUkxRlBYODZwZlBkZ3FHaWE5N2YiLCJjbGllbnRfc2VjcmV0IjoiczVHbFkwbm1kU2twVzFoTmxVYTZHQm85In0.IKPKFdjkT-s0Y1DhW7TxN6v_YBA5YOsPozgWE8SWihONMEA0dTLyhz7LISZdmUVclPZvUBH16blSefmFSGS_yA"
     },
     {
       "domain": ".auth.openai.com",
-      "expirationDate": 1819568299,
+      "expirationDate": 1819874326,
       "hostOnly": false,
       "httpOnly": true,
       "name": "unified_session_manifest",
@@ -142,33 +51,7 @@
       "secure": true,
       "session": false,
       "storeId": "0",
-      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lcyI6WyJ1c2NfcmxPbmFGMzNhN2FZMm5JU3cyS1hGdzlrIl19.UFku2WRaqVUYRqwP02_doKahUQEnVIh4DbtIfQv0poRPz1PCvK-PniGnQGsxr1Wbe_0l-_v2VtcdO6YjDkI5QA"
-    },
-    {
-      "domain": "auth.openai.com",
-      "expirationDate": 1785010099,
-      "hostOnly": true,
-      "httpOnly": true,
-      "name": "__cflb",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "0H28w2ZepuU3KZxNdePqvVnB6Qyo4bMecgsvMrfQ7U1"
-    },
-    {
-      "domain": "auth.openai.com",
-      "expirationDate": 1785009200,
-      "hostOnly": true,
-      "httpOnly": false,
-      "name": "_dd_s",
-      "path": "/",
-      "sameSite": "strict",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "aid=b382259a-9c57-4f93-9883-cf255cc3b061&rum=2&id=22b75772-c90e-471e-8cef-3ab331181bca&created=1785008263654&expire=1785009197328"
+      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lcyI6WyJ1c2NfU3RoVzV1aUp4eEZNWTNnYWg3SFBiZUpFIl19.jGu3heNqx7UL7VXK2cB6nzG7aaZ0baDqcmhGTxpmR9-YCSVNWv0zI8puAcSLdNqks31CauUONFmK1fTYqndFuA"
     }
   ]
 }
