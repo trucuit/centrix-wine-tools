@@ -11,7 +11,7 @@ import { stdin as input, stdout as output } from "node:process";
 
 const SERVICE_CONFIG = {
   chatgpt: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
-  notebooklm: { url: "https://notebooklm.google.com", domains: ["notebooklm.google.com", "google.com", "chatgpt.com", "openai.com"] },
+  notebooklm: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com", "notebooklm.google.com", "google.com"] },
   claude: { url: "https://claude.ai", domains: ["claude.ai", "anthropic.com"] },
   gemini: { url: "https://gemini.google.com", domains: ["gemini.google.com", "google.com"] },
   perplexity: { url: "https://www.perplexity.ai", domains: ["perplexity.ai"] },
@@ -25,6 +25,31 @@ const SERVICE_CONFIG = {
   monica: { url: "https://monica.im", domains: ["monica.im"] },
   semrush: { url: "https://www.semrush.com", domains: ["semrush.com", "noxtools.com"] },
 };
+
+/**
+ * Load .centrix-services-cache.json and override SERVICE_CONFIG URLs.
+ * Pool slots get reassigned (e.g. notebooklm → chatgpt.com), so the cache
+ * written by the API MJS is the source of truth for target URLs.
+ */
+async function applyCacheOverrides(cookiesDir) {
+  const cacheFile = resolve(cookiesDir, "..", ".centrix-services-cache.json");
+  try {
+    const raw = JSON.parse(await readFile(cacheFile, "utf8"));
+    for (const svc of raw.services || []) {
+      if (!svc.id || !svc.url) continue;
+      if (SERVICE_CONFIG[svc.id]) {
+        SERVICE_CONFIG[svc.id].url = svc.url.replace(/\/$/, "");
+      } else {
+        // New service from cache — add with URL-derived domain
+        try {
+          const host = new URL(svc.url).hostname;
+          const root = host.replace(/^www\./, "");
+          SERVICE_CONFIG[svc.id] = { url: svc.url.replace(/\/$/, ""), domains: [root] };
+        } catch { /* invalid URL, skip */ }
+      }
+    }
+  } catch { /* cache missing or invalid — use hardcoded defaults */ }
+}
 
 const DEEPSEEK_STORAGE_KEYS = new Set([
   "userToken",
@@ -633,6 +658,9 @@ Examples:
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   if (options.help) { console.log(usage()); process.exitCode = 0; return; }
+
+  // Override SERVICE_CONFIG URLs from the live services cache
+  await applyCacheOverrides(options.cookiesDir);
 
   const wantInteractive = options.pick || !options.service;
   if (wantInteractive) {

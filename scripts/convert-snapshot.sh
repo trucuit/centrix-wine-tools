@@ -102,7 +102,7 @@ host_json_name() {
     gemini) echo "gemini.google.com.json" ;;
     deepseek) echo "chat.deepseek.com.json" ;;
     perplexity) echo "perplexity.ai.json" ;;
-    notebooklm) echo "notebooklm.google.com.json" ;;
+    notebooklm) echo "chatgpt.com.json" ;;
     grok|grok-heavy) echo "grok.com.json" ;;
     canva) echo "canva.com.json" ;;
     microsoft-copilot) echo "copilot.microsoft.com.json" ;;
@@ -317,9 +317,9 @@ const DEFAULT_SERVICES = {
     cookieDomains: ["deepseek.com", "chat.deepseek.com"],
   },
   notebooklm: {
-    id: "notebooklm", name: "NotebookLM",
-    url: "https://notebooklm.google.com/", loginUrl: "https://notebooklm.google.com/",
-    cookieDomains: ["notebooklm.google.com", "google.com", "chatgpt.com", "openai.com"],
+    id: "notebooklm", name: "GPT-5.5 Pro",
+    url: "https://chatgpt.com/", loginUrl: "https://chatgpt.com/",
+    cookieDomains: ["chatgpt.com", "openai.com", "notebooklm.google.com", "google.com"],
   },
   canva: {
     id: "canva", name: "Canva",

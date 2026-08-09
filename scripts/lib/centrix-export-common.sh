@@ -26,9 +26,11 @@ warn() { print -r -- "! $*" >&2; }
 die()  { print -r -- "ERROR: $*" >&2; exit 1; }
 need() { command -v "$1" >/dev/null || die "missing dependency: $1"; }
 
-# ── catalog (App User DEFAULT_SERVICES + pool ids) ───────────
+# ── catalog ────────────────────────────────────────────────────
 # Format: id|display|default_url
-typeset -ga CENTRIX_KNOWN_SERVICES=(
+# Dynamic: read from .centrix-services-cache.json (written by API MJS)
+# Fallback: hardcoded list if no cache exists
+typeset -ga _CENTRIX_FALLBACK_SERVICES=(
   "chatgpt|ChatGPT|https://chatgpt.com/"
   "notebooklm|GPT-5.5 Pro / NotebookLM|https://chatgpt.com/"
   "claude|Claude|https://claude.ai/new"
@@ -47,6 +49,39 @@ typeset -ga CENTRIX_KNOWN_SERVICES=(
   "monica|Monica|https://monica.im/"
   "semrush|Semrush|https://www.semrush.com/"
 )
+
+# Load services from API cache file (.centrix-services-cache.json)
+# Written by export-centrix-api.mjs on login/connect/services commands
+_load_services_from_cache() {
+  local cache_file="${SCRIPT_DIR:-.}/.centrix-services-cache.json"
+  [[ -f "$cache_file" ]] || return 1
+  local _py="${PYTHON:-python3}"
+  command -v "$_py" >/dev/null 2>&1 || _py=python3
+  command -v "$_py" >/dev/null 2>&1 || return 1
+  local lines
+  lines=$("$_py" -c '
+import json, sys
+try:
+    data = json.load(open(sys.argv[1], encoding="utf-8"))
+    for s in data.get("services", []):
+        sid = s.get("id", "")
+        name = s.get("name", sid)
+        url = s.get("url", "")
+        if sid:
+            print(f"{sid}|{name}|{url}")
+except Exception:
+    pass
+' "$cache_file" 2>/dev/null)
+  [[ -z "$lines" ]] && return 1
+  CENTRIX_KNOWN_SERVICES=()
+  while IFS= read -r line; do
+    [[ -n "$line" ]] && CENTRIX_KNOWN_SERVICES+=("$line")
+  done <<< "$lines"
+  return 0
+}
+
+typeset -ga CENTRIX_KNOWN_SERVICES=()
+_load_services_from_cache || CENTRIX_KNOWN_SERVICES=("${_CENTRIX_FALLBACK_SERVICES[@]}")
 
 # ── init paths / env ────────────────────────────────────────
 centrix_export_init() {
@@ -154,7 +189,7 @@ resolve_service_id() {
     return
   fi
   case "$raw" in
-    chatgpt|gpt|gpt-5|chatgpt-pro) print -r -- "notebooklm" ;;
+    chatgpt|gpt|gpt-5|pro|chatgpt-pro|gpt-pro) print -r -- "notebooklm" ;;
     grok|grok-4)                   print -r -- "grok-heavy" ;;
     *)                             print -r -- "$raw" ;;
   esac
@@ -238,7 +273,7 @@ find_dump_for() {
     done
   fi
   case "$sid" in
-    notebooklm|chatgpt|gpt|gpt-5|chatgpt-pro)
+    notebooklm|chatgpt|gpt|gpt-5|pro|chatgpt-pro|gpt-pro)
       for f in \
         "$USERDATA/cookies-dump-notebooklm.json" \
         "$USERDATA/cookies-dump-chatgpt.json"
@@ -367,7 +402,7 @@ if m:
 ' "$asar" 2>/dev/null || true
     )
   fi
-  print -r -- "${ver:-3.18}"
+  print -r -- "${ver:-3.18.1}"
 }
 
 # Export env block used by API node CLI

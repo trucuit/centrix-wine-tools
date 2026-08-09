@@ -18,14 +18,14 @@
  *   ./export-centrix-api.sh logout
  *
  * Env:
- *   CENTRIX_APP_VERSION    default from asar / 3.17 (User-Agent CentriXAppUser/<ver>)
+ *   CENTRIX_APP_VERSION    default from asar / 3.18.1 (User-Agent CentriXAppUser/<ver>)
  *   CENTRIX_SERVER_URL     default https://api-centrixapp-quang.centrix.asia
  *   CENTRIX_SESSION_FILE   default ./.centrix-api-session.json
  *   CENTRIX_OUT_DIR        default ./cookies
  *   J2TEAM_OUT_DIR         optional external injector copy dir
  *   IMPORT_TO_CHROME=1     after export, run import-cookies-to-chrome.sh
  *   CENTRIX_APP_KEY / CENTRIX_APP_ATTEST_SECRET / CENTRIX_EXPORT_SIGN_KEY
- *     (defaults match App User 3.17 shipped values — friction keys, not hard secrets)
+ *     (defaults match App User 3.18.x shipped values — friction keys, not hard secrets)
  */
 
 import { createServer } from "node:http";
@@ -40,9 +40,33 @@ import { createInterface } from "node:readline";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
+const SERVICES_CACHE_FILE = resolve(ROOT, ".centrix-services-cache.json");
 
-/** Match remote-user-main.js APP_VERSION in App User 3.17 asar. */
-const APP_VERSION = String(process.env.CENTRIX_APP_VERSION || "3.17").trim() || "3.17";
+/**
+ * Persist the /api/services list to disk so shell scripts (export-pick-service,
+ * export-centrix-cookies) can show only the services that are actually available
+ * in the current account — instead of a hardcoded catalog.
+ */
+async function cacheServicesList(list) {
+  if (!Array.isArray(list) || !list.length) return;
+  const entries = list
+    .filter((s) => (s.enabled !== false))
+    .map((s) => ({
+      id: s.id || s.serviceId || "",
+      name: s.name || s.serviceName || "",
+      url: s.url || "",
+      enabled: s.enabled !== false,
+    }))
+    .filter((e) => e.id);
+  if (!entries.length) return;
+  const payload = { updatedAt: new Date().toISOString(), services: entries };
+  try {
+    await writeFile(SERVICES_CACHE_FILE, JSON.stringify(payload, null, 2), { mode: 0o600 });
+  } catch { /* best-effort */ }
+}
+
+/** Match remote-user-main.js APP_VERSION in App User asar (shell detect_app_version overrides). */
+const APP_VERSION = String(process.env.CENTRIX_APP_VERSION || "3.18.1").trim() || "3.18.1";
 /** Exact UA App User sends — server uaIsClient / uaIsScript check this string. */
 const USER_AGENT = `CentriXAppUser/${APP_VERSION}`;
 const DEFAULT_SERVER = "https://api-centrixapp-quang.centrix.asia";
@@ -52,7 +76,7 @@ const GOOGLE_CLIENT_ID =
 const GOOGLE_AUTH_ENDPOINT = "https://accounts.google.com/o/oauth2/v2/auth";
 const GOOGLE_SCOPE = "openid email profile";
 
-// Same defaults as App User 3.17 asar (shared/app-attest.js). Override via env if rotated.
+// Same defaults as App User asar (shared/app-attest.js). Override via env if rotated.
 const APP_REQUEST_KEY =
   process.env.CENTRIX_APP_KEY || "cxk_28db7719b795d4eaa5a4e00fcb057029a11130eea00ec39a8bbd1467ca2ae5f7";
 const APP_ATTEST_SECRET =
@@ -72,8 +96,9 @@ const MAX_MS_SINCE_INTERACT = 45000;
 
 /**
  * serviceId → default page URL for J2TEAM export.
- * Base list = App User 3.17 DEFAULT_SERVICES (shared/service-store.js)
+ * Base list = App User DEFAULT_SERVICES (shared/service-store.js)
  * + pool-only ids seen on this server (grok-heavy, envato-elements, …).
+ * Prefer live URLs from /api/services cache when present.
  */
 const SERVICE_URLS = {
   chatgpt: "https://chatgpt.com/",
@@ -87,13 +112,17 @@ const SERVICE_URLS = {
   mistral: "https://chat.mistral.ai/",
   midjourney: "https://www.midjourney.com/",
   poe: "https://poe.com/",
-  notebooklm: "https://notebooklm.google.com/",
+  // pool GPT Pro slot id=notebooklm but URL is chatgpt.com on this deploy
+  notebooklm: "https://chatgpt.com/",
   elevenlabs: "https://elevenlabs.io/app",
   // pool / custom services (not always in DEFAULT_SERVICES)
   "envato-elements": "https://elements.envato.com/",
   gamma: "https://gamma.app/",
   monica: "https://monica.im/",
   semrush: "https://www.semrush.com/",
+  scribd: "https://www.scribd.com/",
+  freepik: "https://www.freepik.com/",
+  canva: "https://www.canva.com/",
 };
 
 /**
@@ -108,7 +137,9 @@ const ALIASES =
         chatgpt: "notebooklm",
         gpt: "notebooklm",
         "gpt-5": "notebooklm",
+        pro: "notebooklm",
         "chatgpt-pro": "notebooklm",
+        "gpt-pro": "notebooklm",
         grok: "grok-heavy",
         "grok-4": "grok-heavy",
       };
@@ -492,6 +523,10 @@ async function connectLikeApp(session, device) {
     },
   });
 
+  // Cache services list for shell scripts
+  const svcList = serviceResult.config?.services || serviceResult.services || [];
+  await cacheServicesList(svcList);
+
   try {
     await apiRequest(session, device, "/api/me", { timeoutMs: 10000 });
     log("connect: GET /api/me ok");
@@ -781,6 +816,7 @@ async function cmdServices() {
   await apiRequest(session, device, "/api/health", { timeoutMs: 12000 }).catch(() => null);
   const result = await apiRequest(session, device, "/api/services", { timeoutMs: 15000 });
   const list = result.config?.services || result.services || [];
+  await cacheServicesList(list);
   for (const s of list) {
     const id = s.id || s.serviceId || "?";
     const name = s.name || s.serviceName || "";
@@ -1059,7 +1095,8 @@ Commands:
   export [ids…]      Pull cookies (default: all enabled)
   export all         Same
   export grok        Alias → grok-heavy (unless CENTRIX_NO_ALIASES=1)
-  export chatgpt     Alias → notebooklm (pool GPT slot)
+  export chatgpt     Alias → notebooklm (pool GPT Pro slot)
+  export pro         Alias → notebooklm (same pool slot)
   logout             Release + self-revoke + delete session file
 
 Options (export / shell):

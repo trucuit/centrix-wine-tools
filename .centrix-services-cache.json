@@ -1,0 +1,119 @@
+{
+  "updatedAt": "2026-08-08T14:46:44.442Z",
+  "services": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "enabled": true
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "url": "https://claude.ai/new",
+      "enabled": true
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "url": "https://gemini.google.com/",
+      "enabled": true
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "enabled": true
+    },
+    {
+      "id": "microsoft-copilot",
+      "name": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "enabled": true
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "url": "https://grok.com/",
+      "enabled": true
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "url": "https://chat.deepseek.com/",
+      "enabled": true
+    },
+    {
+      "id": "poe",
+      "name": "Capcut",
+      "url": "https://www.capcut.com/",
+      "enabled": true
+    },
+    {
+      "id": "notebooklm",
+      "name": "GPT-5.5 Pro",
+      "url": "https://chatgpt.com/",
+      "enabled": true
+    },
+    {
+      "id": "grok-heavy",
+      "name": "Grok Heavy",
+      "url": "https://grok.com/",
+      "enabled": true
+    },
+    {
+      "id": "semrush",
+      "name": "Semrush",
+      "url": "https://noxtools.com/secure/page/semrush",
+      "enabled": true
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "url": "https://gamma.app/vi",
+      "enabled": true
+    },
+    {
+      "id": "scribd",
+      "name": "Scribd",
+      "url": "https://www.scribd.com/",
+      "enabled": true
+    },
+    {
+      "id": "freepik",
+      "name": "Freepik",
+      "url": "https://www.magnific.com/stock#from_element=mainmenu",
+      "enabled": true
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "url": "https://www.canva.com/",
+      "enabled": true
+    },
+    {
+      "id": "monica",
+      "name": "Monica",
+      "url": "https://monica.im/",
+      "enabled": true
+    },
+    {
+      "id": "quillbot",
+      "name": "quillbot",
+      "url": "https://quillbot.com/",
+      "enabled": true
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "url": "https://zoom.us/",
+      "enabled": true
+    },
+    {
+      "id": "envato-elements",
+      "name": "Envato Elements",
+      "url": "https://noxtools.com/secure/page/envato",
+      "enabled": true
+    }
+  ]
+}
