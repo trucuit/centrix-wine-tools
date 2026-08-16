@@ -46,6 +46,9 @@ assert.equal(netParams.domain, undefined);
 
 // File selection: prefer host-scoped; skip dump noise
 assert.equal(isCookieSourceNoise("cookies-dump-notebooklm.cookie-editor.json"), true);
+assert.equal(isCookieSourceNoise("notebooklm-1.full.json"), true);
+assert.equal(isCookieSourceNoise("chatgpt-1.export.json"), true);
+assert.equal(isCookieSourceNoise("notebooklm-1.json"), true);
 assert.equal(isCookieSourceNoise("auth.openai.com.json"), false);
 assert.equal(isHostScopedCookieFile("auth.openai.com.json", ["openai.com", "chatgpt.com"]), true);
 assert.equal(isHostScopedCookieFile("notebooklm.google.com.json", ["openai.com", "chatgpt.com"]), false);
@@ -60,6 +63,13 @@ assert.deepEqual(
     "notebooklm.full.json",
   ], ["chatgpt.com", "openai.com"], "service"),
   ["auth.openai.com.json", "chatgpt.com.json"],
+);
+assert.deepEqual(
+  selectCookieSourceFiles([
+    "notebooklm-1.full.json",
+    "notebooklm.full.json",
+  ], ["chatgpt.com", "openai.com"], "full", "notebooklm"),
+  ["notebooklm.full.json"],
 );
 
 const root = await mkdtemp(resolve(tmpdir(), "cookie-import-test-"));
@@ -115,11 +125,22 @@ try {
       { name: "usc_good", value: "overwrite-me", domain: ".auth.openai.com", path: "/", secure: true, sameSite: "lax", session: true },
     ],
   }));
+  // NextAuth chunk conflict resolution: chunked .0/.1 should discard unchunked token
+  await writeFile(resolve(nlmDir, "chatgpt.com.json"), JSON.stringify({
+    url: "https://chatgpt.com",
+    cookies: [
+      { name: "__Secure-next-auth.session-token", value: "old-single", domain: ".chatgpt.com", path: "/", secure: true, httpOnly: true, sameSite: "lax", expirationDate: 9999999999 },
+      { name: "__Secure-next-auth.session-token.0", value: "chunk0", domain: ".chatgpt.com", path: "/", secure: true, httpOnly: true, sameSite: "lax", expirationDate: 9999999999 },
+      { name: "__Secure-next-auth.session-token.1", value: "chunk1", domain: ".chatgpt.com", path: "/", secure: true, httpOnly: true, sameSite: "lax", expirationDate: 9999999999 },
+    ],
+  }));
   const chatgpt = await loadServiceCookies(nlmDir, ["chatgpt.com", "openai.com"]);
   assert.deepEqual(chatgpt.sourceFiles, ["auth.openai.com.json", "chatgpt.com.json"]);
   assert.equal(chatgpt.cookies.some((c) => c.name === "usc_good" && c.value === "a"), true);
   assert.equal(chatgpt.cookies.some((c) => c.name === "usc_bad"), false);
-  assert.equal(chatgpt.cookies.some((c) => c.name === "__Secure-next-auth.session-token"), true);
+  assert.equal(chatgpt.cookies.some((c) => c.name === "__Secure-next-auth.session-token.0" && c.value === "chunk0"), true);
+  assert.equal(chatgpt.cookies.some((c) => c.name === "__Secure-next-auth.session-token.1" && c.value === "chunk1"), true);
+  assert.equal(chatgpt.cookies.some((c) => c.name === "__Secure-next-auth.session-token"), false);
 
   const storage = await loadServiceStorage(serviceDir, "deepseek");
   assert.deepEqual(storage, { userToken: "redacted", settingsJwt: "redacted" });

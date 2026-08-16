@@ -37,15 +37,22 @@ async function applyCacheOverrides(cookiesDir) {
     const raw = JSON.parse(await readFile(cacheFile, "utf8"));
     for (const svc of raw.services || []) {
       if (!svc.id || !svc.url) continue;
+      const targetUrl = svc.url.replace(/\/$/, "");
+      let rootHost = "";
+      try {
+        const host = new URL(targetUrl).hostname;
+        rootHost = host.replace(/^www\./, "");
+      } catch {}
       if (SERVICE_CONFIG[svc.id]) {
-        SERVICE_CONFIG[svc.id].url = svc.url.replace(/\/$/, "");
-      } else {
+        SERVICE_CONFIG[svc.id].url = targetUrl;
+        if (targetUrl.includes("chatgpt.com")) {
+          SERVICE_CONFIG[svc.id].domains = ["chatgpt.com", "openai.com"];
+        } else if (rootHost && !SERVICE_CONFIG[svc.id].domains.some((d) => rootHost.endsWith(d) || d.endsWith(rootHost))) {
+          SERVICE_CONFIG[svc.id].domains = [rootHost];
+        }
+      } else if (rootHost) {
         // New service from cache — add with URL-derived domain
-        try {
-          const host = new URL(svc.url).hostname;
-          const root = host.replace(/^www\./, "");
-          SERVICE_CONFIG[svc.id] = { url: svc.url.replace(/\/$/, ""), domains: [root] };
-        } catch { /* invalid URL, skip */ }
+        SERVICE_CONFIG[svc.id] = { url: targetUrl, domains: [rootHost] };
       }
     }
   } catch { /* cache missing or invalid — use hardcoded defaults */ }
@@ -260,6 +267,8 @@ export function isCookieSourceNoise(name) {
     || /^cookies-dump-/i.test(base)
     || /\.bak(\.|$)/i.test(base)
     || base.endsWith(".storage.json")
+    || /-\d+\./.test(base)
+    || base.endsWith(".export.json")
   );
 }
 
@@ -280,16 +289,21 @@ export function isHostScopedCookieFile(name, allowedDomains) {
  * service mode prefers host-scoped files (chatgpt.com.json, auth.openai.com.json)
  * so bulk dumps with a *different* session cannot overwrite auth cookies.
  */
-export function selectCookieSourceFiles(allJson, allowedDomains, mode = "service") {
+export function selectCookieSourceFiles(allJson, allowedDomains, mode = "service", serviceName = "") {
   if (mode === "full") {
-    return allJson.filter((name) => name.endsWith(".full.json")).sort();
+    if (serviceName && allJson.includes(`${serviceName}.full.json`)) {
+      return [`${serviceName}.full.json`];
+    }
+    const fullFiles = allJson
+      .filter((name) => name.endsWith(".full.json") && !/-\d+\.full\.json$/.test(name))
+      .sort();
+    return fullFiles.length ? fullFiles : allJson.filter((name) => name.endsWith(".full.json")).sort();
   }
   const candidates = allJson
     .filter((name) => name.endsWith(".json") && !isCookieSourceNoise(name))
     .sort();
   const hostFiles = candidates.filter((name) => isHostScopedCookieFile(name, allowedDomains));
-  // Prefer host-scoped only when present — avoids mixing notebooklm.google.com.json
-  // (separate ChatGPT session) with auth.openai.com.json from the current export.
+  // Prefer host-scoped only when present — avoids mixing non-matching host dumps
   return hostFiles.length ? hostFiles : candidates;
 }
 
@@ -299,12 +313,12 @@ export function selectCookieSourceFiles(allJson, allowedDomains, mode = "service
  *   - service (default): host-scoped JSON when available (safe inject)
  *   - full: only *.full.json (raw partition dump; still domain-allowlisted)
  */
-export async function loadServiceCookies(serviceDir, allowedDomains, mode = "service") {
+export async function loadServiceCookies(serviceDir, allowedDomains, mode = "service", serviceName = "") {
   if (mode !== "service" && mode !== "full") {
     throw new Error(`Invalid cookie mode: ${mode}. Use "service" or "full".`);
   }
   const allJson = (await readdir(serviceDir)).filter((name) => name.endsWith(".json"));
-  const files = selectCookieSourceFiles(allJson, allowedDomains, mode);
+  const files = selectCookieSourceFiles(allJson, allowedDomains, mode, serviceName);
   const cookies = [];
   const rejected = { invalid: 0, duplicate: 0 };
   const seen = new Map(); // key → index in cookies
@@ -330,6 +344,27 @@ export async function loadServiceCookies(serviceDir, allowedDomains, mode = "ser
       cookies.push(cookie);
     }
   }
+
+  // NextAuth chunk conflict resolution: if chunked token (.0) exists for a domain,
+  // remove unchunked single token to prevent server auth rejection.
+  const hasChunkedSessionToken = new Set(
+    cookies
+      .filter((c) => c.name.endsWith(".0"))
+      .map((c) => `${c.domain}\t${c.name.slice(0, -2)}`)
+  );
+  if (hasChunkedSessionToken.size > 0) {
+    const filteredCookies = cookies.filter((c) => {
+      const key = `${c.domain}\t${c.name}`;
+      if (hasChunkedSessionToken.has(key)) {
+        rejected.duplicate += 1;
+        return false;
+      }
+      return true;
+    });
+    cookies.length = 0;
+    cookies.push(...filteredCookies);
+  }
+
   return { cookies, rejected, files: files.length, mode, sourceFiles: files };
 }
 
@@ -683,7 +718,7 @@ async function main() {
   if (!config) throw new Error(`Unsupported service: ${options.service}. Supported: ${Object.keys(SERVICE_CONFIG).join(", ")}`);
   const sourceService = config.source || options.service;
   const serviceDir = resolve(options.cookiesDir, sourceService);
-  const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode);
+  const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode, sourceService);
   const localStorageEntries = options.mode === "service"
     ? await loadServiceStorage(serviceDir, sourceService)
     : {};
