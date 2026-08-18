@@ -1,0 +1,70 @@
+{
+  "url": "https://noxtools.com/",
+  "cookies": [
+    {
+      "domain": ".noxtools.com",
+      "expirationDate": 1789662006.498,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "PHPSESSID",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": true,
+      "session": true,
+      "storeId": "0",
+      "value": "ick2a723b15sn3p1tip03kgf0n"
+    },
+    {
+      "domain": ".noxtools.com",
+      "expirationDate": 1789662006.498,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "amember_nr",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": true,
+      "session": true,
+      "storeId": "0",
+      "value": "83ffbe3610ecc68cf1a00e73f152d3aa"
+    },
+    {
+      "domain": ".noxtools.com",
+      "expirationDate": 1819167640.579077,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_ga",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "GA1.1.613057728.1784210571"
+    },
+    {
+      "domain": ".noxtools.com",
+      "expirationDate": 1816143633.097472,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "cf_clearance",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "O6UpRoWDsr0mQxf9vahCtEn2c7wqxvSaWf5bcRZbx2U-1784607632-1.2.1.1-RoZ8elwGlrTcdN9Sh3i1yMHbbomaJtGE.ksEhCvhSoEKz6smDHZqKxnhVci68.Wct57EoHTnGi2yVaPzFveG6rvdsI7ggf8ZsMSJecGfxKsugFbSSkLuZwS6YYxy97jMmYYVKtq0Slmy0FFc7vg1iOglRfn8GGxHlJuRzH77a_7hVH_X8reyb4Up5JxRwhKXPhlYnaY3QetlOL4QBWGmJ1XN1j7Tc69ZzpgPvjz0XynB1GCzByPFKmeiBc51yedqxUc5ZwwUV_MMUoJUevOf.h2QHnP6ql1xosf7I.FrgU_of3EStmEKyzNnT5NuJXoeBT0AKhsN3mIrWdpPIMW3pQ"
+    },
+    {
+      "domain": ".noxtools.com",
+      "expirationDate": 1819167640.578668,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_ga_M2C66L2Z09",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "GS2.1.s1784607640$o9$g0$t1784607640$j60$l0$h0"
+    }
+  ]
+}
