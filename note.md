@@ -28,7 +28,6 @@ Email: admin@centrix.local
 
 Mật khẩu: _838IPT0qaVPoQT8yDGZnhM-
 
-
 ===
 
 Dùng cho Codex / auth.openai.com
@@ -36,3 +35,16 @@ Dùng cho Codex / auth.openai.com
 1. Email: gptpro2@centrix.biz
 2. Password: H#488104983025ow
 3. Nếu hỏi 2FA → code TOTP từ secret trên (Authenticator / oathtool --totp -b N7NM2WTN4DKTZ3VPHI4WM2AN747DYA5F)
+
+Thông tin tài khoản Admin & Master Token cho hệ thống https://api-centrixapp-quang.centrix.asia/ (được lưu tại
+
+centrix-backend/.env
+):
+
+1. Tài khoản Staff / Admin Owner
+   Email: owner@centrix.asia
+   Mật khẩu: ypxE_N99iSbMGjGRHXBPgr (Ngoài ra trong DB còn có admin quang@centrix.asia)
+2. Master Token (Remote Token bypass quyền Admin trên mọi API)
+   Master Token:
+   text
+   cxm_2820cd066030366f3b304a17cb86531dcb9c1b38aec2fde7a78d884c12e586ae
