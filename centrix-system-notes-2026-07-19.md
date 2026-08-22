@@ -29,7 +29,7 @@ The local backup database is at:
 
 The extracted Electron user application source is at:
 
-`/Volumes/m2/apps/windows/exports/centrix-app-asar-3.17/source/`
+`/Volumes/m2/apps/windows/exports/centrix-app-asar-3.18.1/source/`
 
 ### Separate VPS / unrelated service family
 
@@ -185,8 +185,8 @@ The Electron user partition is designed to be in-memory while the app is running
 - Snapshot file storage and locking: `centrix-backend/snapshot-store.js`
 - Pool assignment: `centrix-backend/pool.js`
 - AES-GCM envelope implementation: `centrix-backend/shared/profile-crypto.js`
-- Electron pull/decrypt/import: `exports/centrix-app-asar-3.17/source/src/remote-user-main.js`
-- Electron cookie/storage import: `exports/centrix-app-asar-3.17/source/src/shared/profile-sync.js`
+- Electron pull/decrypt/import: `exports/centrix-app-asar-3.18.1/source/src/remote-user-main.js`
+- Electron cookie/storage import: `exports/centrix-app-asar-3.18.1/source/src/shared/profile-sync.js`
 
 ## Snapshot update rules
 

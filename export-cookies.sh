@@ -58,8 +58,17 @@ if [[ "$import_chrome" -eq 1 ]]; then
   if [[ -f "$SCRIPT_DIR/import-cookies-to-chrome.sh" ]]; then
     print -r -- "\n▸ Đang tự động nạp Cookie vào Google Chrome..."
     if [[ "${#target_services[@]}" -eq 0 || "${target_services[1]:-}" == "all" ]]; then
-      # Nạp mặc định hoặc service phổ biến
-      "$SCRIPT_DIR/import-cookies-to-chrome.sh" chatgpt || true
+      # Nạp tất cả service có cookie folder
+      local cookies_root="${CENTRIX_COOKIES_DIR:-$SCRIPT_DIR/cookies}"
+      if [[ -d "$cookies_root" ]]; then
+        for svc_dir in "$cookies_root"/*(N/); do
+          local svc_name="${svc_dir:t}"
+          print -r -- "▸ Nạp $svc_name vào Chrome..."
+          "$SCRIPT_DIR/import-cookies-to-chrome.sh" "$svc_name" || true
+        done
+      else
+        "$SCRIPT_DIR/import-cookies-to-chrome.sh" chatgpt || true
+      fi
     else
       for svc in "${target_services[@]}"; do
         print -r -- "▸ Nạp $svc vào Chrome..."

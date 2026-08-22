@@ -119,7 +119,12 @@ centrix_export_init() {
   APP_ASAR="${APP_ASAR:-$ASAR}"
 
   if [[ -z "${USERDATA:-}" ]]; then
-    USERDATA="${_wine_user_base}/AppData/Roaming/mkvhszparoue"
+    # v0.1.339+ uses centrix-ai-frontend; older builds used mkvhszparoue
+    if [[ -d "${_wine_user_base}/AppData/Roaming/centrix-ai-frontend" ]]; then
+      USERDATA="${_wine_user_base}/AppData/Roaming/centrix-ai-frontend"
+    else
+      USERDATA="${_wine_user_base}/AppData/Roaming/mkvhszparoue"
+    fi
   fi
 
   OUT_DIR="${OUT_DIR:-${CENTRIX_OUT_DIR:-$SCRIPT_DIR/cookies}}"

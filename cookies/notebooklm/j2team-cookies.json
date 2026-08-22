@@ -120,7 +120,7 @@
     },
     {
       "domain": "chatgpt.com",
-      "expirationDate": 1789662006.194,
+      "expirationDate": 1789913792.99,
       "hostOnly": true,
       "httpOnly": true,
       "name": "__Host-next-auth.csrf-token",
@@ -146,7 +146,7 @@
     },
     {
       "domain": ".chatgpt.com",
-      "expirationDate": 1789662006.194,
+      "expirationDate": 1789913792.99,
       "hostOnly": false,
       "httpOnly": true,
       "name": "_cfuvid",
@@ -159,7 +159,7 @@
     },
     {
       "domain": "chatgpt.com",
-      "expirationDate": 1789662006.194,
+      "expirationDate": 1789913792.99,
       "hostOnly": true,
       "httpOnly": true,
       "name": "__Secure-next-auth.callback-url",
@@ -211,7 +211,7 @@
     },
     {
       "domain": ".auth.openai.com",
-      "expirationDate": 1789662006.194,
+      "expirationDate": 1789913792.99,
       "hostOnly": false,
       "httpOnly": true,
       "name": "_cfuvid",
@@ -523,7 +523,7 @@
     },
     {
       "domain": ".ws.chatgpt.com",
-      "expirationDate": 1789662006.194,
+      "expirationDate": 1789913792.99,
       "hostOnly": false,
       "httpOnly": true,
       "name": "_cfuvid",
@@ -536,7 +536,7 @@
     },
     {
       "domain": "chatgpt.com",
-      "expirationDate": 1789662006.194,
+      "expirationDate": 1789913792.99,
       "hostOnly": true,
       "httpOnly": false,
       "name": "oai-gn",

@@ -11,6 +11,8 @@ import { stdin as input, stdout as output } from "node:process";
 
 const SERVICE_CONFIG = {
   chatgpt: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
+  gptpro: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
+  "chatgpt-pro": { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
   notebooklm: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com", "notebooklm.google.com", "google.com"] },
   claude: { url: "https://claude.ai", domains: ["claude.ai", "anthropic.com"] },
   gemini: { url: "https://gemini.google.com", domains: ["gemini.google.com", "google.com"] },
@@ -24,6 +26,11 @@ const SERVICE_CONFIG = {
   gamma: { url: "https://gamma.app", domains: ["gamma.app"] },
   monica: { url: "https://monica.im", domains: ["monica.im"] },
   semrush: { url: "https://www.semrush.com", domains: ["semrush.com", "noxtools.com"] },
+  canva: { url: "https://www.canva.com", domains: ["canva.com"] },
+  freepik: { url: "https://www.freepik.com", domains: ["freepik.com"] },
+  scribd: { url: "https://www.scribd.com", domains: ["scribd.com"] },
+  quillbot: { url: "https://quillbot.com", domains: ["quillbot.com"] },
+  zoom: { url: "https://zoom.us", domains: ["zoom.us"] },
 };
 
 /**

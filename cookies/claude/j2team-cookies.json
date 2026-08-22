@@ -94,7 +94,7 @@
     },
     {
       "domain": "claude.ai",
-      "expirationDate": 1789662303.033,
+      "expirationDate": 1789912994.896,
       "hostOnly": true,
       "httpOnly": true,
       "name": "ion-vk",
@@ -107,7 +107,7 @@
     },
     {
       "domain": ".claude.ai",
-      "expirationDate": 1789662303.033,
+      "expirationDate": 1789912994.896,
       "hostOnly": false,
       "httpOnly": true,
       "name": "_cfuvid",

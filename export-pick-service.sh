@@ -280,7 +280,7 @@ fi
 
 if [[ "$1" == "all" ]]; then
   rebuild_menu
-  local -a all=()
+  typeset -a all=()
   local i
   for i in {1..${#MENU_IDS}}; do
     [[ -n "${MENU_PATHS[$i]}" ]] && all+="${MENU_IDS[$i]}"

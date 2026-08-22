@@ -62,15 +62,15 @@ done
 
 # ── find installer .exe in repo ─────────────────────────────
 find_installer() {
-  local installers=("$SCRIPT_DIR"/CentriX-App-User-Setup*.exe(Nn))
+  local installers=("$SCRIPT_DIR"/CentriX*Setup*.exe(Nn))
   (( ${#installers} > 0 )) || return 1
   INSTALLER="${installers[-1]}"
 }
 
 installer_version() {
   local name="${INSTALLER:t}"
-  if [[ "$name" =~ '^CentriX-App-User-Setup-([0-9]+(\.[0-9]+)*)\.exe$' ]]; then
-    print -r -- "$match[1]"
+  if [[ "$name" =~ '^CentriX(-App-User)?-Setup-([0-9]+(\.[0-9]+)*)\.exe$' ]]; then
+    print -r -- "$match[2]"
   fi
 }
 
@@ -191,7 +191,7 @@ already_installed() {
 }
 
 install_centrix() {
-  find_installer || die "No CentriX-App-User-Setup*.exe in $SCRIPT_DIR — pull latest repo or copy installer here"
+  find_installer || die "No CentriX*Setup*.exe in $SCRIPT_DIR — pull latest repo or copy installer here"
   ok "Installer: $INSTALLER ($(du -h "$INSTALLER" | awk '{print $1}'))"
   local installer_ver
   installer_ver=$(installer_version)
@@ -230,12 +230,20 @@ install_centrix() {
     fi
   fi
 
+  log "Closing any running CentriX instances…"
+  ps -axo pid=,command= | while read -r pid cmd; do
+    case "$cmd" in
+      *CentriX*|*centrix*) [[ "$pid" != "$$" ]] && kill -9 "$pid" 2>/dev/null || true ;;
+    esac
+  done
+  sleep 1
+
   log "Initializing Wine prefix (first run can take 1–2 min)…"
   "$WINE_BIN" wineboot -u 2>/dev/null || "$WINE_BIN" wineboot 2>/dev/null || true
 
-  log "Silent install CentriX App User (Inno Setup)…"
-  # Inno: /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
-  if ! "$WINE_BIN" "$INSTALLER" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-; then
+  log "Silent install CentriX (Inno Setup / NSIS)…"
+  # Inno: /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- | NSIS: /S /currentuser
+  if ! "$WINE_BIN" "$INSTALLER" /S /currentuser /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-; then
     warn "Silent install returned non-zero — checking if app exists anyway…"
   fi
 

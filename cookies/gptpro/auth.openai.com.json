@@ -1,0 +1,57 @@
+{
+  "url": "https://auth.openai.com/log-in",
+  "cookies": [
+    {
+      "domain": ".auth.openai.com",
+      "expirationDate": null,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "_cfuvid",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": true,
+      "storeId": "0",
+      "value": "_8VxbipPK2HFCmMhixLi2nLGQ7EZLN4KqU5Chjqw46w-1787389770.834947-1.0.1.1-M_oMPogHx4nxWtWt_s3LVQF8R69KXYEsmRTahhwPUwY"
+    },
+    {
+      "domain": ".auth.openai.com",
+      "expirationDate": 1789982038,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "oai-client-auth-info",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJsYXN0X2xvZ2luX2lkZW50aWZpZXIiOnsidHlwZSI6ImVtYWlsIiwidmFsdWUiOiJjaGF0Z3B0MjZAY2VudHJpeC5hc2lhIn0sImxhc3RfbG9naW5fc3RyYXRlZ3kiOiJhdXRoMCIsImxhc3RfbG9naW5fbWV0aG9kX2J5X3VzZXJfaWQiOnsidXNlci1GRWFsNlVqR0xndlRtVU54QVJzbldRWnUiOiJwYXNzd29yZCJ9fQ==.aoloVg.tvLtwt6GmsApZJtJ8VicigQh-EdWj7bo1haQ-13R7Hc"
+    },
+    {
+      "domain": ".auth.openai.com",
+      "expirationDate": 1821950038,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "usc_fU2IYqrukxODuEFxiYNvN4nb",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoidXMiLCJwcm90b2NvbF92ZXJzaW9uIjoiMiIsImNvb2tpZV9pZCI6ImZVMklZcXJ1a3hPRHVFRnhpWU52TjRuYiIsImVuY3J5cHRlZF9hdXRoZW50aWNhdGVkX2RhdGEiOiJ1c19jT1RRNEI2bkw4Y3dJYnJjbjAzaGtJZFMiLCJjbGllbnRfc2VjcmV0IjoiUEhtZmZEbXE1U1ZESklmQzRkbTlGZjFuIn0.fr3Itb30KLhItGmp_wnqtDMfxa_wWAdmGKXqXyM_vKRg5D6E8MoXXGIAUR5OCwNicw59wmwwK90GwrA39gJtCg"
+    },
+    {
+      "domain": ".auth.openai.com",
+      "expirationDate": 1821950038,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "unified_session_manifest",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lcyI6WyJ1c2NfZlUySVlxcnVreE9EdUVGeGlZTnZONG5iIl19.S6SyT_NqESgtDvD7M0J7Wkt9YBNrAlfs-Or2NWO7O7C-QvAPZoCYEweXT4dkYCIOCCcEuSZk60zCuqDzET5XHg"
+    }
+  ]
+}

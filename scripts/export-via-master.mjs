@@ -101,6 +101,7 @@ export async function exportServiceCookies(serviceId) {
 
   // 1. Raw JSON
   await fs.writeFile(path.join(serviceDir, "cookies.json"), JSON.stringify(cookies, null, 2), "utf8");
+  await fs.writeFile(path.join(serviceDir, `${serviceId}.json`), JSON.stringify(cookies, null, 2), "utf8");
 
   // 2. J2TEAM format
   const j2team = {
@@ -120,6 +121,17 @@ export async function exportServiceCookies(serviceId) {
     }))
   };
   await fs.writeFile(path.join(serviceDir, "j2team-cookies.json"), JSON.stringify(j2team, null, 2), "utf8");
+  await fs.writeFile(path.join(serviceDir, `${serviceId}.j2team.json`), JSON.stringify(j2team, null, 2), "utf8");
+
+  // 3. Write host-scoped files (e.g. claude.ai.json, chatgpt.com.json) for Chrome importer
+  const svc = catalogServices.find((s) => s.id === serviceId) || {};
+  const domains = svc.cookieDomains || [serviceId === "claude" ? "claude.ai" : `${serviceId}.com`];
+  for (const d of domains) {
+    const hostName = String(d).replace(/^\./, "");
+    if (hostName.includes(".")) {
+      await fs.writeFile(path.join(serviceDir, `${hostName}.json`), JSON.stringify(j2team, null, 2), "utf8");
+    }
+  }
 
   console.log(`✓ [${serviceId.padEnd(16)}] ${String(cookies.length).padStart(3)} cookies | Slot: ${slot.padEnd(14)} (${source}) → cookies/${serviceId}/`);
   return { serviceId, count: cookies.length, slot };
