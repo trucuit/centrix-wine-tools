@@ -12,7 +12,10 @@ import { stdin as input, stdout as output } from "node:process";
 const SERVICE_CONFIG = {
   chatgpt: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
   gptpro: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
-  "chatgpt-pro": { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
+  "chatgpt-pro": { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "gptpro" },
+  "gpt-pro": { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "gptpro" },
+  chatgptpro: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "gptpro" },
+  pro: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "gptpro" },
   notebooklm: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com", "notebooklm.google.com", "google.com"] },
   claude: { url: "https://claude.ai", domains: ["claude.ai", "anthropic.com"] },
   gemini: { url: "https://gemini.google.com", domains: ["gemini.google.com", "google.com"] },

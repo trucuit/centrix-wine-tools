@@ -342,6 +342,9 @@ function buildAppUserHeaders(session, device, method, fullUrl, pathname, hasBody
     "X-CentriX-Profile": profileId,
     "X-CentriX-Session": String(session.sessionKey || ""),
     "User-Agent": USER_AGENT,
+    "x-centrix-app-version": APP_VERSION,
+    "x-centrix-platform": process.platform,
+    "x-centrix-arch": process.arch,
     "X-CentriX-Attest": clientAttestHeader(deviceId),
     "X-CentriX-Proof": makeDeviceProof(device, {
       method,
@@ -365,6 +368,9 @@ function buildLoginHeaders() {
     "Content-Type": "application/json",
     "User-Agent": USER_AGENT,
     "X-CentriX-App-Key": APP_REQUEST_KEY,
+    "x-centrix-app-version": APP_VERSION,
+    "x-centrix-platform": process.platform,
+    "x-centrix-arch": process.arch,
   };
 }
 

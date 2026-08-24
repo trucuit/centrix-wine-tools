@@ -46,7 +46,7 @@ for arg in "$@"; do
       gem) s="gemini" ;;
       copilot|msft) s="microsoft-copilot" ;;
       elements|envato) s="envato-elements" ;;
-      gpt-5|gpt-pro|gpt5) s="notebooklm" ;;
+      gpt-5|gpt-pro|gpt5|pro|chatgpt-pro|chatgpt_pro|gptpro) s="gptpro" ;;
       magnific) s="freepik" ;;
       perp) s="perplexity" ;;
     esac

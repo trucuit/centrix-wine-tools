@@ -32,6 +32,7 @@ need() { command -v "$1" >/dev/null || die "missing dependency: $1"; }
 # Fallback: hardcoded list if no cache exists
 typeset -ga _CENTRIX_FALLBACK_SERVICES=(
   "chatgpt|ChatGPT|https://chatgpt.com/"
+  "gptpro|ChatGPT Pro|https://chatgpt.com/"
   "notebooklm|GPT-5.5 Pro / NotebookLM|https://chatgpt.com/"
   "claude|Claude|https://claude.ai/new"
   "gemini|Gemini|https://gemini.google.com/"
@@ -194,9 +195,10 @@ resolve_service_id() {
     return
   fi
   case "$raw" in
-    chatgpt|gpt|gpt-5|pro|chatgpt-pro|gpt-pro) print -r -- "notebooklm" ;;
-    grok|grok-4)                   print -r -- "grok-heavy" ;;
-    *)                             print -r -- "$raw" ;;
+    pro|chatgpt-pro|gpt-pro|chatgpt_pro|gptpro) print -r -- "gptpro" ;;
+    chatgpt|gpt|gpt-5)                          print -r -- "chatgpt" ;;
+    grok|grok-4)                                print -r -- "grok-heavy" ;;
+    *)                                          print -r -- "$raw" ;;
   esac
 }
 
@@ -209,14 +211,14 @@ service_url_hint() {
     fi
   done
   case "$sid" in
-    chatgpt|notebooklm|*gpt*) print -r -- "https://chatgpt.com" ;;
-    claude*)                  print -r -- "https://claude.ai" ;;
-    gemini*)                  print -r -- "https://gemini.google.com" ;;
-    grok*)                    print -r -- "https://grok.com" ;;
-    deepseek*)                print -r -- "https://chat.deepseek.com" ;;
-    perplexity*)              print -r -- "https://www.perplexity.ai" ;;
-    envato*)                  print -r -- "https://elements.envato.com" ;;
-    *)                        print -r -- "" ;;
+    chatgpt|notebooklm|gptpro|*gpt*) print -r -- "https://chatgpt.com" ;;
+    claude*)                         print -r -- "https://claude.ai" ;;
+    gemini*)                         print -r -- "https://gemini.google.com" ;;
+    grok*)                           print -r -- "https://grok.com" ;;
+    deepseek*)                       print -r -- "https://chat.deepseek.com" ;;
+    perplexity*)                     print -r -- "https://www.perplexity.ai" ;;
+    envato*)                         print -r -- "https://elements.envato.com" ;;
+    *)                               print -r -- "" ;;
   esac
 }
 
@@ -260,27 +262,36 @@ resolve_dump_path() {
 find_dump_for() {
   local sid="$1" f peer
   peer=$(resolve_service_id "$sid")
-  # Aliased ids (chatgpt→notebooklm, grok→grok-heavy): prefer the *pool* dump first.
-  # Otherwise cookies-dump-chatgpt.json (old free slot) wins over GPT-5.5 Pro dump.
-  if [[ -n "$peer" && "$peer" != "$sid" ]]; then
-    for f in \
-      "$USERDATA/cookies-dump-${peer}.json" \
-      "$USERDATA/cookies-dump-${sid}.json"
-    do
-      [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
-    done
-  else
-    for f in \
-      "$USERDATA/cookies-dump-${sid}.json" \
-      "$USERDATA/cookies-dump-${peer}.json"
-    do
-      [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
-    done
-  fi
+  # Direct check for requested sid or resolved peer
+  for f in \
+    "$USERDATA/cookies-dump-${sid}.json" \
+    "$USERDATA/cookies-dump-${peer}.json"
+  do
+    [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
+  done
   case "$sid" in
-    notebooklm|chatgpt|gpt|gpt-5|pro|chatgpt-pro|gpt-pro)
+    gptpro|pro|chatgpt-pro|gpt-pro|chatgpt_pro)
+      for f in \
+        "$USERDATA/cookies-dump-gptpro.json" \
+        "$USERDATA/cookies-dump-notebooklm.json" \
+        "$USERDATA/cookies-dump-chatgpt.json"
+      do
+        [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
+      done
+      ;;
+    chatgpt|gpt|gpt-5)
+      for f in \
+        "$USERDATA/cookies-dump-chatgpt.json" \
+        "$USERDATA/cookies-dump-gptpro.json" \
+        "$USERDATA/cookies-dump-notebooklm.json"
+      do
+        [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
+      done
+      ;;
+    notebooklm)
       for f in \
         "$USERDATA/cookies-dump-notebooklm.json" \
+        "$USERDATA/cookies-dump-gptpro.json" \
         "$USERDATA/cookies-dump-chatgpt.json"
       do
         [[ -f "$f" ]] && { print -r -- "$f"; return 0; }
@@ -401,9 +412,14 @@ detect_app_version() {
 import re, sys
 from pathlib import Path
 raw = Path(sys.argv[1]).read_bytes()
-m = re.search(rb"APP_VERSION\s*=\s*[\"\x27]([0-9][0-9.]+)[\"\x27]", raw)
+m = re.search(rb"APP_VERSION\s*=\s*[\"\x27]([3-9]\.[0-9.]+)[\"\x27]", raw)
 if m:
   print(m.group(1).decode())
+  sys.exit(0)
+m2 = re.search(rb"\"version\"\s*:\s*\"([3-9]\.[0-9.]+)\"", raw)
+if m2:
+  print(m2.group(1).decode())
+  sys.exit(0)
 ' "$asar" 2>/dev/null || true
     )
   fi

@@ -108,21 +108,20 @@ rebuild_menu() {
         label=$(printf "%-22s %-28s [chưa có dump]" "$sid" "$name")
       fi
     fi
-    MENU_IDS+="$sid"
-    MENU_LABELS+="$label"
-    MENU_PATHS+="$dump_file"
-    MENU_URLS+="$url"
+    MENU_IDS+=("$sid")
+    MENU_LABELS+=("$label")
+    MENU_PATHS+=("$dump_file")
+    MENU_URLS+=("$url")
   done
 
   for sid in ${(k)dump_path}; do
-    # zsh: ${(i)array[(r)pat]} returns matching index or empty
-    if [[ -n "${(i)MENU_IDS[(r)$sid]}" ]]; then
+    if (( ${MENU_IDS[(I)$sid]} > 0 )); then
       continue
     fi
-    MENU_IDS+="$sid"
-    MENU_LABELS+="$(printf "%-22s %-28s [dump]" "$sid" "${dump_name[$sid]}")"
-    MENU_PATHS+="${dump_path[$sid]}"
-    MENU_URLS+="${dump_url[$sid]}"
+    MENU_IDS+=("$sid")
+    MENU_LABELS+=("$(printf "%-22s %-28s [dump]" "$sid" "${dump_name[$sid]}")")
+    MENU_PATHS+=("${dump_path[$sid]}")
+    MENU_URLS+=("${dump_url[$sid]}")
   done
 }
 

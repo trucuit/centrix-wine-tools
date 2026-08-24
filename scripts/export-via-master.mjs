@@ -33,18 +33,21 @@ const DEFAULT_SERVICES = [
 
 // Offline direct reader
 async function exportServiceOffline(serviceId) {
-  const svc = catalogServices.find((s) => s.id === serviceId) || { id: serviceId, cookieDomains: [`${serviceId}.com`] };
+  const svc = catalogServices.find((s) => s.id === serviceId) || { id: serviceId, cookieDomains: [`${serviceId}.com`, "chatgpt.com", "openai.com"] };
   
-  // Try slot files (e.g. chatgpt-1.json, chatgpt.json, default.json)
+  // Try slot files & local dumps
   const candidateFiles = [
     path.join(SNAPSHOT_DIR, `${serviceId}-1.json`),
     path.join(SNAPSHOT_DIR, `${serviceId}-2.json`),
     path.join(SNAPSHOT_DIR, `${serviceId}.json`),
+    path.join(ROOT_DIR, `wine-prefix-centrix/drive_c/users/truc.trantrung3/AppData/Roaming/mkvhszparoue/cookies-dump-${serviceId}.json`),
+    path.join(ROOT_DIR, `cookies/${serviceId}/${serviceId}.full.json`),
     path.join(SNAPSHOT_DIR, `default.json`)
   ];
 
   let rawBlob = null;
   let usedFile = "";
+  let directCookies = null;
   for (const f of candidateFiles) {
     try {
       const data = JSON.parse(await fs.readFile(f, "utf8"));
@@ -52,8 +55,16 @@ async function exportServiceOffline(serviceId) {
         rawBlob = data.blob;
         usedFile = path.basename(f, ".json");
         break;
+      } else if (data && Array.isArray(data.cookies) && data.cookies.length > 0) {
+        directCookies = data.cookies;
+        usedFile = path.basename(f, ".json");
+        break;
       }
     } catch {}
+  }
+
+  if (directCookies) {
+    return { cookies: directCookies, slot: usedFile, source: "disk-dump" };
   }
 
   if (!rawBlob) throw new Error(`Không tìm thấy file snapshot cho ${serviceId}`);
@@ -150,9 +161,12 @@ const SERVICE_ALIASES = {
   msft: "microsoft-copilot",
   elements: "envato-elements",
   envato: "envato-elements",
-  "gpt-5": "notebooklm",
-  "gpt-pro": "notebooklm",
-  gpt5: "notebooklm",
+  "gpt-5": "gptpro",
+  "gpt-pro": "gptpro",
+  "chatgpt-pro": "gptpro",
+  "chatgpt_pro": "gptpro",
+  "gptpro": "gptpro",
+  pro: "gptpro",
   magnific: "freepik",
   perp: "perplexity"
 };
