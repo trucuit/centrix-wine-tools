@@ -1,36 +1,136 @@
 {
-  "url": "https://noxtools.com/secure/page/semrush",
+  "formatVersion": 1,
   "serviceId": "semrush",
-  "serviceName": "Semrush",
-  "exportedAt": "2026-07-11T14:06:28.934Z",
-  "sourceDump": "/Volumes/m2/apps/windows/wine-prefix-centrix/drive_c/users/pat/AppData/Roaming/mkvhszparoue/cookies-dump-semrush.json",
-  "source": "dump",
+  "capturedAt": "2026-08-28T23:23:15.586Z",
+  "origin": "https://noxtools.com",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
+  "fingerprint": {
+    "gpu": {
+      "vendor": "Google Inc. (NVIDIA)",
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 (0x00002544) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.9579)",
+      "hasRealGpu": true,
+      "hostSource": "electron-gpu-info",
+      "hostAligned": true,
+      "hostMismatch": false
+    },
+    "brands": {
+      "brands": [
+        {
+          "brand": "Not)A;Brand",
+          "version": "8"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "138"
+        },
+        {
+          "brand": "Chromium",
+          "version": "138"
+        }
+      ],
+      "fullVersionList": [
+        {
+          "brand": "Not)A;Brand",
+          "version": "8.0.0.0"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "138.0.7204.185"
+        },
+        {
+          "brand": "Chromium",
+          "version": "138.0.7204.185"
+        }
+      ]
+    },
+    "device": {
+      "screen": {
+        "width": 1536,
+        "height": 864,
+        "colorDepth": 24,
+        "pixelDepth": 24,
+        "availHeight": 824
+      },
+      "bitness": "64",
+      "platform": "Win32",
+      "architecture": "x86",
+      "deviceMemory": 8,
+      "platformName": "Windows",
+      "platformVersion": "15.0.0",
+      "devicePixelRatio": 1.00000001,
+      "hardwareConcurrency": 4
+    },
+    "locale": {
+      "language": "vi-VN",
+      "timezone": "Asia/Ho_Chi_Minh",
+      "languages": [
+        "vi-VN",
+        "vi",
+        "en-US",
+        "en"
+      ],
+      "acceptLanguage": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7"
+    },
+    "poolId": "gologin-045a61e8-6a01-4371-bff5-4ff4195deef6",
+    "source": "gologin-pool",
+    "network": {
+      "geo": {
+        "lat": 10.7520267,
+        "lon": 106.6666708,
+        "accuracy": 25000
+      },
+      "proxy": null,
+      "proxyPassword": null,
+      "proxyUsername": null,
+      "expectedCountry": "VN"
+    },
+    "version": 1,
+    "createdAt": "2026-08-24T09:40:35.175Z",
+    "noiseSeed": "0643a9840416b22298521a3befb12420771b36c04dcf3cde68e2eea17ac898ec",
+    "updatedAt": "2026-08-24T09:40:42.082Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
+    "chromeFull": "138.0.7204.185",
+    "profileKey": "semrush:2",
+    "chromeMajor": "138",
+    "gologinProfileId": "667982c50639a180ec142961",
+    "managedProfileId": "90c2b225-03c2-4dea-ae7e-93d75855c357"
+  },
   "cookies": [
     {
-      "domain": ".noxtools.com",
-      "expirationDate": null,
-      "hostOnly": false,
-      "httpOnly": true,
       "name": "PHPSESSID",
+      "value": "5m5sl9a0pg98a3hifhdad97nh2",
+      "domain": ".noxtools.com",
       "path": "/",
-      "sameSite": "unspecified",
       "secure": true,
-      "session": true,
-      "storeId": "0",
-      "value": "9r6o1hl2t8gdm9pl0napd223aj"
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "hostOnly": false,
+      "session": true
     },
     {
+      "name": "amember_nr",
+      "value": "4f0fb633a0bc7c08865e03d85ed0be9b",
       "domain": ".noxtools.com",
-      "expirationDate": 1815314788,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "cf_clearance",
       "path": "/",
-      "sameSite": "no_restriction",
       "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "XFiZ3x_WGnmKzEo.3PPZESa_jGinCnF2OG0yTK7jo84-1783778788-1.2.1.1-LzqCv3aT.jptwQkKOIixmJv6ioNoRMSBEDnCi3WU.lpFs7s7KGckqKcmHjWtGaBD5.RqvMj4dBBQHCCrBoMhUduq45CiHtShG.zdZXtIIp4_WSJGz.zImAEPwOOIyNPMuyrgfks2KJZHYFUb63PpX.ogc_VkZ4PU1qtz5OXcnJIVuDIMErl9fg4trjG0nevplrzTX524NoYq9kYA4L4cFPgKBr..pyQwHC.DjrZadGcmrGYUd6baGpQe57lMvWfppjg0n.TtxtMKLRuR4XrcL0qoZf1Efptbt9TodRprgiE2R9RiWT7fcWmEZp8O8n07zZSsiW076t1_QYcJK8XMuA"
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "hostOnly": false,
+      "session": true
+    },
+    {
+      "name": "cf_clearance",
+      "value": "16mpvvRWp59tvYE.a2FXAHrRczeftIxu9zxTKQTgsFY-1787892953-1.2.1.1-bWVKoDLiO7m0_TKlimK3YhwdbV.iCXikZWHyap1RzPyy9ClKL58V5VRvYvSME6zYGliw6hT0qLlLkUiX5_6oX0wmMLit9unFBlWBf2HF73NOxqVP7t3.NYao10UO1zsnokt09jteYkn2_VEscg8OIyxJHHPKtazHSDTiC8QIhPwd94o4gf7kpV65hxMCDB2B5FdQ455.LPFCKBtlCQpIOQ0fS.xil1P3IvGuwEODWHAGNXDAyY6noLa2EqtzNoef3wIpAI7eGkaPXEYycbr6TCdWD_wPeISd9R5Gd.T28Xua5JhR2nJM._oFDrlZKO_Ul.dh6pZu57AQCoQOAFr4gudTmr1ikecRtlry06S_s_c",
+      "domain": ".noxtools.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1819428953.667013,
+      "hostOnly": false,
+      "session": false
     }
-  ]
+  ],
+  "localStorage": {},
+  "sessionStorage": {}
 }

@@ -1,0 +1,372 @@
+[
+  {
+    "name": "fr",
+    "value": "0V88oUXawIWeYs3ie..BqjVQM...1.0.BqjVQM.",
+    "domain": ".facebook.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1795422988.21329
+  },
+  {
+    "name": "_twpid",
+    "value": "tw.1787646988599.951516611727625733",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1821342988.608698
+  },
+  {
+    "name": "_monica_index_cid",
+    "value": "5ee1f988-48f7-4205-b7b6-e06cf23333fe",
+    "domain": "monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819182988
+  },
+  {
+    "name": "_fwb",
+    "value": "2029fWrPfZZYgtxv13dTl6e.1787646988824",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822247399.132791
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.1396496568.1787646989",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822247399.684951
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1617155295.1787646989.-.-.1787646988.1241308135.1787646989.1787646988",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1795422989
+  },
+  {
+    "name": "muc_ads",
+    "value": "051d6500-534d-494f-812b-dd0d3ec12342",
+    "domain": ".t.co",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.151759
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.1787646989199.180579025623822454",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1795464966
+  },
+  {
+    "name": "guest_id_marketing",
+    "value": "v1%3A178764698942643708",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.200777
+  },
+  {
+    "name": "guest_id_ads",
+    "value": "v1%3A178764698942643708",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.200806
+  },
+  {
+    "name": "personalization_id",
+    "value": "\"v1_2VWzSRV2xzWITvbY7GefWA==\"",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.200817
+  },
+  {
+    "name": "guest_id",
+    "value": "v1%3A178764698942643708",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.200826
+  },
+  {
+    "name": "CLID",
+    "value": "01d0bceeaf0f4017b694f6c61f2ff308.20260825.20270825",
+    "domain": "www.clarity.ms",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819182989.204628
+  },
+  {
+    "name": "NWB",
+    "value": "7a5f4121eae9bc4e3ee243008fc2b317.1787646989862",
+    "domain": ".wcs.naver.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822247399.291217
+  },
+  {
+    "name": "NAC",
+    "value": "7p9ZBMRdedMcB",
+    "domain": ".naver.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822247392.20133
+  },
+  {
+    "name": "SM",
+    "value": "C",
+    "domain": ".c.clarity.ms",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790592895
+  },
+  {
+    "name": "MUID",
+    "value": "245481470743632C0FFE9687065162F5",
+    "domain": ".clarity.ms",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821342991.061153
+  },
+  {
+    "name": "MR",
+    "value": "0",
+    "domain": ".c.clarity.ms",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788251791.061194
+  },
+  {
+    "name": "IDE",
+    "value": "AHWqTUkAgw1QvqGn2lpErWfjxZng3aXfOkZmB7okf4OB84pCnOXIS-k1N_PTRTdl",
+    "domain": ".doubleclick.net",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206992.082112
+  },
+  {
+    "name": "_rdt_uuid",
+    "value": "1787646992364.5cb028a1-81fb-404a-8616-e12fc3530e46",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1795422992
+  },
+  {
+    "name": "session_id",
+    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODc2NDcwMDcsImlzcyI6Im1vbmljYSIsInVzZXJfaWQiOjE2MTU5NDMwOSwidXNlcl9uYW1lIjoiQ2VudHJpWCIsImp0aSI6IjE1NDRlMDA1ZmRlNDRjYmI4ZDZiYjUwYzUzYmQ4Y2EyIiwiY2xpZW50X3R5cGUiOiJ3ZWIifQ.FiB3Zu2nMsAG0m5kWz84ny1K_PLudrww-DVFV2eIkCU",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1819183007.71807
+  },
+  {
+    "name": "_clck",
+    "value": "ecsmry%5E2%5Eg8w%5E1%5E2428",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819183009
+  },
+  {
+    "name": "_uetvid",
+    "value": "5e4c1ea0a06011f1b5a19f2c702b8e17",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1821343118
+  },
+  {
+    "name": "moninca_home_theme",
+    "value": "dark",
+    "domain": "monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1790592895
+  },
+  {
+    "name": "wcs_bt",
+    "value": "s_ce3bbc0e51c:1787687399",
+    "domain": "monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822247399.156383
+  },
+  {
+    "name": "session_id",
+    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODc2NDcwMDcsImlzcyI6Im1vbmljYSIsInVzZXJfaWQiOjE2MTU5NDMwOSwidXNlcl9uYW1lIjoiQ2VudHJpWCIsImp0aSI6IjE1NDRlMDA1ZmRlNDRjYmI4ZDZiYjUwYzUzYmQ4Y2EyIiwiY2xpZW50X3R5cGUiOiJ3ZWIifQ.FiB3Zu2nMsAG0m5kWz84ny1K_PLudrww-DVFV2eIkCU",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1819225160.936445
+  },
+  {
+    "name": "_ga_RJYZXDEM8N",
+    "value": "GS2.1.s1787687390$o4$g1$t1787689161$j60$l0$h1677368193",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822249161.529099
+  },
+  {
+    "name": "_ga_E249CNSDCV",
+    "value": "GS2.1.s1787687390$o4$g1$t1787689161$j60$l0$h0",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822249161.540568
+  },
+  {
+    "name": "_ga_JDZPETSM4F",
+    "value": "GS2.1.s1787687390$o4$g1$t1787689161$j60$l0$h0",
+    "domain": ".monica.im",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822249161.547504
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1614110123.1787689162",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1795465162
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.714348099.1787689162",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822458999.179482
+  },
+  {
+    "name": "monica_home_theme",
+    "value": "auto",
+    "domain": "monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1790592895
+  },
+  {
+    "name": "__cf_bm",
+    "value": "za2nyesB9Kt6iX18CmwwBe4oO2VsP.4RWAOS.yDpp5c-1787898651.3794434-1.0.1.1-tspzgJ25sIxFwiXomGJcXUAAFCfhqivUnMQDfmq5IZaErwhSLKx1lI2qGN_PBVQM4Aw1QsebHRkJ_Vs._oUeNaCSche5_tqez2Bfh5GUB9V6vBkw_AFUjr1PxtxCKna0",
+    "domain": ".paddle.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787900451.307902
+  },
+  {
+    "name": "_ga_E249CNSDCV",
+    "value": "GS2.1.s1787898650$o5$g1$t1787898997$j58$l0$h0",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822458997.766704
+  },
+  {
+    "name": "_ga_RJYZXDEM8N",
+    "value": "GS2.1.s1787898650$o5$g1$t1787898997$j58$l0$h62585778",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822458997.798654
+  },
+  {
+    "name": "_ga_JDZPETSM4F",
+    "value": "GS2.1.s1787898650$o5$g1$t1787898997$j58$l0$h0",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822458997.833783
+  },
+  {
+    "name": "_ga_0BCXRN11PY",
+    "value": "GS2.1.s1787898650$o5$g1$t1787898999$j60$l0$h0",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822458999.286819
+  }
+]

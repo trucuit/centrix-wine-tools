@@ -1,0 +1,482 @@
+[
+  {
+    "name": "scribd_ubtc",
+    "value": "u%3Db4c4f10f-8a7b-408a-a902-786714bff096%26h%3DjPcuY3KHd8fp0IbmTD2nQCQYlNxvYVvlnqR8JwBIXt4%3D",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822123731.286585
+  },
+  {
+    "name": "statsig.stable_id.3094802910",
+    "value": "52a88a30-8221-492b-8160-bc568b493a51",
+    "domain": "www.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819099731
+  },
+  {
+    "name": "_fs_sample_user",
+    "value": "false",
+    "domain": "www.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1790155731
+  },
+  {
+    "name": "__pdst",
+    "value": "ca3f8e1ba7094e75b5482ae9bdda29a2",
+    "domain": "www.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1819099732
+  },
+  {
+    "name": "fr",
+    "value": "0YK09h7xlJ8VkMt6c..BqjA7Z...1.0.BqjA7Z.",
+    "domain": ".facebook.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1795339736.985392
+  },
+  {
+    "name": "sa-user-id",
+    "value": "s%3A0-55382feb-5c5f-5ff1-4da8-ccca2dc32192.fvgnyde1w10UBctwNXlJ2qXsLrZw%2BceWtHa%2BGwsgVvo",
+    "domain": "tags.srv.stackadapt.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819099737.259955
+  },
+  {
+    "name": "sa-user-id",
+    "value": "s%3A0-55382feb-5c5f-5ff1-4da8-ccca2dc32192.fvgnyde1w10UBctwNXlJ2qXsLrZw%2BceWtHa%2BGwsgVvo",
+    "domain": ".srv.stackadapt.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819099737.260006
+  },
+  {
+    "name": "sa-user-id-v2",
+    "value": "s%3AVTgv61xfX_FNqMzKLcMhkip1-1Q.o1Xc%2BwuKDY12G4TvxG5VZ91%2FVFrtGTwL8kb540nZ60g",
+    "domain": "tags.srv.stackadapt.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819099737.26002
+  },
+  {
+    "name": "sa-user-id-v2",
+    "value": "s%3AVTgv61xfX_FNqMzKLcMhkip1-1Q.o1Xc%2BwuKDY12G4TvxG5VZ91%2FVFrtGTwL8kb540nZ60g",
+    "domain": ".srv.stackadapt.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819099737.260199
+  },
+  {
+    "name": "sa-user-id",
+    "value": "s%253A0-55382feb-5c5f-5ff1-4da8-ccca2dc32192.fvgnyde1w10UBctwNXlJ2qXsLrZw%252BceWtHa%252BGwsgVvo",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1819099737
+  },
+  {
+    "name": "sa-user-id-v2",
+    "value": "s%253AVTgv61xfX_FNqMzKLcMhkip1-1Q.o1Xc%252BwuKDY12G4TvxG5VZ91%252FVFrtGTwL8kb540nZ60g",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1819099737
+  },
+  {
+    "name": "sa-user-id-v3",
+    "value": "s%253A.o6W7wkJsHSTU4%252BLlDruZ%252FwNjVcUZZMvakQpSatDoAgo",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1819099737
+  },
+  {
+    "name": "osano_consentmanager_uuid",
+    "value": "beb01e77-39a8-45a6-b37b-87219be0d95e",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1819267912.212839
+  },
+  {
+    "name": "osano_consentmanager",
+    "value": "xGgNH2W8EylEXrDT5tb43iQinndzi-Rmlk9XYdZ5Qzqd9IOGaqD6kLb7cDFOVW6RsGbngfy3mZkafzLNRf1xzmvFTIsSd14mKgNGf6Tf8s_HRBHVVJrqQcHASbO6v3k0ZsOhNcjJRSX_qi3r3lNiwN_hshC926ajFihGVfzDI0oxIXavA2S-iu1HE1qyrteHaLdKF7POpsGQZuQlrPN_lxPDMe8jfQy96MUaQd1BgcAXcPUeiYwD-mJrsOMwKrod_gYPb2WD2rnBWH3IHs3yJCBbHLU2LIO4mHLEZkJsJmI6jupDVCID6ueeCKieZqXO-lZVmsFj4e7bbdZC-xyIbL9KXgKVFuWg9zFjXTFgOXciGkC3g_XrW9WOe3Q6MgK28DIBMrlYagc-t9wYHki09fKzuw5xqTpf2M67fF0REpj1FMcUq6mKiXI2MYyVJQ5bvQMpfzzQs6ECAyP8o2HO_jc4vrznTm3-ncKOsZXs9MenOyQwzGKh-KlmMJJiTU8UPMwDz-0JTisu8C4zO1j2VPuJpQ5LmWDjXs28H-jY8RTF9jUOMaa5c90GLpGBhtCVTnm8fPIYzRNCT8j59505bAFf_OOyhtmI1dvyOWHfRsXExK4d3v8L5sLxar2ZJObDYfKOxd4AcIMyoPvsEbI_G2A8U4nczQrUWm96fyySf5kulNJMzW5xRwYkQ6_iCd1nqKf0VwMoHKq9bSzx-ciLGLLNLX05ND4S2qwClXAU2QAl3opxCiHfL8vpeZqNlcADUBbKIuKZOprNzQWeJg9FWgQLp71ZC_fPywvMz50annRC-0K-4dk5kn84rZy1XBrrCfgqTzPZDtdQWnu1HXL_DUlZ0uG9LVlEgOA8gfI-RpN1B-0k8QlTyblrKgkY0hkKpHSy1MP2_sMrxkZCy3awKVSCwQEtfx6y9RcDfZsqK047gUVHzphtsiW3JD7CaRDcsiR22FV1jgKxol4uETM8AZ9u4An_b2DIiPZGoh4u5bW7QgfLG_Ywwj7xS0uR6x6LucpJ6S6aCaGK-_khRo_-CPulDGwOhTSYBjw-cwU_HFTYmuQUait8PSNEqYkrCt7qGE7W5Ow6IBtDp41NQRBBvij8xAhBKiDX3EUfIfYMVu7dRueBIXtaZ-RNLGYyOn0MoLc8uAgx7XD8kZlLqGh59oSHRzNhsoY5JoWwI_kQwehHWdSqUNbu_9CtPy5Sw_HP2_wtt9eLPsllRaZQNfYHa5RgyYh5aA8ZvpXj1z9yftq7otFn42YQ3EF9ddSyg2VL5CaNzOdH0jawpc_pAES-lEyeNmxtl0Z8jDXtN_XoDK3u5Dljxi62lDKPwNLblDBrnErnJtsqVHyOekVzY7krtU_aHdJvcGl4O6u-v5_tvoJx7TPCcopfdqjiBn_eDzX693yeVQZ-Ef0ozt7w8gihWy2WeAeNH9Cs9hJBaDs2juYnBfue_kT0ZYF-q9ZVmJY0gEN4uuKmcZvsvPED3dAspY9omLm2sPqJU3PQfshHwrt-yshK-h6kfTnz24M2BcY6vPm1lLDBde6LEnm21-ZjcaLoAt4=",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1819267912.214422
+  },
+  {
+    "name": "_fs_sample_user",
+    "value": "false",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1790592896
+  },
+  {
+    "name": "fs_uid",
+    "value": "",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1790592896
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1062899149.1787563743",
+    "domain": ".auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1795339742
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1062899149.1787563743",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1795339742
+  },
+  {
+    "name": "_ga_Z4ZC50DED6",
+    "value": "GS2.1.s1787563742$o1$g0$t1787563742$j60$l0$h0",
+    "domain": ".auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822123750.032433
+  },
+  {
+    "name": "_ga_Z4ZC50DED6",
+    "value": "GS2.1.s1787563742$o1$g0$t1787563742$j60$l0$h0",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822123750.033043
+  },
+  {
+    "name": "_ga_8KZ8BV0P5W",
+    "value": "GS2.1.s1787563742$o1$g0$t1787563742$j60$l0$h0",
+    "domain": ".auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822123750.038637
+  },
+  {
+    "name": "_ga_8KZ8BV0P5W",
+    "value": "GS2.1.s1787563742$o1$g0$t1787563742$j60$l0$h0",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822123750.039394
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.871955158.1787563743",
+    "domain": ".auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822123750.040645
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.871955158.1787563743",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822123750.04127
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.1787563749942.39314709233688789",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1795507913
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.2.1787563749942.39314709233688789",
+    "domain": ".auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1795339749
+  },
+  {
+    "name": "__pdst",
+    "value": "e4206f1681434644a2067df511edd76b",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1819099750
+  },
+  {
+    "name": "IDE",
+    "value": "AHWqTUm9BlqDjG_lDxW4p2-vrJ_zxOlDNV8NTdMnVm1q0uNbZLrfmtQ5xBtpUOut",
+    "domain": ".doubleclick.net",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822123751.245247
+  },
+  {
+    "name": "did",
+    "value": "s%3Av0%3A8ec0c61a-bc56-44e8-8229-36d3e9383ec1%3Ae4dcd12e31661864af932d741bdc8f662ec20105def0ed985575513c967a2869.6%2FJ1o%2Fi9HZiWSp2r3v4Wkc1aYM9Ov8O2AwOcMX3eybI",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819121351.779392
+  },
+  {
+    "name": "did_compat",
+    "value": "s%3Av0%3A8ec0c61a-bc56-44e8-8229-36d3e9383ec1%3Ae4dcd12e31661864af932d741bdc8f662ec20105def0ed985575513c967a2869.6%2FJ1o%2Fi9HZiWSp2r3v4Wkc1aYM9Ov8O2AwOcMX3eybI",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819121351.77952
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1062899149.1787563743",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1795339743
+  },
+  {
+    "name": "_rdt_uuid",
+    "value": "1787563750242.40ca2a15-7f00-4a2d-b0ed-905287ec6363",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1795339758
+  },
+  {
+    "name": "_scribd_user_id",
+    "value": "MTAwNjg5NzQ4OQ%3D%3D--1d1cbd10fa26d6a85a882fb1385740dd9f914dc6",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822123765.526095
+  },
+  {
+    "name": "ssuuid",
+    "value": "94663270-c0df-4ccc-9de4-90cc2170c211",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822123764.657802
+  },
+  {
+    "name": "auth0",
+    "value": "s%3AeIk9FuOVET7pQWnODWZmLPZ0pXxh7a_F.P4iiyOUNrGnrjLIw%2FxqcgDks9FDo%2FaaxO6XdEfjqY%2BU",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790155765.004051
+  },
+  {
+    "name": "auth0_compat",
+    "value": "s%3AeIk9FuOVET7pQWnODWZmLPZ0pXxh7a_F.P4iiyOUNrGnrjLIw%2FxqcgDks9FDo%2FaaxO6XdEfjqY%2BU",
+    "domain": "auth.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790155765.00421
+  },
+  {
+    "name": "m",
+    "value": "7d74a8f8-cf84-443a-8d5f-1f9f6ea4dd8f985056",
+    "domain": "m.stripe.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822292423.444549
+  },
+  {
+    "name": "__stripe_mid",
+    "value": "1eff783f-df8e-4b75-ad93-cd8bb9e0e80d91daae",
+    "domain": ".www.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1819267920
+  },
+  {
+    "name": "_fs_cd_cp_pRdRgnTnF68pCV2F",
+    "value": "ASQXmkIRIDU8EKYuOEsCGj7f7zPtDlziZD7_pnjYH9JtU0AznBdaJivVF4uQHfckBzkQRiecplG1gzSpaZ7kHcTwVwBTnLqFjrBealyc1yt7Kt0pNnOQFC-EGdxG-ip3TKb8u_3TWx0pcHrcNAtAtRq-rLjb-RIkD_lNKAdUXbBCa65WiToNQcV3cBT-gCiqK28Kk4mr",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1787735477.450631
+  },
+  {
+    "name": "__stripe_sid",
+    "value": "b8c29ab4-eb55-402e-a23a-b147c25341db9aeb83",
+    "domain": ".www.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1787733720
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.1862489483.1787731906",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1787818313
+  },
+  {
+    "name": "_ga_Z4ZC50DED6",
+    "value": "GS2.1.s1787731907$o2$g1$t1787731912$j55$l0$h0",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822291912.798256
+  },
+  {
+    "name": "_ga_8KZ8BV0P5W",
+    "value": "GS2.1.s1787731907$o2$g1$t1787731912$j55$l0$h0",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822291912.874838
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.2.871955158.1787563743",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822291913.984235
+  },
+  {
+    "name": "_uetsid",
+    "value": "c911bc20a12511f1b74f7f3ec0f4bd06",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1787818313
+  },
+  {
+    "name": "_uetvid",
+    "value": "4f163d609f9e11f1bd81c53b0e7bee15",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1821427913
+  },
+  {
+    "name": "_scribd_session",
+    "value": "TXJWYTcrREVHU3hWYjdxM1RVQzZ3TW1RaUdWKy9JYXBJdmMrSkZpMFpKZGQ3S1N1Q3F6azRBL0M0Ny9CMXdiR054RDVvZWlRcWVEZ01udXFha1ZIcTVKempGRStuZ3RObGRCdm44RE15Sy9reW5rOFRqWWgzN3pKMDhGTldnUmY2WmtiMnlMbzRxeXNvN0hFNjVRRWp0USsrbVlYc2t1MTd5UDFoWjhnbEp6TmlpZ3ZmUXpNZWxEcU1Hdmg1V1VjbVcxWU5CaXpWajZ2TitEck1vd0gxejhHRmVrdnBqMU5QTHZ3MGVaUzQ2eDRkMzVKcWJHVWlwK0drQ1E3c005eDlSMThWOWY4Qmw1VTUxcmpFU2ltNEsrQ1ptTkMrOC9wbnpLTkhtcmZrbnU5OEJhNTcrSFRhT3ZhSTdUTm1yQWFFVGFLRm1mbG1sbmczbFdUNjJRQi9WaUlGdXV3blZDYXpRQSt4a1UrNXpmRDBtMWROMWt0ZlVyckU3UlBJUmkxOThTWHpMKzhkem9US2V6UlZEMGRiMDg0R3lkWEVlR0s3d1JsdVhwOUtaUWd4c1NQZW1RT24zU1p2enBEZ1hVQThyb2R1RkZXMGxsWnQ0U3duZVZXMlE9PS0tL2tkM3dSREY3aEk2WDdtT0lsaFg2QT09--f7c436e46aea46e395ee12f02f6b1095ffc5806d",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1822291915.00976
+  },
+  {
+    "name": "_dd_s",
+    "value": "aid=bc9a6a9c-ed41-4596-95ab-dbb289527575&rum=0&expire=1787733323872&logs=0",
+    "domain": "www.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1787733327
+  }
+]

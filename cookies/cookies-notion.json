@@ -1,0 +1,452 @@
+[
+  {
+    "name": "file_token",
+    "value": "v02%3Afile_token%3AkgqI8BnBp9qDoMowfR6K9WEvHgzEMdT1l4x7R748SN_3UXv8bRDp3e0ZKybvLfPsCV__mG_zPaFSsMT-NuNnsDzd2WBvgCgMdxret1WZ-M6MFwohDoHkq0nDDt0SiTaO48F0F8QlBOVkENZKLb9f5iQzD9Fz",
+    "domain": ".notion.com",
+    "path": "/f",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818759687.180476
+  },
+  {
+    "name": "notion_browser_id",
+    "value": "300ab487-c322-4870-a5a0-37544e0b73ad",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819276635
+  },
+  {
+    "name": "device_id",
+    "value": "3bfd872b-594c-8193-9543-003b80d9196f",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1819280236.797998
+  },
+  {
+    "name": "__ps_r",
+    "value": "_",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492404
+  },
+  {
+    "name": "__ps_lu",
+    "value": "https://aif.notion.so/aif-production.html",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492404
+  },
+  {
+    "name": "__ps_did",
+    "value": "pscrb_f06bbd93-bdcb-4d32-d8c8-e41c7a84e90a",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492404
+  },
+  {
+    "name": "__ps_fva",
+    "value": "1786956404331",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492404
+  },
+  {
+    "name": "bcookie",
+    "value": "\"v=2&d01372a7-68c2-4344-8ddc-a70d949a6d32\"",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492403.969921
+  },
+  {
+    "name": "li_gc",
+    "value": "MTswOzE3ODY5NTY0MDQ7MjswMjHV+drMe01vIobischsLtKR4rV+mkSALmbpUIiHdOOf6A==",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1802508403.970819
+  },
+  {
+    "name": "muc_ads",
+    "value": "411ec7a6-2f1f-4d93-9cff-560e6ad19315",
+    "domain": ".t.co",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821516404.983264
+  },
+  {
+    "name": "NWB",
+    "value": "ddaf79a4527a8f4d36a15743e549958f.1786956405009",
+    "domain": ".wcs.naver.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822300641.399331
+  },
+  {
+    "name": "guest_id_marketing",
+    "value": "v1%3A178695640500644842",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821516405.110265
+  },
+  {
+    "name": "guest_id_ads",
+    "value": "v1%3A178695640500644842",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821516405.110772
+  },
+  {
+    "name": "personalization_id",
+    "value": "\"v1_KSAz0G7srf0U2TJ0qqEj+A==\"",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821516405.110937
+  },
+  {
+    "name": "guest_id",
+    "value": "v1%3A178695640500644842",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821516405.111243
+  },
+  {
+    "name": "NAC",
+    "value": "SMXWBMBTUaOo",
+    "domain": ".naver.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822300642.080337
+  },
+  {
+    "name": "hmt_id",
+    "value": "d81f2fc0-d901-48ef-8f8e-9f3c42d4962d",
+    "domain": "api.hcaptcha.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789548414.308178
+  },
+  {
+    "name": "NEXT_LOCALE",
+    "value": "en-US",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819276637
+  },
+  {
+    "name": "AWSALBAPP-1",
+    "value": "_remove_",
+    "domain": "msgstore-002.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787828433.382228
+  },
+  {
+    "name": "AWSALBAPP-2",
+    "value": "_remove_",
+    "domain": "msgstore-002.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787828433.382258
+  },
+  {
+    "name": "AWSALBAPP-3",
+    "value": "_remove_",
+    "domain": "msgstore-002.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787828433.38228
+  },
+  {
+    "name": "AWSALBAPP-0",
+    "value": "AAAAAAAAAACzWwFC7solaB/Orca2qSy2xeW2t+cKGSwXQU+8VB77n6bAR24yRlWF2HrrAsEqC6Js5GCWhvTo5fCObX3pBwo5Wk6Y+peyB2NPB39UJS6ZOo+UzPr5wgkyi++QXeYaZR8cI9fD",
+    "domain": "msgstore-002.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787828433.382177
+  },
+  {
+    "name": "g_state",
+    "value": "{\"i_l\":0,\"i_ll\":1787223643706,\"i_b\":\"UiLb3wgNMq7rgJ1z6u80sY9WRkMHVF9o9DPsCdUUqgo\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1787223643706}",
+    "domain": "app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1802775643
+  },
+  {
+    "name": "notion_user_id",
+    "value": "161d872b-594c-81a9-96db-0002fea397f0",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819276635
+  },
+  {
+    "name": "notion_sync_user_id",
+    "value": "%7B%22notion_user_id%22%3A%22161d872b-594c-81a9-96db-0002fea397f0%22%2C%22is_logged_in%22%3Atrue%2C%22device_id%22%3A%22300ab487-c322-4870-a5a0-37544e0b73ad%22%2C%22version%22%3A4%7D",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1794999687.18151
+  },
+  {
+    "name": "p_sync_session",
+    "value": "%7B%22tokenId%22%3A%22v02%3Async_session%3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXnBpTdZIyyTOYV1w5N6En7u9h-MytbYGKknbSPCj2F07ufgzyXVPL8laevykLdfYjn1hhm-hmsaGxsth2o4fEiiEhcy9hrEnaAVt%22%2C%22userIds%22%3A%5B%22161d872b-594c-81a9-96db-0002fea397f0%22%5D%7D",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1819280236.798124
+  },
+  {
+    "name": "_cioid",
+    "value": "161d872b594c81a996db0002fea397f0",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1818759687
+  },
+  {
+    "name": "AWSALBAPP-1",
+    "value": "_remove_",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788345440.236247
+  },
+  {
+    "name": "AWSALBAPP-2",
+    "value": "_remove_",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788345440.236266
+  },
+  {
+    "name": "AWSALBAPP-3",
+    "value": "_remove_",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788345440.23628
+  },
+  {
+    "name": "notion_locale",
+    "value": "en-US/legacy",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819276637
+  },
+  {
+    "name": "notion_users",
+    "value": "[%22161d872b-594c-81a9-96db-0002fea397f0%22]",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819276635
+  },
+  {
+    "name": "AWSALBAPP-1",
+    "value": "_remove_",
+    "domain": "msgstore.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788074937.268403
+  },
+  {
+    "name": "AWSALBAPP-2",
+    "value": "_remove_",
+    "domain": "msgstore.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788074937.26842
+  },
+  {
+    "name": "AWSALBAPP-3",
+    "value": "_remove_",
+    "domain": "msgstore.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788074937.268434
+  },
+  {
+    "name": "AWSALBAPP-0",
+    "value": "AAAAAAAAAAA915alLxMH4ZpqMXGzJGcRdhksllFw1KuDxPgeb00vfs2UmnlyQVq9ih0Euo50hu9i8ooEmmz/2oBbE4lFQmqX7KvN0vfm0X3DKtsyTEbQQkTIhdv3YKHsB17hegZqwU2qqaLs",
+    "domain": "msgstore.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788074937.268336
+  },
+  {
+    "name": "IDE",
+    "value": "AHWqTUkF9nEBv2nSAFsFxHTqXgIQzb7q-qA3F71QMWr4RlRJMTAefnbEIPfh02xX",
+    "domain": ".doubleclick.net",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822126657.027344
+  },
+  {
+    "name": "notion_check_cookie_consent",
+    "value": "false",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787818236.536436
+  },
+  {
+    "name": "_cfuvid",
+    "value": "6Y1d.NALiViIArjo5TSbRG4Ih9BMxHkk4G8b4h2wp2U-1787731836.6166065-1.0.1.1-krEwIyw7oy.YfrVwK47WkIUIdYWo1Sh9vW8FFGJsBr4",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790592895
+  },
+  {
+    "name": "lidc",
+    "value": "\"b=VGST04:s=V:r=V:a=V:p=V:g=3826:u=1:x=1:i=1787731849:t=1787818249:v=2:sig=AQGmXWS4FGeiXMSGa2Hxw23ds6QEvQsx\"",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787818249.358234
+  },
+  {
+    "name": "io",
+    "value": "5YDAxQ2TQbGBmrVk",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1787747839.17065
+  },
+  {
+    "name": "AWSALBAPP-0",
+    "value": "AAAAAAAAAABDkocA2GV9LOEl8H3tt9khnmtSad05aqik8O08einQYOAvNrtjaHLYd5GtAsGlsvoaFsgdDR3Ijw56yEdoFuT7xBSMVSjAsQajgNZR4YWaYIzFqlId1KzvuGlr+nRzaKAottL1",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788345440.236186
+  },
+  {
+    "name": "auth_sync_message_accountSwitcher",
+    "value": "%7B%22message%22%3A%7B%22version%22%3A1%2C%22name%22%3A%22accountSwitcher%22%2C%22source%22%3A%22notion%22%2C%22accounts%22%3A%5B%7B%22id%22%3A%22161d872b-594c-81a9-96db-0002fea397f0%22%2C%22displayName%22%3A%22Xu%C3%A2n%20L%E1%BB%99c%20Tr%E1%BA%A7n%22%2C%22emailAddress%22%3A%22trxuanloc.28%40gmail.com%22%2C%22profilePicture%22%3A%22https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIIMaXxoC-miOFaphWAHxWZ7BEUEfbAqbPyGNWw5chBpKrgEFz1%3Ds100%22%7D%5D%2C%22persistCookie%22%3Atrue%7D%2C%22origin%22%3A%22https%3A%2F%2Fapp.notion.com%22%2C%22messageID%22%3A%220c477a6b-7ce2-46dc-8173-f916b0837f15%22%7D",
+    "domain": ".identity.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1790592895
+  },
+  {
+    "name": "token_v2",
+    "value": "v03%3AeyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..sdk4dkDchEyjvnTHZcUzzA.wtGXhoAwcqn72uqJpq4tS1_7-PvwQXqCsg0oq_AHaV3vXUcwdC4nTmDZaYy7I9uL-X7pTEXy1aIE6x9n0ireCZVtLLN7bg3gp8Ql-TIQH7CxZ66LiB9f6vke91Z1EapFyrX4MSpmGbRSB-xiqW5LEjWIV6m9UuCqjK28xuoJL48GKBp7nTH1wLcA4IOGZvDfo_T03oPiXVU-RsIIKkvK1mmtfwySbnhmw8-rFgO4CmUCjAbDaCvb-swXN6JlMQXa_Ou11RS2BoqGwo_sOM_HyUROX5iVraszXQ7Y53Zfl44nqD8YvuFLdEbHm7U--4A47NhQ6_EMEDnqLNANDK5xiA9VjAm85na3p-f-T7pvuBU.BYxz-S95-0NZSXz08yLsVihjGLTzSeTs7B42ZPL9ujQ",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1819280236.798185
+  },
+  {
+    "name": "__cf_bm",
+    "value": "fQPlGvqF1IJgXDGWAeUt3MFRjLkCeeYeAQ7c0d60xwk-1787745139.1864727-1.0.1.1-zGhwTy.w81GH0C7KOFyXH.BslmJxc4cB7BAW26bYP7dS54isENUOViPZvtKJETZDnskfuH6I3763iDQ_J4KXJoMbVgH7Bq9I9QU1AhR3DZ5McawJcQ2I0msrviaES87_",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787746938.789181
+  }
+]

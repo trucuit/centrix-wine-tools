@@ -1,0 +1,272 @@
+[
+  {
+    "name": "CDI",
+    "value": "c86af96f-e24d-447e-b31a-8e9ea9e916c5",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818907888.875181
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.1980259410.1787371890",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1821931922.907757
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.1787371890183.52943330217853913",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1795147948
+  },
+  {
+    "name": "FPID",
+    "value": "FPID2.2.yhT5JP8plKYNVGm0bx04nggw7mnjJ8KwRDtDCAhrgr4%3D.1787371890",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821931994.70215
+  },
+  {
+    "name": "fr",
+    "value": "09l5cweyCUswIiZhO..BqiSFy...1.0.BqiSFy.",
+    "domain": ".facebook.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1795147890.411256
+  },
+  {
+    "name": "FPAU",
+    "value": "1.2.436193842.1787371891",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1795147890.84972
+  },
+  {
+    "name": "IDE",
+    "value": "AHWqTUmli8Bnj4tQPmTpjMOk3DuNw62gUmlh98iPXHp5HzgZZszayoJ_uYCy7ugOTFk",
+    "domain": ".doubleclick.net",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821931891.298718
+  },
+  {
+    "name": "__cuid",
+    "value": "012474ad43ed40fda71861525b5bfdb9",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822291766
+  },
+  {
+    "name": "__cuid",
+    "value": "012474ad43ed40fda71861525b5bfdb9",
+    "domain": ".www.canva.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822291766
+  },
+  {
+    "name": "bcookie",
+    "value": "\"v=2&46d9e152-d337-48aa-83bb-59a9bc9a14c2\"",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818907902.403944
+  },
+  {
+    "name": "li_gc",
+    "value": "MTswOzE3ODczNzE5MDI7MjswMjHtIHEynkgwlAu/PMp0gadX/K0w/iBeonT5ckyqxsAWIQ==",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1802923902.403998
+  },
+  {
+    "name": "CUL",
+    "value": "cnvruZW4eAAAAA8fz7CmAt5vHUYQ-N5bwOpcZHB1L2OYb2lZVl7zr6E3nDFK-tF16T4T5RvnjH4i_3ZjAYVQP1nptaSbVIsxDzrSDJ2aE0Xkdc3dfe9d",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818907921.703435
+  },
+  {
+    "name": "CTC",
+    "value": "eyJBIjoxNzg3MzcxOTI4NDM4LCJCIjoxNzg3MzcxOTI4NDM4LCJEIjp0cnVlLCJJIjpbLTU4MzY5LDUzMjQxMzYwN10sIkoiOlswXSwiSyI6dHJ1ZX0=",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1802923928.443564
+  },
+  {
+    "name": "_ga_EPWEMH6717",
+    "value": "GS2.1.s1787371889$o1$g1$t1787371946$j3$l0$h202314677$dWmLXwkGpGDgQn1IzBTjD7DnEGdE_RYm3eg",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1821931946.807051
+  },
+  {
+    "name": "ASI",
+    "value": "01M0YHV7M6SGZY5T4HVZY84QZX",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787733805.719035
+  },
+  {
+    "name": "g_state",
+    "value": "{\"i_l\":0,\"i_ll\":1787731763484,\"i_b\":\"1AyThXs3V5lenqyYhzZ8IZkwB3ZUalcH70lvE/UWATA\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1787731763484}",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1803283763
+  },
+  {
+    "name": "CAZ",
+    "value": "cnvanZW4eAAAAA2lx_KKczWA7mZKeVlqhCRMY8VqYAWRQJbeo-y4t-f0uXdq4YjONNFw8THXvw7tMfkgyBw85uOT4fFDH_osMgHU5rwdmjr1VJyGh9QWQIcOw1_JA2Arq61zbiKiT3fLBqR7lN88gh-YyH8cytW2a-wQTKN8h83OcQDJG9oAeNtjewzjCE_bi5OXjaNjo-No6rE1V4nt5E4E4bk9CEWbxFoKD62SbMybjcA5J3hF9YcbI45IMqkWAtYV2cHxIW6k52mvz_9jgPnzqID-s_sViP54koRm_qekRhpxNe076Lfu25wS2QcMJbVThsRq3Vc61URhEDC61660916b6af3",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790323778.034299
+  },
+  {
+    "name": "CB",
+    "value": "BAGgANHSKko",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790323778.034404
+  },
+  {
+    "name": "CAU",
+    "value": "eyJBIjoiVUFHUTBRb2R4cEkiLCJCIjoiQkFHZ0FOSFNLa28ifQ==",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790323778.034432
+  },
+  {
+    "name": "CL",
+    "value": "vi-VN",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790323778.034454
+  },
+  {
+    "name": "CID",
+    "value": "cnvanZW4eAAAAA2lx_KKczWA7mZKeVlqhCRMNFNkf1Zsn2DwHqrY1vQRmOkrcjfeh1ou1155-rFEkFivI-Bh2S-6WsK3ZVxpLbm--W4WMtmb1v1Qw1hCP8dak7i2o7KA8flbtM0Qc171a138",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790323778.034485
+  },
+  {
+    "name": "CUI",
+    "value": "ZW4eAAAAA-tsTQu0dXo-u0qrzsClF1ciWylimlvpoFs6BsKE9UU_UhOWfaNNYHqHeF0SgyA48DIs58_7aODVEBY",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790323778.034508
+  },
+  {
+    "name": "CS",
+    "value": "1",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790323778.034536
+  },
+  {
+    "name": "_cfuvid",
+    "value": "1gwS6pFokGzA3QadoMtpUjLVOFfDLAcSJMKEy2Zwl0U-1787731977.8605735-1.0.1.1-XKyvrkBwSq5BMbbflDE3XQSTGP82ixPcnVY9WJ0HnqE",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790592894
+  },
+  {
+    "name": "cf_clearance",
+    "value": "j0qN9vE1d9.8wbCrmKGgtd7nqojPpSth7BDyX38xek8-1787731980-1.2.1.1-EAVc9S8qNCPi_Scwe6uXFPmwCslrs86CU3AveKs2hQyXIkCoVbhseCnhqRXpGPkWGfPQJf0.n6EFiC_qtpviefOPO_CSokbzF2ZIQdymRWu5XE1dNZjETeqf8jbbZGyUX4CdvC.qbQ_dD1J5gqB4QuXBCkVD9jgSa06peH5cxFbVq0qlA6Nrf3vYRQKCIEki8bVcaKqMTyhALqvZgdNcbPyF4ZLQSo3_ZjeKZB0UUWwSVY_H.trqdRrfv0TkRD6zwLAp5pPbwZZ_K4DBcyRsfHjW2NhybKl_xVn8o411y14a0u3_3MAp5toHx2PfLld7ZKIy6kt63Xjt6gD1sz9P.0cibX.mCTNIwTsMa5EBl64",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819267984.669512
+  },
+  {
+    "name": "CCDA",
+    "value": "eyJBIjo4NjQsIkIiOjE1MzYsIkMiOjgyMiwiRCI6MTI5OCwiRSI6IkIifQ==",
+    "domain": "www.canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1790323988.798108
+  },
+  {
+    "name": "__cf_bm",
+    "value": "u7tu4tllZu1OYcfecxF0C4g.ZFjnCQrDe3KO71ITKIE-1787732000.5473342-1.0.1.1-9bVihA3.c2BRDCJW79nodB75Ua52j8IyD2bRpWxjIZ7ONdQ5etvybDHYy2qzEXuPGfUChY2akR6ERPAxv9g4v8NCAyMK1seeMfc9vw5Fqqd4pC55FjAY6rBJuD5flFLFRHPehNs3v9pSjEzUvJXodkgagEtLojXX2FlYkTdTbY4",
+    "domain": ".canva.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1787733804.722057
+  }
+]

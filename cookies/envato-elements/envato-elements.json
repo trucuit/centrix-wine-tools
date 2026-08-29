@@ -1,65 +1,36 @@
 [
   {
-    "name": "PHPSESSID",
-    "value": "ick2a723b15sn3p1tip03kgf0n",
+    "name": "cf_clearance",
+    "value": "Gadi6Y2inF4Pfnn7l0pQN_h4ZfpuzOTaG75LyToNrq0-1787663298-1.2.1.1-qKSZnwEzlBuLTYy0FjHdUoS01fkehtfxOtI5FNr2tKhWP.qH2TmDFoE2x3jJQQ.XQNDUQdN5eTPqRUqYvpT.WDO8ztDYtQEA4tkhp2nXQXLbZ0Cj5wqWmsCDeYjPP9iDw5OKPd1ityLiPhgywr2QaB7i11hXrS84hvwNUUe9lVNgsgRDpfgvIsFFIrJxX8QmtXzhzjKx__6gijmmEZBJETjf_U3K0YymbOCoz9OQ9fOhKsqEwTRMJmKmLAWFeWHAO1moa9h3C8_sHT_UjO6s1f4YQS8nm6DQJGXS8R52u7TbzMTSLIhcCxKRU_2oZ1axIDcQ1MdJsfV59hni.KcxsaQO3UGkSx7niaKavnnWq5M",
     "domain": ".noxtools.com",
-    "hostOnly": false,
     "path": "/",
     "secure": true,
     "httpOnly": true,
-    "session": true,
-    "sameSite": "unspecified",
-    "url": "https://noxtools.com/"
+    "sameSite": "no_restriction",
+    "expirationDate": 1819199297.902621,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "PHPSESSID",
+    "value": "2u4b27vetn6la4qvr49l5t6uv0",
+    "domain": ".noxtools.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "hostOnly": false,
+    "session": true
   },
   {
     "name": "amember_nr",
-    "value": "83ffbe3610ecc68cf1a00e73f152d3aa",
+    "value": "dae54b414359f23d52b07eefa5e2bd63",
     "domain": ".noxtools.com",
-    "hostOnly": false,
     "path": "/",
     "secure": true,
     "httpOnly": true,
-    "session": true,
-    "sameSite": "unspecified",
-    "url": "https://noxtools.com/"
-  },
-  {
-    "name": "_ga",
-    "value": "GA1.1.613057728.1784210571",
-    "domain": ".noxtools.com",
-    "hostOnly": false,
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "session": false,
-    "expirationDate": 1819167640.579077,
-    "sameSite": "unspecified",
-    "url": "http://noxtools.com/"
-  },
-  {
-    "name": "cf_clearance",
-    "value": "O6UpRoWDsr0mQxf9vahCtEn2c7wqxvSaWf5bcRZbx2U-1784607632-1.2.1.1-RoZ8elwGlrTcdN9Sh3i1yMHbbomaJtGE.ksEhCvhSoEKz6smDHZqKxnhVci68.Wct57EoHTnGi2yVaPzFveG6rvdsI7ggf8ZsMSJecGfxKsugFbSSkLuZwS6YYxy97jMmYYVKtq0Slmy0FFc7vg1iOglRfn8GGxHlJuRzH77a_7hVH_X8reyb4Up5JxRwhKXPhlYnaY3QetlOL4QBWGmJ1XN1j7Tc69ZzpgPvjz0XynB1GCzByPFKmeiBc51yedqxUc5ZwwUV_MMUoJUevOf.h2QHnP6ql1xosf7I.FrgU_of3EStmEKyzNnT5NuJXoeBT0AKhsN3mIrWdpPIMW3pQ",
-    "domain": ".noxtools.com",
-    "hostOnly": false,
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "session": false,
-    "expirationDate": 1816143633.097472,
     "sameSite": "no_restriction",
-    "url": "https://noxtools.com/"
-  },
-  {
-    "name": "_ga_M2C66L2Z09",
-    "value": "GS2.1.s1784607640$o9$g0$t1784607640$j60$l0$h0",
-    "domain": ".noxtools.com",
     "hostOnly": false,
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "session": false,
-    "expirationDate": 1819167640.578668,
-    "sameSite": "unspecified",
-    "url": "http://noxtools.com/"
+    "session": true
   }
 ]

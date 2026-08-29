@@ -1,0 +1,409 @@
+{
+  "formatVersion": 1,
+  "serviceId": "perplexity",
+  "capturedAt": "2026-08-29T03:24:17.644Z",
+  "origin": "https://www.perplexity.ai",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
+  "fingerprint": {
+    "gpu": {
+      "vendor": "Google Inc. (NVIDIA)",
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3080 Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "hasRealGpu": true,
+      "hostSource": "electron-gpu-info",
+      "hostMismatch": true
+    },
+    "brands": {
+      "brands": [
+        {
+          "brand": "Not)A;Brand",
+          "version": "8"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "138"
+        },
+        {
+          "brand": "Chromium",
+          "version": "138"
+        }
+      ],
+      "fullVersionList": [
+        {
+          "brand": "Not)A;Brand",
+          "version": "8.0.0.0"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "138.0.7204.185"
+        },
+        {
+          "brand": "Chromium",
+          "version": "138.0.7204.185"
+        }
+      ]
+    },
+    "device": {
+      "screen": {
+        "width": 2560,
+        "height": 1440,
+        "colorDepth": 24,
+        "pixelDepth": 24,
+        "availHeight": 1400
+      },
+      "bitness": "64",
+      "platform": "Win32",
+      "architecture": "x86",
+      "deviceMemory": 8,
+      "platformName": "Windows",
+      "platformVersion": "15.0.0",
+      "devicePixelRatio": 1,
+      "hardwareConcurrency": 16
+    },
+    "locale": {
+      "language": "vi-VN",
+      "timezone": "Asia/Ho_Chi_Minh",
+      "languages": [
+        "vi-VN",
+        "vi",
+        "en-US",
+        "en"
+      ],
+      "acceptLanguage": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7"
+    },
+    "poolId": "win11-i7-32-rtx3080-1440",
+    "network": {
+      "geo": {
+        "lat": 10.6080487,
+        "lon": 106.6711044,
+        "accuracy": 25000
+      },
+      "proxy": null,
+      "proxyPassword": null,
+      "proxyUsername": null,
+      "expectedCountry": "VN"
+    },
+    "version": 1,
+    "createdAt": "2026-08-18T13:03:40.771Z",
+    "noiseSeed": "5815ffae4fbc48dd1a253da0020756dc9895e4ac057c93e2627408f3ab386cb5",
+    "updatedAt": "2026-08-18T13:03:40.773Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
+    "chromeFull": "138.0.7204.185",
+    "profileKey": "perplexity:1",
+    "chromeMajor": "138",
+    "managedProfileId": null
+  },
+  "cookies": [
+    {
+      "name": "pplx.visitor-id",
+      "value": "12cda29c-5995-4e30-832d-238a27214caa",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1818004464,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "pplx.edge-vid",
+      "value": "361ae787-1266-41ac-94f5-4c06d3549a98.1786468467-XoNc6GTrPjwQ7Y-zqBnYP6xU1MNEeWyr3Tjd9tGVGlY",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1819509781.001782,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "singular_device_id",
+      "value": "adb2dd59-c5ef-4a79-b3b6-50b0ef32f94b",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1819509484,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "pplx.trackingAllowed",
+      "value": "true",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1818004496,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "next-auth.csrf-token",
+      "value": "13634502ed740783508fca73f8690022b3b5c1b295bbfbe9bb09dfa9d6393d88%7Cda32bb2a8fa4ef83196fe876766e057560d257e0e4042bbbc66b6138dc61a8e4",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "hostOnly": true,
+      "session": true
+    },
+    {
+      "name": "g_state",
+      "value": "{\"i_l\":0,\"i_ll\":1787062774328,\"i_b\":\"+mlkQy0ZXDmBJn6r8bxdttSRrrKppQhPWEkQ3IwVpMI\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1787062774328}",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1802614774,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "__stripe_mid",
+      "value": "dfe07887-0bd5-4a20-8444-e3f6a3c7d33d06a668",
+      "domain": ".www.perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "strict",
+      "expirationDate": 1818598978,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "unify_session_id",
+      "value": "8d7c5ba6-82ef-4dc5-898d-a8cadd1db494",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1821622988,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "IndrX2c1OFdjNG9oXzgxd1JocUVVWGFadkNMVEZaYlkzeGRCUlRlR1JldWhCX3VuaWZ5X3Nlc3Npb25faWQi",
+      "value": "IjhkN2M1YmE2LTgyZWYtNGRjNS04OThkLWE4Y2FkZDFkYjQ5NCI=",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1821622988,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "unify_visitor_id",
+      "value": "4af3461b-4829-4ef6-8215-08838662c4ad",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1821622988,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "IndrX2c1OFdjNG9oXzgxd1JocUVVWGFadkNMVEZaYlkzeGRCUlRlR1JldWhCX3VuaWZ5X3Zpc2l0b3JfaWQi",
+      "value": "IjRhZjM0NjFiLTQ4MjktNGVmNi04MjE1LTA4ODM4NjYyYzRhZCI=",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1821622988,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "cf_clearance",
+      "value": "YzTUE2oniFIJCioN1p0LLdrBE2ecpB8tVnezY4XXGrc-1787834137-1.2.1.1-IX9Stdlxes4Kr00AOulDdKz0Sxic7p9hL4Or5EPAyI3JWm6xbrYPS8v9T8SU5.5VCdWkvLT18upjClnaSMFMXpfRiJWh8_w5fWSSMdw_.NmCRJDc482.uRbjk9j0.uXeejKYB0_Wu5X3Sre.ziBNPaXorFBGOcGguuURkUt8HfGidehMhZhX7a.164XzR8XLyHYorwPdxx_BmFZj1sfDlOm_YXc1Y7sVa478MxPs9lxI4yic7FhR8bp1brKRcDczJOq5OuGpfqGbOD6m.ZGIFs9BfU40ez3ZXPaUjC1DUlZ3xafI6WlLszQlmWCHYLd1RcTxAWmWDtMdt5BFbbHxYa8UJsUY2IPaEvKCvB4yuSI",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1819370137.343618,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "pplx.is-incognito",
+      "value": "false",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "hostOnly": true,
+      "session": true
+    },
+    {
+      "name": "__cflb",
+      "value": "02DiuDyvFMmK5p9jVbVnMNSKYZhUL9aGkcFhtdC2BLAN8",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1787981584.297295,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "pplx.session-id",
+      "value": "1ce57e57-da61-46a4-b966-627c77650ab1",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1787974451,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "__Secure-next-auth.session-token",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..nBa6yWeRKfOSW1sk.M1mlKd2U6fJRfrDsPZomXCTG5fi_odMkGr4c1l5OJQAHS2pTqtt_zImp7wOTuMpVO_WFZ6E0_Ikl1IMIG4CFGdi3rLZW-Bx_BHTabcNnzcev8hp0LxiPRPgoZ0E56PaRdHoyEpu3TGoN3QYQol7IDaUPJ9Bw5k02aDgTQjqSVHYYztndUj5VoHtYqtcyUWGOq5x3oniYBfzAeLA4e4GQpMNFgY29z0FpV4ohUGev39hABJGE9VODSjxf9_899FweYy2g5FE.lzm0oXJUY0bqaOMy9bVPxw",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "lax",
+      "expirationDate": 1790565476.87167,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "__cf_bm",
+      "value": "c40MQ0Ja78Sp9rFLqn6NwFtWDVDAsrcanVnK6shRWEE-1787973473.3637636-1.0.1.1-xg2_i6zIGgOqBUaHCVL6L86J3Z33BNQXbO9UUuCTT6fTPIzGRU38kabjxaysL4Ue0QbPFO2MDD7BYio7SnpyJCzo4pAVLIBTgTKAWRBZ.iN9Yo2D6RwIzRXMKxJ8a.Gn",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1787975277.385715,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "pplx.edge-sid",
+      "value": "081b8790-91ee-4e42-9e6c-3a997f77f29e",
+      "domain": ".perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1787975581.001908,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "__frs",
+      "value": "e01d5673-6137-40b6-b31b-6a665ae0a744",
+      "domain": ".count.perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "no_restriction",
+      "expirationDate": 1787977381.001606,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "pplx.visitor-ts",
+      "value": "1787973605-7sLAscgfPsdqOjkMlqQpSsLrW87sSPwLybNce3pEi_8",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "lax",
+      "expirationDate": 1789183209.580231,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "pplx.metadata",
+      "value": "{%22qc%22:156%2C%22qcu%22:11313%2C%22qcm%22:448%2C%22qcc%22:11048%2C%22qcco%22:0%2C%22qccol%22:0%2C%22qcdr%22:0%2C%22qcs%22:0%2C%22qcg%22:1%2C%22qcd%22:0%2C%22hli%22:true%2C%22hcga%22:false%2C%22hcds%22:false%2C%22hso%22:false%2C%22hfo%22:false%2C%22hsco%22:false%2C%22hfco%22:false%2C%22hsma%22:false%2C%22hdc%22:false%2C%22sc%22:47%2C%22hdttb%22:false%2C%22fqa%22:1786479914703%2C%22lqa%22:1787973608501}",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "unspecified",
+      "expirationDate": 1822533854,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "__Secure-pplx.session.a4fb368c-1352-4d1f-a561-c51ec5fc33d4",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..zAffR5YBBtuGe8Yl._t6dzPzK73UelZWphfXkjNynX6WYbg8B1mli77suRN2fu2SYflGbaiFf9U_cljDIOGXLajmxEzla9_8T4Gb4WVs-5EyjkgXdwHejEnw7Kl9woMWMKTNHuIhOSqyMImBEb2mULPjx5QnHBNrgszAPMQMYsxBO_-JuDhCODhKTvxzJgZLv-jrHQh8ERmW2i_UZ6KxboKPGwT2bsAqPhQpja-PI5v565hj6_NIWFX183Bm8vev6_liTCj-ri8rss1UX2pm2ayM.qO1v00tRyF93vAXSjZLdAg",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "lax",
+      "expirationDate": 1790565767.500995,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "_dd_s_v2",
+      "value": "aid=457d6089-c37e-4cac-8e83-a5ebcd559b6a&id=77498a48-009f-4b64-84da-798f9bef9b30&created=1787973477124&expire=1787974755112&c=0",
+      "domain": "www.perplexity.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "strict",
+      "expirationDate": 1819509855.112,
+      "hostOnly": true,
+      "session": false
+    }
+  ],
+  "localStorage": {
+    "perplexity_ai_039eb8fb_ai.perplexity_singular_custom_user_id": "a4fb368c-1352-4d1f-a561-c51ec5fc33d4",
+    "global_singular_id": "adb2dd59-c5ef-4a79-b3b6-50b0ef32f94b",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:assistant-promo-config-cached": "{\"deeplinkQueries\":[{\"url\":\"https://www.nytimes.com/games/wordle/index.html\",\"query\":\"Take control over browser and win Wordle for me\",\"action\":\"ALWAYS\"},{\"url\":\"https://www.youtube.com/\",\"query\":\"Take control over browser play relaxing music mix with cosmic vibes under 1 hour\",\"action\":\"ALWAYS\"},{\"url\":\"https://www.google.com/maps\",\"query\":\"Take control over browser and plan a scenic road trip from Paris to Barcelona with 3 stops\",\"action\":\"ALWAYS\"},{\"url\":\"https://humanbenchmark.com/tests/number-memory\",\"query\":\"Take control over browser and pass this test for me\",\"action\":\"ALWAYS\"},{\"url\":\"https://www.spotify.com/\",\"query\":\"Take control over browser and build me a playlist called Coding in Space with synth and ambient tracks\",\"action\":\"HISTORY_PRESENCE\"},{\"url\":\"https://www.netflix.com/\",\"query\":\"Take control over browser and queue up a feel-good movie from the 90s I havenât watched yet\",\"action\":\"HISTORY_PRESENCE\"},{\"url\":\"https://duolingo.com/\",\"query\":\"Take control over browser and finish the next lesson for me\",\"action\":\"HISTORY_PRESENCE\"},{\"url\":\"https://store.steampowered.com\",\"query\":\"Take control over browser and recommend me a game under 20 USD with overwhelmingly positive reviews\",\"action\":\"HISTORY_PRESENCE\"},{\"url\":\"https://www.skyscanner.net/\",\"query\":\"Take control over browser and find the best round-trip tickets for a 1-week vacation to the Maldives from London\",\"action\":\"ALWAYS\"},{\"url\":\"https://www.booking.com/\",\"query\":\"Take control over browser and find me a cozy hotel with a spa in the Alps for the weekend\",\"action\":\"ALWAYS\"}]}",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:pplx.computer-differentiation.eppo_cache": "true",
+    "perplexity_ai_039eb8fb_ai.perplexity_singular_first_page_visit_occurred": "true",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:pplx.local-user-settings.lastSubmittedAskInputMode": "\"search\"",
+    "perplexity_ai_039eb8fb_ai.perplexity_singular_session_id": "f1bfc545-657d-44ac-8162-e0fcd994cf6c",
+    "pplx.context-pane-focus": "{\"state\":{\"expandedOverrides\":{\"artifacts\":true}},\"version\":2}",
+    "perplexity_ai_039eb8fb_ai.perplexity_first_page_visit_url": "https://www.perplexity.ai/",
+    "perplexity_ai_039eb8fb_ai.perplexity_web_url": "https://www.perplexity.ai/",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:pplx-next-auth-session": "{\"expires\":\"2026-09-26T12:35:35.672188877Z\",\"preventUsernameRedirect\":false,\"user\":{\"email\":\"fiskava2580@outlook.com\",\"id\":\"a4fb368c-1352-4d1f-a561-c51ec5fc33d4\",\"org_role\":\"none\",\"org_uuid\":\"none\",\"subscription_source\":\"stripe\",\"subscription_status\":\"past_due\",\"username\":\"centrix1\"}}",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:mcp_disabled_servers_v1": "[]",
+    "perplexity_ai_039eb8fb_ai.perplexity_did_send_event.query submitted": "true",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:pplx.automations-v2.eppo_cache": "{\"web\":false,\"backend\":false,\"connector_triggers\":false,\"connector_providers\":{},\"migration_skill\":false}",
+    "theme": "light",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:pplx.computer-model-switching.eppo_cache": "true",
+    "perplexity_ai_039eb8fb_ai.perplexity_singular_instance_id": "5df8deb2-907e-4fa0-8846-ed842c6949be",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:pplx.web-sidebar-recent-threads-graphql.eppo_cache": "true",
+    "pplx:ask-input-draft-account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4": "1",
+    "pplx-next-auth-session": "{\"expires\":\"2026-09-26T12:35:35.672188877Z\",\"preventUsernameRedirect\":false,\"user\":{\"email\":\"fiskava2580@outlook.com\",\"id\":\"a4fb368c-1352-4d1f-a561-c51ec5fc33d4\",\"org_role\":\"none\",\"org_uuid\":\"none\",\"subscription_source\":\"stripe\",\"subscription_status\":\"past_due\",\"username\":\"centrix1\"}}",
+    "perplexity_ai_039eb8fb_ai.perplexity_did_send_event.initialized singular": "true",
+    "perplexity_ai_039eb8fb_ai.perplexity_did_send_event.__PAGE_VISIT__": "true",
+    "perplexity_ai_039eb8fb_ai.perplexity_did_visit_site": "true",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:pplx_show_comet_upsell_existing_comet_user": "false",
+    "pplx-last-active-account": "a4fb368c-1352-4d1f-a561-c51ec5fc33d4",
+    "eppo-assignment-a2yUBlJ1": "[[\"f526937e59aacbf2b50697e92d6088d9\",\"82850383be45e95313132e77f8429758\"]]",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:explore-assistant-should-show-cached": "true",
+    "perplexity_ai_039eb8fb_ai.perplexity_touchpoint_timestamp": "1787834138",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:locationMetadata": "{\"permissionState\":\"denied\",\"updatedAt\":1787973496600}",
+    "perplexity_ai_039eb8fb_ai.perplexity_last_event_timestamp": "1787973635",
+    "pplx:account:a4fb368c-1352-4d1f-a561-c51ec5fc33d4:__migrated": "1"
+  },
+  "sessionStorage": {
+    "perplexity_ai_039eb8fb_ai.perplexity_singular_api_queue": "[]",
+    "pplx-active-account": "a4fb368c-1352-4d1f-a561-c51ec5fc33d4",
+    "_dd_tab_id": "e79e83cf-5aa8-49a9-97ce-4a5dffdb497b"
+  }
+}

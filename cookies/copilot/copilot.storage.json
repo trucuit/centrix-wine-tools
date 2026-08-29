@@ -1,0 +1,16 @@
+{
+  "localStorage": {
+    "i18nextLng": "en-US",
+    "theme": "light",
+    "mats-telemetry-profile-id": "01a0478f-7b76-7ede-a29b-c2d5f9c60d4b",
+    "3pMigrationPhase1Enabled": "true",
+    "crossPromoFirstVisit": "1787906980759",
+    "msal.version": "4.30.0"
+  },
+  "sessionStorage": {
+    "authInitStartTime": "1787906980725",
+    "sticky-conversation-mode": "\"smart\"",
+    "greetingIndex": "2",
+    "copilot-pre-login-href": "https://copilot.microsoft.com/"
+  }
+}

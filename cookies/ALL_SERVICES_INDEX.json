@@ -1,0 +1,132 @@
+{
+  "exportedAt": "2026-08-29T10:54:56.805Z",
+  "totalExported": 14,
+  "services": [
+    {
+      "ok": true,
+      "serviceId": "claude",
+      "origin": "https://claude.ai",
+      "cookieCount": 23,
+      "storageKeyCount": 42,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-claude.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-claude.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "chatgpt",
+      "origin": "https://chatgpt.com",
+      "cookieCount": 42,
+      "storageKeyCount": 37,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-chatgpt.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-chatgpt.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "gptpro",
+      "origin": "https://chatgpt.com",
+      "cookieCount": 38,
+      "storageKeyCount": 35,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-gptpro.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-gptpro.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "gemini",
+      "origin": "https://gemini.google.com",
+      "cookieCount": 48,
+      "storageKeyCount": 4,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-gemini.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-gemini.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "perplexity",
+      "origin": "https://www.perplexity.ai",
+      "cookieCount": 23,
+      "storageKeyCount": 31,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-perplexity.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-perplexity.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "copilot",
+      "origin": "https://copilot.microsoft.com",
+      "cookieCount": 66,
+      "storageKeyCount": 6,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-copilot.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-copilot.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "grok",
+      "origin": "https://grok.com",
+      "cookieCount": 30,
+      "storageKeyCount": 23,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-grok.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-grok.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "deepseek",
+      "origin": "https://chat.deepseek.com/",
+      "cookieCount": 2,
+      "storageKeyCount": 37,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-deepseek.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-deepseek.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "canva",
+      "origin": "https://www.canva.com",
+      "cookieCount": 27,
+      "storageKeyCount": 19,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-canva.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-canva.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "semrush",
+      "origin": "https://noxtools.com",
+      "cookieCount": 3,
+      "storageKeyCount": 0,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-semrush.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-semrush.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "monica",
+      "origin": "https://monica.so",
+      "cookieCount": 37,
+      "storageKeyCount": 8,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-monica.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-monica.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "notion",
+      "origin": "https://app.notion.com",
+      "cookieCount": 45,
+      "storageKeyCount": 104,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-notion.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-notion.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "scribd",
+      "origin": "https://www.scribd.com",
+      "cookieCount": 48,
+      "storageKeyCount": 25,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-scribd.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-scribd.json"
+    },
+    {
+      "ok": true,
+      "serviceId": "envato-elements",
+      "origin": "https://noxtools.com",
+      "cookieCount": 3,
+      "storageKeyCount": 4,
+      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-envato-elements.json",
+      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-envato-elements.json"
+    }
+  ]
+}
