@@ -68,7 +68,7 @@
     },
     {
       "domain": "www.perplexity.ai",
-      "expirationDate": 1789662006.259,
+      "expirationDate": 1790435056.753,
       "hostOnly": true,
       "httpOnly": true,
       "name": "next-auth.csrf-token",

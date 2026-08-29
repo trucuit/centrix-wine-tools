@@ -1,0 +1,28 @@
+[
+  {
+    "domain": ".ws.chatgpt.com",
+    "expirationDate": 1787672746.901458,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "__cf_bm",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "lBDGV2bNpIG9yzAINSupWaKVUur18TpYjs8n2jtlDAQ-1787670947.0025392-1.0.1.1-PmFDFwRcRRWBObqrxy3JQGaZfwTPoyFIawYb_BIsBXS1mxOOeU1nk.UvapShp6UUmiLedjiF5OV7qnDEODyXZtMMVnKOmjBmoI0aMZqMUxO4sPLGXjefR.1Yawk.ey4j"
+  },
+  {
+    "domain": "ws.chatgpt.com",
+    "expirationDate": 1787672746.901574,
+    "hostOnly": true,
+    "httpOnly": true,
+    "name": "__cflb",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "0H28ukCBMp4tavf1C7cJRDF8kMGvxxb4noVguZRxrRb"
+  }
+]

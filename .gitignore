@@ -39,6 +39,4 @@ wine-prefix-centrix/
 
 
 
-# local TOTP secrets
-.centrix-totp
-.centrix-vps-pass
+

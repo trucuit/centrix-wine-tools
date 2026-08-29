@@ -169,6 +169,25 @@ def filter_domains(cookies: list[dict], predicates: list[Callable[[str], bool]])
     return out
 
 
+def host_scope(host: str) -> Callable[[str], bool]:
+    """Browser cookie-domain match for one host.
+
+    A cookie with domain ``d`` (leading dot optional) is sent to host ``h`` when
+    ``d == h`` OR ``h`` is a sub-host of ``d`` (a parent-domain cookie). Using
+    this for a per-host sidecar makes it carry the parent-domain cookies the host
+    really receives (e.g. ``.openai.com`` cookies for ``auth.openai.com``), not
+    only the exact-domain ones — otherwise the sidecar is missing session-scoped
+    cookies like ``oai-sc`` / ``oai-did`` and can fail to authenticate.
+    """
+    h = (host or "").lstrip(".").lower()
+
+    def pred(d: str) -> bool:
+        dd = d.lstrip(".").lower()
+        return bool(h) and (dd == h or h.endswith("." + dd))
+
+    return pred
+
+
 def write_private_json(path: Path, obj: Any) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -368,17 +387,11 @@ def export_service_cookies(
     written: list[str] = []
 
     host = (urlparse(url).hostname or "").lower()
-    host_cookies = filter_domains(
-        all_j2,
-        [lambda d, h=host: bool(h) and (d.lstrip(".") == h or h.endswith("." + d.lstrip(".")))],
-    )
+    host_cookies = filter_domains(all_j2, [host_scope(host)])
     service_cookies = host_cookies
 
     # Primary host-scoped
     p_full = services_dir / f"{svc_slug}.json"
-    write_j2team(p_full, url, service_cookies)
-    written.append(str(p_full))
-
     # full meta
     meta_out = {
         "url": url,
@@ -389,6 +402,10 @@ def export_service_cookies(
         "source": meta.get("source") or ("api" if "api" in str(source_label).lower() else "dump"),
         "cookies": all_j2,
     }
+    if meta.get("localStorage") is not None:
+        meta_out["localStorage"] = meta.get("localStorage")
+    if meta.get("sessionStorage") is not None:
+        meta_out["sessionStorage"] = meta.get("sessionStorage")
     if meta.get("storage") is not None:
         meta_out["storage"] = meta.get("storage")
     if meta.get("origins") is not None:
@@ -407,18 +424,15 @@ def export_service_cookies(
         chatgpt_cookies = filter_domains(
             all_j2,
             [
-                lambda d: "chatgpt.com" in d,
-                lambda d: d.endswith("openai.com")
-                and "auth.openai.com" not in d
-                and "sentinel.openai.com" not in d,
+                lambda d: d.lstrip(".") == "chatgpt.com" or d.lstrip(".").endswith(".chatgpt.com"),
+                lambda d: d.lstrip(".") == "oaistatic.com" or d.lstrip(".").endswith(".oaistatic.com"),
+                lambda d: d.lstrip(".") == "oaiusercontent.com" or d.lstrip(".").endswith(".oaiusercontent.com"),
             ],
         )
-        auth_cookies = filter_domains(all_j2, [lambda d: "auth.openai.com" in d])
-        if chatgpt_cookies or is_chatgpt_family:
+        auth_cookies = filter_domains(all_j2, [host_scope("auth.openai.com")])
+        if chatgpt_cookies:
             p = write_j2team(services_dir / "chatgpt.com.json", "https://chatgpt.com", chatgpt_cookies)
             written.append(str(p))
-            if svc_slug == "chatgpt":
-                write_j2team(services_dir / "chatgpt.json", "https://chatgpt.com", chatgpt_cookies)
         if auth_cookies:
             p = write_j2team(
                 services_dir / "auth.openai.com.json",
@@ -427,41 +441,56 @@ def export_service_cookies(
             )
             written.append(str(p))
 
-    # Grok family
-    is_grok_family = "grok" in svc_slug or "grok" in url.lower()
-    accounts_xai_cookies = filter_domains(
-        all_j2,
-        [lambda d: d.lstrip(".") in ("x.ai", "accounts.x.ai")],
-    )
-    if is_grok_family and accounts_xai_cookies:
-        p = write_j2team(
-            services_dir / "accounts.x.ai.json",
-            "https://accounts.x.ai/sign-in",
-            accounts_xai_cookies,
+    # Grok family (x.ai / grok.com)
+    is_grok_family = "grok" in svc_slug or "grok.com" in url or "x.ai" in url
+    accounts_xai_cookies: list[dict] = []
+    if is_grok_family:
+        accounts_xai_cookies = filter_domains(
+            all_j2,
+            [lambda d: d.lstrip(".") == "accounts.x.ai" or d.lstrip(".").endswith(".accounts.x.ai")],
         )
-        written.append(str(p))
+        if accounts_xai_cookies:
+            p = write_j2team(
+                services_dir / "accounts.x.ai.json",
+                "https://accounts.x.ai/sign-in",
+                accounts_xai_cookies,
+            )
+            written.append(str(p))
 
     # DeepSeek family
-    is_deepseek_family = "deepseek" in svc_slug or "deepseek" in url.lower()
-    deepseek_signin_cookies = filter_domains(
-        all_j2,
-        [lambda d: d.lstrip(".") in ("deepseek.com", "chat.deepseek.com")],
-    )
-    if is_deepseek_family and deepseek_signin_cookies:
-        p = write_j2team(
-            services_dir / "chat.deepseek.com.json",
-            "https://chat.deepseek.com/sign_in",
-            deepseek_signin_cookies,
+    is_deepseek_family = "deepseek" in svc_slug or "deepseek.com" in url
+    deepseek_signin_cookies: list[dict] = []
+    if is_deepseek_family:
+        deepseek_signin_cookies = filter_domains(
+            all_j2,
+            [lambda d: d.lstrip(".") == "chat.deepseek.com" or d.lstrip(".").endswith(".chat.deepseek.com")],
         )
-        written.append(str(p))
+        if deepseek_signin_cookies:
+            p = write_j2team(
+                services_dir / "chat.deepseek.com.json",
+                "https://chat.deepseek.com/sign_in",
+                deepseek_signin_cookies,
+            )
+            written.append(str(p))
 
-    deepseek_local_storage = extract_deepseek_local_storage(meta) if is_deepseek_family else {}
-    if deepseek_local_storage:
+    # Storage export for any service that has localStorage/sessionStorage
+    local_storage = meta.get("localStorage") or {}
+    session_storage = meta.get("sessionStorage") or {}
+    if not local_storage and is_deepseek_family:
+        local_storage = extract_deepseek_local_storage(meta)
+    if local_storage or session_storage:
+        storage_payload = {"url": url}
+        if local_storage:
+            storage_payload["localStorage"] = local_storage
+        if session_storage:
+            storage_payload["sessionStorage"] = session_storage
         p = write_private_json(
-            services_dir / "deepseek.storage.json",
-            {"url": "https://chat.deepseek.com", "localStorage": deepseek_local_storage},
+            services_dir / f"{svc_slug}.storage.json",
+            storage_payload,
         )
         written.append(str(p))
+        if is_deepseek_family:
+            write_private_json(services_dir / "deepseek.storage.json", storage_payload)
 
     # Domain-focused host file
     if host and host_cookies:
@@ -549,9 +578,8 @@ def export_service_cookies(
         "written": written,
         "auth_cookies": len(auth_cookies) if is_chatgpt_family else None,
         "chatgpt_domain_cookies": len(chatgpt_cookies) if is_chatgpt_family else None,
-        "accounts_xai_cookies": len(accounts_xai_cookies) if is_grok_family else None,
-        "deepseek_signin_cookies": len(deepseek_signin_cookies) if is_deepseek_family else None,
-        "deepseek_local_storage_keys": len(deepseek_local_storage) if deepseek_local_storage else None,
+        "local_storage_keys": len(local_storage) if local_storage else None,
+        "session_storage_keys": len(session_storage) if session_storage else None,
     }
 
 

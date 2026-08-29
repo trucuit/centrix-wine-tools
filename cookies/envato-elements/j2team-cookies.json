@@ -3,7 +3,7 @@
   "cookies": [
     {
       "domain": ".noxtools.com",
-      "expirationDate": 1789662006.498,
+      "expirationDate": 1790435056.776,
       "hostOnly": false,
       "httpOnly": true,
       "name": "PHPSESSID",
@@ -16,7 +16,7 @@
     },
     {
       "domain": ".noxtools.com",
-      "expirationDate": 1789662006.498,
+      "expirationDate": 1790435056.776,
       "hostOnly": false,
       "httpOnly": true,
       "name": "amember_nr",

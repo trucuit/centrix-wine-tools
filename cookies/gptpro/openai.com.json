@@ -1,0 +1,54 @@
+[
+  {
+    "domain": ".openai.com",
+    "expirationDate": 1818926032.929769,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "oai-did",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": false,
+    "session": false,
+    "storeId": "0",
+    "value": "e78c5268-1e7b-4257-8c22-47a4543d5206"
+  },
+  {
+    "domain": ".openai.com",
+    "expirationDate": 1818926032.930361,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "oaicom-stable-id",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "f92ade31-24cd-478d-a740-717d52ee68d2"
+  },
+  {
+    "domain": ".openai.com",
+    "expirationDate": 1818926039.507593,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "oai-sc",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "0gAAAAABqiWhXHtWl3PAqd-aoMiGKgBrDiK2EHLxE3Mhu4lcdi0zUxtenos0Ykv8fhtPu8CkNhTLcltxeVR2y8HUQrxCI79Pmp_yfpbUKMd1WMLVblRfvtG2oh_5N-Kdm64wnA-LoqDReYSY6a-sPGEBeAIWhMcPT7ae7tz90X4pWGmfAIhjm8sg-Y6WA6PuzIGhKIInNwocswXUkhgQntexgXV-O8lqeoZQUNWNq0dW9FRAU6A1c6D-0YkDis-LYt58bxYSbKLkj"
+  },
+  {
+    "domain": ".openai.com",
+    "expirationDate": 1790265044.689,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "_cfuvid",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": true,
+    "storeId": "0",
+    "value": "vJS2Adwrv1CUKXAdyuvwQVdRJThh1tSsD5HFCEcWApE-1787486280.1481307-1.0.1.1-9zJtKcLsK61JAWVGFJtpddMge31f399W3cgGryP0oIM"
+  }
+]

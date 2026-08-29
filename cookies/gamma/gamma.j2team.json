@@ -1,12 +1,9 @@
 {
-  "url": "https://gamma.app/vi",
-  "serviceId": "gamma",
-  "serviceName": "gamma",
-  "exportedAt": "2026-08-22T14:08:49.191990+00:00",
+  "url": "https://gamma.app/",
   "cookies": [
     {
       "domain": ".gamma.app",
-      "expirationDate": 1818036704,
+      "expirationDate": 1818036704.859733,
       "hostOnly": false,
       "httpOnly": false,
       "name": "gamma_visitor_id",
@@ -32,7 +29,7 @@
     },
     {
       "domain": "gamma.app",
-      "expirationDate": 1815314795,
+      "expirationDate": 1815012724,
       "hostOnly": true,
       "httpOnly": false,
       "name": "gammaLocale",
@@ -45,7 +42,7 @@
     },
     {
       "domain": ".gamma.app",
-      "expirationDate": 1815314797,
+      "expirationDate": 1815012724,
       "hostOnly": false,
       "httpOnly": false,
       "name": "ajs_anonymous_id",
@@ -58,7 +55,7 @@
     },
     {
       "domain": ".gamma.app",
-      "expirationDate": 1815012706,
+      "expirationDate": 1815012706.02362,
       "hostOnly": false,
       "httpOnly": true,
       "name": "cf_clearance",
@@ -110,7 +107,7 @@
     },
     {
       "domain": ".gamma.app",
-      "expirationDate": null,
+      "expirationDate": 1790435056.765,
       "hostOnly": false,
       "httpOnly": false,
       "name": "cebs",
@@ -136,7 +133,7 @@
     },
     {
       "domain": ".gamma.app",
-      "expirationDate": 1818036715,
+      "expirationDate": 1818036715.680282,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga",
@@ -146,6 +143,19 @@
       "session": false,
       "storeId": "0",
       "value": "GA1.1.334174098.1783476707"
+    },
+    {
+      "domain": ".gamma.app",
+      "expirationDate": 1783563107,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_ce.clock_data",
+      "path": "/",
+      "sameSite": "strict",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "641%2C42.118.190.96%2C1%2C02f319b1f72138e420f401342b2c6ae4%2CElectron%2CVN"
     },
     {
       "domain": "gamma.app",
@@ -201,6 +211,19 @@
     },
     {
       "domain": ".gamma.app",
+      "expirationDate": 1815012714,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "OptanonConsent",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "isGpcEnabled=0&datestamp=Wed+Jul+08+2026+09%3A11%3A54+GMT%2B0700+(Indochina+Time)&version=202509.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=46a19335-9a85-464d-b745-4de3f26d89ad&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A1%2CC0002%3A1%2CC0004%3A1&intType=1&geolocation=VN%3B61&AwaitingReconsent=false"
+    },
+    {
+      "domain": ".gamma.app",
       "expirationDate": 1791252714,
       "hostOnly": false,
       "httpOnly": false,
@@ -240,7 +263,20 @@
     },
     {
       "domain": ".gamma.app",
-      "expirationDate": null,
+      "expirationDate": 1783563116,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_uetsid",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "5f3e17607a7211f19fb67f0009755585|w4gnao|2|g7k|0|2380"
+    },
+    {
+      "domain": ".gamma.app",
+      "expirationDate": 1790435056.765,
       "hostOnly": false,
       "httpOnly": false,
       "name": "cebsp_",
@@ -304,8 +340,34 @@
       "value": "1783476706877::6lkryF-fd6z15YgD7gvL.1.1783476719541.0::1.9283.9218::12681.10.241.613::0.0.0"
     },
     {
+      "domain": ".api.gamma.app",
+      "expirationDate": 1818036720.935241,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "gamma_session",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJwYXNzcG9ydCI6eyJ1c2VyIjp7ImlkIjoia25tY2JmZTNvMXlrYzh3IiwiYWNjZXNzX3Rva2VuIjoiZXlKcmFXUWlPaUpWUms5bWJqUXJaR3RGUkVwdk9ITlFMM1puVFhsaU0xUldhRVZTVlRSS1dFMTVLelUxWTJRMlFtcEJQU0lzSW1Gc1p5STZJbEpUTWpVMkluMC5leUp6ZFdJaU9pSTBNbVl3TW1ObE9DMWpZakV3TFRSa1pqRXRPR1JtWVMweE5XWXlZVGhtWVRnMU1UTWlMQ0pwYzNNaU9pSm9kSFJ3Y3pvdkwyTnZaMjVwZEc4dGFXUndMblZ6TFdWaGMzUXRNaTVoYldGNmIyNWhkM011WTI5dEwzVnpMV1ZoYzNRdE1sOHliMncyVWtKT2VWa2lMQ0pqYkdsbGJuUmZhV1FpT2lJeU1YQmhjekJsTVdGMFpIQnRNbWRpYW1Gdk5qYzVhR05oYlNJc0ltOXlhV2RwYmw5cWRHa2lPaUkwWWpneFpHSmxaaTFrWlRWa0xUUTRaak10WVdNd1pTMDVOakU0TmpKak9UWmxZbVlpTENKbGRtVnVkRjlwWkNJNkltTXlaREl6TmpreExUQTVNakF0TkRNeVl5MWhOamt3TFRJek1XWTVOR1ExTURka1lpSXNJblJ2YTJWdVgzVnpaU0k2SW1GalkyVnpjeUlzSW5OamIzQmxJam9pWVhkekxtTnZaMjVwZEc4dWMybG5ibWx1TG5WelpYSXVZV1J0YVc0aUxDSmhkWFJvWDNScGJXVWlPakUzT0RNME56WTNNakFzSW1WNGNDSTZNVGM0TXpVd05UVXlNQ3dpYVdGMElqb3hOemd6TkRjMk56SXdMQ0pxZEdraU9pSm1NVGcxTnpWbU5DMDFZemsxTFRRNE5XWXRPVFppWkMwd05UZzNOMkZqTW1FNE5qVWlMQ0oxYzJWeWJtRnRaU0k2SWpReVpqQXlZMlU0TFdOaU1UQXROR1JtTVMwNFpHWmhMVEUxWmpKaE9HWmhPRFV4TXlKOS5wWVlmUDlmcmZfOXlRVUNDUzhiZzJILU9HVnRTNDJhaDQtQi1RVkc3LVFPa2JiUUM3d2s4TE4ySWxHQ250b0NEMXYwQ0JyckZhTER3ZWhtdkN2RnVBdlU3RmVDT3VkUGdKQWVsaWVROFVFTHY4RzlnbTFJMnJSZTNVMk84TmNhMXlYby1Xelc0NkVGNzRlZENNRHRoYXdiOGdPb1ZQSHB3eWlnVjJackN5SnppNFZBVy03NDhKcVF3RkUyRVl4VnB6REd0WjgyUVRyYU9sZDQwWFI1ellmd2NBcnE3Tl9CNVN1VDM3SEhwUmRXWnZ0U3k5QTZqXzUzRlNpUWc1OFdRdkVobDYxcThsUTJIa3ZmajIzTUFUYlVzQUtOeHZYcXVNc00xRGh5cFVfZWtwdG1KMTlaaXFqRC1KYUVtdHIxdGhfVkExZnl6TXgxZVF2NjVHaDB2RWciLCJ1c2VyaW5mbyI6eyJ1c2VybmFtZSI6IjQyZjAyY2U4LWNiMTAtNGRmMS04ZGZhLTE1ZjJhOGZhODUxMyIsIm5hbWUiOiJjZW50cml4IGNlbnRyaXgiLCJnaXZlbl9uYW1lIjoiY2VudHJpeCIsImZhbWlseV9uYW1lIjoiY2VudHJpeCIsInBpY3R1cmUiOm51bGwsImlzcyI6Imh0dHBzOi8vY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb20vdXMtZWFzdC0yXzJvbDZSQk55WSIsInN1YiI6IjQyZjAyY2U4LWNiMTAtNGRmMS04ZGZhLTE1ZjJhOGZhODUxMyIsImVtYWlsX3ZlcmlmaWVkIjoidHJ1ZSIsImVtYWlsIjoiZ2FtbWFAY2VudHJpeC5pbSJ9fX19"
+    },
+    {
+      "domain": ".api.gamma.app",
+      "expirationDate": 1818036720.935308,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "gamma_session.sig",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "9cVGvjJn78G8CKRwmr2718OC2Ng"
+    },
+    {
       "domain": ".gamma.app",
-      "expirationDate": 1818338797,
+      "expirationDate": 1818036725.663702,
       "hostOnly": false,
       "httpOnly": false,
       "name": "gamma_logged_in",
@@ -318,7 +380,7 @@
     },
     {
       "domain": ".gamma.app",
-      "expirationDate": 1815314797,
+      "expirationDate": 1815012724,
       "hostOnly": false,
       "httpOnly": false,
       "name": "ajs_user_id",
@@ -331,7 +393,7 @@
     },
     {
       "domain": ".gamma.app",
-      "expirationDate": 1818036721,
+      "expirationDate": 1818036721.407387,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga_JTMLK9TNNV",
@@ -341,6 +403,19 @@
       "session": false,
       "storeId": "0",
       "value": "GS2.1.s1783476706$o1$g1$t1783476721$j45$l0$h522580569"
+    },
+    {
+      "domain": ".gamma.app",
+      "expirationDate": 1783478525.290008,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "6KQXYeaYrQYBxy389hPBcw_xbbdAwKi3hJvcO4ShGeY-1783476724.6659796-1.0.1.1-ZYipEeV_Sk_zDCcLD.Xtmh34I6UFxTZZefF9tddoPfzWlkpf9jw_jUrO_C88HF5tqfeYeAsIaLBSdLwi282Fmxdd3KI6gjm1E5NgXgTHeyGee5qjo_I2LE9EVRl1z8z_"
     },
     {
       "domain": ".gamma.app",
@@ -357,7 +432,7 @@
     },
     {
       "domain": "gamma.app",
-      "expirationDate": 1815314795,
+      "expirationDate": 1815012735,
       "hostOnly": true,
       "httpOnly": false,
       "name": "_dd_s",
@@ -366,46 +441,7 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "aid=c7002518-75fd-46bc-9cf7-37fa2082fcec&logs=1&id=984f18a5-eff1-43bd-802d-0f04ef15ac2b&created=1783778795581&expire=1783779695581"
-    },
-    {
-      "domain": ".gamma.app",
-      "expirationDate": 1815314796,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "cf_clearance",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "VxP1dMediMHuld7z7LqI.yRkzartg69wE5xX_34QqrY-1783778796-1.2.1.1-fPo3qfcK76z1qOhX.AhTDWt96psNaVbyRIaheZohRgl_JluVvOHH8M2pPeT1Ir1_4xeK3_LoBNqNTpMD.53_cpz_Gi3D.fK_OmTklRHK9n1jx3ZB3aJvItEzLG8l9JLX.TKa8QXH88Lrmig0JyhO1Sflo2Ogg3u0pF1OrPwCadGTkFiWGnzhCTkxDp0IFjU.gQw3Dka2y5MbEExEnA5XgkJg43PuyDfLjLWlsK3M_VMU0_ppaGpLN5QfAqCoL.O_rk1eypidNzlzZiPiolzBLU9NIClVqj.Ofdj9ZJoBPVsVwvFTMfVfYe0fbCtpb6MHFS1QMM8cSsUtusxJbbaqXQ"
-    },
-    {
-      "domain": ".gamma.app",
-      "expirationDate": 1783780597,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "__cf_bm",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "pHwcnbLFRgTuLZ.RbJ.opsZuXmowtFGMz2jbDnPLsPI-1783778797.286247-1.0.1.1-YR4Mpx.qflClXBXAqHyTc8FzYzUaUBUGgP2H642nLJMuuZ3Vr4D4drHdUeiGB0Z3d2GFkhtvaPeYyIgFoXHWQ8jKuPsucfPJM1ABzK3J10rwTmgbQYOetBaDOB3LcFF4"
-    },
-    {
-      "domain": ".gamma.app",
-      "expirationDate": 1815314802,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "OptanonConsent",
-      "path": "/",
-      "sameSite": "lax",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "isGpcEnabled=0&datestamp=Sat+Jul+11+2026+21%3A06%3A42+GMT%2B0700+(GMT%2B07%3A00)&version=202509.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=46a19335-9a85-464d-b745-4de3f26d89ad&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A1%2CC0002%3A1%2CC0004%3A1&intType=1&geolocation=VN%3B61&AwaitingReconsent=false"
+      "value": "aid=c7002518-75fd-46bc-9cf7-37fa2082fcec&logs=1&id=eff2feb7-bbfd-4654-8a43-86de0667a353&created=1783476714644&expire=1783477635482"
     }
   ]
 }

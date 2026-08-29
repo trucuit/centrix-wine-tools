@@ -94,7 +94,7 @@
     },
     {
       "domain": ".poe.com",
-      "expirationDate": 1789662006.319,
+      "expirationDate": 1790435056.761,
       "hostOnly": false,
       "httpOnly": true,
       "name": "m-lat",
@@ -237,7 +237,7 @@
     },
     {
       "domain": "www.capcut.com",
-      "expirationDate": 1789662006.319,
+      "expirationDate": 1790435056.761,
       "hostOnly": true,
       "httpOnly": false,
       "name": "s_v_web_id",
@@ -250,7 +250,7 @@
     },
     {
       "domain": "www.capcut.com",
-      "expirationDate": 1789662006.319,
+      "expirationDate": 1790435056.761,
       "hostOnly": true,
       "httpOnly": false,
       "name": "_ut",
@@ -549,7 +549,7 @@
     },
     {
       "domain": "www.capcut.com",
-      "expirationDate": 1789662006.319,
+      "expirationDate": 1790435056.761,
       "hostOnly": true,
       "httpOnly": false,
       "name": "x-web-secsdk-uid",
@@ -588,7 +588,7 @@
     },
     {
       "domain": "www.capcut.com",
-      "expirationDate": 1789662006.319,
+      "expirationDate": 1790435056.761,
       "hostOnly": true,
       "httpOnly": false,
       "name": "CAPCUT_THEME",

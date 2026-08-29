@@ -114,13 +114,21 @@ centrix_export_init() {
     _wine_user_base="${_wine_user_base:-$WINEPREFIX/drive_c/users/$USER}"
   fi
 
-  APP_DIR="${APP_DIR:-${_wine_user_base}/AppData/Local/Programs/CentriX App User}"
+  if [[ -z "${APP_DIR:-}" ]]; then
+    if [[ -d "${_wine_user_base}/AppData/Local/Programs/CentriX App User" ]]; then
+      APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX App User"
+    elif [[ -d "${_wine_user_base}/AppData/Local/Programs/CentriX" ]]; then
+      APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX"
+    else
+      APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX App User"
+    fi
+  fi
   ASAR="${ASAR:-$APP_DIR/resources/app.asar}"
   ASAR_BAK="${ASAR_BAK:-$APP_DIR/resources/app.asar.bak-cookie-export}"
   APP_ASAR="${APP_ASAR:-$ASAR}"
 
   if [[ -z "${USERDATA:-}" ]]; then
-    # v0.1.339+ uses centrix-ai-frontend; older builds used mkvhszparoue
+    # v0.1.339/0.1.346 uses centrix-ai-frontend; older builds used mkvhszparoue
     if [[ -d "${_wine_user_base}/AppData/Roaming/centrix-ai-frontend" ]]; then
       USERDATA="${_wine_user_base}/AppData/Roaming/centrix-ai-frontend"
     else

@@ -10,12 +10,10 @@ import { pathToFileURL } from "node:url";
 import { stdin as input, stdout as output } from "node:process";
 
 const SERVICE_CONFIG = {
-  chatgpt: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
-  gptpro: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"] },
+  // Single canonical ChatGPT Pro entry. Cookies live in cookies/gptpro/ (source).
+  // Legacy ids (chatgpt, gptpro, pro, …) still work via SERVICE_ALIASES but are
+  // hidden from the menu so the list shows one ChatGPT entry, not six.
   "chatgpt-pro": { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "gptpro" },
-  "gpt-pro": { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "gptpro" },
-  chatgptpro: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "gptpro" },
-  pro: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com"], source: "gptpro" },
   notebooklm: { url: "https://chatgpt.com", domains: ["chatgpt.com", "openai.com", "notebooklm.google.com", "google.com"] },
   claude: { url: "https://claude.ai", domains: ["claude.ai", "anthropic.com"] },
   gemini: { url: "https://gemini.google.com", domains: ["gemini.google.com", "google.com"] },
@@ -36,6 +34,24 @@ const SERVICE_CONFIG = {
   zoom: { url: "https://zoom.us", domains: ["zoom.us"] },
 };
 
+// Legacy / typo ids that all mean the one ChatGPT Pro pool slot. Kept so old
+// commands and the export folder name (gptpro) keep working; not shown in menu.
+const SERVICE_ALIASES = {
+  chatgpt: "chatgpt-pro",
+  gptpro: "chatgpt-pro",
+  "gpt-pro": "chatgpt-pro",
+  chatgptpro: "chatgpt-pro",
+  chatgpt_pro: "chatgpt-pro",
+  pro: "chatgpt-pro",
+  gpt: "chatgpt-pro",
+};
+
+/** Map a user/cache-supplied id to its canonical SERVICE_CONFIG key. */
+function resolveServiceId(id) {
+  const key = String(id || "").trim().toLowerCase();
+  return SERVICE_ALIASES[key] || key;
+}
+
 /**
  * Load .centrix-services-cache.json and override SERVICE_CONFIG URLs.
  * Pool slots get reassigned (e.g. notebooklm → chatgpt.com), so the cache
@@ -47,22 +63,26 @@ async function applyCacheOverrides(cookiesDir) {
     const raw = JSON.parse(await readFile(cacheFile, "utf8"));
     for (const svc of raw.services || []) {
       if (!svc.id || !svc.url) continue;
+      // Fold aliased cache ids (e.g. chatgpt) into the canonical key so they
+      // update chatgpt-pro instead of re-adding a duplicate menu entry.
+      const id = resolveServiceId(svc.id);
+      const isAlias = id !== String(svc.id).trim().toLowerCase();
       const targetUrl = svc.url.replace(/\/$/, "");
       let rootHost = "";
       try {
         const host = new URL(targetUrl).hostname;
         rootHost = host.replace(/^www\./, "");
       } catch {}
-      if (SERVICE_CONFIG[svc.id]) {
-        SERVICE_CONFIG[svc.id].url = targetUrl;
+      if (SERVICE_CONFIG[id]) {
+        SERVICE_CONFIG[id].url = targetUrl;
         if (targetUrl.includes("chatgpt.com")) {
-          SERVICE_CONFIG[svc.id].domains = ["chatgpt.com", "openai.com"];
-        } else if (rootHost && !SERVICE_CONFIG[svc.id].domains.some((d) => rootHost.endsWith(d) || d.endsWith(rootHost))) {
-          SERVICE_CONFIG[svc.id].domains = [rootHost];
+          SERVICE_CONFIG[id].domains = ["chatgpt.com", "openai.com"];
+        } else if (rootHost && !SERVICE_CONFIG[id].domains.some((d) => rootHost.endsWith(d) || d.endsWith(rootHost))) {
+          SERVICE_CONFIG[id].domains = [rootHost];
         }
-      } else if (rootHost) {
-        // New service from cache — add with URL-derived domain
-        SERVICE_CONFIG[svc.id] = { url: targetUrl, domains: [rootHost] };
+      } else if (rootHost && !isAlias) {
+        // New non-alias service from cache — add with URL-derived domain
+        SERVICE_CONFIG[id] = { url: targetUrl, domains: [rootHost] };
       }
     }
   } catch { /* cache missing or invalid — use hardcoded defaults */ }
@@ -379,22 +399,59 @@ export async function loadServiceCookies(serviceDir, allowedDomains, mode = "ser
 }
 
 export async function loadServiceStorage(serviceDir, service) {
-  if (service !== "deepseek") return {};
-  try {
-    const parsed = JSON.parse(await readFile(resolve(serviceDir, "deepseek.storage.json"), "utf8"));
-    if (new URL(parsed.url).origin !== "https://chat.deepseek.com" || typeof parsed.localStorage !== "object") return {};
-    return Object.fromEntries(Object.entries(parsed.localStorage).filter(([key, value]) => DEEPSEEK_STORAGE_KEYS.has(key) && typeof value === "string" && value));
-  } catch (error) {
-    if (error?.code === "ENOENT") return {};
-    throw error;
+  const candidates = [
+    resolve(serviceDir, `${service}.storage.json`),
+    resolve(serviceDir, "deepseek.storage.json"),
+    resolve(serviceDir, `${service}.full.json`),
+  ];
+  for (const file of candidates) {
+    try {
+      const parsed = JSON.parse(await readFile(file, "utf8"));
+      if (parsed.localStorage && typeof parsed.localStorage === "object") {
+        const entries = Object.entries(parsed.localStorage).filter(
+          ([key, value]) => typeof value === "string" && value != null
+        );
+        if (entries.length > 0) {
+          return Object.fromEntries(entries);
+        }
+      }
+    } catch (error) {
+      if (error?.code !== "ENOENT") {
+        /* ignore */
+      }
+    }
   }
+  return {};
+}
+
+/** Load sessionStorage entries from the same storage/full sidecars. */
+export async function loadServiceSessionStorage(serviceDir, service) {
+  const candidates = [
+    resolve(serviceDir, `${service}.storage.json`),
+    resolve(serviceDir, `${service}.full.json`),
+  ];
+  for (const file of candidates) {
+    try {
+      const parsed = JSON.parse(await readFile(file, "utf8"));
+      if (parsed.sessionStorage && typeof parsed.sessionStorage === "object") {
+        const entries = Object.entries(parsed.sessionStorage).filter(
+          ([, value]) => typeof value === "string" && value != null
+        );
+        if (entries.length > 0) return Object.fromEntries(entries);
+      }
+    } catch (error) {
+      if (error?.code !== "ENOENT") {
+        /* ignore */
+      }
+    }
+  }
+  return {};
 }
 
 function parseArgs(argv) {
   const options = {
     service: "",
-    mode: "service", // "service" | "full"
-    modeExplicit: false,
+    mode: "full", // always full — service (host-scoped) mode was removed
     pick: false,
     cookiesDir: resolve(process.env.CENTRIX_COOKIES_DIR || "cookies"),
     profileDir: resolve(process.env.CENTRIX_CHROME_PROFILE || ".chrome-cookie-profile"),
@@ -412,14 +469,10 @@ function parseArgs(argv) {
     else if (flag === "--profile-dir") options.profileDir = resolve(args.shift() || "");
     else if (flag === "--port") options.port = Number(args.shift());
     else if (flag === "--chrome") options.chrome = resolve(args.shift() || "");
-    else if (flag === "--mode") {
-      const mode = String(args.shift() || "").toLowerCase();
-      if (mode !== "service" && mode !== "full") throw new Error(`Invalid --mode ${mode}. Use service or full.`);
-      options.mode = mode;
-      options.modeExplicit = true;
-    }
-    else if (flag === "--full") { options.mode = "full"; options.modeExplicit = true; }
-    else if (flag === "--mode-service") { options.mode = "service"; options.modeExplicit = true; }
+    // Mode is fixed to full. Old flags are accepted (and their arg consumed)
+    // for command compatibility but no longer change behavior.
+    else if (flag === "--mode") { args.shift(); }
+    else if (flag === "--full" || flag === "--mode-service") { /* no-op: always full */ }
     else if (flag === "--pick" || flag === "-i" || flag === "--interactive") options.pick = true;
     else if (flag === "--no-open") options.open = false;
     else if (flag === "--json") options.json = true;
@@ -483,31 +536,23 @@ function printServiceMenu(rows) {
   console.log("");
 }
 
-function printModeMenu() {
-  console.log("");
-  console.log("Chọn cookie source:");
-  console.log("  1) service  — scoped JSON (an toàn inject, mặc định)");
-  console.log("  2) full     — *.full.json (raw partition dump)");
-  console.log("");
-}
-
 async function promptLine(rl, question) {
   const answer = await rl.question(question);
   return String(answer || "").trim();
 }
 
 /**
- * Interactive: pick service id + mode (service|full).
+ * Interactive: pick service id. Cookie source is always full.
  * Returns { service, mode } or null if cancelled.
  */
-export async function interactivePick(cookiesDir, { needService = true, needMode = true } = {}) {
+export async function interactivePick(cookiesDir, { needService = true } = {}) {
   if (!input.isTTY || !output.isTTY) {
-    throw new Error("Interactive pick requires a TTY. Pass <service> and optionally --mode service|full.");
+    throw new Error("Interactive pick requires a TTY. Pass <service> as an argument.");
   }
   const rl = createInterface({ input, output });
   try {
     let service = "";
-    let mode = "service";
+    const mode = "full";
 
     if (needService) {
       const rows = await listImportableServices(cookiesDir);
@@ -528,22 +573,11 @@ export async function interactivePick(cookiesDir, { needService = true, needMode
           } else {
             console.log("  Số không hợp lệ.");
           }
-        } else if (SERVICE_CONFIG[ans]) {
-          service = ans;
+        } else if (SERVICE_CONFIG[resolveServiceId(ans)]) {
+          service = resolveServiceId(ans);
         } else {
           console.log(`  Unknown service: ${ans}. Supported: ${Object.keys(SERVICE_CONFIG).join(", ")}`);
         }
-      }
-    }
-
-    if (needMode) {
-      printModeMenu();
-      while (true) {
-        const ans = await promptLine(rl, "Chọn mode [1/service, 2/full] (Enter = service): ");
-        if (!ans || ans === "1" || ans === "s" || ans === "service") { mode = "service"; break; }
-        if (ans === "2" || ans === "f" || ans === "full") { mode = "full"; break; }
-        if (ans === "q" || ans === "Q") return null;
-        console.log("  Chọn 1 (service) hoặc 2 (full).");
       }
     }
 
@@ -615,9 +649,10 @@ async function openOrReload(port, targetUrl, browserCdp) {
   return "reloaded";
 }
 
-async function applyLocalStorage(port, targetUrl, entries) {
+async function applyLocalStorage(port, targetUrl, entries, sessionEntries = {}) {
   const expectedKeys = Object.keys(entries);
-  if (!expectedKeys.length) return 0;
+  const sessionKeys = Object.keys(sessionEntries);
+  if (!expectedKeys.length && !sessionKeys.length) return 0;
   const host = new URL(targetUrl).hostname;
 
   // Retry outer loop: page may redirect or reload after cookie inject (e.g. DeepSeek sign_in → chat).
@@ -649,11 +684,18 @@ async function applyLocalStorage(port, targetUrl, entries) {
         await new Promise((r) => setTimeout(r, 200));
       }
 
-      // 3. Set localStorage
+      // 3. Set localStorage + sessionStorage in one evaluate
       const serialized = JSON.stringify(JSON.stringify(entries));
+      const sessionSerialized = JSON.stringify(JSON.stringify(sessionEntries));
       const result = await pageCdp.call("Runtime.evaluate", {
         returnByValue: true,
-        expression: `(() => { try { const entries = JSON.parse(${serialized}); for (const [key, value] of Object.entries(entries)) localStorage.setItem(key, value); return Object.keys(entries).filter((key) => localStorage.getItem(key) === entries[key]).length; } catch { return 0; } })()`,
+        expression: `(() => { try {
+          const ls = JSON.parse(${serialized});
+          for (const [key, value] of Object.entries(ls)) localStorage.setItem(key, value);
+          const ss = JSON.parse(${sessionSerialized});
+          for (const [key, value] of Object.entries(ss)) { try { sessionStorage.setItem(key, value); } catch {} }
+          return Object.keys(ls).filter((key) => localStorage.getItem(key) === ls[key]).length;
+        } catch { return 0; } })()`,
       });
       const applied = Number(result.result?.value || 0);
       if (applied === expectedKeys.length) {
@@ -677,14 +719,11 @@ function usage() {
        ./import-cookies-to-chrome.sh              # interactive menu (TTY)
        ./import-cookies-to-chrome.sh --pick       # force interactive menu
 
-Cookie source:
-  --mode service|full   service = scoped JSON (default, safe inject)
-                        full    = only *.full.json (raw dump, still domain-filtered)
-  --mode-service        same as --mode service
-  --full                same as --mode full
+Cookie source: always full (*.full.json — raw partition dump, most complete).
+  --full, --mode …      accepted for compatibility, ignored (always full)
 
 Options:
-  -i, --pick            Interactive: chọn service + mode
+  -i, --pick            Interactive: chọn service
   --cookies-dir <path>  Cookie root (default: ./cookies)
   --profile-dir <path>  Isolated Chrome profile
   --port <number>       CDP port (default: 9222)
@@ -694,10 +733,9 @@ Options:
   --json                Machine-readable result
 
 Examples:
-  ./import-cookies-to-chrome.sh                 # menu chọn service + mode
-  ./import-cookies-to-chrome.sh grok
-  ./import-cookies-to-chrome.sh grok --full
-  ./import-cookies-to-chrome.sh chatgpt --mode full --dry-run`;
+  ./import-cookies-to-chrome.sh                 # menu chọn service (full)
+  ./import-cookies-to-chrome.sh gptpro
+  ./import-cookies-to-chrome.sh chatgpt-pro --dry-run`;
 }
 
 async function main() {
@@ -716,22 +754,20 @@ async function main() {
     }
     const picked = await interactivePick(options.cookiesDir, {
       needService: !options.service,
-      needMode: !options.modeExplicit,
     });
     if (!picked) { console.log("Cancelled."); process.exitCode = 0; return; }
     if (!options.service) options.service = picked.service;
-    if (!options.modeExplicit) options.mode = picked.mode;
   }
 
   if (!options.service) { console.log(usage()); process.exitCode = 2; return; }
+  options.service = resolveServiceId(options.service);
   const config = SERVICE_CONFIG[options.service];
   if (!config) throw new Error(`Unsupported service: ${options.service}. Supported: ${Object.keys(SERVICE_CONFIG).join(", ")}`);
   const sourceService = config.source || options.service;
   const serviceDir = resolve(options.cookiesDir, sourceService);
   const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode, sourceService);
-  const localStorageEntries = options.mode === "service"
-    ? await loadServiceStorage(serviceDir, sourceService)
-    : {};
+  const localStorageEntries = await loadServiceStorage(serviceDir, sourceService);
+  const sessionStorageEntries = await loadServiceSessionStorage(serviceDir, sourceService);
   if (!loaded.cookies.length) {
     const hint = options.mode === "full"
       ? `No valid cookies in ${sourceService}/*.full.json (mode=full).`
@@ -743,7 +779,8 @@ async function main() {
       service: options.service, sourceService, mode: options.mode, dryRun: true,
       files: loaded.files, sourceFiles: loaded.sourceFiles, cookies: loaded.cookies.length,
       authOpenai: loaded.cookies.filter((c) => String(c.domain).includes("auth.openai")).length,
-      localStorageKeys: Object.keys(localStorageEntries).length, rejected: loaded.rejected,
+      localStorageKeys: Object.keys(localStorageEntries).length,
+      sessionStorageKeys: Object.keys(sessionStorageEntries).length, rejected: loaded.rejected,
     }, null, options.json ? 0 : 2));
     return;
   }
@@ -763,13 +800,15 @@ async function main() {
       throw new Error(`Cookie verification failed: expected ${expected.size}, found ${verified} (via ${injectMethod}).`);
     }
     if (options.open) action = await openOrReload(options.port, config.url, cdp);
-    if (options.open && Object.keys(localStorageEntries).length) {
-      localStorageApplied = await applyLocalStorage(options.port, config.url, localStorageEntries);
+    if (options.open && (Object.keys(localStorageEntries).length || Object.keys(sessionStorageEntries).length)) {
+      localStorageApplied = await applyLocalStorage(options.port, config.url, localStorageEntries, sessionStorageEntries);
       action = `${action}+storage`;
     }
     console.log(JSON.stringify({
       service: options.service, sourceService, mode: options.mode, imported: expected.size,
-      injectMethod, localStorageApplied, files: loaded.files, sourceFiles: loaded.sourceFiles,
+      injectMethod, localStorageApplied,
+      sessionStorageKeys: Object.keys(sessionStorageEntries).length,
+      files: loaded.files, sourceFiles: loaded.sourceFiles,
       authOpenai: loaded.cookies.filter((c) => String(c.domain).includes("auth.openai")).length,
       rejected: loaded.rejected, action,
       profileDir: options.profileDir, target: config.url,

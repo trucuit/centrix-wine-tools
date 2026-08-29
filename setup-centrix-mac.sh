@@ -231,11 +231,15 @@ install_centrix() {
   fi
 
   log "Closing any running CentriX instances…"
-  ps -axo pid=,command= | while read -r pid cmd; do
+  # match only real CentriX Wine processes; a broad *centrix* would also match
+  # this script, tee, invoking shells, log paths — killing the caller mid-run.
+  # process substitution avoids the ps|while pipeline that trips set -o pipefail on read EOF.
+  while read -r pid cmd; do
     case "$cmd" in
-      *CentriX*|*centrix*) [[ "$pid" != "$$" ]] && kill -9 "$pid" 2>/dev/null || true ;;
+      *"CentriX App User.exe"*|*centrix-shutdown*|*"CentriX-Setup-"*.exe*)
+        [[ "$pid" != "$$" ]] && kill -9 "$pid" 2>/dev/null || true ;;
     esac
-  done
+  done < <(ps -axo pid=,command=)
   sleep 1
 
   log "Initializing Wine prefix (first run can take 1–2 min)…"

@@ -16,7 +16,7 @@
     },
     {
       "domain": "chat.deepseek.com",
-      "expirationDate": 1789662006.226,
+      "expirationDate": 1790435056.751,
       "hostOnly": true,
       "httpOnly": true,
       "name": "ds_session_id",

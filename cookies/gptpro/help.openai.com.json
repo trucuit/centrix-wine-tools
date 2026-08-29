@@ -1,0 +1,28 @@
+[
+  {
+    "domain": "help.openai.com",
+    "expirationDate": 1819022281.490064,
+    "hostOnly": true,
+    "httpOnly": false,
+    "name": "oai-did",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "e78c5268-1e7b-4257-8c22-47a4543d5206"
+  },
+  {
+    "domain": "help.openai.com",
+    "expirationDate": 1819022280.667513,
+    "hostOnly": true,
+    "httpOnly": true,
+    "name": "__session",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "eyJzZXNzaW9uSWQiOiI2ODA1NTA5Yy04MWJkLTQ5MjUtYTM0Yy00MGFjZWViNDYzOTIifQ%3D%3D.Sak5NKGacNUJyYlGr%2Bro2w63P%2Fd%2B7l1Y7rT3blkJHkA"
+  }
+]

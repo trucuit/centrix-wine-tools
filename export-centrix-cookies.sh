@@ -204,7 +204,7 @@ try {
   sessionCookiesHelper = require("./session-cookies.cjs");
 } catch(e) {}
 
-function writeDump(serviceId, cookies, localStorage, origin) {
+function writeDump(serviceId, cookies, localStorage, sessionStorage, origin, extraMeta) {
   if (!ud) {
     try { ud = electron.app.getPath("userData"); } catch(e) {}
   }
@@ -221,7 +221,9 @@ function writeDump(serviceId, cookies, localStorage, origin) {
       serviceName: serviceId,
       exportedAt: new Date().toISOString(),
       cookies: list,
-      localStorage: localStorage || {}
+      localStorage: (localStorage && typeof localStorage === "object") ? localStorage : {},
+      sessionStorage: (sessionStorage && typeof sessionStorage === "object") ? sessionStorage : {},
+      meta: (extraMeta && typeof extraMeta === "object") ? extraMeta : {}
     };
     fs.writeFileSync(tmp, JSON.stringify(payload, null, 2), { mode: 384 });
     fs.renameSync(tmp, out);
@@ -229,13 +231,13 @@ function writeDump(serviceId, cookies, localStorage, origin) {
     try {
       fs.writeFileSync(path.join(ud, "COOKIE_DUMP_LATEST.txt"), serviceId + "\n" + base + "\n" + list.length + "\n", { mode: 384 });
     } catch(e) {}
-    log("DUMP SUCCESS: " + serviceId + " -> " + list.length + " cookies");
+    log("DUMP SUCCESS (FULL): " + serviceId + " -> " + list.length + " cookies, " + Object.keys(payload.localStorage).length + " localStorage keys");
   } catch(e) {
     log("DUMP ERROR for " + serviceId + ": " + e);
   }
 }
 
-async function dumpFromSession(serviceId, ses, view) {
+async function dumpFromSession(serviceId, ses, view, extraMeta) {
   if (!ses) return;
   try {
     let cookies = [];
@@ -249,15 +251,48 @@ async function dumpFromSession(serviceId, ses, view) {
         cookies = await ses.cookies.get({});
       } catch(e) {}
     }
+    // Query known SSO origins to capture cross-domain SSO cookies
+    const extraUrls = [
+      "https://chatgpt.com/",
+      "https://auth.openai.com/",
+      "https://chat.openai.com/",
+      "https://openai.com/",
+      "https://claude.ai/",
+      "https://gemini.google.com/",
+      "https://accounts.google.com/",
+      "https://grok.com/",
+      "https://x.ai/",
+      "https://copilot.microsoft.com/",
+      "https://chat.deepseek.com/",
+      "https://www.perplexity.ai/"
+    ];
+    for (const u of extraUrls) {
+      try {
+        const list = await ses.cookies.get({ url: u });
+        if (Array.isArray(list) && list.length > 0) {
+          for (const c of list) {
+            if (!cookies.some(x => x.name === c.name && x.domain === c.domain && x.path === c.path)) {
+              cookies.push(c);
+            }
+          }
+        }
+      } catch(e) {}
+    }
+
     let ls = {};
+    let ss = {};
     if (view && !view.isDestroyed?.()) {
       try {
-        if (serviceId.includes("deepseek")) {
-          ls = await view.executeJavaScript(
-            '(() => { var keys=["userToken","settingsJwt"]; return Object.fromEntries(keys.map(k=>[k,localStorage.getItem(k)]).filter(([,v])=>v!==null)); })()',
-            true
-          ).catch(() => ({}));
-        }
+        ls = await view.executeJavaScript(
+          '(() => { try { return Object.fromEntries(Object.keys(localStorage).map(k => [k, localStorage.getItem(k)])); } catch(e) { return {}; } })()',
+          true
+        ).catch(() => ({}));
+      } catch(e) {}
+      try {
+        ss = await view.executeJavaScript(
+          '(() => { try { return Object.fromEntries(Object.keys(sessionStorage).map(k => [k, sessionStorage.getItem(k)])); } catch(e) { return {}; } })()',
+          true
+        ).catch(() => ({}));
       } catch(e) {}
     }
     let origin = "";
@@ -266,7 +301,7 @@ async function dumpFromSession(serviceId, ses, view) {
       if (url && /^https?:/i.test(url)) origin = new URL(url).origin;
     } catch(e) {}
     if (cookies && cookies.length > 0) {
-      writeDump(serviceId, cookies, ls, origin);
+      writeDump(serviceId, cookies, ls, ss, origin, extraMeta);
     }
   } catch(e) {
     log("dumpFromSession error " + serviceId + ": " + e);
@@ -277,7 +312,7 @@ function dump(serviceId, sessionOrView, payload) {
   try {
     if (!serviceId) return;
     if (payload && Array.isArray(payload.cookies) && payload.cookies.length > 0) {
-      writeDump(serviceId, payload.cookies, payload.localStorage, payload.origin);
+      writeDump(serviceId, payload.cookies, payload.localStorage, payload.sessionStorage, payload.origin, payload.meta);
     }
     if (sessionOrView) {
       const ses = sessionOrView.cookies ? sessionOrView : (sessionOrView.session || sessionOrView.webContents?.session);
@@ -400,27 +435,31 @@ PY
   rm -rf "$TMP_ASAR"
 
   # Patch exe integrity hash if on v2 layout
-  local exe_path="${EXE:-$APP_DIR/CentriX App User.exe}"
-  if [[ ! -f "$exe_path" && -f "$APP_DIR/CentriX.exe" ]]; then
-    exe_path="$APP_DIR/CentriX.exe"
-  fi
-  if [[ "$layout" == "v2" && -f "$exe_path" ]]; then
-    log "Patching executable integrity hash..."
-    local old_h eh
-    old_h=$(strings "$exe_path" | grep -o '"value":"[a-f0-9]*"' | head -1 | sed 's/"value":"//;s/"//' || true)
-    if [[ -z "$old_h" ]]; then
-      old_h="4a3ccadeb6b73bbe2886ffdde03eaf81738f0a30d712596785ca0e94e13a7199"
-    fi
-    eh=$(WINEPREFIX="$WINEPREFIX" WINEDEBUG="-all" LIBGL_ALWAYS_SOFTWARE=1 timeout 6 "$WINE" "$exe_path" --disable-gpu --no-sandbox 2>&1 | grep "vs " | sed 's/.*vs //' | tr -d ')\r' | head -1 || true)
-    if [[ -n "$eh" && -n "$old_h" && "$eh" != "$old_h" ]]; then
-      "$PYTHON" -c "
+  local -a candidate_exes=(
+    "${EXE:-}"
+    "$APP_DIR/CentriX App User.exe"
+    "$APP_DIR/CentriX.exe"
+  )
+  if [[ "$layout" == "v2" ]]; then
+    for exe_path in "${candidate_exes[@]}"; do
+      [[ -n "$exe_path" && -f "$exe_path" ]] || continue
+      log "Patching executable integrity hash for ${exe_path:t}..."
+      local old_h eh
+      old_h=$(strings "$exe_path" | grep -o '"value":"[a-f0-9]*"' | head -1 | sed 's/"value":"//;s/"//' || true)
+      if [[ -z "$old_h" ]]; then
+        old_h="4a3ccadeb6b73bbe2886ffdde03eaf81738f0a30d712596785ca0e94e13a7199"
+      fi
+      eh=$(WINEPREFIX="$WINEPREFIX" WINEDEBUG="-all" LIBGL_ALWAYS_SOFTWARE=1 timeout 6 "$WINE" "$exe_path" --disable-gpu --no-sandbox 2>&1 | grep "vs " | sed 's/.*vs //' | tr -d ')\r' | head -1 || true)
+      if [[ -n "$eh" && -n "$old_h" && "$eh" != "$old_h" ]]; then
+        "$PYTHON" -c "
 exe='$exe_path'
 d=open(exe,'rb').read()
 d=d.replace(b'$old_h',b'$eh')
 open(exe,'wb').write(d)
 "
-      log "Patched executable integrity hash: $eh"
-    fi
+        log "Patched executable integrity hash: $eh"
+      fi
+    done
   fi
 
   mkdir -p "$USERDATA"
@@ -537,7 +576,16 @@ install_hook_and_restart() {
   done
   sleep 2
   export WINEPREFIX WINEDEBUG="-all" LIBGL_ALWAYS_SOFTWARE=1
-  local exe="$APP_DIR/CentriX App User.exe"
+  local exe="${EXE:-}"
+  if [[ -z "$exe" || ! -f "$exe" ]]; then
+    if [[ -f "$APP_DIR/CentriX App User.exe" ]]; then
+      exe="$APP_DIR/CentriX App User.exe"
+    elif [[ -f "$APP_DIR/CentriX.exe" ]]; then
+      exe="$APP_DIR/CentriX.exe"
+    else
+      exe="$APP_DIR/CentriX App User.exe"
+    fi
+  fi
   nohup "$WINE" explorer /desktop=CentriX,1440x900 "$exe" \
     --disable-gpu --disable-gpu-compositing --no-sandbox \
     >/tmp/centrix-wine-run.log 2>&1 &
@@ -590,7 +638,16 @@ dump_live() {
   done
   sleep 2
   export WINEPREFIX WINEDEBUG="-all" LIBGL_ALWAYS_SOFTWARE="${LIBGL_ALWAYS_SOFTWARE:-1}"
-  local exe="$APP_DIR/CentriX App User.exe"
+  local exe="${EXE:-}"
+  if [[ -z "$exe" || ! -f "$exe" ]]; then
+    if [[ -f "$APP_DIR/CentriX App User.exe" ]]; then
+      exe="$APP_DIR/CentriX App User.exe"
+    elif [[ -f "$APP_DIR/CentriX.exe" ]]; then
+      exe="$APP_DIR/CentriX.exe"
+    else
+      exe="$APP_DIR/CentriX App User.exe"
+    fi
+  fi
   local wait_since
   wait_since=$(date +%s)
   nohup "$WINE" explorer /desktop=CentriX,1440x900 "$exe" \

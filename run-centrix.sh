@@ -33,20 +33,28 @@ EXE="${CENTRIX_EXE:-}"
 if [[ -z "$EXE" || ! -f "$EXE" ]]; then
   candidates=(
     "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
+    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX.exe"
     "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
+    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX.exe"
   )
   EXE=""
   for c in "${candidates[@]}"; do
     if [[ -f "$c" ]]; then EXE="$c"; break; fi
   done
   if [[ -z "$EXE" ]]; then
-    found=("$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX\ App\ User.exe(N))
+    found=(
+      "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX\ App\ User.exe(N)
+      "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX.exe(N)
+      "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX/CentriX.exe(N)
+    )
     (( ${#found} > 0 )) && EXE="${found[1]}"
   fi
 fi
 
 if [[ -z "$EXE" || ! -f "$EXE" ]]; then
-  print -r -- "ERROR: CentriX App User.exe not found under $WINEPREFIX" >&2
+  print -r -- "ERROR: CentriX executable not found under $WINEPREFIX" >&2
   print -r -- "Run: ./setup-centrix-mac.sh" >&2
   exit 1
 fi

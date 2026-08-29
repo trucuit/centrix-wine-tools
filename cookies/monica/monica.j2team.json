@@ -1,12 +1,9 @@
 {
   "url": "https://monica.im/",
-  "serviceId": "monica",
-  "serviceName": "monica",
-  "exportedAt": "2026-08-22T14:08:49.675680+00:00",
   "cookies": [
     {
       "domain": ".monica.im",
-      "expirationDate": 1817172477,
+      "expirationDate": 1817172477.995838,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_twpid",
@@ -32,7 +29,7 @@
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1818338818,
+      "expirationDate": 1818037189.813748,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga",
@@ -45,7 +42,7 @@
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1791554820,
+      "expirationDate": 1791253191,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_fbp",
@@ -58,7 +55,20 @@
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1818338818,
+      "expirationDate": 1815012479,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_clck",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "f982en%5E2%5Eg7k%5E0%5E2380"
+    },
+    {
+      "domain": ".monica.im",
+      "expirationDate": 1818037189.952674,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_fwb",
@@ -71,7 +81,7 @@
     },
     {
       "domain": "monica.im",
-      "expirationDate": null,
+      "expirationDate": 1790435056.772,
       "hostOnly": true,
       "httpOnly": false,
       "name": "moninca_home_theme",
@@ -97,7 +107,7 @@
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1815013188,
+      "expirationDate": 1815013188.253686,
       "hostOnly": false,
       "httpOnly": false,
       "name": "session_id",
@@ -110,20 +120,7 @@
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1815314814,
-      "hostOnly": false,
-      "httpOnly": false,
-      "name": "_clck",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "f982en%5E2%5Eg7n%5E0%5E2380"
-    },
-    {
-      "domain": ".monica.im",
-      "expirationDate": 1818338818,
+      "expirationDate": 1818037189.810105,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga_E249CNSDCV",
@@ -132,24 +129,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "GS2.1.s1783778812$o2$g1$t1783778818$j54$l0$h0"
-    },
-    {
-      "domain": "monica.im",
-      "expirationDate": 1818338818,
-      "hostOnly": true,
-      "httpOnly": false,
-      "name": "wcs_bt",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": false,
-      "session": false,
-      "storeId": "0",
-      "value": "s_ce3bbc0e51c:1783778818"
+      "value": "GS2.1.s1783476478$o1$g1$t1783477189$j33$l0$h0"
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1818338818,
+      "expirationDate": 1818037189.816141,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga_JDZPETSM4F",
@@ -158,11 +142,24 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "GS2.1.s1783778812$o2$g1$t1783778818$j54$l0$h0"
+      "value": "GS2.1.s1783476478$o1$g1$t1783477189$j33$l0$h0"
+    },
+    {
+      "domain": "monica.im",
+      "expirationDate": 1818037189.955645,
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "wcs_bt",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "s_ce3bbc0e51c:1783477189"
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1818338819,
+      "expirationDate": 1818037190.38826,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_ga_RJYZXDEM8N",
@@ -171,11 +168,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "GS2.1.s1783778812$o2$g1$t1783778819$j53$l0$h1346191562"
+      "value": "GS2.1.s1783476478$o1$g1$t1783477190$j32$l0$h1224962800"
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1783865221,
+      "expirationDate": 1783563590,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_uetsid",
@@ -184,11 +181,11 @@
       "secure": false,
       "session": false,
       "storeId": "0",
-      "value": "c48bffa07d3111f1a19cabd04cc5007d"
+      "value": "d764b6b07a7111f1961b2be9a15080f5"
     },
     {
       "domain": ".monica.im",
-      "expirationDate": 1817474821,
+      "expirationDate": 1817173190,
       "hostOnly": false,
       "httpOnly": false,
       "name": "_uetvid",
@@ -198,6 +195,32 @@
       "session": false,
       "storeId": "0",
       "value": "d764ef007a7111f18a604540806cca37"
+    },
+    {
+      "domain": "api.monica.im",
+      "expirationDate": 1783477791.761337,
+      "hostOnly": true,
+      "httpOnly": true,
+      "name": "oauth_session",
+      "path": "/",
+      "sameSite": "lax",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "eyJmaXJzdF9lbnRyeSI6ICJodHRwczovL21vbmljYS5pbS9sb2dpbiIsICJyZWRpcmVjdF91cmwiOiAiaHR0cHM6Ly9tb25pY2EuaW0vYXV0aC1sYW5kaW5nP2Zyb209d2ViIiwgImp0aSI6ICIyODMyYzdkY2RlMzg0NzUzOTNhMjUwOWI4ZTA3ZDE0ZCIsICJ0cmFjZV9pZCI6ICJiNWNjZWE4ZGNiYzdiMDk5ODI1MDI4MGY0OTIwODMxMSIsICJzdGF0ZSI6ICJROE9VSldaVUNPeFpGcVlSME8yZlIxYWxydUxlbk8iLCAiY19kIjogIjEiLCAiZmlyc3RfZnJvbV9wbGF0Zm9ybSI6ICJ3ZWIiLCAiZnJvbV9wcm9kdWN0IjogIm1vbmljYSIsICJsb2NhbGUiOiAiZW4iLCAiYnJvd3Nlcl9uYW1lIjogImNocm9tZSIsICJvc19uYW1lIjogIndpbmRvd3MiLCAib3NfdmVyc2lvbiI6ICJ1bmtub3duIiwgImNsaWVudF9pZCI6ICI2NDIyZGFlYy0xMGQ4LTRjNWMtYmI2Yi1jMTkwYTZhNzI2NjYiLCAiY2xpZW50X3R5cGUiOiAid2ViIn0=.ak2zxg.vi1Wzo83PlWq_mZofEeMgup9l1c"
+    },
+    {
+      "domain": ".monica.im",
+      "expirationDate": 1783563591,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_clsk",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "4mhum8%5E1783477191477%5E12%5E1%5Ei.clarity.ms%2Fcollect"
     }
   ]
 }

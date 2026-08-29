@@ -3,7 +3,7 @@
   "cookies": [
     {
       "domain": "www.magnific.com",
-      "expirationDate": 1789662006.388,
+      "expirationDate": 1790435056.767,
       "hostOnly": true,
       "httpOnly": false,
       "name": "_fc",
@@ -159,7 +159,7 @@
     },
     {
       "domain": "www.magnific.com",
-      "expirationDate": 1789662006.388,
+      "expirationDate": 1790435056.767,
       "hostOnly": true,
       "httpOnly": false,
       "name": "FP_MBL_NEW",
@@ -172,7 +172,7 @@
     },
     {
       "domain": "www.magnific.com",
-      "expirationDate": 1789662006.388,
+      "expirationDate": 1790435056.767,
       "hostOnly": true,
       "httpOnly": false,
       "name": "UID",
@@ -185,7 +185,7 @@
     },
     {
       "domain": "www.magnific.com",
-      "expirationDate": 1789662006.388,
+      "expirationDate": 1790435056.767,
       "hostOnly": true,
       "httpOnly": false,
       "name": "sb-prefs",
