@@ -32,6 +32,7 @@ const SERVICE_CONFIG = {
   scribd: { url: "https://www.scribd.com", domains: ["scribd.com"] },
   quillbot: { url: "https://quillbot.com", domains: ["quillbot.com"] },
   zoom: { url: "https://zoom.us", domains: ["zoom.us"] },
+  outlook: { url: "https://outlook.office.com/mail/", domains: ["office.com", "microsoft.com", "live.com", "outlook.com", "microsoftonline.com"] },
 };
 
 // Legacy / typo ids that all mean the one ChatGPT Pro pool slot. Kept so old
@@ -48,6 +49,11 @@ const SERVICE_ALIASES = {
   "grok_heavy": "grok",
   "grok heavy": "grok",
   heavy: "grok",
+  mail: "outlook",
+  email: "outlook",
+  office: "outlook",
+  office365: "outlook",
+  ms365: "outlook",
 };
 
 /** Map a user/cache-supplied id to its canonical SERVICE_CONFIG key. */
