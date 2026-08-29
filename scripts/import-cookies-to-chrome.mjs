@@ -19,7 +19,7 @@ const SERVICE_CONFIG = {
   gemini: { url: "https://gemini.google.com", domains: ["gemini.google.com", "google.com"] },
   perplexity: { url: "https://www.perplexity.ai", domains: ["perplexity.ai"] },
   grok: { url: "https://grok.com", domains: ["grok.com", "x.ai"], source: "grok" },
-  "grok-heavy": { url: "https://grok.com", domains: ["grok.com", "x.ai"], source: "grok" },
+  "grok-heavy": { url: "https://grok.com", domains: ["grok.com", "x.ai"], source: "grok-heavy" },
   "microsoft-copilot": { url: "https://copilot.microsoft.com", domains: ["copilot.microsoft.com", "microsoft.com", "bing.com"] },
   deepseek: { url: "https://chat.deepseek.com/sign_in", domains: ["deepseek.com"] },
   "envato-elements": { url: "https://elements.envato.com", domains: ["envato.com"] },
@@ -44,11 +44,9 @@ const SERVICE_ALIASES = {
   chatgptpro: "chatgpt-pro",
   chatgpt_pro: "chatgpt-pro",
   pro: "chatgpt-pro",
-  gpt: "chatgpt-pro",
-  "grok-heavy": "grok",
-  "grok_heavy": "grok",
-  "grok heavy": "grok",
-  heavy: "grok",
+  "grok_heavy": "grok-heavy",
+  "grok heavy": "grok-heavy",
+  heavy: "grok-heavy",
   mail: "outlook",
   email: "outlook",
   office: "outlook",
@@ -472,11 +470,18 @@ function parseArgs(argv) {
   // Positional service only if first token is not a flag
   if (args[0] && !args[0].startsWith("-")) {
     let s = args.shift();
+    // Support passing full folder path like /path/to/cookies/grok-heavy
+    if (s.includes("/") || s.includes("\\")) {
+      const parts = s.split(/[/\\]/).filter(Boolean);
+      s = parts[parts.length - 1];
+    }
     if (args[0] && !args[0].startsWith("-")) {
       const combined = `${s}-${args[0]}`.toLowerCase();
       if (SERVICE_ALIASES[combined] || SERVICE_CONFIG[combined] || combined === "grok-heavy") {
         s = combined;
         args.shift();
+      } else if (args[0].toLowerCase() === "full" || args[0].toLowerCase() === "service") {
+        args.shift(); // consume legacy mode positional keyword
       }
     }
     options.service = s;
@@ -490,7 +495,7 @@ function parseArgs(argv) {
     // Mode is fixed to full. Old flags are accepted (and their arg consumed)
     // for command compatibility but no longer change behavior.
     else if (flag === "--mode") { args.shift(); }
-    else if (flag === "--full" || flag === "--mode-service") { /* no-op: always full */ }
+    else if (flag === "--full" || flag === "--mode-service" || flag === "full" || flag === "service") { /* no-op: always full */ }
     else if (flag === "--pick" || flag === "-i" || flag === "--interactive") options.pick = true;
     else if (flag === "--no-open") options.open = false;
     else if (flag === "--json") options.json = true;
