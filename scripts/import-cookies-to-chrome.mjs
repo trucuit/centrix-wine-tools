@@ -21,7 +21,7 @@ const SERVICE_CONFIG = {
   grok: { url: "https://grok.com", domains: ["grok.com", "x.ai"], source: "grok" },
   "grok-heavy": { url: "https://grok.com", domains: ["grok.com", "x.ai"], source: "grok-heavy" },
   "microsoft-copilot": { url: "https://copilot.microsoft.com", domains: ["copilot.microsoft.com", "microsoft.com", "bing.com"] },
-  deepseek: { url: "https://chat.deepseek.com/sign_in", domains: ["deepseek.com"] },
+  deepseek: { url: "https://chat.deepseek.com/", domains: ["deepseek.com"] },
   "envato-elements": { url: "https://elements.envato.com", domains: ["envato.com"] },
   poe: { url: "https://www.capcut.com", domains: ["capcut.com", "poe.com"] },
   gamma: { url: "https://gamma.app", domains: ["gamma.app"] },
