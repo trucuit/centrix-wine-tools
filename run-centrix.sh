@@ -19,7 +19,9 @@ fi
 
 export WINEPREFIX="${WINEPREFIX:-$SCRIPT_DIR/wine-prefix-centrix}"
 export WINEDEBUG="${WINEDEBUG:--all}"
-export LIBGL_ALWAYS_SOFTWARE="${LIBGL_ALWAYS_SOFTWARE:-1}"
+
+# shellcheck disable=SC1091
+source "$SCRIPT_DIR/scripts/lib/centrix-wine-session.sh"
 
 WINE_BIN="${WINE_BIN:-/Applications/Wine Stable.app/Contents/Resources/wine/bin/wine}"
 if [[ ! -f "$WINE_BIN" && ! -x "$WINE_BIN" ]]; then
@@ -62,16 +64,14 @@ fi
 DESKTOP_W="${DESKTOP_W:-1440}"
 DESKTOP_H="${DESKTOP_H:-900}"
 
+centrix_apply_render_mode
 print -r -- "▸ WINEPREFIX=$WINEPREFIX"
 print -r -- "▸ EXE=$EXE"
+print -r -- "▸ RENDER=${CENTRIX_RENDER:-software}"
+print -r -- "▸ Stopping leftover Wine sessions…"
+centrix_kill_wine_session "$WINEPREFIX"
 print -r -- "▸ Launching Wine desktop ${DESKTOP_W}x${DESKTOP_H}…"
 
 exec "$WINE_BIN" explorer /desktop=CentriX,${DESKTOP_W}x${DESKTOP_H} "$EXE" \
-  --disable-gpu \
-  --disable-gpu-compositing \
-  --disable-gpu-sandbox \
-  --in-process-gpu \
-  --use-angle=swiftshader \
-  --use-gl=swiftshader \
-  --no-sandbox \
+  "${CENTRIX_ELECTRON_FLAGS[@]}" \
   "$@"

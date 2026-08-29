@@ -110,7 +110,7 @@ Steps:
 
 - Đọc `.centrix-env` nếu có  
 - Tự tìm `CentriX App User.exe` (username Wine khác nhau từng Mac)  
-- Virtual desktop 1440×900 + flag GPU (tránh cửa sổ trắng)
+- Virtual desktop 1440×900 + software GL (tránh cửa sổ trắng). Thử GPU: `CENTRIX_RENDER=gpu ./run-centrix.sh`
 
 ### Cookie tools
 
@@ -242,7 +242,8 @@ centrix-wine-tools/
 |--------|------------|
 | `Wine not found` | `./setup-centrix-mac.sh` hoặc cài cask `wine-stable` |
 | Rosetta missing | `softwareupdate --install-rosetta --agree-to-license` |
-| Cửa sổ trắng | `run-centrix.sh` đã bật software GL; đợi session-restore |
+| Cửa sổ trắng | Default đã là software GL; đợi session-restore. GPU: `CENTRIX_RENDER=gpu` |
+| Lag / session Wine chồng | `run-centrix.sh` dọn wineserver + service orphan trước khi launch |
 | `exe not found` | `./setup-centrix-mac.sh --force-reinstall` |
 | Có installer mới | Chép `CentriX-App-User-Setup-<version>.exe` vào repo rồi chạy `./setup-centrix-mac.sh` một lần |
 | API trả HTML / parked-domain page | Backend cũ không còn chạy. Đặt `CENTRIX_SERVER_URL` thành URL API CentriX đang hoạt động rồi chạy `./export-centrix-api.sh login` lại. |

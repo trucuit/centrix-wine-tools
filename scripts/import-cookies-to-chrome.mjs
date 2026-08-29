@@ -33,6 +33,7 @@ const SERVICE_CONFIG = {
   quillbot: { url: "https://quillbot.com", domains: ["quillbot.com"] },
   zoom: { url: "https://zoom.us", domains: ["zoom.us"] },
   outlook: { url: "https://outlook.office.com/mail/", domains: ["office.com", "microsoft.com", "live.com", "outlook.com", "microsoftonline.com"] },
+  notion: { url: "https://app.notion.com", domains: ["notion.so", "notion.com"] },
 };
 
 // Legacy / typo ids that all mean the one ChatGPT Pro pool slot. Kept so old
@@ -687,7 +688,13 @@ async function applyLocalStorage(port, targetUrl, entries, sessionEntries = {}) 
     let target;
     for (let attempt = 0; attempt < 50; attempt += 1) {
       const targets = await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
-      target = targets.find((candidate) => candidate.type === "page" && candidate.webSocketDebuggerUrl && (() => { try { return new URL(candidate.url).hostname === host; } catch { return false; } })());
+      target = targets.find((candidate) => candidate.type === "page" && candidate.webSocketDebuggerUrl && (() => {
+        try {
+          const current = new URL(candidate.url).hostname;
+          const root = host.replace(/^www\./, "");
+          return current === host || current === root || current.endsWith(`.${root}`);
+        } catch { return false; }
+      })());
       if (target) break;
       await new Promise((resolveWait) => setTimeout(resolveWait, 100));
     }

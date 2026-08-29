@@ -37,6 +37,9 @@ wine-prefix-centrix/
 # Logs
 *.log
 
+# Local asar extract used by patch-open-in-mac-browser.sh
+.tmp-asar-web-view-patch/
+
 
 
 

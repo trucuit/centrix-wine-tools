@@ -34,6 +34,7 @@ SCRIPT_DIR="${SCRIPT_PATH:h}"
 SCRIPT_NAME="${SCRIPT_PATH:t}"
 
 source "$SCRIPT_DIR/scripts/lib/centrix-export-common.sh"
+source "$SCRIPT_DIR/scripts/lib/centrix-wine-session.sh"
 centrix_export_init
 centrix_parse_shared_flags "$@"
 set -- "${CENTRIX_POS_ARGS[@]}"
@@ -568,14 +569,9 @@ watch_dumps() {
 install_hook_and_restart() {
   inject_dump_hook
   log "Restart CentriX to load hook…"
-  pgrep -x wineserver | while read p; do kill "$p" 2>/dev/null; done
-  ps -axo pid=,comm= | while read -r pid comm; do
-    case "$comm" in
-      *CentriX*|*centrix*) kill "$pid" 2>/dev/null || true ;;
-    esac
-  done
-  sleep 2
-  export WINEPREFIX WINEDEBUG="-all" LIBGL_ALWAYS_SOFTWARE=1
+  centrix_kill_wine_session "$WINEPREFIX"
+  export WINEPREFIX WINEDEBUG="-all"
+  centrix_apply_render_mode
   local exe="${EXE:-}"
   if [[ -z "$exe" || ! -f "$exe" ]]; then
     if [[ -f "$APP_DIR/CentriX App User.exe" ]]; then
@@ -587,7 +583,7 @@ install_hook_and_restart() {
     fi
   fi
   nohup "$WINE" explorer /desktop=CentriX,1440x900 "$exe" \
-    --disable-gpu --disable-gpu-compositing --no-sandbox \
+    "${CENTRIX_ELECTRON_FLAGS[@]}" \
     >/tmp/centrix-wine-run.log 2>&1 &
   log "CentriX restarted (pid $!). Mở service → cookie files tự ghi đè."
   log "Chạy song song: $SCRIPT_NAME watch"
@@ -630,14 +626,9 @@ dump_live() {
   inject_dump_hook
 
   log "Restart CentriX so the hook loads…"
-  pgrep -x wineserver | while read p; do kill "$p" 2>/dev/null; done
-  ps -axo pid=,comm= | while read -r pid comm; do
-    case "$comm" in
-      *CentriX*|*centrix*) kill "$pid" 2>/dev/null || true ;;
-    esac
-  done
-  sleep 2
-  export WINEPREFIX WINEDEBUG="-all" LIBGL_ALWAYS_SOFTWARE="${LIBGL_ALWAYS_SOFTWARE:-1}"
+  centrix_kill_wine_session "$WINEPREFIX"
+  export WINEPREFIX WINEDEBUG="-all"
+  centrix_apply_render_mode
   local exe="${EXE:-}"
   if [[ -z "$exe" || ! -f "$exe" ]]; then
     if [[ -f "$APP_DIR/CentriX App User.exe" ]]; then
@@ -651,7 +642,7 @@ dump_live() {
   local wait_since
   wait_since=$(date +%s)
   nohup "$WINE" explorer /desktop=CentriX,1440x900 "$exe" \
-    --disable-gpu --disable-gpu-compositing --no-sandbox \
+    "${CENTRIX_ELECTRON_FLAGS[@]}" \
     >/tmp/centrix-cookie-export-run.log 2>&1 &
   log "CentriX launching (pid $!) — open a service to dump+overwrite cookies."
 
