@@ -170,22 +170,19 @@ install_wine() {
 }
 
 already_installed() {
-  local exe="$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
-  # Wine often uses "pat" or mac username; also try pat + current user + *
   local candidates=(
     "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
-    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
-  )
-  local c
+    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX.exe"
   for c in "${candidates[@]}"; do
     [[ -f "$c" ]] && { print -r -- "$c"; return 0; }
   done
   # glob search
   local found
-  found=("$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX\ App\ User.exe(N))
-  if (( ${#found} > 0 )); then
-    print -r -- "${found[1]}"
-    return 0
+  found=(
+    "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX\ App\ User.exe(N)
+    "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX/CentriX.exe(N)
   fi
   return 1
 }
@@ -236,11 +233,10 @@ install_centrix() {
   # process substitution avoids the ps|while pipeline that trips set -o pipefail on read EOF.
   while read -r pid cmd; do
     case "$cmd" in
-      *"CentriX App User.exe"*|*centrix-shutdown*|*"CentriX-Setup-"*.exe*)
+      *"CentriX App User.exe"*|*"CentriX.exe"*|*centrix-shutdown*|*"CentriX-Setup-"*.exe*)
         [[ "$pid" != "$$" ]] && kill -9 "$pid" 2>/dev/null || true ;;
     esac
   done < <(ps -axo pid=,command=)
-  sleep 1
 
   log "Initializing Wine prefix (first run can take 1–2 min)…"
   "$WINE_BIN" wineboot -u 2>/dev/null || "$WINE_BIN" wineboot 2>/dev/null || true
@@ -253,12 +249,11 @@ install_centrix() {
 
   local app app_ver
   if ! app=$(already_installed); then
-    die "Install finished but CentriX App User.exe not found under $WINEPREFIX"
-  fi
-  app_ver=$(installed_app_version "$app" 2>/dev/null || true)
-  if [[ -n "$installer_ver" && -n "$app_ver" && "$installer_ver" != "$app_ver" ]]; then
-    warn "Installer version $installer_ver completed, but app reports version $app_ver"
-  fi
+    if command -v 7z >/dev/null 2>&1; then
+      log "Trying direct 7z extraction fallback…"
+      local target_dir="$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX"
+      local tmp_extract="/tmp/centrix-extract-$$"
+      mkdir -p "$tmp_extract" "$target_dir"
   ok "Installed${app_ver:+ (version $app_ver)}: $app"
 }
 

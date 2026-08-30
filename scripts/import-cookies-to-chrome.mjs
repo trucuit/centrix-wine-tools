@@ -460,7 +460,9 @@ export async function loadServiceSessionStorage(serviceDir, service) {
 function parseArgs(argv) {
   const options = {
     service: "",
-    mode: "full", // always full — service (host-scoped) mode was removed
+    // service = host-scoped files, refreshed by the v2 exporter.
+    // full = *.full.json raw partition dump, only written by the legacy dump flow.
+    mode: "service",
     pick: false,
     cookiesDir: resolve(process.env.CENTRIX_COOKIES_DIR || "cookies"),
     profileDir: resolve(process.env.CENTRIX_CHROME_PROFILE || ".chrome-cookie-profile"),
@@ -493,10 +495,9 @@ function parseArgs(argv) {
     else if (flag === "--profile-dir") options.profileDir = resolve(args.shift() || "");
     else if (flag === "--port") options.port = Number(args.shift());
     else if (flag === "--chrome") options.chrome = resolve(args.shift() || "");
-    // Mode is fixed to full. Old flags are accepted (and their arg consumed)
-    // for command compatibility but no longer change behavior.
-    else if (flag === "--mode") { args.shift(); }
-    else if (flag === "--full" || flag === "--mode-service" || flag === "full" || flag === "service") { /* no-op: always full */ }
+    else if (flag === "--mode") options.mode = String(args.shift() || "").trim();
+    else if (flag === "--full") options.mode = "full";
+    else if (flag === "--mode-service") options.mode = "service";
     else if (flag === "--pick" || flag === "-i" || flag === "--interactive") options.pick = true;
     else if (flag === "--no-open") options.open = false;
     else if (flag === "--json") options.json = true;
@@ -566,7 +567,7 @@ async function promptLine(rl, question) {
 }
 
 /**
- * Interactive: pick service id. Cookie source is always full.
+ * Interactive: pick service id. Cookie source uses the default service mode.
  * Returns { service, mode } or null if cancelled.
  */
 export async function interactivePick(cookiesDir, { needService = true } = {}) {
@@ -576,7 +577,7 @@ export async function interactivePick(cookiesDir, { needService = true } = {}) {
   const rl = createInterface({ input, output });
   try {
     let service = "";
-    const mode = "full";
+    const mode = "service";
 
     if (needService) {
       const rows = await listImportableServices(cookiesDir);
@@ -749,8 +750,9 @@ function usage() {
        ./import-cookies-to-chrome.sh              # interactive menu (TTY)
        ./import-cookies-to-chrome.sh --pick       # force interactive menu
 
-Cookie source: always full (*.full.json — raw partition dump, most complete).
-  --full, --mode …      accepted for compatibility, ignored (always full)
+Cookie source:
+  --mode service        host-scoped files (default) — what the v2 exporter writes
+  --mode full, --full   *.full.json raw partition dump (legacy dump flow only)
 
 Options:
   -i, --pick            Interactive: chọn service

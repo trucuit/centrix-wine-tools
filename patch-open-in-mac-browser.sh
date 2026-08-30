@@ -159,6 +159,17 @@ rm -rf "$TMP_ASAR"
 log "Extracting asar…"
 npx --yes @electron/asar extract "$ASAR" "$TMP_ASAR"
 
+# ── 0. disable debug-flag-guard (Wine needs GPU workaround flags) ──
+log "Disabling debug-flag-guard (Wine GPU/sandbox flags)…"
+cat > "$TMP_ASAR/desktop/debug-flag-guard.cjs" <<'GUARD_EOF'
+"use strict";
+const BLOCKED_SWITCHES = [];
+function isUpdaterHelperArgv() { return false; }
+function argvHasBlockedSwitch() { return null; }
+function debugFlagsBlockingManaged() { return null; }
+module.exports = { BLOCKED_SWITCHES, isUpdaterHelperArgv, argvHasBlockedSwitch, debugFlagsBlockingManaged };
+GUARD_EOF
+
 # ── 1. write mac-open-url.cjs ───────────────────────────────
 log "Writing mac-open-url.cjs helper…"
 cat > "$TMP_ASAR/desktop/mac-open-url.cjs" <<'HELPER_EOF'
@@ -492,7 +503,7 @@ for (const f of files) {
 
   // 4. Update multi-AI top menu switcher tabs
   const oldSS = `sS=[{id:"ai",labelKey:"centrixAi",shortKey:"productSwitchAi",url:null,host:null},{id:"web",labelKey:"centrixWeb",shortKey:"productSwitchWeb",url:ice,host:"cetrix.app/chat"},{id:"code",labelKey:"centrixCode",shortKey:"productSwitchCode",url:ace,host:"cetrix.app/code"}]`;
-  const newSS = `sS=[{id:"chatgpt",name:"ChatGPT",shortKey:"ChatGPT"},{id:"claude",name:"Claude",shortKey:"Claude"},{id:"gemini",name:"Gemini",shortKey:"Gemini"},{id:"perplexity",name:"Perplexity",shortKey:"Perplexity"},{id:"deepseek",name:"DeepSeek",shortKey:"DeepSeek"},{id:"copilot",name:"Copilot",shortKey:"Copilot"},{id:"grok",name:"Grok",shortKey:"Grok"},{id:"web",name:"Web",shortKey:"Web"}]`;
+  const newSS = `sS=[{id:"chatgpt",name:"ChatGPT",shortKey:"ChatGPT"},{id:"claude",name:"Claude",shortKey:"Claude"},{id:"gemini",name:"Gemini",shortKey:"Gemini"},{id:"perplexity",name:"Perplexity",shortKey:"Perplexity"},{id:"deepseek",name:"DeepSeek",shortKey:"DeepSeek"},{id:"copilot",name:"Copilot",shortKey:"Copilot"},{id:"grok",name:"Grok",shortKey:"Grok"},{id:"notion",name:"Notion",shortKey:"Notion"},{id:"web",name:"Web",shortKey:"Web"}]`;
   if (js.includes(oldSS)) {
     js = js.replace(oldSS, newSS);
   }
@@ -557,7 +568,8 @@ function WebUrlBar() {
     copilot: "https://copilot.microsoft.com/",
     perplexity: "https://www.perplexity.ai/",
     grok: "https://grok.com/",
-    deepseek: "https://chat.deepseek.com/"
+    deepseek: "https://chat.deepseek.com/",
+    notion: "https://app.notion.com/ai"
   };
   const [val, setVal] = T.useState(defaultUrls[currentService] || "https://chatgpt.com/");
   const [focused, setFocused] = T.useState(false);
@@ -928,6 +940,7 @@ for (const f of files) {
 node --check "$TMP_ASAR/desktop/main.cjs"
 node --check "$TMP_ASAR/desktop/service-catalog.cjs"
 node --check "$TMP_ASAR/desktop/preload.cjs"
+node --check "$TMP_ASAR/desktop/debug-flag-guard.cjs"
 log "  ✓ Syntax check passed"
 
 # ── 7. repack ───────────────────────────────────────────────

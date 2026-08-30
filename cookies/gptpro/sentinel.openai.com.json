@@ -1,0 +1,28 @@
+[
+  {
+    "domain": "sentinel.openai.com",
+    "expirationDate": 1788080214.061192,
+    "hostOnly": true,
+    "httpOnly": true,
+    "name": "__oailb",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "eyJhbGciOiJFUzI1NiIsImtpZCI6Im9haWxiLXYxIiwidHlwIjoiSldUIn0.eyJob3N0IjoiY2hhdC5nYXRld2F5LnVuaWZpZWQtOTQuYXBpLm9wZW5haS5jb20iLCJpc3MiOiJlZGdlLWdhdGV3YXkiLCJhdWQiOlsiY2hhdGdwdC5jb20iXSwiZXhwIjoxNzg4MDgwNTE0LCJpYXQiOjE3ODgwNzY2MTR9.qnLQ1ujuPPlVfrHcXbV2nps4dZVJSop9NrgZB5WF2IWNkDnZH2LWB9VEOzBEx-QxLszzUfkeXtQn31s6W9yZ-A"
+  },
+  {
+    "domain": "sentinel.openai.com",
+    "expirationDate": 1788080214.061271,
+    "hostOnly": true,
+    "httpOnly": true,
+    "name": "__cflb",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "0H28vzvP5FJafnkHxish2sosJuEC3DStNCha91BsJHh"
+  }
+]

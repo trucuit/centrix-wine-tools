@@ -9,11 +9,25 @@
 #   ./centrix-service-api.sh test-all              # Test server lease assignment for all AI services
 #   ./centrix-service-api.sh assign <serviceId>    # Assign a lease for a service (e.g. claude, chatgpt)
 #   ./centrix-service-api.sh export-cookies <id>   # Download & decrypt session cookies (e.g. claude)
+#   ./centrix-service-api.sh all                   # Export cookies for every service
+#
+# Auth: dùng chung session v2 với ./export-centrix-api.sh — login bằng
+#       ./export-centrix-api.sh login (OTP) trước khi chạy script này.
+#
+# Env:
+#   CENTRIX_V2_API_URL   API base        (default: https://api.cetrix.app)
+#   CENTRIX_V2_SESSION   session file    (default: ./.cetrix-session.json)
+#   CENTRIX_OUT_DIR      output dir      (default: ./cookies)
 #
 set -euo pipefail
 
 SCRIPT_PATH="${0:A}"
 SCRIPT_DIR="${SCRIPT_PATH:h}"
+
+# Chia sẻ session + output với export-centrix-api.sh (v2 flow) nên chỉ cần login một lần.
+export CENTRIX_V2_API_URL="${CENTRIX_V2_API_URL:-https://api.cetrix.app}"
+export CENTRIX_V2_SESSION="${CENTRIX_V2_SESSION:-$SCRIPT_DIR/.cetrix-session.json}"
+export CENTRIX_OUT_DIR="${CENTRIX_OUT_DIR:-$SCRIPT_DIR/cookies}"
 
 CMD="${1:-info}"
 shift || true
@@ -23,55 +37,39 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
-const API_BASE = "https://api.cetrix.app";
+const API_BASE = String(process.env.CENTRIX_V2_API_URL || "https://api.cetrix.app").trim().replace(/\/+$/, "");
+const SESSION_FILE = process.env.CENTRIX_V2_SESSION;
+const OUT_DIR = process.env.CENTRIX_OUT_DIR;
 const cmd = process.argv[2] || "info";
 const targetService = (process.argv[3] || "claude").toLowerCase().trim();
 
-// Candidate paths for auth-session.json
-const candidatePaths = [
-  "/Users/pat/Library/Application Support/centrix-ai-frontend/auth-session.json",
-  "/Volumes/m2/apps/windows/wine-prefix-centrix/drive_c/users/pat/AppData/Roaming/centrix-ai-frontend/auth-session.json"
-];
-
-function findAuthFile() {
-  let best = null;
-  let bestTime = 0;
-  for (const p of candidatePaths) {
-    if (fs.existsSync(p)) {
-      try {
-        const stat = fs.statSync(p);
-        const data = JSON.parse(fs.readFileSync(p, "utf8"));
-        if (data.accessToken && stat.mtimeMs > bestTime) {
-          best = p;
-          bestTime = stat.mtimeMs;
-        }
-      } catch (_) {}
-    }
-  }
-  return best;
-}
-
 function getAuthData() {
-  const file = findAuthFile();
-  if (!file) {
-    console.error("❌ auth-session.json not found in AppData / Application Support.");
-    console.error("Please open and log into CentriX App first.");
+  if (!SESSION_FILE || !fs.existsSync(SESSION_FILE)) {
+    console.error(`❌ Session not found: ${SESSION_FILE}`);
+    console.error("Login first:  ./export-centrix-api.sh login");
     process.exit(1);
   }
-  return { file, data: JSON.parse(fs.readFileSync(file, "utf8")) };
+  const data = JSON.parse(fs.readFileSync(SESSION_FILE, "utf8"));
+  if (!data.accessToken) {
+    console.error(`❌ Session has no accessToken: ${SESSION_FILE}`);
+    console.error("Login again:  ./export-centrix-api.sh login");
+    process.exit(1);
+  }
+  return { file: SESSION_FILE, data };
 }
 
+// Ghi lại token mới nhưng giữ nguyên các field khác của session (email, userId, sessionId...)
 function saveAuthData(tokens) {
-  for (const p of candidatePaths) {
-    try {
-      fs.mkdirSync(path.dirname(p), { recursive: true });
-      fs.writeFileSync(p, JSON.stringify({
-        accessToken: tokens.accessToken,
-        refreshToken: tokens.refreshToken,
-        savedAt: new Date().toISOString()
-      }), "utf8");
-    } catch (_) {}
-  }
+  try {
+    let existing = {};
+    try { existing = JSON.parse(fs.readFileSync(SESSION_FILE, "utf8")); } catch (_) {}
+    writeSecretJson(SESSION_FILE, {
+      ...existing,
+      accessToken: tokens.accessToken,
+      refreshToken: tokens.refreshToken,
+      savedAt: new Date().toISOString()
+    });
+  } catch (_) {}
 }
 
 async function getAccessToken() {
@@ -143,6 +141,13 @@ async function apiRequest(endpoint, options = {}, retry = true) {
 
   const body = await res.json().catch(() => ({}));
   return { ok: res.ok, status: res.status, data: body };
+}
+
+// writeFileSync chỉ áp dụng `mode` khi tạo file mới; file đã tồn tại vẫn giữ
+// permission cũ, nên phải chmod lại để secret không rớt về 0644.
+function writeSecretJson(file, data) {
+  fs.writeFileSync(file, JSON.stringify(data, null, 2), { encoding: "utf8", mode: 0o600 });
+  fs.chmodSync(file, 0o600);
 }
 
 function decryptEnvelope(envelope, leaseToken) {
@@ -274,7 +279,7 @@ async function handleAssign(serviceId) {
   return { assignmentId: asgn.id, leaseToken: lease };
 }
 
-async function handleExportCookies(serviceId, silent = false, outDir = "/Volumes/m2/apps/windows") {
+async function handleExportCookies(serviceId, silent = false, outDir = OUT_DIR) {
   const res = await apiRequest("/v1/managed-profiles/assign", {
     method: "POST",
     body: JSON.stringify({
@@ -313,7 +318,7 @@ async function handleExportCookies(serviceId, silent = false, outDir = "/Volumes
 
     // 1. Full session payload (origin, userAgent, cookies, localStorage, sessionStorage)
     const sessionFile = path.join(outDir, `session-${serviceId}.json`);
-    fs.writeFileSync(sessionFile, JSON.stringify(payload, null, 2), "utf8");
+    writeSecretJson(sessionFile, payload);
 
     // 2. Browser Extension importable cookies (Cookie-Editor format)
     const cookieFile = path.join(outDir, `cookies-${serviceId}.json`);
@@ -327,7 +332,7 @@ async function handleExportCookies(serviceId, silent = false, outDir = "/Volumes
       sameSite: c.sameSite || "Lax",
       expirationDate: c.expirationDate || c.expires || (Math.floor(Date.now() / 1000) + 30 * 86400)
     }));
-    fs.writeFileSync(cookieFile, JSON.stringify(browserCookies, null, 2), "utf8");
+    writeSecretJson(cookieFile, browserCookies);
 
     if (!silent) {
       console.log(`✅ [${serviceId.padEnd(14)}] -> Success! (${(payload.cookies || []).length} cookies, ${Object.keys(payload.localStorage || {}).length} localStorage keys)`);
@@ -351,7 +356,7 @@ async function handleExportCookies(serviceId, silent = false, outDir = "/Volumes
 }
 
 async function handleExportAll() {
-  const outDir = "/Volumes/m2/apps/windows/cookies";
+  const outDir = OUT_DIR;
   fs.mkdirSync(outDir, { recursive: true });
 
   console.log("══════════════════════════════════════════════════════════════════════");
@@ -413,7 +418,7 @@ async function main() {
     case "snapshot":
     case "export-cookies":
     case "cookies":
-      await handleExportCookies(targetService, false, "/Volumes/m2/apps/windows/cookies");
+      await handleExportCookies(targetService, false, OUT_DIR);
       break;
     case "all":
     case "export-all":

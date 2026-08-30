@@ -64,7 +64,8 @@ cài hỏng. Không kết hợp với `--no-upgrade`:
 | **`setup-centrix-mac.sh`** | Bootstrap Mac và tự nâng cấp theo `CentriX-App-User-Setup-*.exe` mới nhất |
 | **`run-centrix.sh`** | Launch app (prefix portable, không hardcode `/Volumes/m2`) |
 | **`export-centrix-cookies.sh`** | Hook dump cookie mỗi lần mở service + `watch` / convert |
-| **`export-centrix-api.sh`** | API trực tiếp: login Google + `/profile/export` (không mở UI) |
+| **`export-centrix-api.sh`** | API trực tiếp: login OTP + `/profile/export` (không mở UI) |
+| **`centrix-service-api.sh`** | Account info / catalog / lease probe + export dạng Cookie-Editor |
 | **`export-pick-service.sh`** | Chọn service → export offline (ChatGPT → + `auth.openai.com`) |
 | **`scripts/lib/centrix-export-common.sh`** | **Shell shared** — paths, aliases, `--chrome`, `convert_dump` |
 | **`scripts/lib/centrix_cookie_export.py`** | **Write pattern chung** — 3 CLI → `cookies/<service>/` + sidecars |
@@ -116,16 +117,22 @@ Steps:
 
 Mọi export mặc định vào **`./cookies/`** trong project (không còn Desktop).
 
+> **API v1 đã ngừng hoạt động.** Server cũ
+> (`api-centrixapp-quang.centrix.asia`) trả `desktop-v1-retired` cho mọi service.
+> Chỉ còn **v2** (`api.cetrix.app`) dùng được; script tự chọn v2 khi có
+> `.cetrix-session.json`. Ép version bằng `CENTRIX_API_VERSION=v1|v2`.
+
 ```bash
 # A) API trực tiếp — không mở App UI, không patch asar
-./export-centrix-api.sh login            # Google OAuth 1 lần
+./export-centrix-api.sh login            # OTP gửi qua email, 1 lần
 ./export-centrix-api.sh export grok      # → cookies/grok-heavy/
 ./export-centrix-api.sh export chatgpt   # alias → notebooklm
+./export-centrix-api.sh export claude gptpro grok-heavy   # nhiều service một lệnh
 ./export-centrix-api.sh export all
 ./export-centrix-api.sh status
 ./export-centrix-api.sh logout
-# session: .centrix-api-session.json (gitignored, mode 600)
-# nếu device đang lock bởi App User: đóng app hoặc ./export-centrix-api.sh takeover
+# session v2: .cetrix-session.json (mode 600) — dùng chung với centrix-service-api.sh
+# session v1: .centrix-api-session.json (legacy, server đã retired)
 
 # B) Hook asar — mỗi lần mở service → dump
 ./export-centrix-cookies.sh install-hook
@@ -156,6 +163,28 @@ cookies/
 
 Override path: `OUT_DIR=/other/path ./export-pick-service.sh chatgpt`  
 Optional copy ra injector: `J2TEAM_OUT_DIR=/path/to/injector`
+
+### centrix-service-api.sh — account & lease
+
+Client v2 riêng cho phần **quản lý tài khoản**, dùng chung session với
+`export-centrix-api.sh` (login một lần bằng `./export-centrix-api.sh login`).
+
+```bash
+./centrix-service-api.sh info                # credit, quota 5h/7d, wallet, hạn gói
+./centrix-service-api.sh list                # catalog service + connectionMode
+./centrix-service-api.sh test-all            # probe lease assignment từng service
+./centrix-service-api.sh assign claude       # xin lease thủ công
+./centrix-service-api.sh export-cookies claude
+./centrix-service-api.sh all                 # export toàn bộ service
+```
+
+Env override: `CENTRIX_V2_API_URL`, `CENTRIX_V2_SESSION`, `CENTRIX_OUT_DIR`.
+
+⚠️ **Format khác `export-centrix-api.sh`.** Script này ghi *phẳng* vào
+`cookies/cookies-<service>.json` (Cookie-Editor, cho browser extension) +
+`cookies/session-<service>.json` (payload đầy đủ). **`import-cookies-to-chrome.sh`
+không đọc được format này** — nó chỉ đọc `cookies/<service>/`. Muốn import vào
+Chrome thì export bằng `./export-centrix-api.sh export <service>`.
 
 ### Import tự động vào Chrome
 
@@ -200,7 +229,24 @@ Tuỳ chọn hữu ích:
 Mặc định (`--mode service`): đọc `cookies/<serviceId>/*.json`, **bỏ qua** `.full.json`.  
 `--mode full` / `--full`: chỉ đọc `*.full.json`. Cả hai mode vẫn kiểm tra allowlist domain và không in giá trị cookie ra log.
 
-Alias mặc định: `grok` luôn dùng nguồn `grok-heavy`; `chatgpt` luôn dùng nguồn `notebooklm` (GPT-5.5 Pro).
+⚠️ **Dùng `--mode service` khi export bằng `export-centrix-api.sh` (v2).** Exporter
+v2 chỉ ghi `<service>.json` + `<domain>.json`; nó **không cập nhật `.full.json`**.
+Import ở `--mode full` sẽ nạp lại dump cũ và đưa bạn về trang login.
+
+Tab đang đứng ở trang login thì import chỉ reload chính trang đó. Mở tab mới
+(hoặc điều hướng lại) sau khi import để thấy trạng thái thật.
+
+Alias thực tế (xem `SERVICE_CONFIG` / `SERVICE_ALIASES` trong
+`scripts/import-cookies-to-chrome.mjs`):
+
+| Gõ | Resolve thành | Đọc từ |
+|----|---------------|--------|
+| `chatgpt`, `gptpro`, `pro` | `chatgpt-pro` | `cookies/gptpro/` |
+| `grok` | `grok` | `cookies/grok/` |
+| `grok-heavy`, `heavy` | `grok-heavy` | `cookies/grok-heavy/` |
+
+⚠️ `grok` và `grok-heavy` là **hai profile pool khác nhau** — một cái chết không
+kéo theo cái kia. Nếu `grok-heavy` bị đá về trang sign-in, thử `grok`.
 
 ---
 
@@ -247,6 +293,9 @@ centrix-wine-tools/
 | `exe not found` | `./setup-centrix-mac.sh --force-reinstall` |
 | Có installer mới | Chép `CentriX-App-User-Setup-<version>.exe` vào repo rồi chạy `./setup-centrix-mac.sh` một lần |
 | API trả HTML / parked-domain page | Backend cũ không còn chạy. Đặt `CENTRIX_SERVER_URL` thành URL API CentriX đang hoạt động rồi chạy `./export-centrix-api.sh login` lại. |
+| `desktop-v1-retired` | Server v1 đã ngừng. Dùng v2: xoá `CENTRIX_API_VERSION=v1` rồi `./export-centrix-api.sh login` (OTP email). |
+| `Phiên đăng nhập không hợp lệ` | Session v2 hết hạn / bị thu hồi. `./export-centrix-api.sh login` lại. |
+| Export `HTTP_503` ở vài service | Pool không cấp được profile hoặc gói chưa unlock service đó. Check bằng `./centrix-service-api.sh info` (mục Unlocked) và `test-all`. |
 | brew gstreamer cần sudo | Script dùng `--skip-cask-deps` khi cài Wine |
 
 ---
