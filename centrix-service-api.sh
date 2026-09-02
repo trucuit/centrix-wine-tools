@@ -427,8 +427,12 @@ async function main() {
       await handleExportAll();
       break;
     default:
+      if (cmd && !["help", "-h", "--help"].includes(cmd)) {
+        await handleExportCookies(cmd, false, OUT_DIR);
+        break;
+      }
       console.log(`Unknown command: ${cmd}`);
-      console.log("Usage: ./centrix-service-api.sh [info|list|test-all|assign <id>|export-cookies <id>|export-all]");
+      console.log("Usage: ./centrix-service-api.sh [info|list|test-all|assign <id>|export-cookies <id>|all|<serviceId>]");
   }
 }
 
