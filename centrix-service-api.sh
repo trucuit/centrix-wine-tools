@@ -334,10 +334,41 @@ async function handleExportCookies(serviceId, silent = false, outDir = OUT_DIR) 
     }));
     writeSecretJson(cookieFile, browserCookies);
 
+    // 3. Sync to service subfolder (cookies/<serviceId>/)
+    const svcDir = path.join(outDir, serviceId);
+    fs.mkdirSync(svcDir, { recursive: true });
+    writeSecretJson(path.join(svcDir, `${serviceId}.full.json`), payload);
+    if (payload.localStorage && Object.keys(payload.localStorage).length > 0) {
+      writeSecretJson(path.join(svcDir, `${serviceId}.storage.json`), payload.localStorage);
+    }
+
+    // Split cookies by domain in service folder
+    const byDomain = {};
+    for (const c of payload.cookies || []) {
+      const host = String(c.domain || "").replace(/^\./, "").toLowerCase();
+      if (!host) continue;
+      if (!byDomain[host]) byDomain[host] = [];
+      byDomain[host].push(c);
+    }
+    for (const [dom, domCookies] of Object.entries(byDomain)) {
+      writeSecretJson(path.join(svcDir, `${dom}.json`), domCookies);
+    }
+
+    // Release lease so subsequent calls don't get 409 Conflict
+    fetch(`${API_BASE}/v1/managed-profiles/${asgn.id}/release`, {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${token}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ leaseToken, reason: "cli_export_done" })
+    }).catch(() => {});
+
     if (!silent) {
       console.log(`✅ [${serviceId.padEnd(14)}] -> Success! (${(payload.cookies || []).length} cookies, ${Object.keys(payload.localStorage || {}).length} localStorage keys)`);
       console.log(`   📁 Cookies: ${cookieFile}`);
       console.log(`   📁 Session: ${sessionFile}`);
+      console.log(`   📁 Subdir:  ${svcDir}`);
     }
 
     return {
