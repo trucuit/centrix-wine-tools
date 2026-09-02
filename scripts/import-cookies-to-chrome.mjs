@@ -792,9 +792,71 @@ async function main() {
   }
 
   if (!options.service) { console.log(usage()); process.exitCode = 2; return; }
+
+  if (options.service.toLowerCase() === "all") {
+    const importable = await listImportableServices(options.cookiesDir);
+    const available = importable.filter((s) => s.available);
+    console.log(`📦 Importing ALL available services (${available.length} services)...`);
+    const endpoint = await ensureChrome(options);
+    const cdp = await connectCdp(endpoint.webSocketDebuggerUrl);
+    const results = [];
+    try {
+      for (const svc of available) {
+        const config = SERVICE_CONFIG[svc.id];
+        const sourceService = config.source || svc.id;
+        const serviceDir = resolve(options.cookiesDir, sourceService);
+        try {
+          const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode, sourceService);
+          const localStorageEntries = await loadServiceStorage(serviceDir, sourceService);
+          const sessionStorageEntries = await loadServiceSessionStorage(serviceDir, sourceService);
+          if (!loaded.cookies.length) continue;
+          const { method: injectMethod } = await injectCookies(cdp, loaded.cookies, {
+            port: options.port,
+            domainRoots: config.domains,
+          });
+          let action = "imported";
+          let localStorageApplied = 0;
+          if (options.open) {
+            action = await openOrReload(options.port, config.url, cdp);
+            if (Object.keys(localStorageEntries).length || Object.keys(sessionStorageEntries).length) {
+              try {
+                localStorageApplied = await applyLocalStorage(options.port, config.url, localStorageEntries, sessionStorageEntries);
+                action = `${action}+storage`;
+              } catch (lsErr) {
+                action = `${action}+storage-retry-skipped`;
+              }
+            }
+          }
+          results.push({
+            service: svc.id,
+            status: "ok",
+            cookies: loaded.cookies.length,
+            localStorageApplied,
+            action,
+            target: config.url,
+          });
+          console.log(`  ✓ [${svc.id.padEnd(18)}] -> ${loaded.cookies.length} cookies, ${localStorageApplied} storage items (${action})`);
+        } catch (err) {
+          results.push({ service: svc.id, status: "error", error: err.message });
+          console.log(`  ✗ [${svc.id.padEnd(18)}] -> Error: ${err.message}`);
+        }
+      }
+    } finally {
+      cdp.close();
+    }
+    console.log("");
+    console.log(JSON.stringify({
+      mode: options.mode,
+      totalAvailable: available.length,
+      successful: results.filter((r) => r.status === "ok").length,
+      results,
+    }, null, options.json ? 0 : 2));
+    return;
+  }
+
   options.service = resolveServiceId(options.service);
   const config = SERVICE_CONFIG[options.service];
-  if (!config) throw new Error(`Unsupported service: ${options.service}. Supported: ${Object.keys(SERVICE_CONFIG).join(", ")}`);
+  if (!config) throw new Error(`Unsupported service: ${options.service}. Supported: all, ${Object.keys(SERVICE_CONFIG).join(", ")}`);
   const sourceService = config.source || options.service;
   const serviceDir = resolve(options.cookiesDir, sourceService);
   const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode, sourceService);
