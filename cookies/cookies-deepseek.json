@@ -1,15 +1,5 @@
 [
   {
-    "name": "aws-waf-token",
-    "value": "27dd5140-c1f5-466f-bb5d-2df972a6cf4b:BgoAoGMz3VYuAAAA:qjmXyT4HD+Lly6bH3qSoV3Bd8q6+Io8zHYyCR7nvj+stbZFS5pp/eIlb+zGZBNFurUHGGr+CRa4gOw9Vd2x7dQoCNz6wJLMeS6RhuylL40iR4wwNSPY+MAPOas5sI/4UfV/tH8K3RAh7moEP3bFvkYEmCP0+9scceU0n5PBHED9XA8Qz9YP7skluSUiGc/pwxSIl3tTEXExa50r8t5aP+20pUTyjlc00e5eTzoNsBhhMFm9YmGh6lnTWG/aDH7pHJfWwgabGS/WAZNEllCw=",
-    "domain": ".deepseek.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1788161134
-  },
-  {
     "name": "ds_session_id",
     "value": "21336d424cfd43139067ff376ce4f9bf",
     "domain": "chat.deepseek.com",
@@ -17,6 +7,6 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "strict",
-    "expirationDate": 1790610082
+    "expirationDate": 1790946830
   }
 ]

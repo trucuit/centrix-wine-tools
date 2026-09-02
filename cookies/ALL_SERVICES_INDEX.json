@@ -1,13 +1,13 @@
 {
-  "exportedAt": "2026-08-29T10:54:56.805Z",
-  "totalExported": 14,
+  "exportedAt": "2026-09-02T13:13:54.261Z",
+  "totalExported": 13,
   "services": [
     {
       "ok": true,
       "serviceId": "claude",
       "origin": "https://claude.ai",
-      "cookieCount": 23,
-      "storageKeyCount": 42,
+      "cookieCount": 21,
+      "storageKeyCount": 47,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-claude.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-claude.json"
     },
@@ -15,8 +15,8 @@
       "ok": true,
       "serviceId": "chatgpt",
       "origin": "https://chatgpt.com",
-      "cookieCount": 42,
-      "storageKeyCount": 37,
+      "cookieCount": 44,
+      "storageKeyCount": 32,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-chatgpt.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-chatgpt.json"
     },
@@ -24,17 +24,17 @@
       "ok": true,
       "serviceId": "gptpro",
       "origin": "https://chatgpt.com",
-      "cookieCount": 38,
-      "storageKeyCount": 35,
+      "cookieCount": 43,
+      "storageKeyCount": 47,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-gptpro.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-gptpro.json"
     },
     {
       "ok": true,
       "serviceId": "gemini",
-      "origin": "https://gemini.google.com",
+      "origin": "https://gemini.google.com/",
       "cookieCount": 48,
-      "storageKeyCount": 4,
+      "storageKeyCount": 3,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-gemini.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-gemini.json"
     },
@@ -42,8 +42,8 @@
       "ok": true,
       "serviceId": "perplexity",
       "origin": "https://www.perplexity.ai",
-      "cookieCount": 23,
-      "storageKeyCount": 31,
+      "cookieCount": 15,
+      "storageKeyCount": 51,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-perplexity.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-perplexity.json"
     },
@@ -51,8 +51,8 @@
       "ok": true,
       "serviceId": "copilot",
       "origin": "https://copilot.microsoft.com",
-      "cookieCount": 66,
-      "storageKeyCount": 6,
+      "cookieCount": 35,
+      "storageKeyCount": 28,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-copilot.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-copilot.json"
     },
@@ -60,8 +60,8 @@
       "ok": true,
       "serviceId": "grok",
       "origin": "https://grok.com",
-      "cookieCount": 30,
-      "storageKeyCount": 23,
+      "cookieCount": 28,
+      "storageKeyCount": 22,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-grok.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-grok.json"
     },
@@ -69,7 +69,7 @@
       "ok": true,
       "serviceId": "deepseek",
       "origin": "https://chat.deepseek.com/",
-      "cookieCount": 2,
+      "cookieCount": 1,
       "storageKeyCount": 37,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-deepseek.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-deepseek.json"
@@ -78,8 +78,8 @@
       "ok": true,
       "serviceId": "canva",
       "origin": "https://www.canva.com",
-      "cookieCount": 27,
-      "storageKeyCount": 19,
+      "cookieCount": 26,
+      "storageKeyCount": 26,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-canva.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-canva.json"
     },
@@ -105,8 +105,8 @@
       "ok": true,
       "serviceId": "notion",
       "origin": "https://app.notion.com",
-      "cookieCount": 45,
-      "storageKeyCount": 104,
+      "cookieCount": 44,
+      "storageKeyCount": 63,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-notion.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-notion.json"
     },
@@ -114,19 +114,10 @@
       "ok": true,
       "serviceId": "scribd",
       "origin": "https://www.scribd.com",
-      "cookieCount": 48,
-      "storageKeyCount": 25,
+      "cookieCount": 60,
+      "storageKeyCount": 27,
       "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-scribd.json",
       "sessionFile": "/Volumes/m2/apps/windows/cookies/session-scribd.json"
-    },
-    {
-      "ok": true,
-      "serviceId": "envato-elements",
-      "origin": "https://noxtools.com",
-      "cookieCount": 3,
-      "storageKeyCount": 4,
-      "cookieFile": "/Volumes/m2/apps/windows/cookies/cookies-envato-elements.json",
-      "sessionFile": "/Volumes/m2/apps/windows/cookies/session-envato-elements.json"
     }
   ]
 }

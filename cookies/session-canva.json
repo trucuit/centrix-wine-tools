@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "serviceId": "canva",
-  "capturedAt": "2026-08-26T08:13:25.742Z",
+  "capturedAt": "2026-09-01T15:34:11.638Z",
   "origin": "https://www.canva.com",
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
   "fingerprint": {
@@ -188,7 +188,7 @@
       "secure": false,
       "httpOnly": false,
       "sameSite": "lax",
-      "expirationDate": 1822291766,
+      "expirationDate": 1822824721,
       "hostOnly": false,
       "session": false
     },
@@ -200,7 +200,7 @@
       "secure": false,
       "httpOnly": false,
       "sameSite": "lax",
-      "expirationDate": 1822291766,
+      "expirationDate": 1822824721,
       "hostOnly": false,
       "session": false
     },
@@ -265,18 +265,6 @@
       "session": false
     },
     {
-      "name": "ASI",
-      "value": "01M0YHV7M6SGZY5T4HVZY84QZX",
-      "domain": "www.canva.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": false,
-      "sameSite": "no_restriction",
-      "expirationDate": 1787733805.719035,
-      "hostOnly": true,
-      "session": false
-    },
-    {
       "name": "g_state",
       "value": "{\"i_l\":0,\"i_ll\":1787731763484,\"i_b\":\"1AyThXs3V5lenqyYhzZ8IZkwB3ZUalcH70lvE/UWATA\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1787731763484}",
       "domain": "www.canva.com",
@@ -289,18 +277,6 @@
       "session": false
     },
     {
-      "name": "CAZ",
-      "value": "cnvanZW4eAAAAA2lx_KKczWA7mZKeVlqhCRMY8VqYAWRQJbeo-y4t-f0uXdq4YjONNFw8THXvw7tMfkgyBw85uOT4fFDH_osMgHU5rwdmjr1VJyGh9QWQIcOw1_JA2Arq61zbiKiT3fLBqR7lN88gh-YyH8cytW2a-wQTKN8h83OcQDJG9oAeNtjewzjCE_bi5OXjaNjo-No6rE1V4nt5E4E4bk9CEWbxFoKD62SbMybjcA5J3hF9YcbI45IMqkWAtYV2cHxIW6k52mvz_9jgPnzqID-s_sViP54koRm_qekRhpxNe076Lfu25wS2QcMJbVThsRq3Vc61URhEDC61660916b6af3",
-      "domain": "www.canva.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "no_restriction",
-      "expirationDate": 1790323778.034299,
-      "hostOnly": true,
-      "session": false
-    },
-    {
       "name": "CB",
       "value": "BAGgANHSKko",
       "domain": "www.canva.com",
@@ -308,7 +284,7 @@
       "secure": true,
       "httpOnly": true,
       "sameSite": "no_restriction",
-      "expirationDate": 1790323778.034404,
+      "expirationDate": 1790867484.506508,
       "hostOnly": true,
       "session": false
     },
@@ -320,7 +296,7 @@
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1790323778.034432,
+      "expirationDate": 1790867484.50653,
       "hostOnly": true,
       "session": false
     },
@@ -332,32 +308,8 @@
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1790323778.034454,
+      "expirationDate": 1790867484.506554,
       "hostOnly": true,
-      "session": false
-    },
-    {
-      "name": "CID",
-      "value": "cnvanZW4eAAAAA2lx_KKczWA7mZKeVlqhCRMNFNkf1Zsn2DwHqrY1vQRmOkrcjfeh1ou1155-rFEkFivI-Bh2S-6WsK3ZVxpLbm--W4WMtmb1v1Qw1hCP8dak7i2o7KA8flbtM0Qc171a138",
-      "domain": "www.canva.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "no_restriction",
-      "expirationDate": 1790323778.034485,
-      "hostOnly": true,
-      "session": false
-    },
-    {
-      "name": "CUI",
-      "value": "ZW4eAAAAA-tsTQu0dXo-u0qrzsClF1ciWylimlvpoFs6BsKE9UU_UhOWfaNNYHqHeF0SgyA48DIs58_7aODVEBY",
-      "domain": ".canva.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "no_restriction",
-      "expirationDate": 1790323778.034508,
-      "hostOnly": false,
       "session": false
     },
     {
@@ -368,20 +320,9 @@
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1790323778.034536,
+      "expirationDate": 1790867484.506642,
       "hostOnly": false,
       "session": false
-    },
-    {
-      "name": "_cfuvid",
-      "value": "1gwS6pFokGzA3QadoMtpUjLVOFfDLAcSJMKEy2Zwl0U-1787731977.8605735-1.0.1.1-XKyvrkBwSq5BMbbflDE3XQSTGP82ixPcnVY9WJ0HnqE",
-      "domain": ".canva.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "no_restriction",
-      "hostOnly": false,
-      "session": true
     },
     {
       "name": "cf_clearance",
@@ -396,53 +337,108 @@
       "session": false
     },
     {
-      "name": "CCDA",
-      "value": "eyJBIjo4NjQsIkIiOjE1MzYsIkMiOjgyMiwiRCI6MTI5OCwiRSI6IkIifQ==",
-      "domain": "www.canva.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": false,
-      "sameSite": "lax",
-      "expirationDate": 1790323988.798108,
-      "hostOnly": true,
-      "session": false
-    },
-    {
-      "name": "__cf_bm",
-      "value": "u7tu4tllZu1OYcfecxF0C4g.ZFjnCQrDe3KO71ITKIE-1787732000.5473342-1.0.1.1-9bVihA3.c2BRDCJW79nodB75Ua52j8IyD2bRpWxjIZ7ONdQ5etvybDHYy2qzEXuPGfUChY2akR6ERPAxv9g4v8NCAyMK1seeMfc9vw5Fqqd4pC55FjAY6rBJuD5flFLFRHPehNs3v9pSjEzUvJXodkgagEtLojXX2FlYkTdTbY4",
+      "name": "_cfuvid",
+      "value": "tLCjEaApa0B6g1X8ZreKAwDFS0LAnAzzx9XqhkXTHk8-1788270525.2313128-1.0.1.1-mJTiqPd35IeliHUV2uurNTqwI1vrz6p7td1fQSw2Qpo",
       "domain": ".canva.com",
       "path": "/",
       "secure": true,
       "httpOnly": true,
       "sameSite": "no_restriction",
-      "expirationDate": 1787733804.722057,
+      "hostOnly": false,
+      "session": true
+    },
+    {
+      "name": "CCDA",
+      "value": "eyJBIjoxMDgwLCJCIjoxOTIwLCJDIjo5MzcsIkQiOjEyOTcsIkUiOiJDIn0=",
+      "domain": "www.canva.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "lax",
+      "expirationDate": 1790862660.973919,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "CAZ",
+      "value": "cnvanZW4eAAAAA6-A4lwyyGnKgZ_fZTKbyklE9hLJFG6b3T1bcCP1WdNF6BPUyZAOphKXdYt93gD9_DvhaO_96KT2WQbl0N7Liyv14ouU06ifRYyJmAMgIHo2LYni3zbcQeBUeaWkyIA2CtS5taM0MJDb7WjUYvV3VHwgEEbcwPtYtXWIBrINTel9hhWboyQ3V7klMScHnvKwyMi1N4ctA2qQ6WQ92Fd_umjoRxP0Zini-GQAMSncTLr0A5nIW_EU2kM2tVDbQJiApRSrUSdgPzTpFdT44V6Lt5q57jjc0_-WZv0-ZxMLuP4NGtd-PYUGuZnAH5NH62e2P_NvFuYw_vs9304e68b",
+      "domain": "www.canva.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1790867484.506451,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "CID",
+      "value": "cnvanZW4eAAAAA6-A4lwyyGnKgZ_fZTKbykkOAH0fbBUB6-bvMzSQOfJq5roaubRzTWLldTBwceXt871VDRVqeUck5boS6yy5N5kG6RlYduJZBXSemmQZz5HVhD8cJyWAr-nvIUU13b3a827",
+      "domain": "www.canva.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1790867484.506575,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "CUI",
+      "value": "ZW4eAAAAA6yGMy1AtmMcGKlNuV_isVIoKLXWfziodq3FME7Jdlr_8KD-A1lT8zvZjSwNhboHFrCp_SwE0JS3SLY",
+      "domain": ".canva.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1790867484.506615,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "__cf_bm",
+      "value": "cnrodFVPffA7upl4E9ZuSwdm3.mVKzdVtlqxSxzl_bI-1788276424.6377835-1.0.1.1-8BEz8yI95Cp9vMMCuz8owqcOzTXv9FChNA8lBp2Z0eB.hcTrQ_fysKEqQ0LP8heoZYRzC_iE3FAOw4BGvKP0dMjImkzdGoDXsQOjij3efGlRV6G4aJgW5DQ6vGTW7oG.txxnI6rn3U6SfILlRrCoQosqyFeMnFYti5feO9YD4wQ",
+      "domain": ".canva.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1788278188.601751,
       "hostOnly": false,
       "session": false
     }
   ],
   "localStorage": {
-    "theme": "light",
+    "theme": "dark",
     "gtm.events.playback": "",
     "teamPeopleViewMode": "list",
-    "ui.assistant.help_automation_assistant.session": "{\"A\":\"e7394fa5-9bf8-4a4d-9145-c263453bc396\",\"C\":1787731995368,\"D\":\"UAGQ0QodxpI\",\"F\":\"B\"}",
+    "rrsac": "[1788264719865,{\"A\":{\"UPDATE_USER_PRIMARY_EMAIL_VIA_RECOVERY\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}],\"B\":true},\"FINISH_WEBAUTHN_REGISTRATION\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}],\"B\":true},\"UPDATE_INVOICE\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"CREATE_USER\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"TEACHER_VERIFICATION\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"OAUTH\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"CREATE_GROUP_INVITATIONS\":{\"A\":[{\"A\":\"B\"},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"STEP_UP_REQUESTED\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"REQUEST_EMAIL_CHANGE\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"SUPPORT_FORM\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"CREATE_FORM_DSAR_DELETION_REQUEST\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"SEND_VERIFICATION\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"CREATE_EXPORT\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"LOGIN\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"CHECK_TEACHER_VERIFICATION_ELIGIBILITY\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"AI_SEARCH_TEMPLATES\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"CREATE_BRAND_INVITATIONS\":{\"A\":[{\"A\":\"B\"},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"FINALIZE_PRINT_ORDER\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"REMOVE_BRAND_MEMBERS\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"RESET_MANAGED_STUDENT_PASSWORDS\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}],\"B\":true},\"CREATE_MANAGED_STUDENTS\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}],\"B\":true},\"CREATE_BRAND_OWNERSHIP_INVITATION\":{\"A\":[{\"A\":\"B\"},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}],\"B\":true},\"ENSURE_TRUSTED_SESSION\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}],\"B\":true},\"HOME_BROWSE_TEMPLATES\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"UPDATE_WEBSITE_DOMAIN_REGISTRY\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"SEND_DOCUMENT_INVITE\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"UPDATE_USER_RECOVERY_EMAIL\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}],\"B\":true},\"APPROVE_BRAND_MEMBERSHIP_REQUEST\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"CREATE_TOTP\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"HOME_SEARCH_TEMPLATES\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"UPDATE_USERNAME_PASSWORD_ACCOUNT\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"UPDATE_BRAND_MEMBERS_ROLES\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"FIND_MORE_MASONRY_CARDS\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"SIGNUP_COMPLETED\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"FIND_CHARGE_DETAILS\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"SEND_OTP\":{\"A\":[{\"A\":\"B\"},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"PRINT_REVIEW_OUTCOME\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"START_WEBAUTHN_ASSERTION\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"LOGIN_COMPLETED\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"SIGNUP_ATTEMPTED\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"ADD_BRAND_MEMBERS\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"MEMBER_INITIATED_INVITATION\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"HOME_PREVIEW_TEMPLATE\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"GET_AUTHENTICATION_OPTIONS\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"SFTP_LOGIN\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"CREATE_PAYMENT_OPTION\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"SEND_GROUP_INVITATIONS\":{\"A\":[{\"A\":\"B\"},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"SEND_PASSWORD_RESET_CODE\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"EMPTY\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"SEND_BRAND_INVITATIONS\":{\"A\":[{\"A\":\"B\"},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"CREATE_EMAIL_SHARE\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"LOGIN_ATTEMPTED\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"CREATE_CROSS_ACCOUNT_DESTINATION_INITIATED_COPY\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"EDITOR_PREVIEW_TEMPLATE\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"UPDATE_USER\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}],\"B\":true},\"RESET_PASSWORD\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"ACCEPT_BRAND_INVITATION\":{\"A\":[{\"A\":\"B\"},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"CREATE_BRAND_INVITATION_LINK\":{\"A\":[{\"A\":\"B\"},{\"A\":\"F\",\"B\":true}]},\"CREATE_BACKUP_CODES\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]},\"ACCEPT_BRAND_OWNERSHIP_INVITATION\":{\"A\":[{\"A\":\"B\"},{\"A\":\"I\"},{\"A\":\"F\",\"B\":true}]},\"CREATE_SUBSCRIPTION\":{\"A\":[{\"A\":\"B\",\"B\":true},{\"A\":\"F\",\"B\":true}]}}}]",
+    "ui.assistant.help_automation_assistant.session": "{\"A\":\"651eb641-b350-445e-927b-63e01ea0dfde\",\"C\":1788270497976,\"D\":\"UAGQ0QodxpI\",\"F\":\"B\"}",
     "section-toggle-state-payments-and-plans": "expanded",
     "section-toggle-state-reporting": "expanded",
     "gtm.events.playback.sample": "true",
     "section-toggle-state-domains": "expanded",
     "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gtg_load_status\":{\"status\":2,\"expires\":1787458289965}}",
     "gtmBrowserId": "1787372616576",
-    "analytics-clock-skew": "{\"skewMs\":-4181.60009765625,\"epochStartMs\":1787731988656,\"writtenAtMs\":1787731989767,\"heartbeatAtMs\":1787732004831}",
+    "alert2.UAGQ0QodxpI.leonardo-essential-removal-from-skus.seen": "true",
+    "analytics-clock-skew": "{\"skewMs\":36526.35009765625,\"epochStartMs\":1788270492170,\"writtenAtMs\":1788270493191,\"heartbeatAtMs\":1788276850157}",
     "rrsid": "db54f2f5-2eaf-4831-9628-1e70b91fe589",
+    "file_menu:keyboard_navigation_order": "spatial_order",
     "__cuid": "012474ad43ed40fda71861525b5bfdb9",
+    "entry_page_decider_last_visited": "B",
     "lastExternalReferrerTime": "1787371916367",
+    "editor_doctype_settings": "{\"A\":[{\"A\":\"TACQ-gtv2Yk\",\"B\":{\"B\":\"C\",\"D\":false,\"E\":false,\"P\":true,\"O\":true,\"F\":false,\"H\":true,\"G\":false,\"L\":true,\"M\":false,\"J\":\"B\",\"R\":true,\"U\":true,\"Y\":true}}]}",
     "login_mode": "email",
     "login_stamp": "1787731778037",
     "lastExternalReferrer": "empty",
     "section-toggle-state-people-management": "expanded",
-    "li_adsId": "f9d0ebfe-32e3-40ce-9358-2e89976486f7"
+    "rrstc": "[1788264719858,{\"A\":{\"A\":\"pk_pxSwi3mzvEdESPPN5zA5Qb9QhsJsY14e\"},\"B\":{\"A\":3},\"C\":{\"A\":\"6LcUC1UrAAAAAAe0KkS8Q6dXNa54krxFy0MEo3-v\"},\"D\":{\"A\":\"\"}}]",
+    "li_adsId": "f9d0ebfe-32e3-40ce-9358-2e89976486f7",
+    "design_session_ids": "DAHT9bes12Y:UAGQ0QodxpI:01M1EKSM68B8FTQPEM908RERJT:1788271566539"
   },
   "sessionStorage": {
-    "searchLastActivityTime": "1787731989953",
-    "searchId": "c1c349a0-cd1e-480b-bce1-df41d7350c64"
+    "searchLastActivityTime": "1788270492828",
+    "searchId": "53a3e4c0-f044-4d07-bf23-9e9978f5a0ec",
+    "searchSessionId": "01M180KADQS507Q5X9CJ0ATKXB"
   }
 }
