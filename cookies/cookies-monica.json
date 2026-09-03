@@ -157,7 +157,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1790946832
+    "expirationDate": 1791040655
   },
   {
     "name": "MUID",
@@ -168,26 +168,6 @@
     "httpOnly": false,
     "sameSite": "no_restriction",
     "expirationDate": 1821342991.061153
-  },
-  {
-    "name": "MR",
-    "value": "0",
-    "domain": ".c.clarity.ms",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788251791.061194
-  },
-  {
-    "name": "IDE",
-    "value": "AHWqTUkAgw1QvqGn2lpErWfjxZng3aXfOkZmB7okf4OB84pCnOXIS-k1N_PTRTdl",
-    "domain": ".doubleclick.net",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1822206992.082112
   },
   {
     "name": "_rdt_uuid",
@@ -237,7 +217,7 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1790946832
+    "expirationDate": 1791040655
   },
   {
     "name": "wcs_bt",
@@ -307,57 +287,37 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1822731961.295127
+    "expirationDate": 1822922240.037502
+  },
+  {
+    "name": "IDE",
+    "value": "AHWqTUn4C2aaEUhaLLtasY16mny0vX1oHz7aJqlbSaBOIm5tIAEi9tmISGetU1re",
+    "domain": ".doubleclick.net",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822916671.512131
   },
   {
     "name": "__cf_bm",
-    "value": "rMFyUpKXOtu_yrAIlkCRfaQA5cuv.BmVBfdq1WsW8sM-1788171725.9573677-1.0.1.1-csG.SogDuvCTtmPy6nph8kXXCJSze46Thbq8x3kVbgC2UUXpAGDG4DF.74dSBLhFSPVpUROw0TVsu0CxNPgMasuQ82ui6pEJXlKQjndUH4PRDP09Q65K.oWkWjktLEGN",
+    "value": "4RbmT.0cijr9xKdSHytucPjgxziD0sMg7u0ZgrkBrgQ-1788362292.9355414-1.0.1.1-gKT9IzNlf1JlTNGdwwddBQdGo_7BzDmcati262Fwuz63g6LSYUZasv3r1K_sRIbLCCU.rjwlK3RoZ6vDC_Xo.VZzKeGTtPdA2hjk8cY9WVF1RQcWWmn9G6gBzAnYfkzY",
     "domain": ".paddle.com",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
-    "expirationDate": 1788173525.522047
+    "expirationDate": 1788364038.517276
   },
   {
     "name": "_ga_E249CNSDCV",
-    "value": "GS2.1.s1788171723$o10$g1$t1788171960$j58$l0$h0",
+    "value": "GS2.1.s1788362236$o12$g1$t1788362239$j57$l0$h0",
     "domain": ".monica.so",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1822731960.615163
-  },
-  {
-    "name": "_ga_RJYZXDEM8N",
-    "value": "GS2.1.s1788171723$o10$g1$t1788172050$j60$l0$h527883469",
-    "domain": ".monica.so",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "unspecified",
-    "expirationDate": 1822732050.148566
-  },
-  {
-    "name": "_ga_JDZPETSM4F",
-    "value": "GS2.1.s1788171723$o10$g1$t1788172050$j60$l0$h0",
-    "domain": ".monica.so",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "unspecified",
-    "expirationDate": 1822732050.159689
-  },
-  {
-    "name": "_ga_0BCXRN11PY",
-    "value": "GS2.1.s1788171725$o10$g1$t1788172050$j60$l0$h0",
-    "domain": ".monica.so",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "unspecified",
-    "expirationDate": 1822732050.169506
+    "expirationDate": 1822922239.737318
   },
   {
     "name": "monica_home_theme",
@@ -367,6 +327,36 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1790946832
+    "expirationDate": 1791040655
+  },
+  {
+    "name": "_ga_RJYZXDEM8N",
+    "value": "GS2.1.s1788362236$o12$g1$t1788362260$j36$l0$h1448648771",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822922260.225172
+  },
+  {
+    "name": "_ga_JDZPETSM4F",
+    "value": "GS2.1.s1788362236$o12$g1$t1788362260$j36$l0$h0",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822922260.234263
+  },
+  {
+    "name": "_ga_0BCXRN11PY",
+    "value": "GS2.1.s1788362238$o12$g1$t1788362323$j60$l0$h0",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822922323.508285
   }
 ]

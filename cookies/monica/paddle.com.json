@@ -1,0 +1,14 @@
+[
+  {
+    "name": "__cf_bm",
+    "value": "4RbmT.0cijr9xKdSHytucPjgxziD0sMg7u0ZgrkBrgQ-1788362292.9355414-1.0.1.1-gKT9IzNlf1JlTNGdwwddBQdGo_7BzDmcati262Fwuz63g6LSYUZasv3r1K_sRIbLCCU.rjwlK3RoZ6vDC_Xo.VZzKeGTtPdA2hjk8cY9WVF1RQcWWmn9G6gBzAnYfkzY",
+    "domain": ".paddle.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788364038.517276,
+    "hostOnly": false,
+    "session": false
+  }
+]

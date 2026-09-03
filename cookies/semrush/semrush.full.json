@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "serviceId": "semrush",
-  "capturedAt": "2026-08-28T23:23:15.586Z",
+  "capturedAt": "2026-09-03T15:16:46.931Z",
   "origin": "https://noxtools.com",
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
   "fingerprint": {
@@ -104,8 +104,9 @@
       "secure": true,
       "httpOnly": true,
       "sameSite": "no_restriction",
+      "expirationDate": 1822979977.004201,
       "hostOnly": false,
-      "session": true
+      "session": false
     },
     {
       "name": "amember_nr",
@@ -115,18 +116,19 @@
       "secure": true,
       "httpOnly": true,
       "sameSite": "no_restriction",
+      "expirationDate": 1822979977.004451,
       "hostOnly": false,
-      "session": true
+      "session": false
     },
     {
       "name": "cf_clearance",
-      "value": "16mpvvRWp59tvYE.a2FXAHrRczeftIxu9zxTKQTgsFY-1787892953-1.2.1.1-bWVKoDLiO7m0_TKlimK3YhwdbV.iCXikZWHyap1RzPyy9ClKL58V5VRvYvSME6zYGliw6hT0qLlLkUiX5_6oX0wmMLit9unFBlWBf2HF73NOxqVP7t3.NYao10UO1zsnokt09jteYkn2_VEscg8OIyxJHHPKtazHSDTiC8QIhPwd94o4gf7kpV65hxMCDB2B5FdQ455.LPFCKBtlCQpIOQ0fS.xil1P3IvGuwEODWHAGNXDAyY6noLa2EqtzNoef3wIpAI7eGkaPXEYycbr6TCdWD_wPeISd9R5Gd.T28Xua5JhR2nJM._oFDrlZKO_Ul.dh6pZu57AQCoQOAFr4gudTmr1ikecRtlry06S_s_c",
+      "value": "9uSM3jX93nXTOeLAjPbndASiMdlpN45TAKg1fcvOC6k-1788432768-1.2.1.1-jAuTxEyAzzkF1pR3iZyqpsRADTtM23C81uUuyu6WCKKvhqEQEvl.QH21vu6JXBKzQGtfBl0BBV0HhMX0aGQBncgxePiLH5gNLQCdHM27bEwmGxrxFNqxJF8HmRTWNOjrnbSgnm9CqSQCRWCAqjlkIk_cNen6_fLlD.NODGqxUdx2WEPDgocBrQPDd_xImhaw6jacn.BHsyiOVhe2.yrDXxU77zsoe5v2rQjbKiFPTsyNQWc5_9WQYWZxLu9Oh4jTb5gXKs8997_CKLNhWv0JGZzBZYmJF8T1qGJNzGQvRwy8X7KwV4aqV5Q1rT25oe47PjTitYG3Yz0qzPE4BOGho2PepGcdvrADFF4I_RJcY04",
       "domain": ".noxtools.com",
       "path": "/",
       "secure": true,
       "httpOnly": true,
       "sameSite": "no_restriction",
-      "expirationDate": 1819428953.667013,
+      "expirationDate": 1819968767.588842,
       "hostOnly": false,
       "session": false
     }

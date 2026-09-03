@@ -1,0 +1,14 @@
+[
+  {
+    "name": "muc_ads",
+    "value": "411ec7a6-2f1f-4d93-9cff-560e6ad19315",
+    "domain": ".t.co",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821516404.983264,
+    "hostOnly": false,
+    "session": false
+  }
+]

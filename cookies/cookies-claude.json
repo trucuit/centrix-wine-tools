@@ -1,93 +1,123 @@
 [
   {
     "name": "_fbp",
-    "value": "fb.1.1788157910990.59910036129921450",
+    "value": "fb.1.1788399929978.12909467296628364",
     "domain": ".claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1822717910.686516
+    "expirationDate": 1822959929.88867
   },
   {
     "name": "ion-vk",
-    "value": "215fce57-30a8-4d51-8393-257d66ebdbd0",
+    "value": "1e2202bd-b156-4813-8ca9-7a62af774008",
     "domain": "claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1790954719
+    "expirationDate": 1822972314.259167
   },
   {
     "name": "anthropic-device-id",
-    "value": "c13953fd-6f24-4cfb-a9dc-03d181cd0a74",
+    "value": "36e53283-6951-4f73-aa7c-3797e6c08ec5",
     "domain": "claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1814282293.075293
+    "expirationDate": 1814365302.336597
   },
   {
     "name": "activitySessionId",
-    "value": "26370333-f031-4e55-8e04-3868c45b8446",
+    "value": "93967494-15d6-4436-80a7-b184cbef83da",
     "domain": "claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1788405493.075393
+    "expirationDate": 1788488502.336707
+  },
+  {
+    "name": "ajs_anonymous_id",
+    "value": "claudeai.v1.ae520081-417f-4b60-8d91-1c7c8090ebc5",
+    "domain": ".claude.ai",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1819981304.860913
   },
   {
     "name": "__ssid",
-    "value": "39a7df84-cb6e-4b77-8bb8-e40a0bc5b872",
+    "value": "44ba5610-e710-4c8c-9b74-f1301f60882e",
     "domain": ".claude.ai",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1822717912.567244
+    "expirationDate": 1822959932.607517
   },
   {
     "name": "_gcl_au",
-    "value": "1.1.456484869.1788157913",
+    "value": "1.1.223756059.1788399933",
     "domain": ".claude.ai",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1795933913
+    "expirationDate": 1796175933
   },
   {
-    "name": "anthropic-consent-preferences",
-    "value": "%7B%22analytics%22%3Afalse%2C%22marketing%22%3Atrue%7D",
+    "name": "g_state",
+    "value": "{\"i_l\":0,\"i_ll\":1788399933267,\"i_b\":\"frRL/SmFe+vvWZHbYHpoASV2uhs9x+E/bKdOoKRf3s0\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1788399933267}",
+    "domain": "claude.ai",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1803951933
+  },
+  {
+    "name": "sessionKey",
+    "value": "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",
+    "domain": ".claude.ai",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1790836841.976065
+  },
+  {
+    "name": "sessionKeyLC",
+    "value": "1788412297135",
     "domain": ".claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1819694031.786348
+    "expirationDate": 1790836841.976089
   },
   {
-    "name": "_dd_s_v2",
-    "value": "isExpired=1&c=0",
-    "domain": "claude.ai",
+    "name": "routingHint",
+    "value": "sk-ant-rh-eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJFUzI1NiIsICJraWQiOiAiN0MxcWFPRnhqdWxaUjRFQnNuNk1UeUZGNWdDV2JHbFpNVDR2RklrRFFpbyJ9.eyJzdWIiOiAiMDVmZjhmODgtNzFkMS00ODRmLTkyMGUtOWQ1YzkzMzY0Njk2IiwgInYiOiAyLCAiaXNfdmVyaWZpZWQiOiB0cnVlLCAiaGFzX21lbWJlcnNoaXAiOiB0cnVlLCAib25ib2FyZGluZ19jb21wbGV0ZSI6IHRydWUsICJhZ2VfdmVyaWZpZWQiOiB0cnVlLCAicGVuZGluZ19pbnZpdGUiOiBmYWxzZSwgInBob25lX3ZlcmlmaWVkIjogZmFsc2UsICJuYW1lIjogInNhc2FkYWlyYXNlYW5uIiwgImxvY2FsZSI6ICJlbi1VUyIsICJmbGFncyI6IFsiZWRnZV9kZWZhdWx0X3JvdXRlIl0sICJpYXQiOiAxNzg4NDEyMjk3LCAiaXNzIjogImNsYXVkZS1haS1yb3V0aW5nIn0.i5a5pjk8XUz-WfQZ9e7JNxxA3XyPFvQg_yrY5nBxVskamSsNvpPcV3FPbwhqx1aP_Ae1YlOoWKh8SivGuhItJg",
+    "domain": ".claude.ai",
     "path": "/",
     "secure": true,
-    "httpOnly": false,
-    "sameSite": "strict",
-    "expirationDate": 1819694031.836
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1791004297.254183
   },
   {
     "name": "lastActiveOrg",
-    "value": "c93a2f78-d6a8-4291-86e1-ef337fbe2f8d",
+    "value": "4d08d558-0b17-472c-a29a-39f88ba00b35",
     "domain": ".claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1819892182.594007
+    "expirationDate": 1819981304.09687
   },
   {
     "name": "user-sidebar-visible-on-load",
@@ -97,67 +127,67 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1819893038.629047
+    "expirationDate": 1819981303.776302
   },
   {
-    "name": "__stripe_mid",
-    "value": "7a958e8d-a0a9-4966-a687-99a8a4e95018ea87d6",
+    "name": "intercom-session-lupk8zyo",
+    "value": "ck1pNkN6c1hBTTkydE0vTlZEQjNzSnQ3aGtjZzgxdVF2SVhXSnE5c0VQK3pBa3cwUUdnb28xVW9pN3FmVVdaUkkzc1d3WnNYZE83cSt6b2p6VGRzY2VRTWIybGxFOFZFU2ZSVHc4azVxcGIyZFYxZ2wvd0pDSkVmN2Z1VTNsQ3B5dkNLNXlFdkxKTGtrRVMybEt0a2VEN1pMK1pCWmxVM3FvMFJkRHFiQ0VMeHR1bk5WclFVQU5HZ3dDNXlucVRWYmZCRGZ6NzRCVFZ4OWNVVCtmMWRUSXhzY2lVSWIvc1JIUHQyVnc5d0FDY0tzZHhYLzA0VHkwcWNlYnU5QkgrRzg1Z1BTV0xmTjdRb2d1ZHkvVkx6dDBqdm9JZ01tZCtrUFVDcDJpKzVEUjA9LS1kek9ia0pqSTBkd09RS1RxdG9CR3J3PT0=--64833f7ca7a8625e049a3b18d608f8ab30497089",
     "domain": ".claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": false,
-    "sameSite": "strict",
-    "expirationDate": 1819892098
+    "sameSite": "lax",
+    "expirationDate": 1789621901
   },
   {
-    "name": "sessionKey",
-    "value": "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",
+    "name": "intercom-device-id-lupk8zyo",
+    "value": "24f1eedf-015f-4892-abaf-8eacb85ec119",
     "domain": ".claude.ai",
     "path": "/",
     "secure": true,
-    "httpOnly": true,
+    "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1790739249.263283
-  },
-  {
-    "name": "routingHint",
-    "value": "sk-ant-rh-eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJFUzI1NiIsICJraWQiOiAiN0MxcWFPRnhqdWxaUjRFQnNuNk1UeUZGNWdDV2JHbFpNVDR2RklrRFFpbyJ9.eyJzdWIiOiAiMWY3MmViZmMtYjQyYS00YjdlLThmZWYtYzFjMDBiNTNiMGIyIiwgInYiOiAyLCAiaXNfdmVyaWZpZWQiOiB0cnVlLCAiaGFzX21lbWJlcnNoaXAiOiB0cnVlLCAib25ib2FyZGluZ19jb21wbGV0ZSI6IHRydWUsICJhZ2VfdmVyaWZpZWQiOiB0cnVlLCAicGVuZGluZ19pbnZpdGUiOiBmYWxzZSwgInBob25lX3ZlcmlmaWVkIjogdHJ1ZSwgIm5hbWUiOiAiQ2VudHJpWCIsICJsb2NhbGUiOiAiZW4tVVMiLCAiZmxhZ3MiOiBbImVkZ2VfZGVmYXVsdF9yb3V0ZSJdLCAiaWF0IjogMTc4ODE1ODAzMCwgImlzcyI6ICJjbGF1ZGUtYWktcm91dGluZyJ9.FPqt39FzNSiUxNI8bj7D3x8-cJpo0-Bus8enLx2daSWhQcTjhqOUbOfYhXnr8uj4tg_CYH4FqEHP-hyRRkJ91g",
-    "domain": ".claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1790750030.548469
-  },
-  {
-    "name": "sessionKeyV3",
-    "value": "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",
-    "domain": ".claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1790739249.263133
+    "expirationDate": 1811742301
   },
   {
     "name": "cf_clearance",
-    "value": "bxm7ZlEHGmiAAqIPxHd81SJGyJnQt7tOvy7sHjTduD4-1788362292-1.2.1.1-B0NpcDbuqLAwJcQpGPwtPdrCwTJlcsSuQ3JnZ0ptNI1j.P9eBSHNsRY5kXA3NFiMDWEr_i6iMH1fV7Vdp7H.jjFMO2uZ6XFgFSiNW_Rai_6YGKTFUm2dsj7FNu_.K3wg8G9KRbFwfHu5q2h4p6Fbcg2GX_VSyDAz_CdycBsvoDtgjt8UAUaCdwyQoI8s1AodQV75pUg7DN5ktWUN_trFE6Oth3GgKErj9Q09lJvrVigoBDrj0ryk0bX1HcbfmocRJ2vHmLgRZ_srxKgiDx8DezVtrwwFTc7q3tIIlO6p3.UsFmUtnj.bZySIek5n3eefu2cfGSz.JFUwrKgbbOw7E1Sndgb.7vg4s8ES0S4PSxE",
+    "value": "LYCzH.1edxVb1dDyiuD_Zn8xG8ad.CmSgkszH85Gi7g-1788414598-1.2.1.1-rX8sZ0B0aUCGFifh1GVNHZBZVOG3.XoSLLLLvLql7fn29BpLWN4ZeSsCehiUUjzYvtY7vgarMieL4vmLgwkAAcfH_sWRtv13ysaIBEpMuAd2UM0eErJefqLMMeLY3FCUW6F9.tpmce_MYm4qR8S30.vlfI_gYZ3mx86zn2GrdLFJPjRfHvWV5uZajQV07TRd7jhF_Znjg0nCNxrCccQWwBY2TdvbFbqSWP3UFDmf5PhYhj.4f8tjBqMqYndpguzJ_8sHTRrgE.rxUphyTugxJaJW451jbOhpNyPwICrPdTvNsSiQwSqz4sud83daJ3kVKx7HS5OeraorEt0r2UdgYU.UvKlmvlTYsf7BbDden7M",
     "domain": ".claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
-    "expirationDate": 1819898292.56079
+    "expirationDate": 1819950598.731194
   },
   {
-    "name": "__cf_bm",
-    "value": "iE9lnJC1XNKBotJWTuiglqIJ47iEmFl2zs7Mg4nVPDE-1788362292.7185183-1.0.1.1-wTm_a9uwV6wDe4USVMw_OwJFylyole2J2X5iMzU0J1Ne3wkkqiC.1wlu6OeHs3KSxPdkxeWiUvK8PPqaOmwzeuVsHZTXhf_.tOo9pxViVHPAz200nKWCNJZHGNLunW3_",
+    "name": "sessionKeyV3",
+    "value": "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",
+    "domain": ".claude.ai",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1790836841.975895
+  },
+  {
+    "name": "sessionKeyV3LC",
+    "value": "1788439240845",
+    "domain": ".claude.ai",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1790836841.976049
+  },
+  {
+    "name": "_cfuvid",
+    "value": "ECYLU1uxCd9HJbRnr8k0KOY3CcLFTJZpOk6JxdtLyNo-1788445303.0907056-1.0.1.1-hwzh4pIZQKKcJnwCTah8W9jcfiPa4jO6i0.j9OoNn1A",
     "domain": ".claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
-    "expirationDate": 1788364092.560924
+    "expirationDate": 1791040638
   },
   {
     "name": "CH-prefers-color-scheme",
@@ -167,26 +197,26 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1819898293.148001
+    "expirationDate": 1819981303.78439
   },
   {
-    "name": "_cfuvid",
-    "value": "q4l6Q7lktZ2VvWhQcFa_SJOrS4TcZMWgcgJLKUgT3oY-1788362293.317889-1.0.1.1-aZoaGl54q68bdP2xDRef06A8Wcn8wBQYAmHSgTsVtz0",
+    "name": "__cf_bm",
+    "value": "FgsJUQ0xWfC2C6hlFakQGq4BK0LLqt_BaKbl.yOALDM-1788447521.3292701-1.0.1.1-IcR6BGYTl1BCBnOxSj2vOmK12icHf5UbOkqDyJnAeSItS.c0vPO90QweNB2ZbLfTtmi9KccM0wTJ4RA4dzH3qjhBhXWU2pWM.ztPdYtFzENZefKIumJYHVtE1P23x7hS",
     "domain": ".claude.ai",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
-    "expirationDate": 1790954719
+    "expirationDate": 1788449320.820264
   },
   {
-    "name": "g_state",
-    "value": "{\"i_l\":0,\"i_ll\":1788362294788,\"i_b\":\"eTBnHINrRgk+12v9Ks/v4cCCo4Zy/pO+86JkWUnuHyY\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1788362294788}",
+    "name": "_dd_s_v2",
+    "value": "isExpired=1&aid=3118b9e7-1259-488e-ae18-3ba4a36729dd&c=0",
     "domain": "claude.ai",
     "path": "/",
-    "secure": false,
+    "secure": true,
     "httpOnly": false,
-    "sameSite": "unspecified",
-    "expirationDate": 1803914294
+    "sameSite": "strict",
+    "expirationDate": 1819983702.523
   }
 ]

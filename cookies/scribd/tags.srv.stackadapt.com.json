@@ -1,0 +1,26 @@
+[
+  {
+    "name": "sa-user-id",
+    "value": "s%3A0-55382feb-5c5f-5ff1-4da8-ccca2dc32192.fvgnyde1w10UBctwNXlJ2qXsLrZw%2BceWtHa%2BGwsgVvo",
+    "domain": "tags.srv.stackadapt.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819099737.259955,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "sa-user-id-v2",
+    "value": "s%3AVTgv61xfX_FNqMzKLcMhkip1-1Q.o1Xc%2BwuKDY12G4TvxG5VZ91%2FVFrtGTwL8kb540nZ60g",
+    "domain": "tags.srv.stackadapt.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819099737.26002,
+    "hostOnly": true,
+    "session": false
+  }
+]

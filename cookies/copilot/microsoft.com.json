@@ -1,0 +1,26 @@
+[
+  {
+    "name": "MC1",
+    "value": "GUID=1377b881cb994f3380a7efb3ea119d1e&HASH=1377&LV=202608&V=4&LU=1786758831934",
+    "domain": ".microsoft.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818294832.08663,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "MS0",
+    "value": "c8862650ec3044eeb4a0d04ac266d64c",
+    "domain": ".microsoft.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822959929.56716,
+    "hostOnly": false,
+    "session": false
+  }
+]

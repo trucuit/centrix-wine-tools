@@ -1,0 +1,14 @@
+[
+  {
+    "name": "m",
+    "value": "7d74a8f8-cf84-443a-8d5f-1f9f6ea4dd8f985056",
+    "domain": "m.stripe.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822982135.335528,
+    "hostOnly": true,
+    "session": false
+  }
+]

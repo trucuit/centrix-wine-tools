@@ -1,0 +1,14 @@
+[
+  {
+    "name": "CLID",
+    "value": "01d0bceeaf0f4017b694f6c61f2ff308.20260825.20270825",
+    "domain": "www.clarity.ms",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819182989.204628,
+    "hostOnly": true,
+    "session": false
+  }
+]

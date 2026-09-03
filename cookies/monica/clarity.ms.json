@@ -1,0 +1,14 @@
+[
+  {
+    "name": "MUID",
+    "value": "245481470743632C0FFE9687065162F5",
+    "domain": ".clarity.ms",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821342991.061153,
+    "hostOnly": false,
+    "session": false
+  }
+]

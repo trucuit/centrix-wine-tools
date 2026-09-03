@@ -1,0 +1,50 @@
+[
+  {
+    "name": "proxy_token",
+    "value": "425e3bf9a538b6ffbf27209f5c20a754",
+    "domain": ".elements.envoto.site",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819890078.451377,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "dl_user",
+    "value": "teF2-WCNfZGriNnbhYYV1ozX3jhNkQzDsuZ6qAPQlJfbMCjlmSZ_KAHcqPm_ebsEBjYBmntV8weLx5sNz77l-XrF",
+    "domain": ".elements.envoto.site",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1819890078.600111,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "enrollmentStockVideoSplit",
+    "value": "0eec6eaf-4914-4b9b-90af-16e67394c904:0",
+    "domain": "elements.envoto.site",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1790949072.844895,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "_dd_s_v2",
+    "value": "aid=24975bb7-ff45-4c38-b102-fd6d33146483&id=3c01a034-5cf6-478d-8ac3-b7cf0848de77&created=1788356936031&expire=1788357973518&c=0",
+    "domain": "elements.envoto.site",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1819893073.518,
+    "hostOnly": true,
+    "session": false
+  }
+]

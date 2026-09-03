@@ -1,0 +1,14 @@
+[
+  {
+    "name": "OTZ",
+    "value": "8765567_28_28__28_",
+    "domain": "ogs.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790830010,
+    "hostOnly": true,
+    "session": false
+  }
+]

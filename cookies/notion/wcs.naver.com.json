@@ -1,0 +1,14 @@
+[
+  {
+    "name": "NWB",
+    "value": "ddaf79a4527a8f4d36a15743e549958f.1786956405009",
+    "domain": ".wcs.naver.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822915026.615392,
+    "hostOnly": false,
+    "session": false
+  }
+]

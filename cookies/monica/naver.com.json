@@ -1,0 +1,14 @@
+[
+  {
+    "name": "NAC",
+    "value": "7p9ZBMRdedMcB",
+    "domain": ".naver.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822247392.20133,
+    "hostOnly": false,
+    "session": false
+  }
+]

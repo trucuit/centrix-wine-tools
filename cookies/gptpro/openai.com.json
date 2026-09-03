@@ -1,41 +1,38 @@
 [
   {
-    "domain": ".openai.com",
-    "expirationDate": 1819612613.026293,
-    "hostOnly": false,
-    "httpOnly": false,
     "name": "oai-did",
+    "value": "a0ece726-61fc-4d9b-9b11-096f34628608",
+    "domain": ".openai.com",
     "path": "/",
-    "sameSite": "lax",
     "secure": false,
-    "session": false,
-    "storeId": "0",
-    "value": "f84dbbb9-504b-40f6-b33a-d7f3213850c8"
-  },
-  {
-    "domain": ".openai.com",
-    "expirationDate": 1819612613.02635,
-    "hostOnly": false,
     "httpOnly": false,
-    "name": "oaicom-stable-id",
-    "path": "/",
     "sameSite": "lax",
-    "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "e625087f-40ac-4d0a-bcb4-d9ead50b95f3"
+    "expirationDate": 1819927735.035174,
+    "hostOnly": false,
+    "session": false
   },
   {
+    "name": "oaicom-stable-id",
+    "value": "a83f08d2-0111-45f4-8dbb-65fcf526736d",
     "domain": ".openai.com",
-    "expirationDate": 1819612620.089713,
-    "hostOnly": false,
-    "httpOnly": false,
-    "name": "oai-sc",
     "path": "/",
-    "sameSite": "no_restriction",
     "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "0gAAAAABqk-JMghBXs4Pe0YITNzywJjI7xDRT_6K0pk5IuwskmdiE4LgXL6TJYaPXkqSlUssm3a0gKXfe7Lx6afWrfVPMolcuw37sMp7fZXJXxlj4pQ514-SIxwexVrkI0CrUhQYWEsCe8yGaWov9wcfXfFDFXzCJfqSx8EBeoqYGBz3NNUcIXtgTFh7gBoK2fZys5RmvxoDEh6jtEDPsXRdrfWwtcWKF83OFTQNDzutRHTo2sQFCYR74BDigQIl7PDtxoYu6_oB6"
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1819927735.035226,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "oai-sc",
+    "value": "0gAAAAABqmLE9nxPWYV0LXiVKdKKSYucgLYLsENuq5rxD1dhpFHUCWdxzp-IxidikCBzWbISZccMGF4_CBdquETKvg6_qRvVssmDu2bjbjXa2xsXRyfSd1maPfxVZih3aEhpxuP-b6W0PpWb0thy4XCruf--OwxpqQKzzP2U2iP6Tcm91pziyCsFTh8qv8y22UrqC0zOG26Smf2A5SkxLQl__x_jZ5KfxGQy6gAgRQNNNewwUV99xLzVgstCjXzS4rCnJlBMUNen_",
+    "domain": ".openai.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819927741.654214,
+    "hostOnly": false,
+    "session": false
   }
 ]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "koreanLocaleEnabled",
+    "value": "0",
+    "domain": ".envoto.site",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1819893072.845166,
+    "hostOnly": false,
+    "session": false
+  }
+]

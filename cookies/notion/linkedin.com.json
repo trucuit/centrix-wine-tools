@@ -1,0 +1,38 @@
+[
+  {
+    "name": "bcookie",
+    "value": "\"v=2&d01372a7-68c2-4344-8ddc-a70d949a6d32\"",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492403.969921,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "li_gc",
+    "value": "MTswOzE3ODY5NTY0MDQ7MjswMjHV+drMe01vIobischsLtKR4rV+mkSALmbpUIiHdOOf6A==",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1802508403.970819,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "lidc",
+    "value": "\"b=TGST02:s=T:r=T:a=T:p=T:g=3834:u=1:x=1:i=1788355017:t=1788441417:v=2:sig=AQGjQkLCMcFXXY4se-nbpG9Rflagf_TZ\"",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788441417.759088,
+    "hostOnly": false,
+    "session": false
+  }
+]

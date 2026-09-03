@@ -1,0 +1,14 @@
+[
+  {
+    "name": "IDE",
+    "value": "AHWqTUmskPoVM5LhQ-fsep_2hAcu-fs9iitrvxuO8diNklQ3fLgS2C7dBznyoRhj",
+    "domain": ".doubleclick.net",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822803047.434665,
+    "hostOnly": false,
+    "session": false
+  }
+]

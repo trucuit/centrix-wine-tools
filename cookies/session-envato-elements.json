@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "serviceId": "envato-elements",
-  "capturedAt": "2026-08-27T04:48:46.597Z",
+  "capturedAt": "2026-09-03T02:50:05.197Z",
   "origin": "https://noxtools.com",
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
   "fingerprint": {
@@ -97,18 +97,6 @@
   },
   "cookies": [
     {
-      "name": "cf_clearance",
-      "value": "Gadi6Y2inF4Pfnn7l0pQN_h4ZfpuzOTaG75LyToNrq0-1787663298-1.2.1.1-qKSZnwEzlBuLTYy0FjHdUoS01fkehtfxOtI5FNr2tKhWP.qH2TmDFoE2x3jJQQ.XQNDUQdN5eTPqRUqYvpT.WDO8ztDYtQEA4tkhp2nXQXLbZ0Cj5wqWmsCDeYjPP9iDw5OKPd1ityLiPhgywr2QaB7i11hXrS84hvwNUUe9lVNgsgRDpfgvIsFFIrJxX8QmtXzhzjKx__6gijmmEZBJETjf_U3K0YymbOCoz9OQ9fOhKsqEwTRMJmKmLAWFeWHAO1moa9h3C8_sHT_UjO6s1f4YQS8nm6DQJGXS8R52u7TbzMTSLIhcCxKRU_2oZ1axIDcQ1MdJsfV59hni.KcxsaQO3UGkSx7niaKavnnWq5M",
-      "domain": ".noxtools.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "no_restriction",
-      "expirationDate": 1819199297.902621,
-      "hostOnly": false,
-      "session": false
-    },
-    {
       "name": "PHPSESSID",
       "value": "2u4b27vetn6la4qvr49l5t6uv0",
       "domain": ".noxtools.com",
@@ -129,13 +117,68 @@
       "sameSite": "no_restriction",
       "hostOnly": false,
       "session": true
+    },
+    {
+      "name": "proxy_token",
+      "value": "425e3bf9a538b6ffbf27209f5c20a754",
+      "domain": ".elements.envoto.site",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1819890078.451377,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "dl_user",
+      "value": "teF2-WCNfZGriNnbhYYV1ozX3jhNkQzDsuZ6qAPQlJfbMCjlmSZ_KAHcqPm_ebsEBjYBmntV8weLx5sNz77l-XrF",
+      "domain": ".elements.envoto.site",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "lax",
+      "expirationDate": 1819890078.600111,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "koreanLocaleEnabled",
+      "value": "0",
+      "domain": ".envoto.site",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "strict",
+      "expirationDate": 1819893072.845166,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "enrollmentStockVideoSplit",
+      "value": "0eec6eaf-4914-4b9b-90af-16e67394c904:0",
+      "domain": "elements.envoto.site",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "strict",
+      "expirationDate": 1790949072.844895,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "_dd_s_v2",
+      "value": "aid=24975bb7-ff45-4c38-b102-fd6d33146483&id=3c01a034-5cf6-478d-8ac3-b7cf0848de77&created=1788356936031&expire=1788357973518&c=0",
+      "domain": "elements.envoto.site",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "strict",
+      "expirationDate": 1819893073.518,
+      "hostOnly": true,
+      "session": false
     }
   ],
-  "localStorage": {
-    "x-csrf-token-2": "DcKIwp9Lw4jDl8KKw48Yw7jDgTA8fwZfaTvCuzojFMOHw43DncO1McOvH3kjTMK1asOFS8KDw6TDgMKDw7DDisO6Uxkpw5prQ8OjLXXCuMOuD0MnZETCl8KdwqRAwoI",
-    "theme": "dark",
-    "x-csrf-token": "qGIc8uetZ7E0vLhXMCthWB3VUNRrvVAeoZMPOxGA42xt6Fx-8yD8WnqdS2JDNkhc5azJGlPgaqRdHaC49WAK7Q",
-    "kt-theme": "light"
-  },
+  "localStorage": {},
   "sessionStorage": {}
 }

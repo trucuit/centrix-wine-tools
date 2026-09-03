@@ -1,0 +1,86 @@
+[
+  {
+    "name": "device_id",
+    "value": "3bfd872b-594c-8193-9543-003b80d9196f",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1819927388.048706,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "NEXT_LOCALE",
+    "value": "en-US",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819927387,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "g_state",
+    "value": "{\"i_l\":0,\"i_ll\":1787223643706,\"i_b\":\"UiLb3wgNMq7rgJ1z6u80sY9WRkMHVF9o9DPsCdUUqgo\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1787223643706}",
+    "domain": "app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1802775643,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "notion_user_id",
+    "value": "161d872b-594c-81a9-96db-0002fea397f0",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819927387,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "notion_locale",
+    "value": "en-US/legacy",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819927387,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "notion_users",
+    "value": "[%22161d872b-594c-81a9-96db-0002fea397f0%22]",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819927387,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "token_v2",
+    "value": "v03%3AeyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..pniYbzTEdIMbVtMZj1RCwQ.F017Wt3NCZ_3QbW4eoJxhKNVZPo8mZ8TQsd3G4z9Txiufv-vlMiu_kNePH27ikcmVtKWTPEklrxce7CWxpwNso-jZmHMc3S22ayivWZttc7wAQxmqhBbr7yeFqS2n13ITZ17Yzyj3uNU2bEibctKiI8TNFGoO5K8DShVE5M4lUGNAc1NKRwM-4fq_CeLLpQ17aNw8EhgYniPWwbla1_2ClopWJMV4WvrCaXCUtt06-FaEEaXOWbR1gpAcBpOa_C44r4iLDFbI9cQl7iDlQwrKy8GrympxVxpANMsmFfct8Byn1wMi8EtZlA4aTLu8cm5eMhChAjJHYRpCOAU33NL3JZlF7q5EW-KJhg41wSavTU.CAN52GIRCxaiva9xAUIPh45MK2wr0APuRNcDuB_qJSY",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1819927388.048816,
+    "hostOnly": false,
+    "session": false
+  }
+]

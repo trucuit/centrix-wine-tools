@@ -1,0 +1,13 @@
+[
+  {
+    "name": "oai-appearance",
+    "value": "dark",
+    "domain": "chat.openai.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "hostOnly": true,
+    "session": true
+  }
+]

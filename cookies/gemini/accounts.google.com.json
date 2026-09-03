@@ -1,0 +1,86 @@
+[
+  {
+    "name": "OTZ",
+    "value": "8765567_28_28__28_",
+    "domain": "accounts.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1790829997,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "SMSV",
+    "value": "ADHTe-BRWYuZrtBg_fWskHNNObDaPIe81l5NhGSP4bVWPt4ogDNJOR5xu_dFAk_CbPfXUjYsXSjvUt5--SSR4GawCYdjsD2uv0gI2TMP4iR9szfIcb1z4n4",
+    "domain": "accounts.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822798004.257373,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "__Host-GAPS",
+    "value": "1:E_sfCJkZkDH1cHCqtVXH5nIHjD9cpeDtzBiyOlaUyj6-9Dpp_OE1mvLGIDVNDslcE8YP1n91J5DQIDOCEI0hwM21KMGIZA:D1bpaMtJ4znl8cXB",
+    "domain": "accounts.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895531.549321,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "LSID",
+    "value": "s.GT|s.VN|s.youtube:g.a000CAlc4kOZ7IZLJINgUV8qt1s6jIzKjLMK_4735Zrxpq9ZdejKtB5Ir874Lts9wmxBYb8KTgACgYKAcwSARcSFQHGX2Mi3aqLfdPsSkCQZFFHiTFB-hoVAUF8yKqmA4KYVw1xsq6BhGC-lqE10076",
+    "domain": "accounts.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895536.365654,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "__Host-1PLSID",
+    "value": "s.GT|s.VN|s.youtube:g.a000CAlc4kOZ7IZLJINgUV8qt1s6jIzKjLMK_4735Zrxpq9ZdejKyIpn-hMhp2Ew3i5qzc3tlwACgYKAQ0SARcSFQHGX2MiiJkWehv5CdO-VnGrSjTtTxoVAUF8yKoseA2I-Nk6sJhYSvMEJIYU0076",
+    "domain": "accounts.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895536.365903,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "__Host-3PLSID",
+    "value": "s.GT|s.VN|s.youtube:g.a000CAlc4kOZ7IZLJINgUV8qt1s6jIzKjLMK_4735Zrxpq9ZdejKntchjfCUU27wswZB1IX_SQACgYKAZoSARcSFQHGX2MisdYuxqvYFs57OEFDoQQMQhoVAUF8yKqMgbWvm2f5-FgvZyAAslLx0076",
+    "domain": "accounts.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895536.366102,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "ACCOUNT_CHOOSER",
+    "value": "AFx_qI56v3pkzg-56fioQiMh5CL5kAnZUEvFhWt7G6IWVeVRMozf8ipyszXzLHYsSn3d8SekzUM5Cw4KkNYXJ4mMMsC0Gjmkq6Op0ekwSyoYmGsdV3vjsQiNAV3yxpo2X5U-aM_sLnlZR_z1yCtYPl3OJF6_d4DCkQ",
+    "domain": "accounts.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895536.366225,
+    "hostOnly": true,
+    "session": false
+  }
+]

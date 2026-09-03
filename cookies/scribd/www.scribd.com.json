@@ -1,0 +1,74 @@
+[
+  {
+    "name": "statsig.stable_id.3094802910",
+    "value": "52a88a30-8221-492b-8160-bc568b493a51",
+    "domain": "www.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1819099731,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "_fs_sample_user",
+    "value": "false",
+    "domain": "www.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1790155731,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "__pdst",
+    "value": "ca3f8e1ba7094e75b5482ae9bdda29a2",
+    "domain": "www.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1819099732,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "__stripe_mid",
+    "value": "1eff783f-df8e-4b75-ad93-cd8bb9e0e80d91daae",
+    "domain": ".www.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1819958133,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "__stripe_sid",
+    "value": "9f5cefee-5e86-4892-85ed-94e3031780a1e70f1a",
+    "domain": ".www.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1788423933,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_dd_s",
+    "value": "aid=b7498558-0cb3-4823-9108-e7298a49a8cc&rum=0&expire=1788423031128&logs=0",
+    "domain": "www.scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1788423035,
+    "hostOnly": true,
+    "session": false
+  }
+]

@@ -1,25 +1,5 @@
 [
   {
-    "name": "spv_1073343177",
-    "value": "f6c0f54aa2f7e31f49a3e9ac900b2768d4431a30f9af68553e470a4b78401593",
-    "domain": "www.scribd.com",
-    "path": "/document/1073343177/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1788247192.562341
-  },
-  {
-    "name": "spv_1073343167",
-    "value": "c38d0b04e36373de3b37d3228b52bb553bc3824786ff2c1b1d146262f1cf9fd4",
-    "domain": "www.scribd.com",
-    "path": "/document/1073343167/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1788247238.739675
-  },
-  {
     "name": "scribd_ubtc",
     "value": "u%3Db4c4f10f-8a7b-408a-a902-786714bff096%26h%3DjPcuY3KHd8fp0IbmTD2nQCQYlNxvYVvlnqR8JwBIXt4%3D",
     "domain": ".scribd.com",
@@ -137,27 +117,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1819783013.147834
-  },
-  {
-    "name": "_fs_sample_user",
-    "value": "false",
-    "domain": "auth.scribd.com",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790946833
-  },
-  {
-    "name": "fs_uid",
-    "value": "",
-    "domain": "auth.scribd.com",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "strict",
-    "expirationDate": 1790946833
+    "expirationDate": 1819958130.192899
   },
   {
     "name": "_gcl_au",
@@ -247,7 +207,7 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1796023055
+    "expirationDate": 1796198131
   },
   {
     "name": "_fbp",
@@ -357,7 +317,7 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
-    "expirationDate": 1822807016.411106
+    "expirationDate": 1822982135.335528
   },
   {
     "name": "__stripe_mid",
@@ -367,7 +327,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "strict",
-    "expirationDate": 1819783016
+    "expirationDate": 1819958133
   },
   {
     "name": "osano_consentmanager",
@@ -377,187 +337,77 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1819783013.148574
+    "expirationDate": 1819958130.193261
   },
   {
     "name": "_fs_cd_cp_pRdRgnTnF68pCV2F",
-    "value": "ATHJrQv5CG51biDQUn_3SxZofDxotUzWnmOwN8FjYmrr8Z4uDoMzEWrYCnQ9QpRi5KRSxe-8KKpSfYqtsRw3gAIbmmKP845JwYBfjk14zidrGAtneht10DzhjgWNDxeI7Zhxs37kDZJfP89Twvjo0mNM5NgtWPoTLUzPInKo02UGE5TG0EYIsKXWUlPBzhDFBHpSzarDRg==",
+    "value": "ATRTS1n8ZCjBg1E1CPee3bBqmkrOlON1HhYSn79nO1UrXBOZGrsksWS_Z3fIDUogan6l-wpFFC2jSpwLuTBrcx-gpf_A2PH3YFuoYirkEGtUaOXny5nZtkLUZONz5afGY1LfG0c-Hu0ldb4PyfeYyEBoMPpamzEeuZSzEab93hQaQ-CjtotDjCMWGgWM04pEqDL-dNfYdg==",
     "domain": ".scribd.com",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1788250543.445265
-  },
-  {
-    "name": "__stripe_sid",
-    "value": "c6181b00-9e0f-41e8-a234-aa87941d9cffb2559e",
-    "domain": ".www.scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "strict",
-    "expirationDate": 1788248816
+    "expirationDate": 1788425730.708752
   },
   {
     "name": "_gid",
-    "value": "GA1.2.1082954415.1788246983",
+    "value": "GA1.2.289174538.1788422131",
     "domain": ".scribd.com",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1788333413
+    "expirationDate": 1788508531
   },
   {
-    "name": "IDE",
-    "value": "AHWqTUndUnHIrfJOHeEb2q0Y4UhCvn8Vr-0QGUrykWaofqmSPYK4U7QF7iItfI1U",
-    "domain": ".doubleclick.net",
+    "name": "_gat",
+    "value": "1",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1788422191
+  },
+  {
+    "name": "_dc_gtm_UA-443684-29",
+    "value": "1",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1788422191
+  },
+  {
+    "name": "_scribd_session",
+    "value": "RFpEMjhCOGk2UHk3WmtobmovWHBBREJXdU9xaFZXNERBc2ZyQlNIUDNhZlA0QU1DZlYrakdteDJkdHFHMXJaeFN0N2pqTjdBRVlzNjlYZWJGYXFzR0hxampqdjBrUVBsYXRjRk9RMk51T1FEQkk5aGVvUnRrKy9Wb1VVWExmRTlTSEhZV3ZoUlRRb1Y5M3VZcEMreUJrVGRSVHhYd2FlSVN5VGV4U1A0aU9ubDNKMk5GVENTVC81eldmZ2V5bXlKMHBEZC8yZGUrRS9EM3dIc2xmRHdnY0l4a0hEMDYrUGpkdEFVNmIvNDJLWXpva3QwZmhTQ3lPVjZoWEhsc29kWUhwWFBqemZNK1E5anRtSUxoU2t4RCtCQWFtMjVPRnJ3dTNjeDdSVzhvbXl6eW85SjJUS3ZhbTNQcVFma0g5RlRaWTVaaUFndDdPTWI2b3lvYjFPYlFuY1hPVDBtK1JnVUsyd1JvZlQ5SUpyaDdKMnhLQk9JdHBCWUQ1aTkzdjBOcnRidGhhcFNkYXc1RjNEaHk5YW9OTGVBNmZ3STRMZXlCbHdkck5kdFpqc3kxRzgxbUQ3NzVtRmRDQ2pQQmdmM0oxT1RSL0xUL2lIVk1tUzViaHc0NGc9PS0tSXhmVDNEV2dnWHA1OExNNFM2dVdsQT09--47e15528866ddfeedfef860ace28642dd2ca22f3",
+    "domain": ".scribd.com",
     "path": "/",
     "secure": true,
     "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1822806983.997674
-  },
-  {
-    "name": "fr",
-    "value": "0YK09h7xlJ8VkMt6c..BqjA7Z...1.0.BqlnvK.AWcJm5OFI7se55eahe0Vr8UT644",
-    "domain": ".facebook.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1796022985.349246
-  },
-  {
-    "name": "__CJ_SEARCH_SESSION",
-    "value": "5b1e2d9d-9996-448f-b69e-2acf4e89a766",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1788248802
-  },
-  {
-    "name": "__CJ_SEARCH_RESULTS_VIEW_PREFERENCE_V2",
-    "value": "listview",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1822807003
-  },
-  {
-    "name": "_ga_Z4ZC50DED6",
-    "value": "GS2.1.s1788246983$o4$g1$t1788247012$j31$l0$h0",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1822807013.239689
-  },
-  {
-    "name": "_ga_8KZ8BV0P5W",
-    "value": "GS2.1.s1788246983$o4$g1$t1788247012$j31$l0$h0",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1822807013.243027
-  },
-  {
-    "name": "__CJ_doc_page_enable_overlapping_highlights_variant_tracked",
-    "value": "true",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790946833
-  },
-  {
-    "name": "__CJ_doc_page_doceree_ad_integration_variant_tracked",
-    "value": "true",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790946833
-  },
-  {
-    "name": "__CJ_doc_page_project_entry_variant_tracked",
-    "value": "true",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790946833
-  },
-  {
-    "name": "__CJ_doc_page_scribd_ui_smoketest_variant_tracked",
-    "value": "true",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790946833
-  },
-  {
-    "name": "__CJ_mfe_doc_page_variant_tracked",
-    "value": "true",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790946833
-  },
-  {
-    "name": "__CJ_scribd_growth_copy_text_nudge_trialer_activation_variant_tracked",
-    "value": "true",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790946833
-  },
-  {
-    "name": "__CJ_parchive_offer",
-    "value": "%7B%22avail_height%22%3A816%2C%22avail_width%22%3A1536%2C%22color_depth%22%3A24%2C%22cookie_uuid%22%3A%2289c7ec9c-2e4d-4b21-b719-78aa9b17c6fc%22%2C%22cookies_enabled%22%3Atrue%2C%22hardware_concurrency%22%3A8%2C%22height%22%3A864%2C%22java_enabled%22%3Afalse%2C%22left%22%3A48%2C%22max_touch_points%22%3A0%2C%22orientation%22%3A%22landscape-primary%22%2C%22pixel_depth%22%3A24%2C%22platform%22%3A%22Win32%22%2C%22referrer%22%3A%22https%3A%2F%2Fwww.scribd.com%2Fsearch%3Fquery%3DRSM%2520Simplified%253A%2520Optimizing%2520Processes%2520Using%2520Response%2520Surface%2520Methods%2520for%2520Design%2520of%2520Experiments%252C%25202nd%2520Edition%22%2C%22time_zone%22%3A%22Asia%2FSaigon%22%2C%22top%22%3A0%2C%22width%22%3A1536%7D",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1788333413
+    "sameSite": "unspecified",
+    "expirationDate": 1822982131.149022
   },
   {
     "name": "_ga",
-    "value": "GA1.2.871955158.1787563743",
+    "value": "GA1.1.871955158.1787563743",
     "domain": ".scribd.com",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1822807013.750278
+    "expirationDate": 1822982131.364025
   },
   {
     "name": "_uetsid",
-    "value": "0a99c780a5d511f1b8f5178836d9f196",
+    "value": "d601c940a76c11f1ad67779e1cf9ba8d",
     "domain": ".scribd.com",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1788333413
+    "expirationDate": 1788508531
   },
   {
     "name": "_uetvid",
@@ -567,36 +417,66 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1821943013
+    "expirationDate": 1822118131
   },
   {
-    "name": "__CJ_pao_bucket",
-    "value": "%7B%22name%22%3A%22subscribe_only%22%2C%22is_personalized%22%3Afalse%7D",
-    "domain": ".scribd.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "unspecified",
-    "expirationDate": 1822807018.761603
-  },
-  {
-    "name": "_scribd_session",
-    "value": "eFBTWEE4a21BNVI2VVhUck0wZ3NzZzVWakVib2UvNmV2M2Y2cjRhNkU0WUlGeDBWVmQ4MmFFTThjZ3pCZ0FzSVNXdkVXdG15YVpQZDJFeS9TNW1XTkNPZ2t3Y2RzYjRxRWplRVppK1JCT3BrQ1RYN05mYU1QUW54NFlHZlZYOWlKQjF5MXB2OFc2M3BUaTVBNkFyb3hLWTNtY2d1bUVQMXkxeUR4WlpoZ0FqWXd0S3hKK1hFQzgvanNDdmJTSjJqZS9aWHd3djM3aGJ3RWt1VUFJYnlwRnJSZk9WTU0yMTdsLzhSc2p1NlBxWEdkd0NGNXkyK2pzMWZrcmJhZGc0a29GR1dvRFl0K0JibHpINVVCSngxcWt0a2tkTUthOVJiVHpQcnYvZjA4Q1pvNHp2Rk1uQUp2OUVObnFwdndBeUsralV5TGlvTUViSGFRajdJZGNVUnpwMDFQYkNmSThmZVhaUVY2ZG1rVGJ1VGNvWjBXZWdIM1pzUk1EaE1HVm93d2RNVGpPK2dxaDNVdnlNRS9vSkl3UEVuUGMyRnM1NXg5bEpNMjhvRE1CRUVnbVVJcUptY0RRWVNmd3pHM2hJMitvS1huRExkZDQ0Q0VZaUo3UmNEakE9PS0tamJrUmVBRkJxYVBiK1N1elhmVVVFQT09--3be95b7ae2ec9b87548948ca33d8ded1d61a09f5",
-    "domain": ".scribd.com",
+    "name": "IDE",
+    "value": "AHWqTUn5pNBU-JMjBcY0g6bnZiJr0w5_2D83IxCW-mT3evEWAo2shbD6IvxV2Gi_",
+    "domain": ".doubleclick.net",
     "path": "/",
     "secure": true,
     "httpOnly": true,
-    "sameSite": "unspecified",
-    "expirationDate": 1822807063.326791
+    "sameSite": "no_restriction",
+    "expirationDate": 1822982131.570886
+  },
+  {
+    "name": "fr",
+    "value": "0YK09h7xlJ8VkMt6c..BqjA7Z...1.0.BqmSf0.AWdPxc5yzQE2XBh1snma0pGTRtE",
+    "domain": ".facebook.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1796198131.931126
+  },
+  {
+    "name": "__stripe_sid",
+    "value": "9f5cefee-5e86-4892-85ed-94e3031780a1e70f1a",
+    "domain": ".www.scribd.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "strict",
+    "expirationDate": 1788423933
   },
   {
     "name": "_dd_s",
-    "value": "aid=8d7d3c4b-77b2-495f-b5c6-e5a0a0a4aae7&rum=0&expire=1788247971361&logs=0",
+    "value": "aid=b7498558-0cb3-4823-9108-e7298a49a8cc&rum=0&expire=1788423031128&logs=0",
     "domain": "www.scribd.com",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "strict",
-    "expirationDate": 1788247975
+    "expirationDate": 1788423035
+  },
+  {
+    "name": "_ga_8KZ8BV0P5W",
+    "value": "GS2.1.s1788422131$o3$g0$t1788422135$j56$l0$h0",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822982135.852358
+  },
+  {
+    "name": "_ga_Z4ZC50DED6",
+    "value": "GS2.1.s1788422131$o3$g0$t1788422135$j56$l0$h0",
+    "domain": ".scribd.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1822982135.856722
   }
 ]

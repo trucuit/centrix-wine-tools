@@ -1,0 +1,50 @@
+[
+  {
+    "name": "guest_id_marketing",
+    "value": "v1%3A178764698942643708",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.200777,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "guest_id_ads",
+    "value": "v1%3A178764698942643708",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.200806,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "personalization_id",
+    "value": "\"v1_2VWzSRV2xzWITvbY7GefWA==\"",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.200817,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "guest_id",
+    "value": "v1%3A178764698942643708",
+    "domain": ".twitter.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822206989.200826,
+    "hostOnly": false,
+    "session": false
+  }
+]

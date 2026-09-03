@@ -1,28 +1,13 @@
 [
   {
-    "domain": ".files.openai.com",
-    "expirationDate": 1787669955.270267,
-    "hostOnly": false,
-    "httpOnly": true,
-    "name": "__cf_bm",
-    "path": "/",
-    "sameSite": "no_restriction",
-    "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "QadKMTQ0hCqZPivAxYi80IjTDDMNOK6usNGz3TGvnzw-1787668156.0407143-1.0.1.1-oD_htENZmkuc5as_cM12avPTLhVICvoX16ix.90ttcCZwBXm.TtPqD4iNJ0fTJRDISzenUXmQ7FStVlKPbRcNh2rMpR8rI.XzNgkGQhk7vIhsL5ugbUBxoJ9CaAto8No"
-  },
-  {
-    "domain": ".files.openai.com",
-    "expirationDate": 1790261481.955,
-    "hostOnly": false,
-    "httpOnly": true,
     "name": "_cfuvid",
+    "value": "VyGw35npLHueeExt9UqTuMP5ptUeMaISMY_jKhwMaMM-1788251462.7131648-1.0.1.1-mh64EGWAUxhw0fUqeQZ980aPoyOZvfZ6w8ciBSt3TI0",
+    "domain": ".files.openai.com",
     "path": "/",
-    "sameSite": "no_restriction",
     "secure": true,
-    "session": true,
-    "storeId": "0",
-    "value": "6.Wy_xZ4CJCwCyhuuIZ19pM32uK5NxjEZ9YfcXDaZlA-1787668156.0407143-1.0.1.1-o_647R0Tjy.LBCRrO4.jUhAT.7BJrdMI7gJ3sPU0nx0"
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "hostOnly": false,
+    "session": true
   }
 ]

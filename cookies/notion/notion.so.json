@@ -1,0 +1,61 @@
+[
+  {
+    "name": "__ps_r",
+    "value": "_",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492404,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "__ps_lu",
+    "value": "https://aif.notion.so/aif-production.html",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492404,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "__ps_did",
+    "value": "pscrb_f06bbd93-bdcb-4d32-d8c8-e41c7a84e90a",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492404,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "__ps_fva",
+    "value": "1786956404331",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1818492404,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_cfuvid",
+    "value": "BZIjuuZBTeLPtPwRlzdaVJxHwo2Z12HtiGQp9me5bU4-1788329443.955562-1.0.1.1-YL7bGVySvIhhIBtgQlrPicWbw97GR4UGjK3A7kEv_Zo",
+    "domain": ".notion.so",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "hostOnly": false,
+    "session": true
+  }
+]

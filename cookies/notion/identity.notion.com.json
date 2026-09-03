@@ -1,0 +1,13 @@
+[
+  {
+    "name": "auth_sync_message_accountSwitcher",
+    "value": "%7B%22message%22%3A%7B%22version%22%3A1%2C%22name%22%3A%22accountSwitcher%22%2C%22source%22%3A%22notion%22%2C%22accounts%22%3A%5B%7B%22id%22%3A%22161d872b-594c-81a9-96db-0002fea397f0%22%2C%22displayName%22%3A%22Xu%C3%A2n%20L%E1%BB%99c%20Tr%E1%BA%A7n%22%2C%22emailAddress%22%3A%22trxuanloc.28%40gmail.com%22%2C%22profilePicture%22%3A%22https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIIMaXxoC-miOFaphWAHxWZ7BEUEfbAqbPyGNWw5chBpKrgEFz1%3Ds100%22%7D%5D%2C%22persistCookie%22%3Atrue%7D%2C%22origin%22%3A%22https%3A%2F%2Fapp.notion.com%22%2C%22messageID%22%3A%227358d22a-7caf-4077-a4c7-d9c9fdd5ede4%22%7D",
+    "domain": ".identity.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "hostOnly": false,
+    "session": true
+  }
+]

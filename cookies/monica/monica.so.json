@@ -1,0 +1,97 @@
+[
+  {
+    "name": "session_id",
+    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3ODc2NDcwMDcsImlzcyI6Im1vbmljYSIsInVzZXJfaWQiOjE2MTU5NDMwOSwidXNlcl9uYW1lIjoiQ2VudHJpWCIsImp0aSI6IjE1NDRlMDA1ZmRlNDRjYmI4ZDZiYjUwYzUzYmQ4Y2EyIiwiY2xpZW50X3R5cGUiOiJ3ZWIifQ.FiB3Zu2nMsAG0m5kWz84ny1K_PLudrww-DVFV2eIkCU",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1819225160.936445,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1614110123.1787689162",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1795465162,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.714348099.1787689162",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822922240.037502,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_ga_E249CNSDCV",
+    "value": "GS2.1.s1788362236$o12$g1$t1788362239$j57$l0$h0",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822922239.737318,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "monica_home_theme",
+    "value": "light",
+    "domain": "monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "hostOnly": true,
+    "session": true
+  },
+  {
+    "name": "_ga_RJYZXDEM8N",
+    "value": "GS2.1.s1788362236$o12$g1$t1788362260$j36$l0$h1448648771",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822922260.225172,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_ga_JDZPETSM4F",
+    "value": "GS2.1.s1788362236$o12$g1$t1788362260$j36$l0$h0",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822922260.234263,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_ga_0BCXRN11PY",
+    "value": "GS2.1.s1788362238$o12$g1$t1788362323$j60$l0$h0",
+    "domain": ".monica.so",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822922323.508285,
+    "hostOnly": false,
+    "session": false
+  }
+]

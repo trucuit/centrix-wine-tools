@@ -17,7 +17,7 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1819865176
+    "expirationDate": 1819927387
   },
   {
     "name": "device_id",
@@ -27,7 +27,7 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "unspecified",
-    "expirationDate": 1819865178.930629
+    "expirationDate": 1819927388.048706
   },
   {
     "name": "__ps_r",
@@ -107,7 +107,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1822889185.963397
+    "expirationDate": 1822915026.615392
   },
   {
     "name": "guest_id_marketing",
@@ -157,7 +157,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1822889160.797996
+    "expirationDate": 1822915016.32577
   },
   {
     "name": "hmt_id",
@@ -177,7 +177,7 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1819865181
+    "expirationDate": 1819927387
   },
   {
     "name": "g_state",
@@ -197,7 +197,7 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1819865176
+    "expirationDate": 1819927387
   },
   {
     "name": "notion_sync_user_id",
@@ -217,7 +217,7 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1819865178.930851
+    "expirationDate": 1819927388.048779
   },
   {
     "name": "_cioid",
@@ -237,7 +237,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788933987.433953
+    "expirationDate": 1788959828.261553
   },
   {
     "name": "AWSALBAPP-2",
@@ -247,7 +247,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788933987.434062
+    "expirationDate": 1788959828.261579
   },
   {
     "name": "AWSALBAPP-3",
@@ -257,7 +257,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788933987.434244
+    "expirationDate": 1788959828.261602
   },
   {
     "name": "notion_locale",
@@ -267,7 +267,7 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1819865181
+    "expirationDate": 1819927387
   },
   {
     "name": "notion_users",
@@ -277,7 +277,7 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1819865176
+    "expirationDate": 1819927387
   },
   {
     "name": "IDE",
@@ -290,143 +290,13 @@
     "expirationDate": 1822803047.434665
   },
   {
-    "name": "_cfuvid",
-    "value": "0CzPM4NcbV45tTYazNRJVovUAi.MTJmUWCq1o27_N7E-1788329113.400697-1.0.1.1-iJcpOxdiQ8YN1dppzhHL7HeRu9_7RRHo0wAxZI5.bwg",
-    "domain": ".notion.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1790946832
-  },
-  {
-    "name": "__ps_sr",
-    "value": "_",
-    "domain": ".notion.so",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788330984
-  },
-  {
-    "name": "__ps_slu",
-    "value": "https://aif.notion.so/aif-production.html",
-    "domain": ".notion.so",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788330984
-  },
-  {
-    "name": "__cf_bm",
-    "value": "Gyd3Osy_Q5QoGoCenU9xRc6jhx_eLsVe.33VJSmu9qg-1788329146.0794013-1.0.1.1-nAtuDWWnBYKJSpuN_0OZ4yBv.Fie4b1dnedl.GsotT7d_sqc7Hm93FspywT9q0ts_8m8KGSShyBbAYPUzHuRwB7suZ7JnKylJ_vKLJG9HP3mb8eOsMRhntgGzNM9FbmJ",
-    "domain": ".notion.so",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788330956.204418
-  },
-  {
-    "name": "io",
-    "value": "Fzj0OuqsDHSkO626",
-    "domain": "msgstore-001.app.notion.com",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "unspecified",
-    "expirationDate": 1788336358.026498
-  },
-  {
-    "name": "__cf_bm",
-    "value": "v1hgbabU4IX1T_l2PGVURns0mL_ZvUK9xcUwCQRhmwc-1788329148.2488253-1.0.1.1-cmIjPMiNj6.ULJFEjs2Dx6SdA6o5GWg75__dsRhuYruHxK.sOhBVHK15bMsVBRAFfqGxdPh2AWrBVOAD6PjNGqRwrGcXkn6RndJSpDvpaAbwsquveHlNq1ebl0jAguGm",
-    "domain": ".twitter.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788330959.249755
-  },
-  {
-    "name": "__cf_bm",
-    "value": "Pv1ifIo1m4n8_hVeaYuO3QCG1dODkP5HuRore0vpJEk-1788329149.1148384-1.0.1.1-VUNMHQ9iPkBmta41yspr22ucI.izF2_2Eom5arjdGi3U9LcJ7cvNx8mmIgn6CysIftx00gerc8qZHbKE1Xgx8s3GIPbavsBIlUdNOvRxCS4efE92n7fharcyESXs5Qa5",
-    "domain": ".t.co",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788330959.806236
-  },
-  {
-    "name": "token_v2",
-    "value": "v03%3AeyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..pUw4lpP-DlXl0PDlIK9x2w.i8fMK7iVP2s_OEk9ubMj-qGGaUj73rjETzQu1vl71N2NIQ0lmzAMwqCkMlnUUBbPQvJ-xBDXJeb90FRjTRyBlcQYxcZAAfFV2m-L0tlpDEQCokQW5yG_UBOh-5xGDb_Zvx-1HvMs2df0hB41k7nqZQIf56iZriW64Zo4uAa1IYYXBF7KVkKf8ea2PCtJa8aO1W-N6sWIXUqoIUZJ_vv3Xp4cv4tRHWqVKM8djOEnOhCB0mxvGsevJCozMzxI3-k2xLkwn_-viilltgow0HsOAkxm-m0AezhTNk38aVV2UyL4ZlV8ShPaGgO6xFVxo3NRsdfei8tXPI2gwG5GzviSfyNEjTlNLmcnyIWUj8fsJak.UlYjNeVoSUdqygclpH3cwzpdD718-9k1wXepeF2HxrA",
-    "domain": ".app.notion.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "unspecified",
-    "expirationDate": 1819865178.931042
-  },
-  {
-    "name": "__cf_bm",
-    "value": "1bwWievBwA0VcJi.5Cua7C2TfTTboDOhtVcIYUzy7VA-1788329176.8299906-1.0.1.1-4J8Raa4Q7g6cMsa2ZBdpNizENhWmYmuh6QaxfwnPhiwkl3tnhctCnlJlpZbmkZsvhSySma1nbxTwViluF9YPSzRputMwIJYhGkJLfxQFbS.T2EAeGHMwOmiQdfBxSSe4",
-    "domain": ".linkedin.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788330987.316632
-  },
-  {
-    "name": "AWSALBAPP-0",
-    "value": "AAAAAAAAAAC3dEkoiBZEa2RSaUQfIfJuzeWlPqbvNSkC9FtMJ3xrYQZdr/dj+aHXssLBRfs0SVepLX+ea32NGWuEn+DYMYMCwSlmP844tW07EZX2kxu8Wd2eccztZ1IgH4bJRvAcn5Vfeg+C",
-    "domain": "msgstore-001.app.notion.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788933987.433764
-  },
-  {
-    "name": "__cf_bm",
-    "value": "Cj2Tp7jxGk7Baq77ivVFK4PgEUBeek4bx9YJKSeyFZ0-1788329183.8382916-1.0.1.1-dcguC9yBNnJG0pwgQiw17cuESMJlC4lhEVwQhRXNKdRz8lDZ15qJlSATE2p9AyIK08kr4.t4FFRtCGTCPu.QTIaeG1RJky6aKq9UuDqPcAe8Z.LoOqyemtELweFfmrpH",
-    "domain": ".notion.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788330994.157784
-  },
-  {
-    "name": "__cf_bm",
-    "value": "zXJpotFRCAdTc4MXnsY7WTevRiKF4d9fJYMJtr.oOzM-1788329186.0601473-1.0.1.1-OyfStFz5fQOVGJS2d97FXSY2DOPy4hoeMXeT.Nld7XfUZ3vZW3CsiUKrkzyIWqS4THoV7vo7MdGeHN2BWKPCNPdJcSaPOCeH6G6b.oKx7S.v6UrsuPiOeHJl2w1jG.IF",
-    "domain": ".identity.notion.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788330996.155849
-  },
-  {
-    "name": "auth_sync_message_accountSwitcher",
-    "value": "%7B%22message%22%3A%7B%22version%22%3A1%2C%22name%22%3A%22accountSwitcher%22%2C%22source%22%3A%22notion%22%2C%22accounts%22%3A%5B%7B%22id%22%3A%22161d872b-594c-81a9-96db-0002fea397f0%22%2C%22displayName%22%3A%22Xu%C3%A2n%20L%E1%BB%99c%20Tr%E1%BA%A7n%22%2C%22emailAddress%22%3A%22trxuanloc.28%40gmail.com%22%2C%22profilePicture%22%3A%22https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIIMaXxoC-miOFaphWAHxWZ7BEUEfbAqbPyGNWw5chBpKrgEFz1%3Ds100%22%7D%5D%2C%22persistCookie%22%3Atrue%7D%2C%22origin%22%3A%22https%3A%2F%2Fapp.notion.com%22%2C%22messageID%22%3A%2292e98872-a845-4dfe-866b-0c7cff459225%22%7D",
-    "domain": ".identity.notion.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790946832
-  },
-  {
     "name": "notion_check_cookie_consent",
     "value": "false",
     "domain": ".notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
-    "sameSite": "unspecified",
+    "sameSite": "no_restriction",
     "expirationDate": 1788415835.887794
   },
   {
@@ -437,6 +307,66 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
-    "expirationDate": 1790946832
+    "expirationDate": 1791040656
+  },
+  {
+    "name": "lidc",
+    "value": "\"b=TGST02:s=T:r=T:a=T:p=T:g=3834:u=1:x=1:i=1788355017:t=1788441417:v=2:sig=AQGjQkLCMcFXXY4se-nbpG9Rflagf_TZ\"",
+    "domain": ".linkedin.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788441417.759088
+  },
+  {
+    "name": "token_v2",
+    "value": "v03%3AeyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..pniYbzTEdIMbVtMZj1RCwQ.F017Wt3NCZ_3QbW4eoJxhKNVZPo8mZ8TQsd3G4z9Txiufv-vlMiu_kNePH27ikcmVtKWTPEklrxce7CWxpwNso-jZmHMc3S22ayivWZttc7wAQxmqhBbr7yeFqS2n13ITZ17Yzyj3uNU2bEibctKiI8TNFGoO5K8DShVE5M4lUGNAc1NKRwM-4fq_CeLLpQ17aNw8EhgYniPWwbla1_2ClopWJMV4WvrCaXCUtt06-FaEEaXOWbR1gpAcBpOa_C44r4iLDFbI9cQl7iDlQwrKy8GrympxVxpANMsmFfct8Byn1wMi8EtZlA4aTLu8cm5eMhChAjJHYRpCOAU33NL3JZlF7q5EW-KJhg41wSavTU.CAN52GIRCxaiva9xAUIPh45MK2wr0APuRNcDuB_qJSY",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1819927388.048816
+  },
+  {
+    "name": "AWSALBAPP-0",
+    "value": "AAAAAAAAAADl7uvpInCBEer7vMw+8pZonagVoK3nDqMrtog6uGj8LYwty3eO+xcvYpx08nrZb9FRVY2C8SXH/yXpgFsnY4fX067ta0RhWJPNsMDn3L1uyNuBrjJVkYaZhzDP6maMaVJpfUL7",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788959828.261445
+  },
+  {
+    "name": "auth_sync_message_accountSwitcher",
+    "value": "%7B%22message%22%3A%7B%22version%22%3A1%2C%22name%22%3A%22accountSwitcher%22%2C%22source%22%3A%22notion%22%2C%22accounts%22%3A%5B%7B%22id%22%3A%22161d872b-594c-81a9-96db-0002fea397f0%22%2C%22displayName%22%3A%22Xu%C3%A2n%20L%E1%BB%99c%20Tr%E1%BA%A7n%22%2C%22emailAddress%22%3A%22trxuanloc.28%40gmail.com%22%2C%22profilePicture%22%3A%22https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIIMaXxoC-miOFaphWAHxWZ7BEUEfbAqbPyGNWw5chBpKrgEFz1%3Ds100%22%7D%5D%2C%22persistCookie%22%3Atrue%7D%2C%22origin%22%3A%22https%3A%2F%2Fapp.notion.com%22%2C%22messageID%22%3A%227358d22a-7caf-4077-a4c7-d9c9fdd5ede4%22%7D",
+    "domain": ".identity.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1791040656
+  },
+  {
+    "name": "__cf_bm",
+    "value": "TdlHmzx3u..OFBbWa5jv9aIDlE4vQ5V2fLfH0EjEyyc-1788391385.325945-1.0.1.1-6feqVBOze7awxC0LPJHJ8rL03D0nFtf4t77QrQfqm8KWQQ6WJ3ejcGhSu12eySrGJGHGUrwJdjmO.ZH0r_c3Zjntx_P1DOr5JPvEWaI77596w1ybjNSno1p4yHUMkptN",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788393185.789788
+  },
+  {
+    "name": "_cfuvid",
+    "value": "Ns0FElX.nFGHjnFwT4GAk9485o_FT_sqWqYHK36nfqE-1788391385.9576685-1.0.1.1-wCfdorcyujGvEHnObnLrMsCCZWVc4pKDgrD1xpC8GQM",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1791040656
   }
 ]

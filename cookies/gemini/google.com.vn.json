@@ -1,0 +1,122 @@
+[
+  {
+    "name": "HSID",
+    "value": "Ad-0OMFAtYaWWj5sZ",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": false,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1822895537.064879,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "SSID",
+    "value": "Ao-Ne5tWnpuar4No1",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895537.065079,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "APISID",
+    "value": "mHQ2pCdLECIileaO/AC-eoSsTfuj5FENPs",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822895537.065194,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "SAPISID",
+    "value": "0FGB6rbU2BHqM2Gl/AQyybUHFFoYD4SrWx",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895537.065283,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "__Secure-1PAPISID",
+    "value": "0FGB6rbU2BHqM2Gl/AQyybUHFFoYD4SrWx",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895537.065362,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "__Secure-3PAPISID",
+    "value": "0FGB6rbU2BHqM2Gl/AQyybUHFFoYD4SrWx",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895537.065441,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "NID",
+    "value": "534=o1XzU6mfhFIwYzy7B0W_dNpzPuAReC4q8tWmGeNJCW0EDor_SbS6zxhGub7UkaOSretXUMIpfg7ZvPX_cbhYPes73hbt2NbPILLfFY3vih3BjGqWbEB-oKdBsWstMQk8g_DWvk0LNSvzSEwIsJv3RcOtxvKVXwKibMqpH0Hotj2qBGACtJXjYaNPu2XEFQ0vrrGxlfBwuDNvND-zvznzpnRrUblLKKgdtRL3EoAvvKC6-sp1kqZ3xPgoOhjJGlIgurSej_LXHSietICF5uD6XZ6H5ua3d73Wv9LaH8tE2P49OQ6iAxX1jZCbk7iJ-gz0A5N1VjwTs4Ndeztr6XWy4WgfPo5tTYTZRDPZjabtz9o6I5AQ0XS-YomWxWegn_z-DC4XL7ok7H58DZrJ-Tph2JHc1DrLMaJ8QtO3lD7t6VJGECqNtZEcoxYQonUjgFzCYHnurIxkl0ta62vmNLlGi5W4cNzA7wmVaX3NXw1sumASVY9d0k6ScZlYcIUVJIaL7UDLEh_G0oluZnHQqe_Z7RhoBJwcEkPWUuvgcR0ZnEy2mW9rnsX1ayn5QI-y0uykMzAFZFLr3yXUc0_w3GTlB0PqQ5w7BtP_QAX7rPF5lENP1gWjGVQyVgsN5fh6TKyf",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1804146737.065519,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "SID",
+    "value": "g.a000CAlc4uXi1ceNF4636mFj_ufL-O6pvdYCK_3GSLizFEQS070ofscCjH5iON73DX4UbC2NHgACgYKAU8SARcSFQHGX2MiHkhCe6dv--feQ6MQQQv4nRoVAUF8yKqFU4xvgj8RImivQZU5tmNy0076",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822895537.065605,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "__Secure-1PSID",
+    "value": "g.a000CAlc4uXi1ceNF4636mFj_ufL-O6pvdYCK_3GSLizFEQS070o0cgWqPHAEJd6sq1AHaVypwACgYKAX8SARcSFQHGX2Mib3uTb1M51xIDvcC7l-CnIhoVAUF8yKoyFOKFeqvyx4EPnUBSh4XV0076",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895537.065695,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "__Secure-3PSID",
+    "value": "g.a000CAlc4uXi1ceNF4636mFj_ufL-O6pvdYCK_3GSLizFEQS070oe_6holeflgCGtztf7oyDuAACgYKAU0SARcSFQHGX2Miru5Jyj_UV1hJMU4kcbmhKhoVAUF8yKqlQZJG6H4k9_EuDqtT75AE0076",
+    "domain": ".google.com.vn",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822895537.065778,
+    "hostOnly": false,
+    "session": false
+  }
+]

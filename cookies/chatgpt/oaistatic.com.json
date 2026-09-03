@@ -1,15 +1,13 @@
 [
   {
-    "domain": ".oaistatic.com",
-    "expirationDate": 1790264306.965,
-    "hostOnly": false,
-    "httpOnly": true,
     "name": "_cfuvid",
+    "value": "vHNGI5j33tj3ihZlZi07AEaGQ6x1LEyxa94GkoviKhk-1788341487.0754194-1.0.1.1-vRgaHqaMrFDIG.Wvw2Zy3wfl.jytFTqPII5qVaI3stk",
+    "domain": ".oaistatic.com",
     "path": "/",
-    "sameSite": "no_restriction",
     "secure": true,
-    "session": true,
-    "storeId": "0",
-    "value": "LczxB8wFTWc.rGjvfEzaitM1efPKMvW1Gmw1Rj0JDDQ-1787629885.5924258-1.0.1.1-1ItExDnr7S3amxDY4utW0RIPGYKc5A0VJ0pbbeiElcg"
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "hostOnly": false,
+    "session": true
   }
 ]

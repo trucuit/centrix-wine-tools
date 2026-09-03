@@ -1,0 +1,14 @@
+[
+  {
+    "name": "hmt_id",
+    "value": "d81f2fc0-d901-48ef-8f8e-9f3c42d4962d",
+    "domain": "api.hcaptcha.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789548414.308178,
+    "hostOnly": true,
+    "session": false
+  }
+]

@@ -1,31 +1,38 @@
-{
-  "url": "https://noxtools.com/secure/page/semrush",
-  "cookies": [
-    {
-      "domain": ".noxtools.com",
-      "expirationDate": null,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "PHPSESSID",
-      "path": "/",
-      "sameSite": "unspecified",
-      "secure": true,
-      "session": true,
-      "storeId": "0",
-      "value": "9r6o1hl2t8gdm9pl0napd223aj"
-    },
-    {
-      "domain": ".noxtools.com",
-      "expirationDate": 1815314788,
-      "hostOnly": false,
-      "httpOnly": true,
-      "name": "cf_clearance",
-      "path": "/",
-      "sameSite": "no_restriction",
-      "secure": true,
-      "session": false,
-      "storeId": "0",
-      "value": "XFiZ3x_WGnmKzEo.3PPZESa_jGinCnF2OG0yTK7jo84-1783778788-1.2.1.1-LzqCv3aT.jptwQkKOIixmJv6ioNoRMSBEDnCi3WU.lpFs7s7KGckqKcmHjWtGaBD5.RqvMj4dBBQHCCrBoMhUduq45CiHtShG.zdZXtIIp4_WSJGz.zImAEPwOOIyNPMuyrgfks2KJZHYFUb63PpX.ogc_VkZ4PU1qtz5OXcnJIVuDIMErl9fg4trjG0nevplrzTX524NoYq9kYA4L4cFPgKBr..pyQwHC.DjrZadGcmrGYUd6baGpQe57lMvWfppjg0n.TtxtMKLRuR4XrcL0qoZf1Efptbt9TodRprgiE2R9RiWT7fcWmEZp8O8n07zZSsiW076t1_QYcJK8XMuA"
-    }
-  ]
-}
+[
+  {
+    "name": "PHPSESSID",
+    "value": "5m5sl9a0pg98a3hifhdad97nh2",
+    "domain": ".noxtools.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822979977.004201,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "amember_nr",
+    "value": "4f0fb633a0bc7c08865e03d85ed0be9b",
+    "domain": ".noxtools.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822979977.004451,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "cf_clearance",
+    "value": "9uSM3jX93nXTOeLAjPbndASiMdlpN45TAKg1fcvOC6k-1788432768-1.2.1.1-jAuTxEyAzzkF1pR3iZyqpsRADTtM23C81uUuyu6WCKKvhqEQEvl.QH21vu6JXBKzQGtfBl0BBV0HhMX0aGQBncgxePiLH5gNLQCdHM27bEwmGxrxFNqxJF8HmRTWNOjrnbSgnm9CqSQCRWCAqjlkIk_cNen6_fLlD.NODGqxUdx2WEPDgocBrQPDd_xImhaw6jacn.BHsyiOVhe2.yrDXxU77zsoe5v2rQjbKiFPTsyNQWc5_9WQYWZxLu9Oh4jTb5gXKs8997_CKLNhWv0JGZzBZYmJF8T1qGJNzGQvRwy8X7KwV4aqV5Q1rT25oe47PjTitYG3Yz0qzPE4BOGho2PepGcdvrADFF4I_RJcY04",
+    "domain": ".noxtools.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1819968767.588842,
+    "hostOnly": false,
+    "session": false
+  }
+]

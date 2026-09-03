@@ -1,0 +1,13 @@
+[
+  {
+    "name": "SM",
+    "value": "C",
+    "domain": ".c.clarity.ms",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "hostOnly": false,
+    "session": true
+  }
+]

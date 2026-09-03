@@ -1,0 +1,14 @@
+[
+  {
+    "name": "fr",
+    "value": "0V88oUXawIWeYs3ie..BqjVQM...1.0.BqjVQM.",
+    "domain": ".facebook.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1795422988.21329,
+    "hostOnly": false,
+    "session": false
+  }
+]
