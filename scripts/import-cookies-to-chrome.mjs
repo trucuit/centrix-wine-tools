@@ -468,6 +468,7 @@ function parseArgs(argv) {
     profileDir: resolve(process.env.CENTRIX_CHROME_PROFILE || ".chrome-cookie-profile"),
     port: Number(process.env.CENTRIX_CHROME_PORT || 9222),
     open: true, json: false, dryRun: false,
+    ignore: [],
   };
   const args = [...argv];
   // Positional service only if first token is not a flag
@@ -498,11 +499,19 @@ function parseArgs(argv) {
     else if (flag === "--mode") options.mode = String(args.shift() || "").trim();
     else if (flag === "--full") options.mode = "full";
     else if (flag === "--mode-service") options.mode = "service";
-    else if (flag === "--pick" || flag === "-i" || flag === "--interactive") options.pick = true;
+    else if (flag === "--pick" || flag === "--interactive") options.pick = true;
     else if (flag === "--no-open") options.open = false;
     else if (flag === "--json") options.json = true;
     else if (flag === "--dry-run") options.dryRun = true;
     else if (flag === "-h" || flag === "--help") options.help = true;
+    else if (flag === "--ignore" || flag === "--exclude" || flag === "-x" || flag === "ignore" || flag === "-ignore" || flag === "-") {
+      while (args.length && !args[0].startsWith("--")) {
+        const item = args.shift().toLowerCase().replace(/^[-,\s]+|[-,\s]+$/g, "");
+        if (item === "ignore" || !item) continue;
+        const parts = item.split(/[,;\s]+/).filter(Boolean);
+        options.ignore.push(...parts);
+      }
+    }
     else throw new Error(`Unknown option: ${flag}`);
   }
   return options;
@@ -795,7 +804,22 @@ async function main() {
 
   if (options.service.toLowerCase() === "all") {
     const importable = await listImportableServices(options.cookiesDir);
-    const available = importable.filter((s) => s.available);
+    let available = importable.filter((s) => s.available);
+    if (options.ignore.length) {
+      console.log(`🚫 Ignoring services matching: ${options.ignore.join(", ")}`);
+      available = available.filter((s) => {
+        const sId = s.id.toLowerCase();
+        const src = (s.source || "").toLowerCase();
+        const shouldIgnore = options.ignore.some((ign) => {
+          if (!ign) return false;
+          if (sId === ign || sId.includes(ign) || src === ign || src.includes(ign)) return true;
+          if (ign === "chatgpt" && (sId.includes("chatgpt") || sId.includes("gptpro") || src.includes("gptpro"))) return true;
+          if (ign === "grok" && sId.includes("grok")) return true;
+          return false;
+        });
+        return !shouldIgnore;
+      });
+    }
     console.log(`📦 Importing ALL available services (${available.length} services)...`);
     const endpoint = await ensureChrome(options);
     const cdp = await connectCdp(endpoint.webSocketDebuggerUrl);
