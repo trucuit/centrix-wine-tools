@@ -469,26 +469,36 @@ function parseArgs(argv) {
     port: Number(process.env.CENTRIX_CHROME_PORT || 9222),
     open: true, json: false, dryRun: false,
     ignore: [],
+    services: [],
   };
   const args = [...argv];
-  // Positional service only if first token is not a flag
-  if (args[0] && !args[0].startsWith("-")) {
-    let s = args.shift();
-    // Support passing full folder path like /path/to/cookies/grok-heavy
-    if (s.includes("/") || s.includes("\\")) {
-      const parts = s.split(/[/\\]/).filter(Boolean);
-      s = parts[parts.length - 1];
-    }
-    if (args[0] && !args[0].startsWith("-")) {
-      const combined = `${s}-${args[0]}`.toLowerCase();
-      if (SERVICE_ALIASES[combined] || SERVICE_CONFIG[combined] || combined === "grok-heavy") {
-        s = combined;
-        args.shift();
-      } else if (args[0].toLowerCase() === "full" || args[0].toLowerCase() === "service") {
-        args.shift(); // consume legacy mode positional keyword
+  // Collect all positional tokens before flags
+  const rawPositional = [];
+  while (args.length && !args[0].startsWith("-")) {
+    rawPositional.push(args.shift());
+  }
+
+  if (rawPositional.length) {
+    const fullString = rawPositional.join(" ");
+    // Split on +, comma, or standalone 'and'
+    const servicePhrases = fullString.split(/\s*(?:\+|\band\b|,)\s*/i).filter(Boolean);
+    for (let phrase of servicePhrases) {
+      phrase = phrase.trim();
+      if (phrase.includes("/") || phrase.includes("\\")) {
+        const parts = phrase.split(/[/\\]/).filter(Boolean);
+        phrase = parts[parts.length - 1];
+      }
+      phrase = phrase.toLowerCase().replace(/\s+/g, "-");
+      const resolved = resolveServiceId(phrase);
+      if (resolved && resolved !== phrase) {
+        options.services.push(resolved);
+      } else if (SERVICE_CONFIG[phrase] || SERVICE_ALIASES[phrase] || phrase === "all") {
+        options.services.push(resolveServiceId(phrase));
+      } else {
+        options.services.push(phrase);
       }
     }
-    options.service = s;
+    options.service = options.services[0] || "";
   }
   while (args.length) {
     const flag = args.shift();
@@ -872,6 +882,75 @@ async function main() {
     console.log(JSON.stringify({
       mode: options.mode,
       totalAvailable: available.length,
+      successful: results.filter((r) => r.status === "ok").length,
+      results,
+    }, null, options.json ? 0 : 2));
+    return;
+  }
+
+  if (options.services && options.services.length > 1) {
+    console.log(`📦 Importing specified services (${options.services.length} services): ${options.services.join(", ")}...`);
+    const endpoint = await ensureChrome(options);
+    const cdp = await connectCdp(endpoint.webSocketDebuggerUrl);
+    const results = [];
+    try {
+      for (const rawSvc of options.services) {
+        const resolved = resolveServiceId(rawSvc);
+        const config = SERVICE_CONFIG[resolved];
+        if (!config) {
+          results.push({ service: rawSvc, status: "error", error: `Unsupported service: ${rawSvc}` });
+          console.log(`  ✗ [${rawSvc.padEnd(18)}] -> Error: Unsupported service`);
+          continue;
+        }
+        const sourceService = config.source || resolved;
+        const serviceDir = resolve(options.cookiesDir, sourceService);
+        try {
+          const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode, sourceService);
+          const localStorageEntries = await loadServiceStorage(serviceDir, sourceService);
+          const sessionStorageEntries = await loadServiceSessionStorage(serviceDir, sourceService);
+          if (!loaded.cookies.length) {
+            results.push({ service: resolved, status: "empty", cookies: 0 });
+            console.log(`  ⚠️ [${resolved.padEnd(18)}] -> No valid cookies in ${serviceDir}`);
+            continue;
+          }
+          const { method: injectMethod } = await injectCookies(cdp, loaded.cookies, {
+            port: options.port,
+            domainRoots: config.domains,
+          });
+          let action = "imported";
+          let localStorageApplied = 0;
+          if (options.open) {
+            action = await openOrReload(options.port, config.url, cdp);
+            if (Object.keys(localStorageEntries).length || Object.keys(sessionStorageEntries).length) {
+              try {
+                localStorageApplied = await applyLocalStorage(options.port, config.url, localStorageEntries, sessionStorageEntries);
+                action = `${action}+storage`;
+              } catch (lsErr) {
+                action = `${action}+storage-retry-skipped`;
+              }
+            }
+          }
+          results.push({
+            service: resolved,
+            status: "ok",
+            cookies: loaded.cookies.length,
+            localStorageApplied,
+            action,
+            target: config.url,
+          });
+          console.log(`  ✓ [${resolved.padEnd(18)}] -> ${loaded.cookies.length} cookies, ${localStorageApplied} storage items (${action})`);
+        } catch (err) {
+          results.push({ service: resolved, status: "error", error: err.message });
+          console.log(`  ✗ [${resolved.padEnd(18)}] -> Error: ${err.message}`);
+        }
+      }
+    } finally {
+      cdp.close();
+    }
+    console.log("");
+    console.log(JSON.stringify({
+      mode: options.mode,
+      totalRequested: options.services.length,
       successful: results.filter((r) => r.status === "ok").length,
       results,
     }, null, options.json ? 0 : 2));
