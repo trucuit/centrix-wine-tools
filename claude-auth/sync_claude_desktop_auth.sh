@@ -18,7 +18,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CLAUDE_DIR="${HOME}/Library/Application Support/Claude"
 COOKIES_DB="${CLAUDE_DIR}/Cookies"
 CONFIG_JSON="${CLAUDE_DIR}/config.json"
-ALLOW_HTTP_403_FALLBACK="${ALLOW_HTTP_403_FALLBACK:-0}"
+ALLOW_HTTP_403_FALLBACK="${ALLOW_HTTP_403_FALLBACK:-1}"
 
 require_cmd() {
   if ! command -v "$1" >/dev/null 2>&1; then
@@ -38,10 +38,11 @@ if not base.exists() or not base.is_dir():
     print("")
     raise SystemExit(0)
 
-# Match both formats, e.g.:
-# - claude.ai_12-03-2026.json
-# - claude.ai_12-03-2026 (1).json
-candidates = [p for p in base.glob("claude.ai*.json") if p.is_file()]
+# Match export formats: claude*.json, cookies-claude.json, session-claude.json
+patterns = ["claude*.json", "cookies-claude.json", "session-claude.json"]
+candidates = []
+for pat in patterns:
+    candidates.extend([p for p in base.glob(pat) if p.is_file() and not p.name.endswith(".storage.json")])
 if not candidates:
     print("")
     raise SystemExit(0)
@@ -52,14 +53,27 @@ PYEOF
 }
 
 resolve_source_file() {
-  if [ "${1:-}" != "" ]; then
+  if [ "${1:-}" != "" ] && [ "${1:-}" != "run" ] && [ -f "${1:-}" ]; then
     echo "$1"
     return
   fi
 
   local candidate=""
 
-  # Prefer latest export from Downloads.
+  # Prefer project's cookies directory (synced via centrix API)
+  candidate="$(find_latest_claude_json_in_dir "${SCRIPT_DIR}/../cookies/claude")"
+  if [ -n "$candidate" ]; then
+    echo "$candidate"
+    return
+  fi
+
+  candidate="$(find_latest_claude_json_in_dir "${SCRIPT_DIR}/../cookies")"
+  if [ -n "$candidate" ]; then
+    echo "$candidate"
+    return
+  fi
+
+  # Downloads directory
   candidate="$(find_latest_claude_json_in_dir "${HOME}/Downloads")"
   if [ -n "$candidate" ]; then
     echo "$candidate"
@@ -93,11 +107,14 @@ from pathlib import Path
 
 path = Path(os.environ["SOURCE_JSON_VALIDATE"])
 data = json.loads(path.read_text())
-cookies = data.get("cookies")
-if not isinstance(cookies, list):
-    auth_payload = data.get("auth")
-    if isinstance(auth_payload, dict):
-        cookies = auth_payload.get("cookies", [])
+if isinstance(data, list):
+    cookies = data
+else:
+    cookies = data.get("cookies")
+    if not isinstance(cookies, list):
+        auth_payload = data.get("auth")
+        if isinstance(auth_payload, dict):
+            cookies = auth_payload.get("cookies", [])
 if not isinstance(cookies, list):
     print("MISSING:cookies")
     raise SystemExit(3)
@@ -185,8 +202,8 @@ if [ ! -f "$COOKIES_DB" ] || [ ! -f "$CONFIG_JSON" ]; then
   exit 1
 fi
 
-if ! jq -e '(.cookies and (.cookies|type == "array")) or (.auth.cookies and (.auth.cookies|type == "array"))' "$SOURCE_JSON" >/dev/null 2>&1; then
-  echo "❌ Invalid source JSON: missing .cookies array"
+if ! jq -e '(type == "array") or (.cookies and (.cookies|type == "array")) or (.auth.cookies and (.auth.cookies|type == "array"))' "$SOURCE_JSON" >/dev/null 2>&1; then
+  echo "❌ Invalid source JSON: missing cookies array"
   exit 1
 fi
 
@@ -298,11 +315,14 @@ source_json = Path(os.environ["SOURCE_JSON"])
 cookies_db = Path(os.environ["COOKIES_DB"])
 
 data = json.loads(source_json.read_text())
-cookies = data.get("cookies")
-if not isinstance(cookies, list):
-    auth_payload = data.get("auth")
-    if isinstance(auth_payload, dict):
-        cookies = auth_payload.get("cookies", [])
+if isinstance(data, list):
+    cookies = data
+else:
+    cookies = data.get("cookies")
+    if not isinstance(cookies, list):
+        auth_payload = data.get("auth")
+        if isinstance(auth_payload, dict):
+            cookies = auth_payload.get("cookies", [])
 if not isinstance(cookies, list):
     raise SystemExit("No cookies array in source JSON")
 target = [
