@@ -19,7 +19,7 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1788680900.726047,
+    "expirationDate": 1789140493.999997,
     "hostOnly": true,
     "session": false
   },

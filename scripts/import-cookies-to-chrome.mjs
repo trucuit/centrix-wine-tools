@@ -45,6 +45,20 @@ const SERVICE_ALIASES = {
   chatgptpro: "chatgpt-pro",
   chatgpt_pro: "chatgpt-pro",
   pro: "chatgpt-pro",
+  gpt: "chatgpt-pro",
+  "gpt-5": "chatgpt-pro",
+  gpt5: "chatgpt-pro",
+  claude: "claude",
+  "claude.ai": "claude",
+  claudeai: "claude",
+  anthropic: "claude",
+  "cl;aude": "claude",
+  copilot: "microsoft-copilot",
+  "ms-copilot": "microsoft-copilot",
+  mscopilot: "microsoft-copilot",
+  bing: "microsoft-copilot",
+  gemini: "gemini",
+  "gemini.google": "gemini",
   "grok_heavy": "grok-heavy",
   "grok heavy": "grok-heavy",
   heavy: "grok-heavy",
@@ -55,10 +69,59 @@ const SERVICE_ALIASES = {
   ms365: "outlook",
 };
 
-/** Map a user/cache-supplied id to its canonical SERVICE_CONFIG key. */
+function levenshtein(a, b) {
+  const m = a.length;
+  const n = b.length;
+  const dp = Array.from({ length: m + 1 }, () => new Uint8Array(n + 1));
+  for (let i = 0; i <= m; i += 1) dp[i][0] = i;
+  for (let j = 0; j <= n; j += 1) dp[0][j] = j;
+  for (let i = 1; i <= m; i += 1) {
+    for (let j = 1; j <= n; j += 1) {
+      dp[i][j] = a[i - 1] === b[j - 1]
+        ? dp[i - 1][j - 1]
+        : 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+    }
+  }
+  return dp[m][n];
+}
+
+/** Map a user/cache-supplied id to its canonical SERVICE_CONFIG key with typo and punctuation tolerance. */
 function resolveServiceId(id) {
-  const key = String(id || "").trim().toLowerCase();
-  return SERVICE_ALIASES[key] || key;
+  const raw = String(id || "").trim().toLowerCase();
+  if (!raw) return "";
+  if (SERVICE_ALIASES[raw]) return SERVICE_ALIASES[raw];
+  if (SERVICE_CONFIG[raw] || raw === "all") return raw;
+
+  // Clean stray punctuation typos (e.g. "cl;aude" -> "claude")
+  const cleaned = raw.replace(/[;:'",`!]/g, "").replace(/^[-_.]+|[-_.]+$/g, "");
+  if (SERVICE_ALIASES[cleaned]) return SERVICE_ALIASES[cleaned];
+  if (SERVICE_CONFIG[cleaned] || cleaned === "all") return cleaned;
+
+  // Unique prefix matching for shortcuts (e.g. "cl" -> "claude")
+  const allKeys = Object.keys(SERVICE_CONFIG);
+  if (cleaned.length >= 2) {
+    const prefixMatches = allKeys.filter((k) => k.startsWith(cleaned));
+    if (prefixMatches.length === 1) {
+      return prefixMatches[0];
+    }
+  }
+
+  // Fuzzy match for minor typos (e.g. "claud", "claudea")
+  if (cleaned.length >= 3) {
+    let bestMatch = null;
+    let minDistance = Infinity;
+    for (const target of allKeys) {
+      const dist = levenshtein(cleaned, target);
+      const maxAllowed = cleaned.length <= 4 ? 1 : 2;
+      if (dist <= maxAllowed && dist < minDistance) {
+        minDistance = dist;
+        bestMatch = target;
+      }
+    }
+    if (bestMatch) return bestMatch;
+  }
+
+  return raw;
 }
 
 /**
@@ -830,6 +893,41 @@ async function main() {
         return !shouldIgnore;
       });
     }
+    if (options.dryRun) {
+      console.log(`🔍 [DRY RUN] Validating ALL available services (${available.length} services)...`);
+      const results = [];
+      for (const svc of available) {
+        const config = SERVICE_CONFIG[svc.id];
+        const sourceService = config.source || svc.id;
+        const serviceDir = resolve(options.cookiesDir, sourceService);
+        try {
+          const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode, sourceService);
+          const localStorageEntries = await loadServiceStorage(serviceDir, sourceService);
+          const sessionStorageEntries = await loadServiceSessionStorage(serviceDir, sourceService);
+          results.push({
+            service: svc.id,
+            status: loaded.cookies.length ? "ok" : "empty",
+            cookies: loaded.cookies.length,
+            localStorageKeys: Object.keys(localStorageEntries).length,
+            sessionStorageKeys: Object.keys(sessionStorageEntries).length,
+            target: config.url,
+          });
+          console.log(`  ✓ [${svc.id.padEnd(18)}] -> ${loaded.cookies.length} cookies, ${Object.keys(localStorageEntries).length} localStorage, ${Object.keys(sessionStorageEntries).length} sessionStorage`);
+        } catch (err) {
+          results.push({ service: svc.id, status: "error", error: err.message });
+          console.log(`  ✗ [${svc.id.padEnd(18)}] -> Error: ${err.message}`);
+        }
+      }
+      console.log("");
+      console.log(JSON.stringify({
+        mode: options.mode,
+        dryRun: true,
+        totalAvailable: available.length,
+        successful: results.filter((r) => r.status === "ok").length,
+        results,
+      }, null, options.json ? 0 : 2));
+      return;
+    }
     console.log(`📦 Importing ALL available services (${available.length} services)...`);
     const endpoint = await ensureChrome(options);
     const cdp = await connectCdp(endpoint.webSocketDebuggerUrl);
@@ -889,6 +987,47 @@ async function main() {
   }
 
   if (options.services && options.services.length > 1) {
+    if (options.dryRun) {
+      console.log(`🔍 [DRY RUN] Validating specified services (${options.services.length} services): ${options.services.join(", ")}...`);
+      const results = [];
+      for (const rawSvc of options.services) {
+        const resolved = resolveServiceId(rawSvc);
+        const config = SERVICE_CONFIG[resolved];
+        if (!config) {
+          results.push({ service: rawSvc, status: "error", error: `Unsupported service: ${rawSvc}` });
+          console.log(`  ✗ [${rawSvc.padEnd(18)}] -> Error: Unsupported service`);
+          continue;
+        }
+        const sourceService = config.source || resolved;
+        const serviceDir = resolve(options.cookiesDir, sourceService);
+        try {
+          const loaded = await loadServiceCookies(serviceDir, config.domains, options.mode, sourceService);
+          const localStorageEntries = await loadServiceStorage(serviceDir, sourceService);
+          const sessionStorageEntries = await loadServiceSessionStorage(serviceDir, sourceService);
+          results.push({
+            service: resolved,
+            status: loaded.cookies.length ? "ok" : "empty",
+            cookies: loaded.cookies.length,
+            localStorageKeys: Object.keys(localStorageEntries).length,
+            sessionStorageKeys: Object.keys(sessionStorageEntries).length,
+            target: config.url,
+          });
+          console.log(`  ✓ [${resolved.padEnd(18)}] -> ${loaded.cookies.length} cookies, ${Object.keys(localStorageEntries).length} localStorage, ${Object.keys(sessionStorageEntries).length} sessionStorage`);
+        } catch (err) {
+          results.push({ service: resolved, status: "error", error: err.message });
+          console.log(`  ✗ [${resolved.padEnd(18)}] -> Error: ${err.message}`);
+        }
+      }
+      console.log("");
+      console.log(JSON.stringify({
+        mode: options.mode,
+        dryRun: true,
+        totalRequested: options.services.length,
+        successful: results.filter((r) => r.status === "ok").length,
+        results,
+      }, null, options.json ? 0 : 2));
+      return;
+    }
     console.log(`📦 Importing specified services (${options.services.length} services): ${options.services.join(", ")}...`);
     const endpoint = await ensureChrome(options);
     const cdp = await connectCdp(endpoint.webSocketDebuggerUrl);

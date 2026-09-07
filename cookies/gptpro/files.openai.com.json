@@ -1,0 +1,13 @@
+[
+  {
+    "name": "_cfuvid",
+    "value": "ksb.TZX.1hsII0iQ6f0MdLJzzQ4b6Ef0lp0vjAg7w.A-1788588817.2608778-1.0.1.1-UDZ1eOWYP5O.qD9IQDsUoQko7.4ByEl89ByTnraQKSg",
+    "domain": ".files.openai.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "hostOnly": false,
+    "session": true
+  }
+]

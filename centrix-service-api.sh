@@ -429,8 +429,96 @@ async function handleExportAll() {
   console.log("──────────────────────────────────────────────────────────────────────\n");
 }
 
+const SERVICE_ALIASES = {
+  chatgpt: "chatgpt",
+  "chatgpt-pro": "gptpro",
+  gptpro: "gptpro",
+  "gpt-pro": "gptpro",
+  chatgptpro: "gptpro",
+  chatgpt_pro: "gptpro",
+  pro: "gptpro",
+  gpt: "gptpro",
+  "gpt-5": "gptpro",
+  gpt5: "gptpro",
+  claude: "claude",
+  "claude.ai": "claude",
+  claudeai: "claude",
+  anthropic: "claude",
+  "cl;aude": "claude",
+  copilot: "copilot",
+  "microsoft-copilot": "copilot",
+  "ms-copilot": "copilot",
+  mscopilot: "copilot",
+  bing: "copilot",
+  gemini: "gemini",
+  "gemini.google": "gemini",
+  grok: "grok",
+  "grok_heavy": "grok-heavy",
+  "grok heavy": "grok-heavy",
+  grokheavy: "grok-heavy",
+  heavy: "grok-heavy",
+  "grok-heavy": "grok-heavy",
+  mail: "outlook",
+  email: "outlook",
+  office: "outlook",
+  office365: "outlook",
+  ms365: "outlook",
+};
+
+function resolveServiceId(id) {
+  const raw = String(id || "").trim().toLowerCase();
+  if (!raw) return "";
+  if (SERVICE_ALIASES[raw]) return SERVICE_ALIASES[raw];
+
+  // Clean stray punctuation typos (e.g. "cl;aude" -> "claude", "claude," -> "claude")
+  const cleaned = raw.replace(/[;:'",`!]/g, "").replace(/^[-_.]+|[-_.]+$/g, "");
+  if (SERVICE_ALIASES[cleaned]) return SERVICE_ALIASES[cleaned];
+
+  return cleaned;
+}
+
+function parseServiceList(rawTokens) {
+  const fullString = rawTokens.join(" ");
+  // Split on +, comma, or standalone 'and'
+  const phrases = fullString.split(/\s*(?:\+|\band\b|,)\s*/i).filter(Boolean);
+  const services = [];
+  for (let phrase of phrases) {
+    phrase = phrase.trim();
+    if (phrase.includes("/") || phrase.includes("\\")) {
+      const parts = phrase.split(/[/\\]/).filter(Boolean);
+      phrase = parts[parts.length - 1];
+    }
+    const resolved = resolveServiceId(phrase);
+    if (resolved) services.push(resolved);
+  }
+  return [...new Set(services)];
+}
+
+async function handleExportMultiple(services, outDir = OUT_DIR) {
+  if (services.length === 1) {
+    return handleExportCookies(services[0], false, outDir);
+  }
+  console.log("══════════════════════════════════════════════════════════════════════");
+  console.log(`🌐 EXPORTING ${services.length} SERVICES: ${services.join(", ")}`);
+  console.log(`📂 Destination: ${outDir}`);
+  console.log("══════════════════════════════════════════════════════════════════════\n");
+
+  const results = [];
+  for (const s of services) {
+    const res = await handleExportCookies(s, false, outDir);
+    results.push(res);
+  }
+
+  console.log("──────────────────────────────────────────────────────────────────────");
+  const successCount = results.filter(r => r.ok).length;
+  console.log(`🎉 COMPLETED! Successfully exported ${successCount}/${services.length} services to:`);
+  console.log(`📁 ${outDir}/`);
+  console.log("──────────────────────────────────────────────────────────────────────\n");
+}
+
 async function main() {
-  switch (cmd) {
+  const lowerCmd = cmd.toLowerCase().trim();
+  switch (lowerCmd) {
     case "info":
     case "me":
       await handleInfo();
@@ -443,27 +531,39 @@ async function main() {
     case "test":
       await handleTestAll();
       break;
-    case "assign":
-      await handleAssign(targetService);
+    case "assign": {
+      const svcs = parseServiceList(process.argv.slice(3));
+      if (!svcs.length) svcs.push(resolveServiceId(targetService) || "claude");
+      for (const s of svcs) {
+        await handleAssign(s);
+      }
       break;
+    }
     case "snapshot":
     case "export-cookies":
-    case "cookies":
-      await handleExportCookies(targetService, false, OUT_DIR);
+    case "cookies": {
+      const svcs = parseServiceList(process.argv.slice(3));
+      if (!svcs.length) svcs.push(resolveServiceId(targetService) || "claude");
+      await handleExportMultiple(svcs, OUT_DIR);
       break;
+    }
     case "all":
     case "export-all":
     case "down-all":
     case "download-all":
       await handleExportAll();
       break;
-    default:
+    default: {
       if (cmd && !["help", "-h", "--help"].includes(cmd)) {
-        await handleExportCookies(cmd, false, OUT_DIR);
-        break;
+        const svcs = parseServiceList(process.argv.slice(2));
+        if (svcs.length) {
+          await handleExportMultiple(svcs, OUT_DIR);
+          break;
+        }
       }
       console.log(`Unknown command: ${cmd}`);
-      console.log("Usage: ./centrix-service-api.sh [info|list|test-all|assign <id>|export-cookies <id>|all|<serviceId>]");
+      console.log("Usage: ./centrix-service-api.sh [info|list|test-all|assign <id>|export-cookies <id>|all|<serviceId, ...>]");
+    }
   }
 }
 
