@@ -1,25 +1,49 @@
 [
   {
     "name": "MC1",
-    "value": "GUID=1377b881cb994f3380a7efb3ea119d1e&HASH=1377&LV=202608&V=4&LU=1786758831934",
+    "value": "GUID=98c22e0ff8c1444089512b84e55e7086&HASH=98c2&LV=202608&V=4&LU=1787718199387",
     "domain": ".microsoft.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1818294832.08663,
+    "expirationDate": 1819254199.670012,
     "hostOnly": false,
     "session": false
   },
   {
     "name": "MS0",
-    "value": "c8862650ec3044eeb4a0d04ac266d64c",
+    "value": "9a817680b0614d0fb989df0adaa16546",
     "domain": ".microsoft.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1822959929.56716,
+    "expirationDate": 1823302941.107761,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_uetsid",
+    "value": "4ba42cf0ab2211f1a38a8b81b3613fa3|1jdt1id|2|g9a|0|2442",
+    "domain": ".microsoft.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1788921933,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_uetvid",
+    "value": "4ba44900ab2211f1b01f398e63a219d8|7oaolk|1788835534353|13|1|bat.bing.com/p/conversions/c/o",
+    "domain": ".microsoft.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1822531534,
     "hostOnly": false,
     "session": false
   }

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "serviceId": "notion",
-  "capturedAt": "2026-09-02T23:23:10.119Z",
+  "capturedAt": "2026-09-05T12:20:52.792Z",
   "origin": "https://app.notion.com",
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
   "fingerprint": {
@@ -113,7 +113,7 @@
       "secure": false,
       "httpOnly": false,
       "sameSite": "unspecified",
-      "expirationDate": 1819927387,
+      "expirationDate": 1820143843,
       "hostOnly": false,
       "session": false
     },
@@ -124,8 +124,8 @@
       "path": "/",
       "secure": true,
       "httpOnly": true,
-      "sameSite": "unspecified",
-      "expirationDate": 1819927388.048706,
+      "sameSite": "no_restriction",
+      "expirationDate": 1820143843.68693,
       "hostOnly": false,
       "session": false
     },
@@ -221,7 +221,7 @@
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1822915026.615392,
+      "expirationDate": 1823167846.656379,
       "hostOnly": false,
       "session": false
     },
@@ -281,7 +281,7 @@
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1822915016.32577,
+      "expirationDate": 1823167846.814846,
       "hostOnly": false,
       "session": false
     },
@@ -305,7 +305,7 @@
       "secure": false,
       "httpOnly": false,
       "sameSite": "unspecified",
-      "expirationDate": 1819927387,
+      "expirationDate": 1820143844,
       "hostOnly": false,
       "session": false
     },
@@ -329,7 +329,7 @@
       "secure": false,
       "httpOnly": false,
       "sameSite": "unspecified",
-      "expirationDate": 1819927387,
+      "expirationDate": 1820143843,
       "hostOnly": false,
       "session": false
     },
@@ -353,7 +353,7 @@
       "secure": true,
       "httpOnly": true,
       "sameSite": "lax",
-      "expirationDate": 1819927388.048779,
+      "expirationDate": 1820143843.686991,
       "hostOnly": false,
       "session": false
     },
@@ -377,7 +377,7 @@
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1788959828.261553,
+      "expirationDate": 1789212645.384644,
       "hostOnly": true,
       "session": false
     },
@@ -389,7 +389,7 @@
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1788959828.261579,
+      "expirationDate": 1789212645.384663,
       "hostOnly": true,
       "session": false
     },
@@ -401,7 +401,7 @@
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1788959828.261602,
+      "expirationDate": 1789212645.384678,
       "hostOnly": true,
       "session": false
     },
@@ -413,7 +413,7 @@
       "secure": false,
       "httpOnly": false,
       "sameSite": "unspecified",
-      "expirationDate": 1819927387,
+      "expirationDate": 1820143844,
       "hostOnly": false,
       "session": false
     },
@@ -425,7 +425,7 @@
       "secure": false,
       "httpOnly": false,
       "sameSite": "unspecified",
-      "expirationDate": 1819927387,
+      "expirationDate": 1820143843,
       "hostOnly": false,
       "session": false
     },
@@ -442,18 +442,6 @@
       "session": false
     },
     {
-      "name": "notion_check_cookie_consent",
-      "value": "false",
-      "domain": ".notion.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": false,
-      "sameSite": "no_restriction",
-      "expirationDate": 1788415835.887794,
-      "hostOnly": false,
-      "session": false
-    },
-    {
       "name": "_cfuvid",
       "value": "BZIjuuZBTeLPtPwRlzdaVJxHwo2Z12HtiGQp9me5bU4-1788329443.955562-1.0.1.1-YL7bGVySvIhhIBtgQlrPicWbw97GR4UGjK3A7kEv_Zo",
       "domain": ".notion.so",
@@ -465,44 +453,79 @@
       "session": true
     },
     {
-      "name": "lidc",
-      "value": "\"b=TGST02:s=T:r=T:a=T:p=T:g=3834:u=1:x=1:i=1788355017:t=1788441417:v=2:sig=AQGjQkLCMcFXXY4se-nbpG9Rflagf_TZ\"",
-      "domain": ".linkedin.com",
+      "name": "_cfuvid",
+      "value": "K.Y3UTuCZIYMwm8jPOHOsgNmufHAo0_EFe4ToQ.NXNc-1788607840.8567493-1.0.1.1-gA3LaV_h1WY3DAD8.w_YFJXQBc4cAq.InMfdIxDgOwQ",
+      "domain": ".notion.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "hostOnly": false,
+      "session": true
+    },
+    {
+      "name": "notion_check_cookie_consent",
+      "value": "false",
+      "domain": ".notion.com",
       "path": "/",
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1788441417.759088,
+      "expirationDate": 1788694241.244397,
       "hostOnly": false,
       "session": false
     },
     {
       "name": "token_v2",
-      "value": "v03%3AeyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..pniYbzTEdIMbVtMZj1RCwQ.F017Wt3NCZ_3QbW4eoJxhKNVZPo8mZ8TQsd3G4z9Txiufv-vlMiu_kNePH27ikcmVtKWTPEklrxce7CWxpwNso-jZmHMc3S22ayivWZttc7wAQxmqhBbr7yeFqS2n13ITZ17Yzyj3uNU2bEibctKiI8TNFGoO5K8DShVE5M4lUGNAc1NKRwM-4fq_CeLLpQ17aNw8EhgYniPWwbla1_2ClopWJMV4WvrCaXCUtt06-FaEEaXOWbR1gpAcBpOa_C44r4iLDFbI9cQl7iDlQwrKy8GrympxVxpANMsmFfct8Byn1wMi8EtZlA4aTLu8cm5eMhChAjJHYRpCOAU33NL3JZlF7q5EW-KJhg41wSavTU.CAN52GIRCxaiva9xAUIPh45MK2wr0APuRNcDuB_qJSY",
+      "value": "v03%3AeyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..xWGqZPAjFkqbWjySS7D6SQ.KzHFKQq9ds1BpuW7BYwAHe9TvXvNLKRKW0QYoMzhnAvnk7rtukH37EDkY_bWpHD_537GtL9jlzx1BkruwIdM8cQPR9v-j5xJhTwKlv2m1YpBRHoTqawXlyMzxkOoIUDc6zEhqTEBz2R90jsftEUchqR0xdBLtI3LqoRsdf6y-l-YTgw3J4SfcgA0KQ4kW611f4CEqnDWXEupgtOUrSLmlkFxyQ0HbZp9LtNMpA2S31HAOaY_9C00DiToRgCWnPf6N-dp9E-JywMIfl6dIBk8y9XSbGYZSkCbozVzg99k6_YwuNzCwdelTxpWyRADf6kwCrlZFcEkL3_4WiT0EaASIm_Sd2CLGh_drfm32Bm1FJg.6s95WxMz7uj9T3c1bCSNQv3PuYKEUD41gCLVifIS3sM",
       "domain": ".app.notion.com",
       "path": "/",
       "secure": true,
       "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1820143843.687016,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "io",
+      "value": "nT8Cw0hUMUyP9yWr",
+      "domain": "msgstore-001.app.notion.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
       "sameSite": "unspecified",
-      "expirationDate": 1819927388.048816,
+      "expirationDate": 1788615045.31017,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "lidc",
+      "value": "\"b=OGST00:s=O:r=O:a=O:p=O:g=3957:u=1:x=1:i=1788607846:t=1788694246:v=2:sig=AQFAvKVpnn-1B1nEM2TP7da8Cm3z6ko4\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "no_restriction",
+      "expirationDate": 1788694245.346102,
       "hostOnly": false,
       "session": false
     },
     {
       "name": "AWSALBAPP-0",
-      "value": "AAAAAAAAAADl7uvpInCBEer7vMw+8pZonagVoK3nDqMrtog6uGj8LYwty3eO+xcvYpx08nrZb9FRVY2C8SXH/yXpgFsnY4fX067ta0RhWJPNsMDn3L1uyNuBrjJVkYaZhzDP6maMaVJpfUL7",
+      "value": "AAAAAAAAAABR3DAOYbWCPnB+RoKubekpohjFqHb+cqQoG1EfRMOeKnZ4qF5EgS8bcHUqvCrYjZiGw6MkFqPVmDf7OAYEUbTU/K/FO/hh4i0Wxuqbu//BnIPpsKsglZpbatLiNBCvtp+JS0Gg",
       "domain": "msgstore-001.app.notion.com",
       "path": "/",
       "secure": true,
       "httpOnly": false,
       "sameSite": "no_restriction",
-      "expirationDate": 1788959828.261445,
+      "expirationDate": 1789212645.384575,
       "hostOnly": true,
       "session": false
     },
     {
       "name": "auth_sync_message_accountSwitcher",
-      "value": "%7B%22message%22%3A%7B%22version%22%3A1%2C%22name%22%3A%22accountSwitcher%22%2C%22source%22%3A%22notion%22%2C%22accounts%22%3A%5B%7B%22id%22%3A%22161d872b-594c-81a9-96db-0002fea397f0%22%2C%22displayName%22%3A%22Xu%C3%A2n%20L%E1%BB%99c%20Tr%E1%BA%A7n%22%2C%22emailAddress%22%3A%22trxuanloc.28%40gmail.com%22%2C%22profilePicture%22%3A%22https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIIMaXxoC-miOFaphWAHxWZ7BEUEfbAqbPyGNWw5chBpKrgEFz1%3Ds100%22%7D%5D%2C%22persistCookie%22%3Atrue%7D%2C%22origin%22%3A%22https%3A%2F%2Fapp.notion.com%22%2C%22messageID%22%3A%227358d22a-7caf-4077-a4c7-d9c9fdd5ede4%22%7D",
+      "value": "%7B%22message%22%3A%7B%22version%22%3A1%2C%22name%22%3A%22accountSwitcher%22%2C%22source%22%3A%22notion%22%2C%22accounts%22%3A%5B%7B%22id%22%3A%22161d872b-594c-81a9-96db-0002fea397f0%22%2C%22displayName%22%3A%22Xu%C3%A2n%20L%E1%BB%99c%20Tr%E1%BA%A7n%22%2C%22emailAddress%22%3A%22trxuanloc.28%40gmail.com%22%2C%22profilePicture%22%3A%22https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocIIMaXxoC-miOFaphWAHxWZ7BEUEfbAqbPyGNWw5chBpKrgEFz1%3Ds100%22%7D%5D%2C%22persistCookie%22%3Atrue%7D%2C%22origin%22%3A%22https%3A%2F%2Fapp.notion.com%22%2C%22messageID%22%3A%228cd19ba3-86c3-4080-b4d8-83c1b6ffebdf%22%7D",
       "domain": ".identity.notion.com",
       "path": "/",
       "secure": true,
@@ -513,26 +536,15 @@
     },
     {
       "name": "__cf_bm",
-      "value": "TdlHmzx3u..OFBbWa5jv9aIDlE4vQ5V2fLfH0EjEyyc-1788391385.325945-1.0.1.1-6feqVBOze7awxC0LPJHJ8rL03D0nFtf4t77QrQfqm8KWQQ6WJ3ejcGhSu12eySrGJGHGUrwJdjmO.ZH0r_c3Zjntx_P1DOr5JPvEWaI77596w1ybjNSno1p4yHUMkptN",
+      "value": "vJs8y4M1GF8V5aSyrdmZ51louZ1sqdLkXnv.ONMnf7k-1788609384.548456-1.0.1.1-gTaBNWaE6eZST69Q084udwtcz40evNleHx1e_dGeShytdfL2NiVjF3FCzsAvUQldN8N.siKznChhoDEsfKSBYp7dtr1MFONjFCkJNAyMBIknqZ.RaX5Th4jWGNlF6a0w",
       "domain": ".notion.com",
       "path": "/",
       "secure": true,
       "httpOnly": true,
       "sameSite": "no_restriction",
-      "expirationDate": 1788393185.789788,
+      "expirationDate": 1788611184.041416,
       "hostOnly": false,
       "session": false
-    },
-    {
-      "name": "_cfuvid",
-      "value": "Ns0FElX.nFGHjnFwT4GAk9485o_FT_sqWqYHK36nfqE-1788391385.9576685-1.0.1.1-wCfdorcyujGvEHnObnLrMsCCZWVc4pKDgrD1xpC8GQM",
-      "domain": ".notion.com",
-      "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "no_restriction",
-      "hostOnly": false,
-      "session": true
     }
   ],
   "localStorage": {},

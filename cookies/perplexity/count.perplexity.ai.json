@@ -1,13 +1,13 @@
 [
   {
     "name": "__frs",
-    "value": "bebdc36f-e0cf-4af7-a7e5-b7f75d6190cf",
+    "value": "ea36e409-f191-4f88-82f9-046a8c5e5d16",
     "domain": ".count.perplexity.ai",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788394968.545098,
+    "expirationDate": 1788876852.709854,
     "hostOnly": false,
     "session": false
   }

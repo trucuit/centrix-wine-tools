@@ -7,7 +7,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788959828.261553,
+    "expirationDate": 1789212645.384644,
     "hostOnly": true,
     "session": false
   },
@@ -19,7 +19,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788959828.261579,
+    "expirationDate": 1789212645.384663,
     "hostOnly": true,
     "session": false
   },
@@ -31,19 +31,31 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788959828.261602,
+    "expirationDate": 1789212645.384678,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "io",
+    "value": "nT8Cw0hUMUyP9yWr",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1788615045.31017,
     "hostOnly": true,
     "session": false
   },
   {
     "name": "AWSALBAPP-0",
-    "value": "AAAAAAAAAADl7uvpInCBEer7vMw+8pZonagVoK3nDqMrtog6uGj8LYwty3eO+xcvYpx08nrZb9FRVY2C8SXH/yXpgFsnY4fX067ta0RhWJPNsMDn3L1uyNuBrjJVkYaZhzDP6maMaVJpfUL7",
+    "value": "AAAAAAAAAABR3DAOYbWCPnB+RoKubekpohjFqHb+cqQoG1EfRMOeKnZ4qF5EgS8bcHUqvCrYjZiGw6MkFqPVmDf7OAYEUbTU/K/FO/hh4i0Wxuqbu//BnIPpsKsglZpbatLiNBCvtp+JS0Gg",
     "domain": "msgstore-001.app.notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788959828.261445,
+    "expirationDate": 1789212645.384575,
     "hostOnly": true,
     "session": false
   }

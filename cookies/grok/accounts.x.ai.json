@@ -12,18 +12,6 @@
     "session": false
   },
   {
-    "name": "referrer",
-    "value": "grok-com",
-    "domain": "accounts.x.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1788835295.59713,
-    "hostOnly": true,
-    "session": false
-  },
-  {
     "name": "__cuid",
     "value": "e3e3ce53-0860-413d-99f8-4821fe24fa68",
     "domain": "accounts.x.ai",

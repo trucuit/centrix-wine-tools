@@ -1,192 +1,282 @@
 [
   {
-    "name": "_fbp",
-    "value": "fb.1.1788536458558.19526231410288148",
-    "domain": ".claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "no_restriction",
-    "expirationDate": 1823096457.620697
-  },
-  {
-    "name": "ion-vk",
-    "value": "cde71536-f1bb-4643-9bab-7545cb5446b9",
-    "domain": "claude.ai",
-    "path": "/",
+    "name": "file_token",
+    "value": "v02%3Afile_token%3AtHkhF7zYntNk08kEPC-pW8yHBLrCcMX5thp-3n2Xksgn8R1Ih3S9xGcb73a8Xpycv27cvYQEQaaGkATL3k4RNVjeIhNx2PaPVykkLlrGEGjjpVCuiMRhp8eHKeCQ0AEKbMamF8Bdo92p3VGtbmv03uXEuIxx",
+    "domain": ".notion.com",
+    "path": "/f",
     "secure": true,
     "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1791255188
+    "sameSite": "no_restriction",
+    "expirationDate": 1820289483.529733
   },
   {
-    "name": "anthropic-device-id",
-    "value": "a133c8e1-65fe-4659-a192-1d8bd3ee40dc",
-    "domain": "claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1814521123.679315
-  },
-  {
-    "name": "ajs_anonymous_id",
-    "value": "claudeai.v1.4c4b33dd-2bd5-4cce-af32-1c831bfa3793",
-    "domain": ".claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1820137124.425696
-  },
-  {
-    "name": "__ssid",
-    "value": "40455ce4-305b-4c4d-b577-4bc3fb8f5422",
-    "domain": ".claude.ai",
+    "name": "notion_browser_id",
+    "value": "060a7245-070a-4de4-a8ab-3f9523090daa",
+    "domain": ".notion.com",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1823096458.630033
+    "expirationDate": 1820409435
+  },
+  {
+    "name": "session_sync_nonce",
+    "value": "skWZqPRMF2J_HMlX-KkLyp7RgHnovPVA1KeVEBPwvh8",
+    "domain": "app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1823313951.461973
+  },
+  {
+    "name": "device_id",
+    "value": "3d4d872b-594c-81f8-ba10-003b45761b69",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1820409436.012144
+  },
+  {
+    "name": "session_sync_checked",
+    "value": "1",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1823313951.46245
   },
   {
     "name": "g_state",
-    "value": "{\"i_l\":0,\"i_ll\":1788536458895,\"i_b\":\"9cZDD5kI1Yq921EopBsdqh3RvKzQMxWeNAjLtWXKIz0\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1788536458895}",
-    "domain": "claude.ai",
+    "value": "{\"i_l\":0,\"i_ll\":1788753448984,\"i_b\":\"7+mktakMpXZb3L3vdlPTusPz1uuqMnSSyAAaJhfOAJc\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1788753448984}",
+    "domain": "app.notion.com",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1804088458
+    "expirationDate": 1804305448
   },
   {
-    "name": "_gcl_au",
-    "value": "1.1.404473568.1788536459",
-    "domain": ".claude.ai",
+    "name": "notion_user_id",
+    "value": "3d4d872b-594c-8167-99a9-0002f0cb8d00",
+    "domain": ".app.notion.com",
     "path": "/",
     "secure": false,
     "httpOnly": false,
     "sameSite": "unspecified",
-    "expirationDate": 1796312459
+    "expirationDate": 1820409435
   },
   {
-    "name": "sessionKey",
-    "value": "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",
-    "domain": ".claude.ai",
+    "name": "notion_sync_user_id",
+    "value": "%7B%22notion_user_id%22%3A%223d4d872b-594c-8167-99a9-0002f0cb8d00%22%2C%22is_logged_in%22%3Atrue%2C%22device_id%22%3A%22060a7245-070a-4de4-a8ab-3f9523090daa%22%2C%22version%22%3A4%7D",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1796529483.529831
+  },
+  {
+    "name": "NEXT_LOCALE",
+    "value": "en-US",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1820409435
+  },
+  {
+    "name": "p_sync_session",
+    "value": "%7B%22tokenId%22%3A%22v02%3Async_session%3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj_EGqDt_jyjTd5FqtlD2-ru9h-MytbYGKknbSPCj2F07ufgzySUae5oLeq3yLdOJjiNhhjr4mMaGxM5n2t1KQX3Q18vh1u17PgVt%22%2C%22userIds%22%3A%5B%223d4d872b-594c-8167-99a9-0002f0cb8d00%22%5D%7D",
+    "domain": ".notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1790980248.726515
+    "expirationDate": 1820409436.0122
   },
   {
-    "name": "sessionKeyLC",
-    "value": "1788536603873",
-    "domain": ".claude.ai",
+    "name": "_cioid",
+    "value": "3d4d872b594c816799a90002f0cb8d00",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1820289483
+  },
+  {
+    "name": "AWSALBAPP-1",
+    "value": "_remove_",
+    "domain": "msgstore-001.app.notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790980248.726535
+    "sameSite": "no_restriction",
+    "expirationDate": 1789478238.117004
   },
   {
-    "name": "routingHint",
-    "value": "sk-ant-rh-eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJFUzI1NiIsICJraWQiOiAiN0MxcWFPRnhqdWxaUjRFQnNuNk1UeUZGNWdDV2JHbFpNVDR2RklrRFFpbyJ9.eyJzdWIiOiAiMDVmZjhmODgtNzFkMS00ODRmLTkyMGUtOWQ1YzkzMzY0Njk2IiwgInYiOiAyLCAiaXNfdmVyaWZpZWQiOiB0cnVlLCAiaGFzX21lbWJlcnNoaXAiOiB0cnVlLCAib25ib2FyZGluZ19jb21wbGV0ZSI6IHRydWUsICJhZ2VfdmVyaWZpZWQiOiB0cnVlLCAicGVuZGluZ19pbnZpdGUiOiBmYWxzZSwgInBob25lX3ZlcmlmaWVkIjogZmFsc2UsICJuYW1lIjogInNhc2FkYWlyYXNlYW5uIiwgImxvY2FsZSI6ICJlbi1VUyIsICJmbGFncyI6IFsiZWRnZV9kZWZhdWx0X3JvdXRlIl0sICJpYXQiOiAxNzg4NTM2NjAzLCAiaXNzIjogImNsYXVkZS1haS1yb3V0aW5nIn0.VfvtHbTy3PQMmHZhKdcvaCxi8OFqm-B8EQJE2ZelQr-YttLiAJec-GQJb_t4CJonkvOD3mlly3NFBfABWCi-5Q",
-    "domain": ".claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1791128602.124283
-  },
-  {
-    "name": "lastActiveOrg",
-    "value": "4d08d558-0b17-472c-a29a-39f88ba00b35",
-    "domain": ".claude.ai",
+    "name": "AWSALBAPP-2",
+    "value": "_remove_",
+    "domain": "msgstore-001.app.notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1820137123.915237
+    "sameSite": "no_restriction",
+    "expirationDate": 1789478238.117027
   },
   {
-    "name": "user-sidebar-visible-on-load",
-    "value": "true",
-    "domain": ".claude.ai",
+    "name": "AWSALBAPP-3",
+    "value": "_remove_",
+    "domain": "msgstore-001.app.notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1820137123.910037
+    "sameSite": "no_restriction",
+    "expirationDate": 1789478238.117046
   },
   {
-    "name": "sessionKeyV3",
-    "value": "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",
-    "domain": ".claude.ai",
+    "name": "notion_locale",
+    "value": "en-US/autodetect",
+    "domain": ".app.notion.com",
     "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1790980248.726439
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1820409435
   },
   {
-    "name": "sessionKeyV3LC",
-    "value": "1788582653369",
-    "domain": ".claude.ai",
+    "name": "notion_users",
+    "value": "[%223d4d872b-594c-8167-99a9-0002f0cb8d00%22]",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1820409435
+  },
+  {
+    "name": "AWSALBAPP-1",
+    "value": "_remove_",
+    "domain": "msgstore.app.notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
-    "sameSite": "lax",
-    "expirationDate": 1790980248.726496
+    "sameSite": "no_restriction",
+    "expirationDate": 1789414657.148877
+  },
+  {
+    "name": "AWSALBAPP-2",
+    "value": "_remove_",
+    "domain": "msgstore.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789414657.148987
+  },
+  {
+    "name": "AWSALBAPP-3",
+    "value": "_remove_",
+    "domain": "msgstore.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789414657.149088
+  },
+  {
+    "name": "AWSALBAPP-0",
+    "value": "AAAAAAAAAAAEKatMX3GngdO47wPoM6QAqQPxLj+6ArAOkv4/BTRgUfICCnCBTwnWusyuK9scYMnrtHi6l3kOCUURTu0EOCqntkelbmtQ3NhhukZrV3ztTr6NZJCdtUu9YW7jI7JuKukos+YP",
+    "domain": "msgstore.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789414657.148644
+  },
+  {
+    "name": "notion_check_cookie_consent",
+    "value": "false",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788926382.426576
+  },
+  {
+    "name": "io",
+    "value": "NwZyY7ygv6kzfpRo",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "unspecified",
+    "expirationDate": 1788879400.369925
   },
   {
     "name": "_cfuvid",
-    "value": "hcFMKnlYzCOhAWLz5cvqRiyNELNT8f6MOX1TpUgtJP4-1788597152.922995-1.0.1.1-JkjH41w0KZftEBV6yYsxbBOgYVSlsoiuzTDiBZ_rHYE",
-    "domain": ".claude.ai",
+    "value": "DODwvU4CDyLOTTNSzyYVW9LV1sXeFhWXdkgMx5J4xmk-1788873363.3950317-1.0.1.1-HV8JUuSlE6LtcJlw4u5pu0RFQOvWxN_5JA_cD3dI21I",
+    "domain": ".notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
-    "expirationDate": 1791255188
+    "expirationDate": 1791465449
   },
   {
-    "name": "CH-prefers-color-scheme",
-    "value": "light",
-    "domain": ".claude.ai",
+    "name": "token_v2",
+    "value": "v03%3AeyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..Jva6iAIbfBtRQDqJClBiFg.NlsKjAEHVLN6X39axDU2oaqVXijF0vQXsnBuZoRh6sveTPvD6U1DA5o0FcgnMMl94tOzIg2aG7JwUHqJmpoLzaevztHJip0MlchLoJ5tUZBNEm5Ou-B70-jo8alLgZ-g7MbOZSFvdg2mUwxDjc7Uszk7hMFAdHPQwMXRkj3yuLyZx5aUaBtdHFpZkyVaiY06wckekWz_2z1pgMKQNlL9Ep28RT8-oixI4dQQ-m_KV7ocgBUXiykQkeMihIZ5XubXR2O2o3BqY3PifpT30c_WUOJXPnY3R7hOgFVzCd5Jz6kd3x5CjsRFUVZKrxQGKceI_uXkSksOhA3YA_x9MzJZKYxvob8T9R8C3VBuHFRF_Ww.PPfkn6wcyC6fkDO5FKHixVrWCZCb69oKKKwtbRS8pOA",
+    "domain": ".app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "unspecified",
+    "expirationDate": 1820409436.01223
+  },
+  {
+    "name": "__cf_bm",
+    "value": "BFbEjI5.CG0a.NqAKhqx.io41aAwImbdTrhdYNLDIag-1788873438.3586457-1.0.1.1-3mXCm8QkzZo.dfXf2Z6QmDsOAjYa1eobRudS3HDnurVtnt06fIpnmMUkcB7jgskPjRR.U8oT26NPv1OHuYA8cf3OKHboUFD3VnHnppjT2uuh3a7iCQvejTFqyh86Fa8Y",
+    "domain": ".identity.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788875238.047989
+  },
+  {
+    "name": "__cf_bm",
+    "value": "Z4pqR.oCaUDIvzSiBp.WkU3bgnWgko0ga4eggs6d71w-1788873438.2149522-1.0.1.1-9CkHGWdXr9h18Lp_lA0dZDoVNfoDji3ez2AAxY4FtkCpbw9rmZ_LaKlhOgduP3yDbGmslC0BW5lK1aYPyM4QuZtyhDOi6mtGMRAs6g.0C17KP_qN3ZB00UxxVP_SXv10",
+    "domain": ".notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788875238.063664
+  },
+  {
+    "name": "AWSALBAPP-0",
+    "value": "AAAAAAAAAAA/jZy4NyoC8v5VUdOD+HYGx6HLRcRkcSF8iAYXCVncC40tZ+xMIXfv2Dg/V/dg2+fFIyAwEcw7aoDUt8el/MW2GygrH6ih/nX10p0gRqIYXfpS9Og20nhRqlsPmtS0SQBnvlyb",
+    "domain": "msgstore-001.app.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789478238.116941
+  },
+  {
+    "name": "auth_sync_message_accountSwitcher",
+    "value": "%7B%22message%22%3A%7B%22version%22%3A1%2C%22name%22%3A%22accountSwitcher%22%2C%22source%22%3A%22notion%22%2C%22accounts%22%3A%5B%7B%22id%22%3A%223d4d872b-594c-8167-99a9-0002f0cb8d00%22%2C%22displayName%22%3A%22pvgame.com.vn%40gmail.com%22%2C%22emailAddress%22%3A%22pvgame.com.vn%40gmail.com%22%2C%22profilePicture%22%3A%22%22%7D%5D%2C%22persistCookie%22%3Atrue%7D%2C%22origin%22%3A%22https%3A%2F%2Fapp.notion.com%22%2C%22messageID%22%3A%22bf26a3da-3358-4e4f-bc3d-d84cee4bfd94%22%7D",
+    "domain": ".identity.notion.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1820137123.916021
-  },
-  {
-    "name": "cf_clearance",
-    "value": "nhNMd56JT5vRSZH7Grym0n1zZ..yoznF47TMHfwXYXo-1788601124-1.2.1.1-cR.t59RzlZcSFdoaI_YqPHGXxh2_PAdTk77THsFKCK_0QyuGLAK85I8aulKVnhX6r1Da5_IYuqtGnBq3Q.MdS2sC0IzU2cStA64kqrW.f6amnd4LOGFyBNd8WSUtD.V.gAV.9PEkY6dCsquT.P4qsdvzDoNxUj1Z4JtBXbVtL.Pky6sLfBjPprjUFOFEC8.hG1qb4FJupKBLxXLZExpJ11yNUrM8Py6G5zH5_XOfGVY.0dHIE7BMxHEm5gyYp28Rud3fVPnJWPZgMpyet4xgjOkVx067Rn3C0XQk.nk7e4Xa4HdC0_Wu8U9bqd0qzmTtQ24ljJk5_qksvIbYJzgT5_vfo7ofFzTPMQYqXUrRMSI",
-    "domain": ".claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1820137124.188971
-  },
-  {
-    "name": "_dd_s_v2",
-    "value": "isExpired=1&aid=0c6b11fd-33b4-4940-9bd5-a7cf34f6e5fe&c=0",
-    "domain": "claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "strict",
-    "expirationDate": 1820166057.145
-  },
-  {
-    "name": "__cf_bm",
-    "value": "Q0hPV7.1tzeVFgg4bO43eLfC3HBY.wqdV_1aXp0eEtg-1788661702.1817012-1.0.1.1-89K.h_hWssE5WdU8OEuPmqRbPlYXkZtfH.eZBS2_EtgIuh1g1D35PMJlCX3wHQm3ZHr66AF52GyqEum1Ikxoy15Zv00yTxsrbUb0IXyZKIvthvj2MYQnaHMdPYJ1w2r9",
-    "domain": ".claude.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788663502.346065
+    "expirationDate": 1791465449
   }
 ]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "COMPASS",
+    "value": "photos-fife=CgAQj7361AYaWAAJa4lXzOnSLC0dhIoxOaxcRkFiFyde6vTYOT0r45JYTWFI005X5kotw58bJ3eg2aAvHynPz4Fuu8Hp8_ZnROn_NIC7CQAayCGrWZ5QAl89kyB9KwXLfPEwAQ",
+    "domain": "work.fife.usercontent.google.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789640572.350074,
+    "hostOnly": true,
+    "session": false
+  }
+]

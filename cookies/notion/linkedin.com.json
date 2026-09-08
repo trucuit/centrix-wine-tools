@@ -25,13 +25,13 @@
   },
   {
     "name": "lidc",
-    "value": "\"b=TGST02:s=T:r=T:a=T:p=T:g=3834:u=1:x=1:i=1788355017:t=1788441417:v=2:sig=AQGjQkLCMcFXXY4se-nbpG9Rflagf_TZ\"",
+    "value": "\"b=OGST00:s=O:r=O:a=O:p=O:g=3957:u=1:x=1:i=1788607846:t=1788694246:v=2:sig=AQFAvKVpnn-1B1nEM2TP7da8Cm3z6ko4\"",
     "domain": ".linkedin.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1788441417.759088,
+    "expirationDate": 1788694245.346102,
     "hostOnly": false,
     "session": false
   }

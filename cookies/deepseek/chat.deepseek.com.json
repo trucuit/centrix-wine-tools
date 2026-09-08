@@ -7,30 +7,7 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "strict",
-    "hostOnly": true,
-    "session": true
-  },
-  {
-    "name": "smidV2",
-    "value": "20260902204227d8600e0f28ec70856e76fe8a01ad54e4009252ef85a9558a0",
-    "domain": "chat.deepseek.com",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "unspecified",
-    "expirationDate": 1822916547.518501,
-    "hostOnly": true,
-    "session": false
-  },
-  {
-    "name": ".thumbcache_6b2e5483f9d858d7c661c5e276b6a6ae",
-    "value": "LAH+dlUcMk20rcdxhq0i2wD7BHL5hbnUEZ5unkQFIXwlM8sn+RgsJX4xYqbbWBpJJtD5OeFTchDuc+RcC5bxZg%3D%3D",
-    "domain": "chat.deepseek.com",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "unspecified",
-    "expirationDate": 1822916547.914609,
+    "expirationDate": 1823321928.237671,
     "hostOnly": true,
     "session": false
   }

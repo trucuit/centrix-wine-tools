@@ -1,0 +1,14 @@
+[
+  {
+    "name": "MR",
+    "value": "0",
+    "domain": ".c.bing.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789434721.174514,
+    "hostOnly": false,
+    "session": false
+  }
+]

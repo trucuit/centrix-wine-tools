@@ -1,0 +1,14 @@
+[
+  {
+    "name": "MR",
+    "value": "0",
+    "domain": ".bat.bing.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1789434722.335057,
+    "hostOnly": false,
+    "session": false
+  }
+]

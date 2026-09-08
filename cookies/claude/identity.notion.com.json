@@ -1,0 +1,25 @@
+[
+  {
+    "name": "__cf_bm",
+    "value": "BFbEjI5.CG0a.NqAKhqx.io41aAwImbdTrhdYNLDIag-1788873438.3586457-1.0.1.1-3mXCm8QkzZo.dfXf2Z6QmDsOAjYa1eobRudS3HDnurVtnt06fIpnmMUkcB7jgskPjRR.U8oT26NPv1OHuYA8cf3OKHboUFD3VnHnppjT2uuh3a7iCQvejTFqyh86Fa8Y",
+    "domain": ".identity.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1788875238.047989,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "auth_sync_message_accountSwitcher",
+    "value": "%7B%22message%22%3A%7B%22version%22%3A1%2C%22name%22%3A%22accountSwitcher%22%2C%22source%22%3A%22notion%22%2C%22accounts%22%3A%5B%7B%22id%22%3A%223d4d872b-594c-8167-99a9-0002f0cb8d00%22%2C%22displayName%22%3A%22pvgame.com.vn%40gmail.com%22%2C%22emailAddress%22%3A%22pvgame.com.vn%40gmail.com%22%2C%22profilePicture%22%3A%22%22%7D%5D%2C%22persistCookie%22%3Atrue%7D%2C%22origin%22%3A%22https%3A%2F%2Fapp.notion.com%22%2C%22messageID%22%3A%22bf26a3da-3358-4e4f-bc3d-d84cee4bfd94%22%7D",
+    "domain": ".identity.notion.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "hostOnly": false,
+    "session": true
+  }
+]

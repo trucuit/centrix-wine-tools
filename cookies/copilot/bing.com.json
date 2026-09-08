@@ -1,0 +1,14 @@
+[
+  {
+    "name": "MUID",
+    "value": "0BC1F872134B69091B9BEFBC12B36846",
+    "domain": ".bing.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1822525922.335007,
+    "hostOnly": false,
+    "session": false
+  }
+]

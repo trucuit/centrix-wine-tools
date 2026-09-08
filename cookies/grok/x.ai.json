@@ -1,17 +1,5 @@
 [
   {
-    "name": "cf_clearance",
-    "value": "RwYkwucXuEelhRjlylMb0JqYznAZG0hX2K0Yc9xcfc8-1788230498-1.2.1.1-bg_EVn1x_dZozUHapv.lBfC1u4av3884W9ne_YPTijd1w76suSsfKF8jYCiD.n9QAQYAAcqt5FSxgxjhwpiggElIB2r3zBrWSwOejAEKnVaFZP_clAOi5NcRnB8ne5dFO39M6qTWH5GDyPgtucfIKY.5RbxZOPTT2H7GAMLc4n4rx91PscifwmzxAeuhdfLczHWQ3vPZCMH3cDtAh9DQ9C88IRRtPnP0EoWJXg5Z9LuJwTpnXSk8ACjhU2.5OdAgQUmds4C0s1U1S8ttI0vIq9ma5fieyABOfYStKY7GXJh1IitlaSdf6gBJ.VnxN64lrnUE1yoM8MvHLSYV8rWFHQ5.1etBK.rxiQDgIGQlPbs",
-    "domain": ".x.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1819766496.02956,
-    "hostOnly": false,
-    "session": false
-  },
-  {
     "name": "xai_anon_id",
     "value": "eba3f9e1-cea3-44da-9c1d-56927167de99",
     "domain": ".x.ai",

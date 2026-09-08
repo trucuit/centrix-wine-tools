@@ -1,7 +1,7 @@
 [
   {
     "name": "oai-appearance",
-    "value": "dark",
+    "value": "light",
     "domain": "chat.openai.com",
     "path": "/",
     "secure": false,
