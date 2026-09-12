@@ -7,7 +7,7 @@
     "secure": false,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1820124965.258275,
+    "expirationDate": 1820732090.97265,
     "hostOnly": false,
     "session": false
   },
@@ -19,19 +19,43 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "lax",
-    "expirationDate": 1820124965.258339,
+    "expirationDate": 1820732090.972707,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "cf_clearance",
+    "value": "tQN40ZhcRN_m6xi7uopyk2hTf5_bHEdgyeoXeuCkmfw-1788589189-1.2.1.1-iOfL25G.V6kUM47EtWMD51QYiF2wkRxUfK_HbJXsofko9ih3UAt7ZAhky2DefYgGV1nPIY7XChxKp2NYLj2WhGPf6V3ffKxP0vi5pZF5gHZZUoY2CyP2h6VvDPtTVfPeSaXDFfWqm3hg7ivzJFo_WD8UMo95bQaKgJQauPW9cCQklR8XW4P1.to9eMtFLpJzWFVlwjCKVNqWZBayAFlb0DjLLuEfkJVsKYF3T0Vo1UnphsEdwIOphRqL5VseD31ndFR7GsRyah0o0wetq4tVQlW_7l7UlNnwGkkkPJ4DXKmYMeLt7f3acdiQFGoSELpySfQOWcvpcJkKSX6lLfjUp5UkrpSl1iCuR2qdNeOh9k0",
+    "domain": ".openai.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1820125189.064236,
+    "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "_cfuvid",
+    "value": "cEGERLuVDbWq5hrRzfW_CNzcNb1HWZgv4zCWYF71rj0-1788589188.68304-1.0.1.1-uId84GHzmIF4UFaTq4kRPgH49Yw7EI_zL35Lb7DGYTk",
+    "domain": ".openai.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "no_restriction",
+    "expirationDate": 1823157144.000042,
     "hostOnly": false,
     "session": false
   },
   {
     "name": "oai-sc",
-    "value": "0gAAAAABqm7OsfKYEzw9xN4Ai0fTK0QbrbhLJGI4_kjdo7_5t-96RcIcva9pclxKzjOD8K1oaORoyYaI3S5PoWw4s1mgKy71vx_cePM_DDmHsO5Rwhc4B_gJcN9nESRO_OpREKEvQlIwY0y7xzAlH6gItkZQdyd0eQAj_GQ53MgK6TzO8RoXuJ8Z9DPl4d30Oh5bZ5UkCx68mpXmIGGB33U7vE78NfpAOzQlFkhkG-zDpjBlorhD9WQRStOb9MFvtIPVbWUX9oDsg",
+    "value": "0gAAAAABqpPdDZAzKyG9PkMn6VtkagZZ0x2x6xrvD9Z8QvwfNL-jtroCY514XoIOfl-l3YGquOZmCefSuGWzwYK17iC35dR3w3LmtFoePmFbFlbHVu48yHeE7Ay9AeXB2VW9q52lMJGNMe6ND_QBMC37Id0H6PPYX8MLIpGPfJPf5PY0dKYTsVAOIvjza8__P3OCQHLX8YfdL4Za2vtql6enl0wYllObgJ44wXI1oWa-KfAuqZko4nZm8XeFQZk5N-SpDJmcX20ad",
     "domain": ".openai.com",
     "path": "/",
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1820124972.204511,
+    "expirationDate": 1820732098.97789,
     "hostOnly": false,
     "session": false
   }

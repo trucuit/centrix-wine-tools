@@ -1,0 +1,16 @@
+{
+  "access_token": "eyJ0eXAiOiJhdCtqd3QiLCJhbGciOiJFUzI1NiIsImtpZCI6Im9hdXRoMi1wcm9kdWN0aW9uLTIwMjYtMDItMTkifQ.eyJpc3MiOiJodHRwczovL2F1dGgueC5haSIsInN1YiI6ImEyODc3NzkxLWMwMjktNDI0Ni05NDJiLWQ2MzkxNTZlODdmZCIsImF1ZCI6ImIxYTAwNDkyLTA3M2EtNDdlYS04MTZmLTRjMzI5MjY0YTgyOCIsImV4cCI6MTc4OTIyODY3NSwiaWF0IjoxNzg5MjA3MDc1LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIG9mZmxpbmVfYWNjZXNzIGdyb2stY2xpOmFjY2VzcyBhcGk6YWNjZXNzIiwicHJpbmNpcGFsX3R5cGUiOiJVc2VyIiwicHJpbmNpcGFsX2lkIjoiYTI4Nzc3OTEtYzAyOS00MjQ2LTk0MmItZDYzOTE1NmU4N2ZkIiwiY2xpZW50X2lkIjoiYjFhMDA0OTItMDczYS00N2VhLTgxNmYtNGMzMjkyNjRhODI4IiwianRpIjoiYzRhMTM3YTQtNTJjYS00MmZiLThjNWQtZjZlYzVjMDVhMzg5IiwidGllciI6NSwidGVhbV9pZCI6IjhiMDUwMjliLTBmOTQtNDA2Ni1hYjlmLWMwZDgzNDRlYjQzNyJ9.yYkocPOEyImUnnjFO3r8n4q0uWPKDCGyF4NtmTfG-yCOHXEPqSS488LHA0mWimqnotvg48gq0G9BNhepv5Jspg",
+  "auth_kind": "oauth",
+  "base_url": "https://api.x.ai/v1",
+  "disabled": false,
+  "email": "codecentrix1@signs.onmicrosoft.com",
+  "expired": "2026-09-12T11:37:41Z",
+  "expires_in": 21600,
+  "id_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6Im9hdXRoMi1wcm9kdWN0aW9uLTIwMjYtMDItMTkifQ.eyJpc3MiOiJodHRwczovL2F1dGgueC5haSIsInN1YiI6ImEyODc3NzkxLWMwMjktNDI0Ni05NDJiLWQ2MzkxNTZlODdmZCIsImF1ZCI6ImIxYTAwNDkyLTA3M2EtNDdlYS04MTZmLTRjMzI5MjY0YTgyOCIsImV4cCI6MTc4OTE0OTM3MiwiaWF0IjoxNzg5MTI3NzcyLCJnaXZlbl9uYW1lIjoiQ2VudHJpeCIsImZhbWlseV9uYW1lIjoiQ2VudHJpWCIsImVtYWlsIjoiY29kZWNlbnRyaXgxQHNpZ25zLm9ubWljcm9zb2Z0LmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfQ._cMZkWVA5V2lNtjbCevYUBoIu-uM17sCgPhGr4XP57k267Ili0nwIlFWocF5xb8jM50xR-esPanMF8IaHgz0PQ",
+  "last_refresh": "2026-09-12T09:57:55.963Z",
+  "refresh_token": "XH7j49PJhjOawUpg0Rg-9qjJe3uAtjCRrT775fW_eJTdbU5TCldrMrCL7PFqBxhmeTUuuH27vp3yVAehHXXctg",
+  "sub": "a2877791-c029-4246-942b-d639156e87fd",
+  "token_endpoint": "https://auth.x.ai/oauth2/token",
+  "token_type": "Bearer",
+  "type": "xai"
+}

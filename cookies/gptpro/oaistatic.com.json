@@ -1,13 +1,14 @@
 [
   {
     "name": "_cfuvid",
-    "value": "vkXnvnZtLl6vnSXcdKlwY27UWOMVndmQ9TCzXTh6Ks4-1788667615.767344-1.0.1.1-n4.RTcHxT2FgS7zlr5amT3DglFvCxIdHKBpSaQI98qc",
+    "value": "kcn0AhPStBmvUCvJeWo8i3OkBi4Xa3mZm8z_ctd_J2M-1789195953.7602985-1.0.1.1-rTmtk1XsH4lCpe3PSXNR4sDftL3Z5g9Of_xVVc_9xnk",
     "domain": ".oaistatic.com",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
+    "expirationDate": 1823757267.913043,
     "hostOnly": false,
-    "session": true
+    "session": false
   }
 ]

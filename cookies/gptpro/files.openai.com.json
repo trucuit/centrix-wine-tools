@@ -7,7 +7,8 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
+    "expirationDate": 1823157143.998436,
     "hostOnly": false,
-    "session": true
+    "session": false
   }
 ]

@@ -25,6 +25,7 @@ SCRIPT_PATH="${0:A}"
 SCRIPT_DIR="${SCRIPT_PATH:h}"
 
 # Chia sẻ session + output với export-centrix-api.sh (v2 flow) nên chỉ cần login một lần.
+export CENTRIX_APP_VERSION="${CENTRIX_APP_VERSION:-0.1.391}"
 export CENTRIX_V2_API_URL="${CENTRIX_V2_API_URL:-https://api.cetrix.app}"
 export CENTRIX_V2_SESSION="${CENTRIX_V2_SESSION:-$SCRIPT_DIR/.cetrix-session.json}"
 export CENTRIX_OUT_DIR="${CENTRIX_OUT_DIR:-$SCRIPT_DIR/cookies}"
@@ -38,6 +39,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 const API_BASE = String(process.env.CENTRIX_V2_API_URL || "https://api.cetrix.app").trim().replace(/\/+$/, "");
+const APP_VERSION = String(process.env.CENTRIX_APP_VERSION || "0.1.391").trim();
 const SESSION_FILE = process.env.CENTRIX_V2_SESSION;
 const OUT_DIR = process.env.CENTRIX_OUT_DIR;
 const cmd = process.argv[2] || "info";
@@ -104,13 +106,63 @@ async function getAccessToken() {
   }
 }
 
+let deviceIdentity = null;
+function getDeviceIdentity() {
+  if (deviceIdentity) return deviceIdentity;
+  let rawMachineId = "";
+  try {
+    if (process.platform === "darwin") {
+      const stdout = require("child_process").execFileSync("ioreg", ["-rd1", "-c", "IOPlatformExpertDevice"], { encoding: "utf8", timeout: 4000 });
+      const m = /"IOPlatformUUID"\s*=\s*"([^"]+)"/.exec(stdout);
+      if (m) rawMachineId = m[1].trim();
+    } else if (process.platform === "win32") {
+      const stdout = require("child_process").execFileSync("reg", ["query", "HKLM\\SOFTWARE\\Microsoft\\Cryptography", "/v", "MachineGuid"], { encoding: "utf8", timeout: 4000 });
+      const m = /MachineGuid\s+REG_SZ\s+([0-9a-f-]+)/i.exec(stdout);
+      if (m) rawMachineId = m[1].trim();
+    }
+  } catch (_) {}
+  if (!rawMachineId) rawMachineId = require("os").hostname() || "centrix-cli";
+  const deviceIdHash = crypto.createHash("sha256").update(rawMachineId, "utf8").digest("hex");
+
+  const keyFile = path.join(path.dirname(SESSION_FILE), ".centrix-device-key.json");
+  try {
+    if (fs.existsSync(keyFile)) {
+      const data = JSON.parse(fs.readFileSync(keyFile, "utf8"));
+      if (data.privateKeyPkcs8 && data.publicKeySpkiBase64) {
+        const privateKey = crypto.createPrivateKey({ key: Buffer.from(data.privateKeyPkcs8, "base64"), type: "pkcs8", format: "der" });
+        deviceIdentity = { deviceIdHash, publicKeySpkiBase64: data.publicKeySpkiBase64, privateKey };
+        return deviceIdentity;
+      }
+    }
+  } catch (_) {}
+
+  const pair = crypto.generateKeyPairSync("x25519");
+  const privateKeyDer = Buffer.from(pair.privateKey.export({ type: "pkcs8", format: "der" }));
+  const publicKeySpkiBase64 = Buffer.from(pair.publicKey.export({ type: "spki", format: "der" })).toString("base64");
+  try {
+    writeSecretJson(keyFile, {
+      publicKeySpkiBase64,
+      privateKeyPkcs8: privateKeyDer.toString("base64"),
+      createdAt: new Date().toISOString()
+    });
+  } catch (_) {}
+
+  deviceIdentity = { deviceIdHash, publicKeySpkiBase64, privateKey: pair.privateKey };
+  return deviceIdentity;
+}
+
 async function apiRequest(endpoint, options = {}, retry = true) {
   let token = await getAccessToken();
+  const device = getDeviceIdentity();
   let res = await fetch(`${API_BASE}${endpoint}`, {
     ...options,
     headers: {
       "Authorization": `Bearer ${token}`,
       "Content-Type": "application/json",
+      "x-centrix-app-version": APP_VERSION,
+      "x-centrix-platform": process.platform,
+      "x-centrix-arch": process.arch,
+      "x-managed-device-id-hash": device.deviceIdHash,
       ...(options.headers || {})
     }
   });
@@ -132,6 +184,10 @@ async function apiRequest(endpoint, options = {}, retry = true) {
           headers: {
             "Authorization": `Bearer ${token}`,
             "Content-Type": "application/json",
+            "x-centrix-app-version": APP_VERSION,
+            "x-centrix-platform": process.platform,
+            "x-centrix-arch": process.arch,
+            "x-managed-device-id-hash": device.deviceIdHash,
             ...(options.headers || {})
           }
         });
@@ -150,8 +206,31 @@ function writeSecretJson(file, data) {
   fs.chmodSync(file, 0o600);
 }
 
-function decryptEnvelope(envelope, leaseToken) {
+function decryptEnvelope(envelope, leaseToken, aad = {}) {
   if (!envelope || !envelope.ciphertext) throw new Error("ENVELOPE_EMPTY");
+
+  // HKDF(X25519) device envelope introduced in CentriX 0.1.391
+  if (envelope.keyDerivation === "HKDF(X25519)") {
+    const device = getDeviceIdentity();
+    const peer = crypto.createPublicKey({
+      key: Buffer.from(String(envelope.ephemeralPublicKey || ""), "base64"),
+      type: "spki",
+      format: "der",
+    });
+    const shared = crypto.diffieHellman({ privateKey: device.privateKey, publicKey: peer });
+    const key = Buffer.from(crypto.hkdfSync("sha256", shared, Buffer.alloc(0), "centrix-managed-envelope-v2", 32));
+    const decipher = crypto.createDecipheriv("aes-256-gcm", key, Buffer.from(String(envelope.iv || ""), "base64"));
+    const aadBuf = Buffer.from(`${String(aad.assignmentId || "").trim()}:${Number(aad.snapshotVersion) || 0}:${String(aad.deviceIdHash || device.deviceIdHash || "").trim()}`, "utf8");
+    decipher.setAAD(aadBuf);
+    if (envelope.tag) decipher.setAuthTag(Buffer.from(String(envelope.tag), "base64"));
+    const plaintext = Buffer.concat([
+      decipher.update(Buffer.from(String(envelope.ciphertext || ""), "base64")),
+      decipher.final(),
+    ]);
+    return JSON.parse(plaintext.toString("utf8"));
+  }
+
+  // Standard / fallback AES-256-GCM envelope
   const aesKey = crypto.createHash("sha256").update(leaseToken, "utf8").digest();
   const decipher = crypto.createDecipheriv("aes-256-gcm", aesKey, Buffer.from(envelope.iv, "base64"));
   if (envelope.tag) decipher.setAuthTag(Buffer.from(envelope.tag, "base64"));
@@ -229,10 +308,12 @@ async function handleTestAll() {
   console.log("🚀 Testing Server Lease Assignment for all AI services...\n");
   const services = [
     "claude", "chatgpt", "gptpro", "gemini", "perplexity",
-    "copilot", "grok", "deepseek", "canva", "semrush",
-    "monica", "gamma", "quillbot", "notion"
+    "copilot", "grok", "grok-heavy", "deepseek", "canva", "semrush",
+    "monica", "freepik", "gamma", "quillbot", "scribd", "envato-elements",
+    "zoom", "notion"
   ];
 
+  const device = getDeviceIdentity();
   for (const s of services) {
     const res = await apiRequest("/v1/managed-profiles/assign", {
       method: "POST",
@@ -240,13 +321,16 @@ async function handleTestAll() {
         serviceId: s,
         idempotencyKey: `test:${s}:${Date.now()}`,
         ttlSeconds: 1800,
-        reclaim: true
+        stickySeconds: 900,
+        reclaim: true,
+        devicePublicKey: device.publicKeySpkiBase64,
+        deviceIdHash: device.deviceIdHash
       })
     });
     if (res.ok) {
-      console.log(`✅ ${s.padEnd(14)} -> 200 OK (Profile: ${res.data.assignment?.profileId || "N/A"})`);
+      console.log(`✅ ${s.padEnd(16)} -> 200 OK (Profile: ${res.data.assignment?.profileId || "N/A"})`);
     } else {
-      console.log(`❌ ${s.padEnd(14)} -> ${res.status} (${res.data.error?.message || JSON.stringify(res.data)})`);
+      console.log(`❌ ${s.padEnd(16)} -> ${res.status} (${res.data.error?.message || JSON.stringify(res.data)})`);
     }
   }
   console.log("");
@@ -254,13 +338,17 @@ async function handleTestAll() {
 
 async function handleAssign(serviceId) {
   console.log(`🔑 Requesting Lease Assignment for '${serviceId}'...`);
+  const device = getDeviceIdentity();
   const res = await apiRequest("/v1/managed-profiles/assign", {
     method: "POST",
     body: JSON.stringify({
       serviceId,
       idempotencyKey: `cli:${serviceId}:${Date.now()}`,
       ttlSeconds: 1800,
-      reclaim: true
+      stickySeconds: 900,
+      reclaim: true,
+      devicePublicKey: device.publicKeySpkiBase64,
+      deviceIdHash: device.deviceIdHash
     })
   });
 
@@ -280,13 +368,17 @@ async function handleAssign(serviceId) {
 }
 
 async function handleExportCookies(serviceId, silent = false, outDir = OUT_DIR) {
+  const device = getDeviceIdentity();
   const res = await apiRequest("/v1/managed-profiles/assign", {
     method: "POST",
     body: JSON.stringify({
       serviceId,
       idempotencyKey: `cli:${serviceId}:${Date.now()}`,
       ttlSeconds: 1800,
-      reclaim: true
+      stickySeconds: 900,
+      reclaim: true,
+      devicePublicKey: device.publicKeySpkiBase64,
+      deviceIdHash: device.deviceIdHash
     })
   });
 
@@ -302,7 +394,11 @@ async function handleExportCookies(serviceId, silent = false, outDir = OUT_DIR) 
   const snapRes = await fetch(`${API_BASE}/v1/managed-profiles/${asgn.id}/snapshot`, {
     headers: {
       "Authorization": `Bearer ${token}`,
-      "x-managed-lease-token": leaseToken
+      "x-managed-lease-token": leaseToken,
+      "x-centrix-app-version": APP_VERSION,
+      "x-centrix-platform": process.platform,
+      "x-centrix-arch": process.arch,
+      "x-managed-device-id-hash": device.deviceIdHash
     }
   });
 
@@ -313,7 +409,11 @@ async function handleExportCookies(serviceId, silent = false, outDir = OUT_DIR) 
 
   const snap = await snapRes.json();
   try {
-    const payload = decryptEnvelope(snap.envelope, leaseToken);
+    const payload = decryptEnvelope(snap.envelope, leaseToken, {
+      assignmentId: asgn.id || snap.assignmentId,
+      snapshotVersion: asgn.snapshotVersion || snap.snapshotVersion,
+      deviceIdHash: device.deviceIdHash
+    });
     fs.mkdirSync(outDir, { recursive: true });
 
     // 1. Full session payload (origin, userAgent, cookies, localStorage, sessionStorage)
@@ -359,7 +459,11 @@ async function handleExportCookies(serviceId, silent = false, outDir = OUT_DIR) 
       method: "POST",
       headers: {
         "Authorization": `Bearer ${token}`,
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "x-centrix-app-version": APP_VERSION,
+        "x-centrix-platform": process.platform,
+        "x-centrix-arch": process.arch,
+        "x-managed-device-id-hash": device.deviceIdHash
       },
       body: JSON.stringify({ leaseToken, reason: "cli_export_done" })
     }).catch(() => {});
@@ -397,9 +501,9 @@ async function handleExportAll() {
 
   const services = [
     "claude", "chatgpt", "gptpro", "gemini", "perplexity",
-    "copilot", "grok", "deepseek", "canva", "semrush",
-    "monica", "notion", "gamma", "quillbot", "scribd",
-    "envato-elements", "zoom"
+    "copilot", "grok", "grok-heavy", "deepseek", "canva", "semrush",
+    "monica", "freepik", "gamma", "quillbot", "scribd",
+    "envato-elements", "zoom", "notion"
   ];
 
   const results = [];

@@ -19,7 +19,7 @@
  *   CENTRIX_V2_API_URL     default https://api.cetrix.app
  *   CENTRIX_V2_SESSION     default ./.cetrix-session.json
  *   CENTRIX_OUT_DIR        default ./cookies
- *   CENTRIX_APP_VERSION    default 0.1.339
+ *   CENTRIX_APP_VERSION    default 0.1.391
  *   IMPORT_TO_CHROME=1     after export, run import-cookies-to-chrome.sh
  */
 
@@ -37,7 +37,7 @@ const ROOT = resolve(__dirname, "..");
 const API_BASE = String(process.env.CENTRIX_V2_API_URL || "https://api.cetrix.app").trim().replace(/\/+$/, "");
 const SESSION_FILE = resolve(process.env.CENTRIX_V2_SESSION || join(ROOT, ".cetrix-session.json"));
 const OUT_DIR = resolve(process.env.CENTRIX_OUT_DIR || join(ROOT, "cookies"));
-const APP_VERSION = String(process.env.CENTRIX_APP_VERSION || "0.1.346").trim();
+const APP_VERSION = String(process.env.CENTRIX_APP_VERSION || "0.1.391").trim();
 
 const SERVICE_URLS = {
   chatgpt: "https://chatgpt.com/",
@@ -50,14 +50,20 @@ const SERVICE_URLS = {
   grok: "https://grok.com/",
   "grok-heavy": "https://grok.com/",
   deepseek: "https://chat.deepseek.com/",
+  canva: "https://www.canva.com/",
+  monica: "https://monica.im/",
+  freepik: "https://www.freepik.com/",
+  gamma: "https://gamma.app/",
+  quillbot: "https://quillbot.com/",
+  scribd: "https://www.scribd.com/",
+  "envato-elements": "https://elements.envato.com/",
+  zoom: "https://zoom.us/",
+  semrush: "https://www.semrush.com/",
+  notion: "https://app.notion.com/",
   mistral: "https://chat.mistral.ai/",
   midjourney: "https://www.midjourney.com/",
   poe: "https://poe.com/",
   elevenlabs: "https://elevenlabs.io/app",
-  "envato-elements": "https://elements.envato.com/",
-  gamma: "https://gamma.app/",
-  monica: "https://monica.im/",
-  semrush: "https://www.semrush.com/",
 };
 
 /** Services that also need auth.openai.com cookies injected + tab opened */
@@ -227,12 +233,11 @@ async function cmdLogout() {
 
 async function cmdServices() {
   try {
-    // Try to list from API (this endpoint may not exist yet)
-    const data = await api("/v1/services");
+    const data = await api("/v1/catalog/services");
     if (data.services) {
-      log("Available services:");
+      log("Available services (from API catalog):");
       for (const s of data.services) {
-        log(`  ${s.id || s.serviceId}  ${s.name || ""}`);
+        log(`  ${(s.id || s.serviceId).padEnd(20)}  ${s.name || ""}`);
       }
       return;
     }

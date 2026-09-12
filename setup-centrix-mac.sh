@@ -175,6 +175,7 @@ already_installed() {
     "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX/CentriX.exe"
     "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX.exe"
     "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX.exe"
+  )
   for c in "${candidates[@]}"; do
     [[ -f "$c" ]] && { print -r -- "$c"; return 0; }
   done
@@ -183,6 +184,10 @@ already_installed() {
   found=(
     "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX\ App\ User.exe(N)
     "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX/CentriX.exe(N)
+  )
+  if (( ${#found} > 0 )); then
+    print -r -- "${found[-1]}"
+    return 0
   fi
   return 1
 }
@@ -254,6 +259,20 @@ install_centrix() {
       local target_dir="$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX"
       local tmp_extract="/tmp/centrix-extract-$$"
       mkdir -p "$tmp_extract" "$target_dir"
+      if 7z e "$INSTALLER" '$PLUGINSDIR/app-64.7z' -o"$tmp_extract" -y >/dev/null 2>&1 && \
+         7z x "$tmp_extract/app-64.7z" -o"$target_dir" -y >/dev/null 2>&1; then
+        app="$target_dir/CentriX.exe"
+      fi
+      rm -rf "$tmp_extract"
+    fi
+  fi
+  if [[ -z "$app" || ! -f "$app" ]]; then
+    die "Install finished but CentriX.exe not found under $WINEPREFIX"
+  fi
+  app_ver=$(installed_app_version "$app" 2>/dev/null || true)
+  if [[ -n "$installer_ver" && -n "$app_ver" && "$installer_ver" != "$app_ver" ]]; then
+    warn "Installer version $installer_ver completed, but app reports version $app_ver"
+  fi
   ok "Installed${app_ver:+ (version $app_ver)}: $app"
 }
 

@@ -68,7 +68,7 @@ if [[ "$API_VER" == "v2" ]]; then
 
   export CENTRIX_OUT_DIR="${CENTRIX_OUT_DIR:-$SCRIPT_DIR/cookies}"
   export CENTRIX_V2_SESSION="${CENTRIX_V2_SESSION:-$SCRIPT_DIR/.cetrix-session.json}"
-  export CENTRIX_APP_VERSION="${CENTRIX_APP_VERSION:-0.1.346}"
+  export CENTRIX_APP_VERSION="${CENTRIX_APP_VERSION:-0.1.391}"
   mkdir -p "$CENTRIX_OUT_DIR" 2>/dev/null || true
 
   exec node "$V2_MJS" "$@"

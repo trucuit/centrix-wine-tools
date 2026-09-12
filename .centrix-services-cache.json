@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T14:46:44.442Z",
+  "updatedAt": "2026-09-12T08:55:23.300Z",
   "services": [
     {
       "id": "chatgpt",
@@ -9,8 +9,8 @@
     },
     {
       "id": "claude",
-      "name": "Claude",
-      "url": "https://claude.ai/new",
+      "name": "Claude for Notion",
+      "url": "https://app.notion.com/ai",
       "enabled": true
     },
     {
@@ -26,8 +26,8 @@
       "enabled": true
     },
     {
-      "id": "microsoft-copilot",
-      "name": "Microsoft Copilot",
+      "id": "copilot",
+      "name": "Copilot",
       "url": "https://copilot.microsoft.com/",
       "enabled": true
     },
@@ -38,51 +38,15 @@
       "enabled": true
     },
     {
-      "id": "deepseek",
-      "name": "DeepSeek",
-      "url": "https://chat.deepseek.com/",
-      "enabled": true
-    },
-    {
-      "id": "poe",
-      "name": "Capcut",
-      "url": "https://www.capcut.com/",
-      "enabled": true
-    },
-    {
-      "id": "notebooklm",
-      "name": "GPT-5.5 Pro",
-      "url": "https://chatgpt.com/",
-      "enabled": true
-    },
-    {
       "id": "grok-heavy",
       "name": "Grok Heavy",
       "url": "https://grok.com/",
       "enabled": true
     },
     {
-      "id": "semrush",
-      "name": "Semrush",
-      "url": "https://noxtools.com/secure/page/semrush",
-      "enabled": true
-    },
-    {
-      "id": "gamma",
-      "name": "Gamma",
-      "url": "https://gamma.app/vi",
-      "enabled": true
-    },
-    {
-      "id": "scribd",
-      "name": "Scribd",
-      "url": "https://www.scribd.com/",
-      "enabled": true
-    },
-    {
-      "id": "freepik",
-      "name": "Freepik",
-      "url": "https://www.magnific.com/stock#from_element=mainmenu",
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "url": "https://chat.deepseek.com/",
       "enabled": true
     },
     {
@@ -98,9 +62,33 @@
       "enabled": true
     },
     {
+      "id": "freepik",
+      "name": "Magnific (Freepik)",
+      "url": "https://www.magnific.com/stock#from_element=mainmenu",
+      "enabled": true
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "url": "https://gamma.app/",
+      "enabled": true
+    },
+    {
       "id": "quillbot",
-      "name": "quillbot",
+      "name": "Quillbot",
       "url": "https://quillbot.com/",
+      "enabled": true
+    },
+    {
+      "id": "scribd",
+      "name": "Scribd",
+      "url": "https://www.scribd.com/",
+      "enabled": true
+    },
+    {
+      "id": "envato-elements",
+      "name": "Envato Elements",
+      "url": "https://noxtools.com/secure/page/envato",
       "enabled": true
     },
     {
@@ -110,9 +98,15 @@
       "enabled": true
     },
     {
-      "id": "envato-elements",
-      "name": "Envato Elements",
-      "url": "https://noxtools.com/secure/page/envato",
+      "id": "gptpro",
+      "name": "GPT-5.6 Pro",
+      "url": "https://chatgpt.com/",
+      "enabled": true
+    },
+    {
+      "id": "semrush",
+      "name": "Semrush",
+      "url": "https://noxtools.com/secure/page/semrush",
       "enabled": true
     }
   ]

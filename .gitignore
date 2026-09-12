@@ -5,6 +5,8 @@ wine-prefix-centrix/
 **/cookies-dump-*.json
 **/session.bin
 **/device-key.bin
+.centrix-device-key.json
+.*device-key*.json
 **/COOKIE_DUMP_LATEST.txt
 **/REQUEST_COOKIE_DUMP
 **/*cookie-export*/
@@ -39,6 +41,9 @@ wine-prefix-centrix/
 
 # Local asar extract used by patch-open-in-mac-browser.sh
 .tmp-asar-web-view-patch/
+
+# Expect scripts with credentials
+*.exp
 
 
 

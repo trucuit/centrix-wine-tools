@@ -1,26 +1,14 @@
 [
   {
     "name": "__cf_bm",
-    "value": "KtxUiATALoH9LygPRtwVbPFgcdynhENfHLrEBR3iurk-1788872422.0366733-1.0.1.1-iL6ClBmJh5jiR4URRQnluIWxQZmGQ.Pq9L5.V_dkOS1xCUiw.oPameQfczMGVlvmmQWfnjJvwIpQ9RBCONRsb_aHHMA30lp4W5E5YiVN1VYWzdiPbfIaIp25QZd921vS",
+    "value": "9aIMR5f_3cZeQryXB4q6aL55ZUqGf_uBG44SNroHVr4-1789196250.6132338-1.0.1.1-habG_kWeKEUKeihbGtLwq6hWsj8lCkD2RPFwJh8jujXB7IBniugGhwkOKZJVmalrQJRkZVjAzPkCRj09ntqDqBFW2c9vqXEqFUuKAWc2DUH39jap9DOqsb3v1y36QfmR",
     "domain": ".ws.chatgpt.com",
     "path": "/",
     "secure": true,
     "httpOnly": true,
     "sameSite": "no_restriction",
-    "expirationDate": 1788874264.355179,
+    "expirationDate": 1823758647.523157,
     "hostOnly": false,
-    "session": false
-  },
-  {
-    "name": "__cflb",
-    "value": "0H28ukCBMp4tavf1C7FPwfPpsrfCYVE8r9Q6pHYuamb",
-    "domain": "ws.chatgpt.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1788874264.355248,
-    "hostOnly": true,
     "session": false
   }
 ]
