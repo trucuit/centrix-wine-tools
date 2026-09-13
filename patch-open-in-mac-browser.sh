@@ -285,12 +285,46 @@ if (!c.includes("readClipboard:")) {
 fs.writeFileSync(file, c);
 ' "$TMP_ASAR"
 
+# ── 2c. patch managed-return-session.cjs (Fix Grok SSO / accounts.x.ai trap) ───
+log "Patching desktop/managed-return-session.cjs…"
+node -e '
+const fs = require("fs");
+const file = process.argv[1] + "/desktop/managed-return-session.cjs";
+let c = fs.readFileSync(file, "utf8");
+
+// Grok SSO fix: ensure resolveManagedLoadUrl falls back to catalogUrl if origin is accounts.x.ai
+c = c.replace(
+  "function resolveManagedLoadUrl(payloadOrigin, catalogUrl, serviceId) {",
+  `function resolveManagedLoadUrl(payloadOrigin, catalogUrl, serviceId) {
+  if (/accounts\\.x\\.ai|auth\\.x\\.ai/i.test(payloadOrigin) || (String(serviceId || "").startsWith("grok") && !/grok\\.com/i.test(payloadOrigin))) {
+    payloadOrigin = catalogUrl;
+  }`
+);
+
+c = c.replace(
+  "function preferManagedLoadUrl(preferredUrl, payloadOrigin, catalogUrl, serviceId) {",
+  `function preferManagedLoadUrl(preferredUrl, payloadOrigin, catalogUrl, serviceId) {
+  if (/accounts\\.x\\.ai|auth\\.x\\.ai/i.test(preferredUrl)) preferredUrl = "";`
+);
+
+fs.writeFileSync(file, c);
+' "$TMP_ASAR"
+
 # ── 3. patch desktop/main.cjs ───────────────────────────────
 log "Patching desktop/main.cjs…"
 node -e '
 const fs = require("fs");
 const file = process.argv[1] + "/desktop/main.cjs";
 let c = fs.readFileSync(file, "utf8");
+
+// Ensure grok and grok-heavy targetUrl is always https://grok.com/ not accounts.x.ai
+c = c.replace(
+  "let targetUrl = resolved.url;",
+  `let targetUrl = resolved.url;
+  if (/accounts\\.x\\.ai/i.test(targetUrl) || (String(serviceId || "").startsWith("grok") && !/grok\\.com/i.test(targetUrl))) {
+    targetUrl = catalogUrl || "https://grok.com/";
+  }`
+);
 
 const helpers = `
 const _macHelper = (() => {
@@ -988,6 +1022,7 @@ node --check "$TMP_ASAR/desktop/main.cjs"
 node --check "$TMP_ASAR/desktop/service-catalog.cjs"
 node --check "$TMP_ASAR/desktop/preload.cjs"
 node --check "$TMP_ASAR/desktop/debug-flag-guard.cjs"
+node --check "$TMP_ASAR/desktop/managed-return-session.cjs"
 for js_file in "$TMP_ASAR"/dist/assets/index-*.js; do
   [[ -f "$js_file" ]] && node --check "$js_file"
 done
