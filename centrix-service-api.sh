@@ -30,8 +30,103 @@ export CENTRIX_V2_API_URL="${CENTRIX_V2_API_URL:-https://api.cetrix.app}"
 export CENTRIX_V2_SESSION="${CENTRIX_V2_SESSION:-$SCRIPT_DIR/.cetrix-session.json}"
 export CENTRIX_OUT_DIR="${CENTRIX_OUT_DIR:-$SCRIPT_DIR/cookies}"
 
-CMD="${1:-info}"
-shift || true
+show_menu() {
+  print -r -- "╔══════════════════════════════════════════════════════════╗"
+  print -r -- "║             CentriX Service API Manager                  ║"
+  print -r -- "╚══════════════════════════════════════════════════════════╝"
+  print -r -- "  1) 👤 Info           - Thông tin tài khoản & hạn mức gói"
+  print -r -- "  2) 📋 List Catalog   - Danh sách dịch vụ trong hệ thống"
+  print -r -- "  3) 🚀 Test All       - Kiểm tra lease assignment toàn bộ AI"
+  print -r -- "  4) 🔑 Assign Lease   - Cấp lease session cho 1 dịch vụ cụ thể"
+  print -r -- "  5) 🍪 Export Cookies - Tải & giải mã cookies cho 1 dịch vụ"
+  print -r -- "  6) 📦 Export All     - Tải cookies cho tất cả dịch vụ"
+  print -r -- "  0) ❌ Exit           - Thoát"
+  print -r -- ""
+}
+
+select_service() {
+  local prompt_text="$1"
+  print -r -- "" >&2
+  print -r -- "Danh sách dịch vụ:" >&2
+  print -r -- "  1) chatgpt        2) gptpro         3) claude         4) gemini" >&2
+  print -r -- "  5) perplexity     6) copilot        7) grok           8) grok-heavy" >&2
+  print -r -- "  9) deepseek      10) canva         11) semrush       12) monica" >&2
+  print -r -- " 13) freepik       14) gamma         15) quillbot      16) scribd" >&2
+  print -r -- " 17) envato        18) zoom          19) notion        20) web" >&2
+  print -r -- "" >&2
+  read -r "selected_svc?👉 $prompt_text [chọn số 1-20 hoặc nhập tên, mặc định: chatgpt]: " || selected_svc="chatgpt"
+  local clean_input
+  clean_input="$(echo "${selected_svc:-chatgpt}" | tr '[:upper:]' '[:lower:]' | xargs)"
+  case "$clean_input" in
+    1) echo "chatgpt" ;;
+    2) echo "gptpro" ;;
+    3) echo "claude" ;;
+    4) echo "gemini" ;;
+    5) echo "perplexity" ;;
+    6) echo "copilot" ;;
+    7) echo "grok" ;;
+    8) echo "grok-heavy" ;;
+    9) echo "deepseek" ;;
+    10) echo "canva" ;;
+    11) echo "semrush" ;;
+    12) echo "monica" ;;
+    13) echo "freepik" ;;
+    14) echo "gamma" ;;
+    15) echo "quillbot" ;;
+    16) echo "scribd" ;;
+    17) echo "envato-elements" ;;
+    18) echo "zoom" ;;
+    19) echo "notion" ;;
+    20) echo "web" ;;
+    "grok-heavy"|grokheavy|grok_heavy|"grok heavy"|heavy) echo "grok-heavy" ;;
+    "gpt-pro"|gptpro|"gpt pro"|pro|"gpt-5"|"gpt 5") echo "gptpro" ;;
+    copilot|"microsoft-copilot"|ms-copilot) echo "copilot" ;;
+    envato|"envato-elements"|elements) echo "envato-elements" ;;
+    *) echo "${clean_input:-chatgpt}" ;;
+  esac
+}
+
+if [[ $# -eq 0 ]]; then
+  show_menu
+  read -r "choice?👉 Chọn một tuỳ chọn [1-6, 0] (mặc định: 1): " || choice="1"
+  choice="${choice:-1}"
+  case "$choice" in
+    1|info|me) CMD="info" ;;
+    2|list|services) CMD="list" ;;
+    3|test|test-all) CMD="test-all" ;;
+    4|assign)
+      CMD="assign"
+      svc=$(select_service "Chọn dịch vụ cần cấp lease")
+      set -- "$svc"
+      ;;
+    5|export|export-cookies|cookies)
+      CMD="export-cookies"
+      svc=$(select_service "Chọn dịch vụ cần export cookies")
+      set -- "$svc"
+      ;;
+    6|all|export-all) CMD="all" ;;
+    0|q|exit|quit)
+      print -r -- "Thoát."
+      exit 0
+      ;;
+    *)
+      print -r -- "Lựa chọn không hợp lệ: $choice"
+      exit 1
+      ;;
+  esac
+else
+  case "${1:-}" in
+    -h|--help|help)
+      show_menu
+      print -r -- "Usage: $0 [info | list | test-all | assign <id> | export-cookies <id> | all]"
+      exit 0
+      ;;
+    *)
+      CMD="$1"
+      shift || true
+      ;;
+  esac
+fi
 
 exec node - "$CMD" "$@" <<'NODE_EOF'
 const fs = require("fs");
