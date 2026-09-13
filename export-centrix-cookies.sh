@@ -437,9 +437,9 @@ PY
 
   # Patch exe integrity hash if on v2 layout
   local -a candidate_exes=(
-    "${EXE:-}"
-    "$APP_DIR/CentriX App User.exe"
+    "${EXE:-${CENTRIX_EXE:-}}"
     "$APP_DIR/CentriX.exe"
+    "$APP_DIR/CentriX App User.exe"
   )
   if [[ "$layout" == "v2" ]]; then
     for exe_path in "${candidate_exes[@]}"; do
@@ -572,14 +572,14 @@ install_hook_and_restart() {
   centrix_kill_wine_session "$WINEPREFIX"
   export WINEPREFIX WINEDEBUG="-all"
   centrix_apply_render_mode
-  local exe="${EXE:-}"
+  local exe="${EXE:-${CENTRIX_EXE:-}}"
   if [[ -z "$exe" || ! -f "$exe" ]]; then
-    if [[ -f "$APP_DIR/CentriX App User.exe" ]]; then
-      exe="$APP_DIR/CentriX App User.exe"
-    elif [[ -f "$APP_DIR/CentriX.exe" ]]; then
+    if [[ -f "$APP_DIR/CentriX.exe" ]]; then
       exe="$APP_DIR/CentriX.exe"
-    else
+    elif [[ -f "$APP_DIR/CentriX App User.exe" ]]; then
       exe="$APP_DIR/CentriX App User.exe"
+    else
+      exe="$APP_DIR/CentriX.exe"
     fi
   fi
   nohup "$WINE" explorer /desktop=CentriX,1440x900 "$exe" \
@@ -629,14 +629,14 @@ dump_live() {
   centrix_kill_wine_session "$WINEPREFIX"
   export WINEPREFIX WINEDEBUG="-all"
   centrix_apply_render_mode
-  local exe="${EXE:-}"
+  local exe="${EXE:-${CENTRIX_EXE:-}}"
   if [[ -z "$exe" || ! -f "$exe" ]]; then
-    if [[ -f "$APP_DIR/CentriX App User.exe" ]]; then
-      exe="$APP_DIR/CentriX App User.exe"
-    elif [[ -f "$APP_DIR/CentriX.exe" ]]; then
+    if [[ -f "$APP_DIR/CentriX.exe" ]]; then
       exe="$APP_DIR/CentriX.exe"
-    else
+    elif [[ -f "$APP_DIR/CentriX App User.exe" ]]; then
       exe="$APP_DIR/CentriX App User.exe"
+    else
+      exe="$APP_DIR/CentriX.exe"
     fi
   fi
   local wait_since

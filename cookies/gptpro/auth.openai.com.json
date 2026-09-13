@@ -1,17 +1,5 @@
 [
   {
-    "name": "cf_clearance",
-    "value": "C3UjYhG9.vrL4ni9i6lMDGYRqhyCvCiCVURG419BgVY-1789195953-1.2.1.1-OXaLQ9iOQxM6M0SRt8cMhzoUKhCPE.wk8yL6YDHMuaXDEmY0Y1stsaAL_.i46qLre_e0I9RE9vnwgOGxzUh9fVlep7EhxCnM3eRQiRLSqs_57dAv35qsRNs9yF2AhY6ukfImdfvFldYE8kbv6RAP9g9MF5qjf5Sz2LxZOfH0nZKchH4FCcGeByZBD19JK8z0umbffO9HysdboJOQPj8L9Es4ZkCh2FGfdh87ZDLCWMSpTcNTZ_JB78tZe0r2Ji_h_jfDQZf78uiiSaTyKNjouOLNMzGS2CEhXCXreB3DkgzI.76SLy9z7tXSnklPYXjbaL.hVilSmkDGIZhe5ZVBrZvuz.OoMn9vsj4cQ5agrg_dqGm786Iyk3L_V_JWZWS2FembMxv5C6JACONV3fkYtH6QuAWuUugPXMay8_EGvgxERcudLC4v4GspNpDx.MWFn3nPlJisrmY2a133QBAz9Q",
-    "domain": ".auth.openai.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1820731953.87181,
-    "hostOnly": false,
-    "session": false
-  },
-  {
     "name": "oai-client-auth-info",
     "value": "eyJsYXN0X2xvZ2luX2lkZW50aWZpZXIiOnsidHlwZSI6ImVtYWlsIiwidmFsdWUiOiJjaGF0Z3B0MjZAY2VudHJpeC5hc2lhIn0sImxhc3RfbG9naW5fc3RyYXRlZ3kiOiJhdXRoMCIsImxhc3RfbG9naW5fbWV0aG9kX2J5X3VzZXJfaWQiOnsidXNlci1GRWFsNlVqR0xndlRtVU54QVJzbldRWnUiOiJwYXNzd29yZCJ9fQ==.aqT3Rw.hI9ycwrpYf6bfdM2ZKccCCm_GIZ3GFIggorIwq_kVvA",
     "domain": ".auth.openai.com",

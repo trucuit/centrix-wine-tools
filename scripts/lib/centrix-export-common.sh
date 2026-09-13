@@ -93,6 +93,11 @@ centrix_export_init() {
   SCRIPT_NAME="${SCRIPT_NAME:-${SCRIPT_PATH:t}}"
   [[ -z "$SCRIPT_NAME" && -n "${0:-}" ]] && SCRIPT_NAME="${0:t}"
 
+  # Source local env if present
+  if [[ -f "$SCRIPT_DIR/.centrix-env" ]]; then
+    source "$SCRIPT_DIR/.centrix-env"
+  fi
+
   WINEPREFIX="${WINEPREFIX:-$SCRIPT_DIR/wine-prefix-centrix}"
   WINE="${WINE:-/Applications/Wine Stable.app/Contents/Resources/wine/bin/wine}"
 
@@ -114,13 +119,16 @@ centrix_export_init() {
     _wine_user_base="${_wine_user_base:-$WINEPREFIX/drive_c/users/$USER}"
   fi
 
+  if [[ -n "${CENTRIX_EXE:-}" && -f "$CENTRIX_EXE" ]]; then
+    APP_DIR="${CENTRIX_EXE:h}"
+  fi
   if [[ -z "${APP_DIR:-}" ]]; then
-    if [[ -d "${_wine_user_base}/AppData/Local/Programs/CentriX App User" ]]; then
-      APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX App User"
-    elif [[ -d "${_wine_user_base}/AppData/Local/Programs/CentriX" ]]; then
+    if [[ -d "${_wine_user_base}/AppData/Local/Programs/CentriX" ]]; then
       APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX"
-    else
+    elif [[ -d "${_wine_user_base}/AppData/Local/Programs/CentriX App User" ]]; then
       APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX App User"
+    else
+      APP_DIR="${_wine_user_base}/AppData/Local/Programs/CentriX"
     fi
   fi
   ASAR="${ASAR:-$APP_DIR/resources/app.asar}"
@@ -415,23 +423,51 @@ detect_app_version() {
   fi
   local ver="" asar="${APP_ASAR:-$ASAR}"
   if [[ -f "$asar" ]]; then
-    ver=$(
-      "$PYTHON" -c '
-import re, sys
-from pathlib import Path
-raw = Path(sys.argv[1]).read_bytes()
-m = re.search(rb"APP_VERSION\s*=\s*[\"\x27]([3-9]\.[0-9.]+)[\"\x27]", raw)
-if m:
-  print(m.group(1).decode())
-  sys.exit(0)
-m2 = re.search(rb"\"version\"\s*:\s*\"([3-9]\.[0-9.]+)\"", raw)
-if m2:
-  print(m2.group(1).decode())
-  sys.exit(0)
+    if command -v node >/dev/null 2>&1; then
+      ver=$(node -e '
+        const fs = require("fs");
+        try {
+          const fd = fs.openSync(process.argv[1], "r");
+          const headerBuf = Buffer.alloc(16);
+          fs.readSync(fd, headerBuf, 0, 16, 0);
+          const jsonSize = headerBuf.readUInt32LE(12);
+          const jsonBuf = Buffer.alloc(jsonSize);
+          fs.readSync(fd, jsonBuf, 0, jsonSize, 16);
+          const header = JSON.parse(jsonBuf.toString("utf8"));
+          const node = header.files && header.files["package.json"];
+          if (node && node.size) {
+            const dataOffset = 8 + headerBuf.readUInt32LE(4);
+            const offset = dataOffset + parseInt(node.offset, 10);
+            const pkgBuf = Buffer.alloc(node.size);
+            fs.readSync(fd, pkgBuf, 0, node.size, offset);
+            const pkg = JSON.parse(pkgBuf.toString("utf8"));
+            if (pkg.version) console.log(pkg.version);
+          }
+          fs.closeSync(fd);
+        } catch(e) {}
+      ' "$asar" 2>/dev/null || true)
+    fi
+    if [[ -z "$ver" && -n "$PYTHON" ]]; then
+      ver=$(
+        "$PYTHON" -c '
+import sys, json, struct
+try:
+    with open(sys.argv[1], "rb") as f:
+        header = f.read(16)
+        u1, data_size, u2, json_size = struct.unpack("<4I", header)
+        header_json = json.loads(f.read(json_size).decode("utf-8"))
+        node = header_json.get("files", {}).get("package.json", {})
+        if node and "offset" in node and "size" in node:
+            f.seek(8 + data_size + int(node["offset"]))
+            pkg = json.loads(f.read(node["size"]).decode("utf-8"))
+            print(pkg.get("version", ""))
+except Exception:
+    pass
 ' "$asar" 2>/dev/null || true
-    )
+      )
+    fi
   fi
-  print -r -- "${ver:-3.18.1}"
+  print -r -- "${ver:-0.1.391}"
 }
 
 # Export env block used by API node CLI

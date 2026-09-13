@@ -29,13 +29,19 @@ WINE_BIN="${WINE_BIN:-/Applications/Wine Stable.app/Contents/Resources/wine/bin/
 source "$SCRIPT_DIR/scripts/lib/centrix-wine-session.sh"
 
 # Locate app resources
-APP_DIR="$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User"
-if [[ ! -d "$APP_DIR" ]]; then
-  APP_DIR="$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX"
+APP_DIR=""
+if [[ -n "${CENTRIX_EXE:-}" && -f "$CENTRIX_EXE" ]]; then
+  APP_DIR="${CENTRIX_EXE:h}"
 fi
-if [[ ! -d "$APP_DIR" ]]; then
-  for d in "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User(N); do
-    APP_DIR="$d"; break
+if [[ -z "$APP_DIR" || ! -d "$APP_DIR" ]]; then
+  for cand in \
+    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX" \
+    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User" \
+    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX" \
+    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User" \
+    "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX(N) \
+    "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User(N); do
+    if [[ -d "$cand" ]]; then APP_DIR="$cand"; break; fi
   done
 fi
 
@@ -71,8 +77,9 @@ do_revert() {
 patch_exe_integrity_hash() {
   need_python
   local -a candidate_exes=(
-    "$APP_DIR/CentriX App User.exe"
+    "${CENTRIX_EXE:-}"
     "$APP_DIR/CentriX.exe"
+    "$APP_DIR/CentriX App User.exe"
   )
   for exe_path in "${candidate_exes[@]}"; do
     [[ -n "$exe_path" && -f "$exe_path" ]] || continue
@@ -111,8 +118,8 @@ start_centrix() {
   local exe="${CENTRIX_EXE:-}"
   if [[ -z "$exe" || ! -f "$exe" ]]; then
     for c in \
-      "$APP_DIR/CentriX App User.exe" \
-      "$APP_DIR/CentriX.exe"; do
+      "$APP_DIR/CentriX.exe" \
+      "$APP_DIR/CentriX App User.exe"; do
       [[ -f "$c" ]] && { exe="$c"; break; }
     done
   fi

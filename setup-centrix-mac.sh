@@ -78,14 +78,68 @@ installed_app_version() {
   local app="$1"
   local asar="${app:h}/resources/app.asar"
   [[ -f "$asar" ]] || return 1
+
+  # Fast header check using node (under 100ms)
+  if command -v node >/dev/null 2>&1; then
+    local v
+    v=$(node -e '
+      const fs = require("fs");
+      try {
+        const fd = fs.openSync(process.argv[1], "r");
+        const headerBuf = Buffer.alloc(16);
+        fs.readSync(fd, headerBuf, 0, 16, 0);
+        const jsonSize = headerBuf.readUInt32LE(12);
+        const jsonBuf = Buffer.alloc(jsonSize);
+        fs.readSync(fd, jsonBuf, 0, jsonSize, 16);
+        const header = JSON.parse(jsonBuf.toString("utf8"));
+        const node = header.files && header.files["package.json"];
+        if (node && node.size) {
+          const dataOffset = 8 + headerBuf.readUInt32LE(4);
+          const offset = dataOffset + parseInt(node.offset, 10);
+          const pkgBuf = Buffer.alloc(node.size);
+          fs.readSync(fd, pkgBuf, 0, node.size, offset);
+          const pkg = JSON.parse(pkgBuf.toString("utf8"));
+          if (pkg.version) console.log(pkg.version);
+        }
+        fs.closeSync(fd);
+      } catch(e) {}
+    ' "$asar" 2>/dev/null || true)
+    [[ -n "$v" ]] && { print -r -- "$v"; return 0; }
+  fi
+
+  # Fast header check using python3
+  local py="${PYTHON:-python3}"
+  if command -v "$py" >/dev/null 2>&1; then
+    local v
+    v=$("$py" -c '
+import sys, json, struct
+try:
+    with open(sys.argv[1], "rb") as f:
+        header = f.read(16)
+        u1, data_size, u2, json_size = struct.unpack("<4I", header)
+        header_json = json.loads(f.read(json_size).decode("utf-8"))
+        node = header_json.get("files", {}).get("package.json", {})
+        if node and "offset" in node and "size" in node:
+            f.seek(8 + data_size + int(node["offset"]))
+            pkg = json.loads(f.read(node["size"]).decode("utf-8"))
+            print(pkg.get("version", ""))
+except Exception:
+    pass
+' "$asar" 2>/dev/null || true)
+    [[ -n "$v" ]] && { print -r -- "$v"; return 0; }
+  fi
+
+  # Fallback: scan strings
   LC_ALL=C strings "$asar" | awk '
     /APP_VERSION[[:space:]]*=/ {
       sub(/.*APP_VERSION[[:space:]]*=[[:space:]]*"/, "")
       sub(/".*/, "")
-      if ($0 ~ /^[0-9.]+$/) {
-        print
-        exit
-      }
+      if ($0 ~ /^[0-9.]+$/) { print; exit }
+    }
+    /"version"[[:space:]]*:[[:space:]]*"/ {
+      sub(/.*"version"[[:space:]]*:[[:space:]]*"/, "")
+      sub(/".*/, "")
+      if ($0 ~ /^[0-9.]+$/) { print; exit }
     }
   '
 }
@@ -171,22 +225,39 @@ install_wine() {
 
 already_installed() {
   local candidates=(
-    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
     "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
     "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
     "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX.exe"
   )
+  local best_exe="" best_ver="" c c_ver
   for c in "${candidates[@]}"; do
-    [[ -f "$c" ]] && { print -r -- "$c"; return 0; }
+    [[ -f "$c" ]] || continue
+    c_ver=$(installed_app_version "$c" 2>/dev/null || true)
+    if [[ -z "$best_exe" ]]; then
+      best_exe="$c"
+      best_ver="$c_ver"
+    elif [[ -n "$c_ver" && -n "$best_ver" ]] && is_newer_version "$c_ver" "$best_ver"; then
+      best_exe="$c"
+      best_ver="$c_ver"
+    fi
   done
-  # glob search
+  if [[ -n "$best_exe" ]]; then
+    print -r -- "$best_exe"
+    return 0
+  fi
+
+  # glob search fallback
   local found
   found=(
-    "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX\ App\ User.exe(N)
     "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX/CentriX.exe(N)
+    "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX\ App\ User.exe(N)
+    "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX.exe(N)
   )
   if (( ${#found} > 0 )); then
-    print -r -- "${found[-1]}"
+    print -r -- "${found[1]}"
     return 0
   fi
   return 1
@@ -253,9 +324,11 @@ install_centrix() {
   fi
 
   local app app_ver
-  if ! app=$(already_installed); then
+  app=$(already_installed 2>/dev/null || true)
+  app_ver=$(installed_app_version "$app" 2>/dev/null || true)
+  if [[ -z "$app" || ( -n "$installer_ver" && "$app_ver" != "$installer_ver" ) ]]; then
     if command -v 7z >/dev/null 2>&1; then
-      log "Trying direct 7z extraction fallback…"
+      log "Running direct 7z extraction fallback to ensure version ${installer_ver:-latest}…"
       local target_dir="$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX"
       local tmp_extract="/tmp/centrix-extract-$$"
       mkdir -p "$tmp_extract" "$target_dir"
@@ -273,6 +346,19 @@ install_centrix() {
   if [[ -n "$installer_ver" && -n "$app_ver" && "$installer_ver" != "$app_ver" ]]; then
     warn "Installer version $installer_ver completed, but app reports version $app_ver"
   fi
+
+  # Clean up legacy CentriX App User directory if upgraded to CentriX
+  local legacy_dir="$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User"
+  if [[ -d "$legacy_dir" && "$app" != "$legacy_dir"* ]]; then
+    log "Removing legacy directory: $legacy_dir"
+    rm -rf "$legacy_dir"
+  fi
+  local legacy_pat="$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User"
+  if [[ -d "$legacy_pat" && "$app" != "$legacy_pat"* ]]; then
+    log "Removing legacy directory: $legacy_pat"
+    rm -rf "$legacy_pat"
+  fi
+
   ok "Installed${app_ver:+ (version $app_ver)}: $app"
 }
 

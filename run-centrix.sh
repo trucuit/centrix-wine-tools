@@ -32,13 +32,18 @@ fi
 
 # Resolve installed .exe (username may differ per Mac)
 EXE="${CENTRIX_EXE:-}"
+# If EXE points to legacy App User but new CentriX.exe exists, prefer CentriX.exe
+if [[ "$EXE" == *"CentriX App User"* && -f "${EXE:h:h}/CentriX/CentriX.exe" ]]; then
+  EXE="${EXE:h:h}/CentriX/CentriX.exe"
+fi
+
 if [[ -z "$EXE" || ! -f "$EXE" ]]; then
   candidates=(
-    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
     "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
     "$WINEPREFIX/drive_c/users/$USER/AppData/Local/Programs/CentriX App User/CentriX.exe"
-    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
     "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX/CentriX.exe"
+    "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX App User.exe"
     "$WINEPREFIX/drive_c/users/pat/AppData/Local/Programs/CentriX App User/CentriX.exe"
   )
   EXE=""
@@ -47,9 +52,9 @@ if [[ -z "$EXE" || ! -f "$EXE" ]]; then
   done
   if [[ -z "$EXE" ]]; then
     found=(
+      "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX/CentriX.exe(N)
       "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX\ App\ User.exe(N)
       "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX\ App\ User/CentriX.exe(N)
-      "$WINEPREFIX"/drive_c/users/*/AppData/Local/Programs/CentriX/CentriX.exe(N)
     )
     (( ${#found} > 0 )) && EXE="${found[1]}"
   fi

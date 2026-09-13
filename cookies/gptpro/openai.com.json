@@ -24,18 +24,6 @@
     "session": false
   },
   {
-    "name": "cf_clearance",
-    "value": "tQN40ZhcRN_m6xi7uopyk2hTf5_bHEdgyeoXeuCkmfw-1788589189-1.2.1.1-iOfL25G.V6kUM47EtWMD51QYiF2wkRxUfK_HbJXsofko9ih3UAt7ZAhky2DefYgGV1nPIY7XChxKp2NYLj2WhGPf6V3ffKxP0vi5pZF5gHZZUoY2CyP2h6VvDPtTVfPeSaXDFfWqm3hg7ivzJFo_WD8UMo95bQaKgJQauPW9cCQklR8XW4P1.to9eMtFLpJzWFVlwjCKVNqWZBayAFlb0DjLLuEfkJVsKYF3T0Vo1UnphsEdwIOphRqL5VseD31ndFR7GsRyah0o0wetq4tVQlW_7l7UlNnwGkkkPJ4DXKmYMeLt7f3acdiQFGoSELpySfQOWcvpcJkKSX6lLfjUp5UkrpSl1iCuR2qdNeOh9k0",
-    "domain": ".openai.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1820125189.064236,
-    "hostOnly": false,
-    "session": false
-  },
-  {
     "name": "_cfuvid",
     "value": "cEGERLuVDbWq5hrRzfW_CNzcNb1HWZgv4zCWYF71rj0-1788589188.68304-1.0.1.1-uId84GHzmIF4UFaTq4kRPgH49Yw7EI_zL35Lb7DGYTk",
     "domain": ".openai.com",
