@@ -12,18 +12,6 @@
     "session": false
   },
   {
-    "name": "referrer",
-    "value": "grok-com",
-    "domain": "accounts.x.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
-    "expirationDate": 1789140493.999997,
-    "hostOnly": true,
-    "session": false
-  },
-  {
     "name": "__cuid",
     "value": "6872e644-bd77-4005-ba8d-cfdd57eaf88f",
     "domain": "accounts.x.ai",
@@ -81,6 +69,30 @@
     "sameSite": "lax",
     "expirationDate": 1819612250,
     "hostOnly": false,
+    "session": false
+  },
+  {
+    "name": "referrer",
+    "value": "grok-com",
+    "domain": "accounts.x.ai",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1789898519.513089,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "redirect",
+    "value": "%7B%22redirectDestination%22%3A%22grok-com%22%2C%22redirectPathAndParams%22%3A%22%2F%22%7D",
+    "domain": "accounts.x.ai",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax",
+    "expirationDate": 1789380119.512787,
+    "hostOnly": true,
     "session": false
   }
 ]

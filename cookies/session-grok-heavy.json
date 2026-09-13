@@ -1,8 +1,8 @@
 {
   "formatVersion": 1,
   "serviceId": "grok-heavy",
-  "capturedAt": "2026-09-05T16:54:44.307Z",
-  "origin": "https://grok.com",
+  "capturedAt": "2026-09-13T10:02:20.144Z",
+  "origin": "https://accounts.x.ai",
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
   "fingerprint": {
     "gpu": {
@@ -169,18 +169,6 @@
       "session": false
     },
     {
-      "name": "referrer",
-      "value": "grok-com",
-      "domain": "accounts.x.ai",
-      "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "lax",
-      "expirationDate": 1789140493.999997,
-      "hostOnly": true,
-      "session": false
-    },
-    {
       "name": "cf_clearance",
       "value": "BpRqYhdqvpbUoK.rcqc3xCE8nu6w.GkIzvj10lyOZ0U-1787820180-1.2.1.1-M9VW0RXsOdo1ds9EXVVeBFrC2OErYsGpV9NJgxcwbhbORWmJvWUoFqyT3uP.IpJgslXqTn.ROO90iOqTGz8PI4hbLPiXLTRop3G0605sgIeYeGJbslUOH2Y7Klz_JaEx94ahtj2eONEHn1bobbWojKgh5DWDiHv5VW2RGyF8jELgBXiQjZVCuPJEQw9pJSqXJSyY3aTDezahR2Xzel5fPI3oD_WB0NCsvy.rVtp0bghbhvnF93oZvVehC.7N0es8FUZvKCljeMqLC5PWaNvJYAUeG6OUZd_gH.Y.IaJxnIhNzyF9cl.3LeRUhhFQ39efBCw_QgvUtygQpjD6zxmHJAb1DM7VXouFUh3eTbYCRgzMY34Iz8iiLhz0xqNN39JwoUmWcQc2SMZlmS0Wn1DF6zNMn1ZuVBfbkB.wpZRVCQUjkVRzwSp_hAgnkxVlrIngRkmZHhPN2.xwQV1mHi4qlA",
       "domain": ".grok.com",
@@ -278,13 +266,13 @@
     },
     {
       "name": "cf_clearance",
-      "value": "FUGWqUJbVp.Oy0le2j86EYaJoOsbIKLV1t7qNJYCk7Q-1788076102-1.2.1.1-zTzv8axYNf821TA1ipPMvcnR6_DtpSIrFiRGYfBIjeIV7TvVWP_swxQpUPd1tHgOTw.q8ANVL7tjX8l500jl0AdyThCwQdphF3J6_WSak2wK94eVS9FQrszA2wLEktp1.gnQIDwCLAMJkMews.ciySLO2SQnpvOoaX9KzLY0idej78rnrwOfaRsQ3C4VxYTKAZDT3kmv2wAIPk7RJRScGBQlAGshQ2Lr6wrRQ7E4sIwEzHiJGFoRmxqoCl6G7FoIO3KzK8Twa4e7psn3gT3cTE_zThRgvPXxenmtnmIPMzIFsctHST0Kk1S5h7_82wVw2s_LCun_Ofg6z8e.S3oue8Z4RgvPnpze0Qzjl.U2MG0",
+      "value": "PAAwIoBdckSvMkjBoET2X7.woT9EmnQ1MiSmGB2OU8A-1788688424-1.2.1.1-XUWN_xTgUhzCW9HIAU8m43.OcZTSIgCRDMeBgIJIHnrPl6JpDhzfkGDbMAqIAbnp3lj5bkWwZBiR7Tpvr8atzDGCrX.bMqrvggr32OcCsCA2jIDCfh1hyeB2Ziwt6rh4HdBF4tkoXCt.ZKmItdR6pW6BDM1KkSdFjB1L_3jD7paVVQVCCO1XxU9LfjOR0LKNw3KsoaRgeCt6a_zCLEx1kcDAx64jz3E29Z3GsKoQp5bX2wLEgYE35Y2qfiyweImWxR8NJdRw7yVtPKuc1tIzZHQkYL6todXbuCV3Vd.L70R02_D0.H6PX8YNZH7E6N2apAeHPKbF4SkK7vr_k_gEdK0P9TzFkbRUiirw6nGzfic",
       "domain": ".x.ai",
       "path": "/",
       "secure": true,
       "httpOnly": true,
       "sameSite": "no_restriction",
-      "expirationDate": 1819612102.046931,
+      "expirationDate": 1820224424.263675,
       "hostOnly": false,
       "session": false
     },
@@ -466,8 +454,58 @@
       "expirationDate": 1820062957,
       "hostOnly": false,
       "session": false
+    },
+    {
+      "name": "referrer",
+      "value": "grok-com",
+      "domain": "accounts.x.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "lax",
+      "expirationDate": 1789898519.513089,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "redirect",
+      "value": "%7B%22redirectDestination%22%3A%22grok-com%22%2C%22redirectPathAndParams%22%3A%22%2F%22%7D",
+      "domain": "accounts.x.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "lax",
+      "expirationDate": 1789380119.512787,
+      "hostOnly": true,
+      "session": false
+    },
+    {
+      "name": "__cf_bm",
+      "value": "I_WBffL_nWq019q8x6m2PM1E_MmUMhnYEXtZd4ln0B4-1789293718.5733778-1.0.1.1-iGS0Vzi7yKnUx6BQyGfYlBa4kIp1gqipXqPwYiuAcNW_M_.UvvnD7cPMoXRlnLTQv.FiP5NDZ7_.vinBvLHRrazgHNk6zSNmUzzQ4D39dxTnVJpFP8yzufMHFMlxygdk",
+      "domain": ".grok.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1789295518.419779,
+      "hostOnly": false,
+      "session": false
+    },
+    {
+      "name": "__cf_bm",
+      "value": "cUH7Dl7S8_AOFOw4lcCy82rEhUi8.TjS8bSmu4gck_0-1789293719.4241488-1.0.1.1-HooGFD8hZawoFy6E6bLQx7WjhJkuuZnecb.TbQ7Ghb5vmBEvpMmP41bMgV48yJ0ynkgnqIfV3A2TvNnRmQ_ZpztsJyBZ2fz._T2B6OpnwdqqJWHAeV.EQMeD.oFzJV2y",
+      "domain": ".x.ai",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "no_restriction",
+      "expirationDate": 1789295519.513195,
+      "hostOnly": false,
+      "session": false
     }
   ],
-  "localStorage": {},
+  "localStorage": {
+    "theme": "light"
+  },
   "sessionStorage": {}
 }
