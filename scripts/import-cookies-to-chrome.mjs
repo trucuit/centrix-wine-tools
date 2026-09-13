@@ -756,7 +756,7 @@ async function openOrReload(port, targetUrl, browserCdp) {
   return "reloaded";
 }
 
-async function applyLocalStorage(port, targetUrl, entries, sessionEntries = {}) {
+async function applyLocalStorage(port, targetUrl, entries, sessionEntries = {}, allowedDomains = []) {
   const expectedKeys = Object.keys(entries);
   const sessionKeys = Object.keys(sessionEntries);
   if (!expectedKeys.length && !sessionKeys.length) return 0;
@@ -775,13 +775,25 @@ async function applyLocalStorage(port, targetUrl, entries, sessionEntries = {}) 
         try {
           const current = new URL(candidate.url).hostname;
           const root = host.replace(/^www\./, "");
-          return current === host || current === root || current.endsWith(`.${root}`);
+          if (current === host || current === root || current.endsWith(`.${root}`)) return true;
+          if (Array.isArray(allowedDomains) && allowedDomains.some((d) => {
+            const cleanD = String(d || "").replace(/^\./, "");
+            return current === cleanD || current.endsWith(`.${cleanD}`);
+          })) return true;
+          return false;
         } catch { return false; }
       })());
       if (target) break;
       await new Promise((resolveWait) => setTimeout(resolveWait, 100));
     }
-    if (!target) throw new Error(`Could not find a page for ${targetUrl} to import localStorage.`);
+    if (!target) {
+      if (retry === MAX_RETRIES - 1) {
+        console.warn(`⚠️ Warning: Could not find page for ${targetUrl} to import localStorage. Skipping.`);
+        return 0;
+      }
+      await new Promise((r) => setTimeout(r, RETRY_DELAY_MS));
+      continue;
+    }
 
     // 2. Wait for page to be at least interactive (handles fresh tab / redirect)
     const pageCdp = await connectCdp(target.webSocketDebuggerUrl);
@@ -1137,8 +1149,12 @@ async function main() {
     }
     if (options.open) action = await openOrReload(options.port, config.url, cdp);
     if (options.open && (Object.keys(localStorageEntries).length || Object.keys(sessionStorageEntries).length)) {
-      localStorageApplied = await applyLocalStorage(options.port, config.url, localStorageEntries, sessionStorageEntries);
-      action = `${action}+storage`;
+      try {
+        localStorageApplied = await applyLocalStorage(options.port, config.url, localStorageEntries, sessionStorageEntries, config.domains);
+        action = `${action}+storage`;
+      } catch (storageErr) {
+        action = `${action}+storage-skipped`;
+      }
     }
     console.log(JSON.stringify({
       service: options.service, sourceService, mode: options.mode, imported: expected.size,

@@ -39,7 +39,8 @@ show_menu() {
   print -r -- "  3) 🚀 Test All       - Kiểm tra lease assignment toàn bộ AI"
   print -r -- "  4) 🔑 Assign Lease   - Cấp lease session cho 1 dịch vụ cụ thể"
   print -r -- "  5) 🍪 Export Cookies - Tải & giải mã cookies cho 1 dịch vụ"
-  print -r -- "  6) 📦 Export All     - Tải cookies cho tất cả dịch vụ"
+  print -r -- "  6) 🌐 Export & Chrome- Tải cookies & nạp trực tiếp vào Chrome"
+  print -r -- "  7) 📦 Export All     - Tải cookies cho tất cả dịch vụ"
   print -r -- "  0) ❌ Exit           - Thoát"
   print -r -- ""
 }
@@ -88,7 +89,7 @@ select_service() {
 
 if [[ $# -eq 0 ]]; then
   show_menu
-  read -r "choice?👉 Chọn một tuỳ chọn [1-6, 0] (mặc định: 1): " || choice="1"
+  read -r "choice?👉 Chọn một tuỳ chọn [1-7, 0] (mặc định: 1): " || choice="1"
   choice="${choice:-1}"
   case "$choice" in
     1|info|me) CMD="info" ;;
@@ -104,7 +105,12 @@ if [[ $# -eq 0 ]]; then
       svc=$(select_service "Chọn dịch vụ cần export cookies")
       set -- "$svc"
       ;;
-    6|all|export-all) CMD="all" ;;
+    6|chrome|export-chrome|"export & chrome")
+      CMD="export-cookies"
+      svc=$(select_service "Chọn dịch vụ cần export & mở Chrome")
+      set -- "$svc" "--chrome"
+      ;;
+    7|all|export-all) CMD="all" ;;
     0|q|exit|quit)
       print -r -- "Thoát."
       exit 0
@@ -118,7 +124,7 @@ else
   case "${1:-}" in
     -h|--help|help)
       show_menu
-      print -r -- "Usage: $0 [info | list | test-all | assign <id> | export-cookies <id> | all]"
+      print -r -- "Usage: $0 [info | list | test-all | assign <id> | export-cookies <id> [--chrome] | all]"
       exit 0
       ;;
     *)
@@ -680,8 +686,31 @@ function resolveServiceId(id) {
   return cleaned;
 }
 
+function shouldImportChrome(rawTokens) {
+  return rawTokens.some(t => /--chrome|-c|^chrome$|^chorme$/i.test(t));
+}
+
+function runImportToChrome(serviceId) {
+  const scriptDir = path.dirname(SESSION_FILE);
+  const importScript = path.join(scriptDir, "import-cookies-to-chrome.sh");
+  if (!fs.existsSync(importScript)) {
+    console.warn("⚠️ import-cookies-to-chrome.sh not found, skipping Chrome import");
+    return;
+  }
+  console.log(`\n🌐 Auto-importing '${serviceId}' cookies into Chrome...`);
+  try {
+    require("child_process").execFileSync(importScript, [serviceId], {
+      stdio: "inherit",
+      env: { ...process.env, CENTRIX_COOKIES_DIR: OUT_DIR }
+    });
+  } catch (err) {
+    console.error(`❌ Chrome import failed: ${err.message}`);
+  }
+}
+
 function parseServiceList(rawTokens) {
-  const fullString = rawTokens.join(" ");
+  const filtered = rawTokens.filter(t => !/^(?:--chrome|-c|chrome|chorme|import|to|into|and|\+)$/i.test(t));
+  const fullString = filtered.join(" ");
   // Split on +, comma, or standalone 'and'
   const phrases = fullString.split(/\s*(?:\+|\band\b|,)\s*/i).filter(Boolean);
   const services = [];
@@ -697,9 +726,13 @@ function parseServiceList(rawTokens) {
   return [...new Set(services)];
 }
 
-async function handleExportMultiple(services, outDir = OUT_DIR) {
+async function handleExportMultiple(services, outDir = OUT_DIR, importChrome = false) {
   if (services.length === 1) {
-    return handleExportCookies(services[0], false, outDir);
+    const res = await handleExportCookies(services[0], false, outDir);
+    if (res.ok && importChrome) {
+      runImportToChrome(services[0]);
+    }
+    return res;
   }
   console.log("══════════════════════════════════════════════════════════════════════");
   console.log(`🌐 EXPORTING ${services.length} SERVICES: ${services.join(", ")}`);
@@ -710,6 +743,9 @@ async function handleExportMultiple(services, outDir = OUT_DIR) {
   for (const s of services) {
     const res = await handleExportCookies(s, false, outDir);
     results.push(res);
+    if (res.ok && importChrome) {
+      runImportToChrome(s);
+    }
   }
 
   console.log("──────────────────────────────────────────────────────────────────────");
@@ -720,6 +756,8 @@ async function handleExportMultiple(services, outDir = OUT_DIR) {
 }
 
 async function main() {
+  const allTokens = process.argv.slice(2);
+  const importChrome = shouldImportChrome(allTokens);
   const lowerCmd = cmd.toLowerCase().trim();
   switch (lowerCmd) {
     case "info":
@@ -747,7 +785,7 @@ async function main() {
     case "cookies": {
       const svcs = parseServiceList(process.argv.slice(3));
       if (!svcs.length) svcs.push(resolveServiceId(targetService) || "claude");
-      await handleExportMultiple(svcs, OUT_DIR);
+      await handleExportMultiple(svcs, OUT_DIR, importChrome);
       break;
     }
     case "all":
@@ -758,14 +796,14 @@ async function main() {
       break;
     default: {
       if (cmd && !["help", "-h", "--help"].includes(cmd)) {
-        const svcs = parseServiceList(process.argv.slice(2));
+        const svcs = parseServiceList(allTokens);
         if (svcs.length) {
-          await handleExportMultiple(svcs, OUT_DIR);
+          await handleExportMultiple(svcs, OUT_DIR, importChrome);
           break;
         }
       }
       console.log(`Unknown command: ${cmd}`);
-      console.log("Usage: ./centrix-service-api.sh [info|list|test-all|assign <id>|export-cookies <id>|all|<serviceId, ...>]");
+      console.log("Usage: ./centrix-service-api.sh [info|list|test-all|assign <id>|export-cookies <id> [--chrome]|all|<serviceId, ...>]");
     }
   }
 }
