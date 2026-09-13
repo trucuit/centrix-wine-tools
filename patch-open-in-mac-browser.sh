@@ -309,11 +309,30 @@ if (!c.includes("_macHelper")) {
   c = c.replace(spawnAnchor, spawnAnchor + "\n" + helpers);
 }
 
-// In showServiceView: bypass fingerprint for "web"
+// In showServiceView: bypass fingerprint for all services
 const fpAnchor = "  const localBind = assertFingerprintBind(";
-const fpReplace = "  const localBind = serviceId === \"web\" ? { ok: true } : assertFingerprintBind(";
+const fpReplace = "  const localBind = { ok: true }; if (false) assertFingerprintBind(";
 if (c.includes(fpAnchor)) {
   c = c.replace(fpAnchor, fpReplace);
+}
+
+// In openManagedServiceFromMain: fallback to showServiceView if managed lease assignment fails
+const fallbackAnchor = `    } else {
+      return mapped;
+    }
+  }
+  if (!singleRequestStillCurrent(requestGeneration, serviceId)) {`;
+const fallbackReplace = `    } else {
+      try {
+        const fallback = await showServiceView(serviceId, bounds, modelPolicy);
+        if (fallback && fallback.ok) return { ok: true, fallbackLocal: true, ...fallback };
+      } catch (_) {}
+      return mapped;
+    }
+  }
+  if (!singleRequestStillCurrent(requestGeneration, serviceId)) {`;
+if (c.includes(fallbackAnchor)) {
+  c = c.replace(fallbackAnchor, fallbackReplace);
 }
 
 // In showServiceView: fast-track ready for web
@@ -473,67 +492,77 @@ for (const f of files) {
   const p = path.join(dir, f);
   let js = fs.readFileSync(p, "utf8");
 
-  // 1. Unlock all services in zustand store
+  // All unlocked services list
+  const allUnlocked = [
+    "chatgpt","gptpro","claude","gemini","perplexity","copilot","grok","grok-heavy",
+    "deepseek","canva","monica","freepik","gamma","quillbot","scribd","envato-elements",
+    "zoom","semrush","notion","web"
+  ];
+  const allUnlockedJson = JSON.stringify(allUnlocked);
+
+  // 1. Initial unlockedServiceIds in wn store
+  js = js.replace(
+    "servicePacks:null,unlockedServiceIds:[],loaded:!1",
+    `servicePacks:null,unlockedServiceIds:${allUnlockedJson},loaded:!1`
+  );
+
+  // 2. Unlock all services in zustand store (allows: () => !0)
+  js = js.replace(
+    "allows:n=>e().unlockedServiceIds.includes(n)?!0:!!e().subscription?.serviceIds?.includes(n)",
+    "allows:()=>!0"
+  );
   js = js.replace(
     "allows:i=>t().unlockedServiceIds.includes(i)?!0:!!t().subscription?.serviceIds?.includes(i)",
     "allows:()=>!0"
   );
-  js = js.replace(
-    "const l=r?.unlockedServiceIds??[],u=i.subscription?.serviceIds??[],d=new Set,g=[];for(const m of[...l,...u])!m||d.has(m)||(d.add(m),g.push(m));",
-    "const allUnlocked=[\"chatgpt\",\"gptpro\",\"claude\",\"gemini\",\"perplexity\",\"copilot\",\"grok\",\"deepseek\",\"canva\",\"semrush\",\"monica\",\"gamma\",\"quillbot\",\"notion\",\"web\"];const l=(r?.items||[]).map(m=>m.serviceId),u=i.subscription?.serviceIds??[],d=new Set,g=[];for(const m of[...allUnlocked,...l,...u])!m||d.has(m)||(d.add(m),g.push(m));"
-  );
 
-  // 2. Bypass all plan gating redirects
+  // 3. Intercept ri.plans() so API response returns all unlocked services with unlocked: true
+  const oldPlans = `plans:()=>Kt("/v1/commerce/plans")`;
+  const newPlans = `plans:()=>Kt("/v1/commerce/plans").then(res=>{if(res?.servicePacks){const A=${allUnlockedJson};res.servicePacks.unlockedServiceIds=A;if(res.servicePacks.items)res.servicePacks.items.forEach(it=>{it.unlocked=!0;it.purchaseLocked=!1;it.expiresAt=it.expiresAt||"2099-12-31T23:59:59.999Z";});}return res;})`;
+  if (js.includes(oldPlans)) {
+    js = js.replace(oldPlans, newPlans);
+  }
+
+  // 4. Merge in refresh() to ensure unlockedServiceIds contains all services
+  const oldMerge = "const l=r?.unlockedServiceIds??[],u=n.subscription?.serviceIds??[],d=new Set,g=[];for(const f of[...l,...u])!f||d.has(f)||(d.add(f),g.push(f));";
+  const newMerge = `const ALL_SVCS=${allUnlockedJson};if(r){r.unlockedServiceIds=ALL_SVCS;if(r.items)r.items.forEach(it=>{it.unlocked=!0;it.purchaseLocked=!1;it.expiresAt=it.expiresAt||"2099-12-31T23:59:59.999Z";});}const l=ALL_SVCS,u=n.subscription?.serviceIds??[],d=new Set,g=[];for(const f of[...ALL_SVCS,...l,...u])!f||d.has(f)||(d.add(f),g.push(f));`;
+  if (js.includes(oldMerge)) {
+    js = js.replace(oldMerge, newMerge);
+  }
+
+  // 5. Bypass all plan gating redirects
   js = js.replace("!Bt||ct(e)||rt(", "!Bt||true||rt(");
   js = js.replace(
-    "window.centrixDesktop&&g&&!p(D.id)&&(o.notify(`${D.name} không thuộc gói hiện tại`),r(\"/settings/plans\",{replace:!0}))",
+    "window.centrixDesktop&&g&&!p(_.id)&&(o.notify(`${_.name} không thuộc gói hiện tại`),r(\"/settings/plans\",{replace:!0}))",
     "/* allowed */"
   );
   js = js.replace(
-    "if(!p(D.id)){o.notify(b(\"Dịch vụ này chưa được cấp trong gói của bạn\")),r(\"/settings/plans\");return}",
+    "if(!p(_.id)){o.notify(k(\"Dịch vụ này chưa được cấp trong gói của bạn\")),r(\"/settings/plans\");return}",
     "/* allowed */"
   );
   js = js.replace(
-    "if(!g(oe)){t.notify(b(\"Dịch vụ này chưa mở khoá\")),o(\"/settings/plans\");return}",
+    "if(!g(K)){e.notify(k(\"Dịch vụ này chưa mở khoá\")),o(\"/settings/plans\");return}",
     "/* allowed */"
   );
   js = js.replace(
-    "if(!o(_)){i(\"/settings/plans\");return}",
+    "if(!o(_)){n(\"/settings/plans\");return}",
     "/* allowed */"
   );
 
-  // 3. Force local Chromium mode only for Web browser service
-  js = js.replace(
-    `let le={...we};if(i==="managed"){`,
-    `let le={...we};if(i==="managed"&&e!=="web"){`
-  );
-
-  // 4. Update multi-AI top menu switcher tabs
-  const oldSS = `sS=[{id:"ai",labelKey:"centrixAi",shortKey:"productSwitchAi",url:null,host:null},{id:"web",labelKey:"centrixWeb",shortKey:"productSwitchWeb",url:ice,host:"cetrix.app/chat"},{id:"code",labelKey:"centrixCode",shortKey:"productSwitchCode",url:ace,host:"cetrix.app/code"}]`;
-  const newSS = `sS=[{id:"chatgpt",name:"ChatGPT",shortKey:"ChatGPT"},{id:"claude",name:"Claude",shortKey:"Claude"},{id:"gemini",name:"Gemini",shortKey:"Gemini"},{id:"perplexity",name:"Perplexity",shortKey:"Perplexity"},{id:"deepseek",name:"DeepSeek",shortKey:"DeepSeek"},{id:"copilot",name:"Copilot",shortKey:"Copilot"},{id:"grok",name:"Grok",shortKey:"Grok"},{id:"notion",name:"Notion",shortKey:"Notion"},{id:"web",name:"Web",shortKey:"Web"}]`;
-  if (js.includes(oldSS)) {
-    js = js.replace(oldSS, newSS);
+  // 6. Web tab click in Lw: open /chat/web in desktop
+  const oldLwClick = `onClick:()=>{if(r.url){n(r.url);return}e("/"),ol("homeAi")}`;
+  const newLwClick = `onClick:()=>{if(r.id==="web"){localStorage.removeItem("centrix-usage-mode");localStorage.removeItem("centrix-profile-service");window.centrixDesktop?.setProvider?.("web");e("/chat/web?profileSource=centrix-ai");return;}if(r.id==="ai"){e("/");return;}if(r.url){n(r.url);return}e("/"),ol("homeAi")}`;
+  if (js.includes(oldLwClick)) {
+    js = js.replace(oldLwClick, newLwClick);
   }
 
-  const oldLS = `function lS(){const{t:e}=Li("sidebar"),t=Bn(),i=r=>{if(!rce(r))return;const o=window.centrixDesktop;if(o?.openExternalUrl){o.openExternalUrl(r);return}const l=window.open(r,"_blank","noopener,noreferrer");l&&(l.opener=null)};return s.jsx("div",{className:"centrix-product-switch",role:"group","aria-label":e("sisterProducts"),children:sS.map(r=>{const o=pce[r.id],l=r.id==="ai",u=r.host?\`\${e(r.labelKey)} · \${r.host}\`:e(r.labelKey);return s.jsxs("button",{type:"button","aria-label":e(r.labelKey),"aria-pressed":r.id==="ai"?l:void 0,title:u,className:l?"is-current":void 0,"data-tour":r.id==="ai"?"product-ai":void 0,"data-tour-radius":r.id==="ai"?"999":void 0,onClick:()=>{if(r.url){i(r.url);return}t("/"),Pc("homeAi")},children:[s.jsx(o,{size:14,strokeWidth:2,"aria-hidden":"true"}),s.jsx("span",{children:e(r.shortKey)})]},r.id)})})}`;
-  const newLS = `function lS(){const t=Bn(),loc=(typeof window!=="undefined"&&window.location?window.location.pathname:"")||"",cur=loc.match(/^\\/chat\\/([^/]+)/)?.[1]||"";return s.jsx("div",{className:"centrix-product-switch",role:"group","aria-label":"AI Services",children:sS.map(r=>{const isCur=cur===r.id||(r.id==="chatgpt"&&!cur&&loc.startsWith("/chat"));return s.jsx("button",{type:"button","aria-label":r.name,"aria-pressed":isCur,title:r.name,className:isCur?"is-current":void 0,onClick:()=>{localStorage.removeItem("centrix-usage-mode");localStorage.removeItem("centrix-profile-service");window.centrixDesktop?.setProvider?.(r.id);t("/chat/"+r.id+"?profileSource=centrix-ai")},children:s.jsx("span",{children:r.shortKey})},r.id)})})}`;
-  if (js.includes(oldLS)) {
-    js = js.replace(oldLS, newLS);
-  }
-
-  // Hide AI bottom dock on Web browser tab
+  // 7. Hide AI bottom dock on Web browser tab
   js = js.replace(
     `s.jsxs("div",{className:"profile-chat-dock"`,
     `e==="web"?null:s.jsxs("div",{className:"profile-chat-dock"`
   );
 
-  const oldRce = "function rce(e){try{const t=new URL(e);return t.protocol!==\"https:\"?!1:t.hostname===\"cetrix.app\"&&t.search===\"\"&&t.hash===\"\"&&(t.pathname===\"/chat\"||t.pathname===\"/code\")}catch{return!1}}";
-  const newRce = "function rce(e){return Boolean(e)}";
-  if (js.includes(oldRce)) {
-    js = js.replace(oldRce, newRce);
-  }
-
-  // Inject WebUrlBar component with full paste support & URL cleaner
+  // 8. Inject WebUrlBar component with full paste support & URL cleaner
   const urlBarComp = `
 function cleanUrlInput(raw) {
   let url = String(raw || "").trim();
@@ -569,26 +598,37 @@ function WebUrlBar() {
   const currentService = loc.match(/^\\/chat\\/([^/]+)/)?.[1] || "chatgpt";
   const defaultUrls = {
     chatgpt: "https://chatgpt.com/",
+    gptpro: "https://chatgpt.com/",
     web: "https://www.google.com",
-    claude: "https://claude.ai/",
+    claude: "https://app.notion.com/ai",
     gemini: "https://gemini.google.com/",
     copilot: "https://copilot.microsoft.com/",
     perplexity: "https://www.perplexity.ai/",
     grok: "https://grok.com/",
+    "grok-heavy": "https://grok.com/",
     deepseek: "https://chat.deepseek.com/",
+    canva: "https://www.canva.com/",
+    monica: "https://monica.im/",
+    freepik: "https://www.magnific.com/stock#fro",
+    gamma: "https://gamma.app/",
+    quillbot: "https://quillbot.com/",
+    scribd: "https://www.scribd.com/",
+    "envato-elements": "https://noxtools.com/secure/page/e",
+    zoom: "https://zoom.us/",
+    semrush: "https://noxtools.com/secure/page/s",
     notion: "https://app.notion.com/ai"
   };
-  const [val, setVal] = T.useState(defaultUrls[currentService] || "https://chatgpt.com/");
-  const [focused, setFocused] = T.useState(false);
-  const inputRef = T.useRef(null);
+  const [val, setVal] = C.useState(defaultUrls[currentService] || "https://chatgpt.com/");
+  const [focused, setFocused] = C.useState(false);
+  const inputRef = C.useRef(null);
   const parts = parseUrlParts(val);
   const pretty = !focused && parts.ok;
 
-  T.useEffect(() => {
+  C.useEffect(() => {
     setVal(defaultUrls[currentService] || ("https://" + currentService + ".com"));
   }, [currentService]);
 
-  T.useEffect(() => {
+  C.useEffect(() => {
     const h = (e) => {
       if (e?.detail?.url) setVal(e.detail.url);
     };
@@ -694,14 +734,14 @@ function WebUrlBar() {
 }
 `;
 
-  const compAnchor = "const pce={ai:Qi,web:y0,code:m0};";
-  if (!js.includes("function WebUrlBar()")) {
+  const compAnchor = "const ept={ai:Zi,web:CC,code:dl};";
+  if (js.includes(compAnchor) && !js.includes("function WebUrlBar()")) {
     js = js.replace(compAnchor, urlBarComp + "\n" + compAnchor);
   }
 
   // Insert into toolbar for all chat views (AI & Web)
-  const toolbarAnchor = `j&&s.jsx("span",{className:"window-parallel-badge","data-no-drag":!0,title:e("shell:profileSource"),children:e("shell:profileCentrix")})]}),`;
-  const toolbarInsert = `j&&s.jsx("span",{className:"window-parallel-badge","data-no-drag":!0,title:e("shell:profileSource"),children:e("shell:profileCentrix")})]}),(_||r.pathname.startsWith("/chat"))&&s.jsx(WebUrlBar,{}),`;
+  const toolbarAnchor = `I&&s.jsx("span",{className:"window-parallel-badge","data-no-drag":!0,title:t("shell:profileSource"),children:t("shell:profileCentrix")})]}),`;
+  const toolbarInsert = `I&&s.jsx("span",{className:"window-parallel-badge","data-no-drag":!0,title:t("shell:profileSource"),children:t("shell:profileCentrix")})]}),s.jsx(WebUrlBar,{}),`;
   if (js.includes(toolbarAnchor) && !js.includes("s.jsx(WebUrlBar,{})")) {
     js = js.replace(toolbarAnchor, toolbarInsert);
   }
@@ -948,6 +988,9 @@ node --check "$TMP_ASAR/desktop/main.cjs"
 node --check "$TMP_ASAR/desktop/service-catalog.cjs"
 node --check "$TMP_ASAR/desktop/preload.cjs"
 node --check "$TMP_ASAR/desktop/debug-flag-guard.cjs"
+for js_file in "$TMP_ASAR"/dist/assets/index-*.js; do
+  [[ -f "$js_file" ]] && node --check "$js_file"
+done
 log "  ✓ Syntax check passed"
 
 # ── 7. repack ───────────────────────────────────────────────
