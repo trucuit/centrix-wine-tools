@@ -46,6 +46,7 @@ const SERVICE_URLS = {
   claude: "https://claude.ai/new",
   gemini: "https://gemini.google.com/",
   perplexity: "https://www.perplexity.ai/",
+  copilot: "https://copilot.microsoft.com/",
   "microsoft-copilot": "https://copilot.microsoft.com/",
   grok: "https://grok.com/",
   "grok-heavy": "https://grok.com/",
@@ -65,6 +66,125 @@ const SERVICE_URLS = {
   poe: "https://poe.com/",
   elevenlabs: "https://elevenlabs.io/app",
 };
+
+/** Known service aliases mapping to canonical service IDs in CentriX API catalog */
+const SERVICE_ALIASES = {
+  // ChatGPT Pro (GPT-5.6 Pro)
+  "gpt pro": "gptpro",
+  "gpt-pro": "gptpro",
+  gpt_pro: "gptpro",
+  gptpro: "gptpro",
+  "chatgpt pro": "gptpro",
+  "chatgpt-pro": "gptpro",
+  chatgpt_pro: "gptpro",
+  chatgptpro: "gptpro",
+  "gpt 5": "gptpro",
+  "gpt-5": "gptpro",
+  gpt5: "gptpro",
+  pro: "gptpro",
+
+  // ChatGPT Standard
+  chatgpt: "chatgpt",
+  "chat gpt": "chatgpt",
+  "chat-gpt": "chatgpt",
+  chat_gpt: "chatgpt",
+  gpt: "chatgpt",
+
+  // Grok Heavy
+  "grok heavy": "grok-heavy",
+  "grok-heavy": "grok-heavy",
+  grok_heavy: "grok-heavy",
+  grokheavy: "grok-heavy",
+  heavy: "grok-heavy",
+
+  // Grok Standard
+  grok: "grok",
+
+  // Microsoft Copilot
+  copilot: "copilot",
+  "microsoft copilot": "copilot",
+  "microsoft-copilot": "copilot",
+  microsoft_copilot: "copilot",
+  "ms copilot": "copilot",
+  "ms-copilot": "copilot",
+  ms_copilot: "copilot",
+
+  // Envato Elements
+  "envato elements": "envato-elements",
+  "envato-elements": "envato-elements",
+  envato_elements: "envato-elements",
+  envato: "envato-elements",
+  elements: "envato-elements",
+
+  // Freepik / Magnific
+  freepik: "freepik",
+  magnific: "freepik",
+
+  // Claude
+  claude: "claude",
+  "claude ai": "claude",
+  "claude-ai": "claude",
+
+  // Gemini
+  gemini: "gemini",
+  google: "gemini",
+
+  // Perplexity
+  perplexity: "perplexity",
+  sonar: "perplexity",
+
+  // Others
+  deepseek: "deepseek",
+  canva: "canva",
+  monica: "monica",
+  gamma: "gamma",
+  quillbot: "quillbot",
+  scribd: "scribd",
+  zoom: "zoom",
+  semrush: "semrush",
+  notion: "notion",
+  mistral: "mistral",
+  midjourney: "midjourney",
+  poe: "poe",
+  elevenlabs: "elevenlabs",
+};
+
+/**
+ * Resolve an array of service tokens (e.g. ["gpt", "pro", "claude"])
+ * into canonical service IDs (e.g. ["gptpro", "claude"]).
+ */
+function resolveServices(tokens) {
+  const result = [];
+  let i = 0;
+  while (i < tokens.length) {
+    const t1 = String(tokens[i] || "").toLowerCase().trim();
+    if (!t1) {
+      i++;
+      continue;
+    }
+    // Check 2-token match first (e.g. "gpt pro", "grok heavy", "ms copilot")
+    if (i + 1 < tokens.length) {
+      const t2 = String(tokens[i + 1] || "").toLowerCase().trim();
+      const combined = `${t1} ${t2}`;
+      const hyphenCombined = `${t1}-${t2}`;
+      if (SERVICE_ALIASES[combined]) {
+        result.push(SERVICE_ALIASES[combined]);
+        i += 2;
+        continue;
+      }
+      if (SERVICE_ALIASES[hyphenCombined]) {
+        result.push(SERVICE_ALIASES[hyphenCombined]);
+        i += 2;
+        continue;
+      }
+    }
+    // Single token match
+    const resolved = SERVICE_ALIASES[t1] || t1;
+    result.push(resolved);
+    i++;
+  }
+  return [...new Set(result)];
+}
 
 /** Services that also need auth.openai.com cookies injected + tab opened */
 const AUTH_OPENAI_SERVICES = new Set(["chatgpt", "gptpro", "notebooklm"]);
@@ -273,9 +393,9 @@ async function cmdExport(serviceIds, chromeImport) {
   for (const serviceId of serviceIds) {
     log(`\n── ${serviceId} ──`);
     try {
-      const cookies = await exportService(serviceId);
+      const { cookies, snapshot } = await exportService(serviceId);
       if (cookies.length > 0) {
-        await writeCookieFiles(serviceId, cookies);
+        await writeCookieFiles(serviceId, cookies, snapshot);
         okCount++;
 
         if (chromeImport) {
@@ -352,10 +472,10 @@ async function exportService(serviceId) {
     body: JSON.stringify({ leaseToken, reason: "cli_export_done" }),
   }).catch(() => {});
 
-  return cookies;
+  return { cookies, snapshot };
 }
 
-async function writeCookieFiles(serviceId, cookies) {
+async function writeCookieFiles(serviceId, cookies, snapshot = {}) {
   const serviceDir = join(OUT_DIR, serviceId);
   await mkdir(serviceDir, { recursive: true });
 
@@ -379,7 +499,7 @@ async function writeCookieFiles(serviceId, cookies) {
       value: c.value,
     })),
   };
-  await writeFile(serviceFile, JSON.stringify(serviceData, null, 2));
+  await writeFile(serviceFile, JSON.stringify(serviceData, null, 2), { mode: 0o600 });
 
   // 2. Split by domain for import-cookies-to-chrome.sh
   const byDomain = {};
@@ -390,7 +510,27 @@ async function writeCookieFiles(serviceId, cookies) {
   }
   for (const [dom, domCookies] of Object.entries(byDomain)) {
     const domFile = join(serviceDir, `${dom}.json`);
-    await writeFile(domFile, JSON.stringify(domCookies, null, 2));
+    await writeFile(domFile, JSON.stringify(domCookies, null, 2), { mode: 0o600 });
+  }
+
+  // 3. Sidecars for Chrome import & storage injection (matches centrix-service-api.sh pattern)
+  if (snapshot && typeof snapshot === "object") {
+    // Service-level full snapshot
+    const fullFile = join(serviceDir, `${serviceId}.full.json`);
+    await writeFile(fullFile, JSON.stringify(snapshot, null, 2), { mode: 0o600 });
+
+    // Service-level localStorage (used by import-cookies-to-chrome.mjs)
+    if (snapshot.localStorage && Object.keys(snapshot.localStorage).length > 0) {
+      const storageFile = join(serviceDir, `${serviceId}.storage.json`);
+      await writeFile(storageFile, JSON.stringify(snapshot.localStorage, null, 2), { mode: 0o600 });
+    }
+
+    // Root-level session and cookie files
+    const rootSessionFile = join(OUT_DIR, `session-${serviceId}.json`);
+    await writeFile(rootSessionFile, JSON.stringify(snapshot, null, 2), { mode: 0o600 });
+
+    const rootCookieFile = join(OUT_DIR, `cookies-${serviceId}.json`);
+    await writeFile(rootCookieFile, JSON.stringify(serviceData.cookies, null, 2), { mode: 0o600 });
   }
 
   const sessionTokens = cookies.filter((c) => c.name?.includes("session"));
@@ -513,50 +653,149 @@ async function injectAuthOpenai(serviceId, cookies) {
   }
 }
 
+function printHelp() {
+  console.log(`CentriX API v2 · ${APP_VERSION} (${API_BASE})`);
+  console.log();
+  console.log("Usage:");
+  console.log("  ./export-centrix-api.sh               Interactive menu (TTY)");
+  console.log("  ./export-centrix-api.sh gpt pro       Export GPT Pro cookies (shorthand)");
+  console.log("  ./export-centrix-api.sh export <svc>  Export cookies (gptpro, chatgpt, claude...)");
+  console.log("  ./export-centrix-api.sh export all    Export all services");
+  console.log("  ./export-centrix-api.sh <svc> --chrome Export + inject into Chrome");
+  console.log("  ./export-centrix-api.sh status        Check session");
+  console.log("  ./export-centrix-api.sh services      List available services");
+  console.log("  ./export-centrix-api.sh login         OTP login");
+  console.log("  ./export-centrix-api.sh logout        Clear session");
+  console.log();
+  console.log("Aliases supported:");
+  console.log("  gpt pro, gptpro, gpt-pro, pro, chatgpt-pro, gpt 5 -> gptpro");
+  console.log("  chatgpt, gpt                                       -> chatgpt");
+  console.log("  grok heavy, grok-heavy, heavy                      -> grok-heavy");
+  console.log("  copilot, ms copilot, microsoft copilot             -> copilot");
+  console.log("  envato, envato elements, envato-elements           -> envato-elements");
+  console.log();
+  console.log("Env:");
+  console.log(`  CENTRIX_V2_API_URL    ${API_BASE}`);
+  console.log(`  CENTRIX_V2_SESSION    ${SESSION_FILE}`);
+  console.log(`  CENTRIX_OUT_DIR       ${OUT_DIR}`);
+  console.log(`  CENTRIX_APP_VERSION   ${APP_VERSION}`);
+}
+
+async function cmdMenu() {
+  console.log("╔══════════════════════════════════════════════════════════╗");
+  console.log("║             CentriX API Manager (v2)                     ║");
+  console.log("╚══════════════════════════════════════════════════════════╝");
+  console.log("  1) 👤 Status         — Kiểm tra phiên đăng nhập & tài khoản");
+  console.log("  2) 📋 Services       — Danh sách dịch vụ trong hệ thống");
+  console.log("  3) 🍪 Export         — Tải cookies dịch vụ (gptpro, claude...)");
+  console.log("  4) 🌐 Export & Chrome— Tải cookies & nạp trực tiếp vào Chrome");
+  console.log("  5) 📦 Export All     — Tải cookies cho tất cả dịch vụ");
+  console.log("  6) 🔑 Login          — Đăng nhập bằng mã OTP (email)");
+  console.log("  7) 🚪 Logout         — Đăng xuất & xoá phiên làm việc");
+  console.log("  0) ❌ Thoát");
+  console.log("");
+
+  const choice = await prompt("👉 Chọn chức năng [1-7, 0] (mặc định: 1): ");
+  switch (choice) {
+    case "1":
+    case "status":
+    case "info":
+      await cmdStatus();
+      break;
+    case "2":
+    case "services":
+    case "list":
+      await cmdServices();
+      break;
+    case "3":
+    case "export": {
+      const svc = await prompt("👉 Nhập tên dịch vụ (e.g. gptpro, claude, grok-heavy) [gptpro]: ");
+      const target = svc ? resolveServices([svc]) : ["gptpro"];
+      await cmdExport(target, false);
+      break;
+    }
+    case "4":
+    case "chrome": {
+      const svc = await prompt("👉 Nhập tên dịch vụ cần nạp vào Chrome [gptpro]: ");
+      const target = svc ? resolveServices([svc]) : ["gptpro"];
+      await cmdExport(target, true);
+      break;
+    }
+    case "5":
+    case "all":
+      await cmdExport(["all"], false);
+      break;
+    case "6":
+    case "login":
+      await cmdLogin();
+      break;
+    case "7":
+    case "logout":
+      await cmdLogout();
+      break;
+    case "0":
+    case "q":
+    case "exit":
+      console.log("Thoát.");
+      break;
+    default:
+      await cmdStatus();
+      break;
+  }
+}
+
 // ── main ─────────────────────────────────────────────────
 
 async function main() {
-  const args = process.argv.slice(2);
-  const command = args[0] || "";
-  const rest = args.slice(1);
+  const rawArgs = process.argv.slice(2);
+  const chromeFlag = rawArgs.includes("--chrome") || rawArgs.includes("-c") || process.env.IMPORT_TO_CHROME === "1";
+  const nonFlags = rawArgs.filter((a) => !a.startsWith("-"));
 
-  const chromeFlag = rest.includes("--chrome") || process.env.IMPORT_TO_CHROME === "1";
-  const serviceArgs = rest.filter((a) => !a.startsWith("--"));
+  if (rawArgs.includes("-h") || rawArgs.includes("--help") || nonFlags[0] === "help") {
+    printHelp();
+    return;
+  }
 
-  switch (command) {
+  if (!nonFlags.length) {
+    if (process.stdin.isTTY) {
+      await cmdMenu();
+    } else {
+      printHelp();
+    }
+    return;
+  }
+
+  const firstToken = nonFlags[0].toLowerCase().trim();
+
+  switch (firstToken) {
     case "login":
       await cmdLogin();
       break;
     case "status":
+    case "info":
       await cmdStatus();
       break;
     case "logout":
       await cmdLogout();
       break;
     case "services":
+    case "list":
       await cmdServices();
       break;
-    case "export":
-      await cmdExport(serviceArgs, chromeFlag);
+    case "menu":
+      await cmdMenu();
       break;
-    default:
-      console.log(`CentriX API v2 · ${APP_VERSION} (${API_BASE})`);
-      console.log();
-      console.log("Commands:");
-      console.log("  login                 OTP login");
-      console.log("  status                Check session");
-      console.log("  services              List available services");
-      console.log("  export <svc...>       Export cookies (chatgpt, gptpro, claude, ...)");
-      console.log("  export all            Export all services");
-      console.log("  export <svc> --chrome Also inject into Chrome");
-      console.log("  logout                Clear session");
-      console.log();
-      console.log("Env:");
-      console.log(`  CENTRIX_V2_API_URL    ${API_BASE}`);
-      console.log(`  CENTRIX_V2_SESSION    ${SESSION_FILE}`);
-      console.log(`  CENTRIX_OUT_DIR       ${OUT_DIR}`);
-      console.log(`  CENTRIX_APP_VERSION   ${APP_VERSION}`);
+    case "export": {
+      const targetServices = resolveServices(nonFlags.slice(1));
+      await cmdExport(targetServices, chromeFlag);
       break;
+    }
+    default: {
+      // Shorthand: firstToken is not a subcommand, treat nonFlags as service names/aliases (e.g. "gpt pro", "gptpro", "claude")
+      const targetServices = resolveServices(nonFlags);
+      await cmdExport(targetServices, chromeFlag);
+      break;
+    }
   }
 }
 

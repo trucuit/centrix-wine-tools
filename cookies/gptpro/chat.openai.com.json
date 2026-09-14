@@ -1,13 +1,15 @@
 [
   {
-    "name": "oai-appearance",
-    "value": "dark",
     "domain": "chat.openai.com",
-    "path": "/",
-    "secure": false,
-    "httpOnly": false,
-    "sameSite": "lax",
+    "expirationDate": 1791899411.538,
     "hostOnly": true,
-    "session": true
+    "httpOnly": false,
+    "name": "oai-appearance",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": false,
+    "session": true,
+    "storeId": "0",
+    "value": "light"
   }
 ]

@@ -6,7 +6,8 @@
 # (same as export-centrix-cookies.sh + export-pick-service.sh)
 #
 #   ./export-centrix-api.sh              # menu
-#   ./export-centrix-api.sh login
+#   ./export-centrix-api.sh gpt pro      # export GPT Pro cookies (shorthand)
+#   ./export-centrix-api.sh gptpro --chrome
 #   ./export-centrix-api.sh export grok
 #   ./export-centrix-api.sh export chatgpt claude
 #   ./export-centrix-api.sh export gptpro --chrome

@@ -1,1 +1,16 @@
-{"access_token":"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","account_uuid":"05ff8f88-71d1-484f-920e-9d5c93364696","claude_device_ids":["3919cafd263760a135e5cbf675455b797b82aaf5ed2e1355300a4e92f452e67c"],"disabled":false,"email":"sasadairaseann@gmail.com","expired":"2026-09-12T23:00:02+07:00","id_token":"","last_refresh":"2026-09-12T15:00:03+07:00","organization_name":"sasadairaseann@gmail.com's Organization","organization_uuid":"4d08d558-0b17-472c-a29a-39f88ba00b35","refresh_token":"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","type":"claude"}
+{
+  "access_token": "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",
+  "account_uuid": "05ff8f88-71d1-484f-920e-9d5c93364696",
+  "claude_device_ids": [
+    "3919cafd263760a135e5cbf675455b797b82aaf5ed2e1355300a4e92f452e67c"
+  ],
+  "disabled": false,
+  "email": "sasadairaseann@gmail.com",
+  "expired": "2026-09-15T03:00:02+07:00",
+  "id_token": "",
+  "last_refresh": "2026-09-14T19:00:03+07:00",
+  "organization_name": "sasadairaseann@gmail.com's Organization",
+  "organization_uuid": "4d08d558-0b17-472c-a29a-39f88ba00b35",
+  "refresh_token": "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",
+  "type": "claude"
+}

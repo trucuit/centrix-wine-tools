@@ -19,11 +19,56 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 const VPS_AUTHS_DIR = path.join(ROOT_DIR, "vps-auths");
 
 const FILES = {
-  codex: "codex-341d52a7-chatgpt57@23ww.onmicrosoft.com-self-serve-business-prolite.json",
+  codex: "codex-341d52a7-ChatGPT34@23ww.onmicrosoft.com-self-serve-business-prolite.json",
   claude: "claude-sasadairaseann@gmail.com.json",
   antigravity: "antigravity-laurienbuny2568@gmail.com.json",
   xai: "xai-codecentrix1@signs.onmicrosoft.com.json",
 };
+
+function getAuthFile(type, defaultFile) {
+  try {
+    const list = fs.readdirSync(VPS_AUTHS_DIR)
+      .filter((f) => f.startsWith(`${type}-`) && f.endsWith(".json"))
+      .map((f) => {
+        let timeVal = 0;
+        try {
+          const content = JSON.parse(fs.readFileSync(path.join(VPS_AUTHS_DIR, f), "utf8"));
+          if (content.last_refresh) timeVal = new Date(content.last_refresh).getTime();
+          else if (content.expired) timeVal = new Date(content.expired).getTime();
+        } catch {}
+        return { name: f, timeVal };
+      })
+      .sort((a, b) => b.timeVal - a.timeVal);
+    if (list.length > 0 && list[0].timeVal > 0) return list[0].name;
+  } catch {}
+  return defaultFile;
+}
+
+function resolveVpsConfig() {
+  let pass = process.env.VPS_AUTH_PASS || process.env.CENTRIX_VPS_PASS || "";
+  if (!pass) {
+    const passFile = path.join(ROOT_DIR, ".centrix-vps-pass");
+    if (fs.existsSync(passFile)) {
+      pass = fs.readFileSync(passFile, "utf8").trim();
+    }
+  }
+  if (!pass) {
+    const backendEnv = path.join(ROOT_DIR, "centrix-backend/.env");
+    if (fs.existsSync(backendEnv)) {
+      const m = fs.readFileSync(backendEnv, "utf8").match(/^CENTRIX_VPS_PASS=(.*)$/m);
+      if (m) pass = m[1].trim();
+    }
+  }
+  if (!pass) {
+    pass = "CentriX@890020";
+  }
+  return {
+    host: process.env.VPS_AUTH_HOST || "163.223.224.240",
+    user: process.env.VPS_AUTH_USER || "root",
+    pass,
+    remoteDir: process.env.VPS_AUTH_REMOTE_DIR || "/root/CLIProxyAPI/auths",
+  };
+}
 
 function backupFile(targetPath) {
   if (fs.existsSync(targetPath)) {
@@ -35,11 +80,83 @@ function backupFile(targetPath) {
 }
 
 // ============================================================================
+// 0. DOWNLOAD AUTHS FROM VPS
+// ============================================================================
+async function downloadFromVps() {
+  const vps = resolveVpsConfig();
+  console.log(`\n📥 [VPS] Đang tải thông tin xác thực từ ${vps.user}@${vps.host}:${vps.remoteDir}...`);
+  fs.mkdirSync(VPS_AUTHS_DIR, { recursive: true });
+
+  // Dọn dẹp toàn bộ file .json cũ trước khi tải mới
+  const oldFiles = fs.readdirSync(VPS_AUTHS_DIR).filter((f) => f.endsWith(".json"));
+  if (oldFiles.length > 0) {
+    for (const f of oldFiles) {
+      try {
+        fs.unlinkSync(path.join(VPS_AUTHS_DIR, f));
+      } catch (_) {}
+    }
+    console.log(`  🗑️  Đã dọn dẹp ${oldFiles.length} file .json cũ trong vps-auths/`);
+  }
+
+  let hasSshpass = false;
+  try {
+    execSync("which sshpass", { stdio: "ignore" });
+    hasSshpass = true;
+  } catch {}
+
+  const target = `${vps.user}@${vps.host}`;
+  let cmd = "";
+
+  if (hasSshpass) {
+    cmd = `sshpass -p ${JSON.stringify(vps.pass)} scp -o StrictHostKeyChecking=accept-new -o PubkeyAuthentication=no "${target}:${vps.remoteDir}/*.json" "${VPS_AUTHS_DIR}/"`;
+  } else {
+    cmd = `CENTRIX_SCP_REMOTE="${target}:${vps.remoteDir}/*.json" CENTRIX_SCP_LOCAL="${VPS_AUTHS_DIR}/" CENTRIX_SCP_PASS="${vps.pass}" expect <<'EOF'
+set timeout 180
+set password $env(CENTRIX_SCP_PASS)
+set remote $env(CENTRIX_SCP_REMOTE)
+set local $env(CENTRIX_SCP_LOCAL)
+spawn scp -o StrictHostKeyChecking=accept-new -o PubkeyAuthentication=no $remote $local
+expect {
+  -re "(?i)are you sure you want to continue connecting" { send "yes\\r"; exp_continue }
+  -re "(?i)password:" { send "$password\\r" }
+  timeout { puts stderr "TIMEOUT scp auth"; exit 1 }
+}
+expect {
+  -re "(?i)permission denied" { puts stderr "AUTH_FAILED"; exit 2 }
+  -re "(?i)no such file" { puts stderr "NOT_FOUND"; exit 3 }
+  eof {}
+  timeout { puts stderr "SCP TRANSFER TIMEOUT"; exit 1 }
+}
+catch wait result
+set code [lindex $result 3]
+if {$code == ""} { set code 0 }
+exit $code
+EOF`;
+  }
+
+  try {
+    execSync(cmd, { stdio: "pipe", shell: "/bin/bash" });
+    const downloadedFiles = fs.readdirSync(VPS_AUTHS_DIR).filter((f) => f.endsWith(".json"));
+    console.log(`  🎉 Đã tải thành công ${downloadedFiles.length} file xác thực từ VPS về: ${VPS_AUTHS_DIR}`);
+    for (const f of downloadedFiles) {
+      const p = path.join(VPS_AUTHS_DIR, f);
+      const st = fs.statSync(p);
+      console.log(`  ✓ ${f.padEnd(55)} (${st.size} bytes)`);
+    }
+    return true;
+  } catch (err) {
+    console.error(`  ❌ Lỗi khi tải từ VPS: ${err.message}`);
+    return false;
+  }
+}
+
+// ============================================================================
 // 1. IMPORT CODEX
 // ============================================================================
 async function importCodex() {
   console.log("\n📦 [1/4] Đang import Codex CLI auth...");
-  const src = path.join(VPS_AUTHS_DIR, FILES.codex);
+  const filename = getAuthFile("codex", FILES.codex);
+  const src = path.join(VPS_AUTHS_DIR, filename);
   if (!fs.existsSync(src)) {
     console.error(`❌ Không tìm thấy: ${src}`);
     return false;
@@ -109,7 +226,8 @@ async function importCodex() {
 // ============================================================================
 async function importClaude() {
   console.log("\n📦 [2/4] Đang import Claude auth...");
-  const src = path.join(VPS_AUTHS_DIR, FILES.claude);
+  const filename = getAuthFile("claude", FILES.claude);
+  const src = path.join(VPS_AUTHS_DIR, filename);
   if (!fs.existsSync(src)) {
     console.error(`❌ Không tìm thấy: ${src}`);
     return false;
@@ -180,8 +298,17 @@ async function importClaude() {
 
   // 4. Verify CLI login
   try {
-    const testOut = execSync('claude -p "ping" < /dev/null 2>&1', { encoding: "utf8", timeout: 15000 }).trim();
-    console.log(`  🎉 Kiểm tra Claude Code CLI thành công: "${testOut.slice(0, 50)}..."`);
+    const testOut = execSync("claude auth status 2>&1", { encoding: "utf8", timeout: 5000 }).trim();
+    try {
+      const parsed = JSON.parse(testOut);
+      if (parsed.loggedIn) {
+        console.log(`  🎉 Trạng thái Claude Code CLI: Đã đăng nhập (${parsed.subscriptionType || "active"}, Org: ${parsed.orgName || parsed.orgId || "OK"})`);
+      } else {
+        console.log(`  ⚠ Trạng thái Claude Code CLI: Chưa đăng nhập`);
+      }
+    } catch {
+      console.log(`  🎉 Đã kích hoạt chứng thực Claude cho tài khoản: ${raw.email}`);
+    }
   } catch (err) {
     console.log(`  🎉 Đã kích hoạt chứng thực Claude cho tài khoản: ${raw.email}`);
   }
@@ -194,7 +321,8 @@ async function importClaude() {
 // ============================================================================
 async function importAntigravity() {
   console.log("\n📦 [3/4] Đang import Antigravity OAuth...");
-  const src = path.join(VPS_AUTHS_DIR, FILES.antigravity);
+  const filename = getAuthFile("antigravity", FILES.antigravity);
+  const src = path.join(VPS_AUTHS_DIR, filename);
   if (!fs.existsSync(src)) {
     console.error(`❌ Không tìm thấy: ${src}`);
     return false;
@@ -230,7 +358,8 @@ async function importAntigravity() {
 // ============================================================================
 async function importXai() {
   console.log("\n📦 [4/4] Đang import xAI / Grok CLI auth...");
-  const src = path.join(VPS_AUTHS_DIR, FILES.xai);
+  const filename = getAuthFile("xai", FILES.xai);
+  const src = path.join(VPS_AUTHS_DIR, filename);
   if (!fs.existsSync(src)) {
     console.error(`❌ Không tìm thấy: ${src}`);
     return false;
@@ -317,15 +446,35 @@ async function runAll() {
   console.log("\n✨ Hoàn tất import toàn bộ chứng thực!");
 }
 
+function getEmailFromAuth(type, defaultFile, fallbackEmail) {
+  try {
+    const filename = getAuthFile(type, defaultFile);
+    const p = path.join(VPS_AUTHS_DIR, filename);
+    if (fs.existsSync(p)) {
+      const data = JSON.parse(fs.readFileSync(p, "utf8"));
+      return data.email || fallbackEmail;
+    }
+  } catch {}
+  return fallbackEmail;
+}
+
 async function interactiveMenu() {
+  const codexEmail = getEmailFromAuth("codex", FILES.codex, "ChatGPT34@23ww.onmicrosoft.com");
+  const claudeEmail = getEmailFromAuth("claude", FILES.claude, "sasadairaseann@gmail.com");
+  const geminiEmail = getEmailFromAuth("antigravity", FILES.antigravity, "laurienbuny2568@gmail.com");
+  const xaiEmail = getEmailFromAuth("xai", FILES.xai, "codecentrix1@signs.onmicrosoft.com");
+
   console.log(`
 ╔════════════════════════════════════════════════════════════╗
 ║             CENTRIX VPS-AUTHS IMPORT TO MAC                ║
 ╠════════════════════════════════════════════════════════════╣
-║  [1] Codex CLI     (chatgpt57@23ww.onmicrosoft.com)        ║
-║  [2] Claude        (sasadairaseann@gmail.com)              ║
-║  [3] Antigravity   (laurienbuny2568@gmail.com)             ║
-║  [4] xAI / Grok    (codecentrix1@signs.onmicrosoft.com)    ║
+║  [d] Tải auths mới nhất từ VPS (Download from VPS)         ║
+║  [s] Sync (Download từ VPS + Import tất cả)                ║
+║────────────────────────────────────────────────────────────║
+║  [1] Codex CLI     (${codexEmail.padEnd(35)})║
+║  [2] Claude        (${claudeEmail.padEnd(35)})║
+║  [3] Antigravity   (${geminiEmail.padEnd(35)})║
+║  [4] xAI / Grok    (${xaiEmail.padEnd(35)})║
 ║  [5] Import TẤT CẢ (All Services)                          ║
 ║  [q] Thoát                                                 ║
 ╚════════════════════════════════════════════════════════════╝
@@ -337,12 +486,23 @@ async function interactiveMenu() {
   });
 
   const answer = await new Promise((resolve) => {
-    rl.question("👉 Nhập lựa chọn của bạn [1-5/q]: ", resolve);
+    rl.question("👉 Nhập lựa chọn của bạn [d/s/1-5/q]: ", resolve);
   });
   rl.close();
 
   const choice = String(answer || "").trim().toLowerCase();
   switch (choice) {
+    case "d":
+    case "download":
+    case "pull":
+      await downloadFromVps();
+      break;
+    case "s":
+    case "sync":
+      if (await downloadFromVps()) {
+        await runAll();
+      }
+      break;
     case "1":
     case "codex":
       await importCodex();
@@ -383,14 +543,18 @@ async function main() {
     return;
   }
 
-  if (arg === "codex" || arg === "1") await importCodex();
+  if (arg === "download" || arg === "pull" || arg === "d") await downloadFromVps();
+  else if (arg === "sync" || arg === "s") {
+    if (await downloadFromVps()) await runAll();
+  }
+  else if (arg === "codex" || arg === "1") await importCodex();
   else if (arg === "claude" || arg === "2") await importClaude();
   else if (arg === "antigravity" || arg === "gemini" || arg === "3") await importAntigravity();
   else if (arg === "xai" || arg === "grok" || arg === "4") await importXai();
   else if (arg === "all" || arg === "5") await runAll();
   else {
     console.log(`Lựa chọn không rõ: ${arg}`);
-    console.log("Sử dụng: ./import-vps-auths.sh [codex|claude|antigravity|xai|all]");
+    console.log("Sử dụng: ./import.sh [download|sync|codex|claude|antigravity|xai|all]");
   }
 }
 

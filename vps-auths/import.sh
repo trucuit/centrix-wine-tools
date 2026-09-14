@@ -5,6 +5,8 @@
 #
 # Cách dùng:
 #   ./import.sh              # Menu tương tác chọn dịch vụ cần import
+#   ./import.sh download     # Tải (sync) auths mới nhất từ VPS về vps-auths/
+#   ./import.sh sync         # Tải từ VPS và import tất cả dịch vụ ngay lập tức
 #   ./import.sh codex        # Import Codex CLI
 #   ./import.sh claude       # Import Claude
 #   ./import.sh antigravity  # Import Antigravity

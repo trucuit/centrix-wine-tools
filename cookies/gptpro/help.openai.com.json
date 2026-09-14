@@ -1,26 +1,28 @@
 [
   {
-    "name": "oai-did",
-    "value": "f84dbbb9-504b-40f6-b33a-d7f3213850c8",
     "domain": "help.openai.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": false,
-    "sameSite": "lax",
     "expirationDate": 1820125189.301226,
     "hostOnly": true,
-    "session": false
+    "httpOnly": false,
+    "name": "oai-did",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "f84dbbb9-504b-40f6-b33a-d7f3213850c8"
   },
   {
-    "name": "__session",
-    "value": "eyJzZXNzaW9uSWQiOiIzZjM2MTVhMS01MmYxLTRjOTgtOGYyMC05NWFjZDI4Y2E2ODcifQ%3D%3D.MKmA8%2F%2B1o5WV4JRww3kNa5TvRJumQmJxiB9ANPSlL8U",
     "domain": "help.openai.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "lax",
     "expirationDate": 1820125188.59216,
     "hostOnly": true,
-    "session": false
+    "httpOnly": true,
+    "name": "__session",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "eyJzZXNzaW9uSWQiOiIzZjM2MTVhMS01MmYxLTRjOTgtOGYyMC05NWFjZDI4Y2E2ODcifQ%3D%3D.MKmA8%2F%2B1o5WV4JRww3kNa5TvRJumQmJxiB9ANPSlL8U"
   }
 ]

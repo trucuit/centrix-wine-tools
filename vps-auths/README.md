@@ -27,15 +27,23 @@ Thư mục chứa các file thông tin xác thực từ VPS và các script impo
 Tất cả các script thực thi đều nằm ngay trong thư mục này:
 
 ```bash
-# 1. Chạy menu tương tác (chọn 1..5)
+# 1. Tải (sync) các file auth mới nhất từ VPS (163.223.224.240):
+./vps-auths/download.sh
+# Hoặc:
+./vps-auths/import.sh download
+
+# 2. Tải từ VPS và tự động import tất cả:
+./vps-auths/import.sh sync
+
+# 3. Chạy menu tương tác (chọn tải từ VPS hoặc import từng dịch vụ):
 ./vps-auths/import.sh
 
-# 2. Hoặc import từng dịch vụ cụ thể:
+# 4. Hoặc import từng dịch vụ cụ thể:
 ./vps-auths/import-codex.sh
 ./vps-auths/import-claude.sh
 ./vps-auths/import-antigravity.sh
 ./vps-auths/import-xai.sh
 
-# 3. Hoặc import tất cả 4 tài khoản cùng một lúc:
+# 5. Hoặc import tất cả tài khoản cùng một lúc từ file hiện có:
 ./vps-auths/import-all.sh
 ```
