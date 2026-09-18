@@ -25,23 +25,72 @@ const FILES = {
   xai: "xai-codecentrix1@signs.onmicrosoft.com.json",
 };
 
-function getAuthFile(type, defaultFile) {
+function listAuthFiles(type) {
   try {
-    const list = fs.readdirSync(VPS_AUTHS_DIR)
+    return fs.readdirSync(VPS_AUTHS_DIR)
       .filter((f) => f.startsWith(`${type}-`) && f.endsWith(".json"))
       .map((f) => {
         let timeVal = 0;
+        let email = "";
+        let extra = "";
         try {
           const content = JSON.parse(fs.readFileSync(path.join(VPS_AUTHS_DIR, f), "utf8"));
+          email = content.email || "";
           if (content.last_refresh) timeVal = new Date(content.last_refresh).getTime();
           else if (content.expired) timeVal = new Date(content.expired).getTime();
+          // Extract plan/team info from filename for display
+          const parts = f.replace(/\.json$/, "").split("-");
+          if (parts.length > 2) extra = parts.slice(2).join("-");
         } catch {}
-        return { name: f, timeVal };
+        return { name: f, timeVal, email, extra };
       })
       .sort((a, b) => b.timeVal - a.timeVal);
-    if (list.length > 0 && list[0].timeVal > 0) return list[0].name;
   } catch {}
+  return [];
+}
+
+function getAuthFile(type, defaultFile) {
+  const list = listAuthFiles(type);
+  if (list.length > 0 && list[0].timeVal > 0) return list[0].name;
   return defaultFile;
+}
+
+async function selectAuthFile(type, defaultFile) {
+  const list = listAuthFiles(type);
+
+  // 0 or 1 profile → no need to prompt
+  if (list.length <= 1) {
+    return list.length === 1 ? list[0].name : defaultFile;
+  }
+
+  // Multiple profiles → show interactive menu
+  console.log(`\n  📋 Tìm thấy ${list.length} profile cho "${type}":`);
+  list.forEach((item, idx) => {
+    const label = item.email || item.extra || item.name;
+    const date = item.timeVal ? new Date(item.timeVal).toLocaleString("vi-VN") : "N/A";
+    const marker = idx === 0 ? " ← mới nhất" : "";
+    console.log(`     [${idx + 1}] ${label}  (${date})${marker}`);
+  });
+
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  const answer = await new Promise((resolve) => {
+    rl.question(`  👉 Chọn profile [1-${list.length}] (Enter = 1): `, resolve);
+  });
+  rl.close();
+
+  const choice = parseInt(answer.trim(), 10);
+  if (choice >= 1 && choice <= list.length) {
+    console.log(`  ✓ Đã chọn: ${list[choice - 1].email || list[choice - 1].name}`);
+    return list[choice - 1].name;
+  }
+
+  // Default to newest
+  console.log(`  ✓ Mặc định chọn profile mới nhất: ${list[0].email || list[0].name}`);
+  return list[0].name;
 }
 
 function resolveVpsConfig() {
@@ -155,7 +204,7 @@ EOF`;
 // ============================================================================
 async function importCodex() {
   console.log("\n📦 [1/4] Đang import Codex CLI auth...");
-  const filename = getAuthFile("codex", FILES.codex);
+  const filename = await selectAuthFile("codex", FILES.codex);
   const src = path.join(VPS_AUTHS_DIR, filename);
   if (!fs.existsSync(src)) {
     console.error(`❌ Không tìm thấy: ${src}`);
@@ -226,7 +275,7 @@ async function importCodex() {
 // ============================================================================
 async function importClaude() {
   console.log("\n📦 [2/4] Đang import Claude auth...");
-  const filename = getAuthFile("claude", FILES.claude);
+  const filename = await selectAuthFile("claude", FILES.claude);
   const src = path.join(VPS_AUTHS_DIR, filename);
   if (!fs.existsSync(src)) {
     console.error(`❌ Không tìm thấy: ${src}`);
@@ -321,7 +370,7 @@ async function importClaude() {
 // ============================================================================
 async function importAntigravity() {
   console.log("\n📦 [3/4] Đang import Antigravity OAuth...");
-  const filename = getAuthFile("antigravity", FILES.antigravity);
+  const filename = await selectAuthFile("antigravity", FILES.antigravity);
   const src = path.join(VPS_AUTHS_DIR, filename);
   if (!fs.existsSync(src)) {
     console.error(`❌ Không tìm thấy: ${src}`);
@@ -358,7 +407,7 @@ async function importAntigravity() {
 // ============================================================================
 async function importXai() {
   console.log("\n📦 [4/4] Đang import xAI / Grok CLI auth...");
-  const filename = getAuthFile("xai", FILES.xai);
+  const filename = await selectAuthFile("xai", FILES.xai);
   const src = path.join(VPS_AUTHS_DIR, filename);
   if (!fs.existsSync(src)) {
     console.error(`❌ Không tìm thấy: ${src}`);
