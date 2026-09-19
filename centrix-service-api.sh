@@ -25,7 +25,7 @@ SCRIPT_PATH="${0:A}"
 SCRIPT_DIR="${SCRIPT_PATH:h}"
 
 # Chia sẻ session + output với export-centrix-api.sh (v2 flow) nên chỉ cần login một lần.
-export CENTRIX_APP_VERSION="${CENTRIX_APP_VERSION:-0.1.391}"
+export CENTRIX_APP_VERSION="${CENTRIX_APP_VERSION:-0.1.459}"
 export CENTRIX_V2_API_URL="${CENTRIX_V2_API_URL:-https://api.cetrix.app}"
 export CENTRIX_V2_SESSION="${CENTRIX_V2_SESSION:-$SCRIPT_DIR/.cetrix-session.json}"
 export CENTRIX_OUT_DIR="${CENTRIX_OUT_DIR:-$SCRIPT_DIR/cookies}"
@@ -140,7 +140,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 const API_BASE = String(process.env.CENTRIX_V2_API_URL || "https://api.cetrix.app").trim().replace(/\/+$/, "");
-const APP_VERSION = String(process.env.CENTRIX_APP_VERSION || "0.1.391").trim();
+const APP_VERSION = String(process.env.CENTRIX_APP_VERSION || "0.1.459").trim();
 const SESSION_FILE = process.env.CENTRIX_V2_SESSION;
 const OUT_DIR = process.env.CENTRIX_OUT_DIR;
 const cmd = process.argv[2] || "info";
@@ -225,6 +225,54 @@ function getDeviceIdentity() {
   if (!rawMachineId) rawMachineId = require("os").hostname() || "centrix-cli";
   const deviceIdHash = crypto.createHash("sha256").update(rawMachineId, "utf8").digest("hex");
 
+  // ── Priority 1: read device key from CentriX desktop app (same key the server knows) ──
+  const DESKTOP_APP_SECRET = "centrix-managed-device-key-v1";
+  const desktopKeyPaths = [];
+  if (process.platform === "darwin") {
+    const home = require("os").homedir();
+    desktopKeyPaths.push(
+      path.join(home, "Library/Application Support/centrix-ai-frontend/device-key.json"),
+      path.join(home, "Library/Application Support/CentriX/device-key.json")
+    );
+  } else if (process.platform === "win32") {
+    const appData = process.env.APPDATA || "";
+    if (appData) {
+      desktopKeyPaths.push(
+        path.join(appData, "centrix-ai-frontend/device-key.json"),
+        path.join(appData, "CentriX/device-key.json")
+      );
+    }
+  }
+  for (const dkPath of desktopKeyPaths) {
+    try {
+      if (!fs.existsSync(dkPath)) continue;
+      const dkData = JSON.parse(fs.readFileSync(dkPath, "utf8"));
+      if (dkData.v === 1 && dkData.publicKey && dkData.privateKey?.v === 1) {
+        // Decrypt private key using HKDF(machineId + app secret) — same as managed-device-key.cjs
+        const wrapKey = Buffer.from(crypto.hkdfSync(
+          "sha256",
+          Buffer.from(`${rawMachineId}:${DESKTOP_APP_SECRET}`, "utf8"),
+          Buffer.alloc(0),
+          "centrix-device-key-wrap",
+          32
+        ));
+        const decipher = crypto.createDecipheriv(
+          "aes-256-gcm", wrapKey,
+          Buffer.from(String(dkData.privateKey.iv || ""), "base64")
+        );
+        decipher.setAuthTag(Buffer.from(String(dkData.privateKey.tag || ""), "base64"));
+        const pkcs8 = Buffer.concat([
+          decipher.update(Buffer.from(String(dkData.privateKey.data || ""), "base64")),
+          decipher.final()
+        ]);
+        const privateKey = crypto.createPrivateKey({ key: pkcs8, type: "pkcs8", format: "der" });
+        deviceIdentity = { deviceIdHash, publicKeySpkiBase64: dkData.publicKey, privateKey };
+        return deviceIdentity;
+      }
+    } catch (_) {}
+  }
+
+  // ── Priority 2: standalone CLI key file (old behavior) ──
   const keyFile = path.join(path.dirname(SESSION_FILE), ".centrix-device-key.json");
   try {
     if (fs.existsSync(keyFile)) {
