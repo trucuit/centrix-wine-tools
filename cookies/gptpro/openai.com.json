@@ -1,54 +1,38 @@
 [
   {
-    "domain": ".openai.com",
-    "expirationDate": 1820732090.97265,
-    "hostOnly": false,
-    "httpOnly": false,
     "name": "oai-did",
+    "value": "d8b597d4-e2e8-486f-84d5-1b67b9b8f574",
+    "domain": ".openai.com",
     "path": "/",
-    "sameSite": "lax",
     "secure": false,
-    "session": false,
-    "storeId": "0",
-    "value": "f84dbbb9-504b-40f6-b33a-d7f3213850c8"
-  },
-  {
-    "domain": ".openai.com",
-    "expirationDate": 1820732090.972707,
-    "hostOnly": false,
     "httpOnly": false,
-    "name": "oaicom-stable-id",
-    "path": "/",
     "sameSite": "lax",
-    "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "e625087f-40ac-4d0a-bcb4-d9ead50b95f3"
+    "expirationDate": 1821397506.055607,
+    "hostOnly": false,
+    "session": false
   },
   {
+    "name": "oaicom-stable-id",
+    "value": "e818547f-fd9b-41cd-a031-c057aba68af9",
     "domain": ".openai.com",
-    "expirationDate": 1823157144.000042,
-    "hostOnly": false,
-    "httpOnly": true,
-    "name": "_cfuvid",
     "path": "/",
-    "sameSite": "no_restriction",
     "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "cEGERLuVDbWq5hrRzfW_CNzcNb1HWZgv4zCWYF71rj0-1788589188.68304-1.0.1.1-uId84GHzmIF4UFaTq4kRPgH49Yw7EI_zL35Lb7DGYTk"
-  },
-  {
-    "domain": ".openai.com",
-    "expirationDate": 1820732098.97789,
-    "hostOnly": false,
     "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1821397506.055663,
+    "hostOnly": false,
+    "session": false
+  },
+  {
     "name": "oai-sc",
+    "value": "0gAAAAABqrx6OMh_fSZdbKuG0ljERWcEGykQHTj2vkzi5dqYdCHOwslerKYnCezmLBCXgV7uc5X4AeQitCFwO7DqO65qaPGmt7fM4qh-UXpLUlS7yKbhHf2G3gr6HlqR-fGOKyr1DIC-B_mxtTp9r7aY5EkynuYIK3NRcWKmQZPYYOOoh8eYb6wkyfm3uKJKe3j7DHv-IMuJdzQVFtNjy5uGAMdQGOCXjUb7ZM7eoFa1HbWYOirb_aXfNrOVDE5BjsX8ZiOkUnpqN",
+    "domain": ".openai.com",
     "path": "/",
-    "sameSite": "no_restriction",
     "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "0gAAAAABqpPdDZAzKyG9PkMn6VtkagZZ0x2x6xrvD9Z8QvwfNL-jtroCY514XoIOfl-l3YGquOZmCefSuGWzwYK17iC35dR3w3LmtFoePmFbFlbHVu48yHeE7Ay9AeXB2VW9q52lMJGNMe6ND_QBMC37Id0H6PPYX8MLIpGPfJPf5PY0dKYTsVAOIvjza8__P3OCQHLX8YfdL4Za2vtql6enl0wYllObgJ44wXI1oWa-KfAuqZko4nZm8XeFQZk5N-SpDJmcX20ad"
+    "httpOnly": false,
+    "sameSite": "no_restriction",
+    "expirationDate": 1821397516.634693,
+    "hostOnly": false,
+    "session": false
   }
 ]

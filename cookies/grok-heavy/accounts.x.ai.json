@@ -79,7 +79,7 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1789898519.513089,
+    "expirationDate": 1790477041.426836,
     "hostOnly": true,
     "session": false
   },
@@ -91,7 +91,19 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1789380119.512787,
+    "expirationDate": 1789958641.42653,
+    "hostOnly": true,
+    "session": false
+  },
+  {
+    "name": "mp_0b4055a12491884bcb6f34a5aa2718b6_mixpanel",
+    "value": "%7B%22distinct_id%22%3A%22%24device%3A198ef93f-7748-4ec9-944b-4723e3a7dda3%22%2C%22%24device_id%22%3A%22198ef93f-7748-4ec9-944b-4723e3a7dda3%22%7D",
+    "domain": "accounts.x.ai",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1821110190.986987,
     "hostOnly": true,
     "session": false
   }

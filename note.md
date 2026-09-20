@@ -18,6 +18,14 @@ root 163.223.224.240
 
 CentriX@890020 login vps
 
+==
+
+ssh admin-centrix@118.69.40.114
+
+Mật khẩu: Centrix1608@
+
+VPS CentriX
+
 ====
 
 https://admin.centrix.software/login
@@ -48,3 +56,7 @@ centrix-backend/.env
    Master Token:
    text
    cxm_2820cd066030366f3b304a17cb86531dcb9c1b38aec2fde7a78d884c12e586ae
+
+   ==
+
+   [api-proxy.centrix.asia/management.html#/oauth](https://api-proxy.centrix.asia/management.html#/oauth)

@@ -237,7 +237,7 @@
     "secure": true,
     "httpOnly": false,
     "sameSite": "no_restriction",
-    "expirationDate": 1791885970
+    "expirationDate": 1792488333
   },
   {
     "name": "OptanonAlertBoxClosed",
@@ -307,7 +307,7 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1789898519.513089
+    "expirationDate": 1790477041.426836
   },
   {
     "name": "redirect",
@@ -317,26 +317,16 @@
     "secure": true,
     "httpOnly": true,
     "sameSite": "lax",
-    "expirationDate": 1789380119.512787
+    "expirationDate": 1789958641.42653
   },
   {
-    "name": "__cf_bm",
-    "value": "I_WBffL_nWq019q8x6m2PM1E_MmUMhnYEXtZd4ln0B4-1789293718.5733778-1.0.1.1-iGS0Vzi7yKnUx6BQyGfYlBa4kIp1gqipXqPwYiuAcNW_M_.UvvnD7cPMoXRlnLTQv.FiP5NDZ7_.vinBvLHRrazgHNk6zSNmUzzQ4D39dxTnVJpFP8yzufMHFMlxygdk",
-    "domain": ".grok.com",
+    "name": "mp_0b4055a12491884bcb6f34a5aa2718b6_mixpanel",
+    "value": "%7B%22distinct_id%22%3A%22%24device%3A198ef93f-7748-4ec9-944b-4723e3a7dda3%22%2C%22%24device_id%22%3A%22198ef93f-7748-4ec9-944b-4723e3a7dda3%22%7D",
+    "domain": "accounts.x.ai",
     "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1789295518.419779
-  },
-  {
-    "name": "__cf_bm",
-    "value": "cUH7Dl7S8_AOFOw4lcCy82rEhUi8.TjS8bSmu4gck_0-1789293719.4241488-1.0.1.1-HooGFD8hZawoFy6E6bLQx7WjhJkuuZnecb.TbQ7Ghb5vmBEvpMmP41bMgV48yJ0ynkgnqIfV3A2TvNnRmQ_ZpztsJyBZ2fz._T2B6OpnwdqqJWHAeV.EQMeD.oFzJV2y",
-    "domain": ".x.ai",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1789295519.513195
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "lax",
+    "expirationDate": 1821110190.986987
   }
 ]

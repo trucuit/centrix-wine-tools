@@ -25,6 +25,10 @@ SCRIPT_PATH="${0:A}"
 SCRIPT_DIR="${SCRIPT_PATH:h}"
 
 # Chia sẻ session + output với export-centrix-api.sh (v2 flow) nên chỉ cần login một lần.
+if [[ -f "$SCRIPT_DIR/.centrix-env" ]]; then
+  source "$SCRIPT_DIR/.centrix-env" 2>/dev/null || true
+fi
+export WINEPREFIX="${WINEPREFIX:-$SCRIPT_DIR/wine-prefix-centrix}"
 export CENTRIX_APP_VERSION="${CENTRIX_APP_VERSION:-0.1.459}"
 export CENTRIX_V2_API_URL="${CENTRIX_V2_API_URL:-https://api.cetrix.app}"
 export CENTRIX_V2_SESSION="${CENTRIX_V2_SESSION:-$SCRIPT_DIR/.cetrix-session.json}"
@@ -210,6 +214,73 @@ async function getAccessToken() {
 let deviceIdentity = null;
 function getDeviceIdentity() {
   if (deviceIdentity) return deviceIdentity;
+  const DESKTOP_APP_SECRET = "centrix-managed-device-key-v1";
+
+  // ── Priority 1: Wine prefix (CentriX running under Wine on macOS / Linux) ──
+  const winePrefixCandidates = [
+    process.env.WINEPREFIX,
+    path.join(path.dirname(SESSION_FILE), "wine-prefix-centrix"),
+  ].filter(Boolean);
+
+  for (const wp of winePrefixCandidates) {
+    const regPath = path.join(wp, "system.reg");
+    if (!fs.existsSync(regPath)) continue;
+
+    let wineMachineId = "";
+    try {
+      const regContent = fs.readFileSync(regPath, "utf8");
+      const m = /"MachineGuid"\s*=\s*"([^"]+)"/i.exec(regContent);
+      if (m) wineMachineId = m[1].trim();
+    } catch (_) {}
+    if (!wineMachineId) continue;
+
+    const usersDir = path.join(wp, "drive_c/users");
+    const keyPaths = [];
+    if (fs.existsSync(usersDir)) {
+      try {
+        const users = fs.readdirSync(usersDir);
+        for (const u of users) {
+          keyPaths.push(
+            path.join(usersDir, u, "AppData/Roaming/centrix-ai-frontend/device-key.json"),
+            path.join(usersDir, u, "AppData/Roaming/CentriX/device-key.json"),
+            path.join(usersDir, u, "AppData/Local/centrix-ai-frontend/device-key.json"),
+            path.join(usersDir, u, "AppData/Local/CentriX/device-key.json")
+          );
+        }
+      } catch (_) {}
+    }
+
+    for (const dkPath of keyPaths) {
+      try {
+        if (!fs.existsSync(dkPath)) continue;
+        const dkData = JSON.parse(fs.readFileSync(dkPath, "utf8"));
+        if (dkData.v === 1 && dkData.publicKey && dkData.privateKey?.v === 1) {
+          const wrapKey = Buffer.from(crypto.hkdfSync(
+            "sha256",
+            Buffer.from(`${wineMachineId}:${DESKTOP_APP_SECRET}`, "utf8"),
+            Buffer.alloc(0),
+            "centrix-device-key-wrap",
+            32
+          ));
+          const decipher = crypto.createDecipheriv(
+            "aes-256-gcm", wrapKey,
+            Buffer.from(String(dkData.privateKey.iv || ""), "base64")
+          );
+          decipher.setAuthTag(Buffer.from(String(dkData.privateKey.tag || ""), "base64"));
+          const pkcs8 = Buffer.concat([
+            decipher.update(Buffer.from(String(dkData.privateKey.data || ""), "base64")),
+            decipher.final()
+          ]);
+          const privateKey = crypto.createPrivateKey({ key: pkcs8, type: "pkcs8", format: "der" });
+          const deviceIdHash = crypto.createHash("sha256").update(wineMachineId, "utf8").digest("hex");
+          deviceIdentity = { deviceIdHash, publicKeySpkiBase64: dkData.publicKey, privateKey };
+          return deviceIdentity;
+        }
+      } catch (_) {}
+    }
+  }
+
+  // ── Priority 2: read device key from CentriX desktop app (same key the server knows) ──
   let rawMachineId = "";
   try {
     if (process.platform === "darwin") {
@@ -225,8 +296,6 @@ function getDeviceIdentity() {
   if (!rawMachineId) rawMachineId = require("os").hostname() || "centrix-cli";
   const deviceIdHash = crypto.createHash("sha256").update(rawMachineId, "utf8").digest("hex");
 
-  // ── Priority 1: read device key from CentriX desktop app (same key the server knows) ──
-  const DESKTOP_APP_SECRET = "centrix-managed-device-key-v1";
   const desktopKeyPaths = [];
   if (process.platform === "darwin") {
     const home = require("os").homedir();

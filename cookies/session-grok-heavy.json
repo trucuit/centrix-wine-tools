@@ -1,8 +1,8 @@
 {
   "formatVersion": 1,
   "serviceId": "grok-heavy",
-  "capturedAt": "2026-09-13T10:02:20.144Z",
-  "origin": "https://accounts.x.ai",
+  "capturedAt": "2026-09-20T09:24:34.812Z",
+  "origin": "https://grok.com",
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.185 Safari/537.36",
   "fingerprint": {
     "gpu": {
@@ -463,7 +463,7 @@
       "secure": true,
       "httpOnly": true,
       "sameSite": "lax",
-      "expirationDate": 1789898519.513089,
+      "expirationDate": 1790477041.426836,
       "hostOnly": true,
       "session": false
     },
@@ -475,37 +475,23 @@
       "secure": true,
       "httpOnly": true,
       "sameSite": "lax",
-      "expirationDate": 1789380119.512787,
+      "expirationDate": 1789958641.42653,
       "hostOnly": true,
       "session": false
     },
     {
-      "name": "__cf_bm",
-      "value": "I_WBffL_nWq019q8x6m2PM1E_MmUMhnYEXtZd4ln0B4-1789293718.5733778-1.0.1.1-iGS0Vzi7yKnUx6BQyGfYlBa4kIp1gqipXqPwYiuAcNW_M_.UvvnD7cPMoXRlnLTQv.FiP5NDZ7_.vinBvLHRrazgHNk6zSNmUzzQ4D39dxTnVJpFP8yzufMHFMlxygdk",
-      "domain": ".grok.com",
+      "name": "mp_0b4055a12491884bcb6f34a5aa2718b6_mixpanel",
+      "value": "%7B%22distinct_id%22%3A%22%24device%3A198ef93f-7748-4ec9-944b-4723e3a7dda3%22%2C%22%24device_id%22%3A%22198ef93f-7748-4ec9-944b-4723e3a7dda3%22%7D",
+      "domain": "accounts.x.ai",
       "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "no_restriction",
-      "expirationDate": 1789295518.419779,
-      "hostOnly": false,
-      "session": false
-    },
-    {
-      "name": "__cf_bm",
-      "value": "cUH7Dl7S8_AOFOw4lcCy82rEhUi8.TjS8bSmu4gck_0-1789293719.4241488-1.0.1.1-HooGFD8hZawoFy6E6bLQx7WjhJkuuZnecb.TbQ7Ghb5vmBEvpMmP41bMgV48yJ0ynkgnqIfV3A2TvNnRmQ_ZpztsJyBZ2fz._T2B6OpnwdqqJWHAeV.EQMeD.oFzJV2y",
-      "domain": ".x.ai",
-      "path": "/",
-      "secure": true,
-      "httpOnly": true,
-      "sameSite": "no_restriction",
-      "expirationDate": 1789295519.513195,
-      "hostOnly": false,
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "lax",
+      "expirationDate": 1821110190.986987,
+      "hostOnly": true,
       "session": false
     }
   ],
-  "localStorage": {
-    "theme": "light"
-  },
+  "localStorage": {},
   "sessionStorage": {}
 }

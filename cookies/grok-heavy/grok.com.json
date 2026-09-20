@@ -177,17 +177,5 @@
     "expirationDate": 1820062957,
     "hostOnly": false,
     "session": false
-  },
-  {
-    "name": "__cf_bm",
-    "value": "I_WBffL_nWq019q8x6m2PM1E_MmUMhnYEXtZd4ln0B4-1789293718.5733778-1.0.1.1-iGS0Vzi7yKnUx6BQyGfYlBa4kIp1gqipXqPwYiuAcNW_M_.UvvnD7cPMoXRlnLTQv.FiP5NDZ7_.vinBvLHRrazgHNk6zSNmUzzQ4D39dxTnVJpFP8yzufMHFMlxygdk",
-    "domain": ".grok.com",
-    "path": "/",
-    "secure": true,
-    "httpOnly": true,
-    "sameSite": "no_restriction",
-    "expirationDate": 1789295518.419779,
-    "hostOnly": false,
-    "session": false
   }
 ]
