@@ -414,8 +414,8 @@ def fetch_conversation_details(
             manifest.parent.mkdir(parents=True, exist_ok=True)
             manifest.write_text(json.dumps(assets, indent=2, ensure_ascii=False), encoding="utf-8")
 
-        # Rate limit: safe delay between conversations
-        time.sleep(0.8)
+        # Rate limit: safe delay between conversations to stay under 40 req/min
+        time.sleep(1.5)
 
     return stats
 

@@ -58,9 +58,22 @@ main() {
 
   local ok=0 fail=0
   for f in "${auth_files[@]}"; do
-    if python3 "$SCRIPT_DIR/_fetch_chatgpt_data.py" "$f" "$DATA_DIR"; then
-      ((ok++)) || true
-    else
+    local attempt=1
+    local max_attempts=10
+    local success=0
+    while [[ $attempt -le $max_attempts ]]; do
+      echo -e "\033[36m🚀 [Lần $attempt/$max_attempts] Bắt đầu tải: $(basename "$f")...\033[0m"
+      if PYTHONUNBUFFERED=1 python3 -u "$SCRIPT_DIR/_fetch_chatgpt_data.py" "$f" "$DATA_DIR"; then
+        success=1
+        ((ok++)) || true
+        break
+      else
+        echo -e "\033[33m⚠️ Quá trình bị gián đoạn (Rate limit 429 / mạng). Chờ 30s cooldown và tiếp tục tải từ điểm dừng...\033[0m"
+        sleep 30
+        ((attempt++)) || true
+      fi
+    done
+    if [[ $success -eq 0 ]]; then
       ((fail++)) || true
     fi
   done
