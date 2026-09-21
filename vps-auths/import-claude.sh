@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # vps-auths/import-claude.sh
-# Import Claude credentials (sasadairaseann@gmail.com) into:
+# Import Claude credentials vào:
 #  1. Claude Code CLI (~/.claude.json, macOS Keychain, CLAUDE_CODE_OAUTH_TOKEN)
 #  2. Claude Desktop (/Applications/Claude.app via claude-auth/ tooling)
 # ==============================================================================
@@ -10,16 +10,21 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 CLAUDE_AUTH_DIR="$ROOT_DIR/claude-auth"
-AUTH_JSON="$SCRIPT_DIR/claude-sasadairaseann@gmail.com.json"
 
 echo "=========================================================="
 echo "📦 [1/2] Đang import Claude CLI credentials..."
 echo "=========================================================="
 
-if [ ! -f "$AUTH_JSON" ]; then
-  echo "❌ Không tìm thấy: $AUTH_JSON" >&2
+# Tìm file xác thực claude*.json mới nhất trong thư mục vps-auths
+AUTH_JSON=$(find "$SCRIPT_DIR" -maxdepth 1 -name "claude*.json" -type f | sort -r | head -n 1 || echo "")
+
+if [ -z "$AUTH_JSON" ] || [ ! -f "$AUTH_JSON" ]; then
+  echo "❌ Không tìm thấy file xác thực claude*.json nào trong: $SCRIPT_DIR" >&2
+  echo "👉 Vui lòng chạy: ./vps-auths/download.sh để tải từ VPS về trước." >&2
   exit 1
 fi
+
+echo "  ▸ Sử dụng file xác thực: $(basename "$AUTH_JSON")"
 
 node "$ROOT_DIR/scripts/import-vps-auths.mjs" claude "$@"
 
@@ -27,7 +32,6 @@ node "$ROOT_DIR/scripts/import-vps-auths.mjs" claude "$@"
 ACCESS_TOKEN=$(python3 -c "import json; print(json.load(open('$AUTH_JSON'))['access_token'])" 2>/dev/null || echo "")
 
 if [ -n "$ACCESS_TOKEN" ]; then
-  # Create a wrapper or convenience alias in ~/.zshrc or ~/.local/bin/claude-vps if needed
   mkdir -p "$HOME/.local/bin" 2>/dev/null || true
   cat <<WRAPPER > "$HOME/.local/bin/claude-vps"
 #!/usr/bin/env bash
@@ -45,39 +49,50 @@ echo "=========================================================="
 
 SYNC_SCRIPT="$CLAUDE_AUTH_DIR/sync_claude_desktop_auth.sh"
 
-# Check candidate cookie files that contain web sessionKey
-CANDIDATE=""
-for f in "$ROOT_DIR/cookies-claude.json" "$ROOT_DIR/cookies/claude/claude.ai.json" "$ROOT_DIR/cookies/claude/claude.json" "$HOME/Downloads/claude"*.json; do
+# Quét tìm file cookie web nào còn sống (live sessionKey)
+LIVE_COOKIE_FILE=""
+for f in "$ROOT_DIR/cookies/claude/"*.json "$HOME/Downloads/claude"*.json; do
   if [ -f "$f" ]; then
-    CANDIDATE="$f"
-    break
+    IS_VALID=$(python3 -c "
+import json, ssl, http.client
+try:
+    with open('$f') as fp: d = json.load(fp)
+    cookies = d if isinstance(d, list) else d.get('cookies', [])
+    cmap = {c['name']: c['value'] for c in cookies if isinstance(c, dict) and c.get('name') and c.get('value')}
+    if 'sessionKey' in cmap:
+        conn = http.client.HTTPSConnection('claude.ai', context=ssl.create_default_context(), timeout=5)
+        conn.request('GET', '/api/bootstrap', headers={'User-Agent': 'Mozilla/5.0', 'Cookie': 'sessionKey=' + cmap['sessionKey']})
+        res = json.loads(conn.getresponse().read().decode('utf-8', 'ignore'))
+        if res.get('account'): print('VALID')
+except: pass
+" 2>/dev/null || echo "")
+    if [ "$IS_VALID" = "VALID" ]; then
+      LIVE_COOKIE_FILE="$f"
+      break
+    fi
   fi
 done
 
-SYNCED=0
-if [ -n "$CANDIDATE" ] && [ -f "$SYNC_SCRIPT" ]; then
-  echo "  ▸ Tìm thấy file cookie ứng viên: $CANDIDATE"
-  echo "  ▸ Đang chạy sync qua claude-auth/sync_claude_desktop_auth.sh..."
-  if bash "$SYNC_SCRIPT" "$CANDIDATE" 2>&1; then
+if [ -n "$LIVE_COOKIE_FILE" ] && [ -f "$SYNC_SCRIPT" ]; then
+  echo "  ▸ Tìm thấy file cookie web còn sống: $(basename "$LIVE_COOKIE_FILE")"
+  echo "  ▸ Đang nạp vào Claude Desktop qua sync_claude_desktop_auth.sh..."
+  if bash "$SYNC_SCRIPT" "$LIVE_COOKIE_FILE"; then
     echo "  🎉 Đã đồng bộ thành công vào Claude Desktop!"
-    SYNCED=1
-  else
-    echo "  ⚠️  Cookie web trong file hiện tại đã hết hạn (expired)."
   fi
-fi
-
-if [ "$SYNCED" -eq 0 ]; then
+else
+  EMAIL=$(python3 -c "import json; print(json.load(open('$AUTH_JSON')).get('email', ''))" 2>/dev/null || echo "sasadairaseann@gmail.com")
+  echo "  ℹ️  Chưa có file cookie web (sessionKey) còn sống để nạp vào Claude Desktop."
   echo ""
-  echo "ℹ️  LƯU Ý VỀ CLAUDE DESKTOP:"
-  echo "  • File 'claude-sasadairaseann@gmail.com.json' chứa token OAuth (sk-ant-oat01-...)"
-  echo "    được tạo cho Claude Code CLI (đã hoạt động 100% với: claude-vps hoặc export CLAUDE_CODE_OAUTH_TOKEN)."
-  echo "  • Claude Desktop (Claude for Mac) là app Electron hiển thị web claude.ai,"
-  echo "    yêu cầu cookie phiên web (sessionKey: sk-ant-sid02-...)."
+  echo "  📌 GIẢI THÍCH:"
+  echo "  • File '$(basename "$AUTH_JSON")' từ VPS chứa OAuth Token (sk-ant-oat01-...)"
+  echo "    → Dành riêng cho Claude Code CLI (dùng ngay: 'claude-vps')."
+  echo "  • App 'Claude for Mac' yêu cầu Cookie phiên duyệt web (sessionKey: sk-ant-sid02-...)"
+  echo "    → Không thể chuyển đổi trực tiếp từ OAuth Token sang Cookie web."
   echo ""
-  echo "👉 Để đăng nhập vào Claude Desktop:"
+  echo "👉 ĐỂ KÍCH HOẠT CLAUDE DESKTOP:"
   echo "  1. Trên cửa sổ 'Claude for Mac', bấm nút [Get started]."
-  echo "  2. Trình duyệt sẽ mở trang đăng nhập claude.ai → Nhập email: sasadairaseann@gmail.com"
-  echo "  3. Sau khi xác nhận OTP/Google, trình duyệt sẽ tự động kích hoạt đăng nhập vào Claude for Mac!"
+  echo "  2. Trình duyệt mở trang web claude.ai → Nhập email: ${EMAIL}"
+  echo "  3. Xác nhận OTP/Google → App Claude Desktop sẽ tự động đăng nhập!"
 fi
 
 echo "=========================================================="

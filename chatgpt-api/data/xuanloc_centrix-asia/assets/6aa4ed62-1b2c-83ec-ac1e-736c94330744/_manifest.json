@@ -1,0 +1,28 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_000000004a588211b24d801dc918b17f",
+    "content_type": "image_asset_pointer",
+    "width": 1080,
+    "height": 1080,
+    "size_bytes": 17832,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/Tai-khoan-ChatGPT-Pro-200-1-thang-GPT-o1-Pro-–-Tai-khoan-Share(1).webp"
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_00000000572c8211ba6ced96d236ce4a",
+    "name": "deepseek-color.svg",
+    "mime_type": "image/svg+xml",
+    "size": 2164,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/deepseek-color.svg"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000019f48206b756fed09327eded",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 621704,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/Deepseek: Thẻ thương hiệu tối giản.png"
+  }
+]

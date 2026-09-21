@@ -1,0 +1,3427 @@
+{
+  "title": "Tăng tốc Wifi FPT",
+  "create_time": 1789559264.943783,
+  "update_time": 1789559329.350356,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aaa81de-a460-83ec-b962-f5fd2d65deac",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "",
+    "https://get2fa.vn/",
+    "https://fpt.vn/shop/s/dang-ky-wifi",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "https://fpt.vn/internet/ca-nhan",
+    "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17&utm_source=chatgpt.com",
+    "https://docs.google.com/document/d/",
+    "https://www.openai.com",
+    "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+    "https://fpt.vn/shop/s/dang-ky-wifi?utm_source=chatgpt.com",
+    "https://www.apple.com/",
+    "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17",
+    "https://ubuntu.com/esm",
+    "https://fpt.vn/internet/ca-nhan?utm_source=chatgpt.com",
+    "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c?utm_source=chatgpt.com",
+    "https://fpt.vn/internet/doanh-nghiep"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "821b6095-8df5-4b9d-9b5d-5c87f4e7f2c6"
+      ]
+    },
+    "821b6095-8df5-4b9d-9b5d-5c87f4e7f2c6": {
+      "id": "821b6095-8df5-4b9d-9b5d-5c87f4e7f2c6",
+      "message": {
+        "id": "821b6095-8df5-4b9d-9b5d-5c87f4e7f2c6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559279.138,
+        "update_time": 1789559329.23291,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Tìm kích mình kích sóng wifi FPT từu 300mb lên 1T"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "turn_id": "22bf1e31-0963-4266-9f4c-945561543fac",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_source": null,
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "8fe06d48-638c-46bd-b27e-d05de1ef4072"
+      ]
+    },
+    "8fe06d48-638c-46bd-b27e-d05de1ef4072": {
+      "id": "8fe06d48-638c-46bd-b27e-d05de1ef4072",
+      "message": {
+        "id": "8fe06d48-638c-46bd-b27e-d05de1ef4072",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559288.5104,
+        "update_time": 1789559289.285722,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Anh đang muốn **tăng tốc Wi-Fi thực tế từ khoảng 300 Mbps lên gần 1 Gbps**, đúng không? Em sẽ tách rõ trường hợp do **gói mạng**, **modem/router**, hay **kích sóng/mesh** để anh mua đúng thiết bị."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "is_thinking_preamble_message": true,
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "a1d50a30-11c6-484f-916e-6ffc75042243",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "821b6095-8df5-4b9d-9b5d-5c87f4e7f2c6",
+      "children": [
+        "034d19e5-f457-406a-b5e7-13e5b4f6c3e5"
+      ]
+    },
+    "034d19e5-f457-406a-b5e7-13e5b4f6c3e5": {
+      "id": "034d19e5-f457-406a-b5e7-13e5b4f6c3e5",
+      "message": {
+        "id": "034d19e5-f457-406a-b5e7-13e5b4f6c3e5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559290.715856,
+        "update_time": 1789559290.715856,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "883956bb-bbc1-480b-8d0b-3b57d919b012",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "8fe06d48-638c-46bd-b27e-d05de1ef4072",
+      "children": [
+        "24a05518-ba54-4851-9824-1a09a4b0a0f1"
+      ]
+    },
+    "24a05518-ba54-4851-9824-1a09a4b0a0f1": {
+      "id": "24a05518-ba54-4851-9824-1a09a4b0a0f1",
+      "message": {
+        "id": "24a05518-ba54-4851-9824-1a09a4b0a0f1",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789559293.874145,
+        "update_time": 1789559293.874145,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "fpt.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/dich-vu-internet",
+                  "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 648056,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-giga-f1",
+                  "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 648056,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/lap-wifi",
+                  "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 648056,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet",
+                  "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 648056,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                  "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 648056,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-sky-f2",
+                  "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 648056,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                  "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 648056,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.fpt.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                  "title": "Khách hàng cá nhân",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 648056,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "www.fpt.vn"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aaa81faba9883309d99dbacc7c1bbbd",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "5488faef-5b4d-43e5-8ede-c26adf61412a",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm 2 trang web"
+          ],
+          "reasoning_title": "Đang tìm kiếm 2 trang web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=fpt.vn&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.fpt.vn&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/dich-vu-internet",
+                    "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-giga-f1",
+                    "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/lap-wifi",
+                    "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet",
+                    "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                    "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-sky-f2",
+                    "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                    "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                    "title": "Khách hàng cá nhân",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "www.fpt.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "034d19e5-f457-406a-b5e7-13e5b4f6c3e5",
+      "children": [
+        "28cfbdd8-d421-4367-a061-ab7be6d0e4ad"
+      ]
+    },
+    "28cfbdd8-d421-4367-a061-ab7be6d0e4ad": {
+      "id": "28cfbdd8-d421-4367-a061-ab7be6d0e4ad",
+      "message": {
+        "id": "28cfbdd8-d421-4367-a061-ab7be6d0e4ad",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559297.454126,
+        "update_time": 1789559297.454126,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "dbf35666-c66c-427f-b248-eeef4ea0146f",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/dich-vu-internet",
+                    "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-giga-f1",
+                    "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/lap-wifi",
+                    "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet",
+                    "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                    "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-sky-f2",
+                    "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                    "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                    "title": "Khách hàng cá nhân",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "www.fpt.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "24a05518-ba54-4851-9824-1a09a4b0a0f1",
+      "children": [
+        "9d133881-bc03-4ec7-9dba-fb9723e57c12"
+      ]
+    },
+    "9d133881-bc03-4ec7-9dba-fb9723e57c12": {
+      "id": "9d133881-bc03-4ec7-9dba-fb9723e57c12",
+      "message": {
+        "id": "9d133881-bc03-4ec7-9dba-fb9723e57c12",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789559297.985224,
+        "update_time": 1789559297.985224,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "fpt.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/shop/s/cvnuwa",
+                  "title": "Landing Page",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                  "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-giga-f1",
+                  "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/shop/s/lap-dat-wifi/",
+                  "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/lap-internet-wifi-hcm",
+                  "title": "Lắp Internet Wifi FPT TPHCM - Nhận Camera, Cloud miễn phí",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/doanh-nghiep",
+                  "title": "Đăng ký lắp WiFi doanh nghiệp FPT | IP Tĩnh, bảo mật cao",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/dich-vu-internet",
+                  "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet",
+                  "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17",
+                  "title": "Ưu đãi lắp mạng FPT tháng 7 - X3 băng thông, nhận Camera",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 686085,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": 1784678400.0,
+                  "attribution": "fpt.vn"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aaa81faba9883309d99dbacc7c1bbbd",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "47126452-7103-48c1-bef1-9da5301f0037",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=www.fpt.vn&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/dich-vu-internet",
+                    "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-giga-f1",
+                    "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/lap-wifi",
+                    "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet",
+                    "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                    "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-sky-f2",
+                    "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                    "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                    "title": "Khách hàng cá nhân",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "www.fpt.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "28cfbdd8-d421-4367-a061-ab7be6d0e4ad",
+      "children": [
+        "c1513039-26f2-487c-9bcd-50e5e880de62"
+      ]
+    },
+    "c1513039-26f2-487c-9bcd-50e5e880de62": {
+      "id": "c1513039-26f2-487c-9bcd-50e5e880de62",
+      "message": {
+        "id": "c1513039-26f2-487c-9bcd-50e5e880de62",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559304.487185,
+        "update_time": 1789559304.487185,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "47af841d-e01a-4cff-9c62-1fbb0af1631b",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/dich-vu-internet",
+                    "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-giga-f1",
+                    "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/lap-wifi",
+                    "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet",
+                    "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                    "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-sky-f2",
+                    "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                    "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                    "title": "Khách hàng cá nhân",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "www.fpt.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "9d133881-bc03-4ec7-9dba-fb9723e57c12",
+      "children": [
+        "af4789e4-3530-4646-b2c9-b5fdc2e32128"
+      ]
+    },
+    "af4789e4-3530-4646-b2c9-b5fdc2e32128": {
+      "id": "af4789e4-3530-4646-b2c9-b5fdc2e32128",
+      "message": {
+        "id": "af4789e4-3530-4646-b2c9-b5fdc2e32128",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789559304.604962,
+        "update_time": 1789559304.604962,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "fpt.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/ca-nhan",
+                  "title": "Bảng giá gói Internet cá nhân FPT | Nhận thêm camera kèm Cloud",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-f-game",
+                  "title": "Internet F-Game",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/goi-cuoc-fpt-nao-duoc-uu-dai-x3-bang-thong-14881.html?category_id=226",
+                  "title": "Gói cước FPT nào được ưu đãi X3 băng thông trong tháng 7?",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1784764800.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/speed-x10-eyes3-iq4s",
+                  "title": "FPT SpeedX10 Eyes3 IQ4S",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-combo-giga-max?category_id=76",
+                  "title": "Combo Giga",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/super-300-biz",
+                  "title": "",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/goi-cuoc-fpt-nao-duoc-uu-dai-x3-bang-thong-14881.html",
+                  "title": "Gói cước FPT nào được ưu đãi X3 băng thông trong tháng 7?",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1784764800.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17",
+                  "title": "Ưu đãi lắp mạng FPT tháng 7 - X3 băng thông, nhận Camera",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": 1784678400.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/super-600-biz",
+                  "title": "",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet",
+                  "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet-x3-bang-thong",
+                  "title": "Lắp đặt internet Wifi FPT - X3 băng thông, X3 trải nghiệm",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-combo-f-game",
+                  "title": "Combo F-Game",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-combo-meta-max",
+                  "title": "Combo Meta",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-meta",
+                  "title": "Internet Meta",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424238,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aaa81faba9883309d99dbacc7c1bbbd",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "c1513039-26f2-487c-9bcd-50e5e880de62",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=www.fpt.vn&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/dich-vu-internet",
+                    "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-giga-f1",
+                    "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/lap-wifi",
+                    "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet",
+                    "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                    "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-sky-f2",
+                    "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                    "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                    "title": "Khách hàng cá nhân",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "www.fpt.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c1513039-26f2-487c-9bcd-50e5e880de62",
+      "children": [
+        "0ced2a5f-812b-46d0-9480-c9072f5852f6"
+      ]
+    },
+    "0ced2a5f-812b-46d0-9480-c9072f5852f6": {
+      "id": "0ced2a5f-812b-46d0-9480-c9072f5852f6",
+      "message": {
+        "id": "0ced2a5f-812b-46d0-9480-c9072f5852f6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559309.294733,
+        "update_time": 1789559309.294733,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "22607095-f705-4043-9d7d-6636818358c0",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/dich-vu-internet",
+                    "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-giga-f1",
+                    "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/lap-wifi",
+                    "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet",
+                    "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                    "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-sky-f2",
+                    "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                    "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                    "title": "Khách hàng cá nhân",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "www.fpt.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "af4789e4-3530-4646-b2c9-b5fdc2e32128",
+      "children": [
+        "38003d34-e906-4d71-a974-f8312ee627e2"
+      ]
+    },
+    "38003d34-e906-4d71-a974-f8312ee627e2": {
+      "id": "38003d34-e906-4d71-a974-f8312ee627e2",
+      "message": {
+        "id": "38003d34-e906-4d71-a974-f8312ee627e2",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789559309.403053,
+        "update_time": 1789559309.403053,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "fpt.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/doanh-nghiep",
+                  "title": "Đăng ký lắp WiFi doanh nghiệp FPT | IP Tĩnh, bảo mật cao",
+                  "snippet": "Total lines: 603\n",
+                  "ref_id": {
+                    "turn_index": 986570,
+                    "ref_type": "view",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/MmPIU49RDbIijpHc3Z8AV9JgFJaijBumD_UIKmkHlF46TQVXxVGci6dDnGwt-U5YQ6WXa9a4B8a0YEbe2MLYndzbzDGb3hiF48UpqhMRhrAoJoZ4OkGbN8a0odwUAw0T",
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/super-600-biz",
+                  "title": "fpt.vn",
+                  "snippet": "Total lines: 443\n",
+                  "ref_id": {
+                    "turn_index": 986570,
+                    "ref_type": "view",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/MSEt9OIgJlz4PYZ-iwe6aBNHapjyqyERfwnjs4WrBUw1Ag8jrkBf64JMVV4_BoHet941VI4CuoamONv14wIdq55J5taB8TNiCw1ZTY5-NZ3LBjkLSbJeleY6rL_xNYnnPCB5t-gh2FXijcZZp91WNg",
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/doanh-nghiep",
+                  "title": "Đăng ký lắp WiFi doanh nghiệp FPT | IP Tĩnh, bảo mật cao",
+                  "snippet": "Total lines: 603\n",
+                  "ref_id": {
+                    "turn_index": 986570,
+                    "ref_type": "view",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/H2KknBSULZSi6lNyjwxcUnJ2WOLc7e-N6K-f-D2R5_RwUv_uRiz-xGavH2BX_WDUIQJZBvjBFMhckYLKxto9ISU89XBNOrnTD1a0vduQ-eytl4Ct6FOvf0M2JKS85vzk",
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/doanh-nghiep",
+                  "title": "Đăng ký lắp WiFi doanh nghiệp FPT | IP Tĩnh, bảo mật cao",
+                  "snippet": "Total lines: 603\n",
+                  "ref_id": {
+                    "turn_index": 986570,
+                    "ref_type": "view",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/GAeqts2999MnFwm3Re_McPtEg0S8mcxbnJfeXXvRiz98idCDdap49o_vdrW87wEQaOrnVpfVmgaiccN6rAzY5-W35iyKkFcCTVkgkvdTew8Cc_Ft53wt-ilUz-SPaFpW",
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/doanh-nghiep",
+                  "title": "Đăng ký lắp WiFi doanh nghiệp FPT | IP Tĩnh, bảo mật cao",
+                  "snippet": "Total lines: 603\n",
+                  "ref_id": {
+                    "turn_index": 986570,
+                    "ref_type": "view",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/miihtaGXAof9oyfdoXW2DXUliWQxMjiRmNt8xLO0HrrF-wlLMI8bNjfSXroD5QoDWVylPbuil4gjC8DTVptBKp5HV0ZCATeYldXZFex63u7wRCinuT13fO-jtNyeXAjS",
+                  "attribution": "fpt.vn"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aaa81faba9883309d99dbacc7c1bbbd",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "0ced2a5f-812b-46d0-9480-c9072f5852f6",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=www.fpt.vn&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/dich-vu-internet",
+                    "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-giga-f1",
+                    "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/lap-wifi",
+                    "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet",
+                    "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                    "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-sky-f2",
+                    "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                    "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                    "title": "Khách hàng cá nhân",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "www.fpt.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0ced2a5f-812b-46d0-9480-c9072f5852f6",
+      "children": [
+        "fabe3f3f-e1ac-490a-8481-a632e647faa1"
+      ]
+    },
+    "fabe3f3f-e1ac-490a-8481-a632e647faa1": {
+      "id": "fabe3f3f-e1ac-490a-8481-a632e647faa1",
+      "message": {
+        "id": "fabe3f3f-e1ac-490a-8481-a632e647faa1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559313.400481,
+        "update_time": 1789559313.400481,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đánh giá gói mạng",
+              "content": "Tôi đang đối chiếu thông tin: gói doanh nghiệp hiện có thể bị giới hạn theo hồ sơ QoS, không thể tự chỉnh lên 1 Gbps. Tôi sẽ làm rõ cần nâng gói, giữ IP tĩnh, hoặc hỏi FPT về phương án doanh nghiệp tùy chỉnh.",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "22607095-f705-4043-9d7d-6636818358c0"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "38003d34-e906-4d71-a974-f8312ee627e2",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "38003d34-e906-4d71-a974-f8312ee627e2",
+      "children": [
+        "aa964556-489b-4eb3-8030-412bb34d6747"
+      ]
+    },
+    "aa964556-489b-4eb3-8030-412bb34d6747": {
+      "id": "aa964556-489b-4eb3-8030-412bb34d6747",
+      "message": {
+        "id": "aa964556-489b-4eb3-8030-412bb34d6747",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559315.356821,
+        "update_time": 1789559315.356821,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 2 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "fedd74cd-95f0-4202-864a-e93bad7c0a17"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/dich-vu-internet",
+                    "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-giga-f1",
+                    "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/lap-wifi",
+                    "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet",
+                    "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/shop/s/dang-ky-wifi",
+                    "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/internet/goi-sky-f2",
+                    "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                    "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "fpt.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.fpt.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan",
+                    "title": "Khách hàng cá nhân",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 648056,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "www.fpt.vn"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "034d19e5-f457-406a-b5e7-13e5b4f6c3e5",
+              "8c870b12-163f-4afc-9c89-3b9787331472",
+              "24a05518-ba54-4851-9824-1a09a4b0a0f1"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=fpt.vn&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.fpt.vn&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789559284.149731,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "fabe3f3f-e1ac-490a-8481-a632e647faa1",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fabe3f3f-e1ac-490a-8481-a632e647faa1",
+      "children": [
+        "5185e5cf-0a7b-4cf2-9f0e-78b875b28a71"
+      ]
+    },
+    "5185e5cf-0a7b-4cf2-9f0e-78b875b28a71": {
+      "id": "5185e5cf-0a7b-4cf2-9f0e-78b875b28a71",
+      "message": {
+        "id": "5185e5cf-0a7b-4cf2-9f0e-78b875b28a71",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789559315.36256,
+        "update_time": 1789559315.36256,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 31s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 31,
+          "reasoning_start_time": 1789559284.149731,
+          "reasoning_end_time": 1789559315.3471696,
+          "reasoning_recap_type": "collapse",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "aa964556-489b-4eb3-8030-412bb34d6747",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aa964556-489b-4eb3-8030-412bb34d6747",
+      "children": [
+        "d3c0b2d7-e5dd-49d7-9d07-f44e59100625"
+      ]
+    },
+    "d3c0b2d7-e5dd-49d7-9d07-f44e59100625": {
+      "id": "d3c0b2d7-e5dd-49d7-9d07-f44e59100625",
+      "message": {
+        "id": "d3c0b2d7-e5dd-49d7-9d07-f44e59100625",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1789559315.36509,
+        "update_time": 1789559327.730113,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Nếu anh đang nói **từ 300 Mbps lên 1 Gbps** thì có 2 việc hoàn toàn khác nhau:\n\n**1. Tăng băng thông Internet 300 Mbps → 1 Gbps:** không thể chỉnh modem hay mua bộ kích sóng để “mở khóa”. Tốc độ này do **FPT cấu hình profile đường truyền**. Với gói cá nhân, FPT hiện có **Sky 1 Gbps/300 Mbps** và **Meta 1 Gbps/1 Gbps**. citeturn686085search1turn648056search4\n\nTrước đây FPT có chương trình **X3 băng thông**, nâng GIGA từ **300/300 → 1 Gbps/300 Mbps trong 12 tháng**, nhưng chương trình được công bố áp dụng từ **01/06 đến 31/07/2026**. Một số trang hiện tại vẫn ghi ưu đãi X3 có thể áp dụng tùy khu vực/thời điểm, nên cần FPT kiểm tra trực tiếp hợp đồng của anh. citeturn424238search7turn424238search0\n\n**2. Nếu đường truyền của anh đã được FPT cấp 1 Gbps nhưng Wi-Fi chỉ đo khoảng 300 Mbps:** lúc này mới cần nâng thiết bị. FPT có AP **AX3000C Wi-Fi 6**, 5 GHz tối đa lý thuyết 2400 Mbps, cổng WAN/LAN Gigabit và hỗ trợ Mesh. citeturn648056search7\n\nproducts{\"selections\":[[\"turn648056product1\",\"TP-Link RE705X Wi-Fi 6 AX3000\"],[\"turn648056product0\",\"TP-Link Deco X20 Wi-Fi 6 Mesh\"]]}\n\nRiêng trường hợp của anh trước đó là **FPT doanh nghiệp + IP Front `118.69.78.15` + IP Route `/30`**, thì đáng chú ý hơn: bảng gói doanh nghiệp FPT hiện công khai **Super300 Biz Plus = 300/300 Mbps + IP tĩnh**, còn các gói cao hơn có 500/500, 600/600 và 800/800 Mbps; trang công khai chưa liệt kê gói Business 1 Gbps. citeturn986570view2\n\n**Nếu chính đường mạng anh đang dùng là đường FPT doanh nghiệp 300 Mbps đó, mua kích sóng sẽ không biến nó thành 1 Gbps.** Anh cần yêu cầu FPT **nâng profile băng thông nhưng giữ nguyên IP tĩnh/routed subnet `/30`**.\n\nAnh có thể nói với FPT chính xác:\n\n> “Tôi đang sử dụng Internet doanh nghiệp 300 Mbps, có IP Front 118.69.78.15 và routed subnet 118.69.40.112/30. Tôi muốn nâng đường truyền lên 1 Gbps và giữ nguyên IP tĩnh/routing hiện tại. Nhờ kiểm tra gói hoặc phương án nâng băng thông.”\n\nNếu anh gửi em **tên gói FPT hiện tại hoặc ảnh trong Hi FPT**, em có thể xem luôn cho anh **có cách nâng 300 → 1 Gbps mà vẫn giữ dải IP `/30` hay không**."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "content_references": [
+            {
+              "matched_text": "citeturn686085search1turn648056search4",
+              "prefix": null,
+              "start_idx": 321,
+              "end_idx": 363,
+              "safe_urls": [
+                "https://fpt.vn/shop/s/dang-ky-wifi",
+                "https://fpt.vn/shop/s/dang-ky-wifi?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([FPT Telecom](https://fpt.vn/shop/s/dang-ky-wifi?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                  "url": "https://fpt.vn/shop/s/dang-ky-wifi?utm_source=chatgpt.com",
+                  "attribution": "FPT Telecom",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                      "url": "https://fpt.vn/shop/s/dang-ky-wifi?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "FPT Telecom"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 1,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "citeturn424238search7turn424238search0",
+              "prefix": null,
+              "start_idx": 669,
+              "end_idx": 711,
+              "safe_urls": [
+                "https://fpt.vn/internet/ca-nhan",
+                "https://fpt.vn/internet/ca-nhan?utm_source=chatgpt.com",
+                "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17",
+                "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17&utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([FPT Telecom](https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17&utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Ưu đãi lắp mạng FPT tháng 7 - X3 băng thông, nhận Camera",
+                  "url": "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17&utm_source=chatgpt.com",
+                  "attribution": "FPT Telecom",
+                  "pub_date": 1784678400.0,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "Bảng giá gói Internet cá nhân FPT | Nhận thêm camera kèm Cloud",
+                      "url": "https://fpt.vn/internet/ca-nhan?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "FPT Telecom"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 2,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    {
+                      "turn_index": 2,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "citeturn648056search7",
+              "prefix": null,
+              "start_idx": 937,
+              "end_idx": 961,
+              "safe_urls": [
+                "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+                "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([FPT Telecom](https://fpt.vn/thiet-bi-access-point/access-point-ax3000c?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "FPT Telecom - Công ty Cổ phần Viễn thông FPT",
+                  "url": "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c?utm_source=chatgpt.com",
+                  "attribution": "FPT Telecom",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "products{\"selections\":[[\"turn648056product1\",\"TP-Link RE705X Wi‑Fi 6 AX3000\"],[\"turn648056product0\",\"TP-Link Deco X20 Wi‑Fi 6 Mesh\"]]}",
+              "prefix": null,
+              "start_idx": 963,
+              "end_idx": 1100,
+              "safe_urls": [
+                ""
+              ],
+              "refs": [
+                {
+                  "turn_index": 0,
+                  "ref_type": "product",
+                  "ref_index": 1
+                },
+                {
+                  "turn_index": 0,
+                  "ref_type": "product",
+                  "ref_index": 0
+                }
+              ],
+              "alt": "### [TP-Link RE705X Wi‑Fi 6 AX3000]()\n*Không có mức giá*\n\n### [TP-Link Deco X20 Wi‑Fi 6 Mesh]()\n*Không có mức giá*",
+              "prompt_text": "### TP-Link RE705X Wi‑Fi 6 AX3000\nDescription: None\nPrice: Không có mức giá\nURL: \nNumber of Reviews: None\nRating: None\nFeatured Tag: \nMerchants: Xem người bán\n\n### TP-Link Deco X20 Wi‑Fi 6 Mesh\nDescription: None\nPrice: Không có mức giá\nURL: \nNumber of Reviews: None\nRating: None\nFeatured Tag: \nMerchants: Xem người bán",
+              "products": [
+                {
+                  "id": "turn0product1",
+                  "title": "TP-Link RE705X Wi‑Fi 6 AX3000",
+                  "url": "",
+                  "price": "Không có mức giá",
+                  "merchants": "Xem người bán",
+                  "description": null,
+                  "specs": null,
+                  "featured_tag": "",
+                  "image_urls": [
+                    "https://static.tp-link.com/upload/image-line/RE705X_EU_1.0_07_large_20220318101419l.jpg"
+                  ],
+                  "num_reviews": null,
+                  "rating": null,
+                  "cite": "turn0product1",
+                  "offers": [],
+                  "variants": null,
+                  "query": "deprecated",
+                  "provider": "deprecated",
+                  "providers": [
+                    "p2"
+                  ],
+                  "metadata_sources": [
+                    "p2"
+                  ],
+                  "product_lookup_data": {
+                    "request_query": "TP-Link RE705X Wi‑Fi 6 AX3000",
+                    "all_ids": {},
+                    "known_ids": {},
+                    "metadata_sources": [
+                      "p2",
+                      "p1",
+                      "p3"
+                    ],
+                    "variant_options_query": null,
+                    "variant_sources": null
+                  },
+                  "product_lookup_key": {
+                    "data": "{\"request_query\":\"TP-Link RE705X Wi‑Fi 6 AX3000\",\"all_ids\":{},\"known_ids\":{},\"metadata_sources\":[\"p2\",\"p1\",\"p3\"],\"variant_sources\":null,\"last_variant_group_types\":null,\"merchant_hints\":[],\"provider_title\":\"RE705X | Bộ Mở Rộng Sóng Wi-Fi 6 AX3000 | TP-Link Việt Nam\",\"provider_metadata\":null,\"included_image_hashes\":[],\"provider_url\":\"https://chatgpt.com/?hints=search&q=RE705X+%7C+B%E1%BB%99+M%E1%BB%9F+R%E1%BB%99ng+S%C3%B3ng+Wi-Fi+6+AX3000+%7C+TP-Link+Vi%C3%AA%CC%A3t+Nam\"}",
+                    "version": "1",
+                    "variant_options_query": null,
+                    "last_variant_selection_group_id": null
+                  },
+                  "rating_grouped_citation": null,
+                  "consumer_safety": null,
+                  "variant_snapshots": null,
+                  "variants_error_state_message": null,
+                  "offers_see_more_boundary": 3,
+                  "show_price_disclosure": false,
+                  "popularity_metadata": null,
+                  "product_event_uuid": "bbb5521b-0bf3-4963-b4f4-6b507f3b11ad",
+                  "showcase_metadata": null,
+                  "analytics_meta": {
+                    "product_event_uuid": "bbb5521b-0bf3-4963-b4f4-6b507f3b11ad"
+                  },
+                  "price_history": null,
+                  "merchant_badges": null
+                },
+                {
+                  "id": "turn0product0",
+                  "title": "TP-Link Deco X20 Wi‑Fi 6 Mesh",
+                  "url": "",
+                  "price": "Không có mức giá",
+                  "merchants": "Xem người bán",
+                  "description": null,
+                  "specs": null,
+                  "featured_tag": "",
+                  "image_urls": [
+                    "https://static.tp-link.com/Deco-X20-02_large_1579229243182g.jpg"
+                  ],
+                  "num_reviews": null,
+                  "rating": null,
+                  "cite": "turn0product0",
+                  "offers": [],
+                  "variants": null,
+                  "query": "deprecated",
+                  "provider": "deprecated",
+                  "providers": [
+                    "p2"
+                  ],
+                  "metadata_sources": [
+                    "p2"
+                  ],
+                  "product_lookup_data": {
+                    "request_query": "TP-Link Deco X20 Wi‑Fi 6 Mesh",
+                    "all_ids": {},
+                    "known_ids": {},
+                    "metadata_sources": [
+                      "p2",
+                      "p1",
+                      "p3"
+                    ],
+                    "variant_options_query": null,
+                    "variant_sources": null
+                  },
+                  "product_lookup_key": {
+                    "data": "{\"request_query\":\"TP-Link Deco X20 Wi‑Fi 6 Mesh\",\"all_ids\":{},\"known_ids\":{},\"metadata_sources\":[\"p2\",\"p1\",\"p3\"],\"variant_sources\":null,\"last_variant_group_types\":null,\"merchant_hints\":[],\"provider_title\":\"Deco X20 | Hệ thống Wi-Fi 6 Mesh cho Gia đình AX1800 - TP-Link\",\"provider_metadata\":null,\"included_image_hashes\":[],\"provider_url\":\"https://chatgpt.com/?hints=search&q=Deco+X20+%7C+H%E1%BB%87+th%E1%BB%91ng+Wi-Fi+6+Mesh+cho+Gia+%C4%91%C3%ACnh+AX1800+-+TP-Link\"}",
+                    "version": "1",
+                    "variant_options_query": null,
+                    "last_variant_selection_group_id": null
+                  },
+                  "rating_grouped_citation": null,
+                  "consumer_safety": null,
+                  "variant_snapshots": null,
+                  "variants_error_state_message": null,
+                  "offers_see_more_boundary": 3,
+                  "show_price_disclosure": false,
+                  "popularity_metadata": null,
+                  "product_event_uuid": "cbc4e88c-7a69-42ec-adf2-22beb39da154",
+                  "showcase_metadata": null,
+                  "analytics_meta": {
+                    "product_event_uuid": "cbc4e88c-7a69-42ec-adf2-22beb39da154"
+                  },
+                  "price_history": null,
+                  "merchant_badges": null
+                }
+              ],
+              "cite_map": {},
+              "prompt_obj": null,
+              "target_product_count": 2,
+              "inline_carousel": false,
+              "mode": null,
+              "type": "products",
+              "can_browse": false
+            },
+            {
+              "matched_text": "citeturn986570view2",
+              "prefix": null,
+              "start_idx": 1420,
+              "end_idx": 1442,
+              "safe_urls": [
+                "https://fpt.vn/internet/doanh-nghiep"
+              ],
+              "refs": [],
+              "alt": "([FPT Telecom](https://fpt.vn/internet/doanh-nghiep))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Đăng ký lắp WiFi doanh nghiệp FPT | IP Tĩnh, bảo mật cao",
+                  "url": "https://fpt.vn/internet/doanh-nghiep",
+                  "attribution": "FPT Telecom",
+                  "pub_date": null,
+                  "snippet": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/H2KknBSULZSi6lNyjwxcUnJ2WOLc7e-N6K-f-D2R5_RwUv_uRiz-xGavH2BX_WDUIQJZBvjBFMhckYLKxto9ISU89XBNOrnTD1a0vduQ-eytl4Ct6FOvf0M2JKS85vzk",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 3,
+                      "ref_type": "view",
+                      "ref_index": 2
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": " ",
+              "prefix": null,
+              "start_idx": 2092,
+              "end_idx": 2093,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                  "url": "https://fpt.vn/shop/s/dang-ky-wifi?utm_source=chatgpt.com",
+                  "attribution": "FPT Telecom"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "fpt.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/dich-vu-internet?utm_source=chatgpt.com",
+                  "title": "Đăng ký Internet FPT - nhận ngàn ưu đãi",
+                  "snippet": "LẮP ĐẶT INTERNET & TRUYỀN HÌNH CHO GIA ĐÌNH  CHỈ TỪ  195K/THÁNG  NGẬP TRÀN ƯU ĐÃI  TẶNG THÁNG CƯỚC, MODEM WIFI 6, CAMERA, MESH Xem Ngoại Hạng Anh siêu mượt nét  ĐĂNG KÝ TƯ VẤN  THÁNG NÀY  TẶNG MIỄN P...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-giga-f1?utm_source=chatgpt.com",
+                  "title": "Đăng ký Internet FPT Gói Giga F1 - Tốc độ 300Mbps, Wifi 6",
+                  "snippet": "Internet Giga F1  GIÁ CƯỚC  Chỉ từ 205.000đ /tháng  Image  Tốc độ(Download/Upload)  300  Mbps /300 Mbps  THÔNG TIN CHI TIẾT  * Nhận thêm Camera FPT kèm Cloud miễn phí 12 tháng * Giảm voucher giảm 50....",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/lap-wifi?utm_source=chatgpt.com",
+                  "title": "Đăng ký lắp Wi-Fi FPT – Internet tốc độ cao, giá từ 180K",
+                  "snippet": "Image: FPT Telecom  * Internet * Combo Internet - FPT Play * Hướng dẫn chọn gói * Thủ tục lắp đặt * ## Bảng giá  (Giá cước thay đổi theo từng KV)  [Button: Internet] [Button: Combo FPT Internet - Tru...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet?utm_source=chatgpt.com",
+                  "title": "Lắp đặt internet Wifi FPT - Nhận camera AI, Cloud miễn phí",
+                  "snippet": "LẮP ĐẶT INTERNET WIFI FPT - NHẬN CAMERA AI, CLOUD MIỄN PHÍ  LẮP ĐẶT INTERNET WIFI FPT - NHẬN CAMERA AI, CLOUD MIỄN PHÍ  ĐĂNG KÝ INTERNET FPT VỚI COMBO V.VIP- TRỌN VẸN NGOẠI HẠNG, NHẬN THÊM CAMERA  Lắ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.fpt.vn/vi/khach-hang-ca-nhan?utm_source=chatgpt.com",
+                  "title": "Khách hàng cá nhân",
+                  "snippet": "GÓI ĐỀ XUẤT CHỌN VỊ TRÍ  Bao gồm gói giá khuyến mãi - Đáp ứng mọi nhu cầu cuộc sống cá nhân, gia đình  Giá tốt nhất  INTERNET GIGA  Chỉ từ Mức giá trên đã bao gồm VAT và có thể được thay đổi theo khu...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-sky-f2?utm_source=chatgpt.com",
+                  "title": "Đăng ký Internet FPT với Gói Sky F2 - Tốc độ 1Gbps",
+                  "snippet": "Internet Sky F2  GIÁ CƯỚC  Chỉ từ 230.000đ /tháng  Image  Tốc độ(Download/Upload)  1000  Mbps /300 Mbps  THÔNG TIN CHI TIẾT  * Nhận thêm Camera FPT kèm Cloud miễn phí 12 tháng * Giảm voucher giảm 50....",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-meta?utm_source=chatgpt.com",
+                  "title": "Internet Meta",
+                  "snippet": "Internet Meta  GIÁ CƯỚC  Chỉ từ 295.000đ /tháng  Image  Tốc độ(Download/Upload)  1000  Mbps /1000 Mbps  Image  Thiết bị(Kết nối)  ≥25  Thiết bị  THÔNG TIN CHI TIẾT  * Nhận thêm Camera FPT kèm Cloud m...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-sky-f1?utm_source=chatgpt.com",
+                  "title": "Đăng ký Internet FPT với Gói Sky F1- Tốc độ 1Gbps",
+                  "snippet": "Internet Sky F1  GIÁ CƯỚC  Chỉ từ 210.000đ /tháng  Image  Tốc độ(Download/Upload)  1000  Mbps /300 Mbps   THÔNG TIN CHI TIẾT  * Nhận thêm Camera FPT kèm Cloud miễn phí 12 tháng * Giảm voucher giảm 50...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/bang-gia-internet-fpt-ca-nhan-gia-dinh-moi-nhat-15085.html?utm_source=chatgpt.com",
+                  "title": "Giá Internet FPT tháng 8/2026 bao nhiêu? Có ưu đãi gì?",
+                  "snippet": "Tuyết Trinh • Thứ Tư, ngày 19/08/2026 4:50 PM (GMT +7)  BẢNG GIÁ INTERNET FPT CÁ NHÂN GIA ĐÌNH THÁNG 8/2026 MỚI NHẤT  Bảng giá gói cước Internet FPT tháng 8/2026 cập nhật mới nhất, với mạng Wifi 6 tố...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": 1787097600.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/vip7-meta-f3?utm_source=chatgpt.com",
+                  "title": "Internet Meta F3",
+                  "snippet": "Internet Meta F3  GIÁ CƯỚC  Chỉ từ 248.000đ /tháng  Image  Tốc độ(Download/Upload)  1000  Mbps /1000 Mbps  THÔNG TIN CHI TIẾT  * Trang bị Modem Wi-Fi 6 băng tần kép & 3 Access Point: Wi-Fi mạnh mẽ ph...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/giai-phap-wifi-fpt-cho-tiem-net-12599.html?utm_source=chatgpt.com",
+                  "title": "Giải pháp WiFi FPT cho tiệm nét: Băng thông cao, giá tốt",
+                  "snippet": "GIỚI THIỆU CÁC GÓI CƯỚC FPT CÓ ACCESS POINT WIFI MESH  FPT hiện cung cấp nhiều gói cước tích hợp sẵn Access Point WiFi 6, đặc biệt phù hợp cho tiệm nét với nhu cầu phủ sóng rộng và kết nối ổn định. Cá...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": 1754870400.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/shop/s/cvnuwa?utm_source=chatgpt.com",
+                  "title": "Landing Page",
+                  "snippet": "Khu vực  TP. Hồ Chí Minh   INTERNET FPT  Image: Decorative Element  Image  GIGA  BÁN CHẠY  Tốc độ download/upload  300 MBPS / 300 MBPS  Đăng ký ngay  * Trang bị modem Wifi6 * Lắp đặt nhanh từ 12h - 36...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/shop/s/lap-dat-wifi/?utm_source=chatgpt.com",
+                  "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                  "snippet": "INTERNET FPT  Image: Decorative Element  Image  SIÊU TIỆN ÍCH (NEW)  BÁN CHẠY  Tốc độ download/upload  500 MBPS/500 MBPS  Đăng ký Tư vấn Miễn phí  * Trang bị modem Wifi6 * Tặng thêm Camera hoặc Acces...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/lap-internet-wifi-hcm?utm_source=chatgpt.com",
+                  "title": "Lắp Internet Wifi FPT TPHCM - Nhận Camera, Cloud miễn phí",
+                  "snippet": "LẮP INTERNET WIFI FPT TPHCM - NHẬN CAMERA, CLOUD MIỄN PHÍ  LẮP ĐẶT INTERNET WIFI FPT TPHCM - NHẬN THÊM CAMERA AI KÈM CLOUD MIỄN PHÍ  Nhận Camera AI + Cloud 12 tháng miễn phí Image  INTERNET GIGA  195...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/doanh-nghiep?utm_source=chatgpt.com",
+                  "title": "Đăng ký lắp WiFi doanh nghiệp FPT | IP Tĩnh, bảo mật cao",
+                  "snippet": "ĐĂNG KÝ LẮP WIFI DOANH NGHIỆP FPT | IP TĨNH, BẢO MẬT CAO  ĐĂNG KÝ LẮP WIFI DOANH NGHIỆP FPT | IP TĨNH, BẢO MẬT CAO  INTERNET FPT WIFI 6 - KẾT NỐI VƯỢT TRỘI CHO DOANH NGHIỆP  Giải pháp Internet tốc độ...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/goi-dich-vu/giga?utm_source=chatgpt.com",
+                  "title": "Đăng ký lắp Internet GIGA chỉ từ 195K/ tháng tốc độ 300 Mbps",
+                  "snippet": "Internet Giga  GIÁ CƯỚC  Chỉ từ 195.000đ /tháng  Image  Tốc độ(Download/Upload)  300  Mbps /300 Mbps  Image  Thiết bị(Kết nối)  ≥10  Thiết bị  THÔNG TIN CHI TIẾT  * Trang bị sẵn Modem Wi-Fi băng tần...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-meta-f1?utm_source=chatgpt.com",
+                  "title": "Internet Meta F1",
+                  "snippet": "Internet Meta F1  GIÁ CƯỚC  Chỉ từ 315.000đ /tháng  Image  Tốc độ(Download/Upload)  1000  Mbps /1000 Mbps  THÔNG TIN CHI TIẾT  * Nhận thêm Camera FPT kèm Cloud miễn phí 12 tháng * Giảm voucher giảm 5...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/gia-dinh?utm_source=chatgpt.com",
+                  "title": "Gói cước Internet cho hộ gia đình | Nhận thêm camera kèm cloud",
+                  "snippet": "ĐĂNG KÝ LẮP WIFI INTERNET GIA ĐÌNH FPT TẠI Chọn vị trí. Nhận thêm camera kèm Cloud miễn phí  Các gói cước Internet FPT gia đình FPT đảm bảo tốc độ cao, kết nối ổn định cho các hoạt động học tập, làm v...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/shop/s/luaafg?utm_source=chatgpt.com",
+                  "title": "Landing Page",
+                  "snippet": "Khu vực  TP. Hồ Chí Minh  Image  INTERNET FPT  Image: Decorative Element  Image  GIGA  BÁN CHẠY  Tốc độ download/upload  150 MBPS / 150 MBPS  Đăng ký ngay  * Trang bị modem Wifi6 * Lắp đặt nhanh từ 12...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/shop/s/dang-ky-wifi/detail?utm_source=chatgpt.com",
+                  "title": "Lắp Wifi FPT giá tốt, tốc độ cao",
+                  "snippet": "Các Gói cước này khách hàng có thể sử dụng cho máy tính bàn, tivi thông minh, điện thoại, camera và tất cả các thiết bị kết nối mạng khác. Khi đăng kí gói cước này khách hàng được trang bị miễn phí mo...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": 1748217600.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/lap-wifi-fpt-phuong-sai-gon-tphcm-12105.html?utm_source=chatgpt.com",
+                  "title": "Lắp WiFi FPT Phường Sài Gòn, TP.HCM - Tốc độ vượt trội",
+                  "snippet": "BẢNG GIÁ GÓI CƯỚC WIFI INTERNET FPT TẠI PHƯỜNG SÀI GÒN, TP.HCM  Để đáp ứng nhu cầu đa dạng từ các hộ gia đình hay doanh nghiệp tại phường Sài Gòn, FPT cung cấp các gói cước linh hoạt với mức giá cạnh...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": 1751500800.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/ca-nhan?utm_source=chatgpt.com",
+                  "title": "Bảng giá gói Internet cá nhân FPT | Nhận thêm camera kèm Cloud",
+                  "snippet": "ĐĂNG KÝ GÓI CƯỚC INTERNET DÀNH CHO CÁ NHÂN - GIÁ ƯU ĐÃI, NHIỀU TIỆN ÍCH  FPT cung cấp đa dạng gói cước Internet cá nhân phù hợp cho người ở một mình, gia đình nhỏ, căn hộ chung cư hoặc nhu cầu sử dụng...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-f-game?utm_source=chatgpt.com",
+                  "title": "Internet F-Game",
+                  "snippet": "- Với chương trình X3 băng thông, khách hàng đăng ký gói Internet hoặc combo Internet đủ điều kiện có thể được nâng băng thông trong 12 tháng, ví dụ nhóm GIGA từ 300Mbps/300Mbps lên 1Gbps/300Mbps, nhó...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/goi-cuoc-fpt-nao-duoc-uu-dai-x3-bang-thong-14881.html?category_id=226&utm_source=chatgpt.com",
+                  "title": "Gói cước FPT nào được ưu đãi X3 băng thông trong tháng 7?",
+                  "snippet": "Quốc Thắng • 23/07/2026  GÓI CƯỚC FPT NÀO ĐƯỢC ƯU ĐÃI X3 BĂNG THÔNG TRONG THÁNG 7?  Lắp đặt Internet FPT trong tháng 7 để nhận ưu đãi gấp 3 băng thông trong 12 tháng, nhận thêm Camera và Cloud khi tr...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1784764800.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/speed-x10-eyes3-iq4s?utm_source=chatgpt.com",
+                  "title": "FPT SpeedX10 Eyes3 IQ4S",
+                  "snippet": "LƯU TRỮ CLOUD 3 NGÀY  [Button: Xem thêm]  ĐẶC QUYỀN DÀNH RIÊNG CHO BẠN  Image  ĐÓN ĐẦU CHUẨN CÔNG NGHỆ MỚI NHẤT  Trải nghiệm Internet tốc độ 10Gbps trên hạ tầng XGS-PON cùng modem Wi-Fi 7 tiên tiến nh...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-combo-giga-max?category_id=76&utm_source=chatgpt.com",
+                  "title": "Combo Giga",
+                  "snippet": "Combo Giga  GIÁ CƯỚC  Chỉ từ 200.000đ /tháng  Image  Tốc độ(Download/Upload)  1000  Mbps /300 Mbps  THÔNG TIN CHI TIẾT  * Xem AFF ASEAN Hyundai Cup 2026 trọn vẹn trên FPT Play * Ưu đãi HOT: Miễn phí...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/super-300-biz?utm_source=chatgpt.com",
+                  "title": "",
+                  "snippet": "- Dịch vụ tận tâm: Thủ tục đơn giản, lắp đặt siêu tốc trong 24h và hỗ trợ kỹ thuật chuyên nghiệp qua ứng dụng Hi FPT 24/7.   Tổng đài đăng ký lắp mạng, lắp WiFi FPT là 1900 6600. Khách hàng có thể gọi...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/goi-cuoc-fpt-nao-duoc-uu-dai-x3-bang-thong-14881.html?utm_source=chatgpt.com",
+                  "title": "Gói cước FPT nào được ưu đãi X3 băng thông trong tháng 7?",
+                  "snippet": "Quốc Thắng • Thứ Năm, ngày 23/07/2026 10:10 AM (GMT +7)  GÓI CƯỚC FPT NÀO ĐƯỢC ƯU ĐÃI X3 BĂNG THÔNG TRONG THÁNG 7?  Lắp đặt Internet FPT trong tháng 7 để nhận ưu đãi gấp 3 băng thông trong 12 tháng,...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1784764800.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/super-600-biz?utm_source=chatgpt.com",
+                  "title": "",
+                  "snippet": "Super600 Biz  GIÁ CƯỚC  Chỉ từ 2.500.000đ /tháng  Image  Tốc độ(Download/Upload)  600  Mbps /600 Mbps  THÔNG TIN CHI TIẾT  * Trang bị Mikrotik RB4011iGSRM với cấu hình mạnh mẽ, đáp ứng nhu cầu băng th...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet-x3-bang-thong?utm_source=chatgpt.com",
+                  "title": "Lắp đặt internet Wifi FPT - X3 băng thông, X3 trải nghiệm",
+                  "snippet": "TRỌN VẸN ĐẠI TIỆC THỂ THAO  X3 băng thông - X3 giải đấu  THÔNG TIN GÓI CƯỚC  Giá gói/ tháng  Gói Internet tốc độ cao  Thiết bị đi kèm  120+ kênh truyền hình, giải trí  Ngoại Hạng Anh  FIFA World Cup...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-combo-f-game?utm_source=chatgpt.com",
+                  "title": "Combo F-Game",
+                  "snippet": "- Giải trí đỉnh cao: Gói Combo Internet & FPT Play độc quyền bản quyền Ngoại hạng Anh, và kho nội dung 4K đa dạng.  - Thiết bị & Phủ sóng: Trang bị thiết bị thế hệ mới tăng khả năng xuyên thấu và chịu...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-combo-meta-max?utm_source=chatgpt.com",
+                  "title": "Combo Meta",
+                  "snippet": "QUẢN LÝ MỌI TIỆN ÍCH VỚI HI FPT  Tích điểm đổi quà, quản lý hợp đồng, gia hạn dịch vụ hoặc yêu cầu hỗ trợ tức thì.  Image  ƯU ĐÃI & CHĂM SÓC TẬN TÂM  Đội ngũ kỹ thuật hỗ trợ nhanh chóng trong suốt quá...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-combo-giga-f1-lite?utm_source=chatgpt.com",
+                  "title": "Đăng ký Internet FPT Gói Combo Giga F1 Lite - Tốc độ 300Mbps",
+                  "snippet": "Combo Giga F1 Lite  GIÁ CƯỚC  Chỉ từ 220.000đ /tháng  Image  Tốc độ(Download/Upload)  300  Mbps /300 Mbps  THÔNG TIN CHI TIẾT  * Nhận thêm Camera FPT kèm Cloud miễn phí 12 tháng khi trả trước từ 3 th...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/cach-lay-ma-gioi-thieu-ban-be-tren-app-hi-fpt-14869.html?category_id=17&utm_source=chatgpt.com",
+                  "title": "Cách lấy mã Giới thiệu bạn bè trên Hi FPT để được FREE cước",
+                  "snippet": "Tuyết Trinh • 21/07/2026  CÁCH LẤY MÃ GIỚI THIỆU BẠN BÈ TRÊN APP HI FPT ĐỂ ĐƯỢC MIỄN 1 THÁNG CƯỚC  Hướng dẫn cách lấy mã Giới thiệu bạn bè trên app Hi FPT, chia sẻ đến bạn bè, người thân để nhận ưu đ...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": 1784592000.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/lap-dat-internet?utm_source=chatgpt.com",
+                  "title": "Lắp Internet & Truyền hình FPT - Ưu đãi cực tốt",
+                  "snippet": "* Bảng giá * Ưu đãi  [Button: Đăng ký ngay] Image [Button: ☰]  Image Ưu đãi: Tặng ngay 1 tháng khi đăng ký trả trước 12 tháng gói Internet FPT  Image Tặng ngay 01 Modem wifi 6 khi đăng ký lắp mới int...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/super-300-biz-plus?utm_source=chatgpt.com",
+                  "title": "",
+                  "snippet": "- Bước 4: Ký hợp đồng điện tử (e-Contract) bảo mật và tiện lợi.  - Bước 5: Đội ngũ kỹ thuật sẽ liên hệ và hoàn tất lắp đặt trong vòng 24 - 48 giờ, thường là trong ngày.  [Input] Có các chương trình kh...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=226&utm_source=chatgpt.com",
+                  "title": "Ưu đãi lắp mạng FPT tháng 7 - X3 băng thông, nhận Camera",
+                  "snippet": "BẢNG GIÁ GÓI INTERNET FPT PHỔ BIẾN, ĐƯỢC ÁP DỤNG ƯU ĐÃI THÁNG 7/2026  Dưới đây là bảng giá tham khảo các gói cước Internet FPT được đông đảo khách hàng đăng ký, áp dụng ưu đãi X3 băng thông, Camera và...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": 1784678400.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/dang-ky-internet-fpt-thu-duc-13918.html?utm_source=chatgpt.com",
+                  "title": "Đăng ký Internet FPT Thủ Đức | Bảng giá 2026, lắp trong ngày",
+                  "snippet": "BẢNG GIÁ LẮP MẠNG FPT THỦ ĐỨC MỚI NHẤT NĂM 2026  BẢNG GIÁ GÓI CƯỚC INTERNET WIFI FPT CÁ NHÂN  Tên gói  | Giá cước  | Tốc độ  | Chi tiết --- | --- | --- | --- Internet GIGA  | 195.000₫ Đăng ký  | 1Gbps...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "pub_date": 1770854400.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/fpt-telecom-soc-son-14831.html?category_id=226&utm_source=chatgpt.com",
+                  "title": "FPT Telecom Sóc Sơn | Địa chỉ văn phòng, giờ làm việc",
+                  "snippet": "Image: Nhân viên FPT sẵn sàng hỗ trợ khách hàng các thủ tục tại văn phòng Nhân viên FPT sẵn sàng hỗ trợ khách hàng các thủ tục tại văn phòng  BẢNG GIÁ GÓI MẠNG FPT ĐANG TRIỂN KHAI TẠI SÓC SƠN  BẢNG G...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 20
+                  },
+                  "pub_date": 1784073600.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/internet/goi-f-game-f1?utm_source=chatgpt.com",
+                  "title": "F-Game F1",
+                  "snippet": "F-Game F1  GIÁ CƯỚC  Chỉ từ 245.000đ /tháng  Image  Tốc độ(Download/Upload)  1000  Mbps /300 Mbps  THÔNG TIN CHI TIẾT  * Trang bị Modem Wi-Fi 6 băng tần kép & Wi-Fi Mesh: Cấu hình phần cứng mạnh mẽ,...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 21
+                  },
+                  "pub_date": null,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/cac-goi-internet-10083.html?utm_source=chatgpt.com",
+                  "title": "Các gói Internet FPT chất lượng cho cá nhân, gia đình",
+                  "snippet": "Hoài Phương • Thứ Tư, ngày 01/07/2026 3:05 PM (GMT +7)  CÁC GÓI INTERNET FPT CHẤT LƯỢNG CHO CÁ NHÂN, GIA ĐÌNH  Khám phá các gói Internet FPT chất lượng dành cho cá nhân và gia đình với WiFi 6 tốc độ...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 22
+                  },
+                  "pub_date": 1782864000.0,
+                  "attribution": "fpt.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt.vn/tin-tuc/lap-wifi-fpt-phuong-an-phu-tphcm-12452.html?utm_source=chatgpt.com",
+                  "title": "Lắp Wifi FPT phường An Phú, HCM - X3 băng thông, nhận Camera",
+                  "snippet": "BẢNG GIÁ CÁC GÓI CƯỚC WIFI INTERNET FPT PHƯỜNG AN PHÚ, TPHCM LÀ BAO NHIÊU?  Khám phá ngay các gói cước Internet Wifi FPT được thiết kế tối ưu cho cộng đồng Phường An Phú, TPHCM! Dù bạn cần kết nối cho...",
+                  "ref_id": {
+                    "turn_index": 2,
+                    "ref_type": "search",
+                    "ref_index": 25
+                  },
+                  "pub_date": 1753660800.0,
+                  "attribution": "fpt.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "fpt-vn.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpt-vn.vn/wifi-6-fpt/?utm_source=chatgpt.com",
+                  "title": "WiFi 6 FPT tốc độ cao: Các loại modem, Gói cước áp dụng 2026",
+                  "snippet": "2* BẢNG GÓI CƯỚC MẠNG FPT – TRANG BỊ MODEM WIFI 6  A. NHÓM GÓI SKY - TỐC ĐỘ 1GBPS/300MBPS   Gói cước  | Download  | Upload  | Wifi 6  | Giá Internet --- | --- | --- | --- | --- Sky  | 1Gbps  | 300 Mbp...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": 1759284332.0,
+                  "attribution": "fpt-vn.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt-vn.vn/tong-hop-goi-mang-fpt-bang-gia-internet-wifi/?utm_source=chatgpt.com",
+                  "title": "Các gói mạng FPT: Giá lắp đặt mạng wifi FPT [Ưu đãi 03/2026]",
+                  "snippet": "2* BẢNG GIÁ INTERNET FPT – THIẾT BỊ WIFI 6  Bảng giá Internet FPT – Thiết bị WiFi 6 áp dụng cho các gói cước được trang bị modem/bộ phát WiFi 6 thế hệ mới, cho tốc độ cao hơn, độ trễ thấp và khả năng...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": 1772323200.0,
+                  "attribution": "fpt-vn.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://fpt-vn.vn/bao-gia-lap-mang-internet-fpt-wifi-fpt/?utm_source=chatgpt.com",
+                  "title": "Báo giá lắp Internet Wifi FPT - Mạng FPT mới nhất 2026",
+                  "snippet": "➡️ Tư vấn mọi mô hình phù hợp nhu cầu sử dụng  3. BÁO GIÁ CHI TIẾT GÓI CƯỚC WIFI 6 FPT: ĐÂU LÀ LỰA CHỌN TỐI ƯU CHO GIA ĐÌNH BẠN?  A. NHÓM GÓI SKY - TỐC ĐỘ 1GBPS/300MBPS   Gói cước  | Download  | Uploa...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 22
+                  },
+                  "pub_date": 1765252568.0,
+                  "attribution": "fpt-vn.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "fpttel.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpttel.vn/?utm_source=chatgpt.com",
+                  "title": "TRANG CHỦ - FPT",
+                  "snippet": "COMBO META  325.000đ/tháng  Tốc độ (Download/Upload)  ↓ 1 Gbps   ↑ 1 Gbps  Image: Speed Icon  * Băng thông 2 chiều 1Gbps * Modem Wi-Fi 6 & FPT Play Box * 170+ kênh truyền hình đặc sắc * Kết nối mượt m...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": null,
+                  "attribution": "fpttel.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "fptofficial.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fptofficial.vn/lap-dat-fpt/?utm_source=chatgpt.com",
+                  "title": "Lắp Mạng FPT Hồ Chí Minh | Bảng Giá WiFi FPT TP.HCM - FPT Official",
+                  "snippet": "ĐĂNG KÝ MẠNG FPT HỒ CHÍ MINH: BẢNG GIÁ ƯU ĐÃI 2026  BẢNG GIÁ FPT HỒ CHÍ MINH MỚI  Khách hàng vui lòng chọn đúng khu vực Ngoại thành hoặc Nội thành để xem đúng bảng giá đang áp dụng cho địa chỉ lắp đặ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": 1783641600.0,
+                  "attribution": "fptofficial.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "wififptvn.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://wififptvn.vn/?utm_source=chatgpt.com",
+                  "title": "TRANG CHỦ - FPT Telecom",
+                  "snippet": "KHÁM PHÁ SẢN PHẨM TẠI HỒ CHÍ MINH  [Button: Internet cá nhân] [Button: Combo Thể Thao] [Button: Internet gia đình] [Button: Internet game thủ]  [Button: ❮]  Phổ biến ✨  Image: Đăng ký gói cước Intern...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": null,
+                  "attribution": "wififptvn.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "tongdaifpt.com.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://tongdaifpt.com.vn/lap-mang-fpt/?utm_source=chatgpt.com",
+                  "title": "Đăng ký lắp mạng Wifi Internet FPT - Giá Rẻ, Tặng Modem - Tổng đài FPT",
+                  "snippet": "II. BÁO GIÁ ĐĂNG KÝ LẮP ĐẶT MẠNG FPT CHO CÁ NHÂN/GIA ĐÌNH  Tổng đài FPT trân trọng gửi đến quý khách hàng bảng báo đăng ký lắp đặt mạng FPT trong tháng với 09/2026 này với các gói cước WiFi 6 chất lượ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": 1757725218.0,
+                  "attribution": "tongdaifpt.com.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "fpttelecom.net.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpttelecom.net.vn/wifi-fpt?utm_source=chatgpt.com",
+                  "title": "Wifi FPT – Tặng Modem Wifi 6 toàn quốc",
+                  "snippet": "^{GIGA}MUL TI  300.000  vnđ/ tháng  300 Mbps  Image: ico-fpt.png  * Phù hợp MMO, Streamer ... * Công nghệ Wifi 6, Tối đa 04 IP  Image: ico-fpt.png  * Download/ Upload: 300 Mbps * Thiết bị: ONT DualBan...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "pub_date": null,
+                  "attribution": "fpttelecom.net.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "fpttel.com.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://fpttel.com.vn/san_pham/combo-sky-f1/?utm_source=chatgpt.com",
+                  "title": "Combo Sky F1 - Trang bị 02 Mesh WiFi 6 + Box Truyền hình",
+                  "snippet": "COMBO SKY F1  Gói Combo Sky F1 – Tận hưởng tốc độ 1 Gbps download và 300 Mbps upload, lý tưởng cho gia đình đông người. Xem hơn 130 kênh truyền hình HD và thiết bị Access Point mở rộng phủ sóng, mang...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 20
+                  },
+                  "pub_date": null,
+                  "attribution": "fpttel.com.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "hcmfpt.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://hcmfpt.vn/internet-fpt?utm_source=chatgpt.com",
+                  "title": "Đăng ký lắp đặt internet FPT khuyến mãi 09-2026",
+                  "snippet": "Để đăng ký lắp mạng internet FPT, khách hàng doanh nghiệp hoặc cơ quan, tổ chức và hộ kinh doanh cần chuẩn bị một trong các giấy tờ sau:  * Doanh nghiệp: Cung cấp Giấy phép kinh doanh (GPKD) bản chín...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 21
+                  },
+                  "pub_date": null,
+                  "attribution": "hcmfpt.vn"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "",
+            "https://fpt.vn/internet/ca-nhan",
+            "https://fpt.vn/internet/ca-nhan?utm_source=chatgpt.com",
+            "https://fpt.vn/internet/doanh-nghiep",
+            "https://fpt.vn/shop/s/dang-ky-wifi",
+            "https://fpt.vn/shop/s/dang-ky-wifi?utm_source=chatgpt.com",
+            "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c",
+            "https://fpt.vn/thiet-bi-access-point/access-point-ax3000c?utm_source=chatgpt.com",
+            "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17",
+            "https://fpt.vn/tin-tuc/uu-dai-lap-mang-fpt-thang-7-14878.html?category_id=17&utm_source=chatgpt.com"
+          ],
+          "citations": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0aa0b4dc4753c9578264e95668375",
+          "message_type": "next",
+          "turn_exchange_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "working_turn_id": "4752e238-8f29-411c-a2c7-23f84cc9d1b6",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "5185e5cf-0a7b-4cf2-9f0e-78b875b28a71",
+          "turn_id": "0b0b551c-1325-4273-b1b1-2004582b24a5",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-4752e238-8f29-411c-a2c7-23f84cc9d1b6:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "5185e5cf-0a7b-4cf2-9f0e-78b875b28a71",
+      "children": []
+    }
+  },
+  "current_node": "d3c0b2d7-e5dd-49d7-9d07-f44e59100625",
+  "context_truncation_continuation": null
+}

@@ -28,6 +28,16 @@ wine-prefix-centrix/
 *.dmg
 *.zip
 *.exe
+*.iso
+*.tar.gz
+
+# Media / video files (exceeds GitHub 100MB limit)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.flv
 
 # OS / editor
 .DS_Store

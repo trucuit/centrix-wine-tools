@@ -1,0 +1,38 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_000000002f2882118b27628396436adc",
+    "content_type": "image_asset_pointer",
+    "width": 1536,
+    "height": 1152,
+    "size_bytes": 630743,
+    "local_path": "/Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/assets/6aaa2908-779c-83ec-ad68-0cbcf0ef8812/IMG_1523.jpeg"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000097448207a5980f432241ba26",
+    "content_type": "image_asset_pointer",
+    "width": 1536,
+    "height": 1152,
+    "size_bytes": 710516,
+    "local_path": "/Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/assets/6aaa2908-779c-83ec-ad68-0cbcf0ef8812/IMG_CB49C6A2-56CC-4BDA-939C-AFFDF02C87A7.jpeg"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000075b4821183b98cd66e6e7ca5",
+    "content_type": "image_asset_pointer",
+    "width": 1536,
+    "height": 1152,
+    "size_bytes": 575231,
+    "local_path": "/Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/assets/6aaa2908-779c-83ec-ad68-0cbcf0ef8812/IMG_F15954C0-824D-4D60-A063-262D7B6BEDAC.jpeg"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000046e882118302f20675f52086",
+    "content_type": "image_asset_pointer",
+    "width": 1536,
+    "height": 1152,
+    "size_bytes": 724361,
+    "local_path": "/Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/assets/6aaa2908-779c-83ec-ad68-0cbcf0ef8812/IMG_639E342D-557D-4DEC-BEAE-F90FD95B521A.jpeg"
+  }
+]

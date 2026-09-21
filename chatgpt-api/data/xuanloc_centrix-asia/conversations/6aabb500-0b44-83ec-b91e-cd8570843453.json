@@ -1,0 +1,379 @@
+{
+  "title": "Viết lại email khác",
+  "create_time": 1789637890.535743,
+  "update_time": 1789637944.202297,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aabb500-0b44-83ec-b91e-cd8570843453",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.apple.com/",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "https://www.openai.com",
+    "https://ubuntu.com/esm",
+    "mailto:pnplinh1209@gmail.com",
+    "https://get2fa.vn/",
+    "https://docs.google.com/document/d/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "d16732e8-8ae3-495e-97f0-4f52be43911f"
+      ]
+    },
+    "d16732e8-8ae3-495e-97f0-4f52be43911f": {
+      "id": "d16732e8-8ae3-495e-97f0-4f52be43911f",
+      "message": {
+        "id": "d16732e8-8ae3-495e-97f0-4f52be43911f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789637891.432,
+        "update_time": 1789637905.756388,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_00000000f3c082118a161a1bc4920a91",
+              "size_bytes": 818313,
+              "width": 945,
+              "height": 2048,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "viết lại email khác cho mình"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_00000000f3c082118a161a1bc4920a91",
+              "size": 818313,
+              "name": "36fe7db4-4e0d-4635-843c-ba7c19759d94.png",
+              "mime_type": "image/png",
+              "width": 945,
+              "height": 2048,
+              "source": "local",
+              "library_file_id": "libfile_51f4842c1bf48191b8fad2bbfbc9d7a5",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "turn_id": "ce779524-e367-49b0-aa57-6f0f1dc3df97",
+          "async_source": "saserver-southeastasia-prod.fck9d:conversation-turn-1964b1cb-1032-4fad-9279-5aa010534580:SG",
+          "request_id": "wfr_01a0aebb084174d2884ffb17e8d5c201",
+          "message_source": null,
+          "turn_exchange_id": "1964b1cb-1032-4fad-9279-5aa010534580",
+          "working_turn_id": "1964b1cb-1032-4fad-9279-5aa010534580",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "90e1967b-cef1-47ca-9bc2-174d0c92db38"
+      ]
+    },
+    "90e1967b-cef1-47ca-9bc2-174d0c92db38": {
+      "id": "90e1967b-cef1-47ca-9bc2-174d0c92db38",
+      "message": {
+        "id": "90e1967b-cef1-47ca-9bc2-174d0c92db38",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789637899.412448,
+        "update_time": 1789637899.412448,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 4s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 4,
+          "reasoning_start_time": 1789637894.7260997,
+          "reasoning_end_time": 1789637899.4029105,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0aebb084174d2884ffb17e8d5c201",
+          "message_type": "next",
+          "turn_exchange_id": "1964b1cb-1032-4fad-9279-5aa010534580",
+          "working_turn_id": "1964b1cb-1032-4fad-9279-5aa010534580",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "68d0ecca-79e4-4647-bf21-d4c097eafd38",
+          "turn_id": "2c77f0a9-229c-4bfa-b9df-cc8e33402604",
+          "hide_inline_actions": true,
+          "async_source": "saserver-southeastasia-prod.fck9d:conversation-turn-1964b1cb-1032-4fad-9279-5aa010534580:SG",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d16732e8-8ae3-495e-97f0-4f52be43911f",
+      "children": [
+        "4f118d3d-ae2b-4756-8e63-b5de60cefad5"
+      ]
+    },
+    "4f118d3d-ae2b-4756-8e63-b5de60cefad5": {
+      "id": "4f118d3d-ae2b-4756-8e63-b5de60cefad5",
+      "message": {
+        "id": "4f118d3d-ae2b-4756-8e63-b5de60cefad5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789637899.419275,
+        "update_time": 1789637905.494336,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Được anh. Có thể đổi sang một email khác dễ nhớ hơn, ví dụ:\n\n- **pnplinh.ai@gmail.com**\n- **pnplinh.work@gmail.com**\n- **pnplinh.cetrix@gmail.com**\n- **pnplinh1209.ai@gmail.com**\n- **linhpn1209@gmail.com**\n- **linhpn.workspace@gmail.com**\n\nNếu anh muốn kiểu **email ngẫu nhiên giống tài khoản khách hàng** thì em có thể tạo thêm 10–20 tên khác cho anh."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0aebb084174d2884ffb17e8d5c201",
+          "message_type": "next",
+          "turn_exchange_id": "1964b1cb-1032-4fad-9279-5aa010534580",
+          "working_turn_id": "1964b1cb-1032-4fad-9279-5aa010534580",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "90e1967b-cef1-47ca-9bc2-174d0c92db38",
+          "turn_id": "2c77f0a9-229c-4bfa-b9df-cc8e33402604",
+          "async_source": "saserver-southeastasia-prod.fck9d:conversation-turn-1964b1cb-1032-4fad-9279-5aa010534580:SG",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "90e1967b-cef1-47ca-9bc2-174d0c92db38",
+      "children": [
+        "c377c9a1-9b04-4d5b-a6ac-434113e1952a"
+      ]
+    },
+    "c377c9a1-9b04-4d5b-a6ac-434113e1952a": {
+      "id": "c377c9a1-9b04-4d5b-a6ac-434113e1952a",
+      "message": {
+        "id": "c377c9a1-9b04-4d5b-a6ac-434113e1952a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789637935.245,
+        "update_time": 1789637944.048514,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "bạn viết email trong ảnh cho mình để mình copy"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "turn_id": "b11e79b0-cb52-426b-a12b-58e2286b466d",
+          "async_source": "saserver-southeastasia-prod.fck9d:conversation-turn-7ff8afd1-9e47-4e14-a746-56789b1e1dae:SG",
+          "request_id": "wfr_01a0aebbae0f79bda2b30b4a0c528d2a",
+          "message_source": null,
+          "turn_exchange_id": "7ff8afd1-9e47-4e14-a746-56789b1e1dae",
+          "working_turn_id": "7ff8afd1-9e47-4e14-a746-56789b1e1dae",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4f118d3d-ae2b-4756-8e63-b5de60cefad5",
+      "children": [
+        "ab63b230-99fe-433c-88aa-f573adf307c5"
+      ]
+    },
+    "ab63b230-99fe-433c-88aa-f573adf307c5": {
+      "id": "ab63b230-99fe-433c-88aa-f573adf307c5",
+      "message": {
+        "id": "ab63b230-99fe-433c-88aa-f573adf307c5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789637939.848938,
+        "update_time": 1789637939.848938,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 2 giây"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 1,
+          "reasoning_start_time": 1789637938.3898187,
+          "reasoning_end_time": 1789637939.8431394,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0aebbae0f79bda2b30b4a0c528d2a",
+          "message_type": "next",
+          "turn_exchange_id": "7ff8afd1-9e47-4e14-a746-56789b1e1dae",
+          "working_turn_id": "7ff8afd1-9e47-4e14-a746-56789b1e1dae",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "afe8ecfc-e3ea-4a6d-b937-4eeb532c1735",
+          "turn_id": "dc6b4191-1c7d-4a6d-bde6-b6fab862d438",
+          "hide_inline_actions": true,
+          "async_source": "saserver-southeastasia-prod.fck9d:conversation-turn-7ff8afd1-9e47-4e14-a746-56789b1e1dae:SG",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c377c9a1-9b04-4d5b-a6ac-434113e1952a",
+      "children": [
+        "48f8013b-a01d-4ae1-8998-88944bafb1ff"
+      ]
+    },
+    "48f8013b-a01d-4ae1-8998-88944bafb1ff": {
+      "id": "48f8013b-a01d-4ae1-8998-88944bafb1ff",
+      "message": {
+        "id": "48f8013b-a01d-4ae1-8998-88944bafb1ff",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789637939.853761,
+        "update_time": 1789637943.855535,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "pnplinh1209@gmail.com"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0aebbae0f79bda2b30b4a0c528d2a",
+          "message_type": "next",
+          "turn_exchange_id": "7ff8afd1-9e47-4e14-a746-56789b1e1dae",
+          "working_turn_id": "7ff8afd1-9e47-4e14-a746-56789b1e1dae",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "ab63b230-99fe-433c-88aa-f573adf307c5",
+          "turn_id": "dc6b4191-1c7d-4a6d-bde6-b6fab862d438",
+          "safe_urls": [
+            "mailto:pnplinh1209@gmail.com"
+          ],
+          "async_source": "saserver-southeastasia-prod.fck9d:conversation-turn-7ff8afd1-9e47-4e14-a746-56789b1e1dae:SG",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "ab63b230-99fe-433c-88aa-f573adf307c5",
+      "children": []
+    }
+  },
+  "current_node": "48f8013b-a01d-4ae1-8998-88944bafb1ff",
+  "context_truncation_continuation": null
+}

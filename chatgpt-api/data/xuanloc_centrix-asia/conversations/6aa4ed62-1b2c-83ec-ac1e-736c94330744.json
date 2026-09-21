@@ -1,0 +1,591 @@
+{
+  "title": "Thiết kế logo Deepseek",
+  "create_time": 1789193571.935535,
+  "update_time": 1789193635.295614,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa4ed62-1b2c-83ec-ac1e-736c94330744",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "a2301f6d-e9fd-494b-9cc3-c6716a9f0457"
+      ]
+    },
+    "a2301f6d-e9fd-494b-9cc3-c6716a9f0457": {
+      "id": "a2301f6d-e9fd-494b-9cc3-c6716a9f0457",
+      "message": {
+        "id": "a2301f6d-e9fd-494b-9cc3-c6716a9f0457",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789193573.346,
+        "update_time": 1789193581.47206,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_000000004a588211b24d801dc918b17f",
+              "size_bytes": 17832,
+              "width": 1080,
+              "height": 1080,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "Vẽ cho mình Logo và thông tin Deepseek vào khung này thay cho mình @Tạo hình ảnh "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_00000000572c8211ba6ced96d236ce4a",
+              "size": 2164,
+              "name": "deepseek-color.svg",
+              "mime_type": "image/svg+xml",
+              "source": "local",
+              "library_file_id": "libfile_4a8daff18a148191aee48979e1572dd9",
+              "is_big_paste": false
+            },
+            {
+              "id": "file_000000004a588211b24d801dc918b17f",
+              "size": 17832,
+              "name": "Tai-khoan-ChatGPT-Pro-200-1-thang-GPT-o1-Pro-–-Tai-khoan-Share(1).webp",
+              "mime_type": "image/webp",
+              "width": 1080,
+              "height": 1080,
+              "source": "local",
+              "library_file_id": "libfile_df1f9372f5288191b81a12a5ad287e9d",
+              "is_big_paste": false
+            }
+          ],
+          "system_hints": [
+            "picture_v2"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": [
+              {
+                "id": "picture_v2",
+                "symbol": "ecosystemMention",
+                "startIndex": 67,
+                "endIndex": 80
+              }
+            ]
+          },
+          "turn_id": "87953088-cab1-4223-a637-2a4fe48a85e1",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-57514a33-6533-42d2-8a4c-376ddab2893e:JP",
+          "request_id": "wfr_01a0943f474c7d238cd48118d56c25d6",
+          "message_source": null,
+          "turn_exchange_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "working_turn_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "83932672-ffe1-4b85-9a1e-6fa353cf9254"
+      ]
+    },
+    "83932672-ffe1-4b85-9a1e-6fa353cf9254": {
+      "id": "83932672-ffe1-4b85-9a1e-6fa353cf9254",
+      "message": {
+        "id": "83932672-ffe1-4b85-9a1e-6fa353cf9254",
+        "author": {
+          "role": "tool",
+          "name": "t2uay3k.sj1i4kz",
+          "metadata": {}
+        },
+        "create_time": 1789193577.03772,
+        "update_time": 1789193634.398236,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_0000000019f48206b756fed09327eded",
+              "mime_type": "image/png",
+              "size_bytes": 621704,
+              "width": 1254,
+              "height": 1254,
+              "fovea": null,
+              "metadata": {
+                "dalle": {
+                  "gen_id": "e3a29787-e753-4cba-bcde-e41002842b46",
+                  "prompt": "",
+                  "seed": null,
+                  "parent_gen_id": null,
+                  "edit_op": null,
+                  "serialization_title": "DALL-E generation metadata"
+                },
+                "gizmo": null,
+                "generation": {
+                  "gen_id": "e3a29787-e753-4cba-bcde-e41002842b46",
+                  "gen_size": "smimage",
+                  "gen_size_v2": "24",
+                  "seed": null,
+                  "parent_gen_id": null,
+                  "height": 1254,
+                  "width": 1254,
+                  "transparent_background": false,
+                  "is_sticker": false,
+                  "is_purchasable": null,
+                  "purchase_hints": null,
+                  "serialization_title": "Image Generation metadata",
+                  "orientation": "square",
+                  "projection": "rectilinear"
+                },
+                "segmentation": null,
+                "container_pixel_height": 1254,
+                "container_pixel_width": 1254,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "ghostrider": {
+            "status": "final",
+            "is_feature_trial": false
+          },
+          "parent_id": "a2301f6d-e9fd-494b-9cc3-c6716a9f0457",
+          "turn_exchange_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "working_turn_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "image_gen_title": "Deepseek: Thẻ thương hiệu tối giản",
+          "cot_version": "v5",
+          "async_source": "saserver-japaneast-prod.fck9d:ghostrider-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-wfr_01a0943f474c7d238cd48118d56c25d6:JP",
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "image_gen",
+              "notification_channel_name": "ImageGen",
+              "notification_priority": 4
+            }
+          ],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "a2301f6d-e9fd-494b-9cc3-c6716a9f0457",
+      "children": [
+        "29534a04-88ea-4fff-8161-2851115b1de8"
+      ]
+    },
+    "29534a04-88ea-4fff-8161-2851115b1de8": {
+      "id": "29534a04-88ea-4fff-8161-2851115b1de8",
+      "message": {
+        "id": "29534a04-88ea-4fff-8161-2851115b1de8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789193587.016953,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Designing the replacement",
+              "content": "I’m interpreting the request as editing the uploaded frame: replacing the existing branding with DeepSeek’s logo and information while preserving the layout. I’ll use “DeepSeek” prominently and retain the compact promotional style.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Designed the replacement",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "6392f463-ee0f-44e0-bdb0-a015eac56c2d"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "cot_version": "v5",
+          "model_slug": "gpt-5-4-thinking",
+          "request_id": "wfr_01a0943f6e85771caab6c2e2f6ea9535",
+          "message_type": "next",
+          "turn_exchange_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "working_turn_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789193582.8791478,
+          "skip_reasoning_title": "Skip",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "parent_id": "a8a45d1e-97f3-499c-b136-b33c850c9398",
+          "async_source": "saserver-japaneast-prod.fck9d:ghostrider-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-wfr_01a0943f474c7d238cd48118d56c25d6:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "83932672-ffe1-4b85-9a1e-6fa353cf9254",
+      "children": [
+        "ae01f9a7-0d53-46ad-9558-59f315ff5ad2"
+      ]
+    },
+    "ae01f9a7-0d53-46ad-9558-59f315ff5ad2": {
+      "id": "ae01f9a7-0d53-46ad-9558-59f315ff5ad2",
+      "message": {
+        "id": "ae01f9a7-0d53-46ad-9558-59f315ff5ad2",
+        "author": {
+          "role": "tool",
+          "name": "t2uay3k.sj1i4kz",
+          "metadata": {}
+        },
+        "create_time": 1789193599.5460026,
+        "update_time": 1789193599.5460026,
+        "content": {
+          "content_type": "system_error",
+          "name": "UnidentifiedImageError",
+          "text": "Encountered exception: <class 'PIL.UnidentifiedImageError'>."
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "cot_version": "v5",
+          "model_slug": "gpt-5-4-thinking",
+          "request_id": "wfr_01a0943f6e85771caab6c2e2f6ea9535",
+          "message_type": "next",
+          "turn_exchange_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "working_turn_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "is_visually_hidden_from_conversation": true,
+          "parent_id": "7e093b23-9a64-4063-8057-7b2ddecca7c5",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "29534a04-88ea-4fff-8161-2851115b1de8",
+      "children": [
+        "16e285ae-e825-41d9-89f6-8df9862f6607"
+      ]
+    },
+    "16e285ae-e825-41d9-89f6-8df9862f6607": {
+      "id": "16e285ae-e825-41d9-89f6-8df9862f6607",
+      "message": {
+        "id": "16e285ae-e825-41d9-89f6-8df9862f6607",
+        "author": {
+          "role": "tool",
+          "name": "t2uay3k.sj1i4kz",
+          "metadata": {}
+        },
+        "create_time": 1789193625.127484,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_0000000019f48206b756fed09327eded",
+              "mime_type": "image/png",
+              "size_bytes": 621704,
+              "width": 1254,
+              "height": 1254,
+              "fovea": null,
+              "metadata": {
+                "dalle": {
+                  "gen_id": "e3a29787-e753-4cba-bcde-e41002842b46",
+                  "prompt": "",
+                  "seed": null,
+                  "parent_gen_id": null,
+                  "edit_op": null,
+                  "serialization_title": "DALL-E generation metadata"
+                },
+                "gizmo": null,
+                "generation": {
+                  "gen_id": "e3a29787-e753-4cba-bcde-e41002842b46",
+                  "gen_size": "smimage",
+                  "gen_size_v2": "24",
+                  "seed": null,
+                  "parent_gen_id": null,
+                  "height": 1254,
+                  "width": 1254,
+                  "transparent_background": false,
+                  "is_sticker": false,
+                  "is_purchasable": null,
+                  "purchase_hints": null,
+                  "serialization_title": "Image Generation metadata",
+                  "orientation": "square",
+                  "projection": "rectilinear"
+                },
+                "segmentation": null,
+                "container_pixel_height": 1254,
+                "container_pixel_width": 1254,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "Model caption: A clean, minimal, dark-themed app/brand card graphic. Overall scene: a centered, square, high-contrast black UI-style tile with a thick rounded dark-gray frame/border, like a promotional card or splash screen. The composition is symmetric and minimal, with white graphic and text elements on a black background, matching the original template’s layout and style, with only the central branding changed to Deepseek. No people are present. The style is modern, flat, monochrome, vector-like, with smooth rounded shapes and crisp sans-serif typography, resembling a tech product card or logo tile.\n\nCentral area: a large, simple, bold white icon above the title: a stylized whale/sea creature logo in flat vector form, circular/rounded composition. The whale is abstract and modern, formed by smooth curves and negative space: a chunky whale body/curve forming almost a circle, with a small rounded eye/dot-like mark, a curled belly/underbody shape, and a tail fin pointing upward/right; the icon is entirely white and centered near the top-middle, on the black background, giving a clean minimal brand mark.\n\nBelow the whale icon, a large, bold, rounded sans-serif wordmark in white reads exactly “Deepseek” (capital “D”, rest lowercase), centered. The font is heavy, clean, geometric/sans-serif, with large size and strong weight, occupying the central mid area.\n\nUnder the wordmark is a pill-shaped dark-gray badge/pill button centered, with subtle darker/flat shading, rounded ends, and tiny circular dot accents on the left and right ends (like small black/darker circles). Inside the pill is white text “Miễn phí” (Vietnamese for “Free”), with proper diacritics: “Miễn phí”. The badge has a consistent monochrome UI look, with the text centered and bold/medium weight. The dots on either side are small and circular, providing a badge-like decoration.\n\nBottom corners: in the lower-left corner, there is a light gray/white CentriX branding: a small stylized “X”-like or bow/twisted ribbon symbol (thin, modern mark) followed by the word “CentriX” in a light gray/white sans-serif (capital “C”, lowercase rest, with a capital “X” at the end). It sits close to the inner edge. In the lower-right corner, a small light-gray chatbot/robot icon (rounded robot face with antenna dots, friendly simple emoji-like outline) appears, matching the template’s small corner icon styling.\n\nThe background is solid deep black inside the card, with no textures, and the entire image has a thick, rounded, dark charcoal/near-black border/frame with very rounded corners (like an app card or widget). Everything is centered and balanced, with the whale logo near upper center, “Deepseek” large below it, the “Miễn phí” pill beneath, and the “CentriX” and robot icon as subtle lower-left and lower-right accents. No people, no additional objects, no additional text. High contrast black-and-white/gray palette, minimal, premium UI/branding graphic.<|has_watermark|><|has_borders|>"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "image_gen_title": "Deepseek: Thẻ thương hiệu tối giản",
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "image_gen",
+              "notification_channel_name": "ImageGen",
+              "notification_priority": 4
+            }
+          ],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "cot_version": "v5",
+          "model_slug": "gpt-5-4-thinking",
+          "request_id": "wfr_01a0943f6e85771caab6c2e2f6ea9535",
+          "message_type": "next",
+          "turn_exchange_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "working_turn_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "is_visually_hidden_from_conversation": true,
+          "parent_id": "cb914e27-24de-4734-b9e9-1f4140f6538e",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "ae01f9a7-0d53-46ad-9558-59f315ff5ad2",
+      "children": [
+        "7e601ebd-9fdb-4ae5-8b1c-a99d0d2e3fc2"
+      ]
+    },
+    "7e601ebd-9fdb-4ae5-8b1c-a99d0d2e3fc2": {
+      "id": "7e601ebd-9fdb-4ae5-8b1c-a99d0d2e3fc2",
+      "message": {
+        "id": "7e601ebd-9fdb-4ae5-8b1c-a99d0d2e3fc2",
+        "author": {
+          "role": "tool",
+          "name": "t2uay3k.sj1i4kz",
+          "metadata": {}
+        },
+        "create_time": 1789193628.4519405,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Generated images from the last `image_gen.text2im` call were saved at:\n- /mnt/data/ghostwriter_images/generated/a_clean_minimal_dark_themed_app_brand_card_graph_2.png (wxh = 1254 x 1254, exact aspect ratio 1:1, close to aspect ratio 1:1)\n\nYou can visually inspect the generated image directly in the tool result above. Only reopen the saved path if you need programmatic processing or want to pass the image into another tool call."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "cot_version": "v5",
+          "model_slug": "gpt-5-4-thinking",
+          "request_id": "wfr_01a0943f6e85771caab6c2e2f6ea9535",
+          "message_type": "next",
+          "turn_exchange_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "working_turn_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "is_visually_hidden_from_conversation": true,
+          "parent_id": "16e285ae-e825-41d9-89f6-8df9862f6607",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "16e285ae-e825-41d9-89f6-8df9862f6607",
+      "children": [
+        "c6d96530-01c5-4719-baca-18d3efb8c8a5"
+      ]
+    },
+    "c6d96530-01c5-4719-baca-18d3efb8c8a5": {
+      "id": "c6d96530-01c5-4719-baca-18d3efb8c8a5",
+      "message": {
+        "id": "c6d96530-01c5-4719-baca-18d3efb8c8a5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789193630.108389,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for 46s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 46,
+          "reasoning_start_time": 1789193582.8791478,
+          "reasoning_end_time": 1789193629.7481043,
+          "reasoning_recap_type": "collapse",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0943f6e85771caab6c2e2f6ea9535",
+          "message_type": "next",
+          "turn_exchange_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "working_turn_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "model_slug": "gpt-5-4-auto-thinking",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "b78c2236-6f5f-41c2-8af7-c429209dabb7",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7e601ebd-9fdb-4ae5-8b1c-a99d0d2e3fc2",
+      "children": [
+        "95bec7ef-5d93-424e-9b15-a773364c373c"
+      ]
+    },
+    "95bec7ef-5d93-424e-9b15-a773364c373c": {
+      "id": "95bec7ef-5d93-424e-9b15-a773364c373c",
+      "message": {
+        "id": "95bec7ef-5d93-424e-9b15-a773364c373c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789193628.451451,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "model_slug": "gpt-5-4-thinking",
+          "request_id": "wfr_01a0943f6e85771caab6c2e2f6ea9535",
+          "message_type": "next",
+          "turn_exchange_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "working_turn_id": "57514a33-6533-42d2-8a4c-376ddab2893e",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "is_visually_hidden_from_conversation": true,
+          "parent_id": "c6d96530-01c5-4719-baca-18d3efb8c8a5",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "c6d96530-01c5-4719-baca-18d3efb8c8a5",
+      "children": []
+    }
+  },
+  "current_node": "95bec7ef-5d93-424e-9b15-a773364c373c",
+  "context_truncation_continuation": null
+}

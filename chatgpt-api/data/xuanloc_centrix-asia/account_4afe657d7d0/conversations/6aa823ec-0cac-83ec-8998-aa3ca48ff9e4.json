@@ -1,0 +1,2756 @@
+{
+  "title": "Lỗi màn hình E DRA",
+  "create_time": 1789404142.02542,
+  "update_time": 1789404204.585979,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa823ec-0cac-83ec-8998-aa3ca48ff9e4",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.apple.com/",
+    "https://docs.google.com/document/d/",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f&utm_source=chatgpt.com",
+    "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns?utm_source=chatgpt.com",
+    "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f",
+    "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/?utm_source=chatgpt.com",
+    "https://www.openai.com",
+    "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "0f38d4df-f700-46c5-a325-6a510ad38c7f"
+      ]
+    },
+    "0f38d4df-f700-46c5-a325-6a510ad38c7f": {
+      "id": "0f38d4df-f700-46c5-a325-6a510ad38c7f",
+      "message": {
+        "id": "0f38d4df-f700-46c5-a325-6a510ad38c7f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789404176.111,
+        "update_time": 1789404204.534999,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "lỗi màn hình edra hiển thị màu đỏ, xanh khi tắt máy tính là gì vậy bạn, mình tắt no được không"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "turn_id": "6b8487a0-f358-4669-824c-d045cb4ee311",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_source": null,
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "18a9d8e2-891d-46de-b1ce-d810eff82faf"
+      ]
+    },
+    "18a9d8e2-891d-46de-b1ce-d810eff82faf": {
+      "id": "18a9d8e2-891d-46de-b1ce-d810eff82faf",
+      "message": {
+        "id": "18a9d8e2-891d-46de-b1ce-d810eff82faf",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789404182.290305,
+        "update_time": 1789404182.290305,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "3ffe5356-7ddb-44ad-b698-405fbec19b37",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789404179.0536835,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "0f38d4df-f700-46c5-a325-6a510ad38c7f",
+      "children": [
+        "412eacef-a885-4b54-8a02-10922fbdda5c"
+      ]
+    },
+    "412eacef-a885-4b54-8a02-10922fbdda5c": {
+      "id": "412eacef-a885-4b54-8a02-10922fbdda5c",
+      "message": {
+        "id": "412eacef-a885-4b54-8a02-10922fbdda5c",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789404182.84439,
+        "update_time": 1789404182.84439,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "www.thegioididong.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.thegioididong.com/hoi-dap/man-hinh-laptop-bi-am-xanh-1590222",
+                  "title": "Màn hình máy tính, laptop bị ám xanh: Nguyên nhân và cách khắc phục - Thegioididong.com",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1767436920.0,
+                  "attribution": "www.thegioididong.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.thegioididong.com/hoi-dap/man-hinh-laptop-bi-do-1590250",
+                  "title": "Màn hình laptop bị đỏ: Nguyên nhân và cách khắc phục hiệu quả - Thegioididong.com",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1767441240.0,
+                  "attribution": "www.thegioididong.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.thegioididong.com/hoi-dap/man-hinh-may-tinh-bi-xanh-la-cay-1590538",
+                  "title": "Màn hình máy tính bị xanh lá cây: Nguyên nhân và cách sửa lỗi - Thegioididong.com",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1777777080.0,
+                  "attribution": "www.thegioididong.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.thegioididong.com/hoi-dap/3-cach-de-ban-kiem-tra-man-hinh-laptop-may-tinh-hieu-qua-1234105",
+                  "title": "Cách kiểm tra, test lỗi và các điểm chết trên màn hình laptop, PC - Thegioididong.com",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1635292800.0,
+                  "attribution": "www.thegioididong.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "elosupport.elotouch.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns",
+                  "title": "Why is my Elo monitor flashing red, blue, green patterns? – Elo - Technical Support",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "elosupport.elotouch.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.dell.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f",
+                  "title": "‎S2417DG, BurnIn mode, random colors #4, back on after power off? | DELL Technologies",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": 1519430400.0,
+                  "attribution": "www.dell.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/support/contents/en-us/videos/videoplayer/how-to-run-the-lcd-bist-to-see-if-the-video-distortion-issue-is-present/6176627725001",
+                  "title": "How to Run the LCD BIST to See if the Video Distortion Issue is Present | Dell US",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": 1742256000.0,
+                  "attribution": "www.dell.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/community/en/conversations/monitors/monitor-self-test-feature-operates-spontaneously-after-shut-down/647e7d02f4ccf8a8dea5a747?commentId=647e7d08f4ccf8a8dea67422",
+                  "title": "‎Monitor self-test feature operates spontaneously after shut down | DELL Technologies",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": 1173312000.0,
+                  "attribution": "www.dell.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "vnit.com.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://vnit.com.vn/test-man-hinh",
+                  "title": "Test màn hình online — điểm chết, hở sáng, sọc, ám màu (miễn phí) | VNIT",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "vnit.com.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "qc.edu.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://qc.edu.vn/man-hinh-may-tinh-bi-am-xanh/",
+                  "title": "Mẹo khắc phục triệt để màn hình máy tính bị ám xanh",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": 1787616000.0,
+                  "attribution": "qc.edu.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.hocviendaotao.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.hocviendaotao.com/2022/08/trai-nghiem-nhanh-man-hinh-choi-game-e.html",
+                  "title": "Trải nghiệm nhanh màn hình chơi game E-DRA EGM27F1 - 27\" IPS FHD 165 Hz, màu khá ổn | HỌC VIỆN ĐÀO TẠO TRỰC TUYẾN-TẬN TÂM-CHẤT LƯỢNG",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": 1659398400.0,
+                  "attribution": "www.hocviendaotao.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "e-dra.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+                  "title": "CHÍNH SÁCH VÀ ĐIỀU KHOẢN BẢO HÀNH SẢN PHẨM MÀN HÌNH E-DRA",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 424718,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": 1673395200.0,
+                  "attribution": "e-dra.vn"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aa82415fea48322884a556e896945f3",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "5689b52d-65c0-40a0-b43e-bd8cdf91f5e1",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm 7 trang web"
+          ],
+          "reasoning_title": "Đang tìm kiếm 7 trang web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=www.thegioididong.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=elosupport.elotouch.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.dell.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=vnit.com.vn&sz=128",
+            "https://www.google.com/s2/favicons?domain=qc.edu.vn&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.hocviendaotao.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=e-dra.vn&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "www.thegioididong.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.thegioididong.com/hoi-dap/man-hinh-laptop-bi-am-xanh-1590222",
+                    "title": "Màn hình máy tính, laptop bị ám xanh: Nguyên nhân và cách khắc phục - Thegioididong.com",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1767436920.0,
+                    "attribution": "www.thegioididong.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.thegioididong.com/hoi-dap/man-hinh-laptop-bi-do-1590250",
+                    "title": "Màn hình laptop bị đỏ: Nguyên nhân và cách khắc phục hiệu quả - Thegioididong.com",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1767441240.0,
+                    "attribution": "www.thegioididong.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.thegioididong.com/hoi-dap/man-hinh-may-tinh-bi-xanh-la-cay-1590538",
+                    "title": "Màn hình máy tính bị xanh lá cây: Nguyên nhân và cách sửa lỗi - Thegioididong.com",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": 1777777080.0,
+                    "attribution": "www.thegioididong.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.thegioididong.com/hoi-dap/3-cach-de-ban-kiem-tra-man-hinh-laptop-may-tinh-hieu-qua-1234105",
+                    "title": "Cách kiểm tra, test lỗi và các điểm chết trên màn hình laptop, PC - Thegioididong.com",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": 1635292800.0,
+                    "attribution": "www.thegioididong.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "elosupport.elotouch.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns",
+                    "title": "Why is my Elo monitor flashing red, blue, green patterns? – Elo - Technical Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "elosupport.elotouch.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.dell.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f",
+                    "title": "‎S2417DG, BurnIn mode, random colors #4, back on after power off? | DELL Technologies",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": 1519430400.0,
+                    "attribution": "www.dell.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.dell.com/support/contents/en-us/videos/videoplayer/how-to-run-the-lcd-bist-to-see-if-the-video-distortion-issue-is-present/6176627725001",
+                    "title": "How to Run the LCD BIST to See if the Video Distortion Issue is Present | Dell US",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": 1742256000.0,
+                    "attribution": "www.dell.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.dell.com/community/en/conversations/monitors/monitor-self-test-feature-operates-spontaneously-after-shut-down/647e7d02f4ccf8a8dea5a747?commentId=647e7d08f4ccf8a8dea67422",
+                    "title": "‎Monitor self-test feature operates spontaneously after shut down | DELL Technologies",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    },
+                    "pub_date": 1173312000.0,
+                    "attribution": "www.dell.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "vnit.com.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://vnit.com.vn/test-man-hinh",
+                    "title": "Test màn hình online — điểm chết, hở sáng, sọc, ám màu (miễn phí) | VNIT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "vnit.com.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "qc.edu.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://qc.edu.vn/man-hinh-may-tinh-bi-am-xanh/",
+                    "title": "Mẹo khắc phục triệt để màn hình máy tính bị ám xanh",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 8
+                    },
+                    "pub_date": 1787616000.0,
+                    "attribution": "qc.edu.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.hocviendaotao.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.hocviendaotao.com/2022/08/trai-nghiem-nhanh-man-hinh-choi-game-e.html",
+                    "title": "Trải nghiệm nhanh màn hình chơi game E-DRA EGM27F1 - 27\" IPS FHD 165 Hz, màu khá ổn | HỌC VIỆN ĐÀO TẠO TRỰC TUYẾN-TẬN TÂM-CHẤT LƯỢNG",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 9
+                    },
+                    "pub_date": 1659398400.0,
+                    "attribution": "www.hocviendaotao.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "e-dra.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+                    "title": "CHÍNH SÁCH VÀ ĐIỀU KHOẢN BẢO HÀNH SẢN PHẨM MÀN HÌNH E-DRA",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 11
+                    },
+                    "pub_date": 1673395200.0,
+                    "attribution": "e-dra.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789404179.0536835,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "18a9d8e2-891d-46de-b1ce-d810eff82faf",
+      "children": [
+        "721efe41-c4f4-4078-a055-fa6e8d76dc13"
+      ]
+    },
+    "721efe41-c4f4-4078-a055-fa6e8d76dc13": {
+      "id": "721efe41-c4f4-4078-a055-fa6e8d76dc13",
+      "message": {
+        "id": "721efe41-c4f4-4078-a055-fa6e8d76dc13",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789404186.553328,
+        "update_time": 1789404187.414734,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đang xác định nguyên nhân",
+              "content": "Mình đang xem đây là chế độ tự kiểm tra màu khi màn hình không nhận tín hiệu, không hẳn là hỏng. Mình sẽ hướng dẫn cách thoát bằng nút nguồn, menu OSD và kiểm tra cáp/tín hiệu; model cụ thể có thể làm thao tác khác nhau.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã xác định nguyên nhân",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "2e4624ed-7146-4bca-b30e-a65610cb3c8f"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "2e4624ed-7146-4bca-b30e-a65610cb3c8f",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789404179.0536835,
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "412eacef-a885-4b54-8a02-10922fbdda5c",
+      "children": [
+        "e0d4b0db-c7bd-44bb-8fb8-2c5eab56b1c2"
+      ]
+    },
+    "e0d4b0db-c7bd-44bb-8fb8-2c5eab56b1c2": {
+      "id": "e0d4b0db-c7bd-44bb-8fb8-2c5eab56b1c2",
+      "message": {
+        "id": "e0d4b0db-c7bd-44bb-8fb8-2c5eab56b1c2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789404187.521667,
+        "update_time": 1789404187.521667,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 7 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "a0b04251-798d-4119-92a3-8cc29bdec359"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "www.thegioididong.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.thegioididong.com/hoi-dap/man-hinh-laptop-bi-am-xanh-1590222",
+                    "title": "Màn hình máy tính, laptop bị ám xanh: Nguyên nhân và cách khắc phục - Thegioididong.com",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1767436920.0,
+                    "attribution": "www.thegioididong.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.thegioididong.com/hoi-dap/man-hinh-laptop-bi-do-1590250",
+                    "title": "Màn hình laptop bị đỏ: Nguyên nhân và cách khắc phục hiệu quả - Thegioididong.com",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1767441240.0,
+                    "attribution": "www.thegioididong.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.thegioididong.com/hoi-dap/man-hinh-may-tinh-bi-xanh-la-cay-1590538",
+                    "title": "Màn hình máy tính bị xanh lá cây: Nguyên nhân và cách sửa lỗi - Thegioididong.com",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": 1777777080.0,
+                    "attribution": "www.thegioididong.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.thegioididong.com/hoi-dap/3-cach-de-ban-kiem-tra-man-hinh-laptop-may-tinh-hieu-qua-1234105",
+                    "title": "Cách kiểm tra, test lỗi và các điểm chết trên màn hình laptop, PC - Thegioididong.com",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": 1635292800.0,
+                    "attribution": "www.thegioididong.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "elosupport.elotouch.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns",
+                    "title": "Why is my Elo monitor flashing red, blue, green patterns? – Elo - Technical Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "elosupport.elotouch.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.dell.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f",
+                    "title": "‎S2417DG, BurnIn mode, random colors #4, back on after power off? | DELL Technologies",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": 1519430400.0,
+                    "attribution": "www.dell.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.dell.com/support/contents/en-us/videos/videoplayer/how-to-run-the-lcd-bist-to-see-if-the-video-distortion-issue-is-present/6176627725001",
+                    "title": "How to Run the LCD BIST to See if the Video Distortion Issue is Present | Dell US",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": 1742256000.0,
+                    "attribution": "www.dell.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.dell.com/community/en/conversations/monitors/monitor-self-test-feature-operates-spontaneously-after-shut-down/647e7d02f4ccf8a8dea5a747?commentId=647e7d08f4ccf8a8dea67422",
+                    "title": "‎Monitor self-test feature operates spontaneously after shut down | DELL Technologies",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    },
+                    "pub_date": 1173312000.0,
+                    "attribution": "www.dell.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "vnit.com.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://vnit.com.vn/test-man-hinh",
+                    "title": "Test màn hình online — điểm chết, hở sáng, sọc, ám màu (miễn phí) | VNIT",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "vnit.com.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "qc.edu.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://qc.edu.vn/man-hinh-may-tinh-bi-am-xanh/",
+                    "title": "Mẹo khắc phục triệt để màn hình máy tính bị ám xanh",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 8
+                    },
+                    "pub_date": 1787616000.0,
+                    "attribution": "qc.edu.vn"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.hocviendaotao.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.hocviendaotao.com/2022/08/trai-nghiem-nhanh-man-hinh-choi-game-e.html",
+                    "title": "Trải nghiệm nhanh màn hình chơi game E-DRA EGM27F1 - 27\" IPS FHD 165 Hz, màu khá ổn | HỌC VIỆN ĐÀO TẠO TRỰC TUYẾN-TẬN TÂM-CHẤT LƯỢNG",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 9
+                    },
+                    "pub_date": 1659398400.0,
+                    "attribution": "www.hocviendaotao.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "e-dra.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+                    "title": "CHÍNH SÁCH VÀ ĐIỀU KHOẢN BẢO HÀNH SẢN PHẨM MÀN HÌNH E-DRA",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 424718,
+                      "ref_type": "search",
+                      "ref_index": 11
+                    },
+                    "pub_date": 1673395200.0,
+                    "attribution": "e-dra.vn"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "18a9d8e2-891d-46de-b1ce-d810eff82faf",
+              "a46f757a-5325-40c0-a4b2-f7a3dd2655c6",
+              "412eacef-a885-4b54-8a02-10922fbdda5c"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=www.thegioididong.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=elosupport.elotouch.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.dell.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=vnit.com.vn&sz=128",
+            "https://www.google.com/s2/favicons?domain=qc.edu.vn&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.hocviendaotao.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=e-dra.vn&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789404179.0536835,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "721efe41-c4f4-4078-a055-fa6e8d76dc13",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "721efe41-c4f4-4078-a055-fa6e8d76dc13",
+      "children": [
+        "49a9b375-6966-4d56-a16c-de7f4373987f"
+      ]
+    },
+    "49a9b375-6966-4d56-a16c-de7f4373987f": {
+      "id": "49a9b375-6966-4d56-a16c-de7f4373987f",
+      "message": {
+        "id": "49a9b375-6966-4d56-a16c-de7f4373987f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789404187.526891,
+        "update_time": 1789404188.58039,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Nếu lúc **tắt máy tính** mà màn hình E-DRA vẫn sáng và tự chạy lần lượt **đỏ → xanh lá → xanh dương** (có thể thêm trắng/đen), thì gần như không phải lỗi card màn hình đâu anh. Đây thường là **chế độ test màu / Burn-in / Factory Test** của chính màn hình. "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "safe_urls": [
+            "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns",
+            "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns?utm_source=chatgpt.com",
+            "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f",
+            "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f&utm_source=chatgpt.com"
+          ],
+          "citations": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "is_thinking_preamble_message": true,
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789404179.0536835,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "e0d4b0db-c7bd-44bb-8fb8-2c5eab56b1c2",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "e0d4b0db-c7bd-44bb-8fb8-2c5eab56b1c2",
+      "children": [
+        "cf20366c-172d-44a8-a39a-9c7ceb44560d"
+      ]
+    },
+    "cf20366c-172d-44a8-a39a-9c7ceb44560d": {
+      "id": "cf20366c-172d-44a8-a39a-9c7ceb44560d",
+      "message": {
+        "id": "cf20366c-172d-44a8-a39a-9c7ceb44560d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789404189.17079,
+        "update_time": 1789404189.17079,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "76cf3e2f-3255-4133-980a-a333b6859734",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789404179.0536835,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "49a9b375-6966-4d56-a16c-de7f4373987f",
+      "children": [
+        "3c0f7aae-a501-4fdd-9f6c-eb7e75cd8efd"
+      ]
+    },
+    "3c0f7aae-a501-4fdd-9f6c-eb7e75cd8efd": {
+      "id": "3c0f7aae-a501-4fdd-9f6c-eb7e75cd8efd",
+      "message": {
+        "id": "3c0f7aae-a501-4fdd-9f6c-eb7e75cd8efd",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789404189.78236,
+        "update_time": 1789404189.78236,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "e-dra.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/e-dra-driver-download/",
+                  "title": "Driver",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1682529583.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+                  "title": "CHÍNH SÁCH VÀ ĐIỀU KHOẢN BẢO HÀNH SẢN PHẨM MÀN HÌNH E-DRA",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1673395200.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27q100h-27-inch-2k-100hz/",
+                  "title": "Màn hình gaming EDRA EGM27Q100H 27 inch 2K 100Hz",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27f120s-27-inch-fullhd-120hz/",
+                  "title": "Màn hình gaming EDRA EGM27F120S 27 inch FullHD 120hz",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm27q100pr/",
+                  "title": "Màn hình gaming E-Dra EGM27Q100PR 27 inch 2K 100hz",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/tra-cuu-bao-hanh-edra/",
+                  "title": "Tra cứu bảo hành",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": 1759639496.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm27f2-27-inch-fullhd-165hz/",
+                  "title": "Màn hình Gaming E-DRA EGM27F2 27 inch FullHD 165hz",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-may-tinh/",
+                  "title": "Màn hình máy tính - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm24f100p/",
+                  "title": "Màn hình gaming E-Dra EGM24F100P 24 inch FullHD 100hz",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/download/huong-dan-su-dung-edra-ek387-keyboard/",
+                  "title": "Hướng Dẫn Sử Dụng EDRA EK387 Keyboard - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": 1682553600.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/download/huong-dan-su-dung-edra-ek3104-keyboard/",
+                  "title": "Hướng Dẫn Sử Dụng EDRA EK3104 Keyboard - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": 1682553600.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-cong-e-dra-egm27c240s-27-inch-fullhd-240hz/",
+                  "title": "Màn hình Gaming Cong E-DRA EGM27C240s 27 inch FullHD 240hz",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 278796,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aa82415fea48322884a556e896945f3",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "8fb0a4ea-2a94-416f-a46e-972b2724dfc1",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm e-dra.vn"
+          ],
+          "reasoning_title": "Đang tìm kiếm e-dra.vn",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=e-dra.vn&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "e-dra.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/e-dra-driver-download/",
+                    "title": "Driver",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1682529583.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+                    "title": "CHÍNH SÁCH VÀ ĐIỀU KHOẢN BẢO HÀNH SẢN PHẨM MÀN HÌNH E-DRA",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1673395200.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27q100h-27-inch-2k-100hz/",
+                    "title": "Màn hình gaming EDRA EGM27Q100H 27 inch 2K 100Hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27f120s-27-inch-fullhd-120hz/",
+                    "title": "Màn hình gaming EDRA EGM27F120S 27 inch FullHD 120hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm27q100pr/",
+                    "title": "Màn hình gaming E-Dra EGM27Q100PR 27 inch 2K 100hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/tra-cuu-bao-hanh-edra/",
+                    "title": "Tra cứu bảo hành",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": 1759639496.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm27f2-27-inch-fullhd-165hz/",
+                    "title": "Màn hình Gaming E-DRA EGM27F2 27 inch FullHD 165hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-may-tinh/",
+                    "title": "Màn hình máy tính - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm24f100p/",
+                    "title": "Màn hình gaming E-Dra EGM24F100P 24 inch FullHD 100hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 8
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/download/huong-dan-su-dung-edra-ek387-keyboard/",
+                    "title": "Hướng Dẫn Sử Dụng EDRA EK387 Keyboard - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 9
+                    },
+                    "pub_date": 1682553600.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/download/huong-dan-su-dung-edra-ek3104-keyboard/",
+                    "title": "Hướng Dẫn Sử Dụng EDRA EK3104 Keyboard - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    },
+                    "pub_date": 1682553600.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-cong-e-dra-egm27c240s-27-inch-fullhd-240hz/",
+                    "title": "Màn hình Gaming Cong E-DRA EGM27C240s 27 inch FullHD 240hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 11
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789404179.0536835,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cf20366c-172d-44a8-a39a-9c7ceb44560d",
+      "children": [
+        "3487faad-2a6e-4c0b-8565-c20ed00e5723"
+      ]
+    },
+    "3487faad-2a6e-4c0b-8565-c20ed00e5723": {
+      "id": "3487faad-2a6e-4c0b-8565-c20ed00e5723",
+      "message": {
+        "id": "3487faad-2a6e-4c0b-8565-c20ed00e5723",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789404192.269082,
+        "update_time": 1789404192.269082,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 1 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "d3294bc3-b741-40e4-ba6d-72462eac6c16"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "e-dra.vn",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/e-dra-driver-download/",
+                    "title": "Driver",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1682529583.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+                    "title": "CHÍNH SÁCH VÀ ĐIỀU KHOẢN BẢO HÀNH SẢN PHẨM MÀN HÌNH E-DRA",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1673395200.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27q100h-27-inch-2k-100hz/",
+                    "title": "Màn hình gaming EDRA EGM27Q100H 27 inch 2K 100Hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27f120s-27-inch-fullhd-120hz/",
+                    "title": "Màn hình gaming EDRA EGM27F120S 27 inch FullHD 120hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm27q100pr/",
+                    "title": "Màn hình gaming E-Dra EGM27Q100PR 27 inch 2K 100hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/tra-cuu-bao-hanh-edra/",
+                    "title": "Tra cứu bảo hành",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": 1759639496.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm27f2-27-inch-fullhd-165hz/",
+                    "title": "Màn hình Gaming E-DRA EGM27F2 27 inch FullHD 165hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-may-tinh/",
+                    "title": "Màn hình máy tính - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm24f100p/",
+                    "title": "Màn hình gaming E-Dra EGM24F100P 24 inch FullHD 100hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 8
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/download/huong-dan-su-dung-edra-ek387-keyboard/",
+                    "title": "Hướng Dẫn Sử Dụng EDRA EK387 Keyboard - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 9
+                    },
+                    "pub_date": 1682553600.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/download/huong-dan-su-dung-edra-ek3104-keyboard/",
+                    "title": "Hướng Dẫn Sử Dụng EDRA EK3104 Keyboard - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    },
+                    "pub_date": 1682553600.0,
+                    "attribution": "e-dra.vn"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://e-dra.vn/man-hinh-gaming-cong-e-dra-egm27c240s-27-inch-fullhd-240hz/",
+                    "title": "Màn hình Gaming Cong E-DRA EGM27C240s 27 inch FullHD 240hz",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 278796,
+                      "ref_type": "search",
+                      "ref_index": 11
+                    },
+                    "pub_date": null,
+                    "attribution": "e-dra.vn"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "cf20366c-172d-44a8-a39a-9c7ceb44560d",
+              "927c1fc3-ba69-4a31-a47b-4094b6630234",
+              "3c0f7aae-a501-4fdd-9f6c-eb7e75cd8efd"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=e-dra.vn&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789404179.0536835,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "5a0e63b2-2616-4605-97b7-d3b140d27f65",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3c0f7aae-a501-4fdd-9f6c-eb7e75cd8efd",
+      "children": [
+        "b9472407-7f97-4bd6-9e62-1e4dff98dc5f"
+      ]
+    },
+    "b9472407-7f97-4bd6-9e62-1e4dff98dc5f": {
+      "id": "b9472407-7f97-4bd6-9e62-1e4dff98dc5f",
+      "message": {
+        "id": "b9472407-7f97-4bd6-9e62-1e4dff98dc5f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789404192.274445,
+        "update_time": 1789404192.274445,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 13s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 13,
+          "reasoning_start_time": 1789404179.0536835,
+          "reasoning_end_time": 1789404192.2608566,
+          "reasoning_recap_type": "collapse",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "3487faad-2a6e-4c0b-8565-c20ed00e5723",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3487faad-2a6e-4c0b-8565-c20ed00e5723",
+      "children": [
+        "0fc25d2c-069c-4d38-8ad0-7828c23df038"
+      ]
+    },
+    "0fc25d2c-069c-4d38-8ad0-7828c23df038": {
+      "id": "0fc25d2c-069c-4d38-8ad0-7828c23df038",
+      "message": {
+        "id": "0fc25d2c-069c-4d38-8ad0-7828c23df038",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1789404192.278256,
+        "update_time": 1789404203.973297,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Được anh. Hiện tượng **màn hình E-DRA tự chuyển toàn màn hình đỏ → xanh lá → xanh dương sau khi tắt máy tính** rất giống việc màn hình đang bật **Factory Test / Burn-in / Aging Mode**. Đây là chế độ kiểm tra tấm nền, không phải màn hình Windows bị lỗi. Các hãng khác cũng dùng chính chuỗi màu RGB này để test panel. citeturn424718search2turn424718search3\n\nAnh có thể xử lý theo thứ tự:\n\n1. **Tắt tạm thời:** bấm nút nguồn trên màn hình E-DRA → màn hình tắt hoàn toàn, không ảnh hưởng gì.\n2. **Tắt vĩnh viễn:** bật máy tính → mở menu OSD của màn hình → tìm mục **Reset / Factory Reset / Reset All** → reset thử trước.\n3. Nếu reset xong mà cứ tắt PC lại chạy RGB thì khả năng **Burn-in/Aging đang bật trong Factory Menu**. Khi đó cần vào menu kỹ thuật và chuyển `Burn In / Aging / Panel Test` → **OFF**. Cách vào Factory Menu khác nhau giữa từng model E-DRA nên anh **không nên thử tổ hợp phím ngẫu nhiên**, vì có thể chỉnh nhầm thông số panel.\n\nNếu **bật PC lên màn hình vẫn hiển thị bình thường**, chỉ chạy màu RGB khi PC tắt thì khả năng cao màn hình **không hỏng tấm nền**.\n\nAnh gửi em **mã model E-DRA** ở tem phía sau, ví dụ `EGM27F2`, `EGM27Q100H`…, em tìm đúng cách **tắt chế độ RGB/Burn-in** cho model đó cho anh. E-DRA hiện cũng có chính sách bảo hành màn hình 24 tháng nếu xác định là lỗi thiết bị. citeturn278796search1"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "content_references": [
+            {
+              "matched_text": "citeturn424718search2turn424718search3",
+              "prefix": null,
+              "start_idx": 316,
+              "end_idx": 358,
+              "safe_urls": [
+                "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns",
+                "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns?utm_source=chatgpt.com",
+                "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f",
+                "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f&utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([elosupport.elotouch.com](https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Why is my Elo monitor flashing red, blue, green patterns? – Elo - Technical Support",
+                  "url": "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns?utm_source=chatgpt.com",
+                  "attribution": "elosupport.elotouch.com",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "‎S2417DG, BurnIn mode, random colors #4, back on after power off? | DELL Technologies",
+                      "url": "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f&utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "dell.com"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "citeturn278796search1",
+              "prefix": null,
+              "start_idx": 1312,
+              "end_idx": 1336,
+              "safe_urls": [
+                "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+                "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([e-dra.vn](https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "CHÍNH SÁCH VÀ ĐIỀU KHOẢN BẢO HÀNH SẢN PHẨM MÀN HÌNH E-DRA",
+                  "url": "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/?utm_source=chatgpt.com",
+                  "attribution": "e-dra.vn",
+                  "pub_date": 1673395200.0,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 1,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": " ",
+              "prefix": null,
+              "start_idx": 1336,
+              "end_idx": 1337,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "CHÍNH SÁCH VÀ ĐIỀU KHOẢN BẢO HÀNH SẢN PHẨM MÀN HÌNH E-DRA",
+                  "url": "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/?utm_source=chatgpt.com",
+                  "attribution": "e-dra.vn"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "thegioididong.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.thegioididong.com/hoi-dap/man-hinh-laptop-bi-am-xanh-1590222?utm_source=chatgpt.com",
+                  "title": "Màn hình máy tính, laptop bị ám xanh: Nguyên nhân và cách khắc phục - Thegioididong.com",
+                  "snippet": "MÀN HÌNH MÁY TÍNH, LAPTOP BỊ ÁM XANH: NGUYÊN NHÂN VÀ CÁCH KHẮC PHỤC  Đóng góp bởi Nguyễn Thị Ngọc Hà 22/02  ĐANG LÀM VIỆC CĂNG THẲNG THÌ MÀN HÌNH MÁY TÍNH ĐỘT NGỘT CHUYỂN SANG MÀU XANH LÁ HOẶC XANH D...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1767436920.0,
+                  "attribution": "thegioididong.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.thegioididong.com/hoi-dap/man-hinh-laptop-bi-do-1590250?utm_source=chatgpt.com",
+                  "title": "Màn hình laptop bị đỏ: Nguyên nhân và cách khắc phục hiệu quả - Thegioididong.com",
+                  "snippet": "MÀN HÌNH LAPTOP BỊ ĐỎ: NGUYÊN NHÂN VÀ CÁCH KHẮC PHỤC HIỆU QUẢ  Đóng góp bởi Nguyễn Thị Ngọc Hà 22/02  ĐANG CHẠY DEADLINE MÀ MÀN HÌNH LAPTOP ĐỘT NGỘT CHUYỂN SANG MÀU ĐỎ RỰC, HOẶC NHIỄU SỌC NGANG DỌC K...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1767441240.0,
+                  "attribution": "thegioididong.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.thegioididong.com/hoi-dap/man-hinh-may-tinh-bi-xanh-la-cay-1590538?utm_source=chatgpt.com",
+                  "title": "Màn hình máy tính bị xanh lá cây: Nguyên nhân và cách sửa lỗi - Thegioididong.com",
+                  "snippet": "MÀN HÌNH MÁY TÍNH BỊ XANH LÁ CÂY: NGUYÊN NHÂN VÀ CÁCH SỬA LỖI  Đóng góp bởi Nguyễn Thị Ngọc Hà 01/03  KHI ĐANG SỬ DỤNG BÌNH THƯỜNG, MÀN HÌNH MÁY TÍNH ĐỘT NGỘT BỊ BAO PHỦ BỞI MỘT LỚP MÀU XANH LÁ CÂY R...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1777777080.0,
+                  "attribution": "thegioididong.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.thegioididong.com/hoi-dap/3-cach-de-ban-kiem-tra-man-hinh-laptop-may-tinh-hieu-qua-1234105?utm_source=chatgpt.com",
+                  "title": "Cách kiểm tra, test lỗi và các điểm chết trên màn hình laptop, PC - Thegioididong.com",
+                  "snippet": "CÁCH KIỂM TRA, TEST LỖI VÀ CÁC ĐIỂM CHẾT TRÊN MÀN HÌNH LAPTOP, PC  Đóng góp bởi Khôi Phạm Như Nguyên 27/10/2021  MÀN HÌNH MÁY TÍNH LÀ THIẾT BỊ QUAN TRỌNG GẮN LIỀN VỚI MÁY TÍNH TÁC ĐỘNG ĐẾN QUÁ TRÌNH...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1635292800.0,
+                  "attribution": "thegioididong.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "e-dra.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/tra-cuu-bao-hanh-edra/?utm_source=chatgpt.com",
+                  "title": "Tra cứu bảo hành",
+                  "snippet": "1. Để tra cứu bảo hành, Quý khách vui lòng nhập Serial sản phẩm vào link sau: https://edravn.com/tra-bao-hanh 2. Hoặc liên hệ trực tiếp Trung tâm bảo hành EDRA để tra cứu: https://e-dra.vn/trung-tam-b...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 23
+                  },
+                  "pub_date": 1759639496.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/e-dra-driver-download/?utm_source=chatgpt.com",
+                  "title": "Driver",
+                  "snippet": "TRANG TẢI DRIVER & HƯỚNG DẪN SỬ DỤNG CHO CÁC SẢN PHẨM E-DRA  Driver là các phần mềm bổ trợ cho sản phẩm của E-Dra như chỉnh hiệu ứng đèn led, keymap cho bàn phím…  STT  | MÔ TẢ 1  | Image: Driver 1  D...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1682529583.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27q100h-27-inch-2k-100hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming EDRA EGM27Q100H 27 inch 2K 100Hz",
+                  "snippet": "Image  Image: Màn hình gaming EDRA EGM27Q100H 27 inch 2K 100Hz 1  Image: Màn hình gaming EDRA EGM27Q100H 27 inch 2K 100Hz 2  Image: Màn hình gaming EDRA EGM27Q100H 27 inch 2K 100Hz 3  Image: Màn hình...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27f120s-27-inch-fullhd-120hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming EDRA EGM27F120S 27 inch FullHD 120hz",
+                  "snippet": "Image: Màn hình gaming EDRA EGM27F120S 27 inch FullHD 120hz  Image: Màn hình gaming EDRA EGM27F120S 27 inch FullHD 120hz 1  Image: Màn hình gaming EDRA EGM27F120S 27 inch FullHD 120hz 2  Image: Màn h...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm27q100pr/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming E-Dra EGM27Q100PR 27 inch 2K 100hz",
+                  "snippet": "MÀN HÌNH GAMING E-DRA EGM27Q100PR 27 INCH 2K 100HZ  ~~3.990.000 ₫~~ 3.890.000 ₫  Màn hình gaming E-Dra EGM27Q100PR 27 inch 2K 100hz là sản phẩm màn hình gaming của mới E-Dra với tấm nền IPS đạt điểm...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm27f2-27-inch-fullhd-165hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình Gaming E-DRA EGM27F2 27 inch FullHD 165hz",
+                  "snippet": "Image: Màn hình Gaming E-DRA EGM27F2 27 inch FullHD 165hz  Image: Màn hình Gaming E-DRA EGM27F2 27 inch FullHD 165hz 1  Image: Màn hình Gaming E-DRA EGM27F2 27 inch FullHD 165hz 2  Image: Màn hình Gam...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-may-tinh/?utm_source=chatgpt.com",
+                  "title": "Màn hình máy tính - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "MÀN HÌNH MÁY TÍNH  Màn hình E-DRA hướng tới phân khúc màn hình máy tính dành cho gaming, văn phòng giá rẻ, trung và cận cao cấp. Công nghệ tấm nền IPS được sử dụng chủ yếu trên các sản phẩm của E-Dra...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm24f100p/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming E-Dra EGM24F100P 24 inch FullHD 100hz",
+                  "snippet": "Image: Màn hình gaming E-Dra EGM24F100P 24 inch FullHD 100hz  Image: Màn hình gaming E-Dra EGM24F100P 24 inch FullHD 100hz 1  Image: Màn hình gaming E-Dra EGM24F100P 24 inch FullHD 100hz 2  Image: Mà...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/download/huong-dan-su-dung-edra-ek387-keyboard/?utm_source=chatgpt.com",
+                  "title": "Hướng Dẫn Sử Dụng EDRA EK387 Keyboard - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "HƯỚNG DẪN SỬ DỤNG EDRA EK387 KEYBOARD  [featured_image]  Download  Download is available until [expire_date]  * Version * Download 364 * File Size 53.19 KB * File Count 1 * Create Date 27/04/2023 * L...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": 1682553600.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/download/huong-dan-su-dung-edra-ek3104-keyboard/?utm_source=chatgpt.com",
+                  "title": "Hướng Dẫn Sử Dụng EDRA EK3104 Keyboard - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "HƯỚNG DẪN SỬ DỤNG EDRA EK3104 KEYBOARD  [featured_image]  Download  Download is available until [expire_date]  * Version * Download 385 * File Size 541.17 KB * File Count 1 * Create Date 27/04/2023 *...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": 1682553600.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-cong-e-dra-egm27c240s-27-inch-fullhd-240hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình Gaming Cong E-DRA EGM27C240s 27 inch FullHD 240hz",
+                  "snippet": "Image: Màn hình Gaming Cong E-DRA EGM27C240s 27 inch FullHD 240hz  Image: Màn hình Gaming Cong E-DRA EGM27C240s 27 inch FullHD 240hz 1  Image: Màn hình Gaming Cong E-DRA EGM27C240s 27 inch FullHD 240...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-e-dra-egm24f100-24-inch-fullhd-100hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming E-Dra EGM24F100 24 inch FullHD 100hz",
+                  "snippet": "Image: Màn hình gaming E-Dra EGM24F100 24 inch FullHD 100hz  Image: Màn hình gaming E-Dra EGM24F100 24 inch FullHD 100hz 1  Image: Màn hình gaming E-Dra EGM24F100 24 inch FullHD 100hz 2  Image: Màn h...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27q165r-27-inch-2k-165hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming EDRA EGM27Q165R 27 inch 2K 165Hz",
+                  "snippet": "Image: Màn hình gaming EDRA EGM27Q165R 27 inch 2K 165Hz  Image: Màn hình gaming EDRA EGM27Q165R 27 inch 2K 165Hz 1  Image: Màn hình gaming EDRA EGM27Q165R 27 inch 2K 165Hz 2  Image: Màn hình gaming E...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27f240s-27-inch-fhd-240hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming EDRA EGM27F240S 27 inch FHD 240Hz",
+                  "snippet": "Image: Màn hình gaming EDRA EGM27F240S 27 inch FHD 240Hz  Image: Màn hình gaming EDRA EGM27F240S 27 inch FHD 240Hz 1  Image: Màn hình gaming EDRA EGM27F240S 27 inch FHD 240Hz 2  Image: Màn hình gamin...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27q180pvs-27-inch-2k-180hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming EDRA EGM27Q180PVS 27 Inch 2K 180Hz",
+                  "snippet": "MÀN HÌNH GAMING EDRA EGM27Q180PVS 27 INCH 2K 180HZ  ~~3.990.000 ₫~~ 3.890.000 ₫  Màn hình gaming EDRA EGM27Q180PVS 27 Inch 2K 180Hz là chiếc màn hình đầu tiên của EDRA được thiết kết theo tông màu tr...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27f120h-27-inch-fullhd-120hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming EDRA EGM27F120H 27 inch FullHD 120Hz",
+                  "snippet": "Image: Màn hình gaming EDRA EGM27F120H 27 inch FullHD 120Hz  Image: Màn hình gaming EDRA EGM27F120H 27 inch FullHD 120Hz 1  Image: Màn hình gaming EDRA EGM27F120H 27 inch FullHD 120Hz 2  Image: Màn h...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27f144pvs-27-inch-full-hd-144hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming EDRA EGM27F144PVS 27 Inch Full HD 144Hz",
+                  "snippet": "Image: Màn hình gaming EDRA EGM27F144PVS 27 Inch Full HD 144Hz  Image: Màn hình gaming EDRA EGM27F144PVS 27 Inch Full HD 144Hz 1  Image: Màn hình gaming EDRA EGM27F144PVS 27 Inch Full HD 144Hz 2  Ima...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-edra-egm27f3pr-27-inch-fullhd-180hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình EDRA EGM27F3PR 27 inch FullHD 180Hz",
+                  "snippet": "Image: Màn hình EDRA EGM27F3PR 27 inch FullHD 180Hz  Image: Màn hình EDRA EGM27F3PR 27 inch FullHD 180Hz 1  Image: Màn hình EDRA EGM27F3PR 27 inch FullHD 180Hz 2  Image: Màn hình EDRA EGM27F3PR 27 in...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/man-hinh-gaming-edra-egm27q200-27-inch-2k-200hz/?utm_source=chatgpt.com",
+                  "title": "Màn hình gaming EDRA EGM27Q200 27 inch 2K 200Hz",
+                  "snippet": "Image: Màn hình gaming EDRA EGM27Q200 27 inch 2K 200Hz  Image: Màn hình gaming EDRA EGM27Q200 27 inch 2K 200Hz 1  Image: Màn hình gaming EDRA EGM27Q200 27 inch 2K 200Hz 2  MÀN HÌNH GAMING EDRA EGM27Q...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/download/driver-e-dra-ek361w-v3/?utm_source=chatgpt.com",
+                  "title": "Driver E-DRA EK361w V3 - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "DRIVER E-DRA EK361W V3  [featured_image]  Download  Download is available until [expire_date]  * Version * Download 401 * File Size 17.10 MB * File Count 1 * Create Date 06/09/2023 * Last Updated 06/...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 20
+                  },
+                  "pub_date": 1693958400.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/ho-tro/?utm_source=chatgpt.com",
+                  "title": "Hỗ trợ - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "HỖ TRỢ   E-DRA.VN – ĐẠI LÝ BÁN HÀNG ỦY QUYỀN CHÍNH HÃNG TRÊN NỀN TẢNG WEBSITE & ONLINE  * Văn phòng: Số 15A ngõ 41 phố Vọng, Phường Bạch Mai, TP. Hà Nội * Hotline: 0964 480 404 * Email: lienhe@linhkie...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 21
+                  },
+                  "pub_date": null,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/download/driver-ban-phim-edra-ek368rt/?utm_source=chatgpt.com",
+                  "title": "Driver bàn phím EDRA EK368RT - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "DRIVER BÀN PHÍM EDRA EK368RT  [featured_image]  Download  Download is available until [expire_date]  * Version * Download 75 * File Size 94.69 MB * File Count 1 * Create Date 04/01/2026 * Last Update...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 22
+                  },
+                  "pub_date": 1767484800.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/download/driver-edra-ek387-rgb-dung-cho-ban-huano-tu-sau-serial-dau-2107-va-ban-v2/?utm_source=chatgpt.com",
+                  "title": "Driver EDRA EK387 RGB (dùng cho bản huano từ sau Serial đầu 2107 và bản V2) - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "DRIVER EDRA EK387 RGB (DÙNG CHO BẢN HUANO TỪ SAU SERIAL ĐẦU 2107 VÀ BẢN V2)  [featured_image]  Download  Download is available until [expire_date]  * Version * Download 1867 * File Size 3.88 MB * Fil...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 23
+                  },
+                  "pub_date": 1682553600.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/download/driver-ek398pro/?utm_source=chatgpt.com",
+                  "title": "Driver EK398Pro - EDRA Chính hãng | EDRA Store | E-DRA.VN",
+                  "snippet": "DRIVER EK398PRO  [featured_image]  Download  Download is available until [expire_date]  * Version * Download 674 * File Size 5.21 MB * File Count 1 * Create Date 03/08/2024 * Last Updated 03/08/2024...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 24
+                  },
+                  "pub_date": 1722643200.0,
+                  "attribution": "e-dra.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://e-dra.vn/?utm_source=chatgpt.com",
+                  "title": "EDRA Reseller Store",
+                  "snippet": "Image: Trang chủ 25  CAM KẾT BÁN HÀNG ĐÚNG GIÁ  Đảm bảo giá tốt nhất  Image: Trang chủ 26  GIAO HÀNG MIỄN PHÍ  Không áp dụng với 1 số sản phẩm  Image: Trang chủ 27  BẢO HÀNH 12 – 60 THÁNG  Đối với sả...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 25
+                  },
+                  "pub_date": 1644374370.0,
+                  "attribution": "e-dra.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "dell.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f&utm_source=chatgpt.com",
+                  "title": "‎S2417DG, BurnIn mode, random colors #4, back on after power off? | DELL Technologies",
+                  "snippet": "February 24th, 2018 08:00  S2417DG, BURNIN MODE, RANDOM COLORS #4, BACK ON AFTER POWER OFF?  I recently bought the Dell S2417DG, and while I like the monitor itself, for some reason the screen flashe...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": 1519430400.0,
+                  "attribution": "dell.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/support/contents/en-us/videos/videoplayer/how-to-run-the-lcd-bist-to-see-if-the-video-distortion-issue-is-present/6176627725001?utm_source=chatgpt.com",
+                  "title": "How to Run the LCD BIST to See if the Video Distortion Issue is Present | Dell US",
+                  "snippet": "HOW TO RUN THE LCD BIST TO SEE IF THE VIDEO DISTORTION ISSUE IS PRESENT  Published MAR 18, 2025  Share  * Description * Transcript  This guide explains how to run an LCD built-in self-test on your co...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": 1742256000.0,
+                  "attribution": "dell.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/community/en/conversations/monitors/monitor-self-test-feature-operates-spontaneously-after-shut-down/647e7d02f4ccf8a8dea5a747?commentId=647e7d08f4ccf8a8dea67422&utm_source=chatgpt.com",
+                  "title": "‎Monitor self-test feature operates spontaneously after shut down | DELL Technologies",
+                  "snippet": "Unsolved  This post is more than 5 years old  A  alanct  4 Posts  0  9982  March 8th, 2007 17:00  MONITOR SELF-TEST FEATURE OPERATES SPONTANEOUSLY AFTER SHUT DOWN  When I shut down my computer or the...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": 1173312000.0,
+                  "attribution": "dell.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/community/en/conversations/monitors/monitor-reset-self-test-built-in-diagnostic/647f7a8ef4ccf8a8de8bacde?lang=undefined&utm_source=chatgpt.com",
+                  "title": "‎Monitor Reset, Self-Test, Built-in Diagnostic | DELL Technologies",
+                  "snippet": "UNSOLVED  DELL-Chris M  updated  8 years ago  Closed  DC  DELL-Chris M  Community Manager  •  56891 Posts  1  105164  June 1st, 2018 08:00  MONITOR RESET, SELF-TEST, BUILT-IN DIAGNOSTIC  How to Run D...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 26
+                  },
+                  "pub_date": 1527811200.0,
+                  "attribution": "dell.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/community/en/conversations/monitors/s2417dg-burn-in-colored-screens/647f814ef4ccf8a8de003e89?commentId=647f8174f4ccf8a8de02b650&utm_source=chatgpt.com",
+                  "title": "‎S2417DG, Burn In colored screens? | DELL Technologies",
+                  "snippet": "May 30th, 2019 05:00  S2417DG, BURN IN COLORED SCREENS?  I have S2417DG and I'm really satisfied. There's one thing that bothers me. No matter what other monitor I had, always when I turned off the c...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 27
+                  },
+                  "pub_date": 1559174400.0,
+                  "attribution": "dell.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/community/en/conversations/monitors/u2713hm-stuck-on-test-patterns/647f7fc9f4ccf8a8dee55a56?utm_source=chatgpt.com",
+                  "title": "‎U2713HM, stuck on test patterns | DELL Technologies",
+                  "snippet": "Montlebalm  updated  7 years ago  M  Montlebalm  1 Message  0  1014  March 11th, 2019 21:00  U2713HM, STUCK ON TEST PATTERNS  I turned on my U2713HM today and it won't stop progressing through what l...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 28
+                  },
+                  "pub_date": 1552262400.0,
+                  "attribution": "dell.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors/647f7365f4ccf8a8de12c391?utm_source=chatgpt.com",
+                  "title": "‎S2417DG, BurnIn mode, random colors | DELL Technologies",
+                  "snippet": "August 22nd, 2017 03:00  S2417DG, BURNIN MODE, RANDOM COLORS  Hi, I own a 5 months old Dell S2417DG monitor. Today I turned on my computer and during post/boot, the monitor just cycles through random...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 32
+                  },
+                  "pub_date": 1503360000.0,
+                  "attribution": "dell.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "vnit.com.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://vnit.com.vn/test-man-hinh?utm_source=chatgpt.com",
+                  "title": "Test màn hình online — điểm chết, hở sáng, sọc, ám màu (miễn phí) | VNIT",
+                  "snippet": "TEST MÀN HÌNH ONLINE — LAPTOP, MÁY TÍNH, MACBOOK  ⌨️ Bàn phím🎙️ Micro📷 Camera🖥️ Màn hình  Kiểm tra màn hình bằng các nền màu phủ kín toàn màn để phát hiện điểm chết, điểm sáng kẹt, hở sáng viền, sọc...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "vnit.com.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "qc.edu.vn",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://qc.edu.vn/man-hinh-may-tinh-bi-am-xanh/?utm_source=chatgpt.com",
+                  "title": "Mẹo khắc phục triệt để màn hình máy tính bị ám xanh",
+                  "snippet": "MẸO KHẮC PHỤC TRIỆT ĐỂ MÀN HÌNH MÁY TÍNH BỊ ÁM XANH  Hoàng Minh Tuấn  25/08/2026 06:30  Cách xử lý nhanh khi gặp lỗi ám màu màn hình: 1. Kiểm tra lại toàn bộ cáp kết nối giữa màn hình và máy tính. 2....",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": 1787616000.0,
+                  "attribution": "qc.edu.vn"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://qc.edu.vn/man-hinh-may-tinh-bi-soc-doc-mau-xanh?utm_source=chatgpt.com",
+                  "title": "Mẹo xử lý màn hình máy tính bị sọc dọc màu xanh hiệu quả",
+                  "snippet": "MẸO XỬ LÝ MÀN HÌNH MÁY TÍNH BỊ SỌC DỌC MÀU XANH HIỆU QUẢ  Hoàng Minh Tuấn  23/08/2026 06:35  Cách xử lý khẩn cấp khi màn hình bị sọc: 1. Thử cắm cáp kết nối khác hoặc kết nối với màn hình ngoài để ki...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": 1787443200.0,
+                  "attribution": "qc.edu.vn"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "hocviendaotao.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.hocviendaotao.com/2022/08/trai-nghiem-nhanh-man-hinh-choi-game-e.html?utm_source=chatgpt.com",
+                  "title": "Trải nghiệm nhanh màn hình chơi game E-DRA EGM27F1 - 27\" IPS FHD 165 Hz, màu khá ổn | HỌC VIỆN ĐÀO TẠO TRỰC TUYẾN-TẬN TÂM-CHẤT LƯỢNG",
+                  "snippet": "Home » Công nghệ mới » Trải nghiệm nhanh màn hình chơi game E-DRA EGM27F1 - 27\" IPS FHD 165 Hz, màu khá ổn  TRẢI NGHIỆM NHANH MÀN HÌNH CHƠI GAME E-DRA EGM27F1 - 27\" IPS FHD 165 HZ, MÀU KHÁ ỔN  Học vi...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": 1659398400.0,
+                  "attribution": "hocviendaotao.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "dienmayxanh.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.dienmayxanh.com/kinh-nghiem-hay/man-hinh-pc-bi-am-hong-xanh-do-nguyen-nhan-va-cach-khac-phuc-1513104?utm_source=chatgpt.com",
+                  "title": "Màn hình PC bị ám hồng, xanh, đỏ - Nguyên nhân và cách khắc phục",
+                  "snippet": "MÀN HÌNH PC BỊ ÁM HỒNG, XANH, ĐỎ - NGUYÊN NHÂN VÀ CÁCH KHẮC PHỤC HIỆU QUẢ  Đóng góp bởi Nguyễn Đức Thạnh Cập nhật ngày 04/04/2023, lúc 14:21 22.559 lượt xem  SAU MỘT THỜI GIAN SỬ DỤNG MÁY TÍNH, MÀN H...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": 1680566400.0,
+                  "attribution": "dienmayxanh.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "acer.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://community.acer.com/en/discussion/427309/predator-xb270hubprz-stuck-in-factory-testing-mode?utm_source=chatgpt.com",
+                  "title": "Predator XB270Hubprz stuck in factory testing mode? - Acer Community",
+                  "snippet": "PREDATOR XB270HUBPRZ STUCK IN FACTORY TESTING MODE?  Moff  Hello!    Bought one of these beauties very recently for a reduced price from an official reseller due to it had been in for repair at Acer....",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": null,
+                  "attribution": "acer.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.acer.com/en/discussion/699019/kg272u-monitor-keeps-flashing-white-blue-and-red?utm_source=chatgpt.com",
+                  "title": "KG272U Monitor Keeps Flashing White, Blue, and Red - Acer Community",
+                  "snippet": "KG272U MONITOR KEEPS FLASHING WHITE, BLUE, AND RED  FerrisWheelPro  Regardless of whether or not the monitor is plugged into something, it keeps flashing white, blue, and red. I've tried everything f...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 21
+                  },
+                  "pub_date": null,
+                  "attribution": "acer.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "goctechz.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://goctechz.com/man-hinh-may-tinh-bi-am-xanh/?utm_source=chatgpt.com",
+                  "title": "Màn hình máy tính bị ám xanh: Nguyên nhân và cách khắc phục",
+                  "snippet": "MÀN HÌNH MÁY TÍNH BỊ ÁM XANH: NGUYÊN NHÂN VÀ CÁCH KHẮC PHỤC  Image: Minh Tweak Minh Tweak Cập nhật 11/08/2026 92 xem 14 phút đọc  Image: Màn hình máy tính bị ám xanh: Nguyên nhân và cách khắc phục 1...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": 1786406400.0,
+                  "attribution": "goctechz.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "renkmobil.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://renkmobil.com/tools/vi/screen-test/?utm_source=chatgpt.com",
+                  "title": "Kiểm tra màn hình (Điểm ảnh chết) – RenkTools",
+                  "snippet": "KIỂM TRA MÀN HÌNH (ĐIỂM ẢNH CHẾT)  Kiểm tra màn hình bằng các màu đồng nhất toàn màn hình và mẫu thử: điểm ảnh chết, điểm ảnh kẹt, hiện tượng dải màu và lỗi tỷ lệ sẽ lộ rõ.  Miễn phí Hoạt động ngoại...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": null,
+                  "attribution": "renkmobil.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "linustechtips.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://linustechtips.com/topic/1196278-diy-monitor-is-recognized-by-pc-but-it-will-only-display-a-sequence-of-colours/?utm_source=chatgpt.com",
+                  "title": "\"DIY\" Monitor is recognized by PC but it will only display a sequence of colours - Troubleshooting - Linus Tech Tips",
+                  "snippet": "\"DIY\" MONITOR IS RECOGNIZED BY PC BUT IT WILL ONLY DISPLAY A SEQUENCE OF COLOURS  By Franciszek May 18, 2020 in Troubleshooting   Share  https://linustechtips.com/topic/1196278-diy-monitor-is-recogni...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": 1589760000.0,
+                  "attribution": "linustechtips.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "manualslib.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.manualslib.com/manual/782073/Nec-Multisync-Lcd1970nx.html?page=38&utm_source=chatgpt.com",
+                  "title": "How To Exit Service Mode; Burn In Mode - NEC MultiSync LCD1970NX Service Manual [Page 38] | ManualsLib",
+                  "snippet": "HOW TO EXIT SERVICE MODE; BURN IN MODE - NEC MULTISYNC LCD1970NX SERVICE MANUAL  5.2.3 HOW TO EXIT SERVICE MODE  Press the \"EXIT\" key to close OSM menu (Service mode).  If you turn off (power off) th...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": null,
+                  "attribution": "manualslib.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "vienmaytinh.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://vienmaytinh.com/products/man-hinh-edra-egm27q210pvs?utm_source=chatgpt.com",
+                  "title": "Màn hình EDRA EGM27Q210PVS 27 inch Fast IPS 2K 210Hz",
+                  "snippet": "KHẢ NĂNG TƯƠNG THÍCH VỚI LAPTOP  EGM27Q210PVS cũng có thể làm màn hình ngoài cho laptop nếu máy có cổng xuất hình phù hợp.  Tùy laptop, người dùng có thể cần:  * HDMI.  * DisplayPort.  * USB-C hỗ trợ...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "pub_date": null,
+                  "attribution": "vienmaytinh.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "aura-displays.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://eu.aura-displays.com/a/helpdesk/dual-boost-pro-gen-3/my-screen-is-flickering-stuck-in-red-green-blue-not-powering-correctly-what-should-i-do?utm_source=chatgpt.com",
+                  "title": "My screen is flickering / stuck in red-green-blue / not powering correctly. What should I do? – Aura",
+                  "snippet": "MY SCREEN IS FLICKERING / STUCK IN RED-GREEN-BLUE / NOT POWERING CORRECTLY. WHAT SHOULD I DO?  Updated on Jul 09, 2025  If you're experiencing issues such as flickering, flashing red/green/blue color...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 20
+                  },
+                  "pub_date": 1752019200.0,
+                  "attribution": "aura-displays.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "microsoft.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://learn.microsoft.com/en-us/answers/questions/3854669/what-does-it-mean-when-i-turn-on-my-new-dell-monit?utm_source=chatgpt.com",
+                  "title": "What does it mean when I turn on my new Dell Monitor & the only thing on screen is a box that's Red, Blue, White, Green & says SELF TEST FEATURE CHECK? This is all it does how do I get passed this? - Microsoft Q&A",
+                  "snippet": "WHAT DOES IT MEAN WHEN I TURN ON MY NEW DELL MONITOR & THE ONLY THING ON SCREEN IS A BOX THAT'S RED, BLUE, WHITE, GREEN & SAYS SELF TEST FEATURE CHECK? THIS IS ALL IT DOES HOW DO I GET PASSED THIS?...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 22
+                  },
+                  "pub_date": 1746748800.0,
+                  "attribution": "microsoft.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "manuals.plus",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://manuals.plus/qa/9900025608/my-aoc-c27g4zx-monitor-is-stuck-in-testing-mode-flashing-rgb-colors-how-do-i-perform-a-factory-reset?utm_source=chatgpt.com",
+                  "title": "My AOC C27G4ZX monitor is stuck in testing mode flashing RGB colors; how do I perform a factory reset? - Manuals+",
+                  "snippet": "MY AOC C27G4ZX MONITOR IS STUCK IN TESTING MODE FLASHING RGB COLORS; HOW DO I PERFORM A FACTORY RESET?  Monitor in testing mode flasing rgb need to know how to factory reset  AOC C27G4ZX   Troublesho...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 24
+                  },
+                  "pub_date": 1786665600.0,
+                  "attribution": "manuals.plus"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://manuals.plus/m/45d7a2553b4704bb5750db7b45820f4d7671db405dab7a0c7dcd79a0bb23193b?utm_source=chatgpt.com",
+                  "title": "Product document",
+                  "snippet": "NOTE: You can run the built-in diagnostics only when the video cable is unplugged and the monitor is in self-test mode. 1 2 34 To run the built-in diagnostics: 1 Make sure that the screen is clean (no...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 25
+                  },
+                  "pub_date": 1438387200.0,
+                  "attribution": "manuals.plus"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "asus.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://rog-forum.asus.com/t5/gaming-monitors/pg32ucdmr-stuck-in-burn-in-test-mode/m-p/1152583?utm_source=chatgpt.com",
+                  "title": "Solved: Re: PG32UCDMR stuck in burn in test mode - Republic of Gamers Forum - 1152049",
+                  "snippet": "PG32UCDMR stuck in burn in test mode  Go to solution  Image: Evangilex  Evangilex  Level 8  Options  * Mark as New * Bookmark * Subscribe * Mute *   * Subscribe to RSS Feed *   * Permalink * Print...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 29
+                  },
+                  "pub_date": 1781827200.0,
+                  "attribution": "asus.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://rog-forum.asus.com/t5/rog-series-monitors-pg-xg/asus-pg27vq-change-colors-when-no-signal-cant-overclock-to-165/td-p/786305?utm_source=chatgpt.com",
+                  "title": "ASUS PG27VQ CHANGE COLORS WHEN NO SIGNAl. CANT OVE... - Republic of Gamers Forum - 786305",
+                  "snippet": "ASUS PG27VQ CHANGE COLORS WHEN NO SIGNAl. CANT OVERCLOCK TO 165 Hz  Image: varlaminik  varlaminik  Level 7  Options  * Mark as New * Bookmark * Subscribe * Mute *   * Subscribe to RSS Feed *   * Perm...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 30
+                  },
+                  "pub_date": 1537142400.0,
+                  "attribution": "asus.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://rog-forum.asus.com/t5/rog-series-monitors-pg-xg/asus-pg27vq-change-colors-when-no-signal-cant-overclock-to-165/td-p/786305/page/3?utm_source=chatgpt.com",
+                  "title": "ASUS PG27VQ CHANGE COLORS WHEN NO SIGNAl. CANT OVE... - Page 3 - Republic of Gamers Forum - 786305",
+                  "snippet": "ASUS PG27VQ CHANGE COLORS WHEN NO SIGNAl. CANT OVERCLOCK TO 165 Hz  Image: varlaminik  varlaminik  Level 7  Options  * Mark as New * Bookmark * Subscribe * Mute *   * Subscribe to RSS Feed *   * Pe...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 31
+                  },
+                  "pub_date": 1537142400.0,
+                  "attribution": "asus.com"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/",
+            "https://e-dra.vn/chinh-sach-va-dieu-khoan-bao-hanh-san-pham-man-hinh-e-dra/?utm_source=chatgpt.com",
+            "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns",
+            "https://elosupport.elotouch.com/hc/en-us/articles/31649474869143-Why-is-my-Elo-monitor-flashing-red-blue-green-patterns?utm_source=chatgpt.com",
+            "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f",
+            "https://www.dell.com/community/en/conversations/monitors/s2417dg-burnin-mode-random-colors-4-back-on-after-power-off/647f78aaf4ccf8a8de6be1c3?commentId=647f78b3f4ccf8a8de6c9c9f&utm_source=chatgpt.com"
+          ],
+          "citations": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0a0cc521e714ea8f72362a4e8d11d",
+          "message_type": "next",
+          "turn_exchange_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "working_turn_id": "aad5ae25-4b63-4ed5-8a84-8325733e8a23",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "b9472407-7f97-4bd6-9e62-1e4dff98dc5f",
+          "turn_id": "efe3c640-7d1f-4f69-82b5-373e18f3e434",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-aad5ae25-4b63-4ed5-8a84-8325733e8a23:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "b9472407-7f97-4bd6-9e62-1e4dff98dc5f",
+      "children": []
+    }
+  },
+  "current_node": "0fc25d2c-069c-4d38-8ad0-7828c23df038",
+  "context_truncation_continuation": null
+}

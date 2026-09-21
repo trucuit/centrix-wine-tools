@@ -1,0 +1,3948 @@
+{
+  "title": "Viết quảng cáo CentriX AI",
+  "create_time": 1789928507.419714,
+  "update_time": 1789930257.889265,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6ab0243a-60b0-83ec-aa94-5858071bafb8",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f310.png",
+    "https://www.facebook.com/hashtag/aichocongviec?__cft__[0",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/tc6/1/16/1f680.png",
+    "https://www.facebook.com/hashtag/centrix?__cft__[0",
+    "https://www.openai.com",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/1f449.png",
+    "https://code.cetrix.app/features",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/t5a/1/16/1f4b0.png",
+    "https://centrix.digital/chinh-sach-bao-mat/",
+    "https://ubuntu.com/esm",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/te2/1/16/270d.png",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/t84/1/16/1f381.png",
+    "https://www.facebook.com/hashtag/gpt6astra?__cft__[0",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/t50/1/16/1f525.png",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/t8c/1/16/1f4bb.png",
+    "https://get2fa.vn/",
+    "https://www.facebook.com/hashtag/centrixai?__cft__[0",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/t81/1/16/1f5a5.png",
+    "https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f4ca.png"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-6-pro",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "99a6b941-ca97-4377-89fd-e49338197ba6"
+      ]
+    },
+    "99a6b941-ca97-4377-89fd-e49338197ba6": {
+      "id": "99a6b941-ca97-4377-89fd-e49338197ba6",
+      "message": {
+        "id": "99a6b941-ca97-4377-89fd-e49338197ba6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928504.62,
+        "update_time": 1789928511.933377,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_0000000007a88206b7f0ba733b3534e8",
+              "size_bytes": 636514,
+              "width": 1080,
+              "height": 1080,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "# GPT-6 Astra – Extra High\n\nViết mình bài quảng cáo dịch vụ model tại CentriX AI"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_0000000007a88206b7f0ba733b3534e8",
+              "size": 636514,
+              "name": "GPT-6-Astra-–-Extra-High-–-130.000dthang.png",
+              "mime_type": "image/png",
+              "width": 1080,
+              "height": 1080,
+              "source": "local",
+              "library_file_id": "libfile_b1bf267784488191ad7eb2154a212e0a",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": [],
+            "render_format": "markdown"
+          },
+          "request_id": "3878cf06-0524-4d14-a08e-b31b4e0daee7",
+          "message_source": null,
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "turn_id": "2b97c614-3276-423d-968e-c77176c1de98",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "02e65811-ad2a-4c8b-892c-7ec975040f75",
+        "fc762421-577e-434b-8d83-e3ec7e42a8f6"
+      ]
+    },
+    "02e65811-ad2a-4c8b-892c-7ec975040f75": {
+      "id": "02e65811-ad2a-4c8b-892c-7ec975040f75",
+      "message": {
+        "id": "02e65811-ad2a-4c8b-892c-7ec975040f75",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789928508.831353,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 1m 12s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-3878cf06-0524-4d14-a08e-b31b4e0daee7:JP",
+          "parent_id": "99a6b941-ca97-4377-89fd-e49338197ba6",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "bfcabe1c-fdc7-4ff6-814e-da82982dd419",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928508.831353,
+          "cot_version": "v5",
+          "request_id": "3878cf06-0524-4d14-a08e-b31b4e0daee7",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 72,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "99a6b941-ca97-4377-89fd-e49338197ba6",
+      "children": []
+    },
+    "fc762421-577e-434b-8d83-e3ec7e42a8f6": {
+      "id": "fc762421-577e-434b-8d83-e3ec7e42a8f6",
+      "message": {
+        "id": "fc762421-577e-434b-8d83-e3ec7e42a8f6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928525.831593,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Viết quảng cáo dịch vụ",
+              "content": "Mình đang soạn bài quảng cáo tiếng Việt cho dịch vụ GPT-6 Astra Extra High tại Centri X AI, nhấn mạnh mức giá 130.000 đồng/tháng và tránh thêm thông tin chưa được xác nhận.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã viết quảng cáo dịch vụ",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "f7ce4185-a637-4da7-94c2-7532a1f84c49"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c00d916a799190ec30bde827dab6",
+          "message_type": "next",
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928512.7866464,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "bfcabe1c-fdc7-4ff6-814e-da82982dd419",
+          "parent_id": "417af605-a054-4d49-adde-6215989fcbe3",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "99a6b941-ca97-4377-89fd-e49338197ba6",
+      "children": [
+        "6c3e2365-81fe-4825-9480-342b620e5471"
+      ]
+    },
+    "6c3e2365-81fe-4825-9480-342b620e5471": {
+      "id": "6c3e2365-81fe-4825-9480-342b620e5471",
+      "message": {
+        "id": "6c3e2365-81fe-4825-9480-342b620e5471",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928512.832067,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"query\":\"Người dùng cần bài quảng cáo dịch vụ model “GPT-6 Astra – Extra High” tại CentriX AI; ảnh hiện tại ghi giá 130.000đ/tháng. Tìm thông tin người dùng đã chốt riêng cho gói này: quyền lợi hoặc tín dụng, kênh sử dụng, giới hạn và cách đăng ký, cách mô tả Extra High. Cần các chi tiết đã xác nhận để viết đúng dịch vụ, không suy ra từ model hoặc gói khác.\"}"
+        },
+        "status": "in_progress",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c00d916a799190ec30bde827dab6",
+          "message_type": "next",
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "reasoning_titles": [
+            "Đang gọi lại",
+            "Identifying your GPT-6 Astra offer",
+            "Clarifying your 130.000đ pricing",
+            "Reviewing your CentriX AI benefits",
+            "Matching your confirmed service details"
+          ],
+          "reasoning_title": "Đang gọi lại",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "book-open"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928512.7866464,
+          "turn_id": "bfcabe1c-fdc7-4ff6-814e-da82982dd419",
+          "parent_id": "fc762421-577e-434b-8d83-e3ec7e42a8f6",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "q7dr546",
+        "channel": null
+      },
+      "parent": "fc762421-577e-434b-8d83-e3ec7e42a8f6",
+      "children": [
+        "ff749d2b-cb6b-49ee-aa08-ee7e519668b0"
+      ]
+    },
+    "ff749d2b-cb6b-49ee-aa08-ee7e519668b0": {
+      "id": "ff749d2b-cb6b-49ee-aa08-ee7e519668b0",
+      "message": {
+        "id": "ff749d2b-cb6b-49ee-aa08-ee7e519668b0",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928532.91656,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Hoàn thiện nội dung quảng cáo",
+              "content": "Mình đang xây dựng bài quảng cáo ngắn gọn, nhấn mạnh GPT-6 Astra – Extra High trên Centri X AI, giá 130.000đ/tháng, kèm các lợi ích sử dụng phổ biến nhưng không phóng đại tính năng chưa được xác nhận.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Hoàn thiện nội dung quảng cáo",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "94ff204a-8354-411e-bf96-9539a2918e22"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "conversation_context_citation_metadata": [
+            {
+              "citation_uuid": "a8a920ea-da33-458c-b6c6-bbee506b5c38",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Gói GPT6 Astra",
+                "url": "https://chatgpt.com/c/6a9bc14a-a4cc-83ec-8e17-9f51c847aa05",
+                "pub_date": 1788592559.851,
+                "snippet": " Cửa cho Chat GPT thành\n\nGPT-6 Astra\nở dưới là gói\nGPT-6 Astra **– Extra High – 130.000đ/tháng**",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "787a4aab-92d1-4873-b157-2f9e9bc65609",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Giải thích effort ChatGPT",
+                "url": "https://chatgpt.com/c/6aa3d92b-9364-83ec-84d6-187f1dc22e59",
+                "pub_date": 1789122876.201,
+                "snippet": "  list effort của chatgpt là gì vậy bạn",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "b41c817c-6953-45c3-a7e2-629d74017967",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Tổng hợp gói ChatGPT",
+                "url": "https://chatgpt.com/c/6aabba9b-a3dc-83ec-af0d-7fe3422a5482",
+                "pub_date": 1789639333.916,
+                "snippet": " Tổng hợp lại",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "04084177-8831-40a3-b3c1-d255bbf77fbc",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Giới thiệu gói GPT Pro",
+                "url": "https://chatgpt.com/c/6a994f26-f3a0-83ec-b971-71b988b16722",
+                "pub_date": 1788432258.581,
+                "snippet": " Dạ bên mình đang bán GPT-5.6 Pro giá 520k/tháng bao gồm\n- Sử dụng 160$ tín dụng tại app CentriX (Áp dụng bảng giá OpenAI giảm giá 80%)\n- Sử dụng 40$ tín dụng tại Website và  công cụ CLI tools (áp dụng đúng giá OpenAI) - Ngoài ra còn hỗ troẹ tối đa 67 model AI khác nhau\n\nViết giới thiệu gói cho mình",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "9fd460cd-cdd5-4d50-9cea-4f3f8a24a2ea",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Viết danh sách gói AI",
+                "url": "https://chatgpt.com/c/6a9ad32e-1f74-83ec-be95-58a6fa208951",
+                "pub_date": 1788531504.234,
+                "snippet": "### GPT-5.6 Sol – Extra High – 130.000đ/tháng\n\nGói phù hợp cho người dùng cần **GPT-5.6 Sol ở mức Extra High** để xử lý các tác vụ chuyên sâu, nghiên cứu và lập trình.\n\n- **40 USD tín dụng trên app CentriX**\n- **10 USD tín dụng Web & CLI Tools**\n- Sử dụng linh hoạt trên **Desktop, Website và các công cụ CLI**\n- Phù hợp cho **chat, phân tích, nghiên cứu, lập trình và Coding Agent**\n\n**Tổng 50 USD tín dụng/tháng – chỉ 130.000đ.**\n\n\n\nVà gói nâng cấp ChatGPT Plus 600k/tháng, ChatGPT Business 629k/tháng trực tiếp\n\nViết giúp mình danh sách",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            }
+          ],
+          "conversation_context_citation_metadata_status": "seeded",
+          "personal_sources": [
+            "convo_search"
+          ],
+          "request_id": "wfr_01a0c00d916a799190ec30bde827dab6",
+          "message_type": "next",
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928512.7866464,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "bfcabe1c-fdc7-4ff6-814e-da82982dd419",
+          "parent_id": "6c3e2365-81fe-4825-9480-342b620e5471",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6c3e2365-81fe-4825-9480-342b620e5471",
+      "children": [
+        "9fac0647-3e24-4561-9e70-93769154c6ba"
+      ]
+    },
+    "9fac0647-3e24-4561-9e70-93769154c6ba": {
+      "id": "9fac0647-3e24-4561-9e70-93769154c6ba",
+      "message": {
+        "id": "9fac0647-3e24-4561-9e70-93769154c6ba",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928540.580888,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Định hình bài quảng cáo",
+              "content": "Mình sẽ viết nội dung quảng cáo hoàn chỉnh cho GPT-6 Astra – Extra High trên Centri X AI, nhấn mạnh giá 130.000đ/tháng, lợi ích thực tế và lời kêu gọi đăng ký rõ ràng.",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "f8253690-4595-4523-b584-5629e7844d85"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "conversation_context_citation_metadata": [
+            {
+              "citation_uuid": "a0d44fbb-918e-4d95-8bcb-644f5314af8d",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Gói GPT6 Astra",
+                "url": "https://chatgpt.com/c/6a9bc14a-a4cc-83ec-8e17-9f51c847aa05",
+                "pub_date": 1788592559.851,
+                "snippet": " Cửa cho Chat GPT thành\n\nGPT-6 Astra\nở dưới là gói\nGPT-6 Astra **– Extra High – 130.000đ/tháng**",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "7478fc2a-ee42-4167-b395-7197c8c4fbe7",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Giải thích effort ChatGPT",
+                "url": "https://chatgpt.com/c/6aa3d92b-9364-83ec-84d6-187f1dc22e59",
+                "pub_date": 1789122876.201,
+                "snippet": "  list effort của chatgpt là gì vậy bạn",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "18d72551-c712-42d2-a953-f24d7b062df2",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Tổng hợp gói ChatGPT",
+                "url": "https://chatgpt.com/c/6aabba9b-a3dc-83ec-af0d-7fe3422a5482",
+                "pub_date": 1789639333.916,
+                "snippet": " Tổng hợp lại",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "e4be18b9-6788-4bef-896f-f5affa9ea68e",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Giới thiệu gói GPT Pro",
+                "url": "https://chatgpt.com/c/6a994f26-f3a0-83ec-b971-71b988b16722",
+                "pub_date": 1788432258.581,
+                "snippet": " Dạ bên mình đang bán GPT-5.6 Pro giá 520k/tháng bao gồm\n- Sử dụng 160$ tín dụng tại app CentriX (Áp dụng bảng giá OpenAI giảm giá 80%)\n- Sử dụng 40$ tín dụng tại Website và  công cụ CLI tools (áp dụng đúng giá OpenAI) - Ngoài ra còn hỗ troẹ tối đa 67 model AI khác nhau\n\nViết giới thiệu gói cho mình",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "0e56c3a6-fbed-4dad-81a7-969b69793199",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Viết danh sách gói AI",
+                "url": "https://chatgpt.com/c/6a9ad32e-1f74-83ec-be95-58a6fa208951",
+                "pub_date": 1788531504.234,
+                "snippet": "### GPT-5.6 Sol – Extra High – 130.000đ/tháng\n\nGói phù hợp cho người dùng cần **GPT-5.6 Sol ở mức Extra High** để xử lý các tác vụ chuyên sâu, nghiên cứu và lập trình.\n\n- **40 USD tín dụng trên app CentriX**\n- **10 USD tín dụng Web & CLI Tools**\n- Sử dụng linh hoạt trên **Desktop, Website và các công cụ CLI**\n- Phù hợp cho **chat, phân tích, nghiên cứu, lập trình và Coding Agent**\n\n**Tổng 50 USD tín dụng/tháng – chỉ 130.000đ.**\n\n\n\nVà gói nâng cấp ChatGPT Plus 600k/tháng, ChatGPT Business 629k/tháng trực tiếp\n\nViết giúp mình danh sách",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            }
+          ],
+          "conversation_context_citation_metadata_status": "seeded",
+          "personal_sources": [
+            "convo_search"
+          ],
+          "request_id": "wfr_01a0c00d916a799190ec30bde827dab6",
+          "message_type": "next",
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928512.7866464,
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "bfcabe1c-fdc7-4ff6-814e-da82982dd419",
+          "parent_id": "ff749d2b-cb6b-49ee-aa08-ee7e519668b0",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ff749d2b-cb6b-49ee-aa08-ee7e519668b0",
+      "children": [
+        "18596495-207e-4363-89b1-752fa7fc55a3"
+      ]
+    },
+    "18596495-207e-4363-89b1-752fa7fc55a3": {
+      "id": "18596495-207e-4363-89b1-752fa7fc55a3",
+      "message": {
+        "id": "18596495-207e-4363-89b1-752fa7fc55a3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928548.581727,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã xác minh ưu đãi GPT-6 Astra và chi tiết dịch vụ CentriX AI",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "9fef2107-b197-4e8b-9f20-630e3f548951"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "source_message_ids": [
+              "6c3e2365-81fe-4825-9480-342b620e5471"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "personal_context",
+          "tool_icons": [
+            "book-open"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928512.7866464,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c00d916a799190ec30bde827dab6",
+          "message_type": "next",
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "resolved_model_slug": "gpt-6-pro",
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": false,
+          "turn_id": "bfcabe1c-fdc7-4ff6-814e-da82982dd419",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9fac0647-3e24-4561-9e70-93769154c6ba",
+      "children": [
+        "6f71bad1-6d79-5406-8bf2-f7bc311af1e3"
+      ]
+    },
+    "6f71bad1-6d79-5406-8bf2-f7bc311af1e3": {
+      "id": "6f71bad1-6d79-5406-8bf2-f7bc311af1e3",
+      "message": {
+        "id": "6f71bad1-6d79-5406-8bf2-f7bc311af1e3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928581.435886,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 1m 12s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 72,
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "reasoning_start_time": 1789928508.831353,
+          "reasoning_end_time": 1789928581.435886,
+          "turn_id": "bfcabe1c-fdc7-4ff6-814e-da82982dd419",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "18596495-207e-4363-89b1-752fa7fc55a3",
+      "children": [
+        "2e78584a-7216-4f57-9958-ad885ecc194f"
+      ]
+    },
+    "2e78584a-7216-4f57-9958-ad885ecc194f": {
+      "id": "2e78584a-7216-4f57-9958-ad885ecc194f",
+      "message": {
+        "id": "2e78584a-7216-4f57-9958-ad885ecc194f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928581.435886,
+        "update_time": 1789928719.081291,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "## 🚀 GPT-6 Astra – Extra High tại CentriX AI\n### Trợ lý AI cho công việc mỗi ngày — chỉ 130.000đ/tháng.\n\n**Ý tưởng còn dang dở, tài liệu đang chờ xử lý, đoạn code vẫn chưa tìm ra lỗi?** Đưa AI vào công việc để bớt loay hoay và tập trung hơn vào những điều quan trọng.\n\nTrải nghiệm **GPT-6 Astra – Extra High** trên hệ thống **CentriX AI**, hỗ trợ bạn từ sáng tạo nội dung đến phân tích và lập trình:\n\n✍️ **Viết & sáng tạo nội dung:** Phát triển ý tưởng, soạn bài quảng cáo, viết email và chỉnh sửa văn bản theo mục đích sử dụng.\n\n📊 **Phân tích & giải quyết vấn đề:** Tổng hợp thông tin, làm rõ các phương án và xây dựng kế hoạch cho công việc.\n\n💻 **Hỗ trợ lập trình:** Giải thích mã nguồn, tìm hướng xử lý lỗi và đề xuất cải thiện code.\n\nKhông chỉ hỏi đáp, hãy biến AI thành một phần trong cách bạn làm việc — từ lúc bắt đầu ý tưởng đến khi hoàn thiện kết quả.\n\n💙 **GPT-6 Astra – Extra High | 130.000đ/tháng**  \n**Nhắn tin CentriX để được tư vấn và hướng dẫn đăng ký ạ!**\n\n*Dịch vụ sử dụng qua hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.*\n\n#CentriX #CentriXAI #GPT6Astra #AIChoCongViec"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_context_citation_metadata": [
+            {
+              "citation_uuid": "1bdb4e1b-3a91-448b-90ac-c263cdf57685",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Gói GPT6 Astra",
+                "url": "https://chatgpt.com/c/6a9bc14a-a4cc-83ec-8e17-9f51c847aa05",
+                "pub_date": 1788592559.851,
+                "snippet": " Cửa cho Chat GPT thành\n\nGPT-6 Astra\nở dưới là gói\nGPT-6 Astra **– Extra High – 130.000đ/tháng**",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "8c82e2bc-48c0-4544-9e0f-6730b15775f0",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Giải thích effort ChatGPT",
+                "url": "https://chatgpt.com/c/6aa3d92b-9364-83ec-84d6-187f1dc22e59",
+                "pub_date": 1789122876.201,
+                "snippet": "  list effort của chatgpt là gì vậy bạn",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "13864f21-6a27-4898-a3f2-ad08071c1a54",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Tổng hợp gói ChatGPT",
+                "url": "https://chatgpt.com/c/6aabba9b-a3dc-83ec-af0d-7fe3422a5482",
+                "pub_date": 1789639333.916,
+                "snippet": " Tổng hợp lại",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "6c4ac216-ba99-4739-9878-24869b13f1fd",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Giới thiệu gói GPT Pro",
+                "url": "https://chatgpt.com/c/6a994f26-f3a0-83ec-b971-71b988b16722",
+                "pub_date": 1788432258.581,
+                "snippet": " Dạ bên mình đang bán GPT-5.6 Pro giá 520k/tháng bao gồm\n- Sử dụng 160$ tín dụng tại app CentriX (Áp dụng bảng giá OpenAI giảm giá 80%)\n- Sử dụng 40$ tín dụng tại Website và  công cụ CLI tools (áp dụng đúng giá OpenAI) - Ngoài ra còn hỗ troẹ tối đa 67 model AI khác nhau\n\nViết giới thiệu gói cho mình",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            },
+            {
+              "citation_uuid": "9fc7e4e4-0b03-485f-9b14-7b455c01b264",
+              "feedback": null,
+              "deleted": false,
+              "retrieval_origin": "pca",
+              "citation": {
+                "matched_text": "",
+                "start_idx": 0,
+                "end_idx": 0,
+                "alt": "",
+                "refs": [],
+                "prompt_text": null,
+                "title": "Viết danh sách gói AI",
+                "url": "https://chatgpt.com/c/6a9ad32e-1f74-83ec-be95-58a6fa208951",
+                "pub_date": 1788531504.234,
+                "snippet": "### GPT-5.6 Sol – Extra High – 130.000đ/tháng\n\nGói phù hợp cho người dùng cần **GPT-5.6 Sol ở mức Extra High** để xử lý các tác vụ chuyên sâu, nghiên cứu và lập trình.\n\n- **40 USD tín dụng trên app CentriX**\n- **10 USD tín dụng Web & CLI Tools**\n- Sử dụng linh hoạt trên **Desktop, Website và các công cụ CLI**\n- Phù hợp cho **chat, phân tích, nghiên cứu, lập trình và Coding Agent**\n\n**Tổng 50 USD tín dụng/tháng – chỉ 130.000đ.**\n\n\n\nVà gói nâng cấp ChatGPT Plus 600k/tháng, ChatGPT Business 629k/tháng trực tiếp\n\nViết giúp mình danh sách",
+                "attribution": "Past chat",
+                "category": "memory",
+                "retrieval_origin": "pca",
+                "type": "grouped_webpages"
+              }
+            }
+          ],
+          "conversation_context_citation_metadata_status": "seeded",
+          "personal_sources": [
+            "convo_search"
+          ],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c00d916a799190ec30bde827dab6",
+          "message_type": "next",
+          "turn_exchange_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "working_turn_id": "cb550f84-44d8-4692-b6bf-2ce6013230ba",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "bfcabe1c-fdc7-4ff6-814e-da82982dd419",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-3878cf06-0524-4d14-a08e-b31b4e0daee7:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "6f71bad1-6d79-5406-8bf2-f7bc311af1e3",
+      "children": [
+        "d6ea1beb-f23d-4947-9fc8-9423f47ab5f5"
+      ]
+    },
+    "d6ea1beb-f23d-4947-9fc8-9423f47ab5f5": {
+      "id": "d6ea1beb-f23d-4947-9fc8-9423f47ab5f5",
+      "message": {
+        "id": "d6ea1beb-f23d-4947-9fc8-9423f47ab5f5",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928742.35,
+        "update_time": 1789928748.389098,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Làm nổi bật centrix AI nha bạn mình đăng fb"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9f64102b-b84e-49f8-a382-cf6897571013",
+          "message_source": null,
+          "turn_exchange_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "working_turn_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "turn_id": "da8d404b-f7bd-4a3e-980e-9c1c9d060552",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2e78584a-7216-4f57-9958-ad885ecc194f",
+      "children": [
+        "cfbb7424-6a4e-4f8f-a170-6f28084c2ae5",
+        "44edcf52-3a5e-45ed-ab5c-1165eb2944bb"
+      ]
+    },
+    "cfbb7424-6a4e-4f8f-a170-6f28084c2ae5": {
+      "id": "cfbb7424-6a4e-4f8f-a170-6f28084c2ae5",
+      "message": {
+        "id": "cfbb7424-6a4e-4f8f-a170-6f28084c2ae5",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789928745.962568,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 42s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-9f64102b-b84e-49f8-a382-cf6897571013:JP",
+          "parent_id": "d6ea1beb-f23d-4947-9fc8-9423f47ab5f5",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "working_turn_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "af583de1-b7d7-4be9-a2d3-675ceddaa497",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928745.962568,
+          "cot_version": "v5",
+          "request_id": "9f64102b-b84e-49f8-a382-cf6897571013",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 42,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d6ea1beb-f23d-4947-9fc8-9423f47ab5f5",
+      "children": [
+        "57226afc-6db8-45f7-84c7-9170ada2e4c2"
+      ]
+    },
+    "44edcf52-3a5e-45ed-ab5c-1165eb2944bb": {
+      "id": "44edcf52-3a5e-45ed-ab5c-1165eb2944bb",
+      "message": {
+        "id": "44edcf52-3a5e-45ed-ab5c-1165eb2944bb",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789928799.955447,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 56s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-760c74ae-c77e-405b-9346-93b822e5fbba:JP",
+          "parent_id": "d6ea1beb-f23d-4947-9fc8-9423f47ab5f5",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "5fa239c8-06aa-4aa7-a61e-9bd135c103da",
+          "working_turn_id": "5fa239c8-06aa-4aa7-a61e-9bd135c103da",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "ad9b4ba9-d9ed-49d0-be3e-f8b1511e2431",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928799.955447,
+          "cot_version": "v5",
+          "request_id": "760c74ae-c77e-405b-9346-93b822e5fbba",
+          "message_type": "variant",
+          "default_model_slug": "gpt-6-pro",
+          "finished_duration_sec": 56,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d6ea1beb-f23d-4947-9fc8-9423f47ab5f5",
+      "children": [
+        "18f679a2-9ba7-40de-9428-bcb6f05aebbe"
+      ]
+    },
+    "57226afc-6db8-45f7-84c7-9170ada2e4c2": {
+      "id": "57226afc-6db8-45f7-84c7-9170ada2e4c2",
+      "message": {
+        "id": "57226afc-6db8-45f7-84c7-9170ada2e4c2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928757.21548,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Làm nổi bật Centrix AI",
+              "content": "Mình sẽ đặt **Centrix AI** làm trọng tâm, giữ giọng quảng bá phù hợp Facebook và chỉ dùng các thông tin đã có: tên sản phẩm, gói GPT-6 Astra Extra và mức giá 130K.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã làm nổi bật Centrix AI",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "8dd6cd0d-8c1c-4369-a2a7-b6a4c89ba1c7"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c0112dff7d9e975b8359d65d1118",
+          "message_type": "next",
+          "turn_exchange_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "working_turn_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928749.3354502,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "af583de1-b7d7-4be9-a2d3-675ceddaa497",
+          "parent_id": "cfbb7424-6a4e-4f8f-a170-6f28084c2ae5",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cfbb7424-6a4e-4f8f-a170-6f28084c2ae5",
+      "children": [
+        "bc5da543-a969-4506-a613-9cb859def1b6"
+      ]
+    },
+    "18f679a2-9ba7-40de-9428-bcb6f05aebbe": {
+      "id": "18f679a2-9ba7-40de-9428-bcb6f05aebbe",
+      "message": {
+        "id": "18f679a2-9ba7-40de-9428-bcb6f05aebbe",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928810.72517,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Làm nổi bật Centrix AI",
+              "content": "Mình sẽ viết lại theo hướng **Centrix AI là thương hiệu chính**, còn GPT-6 Astra Extra High là công nghệ bên trong. Nội dung sẽ phù hợp đăng Facebook, rõ lợi ích và có điểm nhấn bán hàng.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Làm nổi bật Centrix AI",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "bcc3fa0f-d771-41d9-913f-cc94d11a3c78"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c01201277e0a9c2934e6f7300499",
+          "message_type": "variant",
+          "turn_exchange_id": "5fa239c8-06aa-4aa7-a61e-9bd135c103da",
+          "working_turn_id": "5fa239c8-06aa-4aa7-a61e-9bd135c103da",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928803.435372,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "ad9b4ba9-d9ed-49d0-be3e-f8b1511e2431",
+          "parent_id": "44edcf52-3a5e-45ed-ab5c-1165eb2944bb",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "44edcf52-3a5e-45ed-ab5c-1165eb2944bb",
+      "children": [
+        "5fcb3642-e527-546c-9ad7-0ad03cbf50b3"
+      ]
+    },
+    "bc5da543-a969-4506-a613-9cb859def1b6": {
+      "id": "bc5da543-a969-4506-a613-9cb859def1b6",
+      "message": {
+        "id": "bc5da543-a969-4506-a613-9cb859def1b6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928763.859282,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Tạo caption nổi bật",
+              "content": "Mình đang hướng trọng tâm vào Centrix AI, mở đầu bằng những nhu cầu cụ thể như viết nội dung, phân tích thông tin và hỗ trợ lập trình, rồi mới giới thiệu gói GPT-6 Astra Extra High giá 130.000 đồng/tháng.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã tạo caption nổi bật",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "9acdd03b-3190-494b-a422-83383f9a9a5a"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c0112dff7d9e975b8359d65d1118",
+          "message_type": "next",
+          "turn_exchange_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "working_turn_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789928749.3354502,
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "af583de1-b7d7-4be9-a2d3-675ceddaa497",
+          "parent_id": "57226afc-6db8-45f7-84c7-9170ada2e4c2",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "57226afc-6db8-45f7-84c7-9170ada2e4c2",
+      "children": [
+        "378948fb-0c55-5398-92c1-5ea9c4f5bf8b"
+      ]
+    },
+    "5fcb3642-e527-546c-9ad7-0ad03cbf50b3": {
+      "id": "5fcb3642-e527-546c-9ad7-0ad03cbf50b3",
+      "message": {
+        "id": "5fcb3642-e527-546c-9ad7-0ad03cbf50b3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928855.984986,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 56s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 56,
+          "turn_exchange_id": "5fa239c8-06aa-4aa7-a61e-9bd135c103da",
+          "working_turn_id": "5fa239c8-06aa-4aa7-a61e-9bd135c103da",
+          "reasoning_start_time": 1789928799.955447,
+          "reasoning_end_time": 1789928855.984986,
+          "turn_id": "ad9b4ba9-d9ed-49d0-be3e-f8b1511e2431",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "18f679a2-9ba7-40de-9428-bcb6f05aebbe",
+      "children": [
+        "ee4571a6-4ab1-4588-ac9f-88f3c10949e2"
+      ]
+    },
+    "378948fb-0c55-5398-92c1-5ea9c4f5bf8b": {
+      "id": "378948fb-0c55-5398-92c1-5ea9c4f5bf8b",
+      "message": {
+        "id": "378948fb-0c55-5398-92c1-5ea9c4f5bf8b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928788.770219,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 42s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 42,
+          "turn_exchange_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "working_turn_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "reasoning_start_time": 1789928745.962568,
+          "reasoning_end_time": 1789928788.770219,
+          "turn_id": "af583de1-b7d7-4be9-a2d3-675ceddaa497",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bc5da543-a969-4506-a613-9cb859def1b6",
+      "children": [
+        "faa1c222-c425-451a-a795-15684b5597fc"
+      ]
+    },
+    "ee4571a6-4ab1-4588-ac9f-88f3c10949e2": {
+      "id": "ee4571a6-4ab1-4588-ac9f-88f3c10949e2",
+      "message": {
+        "id": "ee4571a6-4ab1-4588-ac9f-88f3c10949e2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928855.984986,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "💙 **CentriX AI — THÊM TRỢ LỰC, BỚT ÁP LỰC CÔNG VIỆC**\n\nÝ tưởng chưa thành bài, tài liệu còn chờ xử lý, đoạn code vẫn đang mắc lỗi? Để **CentriX AI** hỗ trợ bạn giải quyết từng việc, thay vì loay hoay một mình.\n\n✨ **Viết & sáng tạo:** Lên ý tưởng, soạn email, viết bài quảng cáo và hoàn thiện nội dung.\n📊 **Phân tích & lập kế hoạch:** Tổng hợp thông tin, làm rõ vấn đề và xây dựng hướng triển khai.\n💻 **Hỗ trợ lập trình:** Giải thích mã nguồn, tìm hướng xử lý lỗi và đề xuất cải thiện code.\n\n🔥 **Chỉ 130.000đ/tháng — trải nghiệm GPT-6 Astra – Extra High ngay trên CentriX AI.**\n\nKhông chỉ hỏi đáp, hãy đưa AI vào những công việc bạn cần hoàn thành mỗi ngày.\n\n👉 **Nhắn tin CentriX AI để được tư vấn và hướng dẫn đăng ký!**\n\n*Dịch vụ sử dụng qua nền tảng CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.*\n\n#CentriXAI #CentriX #AIChoCongViec #GPT6Astra"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c01201277e0a9c2934e6f7300499",
+          "message_type": "variant",
+          "turn_exchange_id": "5fa239c8-06aa-4aa7-a61e-9bd135c103da",
+          "working_turn_id": "5fa239c8-06aa-4aa7-a61e-9bd135c103da",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "ad9b4ba9-d9ed-49d0-be3e-f8b1511e2431",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-760c74ae-c77e-405b-9346-93b822e5fbba:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "5fcb3642-e527-546c-9ad7-0ad03cbf50b3",
+      "children": [
+        "b7209d02-e37f-4e5f-ba64-e7cd9fde9ceb"
+      ]
+    },
+    "faa1c222-c425-451a-a795-15684b5597fc": {
+      "id": "faa1c222-c425-451a-a795-15684b5597fc",
+      "message": {
+        "id": "faa1c222-c425-451a-a795-15684b5597fc",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789928788.770219,
+        "update_time": 1789928802.670262,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "💙 **CENTRIX AI – CÓ AI ĐỒNG HÀNH, CÔNG VIỆC NHẸ NHÀNG HƠN!**\n\nBạn đang mất nhiều thời gian để viết nội dung, tổng hợp thông tin hay tìm cách xử lý một đoạn code? **Để CentriX AI cùng bạn tìm hướng giải quyết**, thay vì loay hoay làm mọi thứ một mình.\n\n🚀 Trải nghiệm **GPT-6 Astra – Extra High ngay trên CentriX AI**, chỉ **130.000đ/tháng**.\n\n✍️ **Viết & sáng tạo:** Cùng AI lên ý tưởng, soạn email, viết bài quảng cáo và chỉnh sửa nội dung theo nhu cầu.\n\n📊 **Phân tích & lập kế hoạch:** Tổng hợp thông tin, làm rõ vấn đề và phát triển kế hoạch thành các bước cụ thể.\n\n💻 **Hỗ trợ lập trình:** Giải thích mã nguồn, tìm hướng xử lý lỗi và đề xuất cải thiện code.\n\n**CentriX AI không chỉ để hỏi đáp — mà để đồng hành cùng bạn trong công việc mỗi ngày.**\n\n👉 **Nhắn tin CentriX để được tư vấn và đăng ký trải nghiệm CentriX AI ngay hôm nay!**\n\n*Dịch vụ sử dụng trên hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.*\n\n#CentriXAI #CentriX #AIChoCongViec #GPT6Astra"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c0112dff7d9e975b8359d65d1118",
+          "message_type": "next",
+          "turn_exchange_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "working_turn_id": "1adc15a2-e626-46ed-b108-66c21d9e92d9",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "af583de1-b7d7-4be9-a2d3-675ceddaa497",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-9f64102b-b84e-49f8-a382-cf6897571013:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "378948fb-0c55-5398-92c1-5ea9c4f5bf8b",
+      "children": []
+    },
+    "b7209d02-e37f-4e5f-ba64-e7cd9fde9ceb": {
+      "id": "b7209d02-e37f-4e5f-ba64-e7cd9fde9ceb",
+      "message": {
+        "id": "b7209d02-e37f-4e5f-ba64-e7cd9fde9ceb",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929391.971,
+        "update_time": 1789929397.93549,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "[🚀](https://static.xx.fbcdn.net/images/emoji.php/v9/tc6/1/16/1f680.png) Trải nghiệm GPT-6 Astra – Pro ngay trên CentriX AI, chỉ 520.000đ/tháng. 200$ tín dụng API\n\n[✍️](https://static.xx.fbcdn.net/images/emoji.php/v9/te2/1/16/270d.png) Viết & sáng tạo: Cùng AI lên ý tưởng, soạn email, viết bài quảng cáo và chỉnh sửa nội dung theo nhu cầu.\n\n[📊](https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f4ca.png) Phân tích & lập kế hoạch: Tổng hợp thông tin, làm rõ vấn đề và phát triển kế hoạch thành các bước cụ thể.\n\n[💻](https://static.xx.fbcdn.net/images/emoji.php/v9/t8c/1/16/1f4bb.png) Hỗ trợ lập trình: Giải thích mã nguồn, tìm hướng xử lý lỗi và đề xuất cải thiện code.\n\nCentriX AI không chỉ để hỏi đáp — mà để đồng hành cùng bạn trong công việc mỗi ngày.\n\n[👉](https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/1f449.png) Nhắn tin CentriX để được tư vấn và đăng ký trải nghiệm CentriX AI ngay hôm nay!\n\nDịch vụ sử dụng trên hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.\n\n[**#CentriXAI**](https://www.facebook.com/hashtag/centrixai?__cft__\\[0]=AZjtuo7Jk2jQsQW-aJNRSyW0i91GYqWB7U3AebKQ2Yp8oARsKZKq6BTD-D5UwE_SPdxQfP3-0IhEnovcx9D01NjMUnsighyQozjHFZ6sOGpiQuXpUYiI_3IzPRl57sppR9h4Z4x6mv2TKAaE53BgNeNvQ7SdikOxGi5Q&__tn__=*NK-R) [**#CentriX**](https://www.facebook.com/hashtag/centrix?__cft__\\[0]=AZjtuo7Jk2jQsQW-aJNRSyW0i91GYqWB7U3AebKQ2Yp8oARsKZKq6BTD-D5UwE_SPdxQfP3-0IhEnovcx9D01NjMUnsighyQozjHFZ6sOGpiQuXpUYiI_3IzPRl57sppR9h4Z4x6mv2TKAaE53BgNeNvQ7SdikOxGi5Q&__tn__=*NK-R) [**#AIChoCongViec**](https://www.facebook.com/hashtag/aichocongviec?__cft__\\[0]=AZjtuo7Jk2jQsQW-aJNRSyW0i91GYqWB7U3AebKQ2Yp8oARsKZKq6BTD-D5UwE_SPdxQfP3-0IhEnovcx9D01NjMUnsighyQozjHFZ6sOGpiQuXpUYiI_3IzPRl57sppR9h4Z4x6mv2TKAaE53BgNeNvQ7SdikOxGi5Q&__tn__=*NK-R) [**#GPT6Astra**](https://www.facebook.com/hashtag/gpt6astra?__cft__\\[0]=AZjtuo7Jk2jQsQW-aJNRSyW0i91GYqWB7U3AebKQ2Yp8oARsKZKq6BTD-D5UwE_SPdxQfP3-0IhEnovcx9D01NjMUnsighyQozjHFZ6sOGpiQuXpUYiI_3IzPRl57sppR9h4Z4x6mv2TKAaE53BgNeNvQ7SdikOxGi5Q&__tn__=*NK-R) "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": [],
+            "render_format": "markdown"
+          },
+          "request_id": "99a6e03c-6280-4f7e-825a-8c4ab2869c54",
+          "message_source": null,
+          "turn_exchange_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "working_turn_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "turn_id": "c68e0c27-b292-47a3-a158-d5d0159f97e4",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ee4571a6-4ab1-4588-ac9f-88f3c10949e2",
+      "children": [
+        "70c1b74c-83ae-4ff6-a412-4d592bf2a15f"
+      ]
+    },
+    "70c1b74c-83ae-4ff6-a412-4d592bf2a15f": {
+      "id": "70c1b74c-83ae-4ff6-a412-4d592bf2a15f",
+      "message": {
+        "id": "70c1b74c-83ae-4ff6-a412-4d592bf2a15f",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789929395.606862,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 43s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-99a6e03c-6280-4f7e-825a-8c4ab2869c54:JP",
+          "parent_id": "b7209d02-e37f-4e5f-ba64-e7cd9fde9ceb",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "working_turn_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "a2a4d9d6-a52f-43e6-81bc-0c06cbed1db8",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929395.606862,
+          "cot_version": "v5",
+          "request_id": "99a6e03c-6280-4f7e-825a-8c4ab2869c54",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 43,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b7209d02-e37f-4e5f-ba64-e7cd9fde9ceb",
+      "children": [
+        "4f7650cd-3083-4948-a3e1-033f6f6736db"
+      ]
+    },
+    "4f7650cd-3083-4948-a3e1-033f6f6736db": {
+      "id": "4f7650cd-3083-4948-a3e1-033f6f6736db",
+      "message": {
+        "id": "4f7650cd-3083-4948-a3e1-033f6f6736db",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929409.295908,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đang biên tập nội dung",
+              "content": "Mình đang giữ Centrix AI làm thương hiệu trung tâm, nhấn mạnh GPT-6 Astra Pro, mức giá 520.000đ/tháng và ưu đãi 200 USD tín dụng API. Mình sẽ trình bày thành quảng cáo Facebook rõ ràng, hấp dẫn nhưng không thêm thông tin ngoài dữ liệu được cung cấp.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã biên tập nội dung",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "876bec8f-1f6f-4b84-90c7-fcf4aceac9d6"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c01b17d374e7b1fa88648e8c3f61",
+          "message_type": "next",
+          "turn_exchange_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "working_turn_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929400.1430163,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "a2a4d9d6-a52f-43e6-81bc-0c06cbed1db8",
+          "parent_id": "70c1b74c-83ae-4ff6-a412-4d592bf2a15f",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "70c1b74c-83ae-4ff6-a412-4d592bf2a15f",
+      "children": [
+        "9339c1ee-d472-5636-8484-65bb362f30ab"
+      ]
+    },
+    "9339c1ee-d472-5636-8484-65bb362f30ab": {
+      "id": "9339c1ee-d472-5636-8484-65bb362f30ab",
+      "message": {
+        "id": "9339c1ee-d472-5636-8484-65bb362f30ab",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929438.883045,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 43s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 43,
+          "turn_exchange_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "working_turn_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "reasoning_start_time": 1789929395.606862,
+          "reasoning_end_time": 1789929438.883045,
+          "turn_id": "a2a4d9d6-a52f-43e6-81bc-0c06cbed1db8",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4f7650cd-3083-4948-a3e1-033f6f6736db",
+      "children": [
+        "dc8b5d27-bbf0-4dfb-9457-4183de01adae"
+      ]
+    },
+    "dc8b5d27-bbf0-4dfb-9457-4183de01adae": {
+      "id": "dc8b5d27-bbf0-4dfb-9457-4183de01adae",
+      "message": {
+        "id": "dc8b5d27-bbf0-4dfb-9457-4183de01adae",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929438.883045,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "💙 **CentriX AI — TRỢ LỰC CHO CÔNG VIỆC MỖI NGÀY**\n\n🚀 Trải nghiệm **GPT-6 Astra – Pro** ngay trên **CentriX AI**, từ sáng tạo nội dung, phân tích thông tin đến hỗ trợ lập trình.\n\n🔥 **Chỉ 520.000đ/tháng — nhận 200 USD tín dụng API sử dụng trên hệ thống CentriX AI.**\n\n✍️ **Viết & sáng tạo:** Cùng AI lên ý tưởng, soạn email, viết bài quảng cáo và chỉnh sửa nội dung theo nhu cầu.\n\n📊 **Phân tích & lập kế hoạch:** Tổng hợp thông tin, làm rõ vấn đề và biến kế hoạch thành những bước triển khai cụ thể.\n\n💻 **Hỗ trợ lập trình:** Giải thích mã nguồn, tìm hướng xử lý lỗi và đề xuất cải thiện code.\n\n**CentriX AI không chỉ để hỏi đáp — mà để đồng hành cùng bạn giải quyết công việc mỗi ngày.** Bớt loay hoay với từng đầu việc, dành thêm thời gian cho những điều quan trọng.\n\n👉 **Nhắn tin CentriX để được tư vấn và đăng ký trải nghiệm CentriX AI ngay hôm nay!**\n\n*Dịch vụ sử dụng trên hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.*\n\n#CentriXAI #CentriX #AIChoCongViec #GPT6Astra"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c01b17d374e7b1fa88648e8c3f61",
+          "message_type": "next",
+          "turn_exchange_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "working_turn_id": "2ac54a00-51f9-49d9-ba73-527ac9df9c8f",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "a2a4d9d6-a52f-43e6-81bc-0c06cbed1db8",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-99a6e03c-6280-4f7e-825a-8c4ab2869c54:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "9339c1ee-d472-5636-8484-65bb362f30ab",
+      "children": [
+        "a3d0e364-ad9f-48e8-8ee2-160ff780e777"
+      ]
+    },
+    "a3d0e364-ad9f-48e8-8ee2-160ff780e777": {
+      "id": "a3d0e364-ad9f-48e8-8ee2-160ff780e777",
+      "message": {
+        "id": "a3d0e364-ad9f-48e8-8ee2-160ff780e777",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929441.694,
+        "update_time": 1789929447.810187,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_0000000034e88209b62a89f43b36c982",
+              "size_bytes": 337787,
+              "width": 1438,
+              "height": 1134,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "viết lại làm nổi bật gói cho mình kỹ tý"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_0000000034e88209b62a89f43b36c982",
+              "size": 337787,
+              "name": "07ae3985-ee8c-4b0e-a49e-a3e60d0f5e33.png",
+              "mime_type": "image/png",
+              "width": 1438,
+              "height": 1134,
+              "source": "local",
+              "library_file_id": "libfile_4e5d8e48be188191a6fc60dae2b69bcd",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "5b6ffd95-7679-4aa6-a542-e60b45e33909",
+          "message_source": null,
+          "turn_exchange_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "working_turn_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "turn_id": "9aab199f-7c03-449f-9e25-1e5bb722efcc",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "dc8b5d27-bbf0-4dfb-9457-4183de01adae",
+      "children": [
+        "e297a0bc-12a3-4ba3-a810-a5591483fec0"
+      ]
+    },
+    "e297a0bc-12a3-4ba3-a810-a5591483fec0": {
+      "id": "e297a0bc-12a3-4ba3-a810-a5591483fec0",
+      "message": {
+        "id": "e297a0bc-12a3-4ba3-a810-a5591483fec0",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789929445.405269,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 1m 25s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-5b6ffd95-7679-4aa6-a542-e60b45e33909:JP",
+          "parent_id": "a3d0e364-ad9f-48e8-8ee2-160ff780e777",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "working_turn_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "89507e0c-aec1-4358-982b-5faf161ea7d5",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929445.405269,
+          "cot_version": "v5",
+          "request_id": "5b6ffd95-7679-4aa6-a542-e60b45e33909",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 85,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a3d0e364-ad9f-48e8-8ee2-160ff780e777",
+      "children": [
+        "3ba28bb1-05d2-46ac-9712-fda89b2dcdb1"
+      ]
+    },
+    "3ba28bb1-05d2-46ac-9712-fda89b2dcdb1": {
+      "id": "3ba28bb1-05d2-46ac-9712-fda89b2dcdb1",
+      "message": {
+        "id": "3ba28bb1-05d2-46ac-9712-fda89b2dcdb1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929455.947971,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Nhấn mạnh gói mới",
+              "content": "Mình sẽ viết lại nội dung Facebook theo hướng chi tiết, làm nổi bật gói GPT-6 Pro 520.000đ, quyền lợi tăng 10 lần tín dụng, thời hạn 30 ngày, gia hạn linh hoạt và mức tiết kiệm hấp dẫn cho người dùng.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Nhấn mạnh gói mới",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "176f2299-f6b1-4513-925e-ac4dd850637e"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c01bda257878b2c50aae8c5c32ec",
+          "message_type": "next",
+          "turn_exchange_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "working_turn_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929448.6318824,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "89507e0c-aec1-4358-982b-5faf161ea7d5",
+          "parent_id": "e297a0bc-12a3-4ba3-a810-a5591483fec0",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e297a0bc-12a3-4ba3-a810-a5591483fec0",
+      "children": [
+        "fe69aae9-28e1-48e7-a028-f5b91b92daee"
+      ]
+    },
+    "fe69aae9-28e1-48e7-a028-f5b91b92daee": {
+      "id": "fe69aae9-28e1-48e7-a028-f5b91b92daee",
+      "message": {
+        "id": "fe69aae9-28e1-48e7-a028-f5b91b92daee",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929463.522578,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Hoàn thiện nội dung quảng cáo",
+              "content": "Mình sẽ nhấn mạnh gói 520.000đ/tháng, quy đổi 200 USD tín dụng sử dụng trong hệ thống CentriX AI mỗi 30 ngày, cùng lợi ích đa nhiệm và lưu ý đây không phải số dư OpenAI trực tiếp.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Hoàn thiện nội dung quảng cáo",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "7b11338d-bae8-438e-a9cb-958d1ff7e479"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c01bda257878b2c50aae8c5c32ec",
+          "message_type": "next",
+          "turn_exchange_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "working_turn_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929448.6318824,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "89507e0c-aec1-4358-982b-5faf161ea7d5",
+          "parent_id": "3ba28bb1-05d2-46ac-9712-fda89b2dcdb1",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3ba28bb1-05d2-46ac-9712-fda89b2dcdb1",
+      "children": [
+        "1544029e-3fce-4a7a-a3b9-afafabc072aa"
+      ]
+    },
+    "1544029e-3fce-4a7a-a3b9-afafabc072aa": {
+      "id": "1544029e-3fce-4a7a-a3b9-afafabc072aa",
+      "message": {
+        "id": "1544029e-3fce-4a7a-a3b9-afafabc072aa",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929471.455634,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Tính toán ưu đãi năm",
+              "content": "Mình đang bổ sung gói 12 tháng: 5.200.000đ thay vì 6.240.000đ, tiết kiệm 1.040.000đ, tương đương khoảng 17%. Mức trung bình còn khoảng 433.000đ/tháng, giúp bài quảng cáo đầy đủ và thuyết phục hơn.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã tính toán ưu đãi năm",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "6e59e79d-9b6b-4dc6-8c0b-5bae6af6884f"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c01bda257878b2c50aae8c5c32ec",
+          "message_type": "next",
+          "turn_exchange_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "working_turn_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929448.6318824,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "89507e0c-aec1-4358-982b-5faf161ea7d5",
+          "parent_id": "fe69aae9-28e1-48e7-a028-f5b91b92daee",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fe69aae9-28e1-48e7-a028-f5b91b92daee",
+      "children": [
+        "b8b5dce7-303a-510d-9223-b05ac3a33b28"
+      ]
+    },
+    "b8b5dce7-303a-510d-9223-b05ac3a33b28": {
+      "id": "b8b5dce7-303a-510d-9223-b05ac3a33b28",
+      "message": {
+        "id": "b8b5dce7-303a-510d-9223-b05ac3a33b28",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929530.413589,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 1m 25s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 85,
+          "turn_exchange_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "working_turn_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "reasoning_start_time": 1789929445.405269,
+          "reasoning_end_time": 1789929530.413589,
+          "turn_id": "89507e0c-aec1-4358-982b-5faf161ea7d5",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1544029e-3fce-4a7a-a3b9-afafabc072aa",
+      "children": [
+        "4d015e3c-8634-4760-9f83-cb31101b2179"
+      ]
+    },
+    "4d015e3c-8634-4760-9f83-cb31101b2179": {
+      "id": "4d015e3c-8634-4760-9f83-cb31101b2179",
+      "message": {
+        "id": "4d015e3c-8634-4760-9f83-cb31101b2179",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929530.413589,
+        "update_time": 1789929786.597522,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "💙 **CENTRIX AI | GPT-6 ASTRA – PRO**\n🔥 **Chỉ 520.000đ/tháng — nhận 200 USD tín dụng API mỗi chu kỳ 30 ngày!**\n\nTừ viết nội dung, phân tích thông tin đến hỗ trợ lập trình — **CentriX AI mang AI vào công việc hằng ngày của bạn, với một gói dịch vụ và ba cách sử dụng linh hoạt.**\n\n💰 **NHẬN ×10 TÍN DỤNG, TỐI ƯU CHI PHÍ SỬ DỤNG**\n\nVới gói **20 USD, tương đương 520.000đ/tháng**, bạn nhận **200 USD tín dụng** sử dụng trên hệ thống CentriX AI.\n\nĐặc biệt, **giá sử dụng model trên CentriX App được giảm đến 80%**, giúp bạn tận dụng ngân sách cho nhiều công việc hơn. Mức giảm tùy model và đã được tính trong bảng giá, không cần tự nhập mã giảm giá.\n\n⚡ **MỘT GÓI CENTRIX AI — BA CÁCH SỬ DỤNG**\n\n🖥️ **CentriX App — Đưa AI lên máy tính của bạn**\nSử dụng ứng dụng do CentriX phát triển, tích hợp các dịch vụ AI để hỗ trợ viết bài, soạn email, phát triển ý tưởng và phân tích thông tin. Có phiên bản cho **Windows, Mac Intel và Mac dùng chip Apple Silicon**.\n\n🌐 **CentriX Agent — Làm việc cùng AI ngay trên trình duyệt**\nTruy cập AI Agent để hỗ trợ triển khai công việc từ ý tưởng đến từng bước thực hiện. Sử dụng trên trình duyệt hoặc ứng dụng riêng dành cho **Windows và macOS**.\n\n💻 **Code & API — Kết nối AI vào cách bạn làm việc**\nTích hợp AI vào ứng dụng, công cụ hoặc quy trình riêng qua API; sử dụng các công cụ CLI trong terminal để hỗ trợ lập trình, giải thích mã nguồn và tìm hướng xử lý lỗi.\n\n🎁 **ĐĂNG KÝ DÀI HẠN, TIẾT KIỆM THÊM**\nChọn **gói 12 tháng, tiết kiệm 1.040.000đ** so với thanh toán từng tháng — tương đương ưu đãi khoảng **17%**.\n\n🛠️ **CÓ CENTRIX HỖ TRỢ TRONG QUÁ TRÌNH SỬ DỤNG**\nHướng dẫn cài đặt, hỗ trợ kỹ thuật và bảo hành dịch vụ trong thời hạn gói, giúp bạn thuận tiện hơn khi bắt đầu và sử dụng.\n\n**CentriX AI không chỉ để hỏi đáp — mà để hỗ trợ bạn hoàn thành công việc mỗi ngày.**\n\n👉 **Nhắn tin “ASTRA PRO” cho CentriX để được tư vấn và đăng ký gói 520.000đ/tháng ngay hôm nay!**\n\n*Dịch vụ được cung cấp trên hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân. Tín dụng sử dụng trong hệ thống CentriX.*\n\n#CentriXAI #CentriX #GPT6Astra #AstraPro #AIChoCongViec"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c01bda257878b2c50aae8c5c32ec",
+          "message_type": "next",
+          "turn_exchange_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "working_turn_id": "58bee369-eb51-4209-9cd2-e100356f8aa9",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "89507e0c-aec1-4358-982b-5faf161ea7d5",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-5b6ffd95-7679-4aa6-a542-e60b45e33909:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "b8b5dce7-303a-510d-9223-b05ac3a33b28",
+      "children": [
+        "39dc44bf-955f-469f-9fb3-315b2e53dc22"
+      ]
+    },
+    "39dc44bf-955f-469f-9fb3-315b2e53dc22": {
+      "id": "39dc44bf-955f-469f-9fb3-315b2e53dc22",
+      "message": {
+        "id": "39dc44bf-955f-469f-9fb3-315b2e53dc22",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929660.114,
+        "update_time": 1789929665.854326,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\nViết ngắn gọn giúp mình, hạn chế icon để chuyên nghiệp"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "1407e554-ccce-4043-81a7-fe6db8e4dd42",
+          "message_source": null,
+          "turn_exchange_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "working_turn_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "turn_id": "d967ac2e-9d9a-4032-8d31-da851e3598ed",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4d015e3c-8634-4760-9f83-cb31101b2179",
+      "children": [
+        "e220ebd3-1d29-4a26-8ff0-056162fa3e62"
+      ]
+    },
+    "e220ebd3-1d29-4a26-8ff0-056162fa3e62": {
+      "id": "e220ebd3-1d29-4a26-8ff0-056162fa3e62",
+      "message": {
+        "id": "e220ebd3-1d29-4a26-8ff0-056162fa3e62",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789929663.588745,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 1m 2s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-1407e554-ccce-4043-81a7-fe6db8e4dd42:JP",
+          "parent_id": "39dc44bf-955f-469f-9fb3-315b2e53dc22",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "working_turn_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "5589311f-3625-4a9d-980f-059f4b8baa18",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929663.588745,
+          "cot_version": "v5",
+          "request_id": "1407e554-ccce-4043-81a7-fe6db8e4dd42",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 62,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "39dc44bf-955f-469f-9fb3-315b2e53dc22",
+      "children": [
+        "7cf3c20f-23f5-4d65-bdc2-9f5c60805fe7"
+      ]
+    },
+    "7cf3c20f-23f5-4d65-bdc2-9f5c60805fe7": {
+      "id": "7cf3c20f-23f5-4d65-bdc2-9f5c60805fe7",
+      "message": {
+        "id": "7cf3c20f-23f5-4d65-bdc2-9f5c60805fe7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929674.64486,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Viết lại nội dung",
+              "content": "Mình sẽ viết lại nội dung theo hướng ngắn gọn, chuyên nghiệp, hạn chế biểu tượng và giữ nguyên các thông tin chính về gói Centri X AI, mức giá, tín dụng sử dụng cùng những tính năng nổi bật.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã viết lại nội dung",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "b4fe7d95-a8ef-4780-b445-56f55232823c"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c01f2e567e2f89e93975d4fc9921",
+          "message_type": "next",
+          "turn_exchange_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "working_turn_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929667.0415275,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "5589311f-3625-4a9d-980f-059f4b8baa18",
+          "parent_id": "e220ebd3-1d29-4a26-8ff0-056162fa3e62",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e220ebd3-1d29-4a26-8ff0-056162fa3e62",
+      "children": [
+        "741291e7-ec2a-46fc-a76e-179ac63b4eed"
+      ]
+    },
+    "741291e7-ec2a-46fc-a76e-179ac63b4eed": {
+      "id": "741291e7-ec2a-46fc-a76e-179ac63b4eed",
+      "message": {
+        "id": "741291e7-ec2a-46fc-a76e-179ac63b4eed",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929681.512539,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Centri X AI — GPT-6 Astra Pro",
+              "content": "Gói nâng cấp cá nhân dành cho người cần sử dụng AI chuyên sâu, ổn định và tiết kiệm hơn.\n\n**Giá: 520.000 đồng/tháng**\n\nQuyền lợi chính:\n\n- Nhận **200 USD tín dụng API mỗi chu kỳ 30 ngày**.\n- Sử dụng trên **Centri X App, API và Playground**.\n- Hỗ trợ nhiều nhu cầu như viết nội dung, phân tích dữ liệu, lập trình, nghiên cứu và tự động hóa.\n- Chi phí sử dụng mô hình có thể tiết kiệm đến **80%**, tùy theo từng model.\n- Tín dụng được làm mới định kỳ theo chu kỳ thuê bao.\n\n**Gói năm: 1.040.000 đồng/năm**\n\nMột lựa chọn phù hợp cho cá nhân, nhà phát triển và người dùng thường xuyên làm việc với AI.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã xem xét Centri X AI — GPT-6 Astra Pro",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "7fc5f54e-f689-4fd2-a915-aff1e7ab003a"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c01f2e567e2f89e93975d4fc9921",
+          "message_type": "next",
+          "turn_exchange_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "working_turn_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929667.0415275,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "5589311f-3625-4a9d-980f-059f4b8baa18",
+          "parent_id": "7cf3c20f-23f5-4d65-bdc2-9f5c60805fe7",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7cf3c20f-23f5-4d65-bdc2-9f5c60805fe7",
+      "children": [
+        "74fd435e-eca7-556b-9801-fbf5071e8e3b"
+      ]
+    },
+    "74fd435e-eca7-556b-9801-fbf5071e8e3b": {
+      "id": "74fd435e-eca7-556b-9801-fbf5071e8e3b",
+      "message": {
+        "id": "74fd435e-eca7-556b-9801-fbf5071e8e3b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929725.935695,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 1m 2s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 62,
+          "turn_exchange_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "working_turn_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "reasoning_start_time": 1789929663.588745,
+          "reasoning_end_time": 1789929725.935695,
+          "turn_id": "5589311f-3625-4a9d-980f-059f4b8baa18",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "741291e7-ec2a-46fc-a76e-179ac63b4eed",
+      "children": [
+        "bab131e1-24be-444e-9d89-be74775eb123"
+      ]
+    },
+    "bab131e1-24be-444e-9d89-be74775eb123": {
+      "id": "bab131e1-24be-444e-9d89-be74775eb123",
+      "message": {
+        "id": "bab131e1-24be-444e-9d89-be74775eb123",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929725.935695,
+        "update_time": 1789929745.908567,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**CentriX AI | GPT-6 Astra – Pro**  \n**520.000đ/tháng — nhận 200 USD tín dụng API mỗi chu kỳ 30 ngày.**\n\nTừ sáng tạo nội dung, phân tích thông tin đến hỗ trợ lập trình, **CentriX AI** mang đến một gói dịch vụ với ba cách sử dụng: **CentriX App, CentriX Agent và Code & API**. Làm việc trên máy tính, trình duyệt hoặc tích hợp AI vào ứng dụng riêng.\n\n**Giá sử dụng model trên CentriX App giảm đến 80%**, tùy model và đã áp dụng trong bảng giá. Chọn **gói 12 tháng, tiết kiệm 1.040.000đ** so với thanh toán từng tháng.\n\nCó hướng dẫn cài đặt và hỗ trợ kỹ thuật trong thời hạn gói.\n\n**Nhắn tin CentriX để được tư vấn và đăng ký.**\n\n*Tín dụng sử dụng trong hệ thống CentriX AI. Đây không phải gói nâng cấp tài khoản ChatGPT cá nhân.*\n\n#CentriXAI #CentriX #GPT6Astra"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c01f2e567e2f89e93975d4fc9921",
+          "message_type": "next",
+          "turn_exchange_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "working_turn_id": "243e9b51-3910-4648-8b34-f73d2bfeeeb8",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "5589311f-3625-4a9d-980f-059f4b8baa18",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-1407e554-ccce-4043-81a7-fe6db8e4dd42:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "74fd435e-eca7-556b-9801-fbf5071e8e3b",
+      "children": [
+        "56fe29aa-54b4-40e2-b35b-aa4af0bb936f"
+      ]
+    },
+    "56fe29aa-54b4-40e2-b35b-aa4af0bb936f": {
+      "id": "56fe29aa-54b4-40e2-b35b-aa4af0bb936f",
+      "message": {
+        "id": "56fe29aa-54b4-40e2-b35b-aa4af0bb936f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929795.173,
+        "update_time": 1789929801.104366,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "💙 **CENTRIX AI | GPT-6 ASTRA – PRO**\n\n🔥 **Chỉ 520.000đ/tháng — nhận 200 USD tín dụng API mỗi chu kỳ 30 ngày!**\n\nTừ viết nội dung, phân tích thông tin đến hỗ trợ lập trình — **CentriX AI mang AI vào công việc hằng ngày của bạn, với một gói dịch vụ và ba cách sử dụng linh hoạt.**\n\n💰 **NHẬN ×10 TÍN DỤNG, TỐI ƯU CHI PHÍ SỬ DỤNG**\n\nVới gói **20 USD, tương đương 520.000đ/tháng**, bạn nhận **200 USD tín dụng** sử dụng trên hệ thống CentriX AI.\n\nĐặc biệt, **giá sử dụng model trên CentriX App được giảm đến 80%**, giúp bạn tận dụng ngân sách cho nhiều công việc hơn. Mức giảm tùy model và đã được tính trong bảng giá, không cần tự nhập mã giảm giá.\n\n⚡ **MỘT GÓI CENTRIX AI — BA CÁCH SỬ DỤNG**\n\n🖥️ **CentriX App — Đưa AI lên máy tính của bạn**\n\nSử dụng ứng dụng do CentriX phát triển, tích hợp các dịch vụ AI để hỗ trợ viết bài, soạn email, phát triển ý tưởng và phân tích thông tin. Có phiên bản cho **Windows, Mac Intel và Mac dùng chip Apple Silicon**.\n\n🌐 **CentriX Agent — Làm việc cùng AI ngay trên trình duyệt**\n\nTruy cập AI Agent để hỗ trợ triển khai công việc từ ý tưởng đến từng bước thực hiện. Sử dụng trên trình duyệt hoặc ứng dụng riêng dành cho **Windows và macOS**.\n\n💻 **Code & API — Kết nối AI vào cách bạn làm việc**\n\nTích hợp AI vào ứng dụng, công cụ hoặc quy trình riêng qua API; sử dụng các công cụ CLI trong terminal để hỗ trợ lập trình, giải thích mã nguồn và tìm hướng xử lý lỗi.\n\n🎁 **ĐĂNG KÝ DÀI HẠN, TIẾT KIỆM THÊM**\n\nChọn **gói 12 tháng, tiết kiệm 1.040.000đ** so với thanh toán từng tháng — tương đương ưu đãi khoảng **17%**.\n\n🛠️ **CÓ CENTRIX HỖ TRỢ TRONG QUÁ TRÌNH SỬ DỤNG**\n\nHướng dẫn cài đặt, hỗ trợ kỹ thuật và bảo hành dịch vụ trong thời hạn gói, giúp bạn thuận tiện hơn khi bắt đầu và sử dụng.\n\n**CentriX AI không chỉ để hỏi đáp — mà để hỗ trợ bạn hoàn thành công việc mỗi ngày.**\n\n👉 **Nhắn tin “ASTRA PRO” cho CentriX để được tư vấn và đăng ký gói 520.000đ/tháng ngay hôm nay!**\n\n*Dịch vụ được cung cấp trên hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân. Tín dụng sử dụng trong hệ thống CentriX.*\n\n\\#CentriXAI #CentriX #GPT6Astra #AstraPro #AIChoCongViec\n\nTối ưu cái này lại một xíu đi"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": [],
+            "render_format": "markdown"
+          },
+          "request_id": "e5ca0dd0-a422-486a-b7e8-97b498fe5054",
+          "message_source": null,
+          "turn_exchange_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "working_turn_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "turn_id": "8231e0a6-fe36-48da-ba51-a6b3a987afc9",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bab131e1-24be-444e-9d89-be74775eb123",
+      "children": [
+        "2c175b15-1028-4f64-89f2-c2fcf71f9711"
+      ]
+    },
+    "2c175b15-1028-4f64-89f2-c2fcf71f9711": {
+      "id": "2c175b15-1028-4f64-89f2-c2fcf71f9711",
+      "message": {
+        "id": "2c175b15-1028-4f64-89f2-c2fcf71f9711",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789929798.764161,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 1m 7s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-e5ca0dd0-a422-486a-b7e8-97b498fe5054:JP",
+          "parent_id": "56fe29aa-54b4-40e2-b35b-aa4af0bb936f",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "working_turn_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "2091589b-8f9a-489f-9f5a-e4a4179e61c7",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929798.764161,
+          "cot_version": "v5",
+          "request_id": "e5ca0dd0-a422-486a-b7e8-97b498fe5054",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 67,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "56fe29aa-54b4-40e2-b35b-aa4af0bb936f",
+      "children": [
+        "b826232e-12db-495c-a3ab-9f9399ca2d5e"
+      ]
+    },
+    "b826232e-12db-495c-a3ab-9f9399ca2d5e": {
+      "id": "b826232e-12db-495c-a3ab-9f9399ca2d5e",
+      "message": {
+        "id": "b826232e-12db-495c-a3ab-9f9399ca2d5e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929819.136157,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Tóm lược dịch vụ",
+              "content": "Tôi đang rút gọn nội dung giới thiệu CentriX AI: hỗ trợ Windows, macOS, trình duyệt, lập trình, API và CLI; kèm ưu đãi đăng ký 12 tháng, hướng dẫn cài đặt, hỗ trợ kỹ thuật và bảo hành.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã tóm lược dịch vụ",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "bbef4b44-fd9b-480b-8682-e106608b937f"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c0213e3d7945934c25ece095233a",
+          "message_type": "next",
+          "turn_exchange_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "working_turn_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929802.2243204,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "2091589b-8f9a-489f-9f5a-e4a4179e61c7",
+          "parent_id": "2c175b15-1028-4f64-89f2-c2fcf71f9711",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2c175b15-1028-4f64-89f2-c2fcf71f9711",
+      "children": [
+        "56eba13a-fb04-562e-9989-40d43dc86b41"
+      ]
+    },
+    "56eba13a-fb04-562e-9989-40d43dc86b41": {
+      "id": "56eba13a-fb04-562e-9989-40d43dc86b41",
+      "message": {
+        "id": "56eba13a-fb04-562e-9989-40d43dc86b41",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929865.991079,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 1m 7s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 67,
+          "turn_exchange_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "working_turn_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "reasoning_start_time": 1789929798.764161,
+          "reasoning_end_time": 1789929865.991079,
+          "turn_id": "2091589b-8f9a-489f-9f5a-e4a4179e61c7",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b826232e-12db-495c-a3ab-9f9399ca2d5e",
+      "children": [
+        "0cb98c0d-d3ef-46c7-a14c-edb586717066"
+      ]
+    },
+    "0cb98c0d-d3ef-46c7-a14c-edb586717066": {
+      "id": "0cb98c0d-d3ef-46c7-a14c-edb586717066",
+      "message": {
+        "id": "0cb98c0d-d3ef-46c7-a14c-edb586717066",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929865.991079,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**CENTRIX AI | GPT-6 ASTRA – PRO**  \n**Chỉ 520.000đ/tháng — nhận 200 USD tín dụng API mỗi chu kỳ 30 ngày.**\n\nTừ sáng tạo nội dung, phân tích thông tin đến hỗ trợ lập trình — **CentriX AI** giúp bạn đưa AI vào công việc hằng ngày với chi phí tối ưu và cách sử dụng linh hoạt.\n\n**NHẬN ×10 TÍN DỤNG, TỐI ƯU CHI PHÍ**\n\nGói **20 USD**, nhận **200 USD tín dụng** sử dụng trong hệ thống CentriX AI. Đồng thời, **giá sử dụng model trên CentriX App giảm đến 80%**, tùy model và đã áp dụng trong bảng giá.\n\n**MỘT GÓI CENTRIX AI — BA CÁCH SỬ DỤNG**\n\n**CentriX App:** Ứng dụng tích hợp các dịch vụ AI, hỗ trợ viết bài, soạn email, phát triển ý tưởng và phân tích thông tin. Có phiên bản cho Windows, Mac Intel và Mac dùng chip Apple Silicon.\n\n**CentriX Agent:** Làm việc cùng AI Agent ngay trên trình duyệt hoặc ứng dụng dành cho Windows và macOS, hỗ trợ triển khai công việc từ ý tưởng đến từng bước thực hiện.\n\n**Code & API:** Tích hợp AI vào ứng dụng, công cụ và quy trình riêng qua API; sử dụng công cụ CLI để hỗ trợ lập trình, giải thích mã nguồn và tìm hướng xử lý lỗi.\n\n**TIẾT KIỆM DÀI HẠN, HỖ TRỢ XUYÊN SUỐT**\n\nĐăng ký **12 tháng, tiết kiệm 1.040.000đ**, tương đương khoảng **17%** so với thanh toán từng tháng. Được hướng dẫn cài đặt, hỗ trợ kỹ thuật và bảo hành dịch vụ trong thời hạn gói.\n\n**CentriX AI — không chỉ hỏi đáp, mà hỗ trợ bạn hoàn thành công việc mỗi ngày.**\n\nNhắn tin **“ASTRA PRO”** cho CentriX để được tư vấn và đăng ký.\n\n*Dịch vụ và tín dụng sử dụng trong hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.*\n\n#CentriXAI #CentriX #GPT6Astra #AstraPro #AIChoCongViec"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c0213e3d7945934c25ece095233a",
+          "message_type": "next",
+          "turn_exchange_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "working_turn_id": "8b3c783b-c399-4478-b689-04d1a195d15a",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "2091589b-8f9a-489f-9f5a-e4a4179e61c7",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-e5ca0dd0-a422-486a-b7e8-97b498fe5054:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "56eba13a-fb04-562e-9989-40d43dc86b41",
+      "children": [
+        "6fdb061a-2b79-4312-b97b-f9efe0ddf8df"
+      ]
+    },
+    "6fdb061a-2b79-4312-b97b-f9efe0ddf8df": {
+      "id": "6fdb061a-2b79-4312-b97b-f9efe0ddf8df",
+      "message": {
+        "id": "6fdb061a-2b79-4312-b97b-f9efe0ddf8df",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929874.64,
+        "update_time": 1789929880.69646,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "[🚀](https://static.xx.fbcdn.net/images/emoji.php/v9/tc6/1/16/1f680.png) Trải nghiệm GPT-6 Astra – Extra High ngay trên CentriX AI, chỉ 130.000đ/tháng.\n\n[✍️](https://static.xx.fbcdn.net/images/emoji.php/v9/te2/1/16/270d.png) Viết & sáng tạo: Cùng AI lên ý tưởng, soạn email, viết bài quảng cáo và chỉnh sửa nội dung theo nhu cầu.\n\n[📊](https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f4ca.png) Phân tích & lập kế hoạch: Tổng hợp thông tin, làm rõ vấn đề và phát triển kế hoạch thành các bước cụ thể.\n\n[💻](https://static.xx.fbcdn.net/images/emoji.php/v9/t8c/1/16/1f4bb.png) Hỗ trợ lập trình: Giải thích mã nguồn, tìm hướng xử lý lỗi và đề xuất cải thiện code.\n\nCentriX AI không chỉ để hỏi đáp — mà để đồng hành cùng bạn trong công việc mỗi ngày.\n\n[👉](https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/1f449.png) Nhắn tin CentriX để được tư vấn và đăng ký trải nghiệm CentriX AI ngay hôm nay!\n\nDịch vụ sử dụng trên hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.\n\n[**#CentriXAI**](https://www.facebook.com/hashtag/centrixai?__cft__\\[0]=AZiW0okCuDi14WCeVbHCE9U9YoVqLyn_dPrlC3pKaYKv5JfTHFuc0bkATfQfxCO0CKZegRCWCtcifNGR-5MMejy5ddxlxpRNER9adURPDw3ljyYorl0ZAkzzzfAcmWvYpf13lAohMZumGqSOKEeg02O6tgf6zsXhClfDtlu_YBfumhf7Z22Pord18gJNMqE&__tn__=*NK-R) [**#CentriX**](https://www.facebook.com/hashtag/centrix?__cft__\\[0]=AZiW0okCuDi14WCeVbHCE9U9YoVqLyn_dPrlC3pKaYKv5JfTHFuc0bkATfQfxCO0CKZegRCWCtcifNGR-5MMejy5ddxlxpRNER9adURPDw3ljyYorl0ZAkzzzfAcmWvYpf13lAohMZumGqSOKEeg02O6tgf6zsXhClfDtlu_YBfumhf7Z22Pord18gJNMqE&__tn__=*NK-R) [**#AIChoCongViec**](https://www.facebook.com/hashtag/aichocongviec?__cft__\\[0]=AZiW0okCuDi14WCeVbHCE9U9YoVqLyn_dPrlC3pKaYKv5JfTHFuc0bkATfQfxCO0CKZegRCWCtcifNGR-5MMejy5ddxlxpRNER9adURPDw3ljyYorl0ZAkzzzfAcmWvYpf13lAohMZumGqSOKEeg02O6tgf6zsXhClfDtlu_YBfumhf7Z22Pord18gJNMqE&__tn__=*NK-R) [**#GPT6Astra**](https://www.facebook.com/hashtag/gpt6astra?__cft__\\[0]=AZiW0okCuDi14WCeVbHCE9U9YoVqLyn_dPrlC3pKaYKv5JfTHFuc0bkATfQfxCO0CKZegRCWCtcifNGR-5MMejy5ddxlxpRNER9adURPDw3ljyYorl0ZAkzzzfAcmWvYpf13lAohMZumGqSOKEeg02O6tgf6zsXhClfDtlu_YBfumhf7Z22Pord18gJNMqE&__tn__=*NK-R) \n\nGói này là 40$ nè"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": [],
+            "render_format": "markdown"
+          },
+          "request_id": "f26f4d0e-ac56-4e02-a858-6567f4c03973",
+          "message_source": null,
+          "turn_exchange_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "working_turn_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "turn_id": "2bca1537-5e9d-4b32-af78-35bf0ed9a890",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0cb98c0d-d3ef-46c7-a14c-edb586717066",
+      "children": [
+        "1290780c-1fc5-4b80-8f65-9e490af205f8"
+      ]
+    },
+    "1290780c-1fc5-4b80-8f65-9e490af205f8": {
+      "id": "1290780c-1fc5-4b80-8f65-9e490af205f8",
+      "message": {
+        "id": "1290780c-1fc5-4b80-8f65-9e490af205f8",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789929878.483804,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 42s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-f26f4d0e-ac56-4e02-a858-6567f4c03973:JP",
+          "parent_id": "6fdb061a-2b79-4312-b97b-f9efe0ddf8df",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "working_turn_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "6ca1b7e6-99b0-4ae1-9f3f-326566b685df",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929878.483804,
+          "cot_version": "v5",
+          "request_id": "f26f4d0e-ac56-4e02-a858-6567f4c03973",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 42,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6fdb061a-2b79-4312-b97b-f9efe0ddf8df",
+      "children": [
+        "8e240321-fa1e-443b-8da9-85b06fbb1eb4"
+      ]
+    },
+    "8e240321-fa1e-443b-8da9-85b06fbb1eb4": {
+      "id": "8e240321-fa1e-443b-8da9-85b06fbb1eb4",
+      "message": {
+        "id": "8e240321-fa1e-443b-8da9-85b06fbb1eb4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929889.325868,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đang chỉnh lại nội dung",
+              "content": "Mình sẽ cập nhật bài giới thiệu để nhấn mạnh gói Extra có **40 USD tín dụng sử dụng mỗi tháng**, đồng thời giữ nguyên mức giá **130.000đ/tháng** và các lợi ích đã nêu trước đó.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã chỉnh lại nội dung",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "a1b2c710-b2d7-4201-b49c-c5fd8e9fd6a5"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c02275ca7a9aa5b1025228435da4",
+          "message_type": "next",
+          "turn_exchange_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "working_turn_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789929881.8398077,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "6ca1b7e6-99b0-4ae1-9f3f-326566b685df",
+          "parent_id": "1290780c-1fc5-4b80-8f65-9e490af205f8",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1290780c-1fc5-4b80-8f65-9e490af205f8",
+      "children": [
+        "4c74d86c-7454-5ce7-ba19-5226d8f857c9"
+      ]
+    },
+    "4c74d86c-7454-5ce7-ba19-5226d8f857c9": {
+      "id": "4c74d86c-7454-5ce7-ba19-5226d8f857c9",
+      "message": {
+        "id": "4c74d86c-7454-5ce7-ba19-5226d8f857c9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929921.407726,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 42s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 42,
+          "turn_exchange_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "working_turn_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "reasoning_start_time": 1789929878.483804,
+          "reasoning_end_time": 1789929921.407726,
+          "turn_id": "6ca1b7e6-99b0-4ae1-9f3f-326566b685df",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8e240321-fa1e-443b-8da9-85b06fbb1eb4",
+      "children": [
+        "66159857-4074-4fae-837e-3e69ef343db9"
+      ]
+    },
+    "66159857-4074-4fae-837e-3e69ef343db9": {
+      "id": "66159857-4074-4fae-837e-3e69ef343db9",
+      "message": {
+        "id": "66159857-4074-4fae-837e-3e69ef343db9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789929921.407726,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**CENTRIX AI | GPT-6 ASTRA – EXTRA HIGH**  \n**Chỉ 130.000đ/tháng — nhận 40 USD tín dụng sử dụng trên CentriX AI.**\n\nĐưa AI vào công việc mỗi ngày, từ sáng tạo nội dung, phân tích thông tin đến hỗ trợ lập trình.\n\n**Viết & sáng tạo:** Lên ý tưởng, soạn email, viết bài quảng cáo và chỉnh sửa nội dung theo nhu cầu.\n\n**Phân tích & lập kế hoạch:** Tổng hợp thông tin, làm rõ vấn đề và xây dựng các bước triển khai cụ thể.\n\n**Hỗ trợ lập trình:** Giải thích mã nguồn, tìm hướng xử lý lỗi và đề xuất cải thiện code.\n\n**CentriX AI — không chỉ hỏi đáp, mà hỗ trợ bạn hoàn thành công việc mỗi ngày.**\n\nNhắn tin **CentriX** để được tư vấn và đăng ký trải nghiệm **GPT-6 Astra – Extra High**.\n\n*Dịch vụ và tín dụng sử dụng trong hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.*\n\n#CentriXAI #CentriX #GPT6Astra #AIChoCongViec"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c02275ca7a9aa5b1025228435da4",
+          "message_type": "next",
+          "turn_exchange_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "working_turn_id": "143d7f4d-2a71-47a6-ae34-62948e739b84",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "6ca1b7e6-99b0-4ae1-9f3f-326566b685df",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-f26f4d0e-ac56-4e02-a858-6567f4c03973:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "4c74d86c-7454-5ce7-ba19-5226d8f857c9",
+      "children": [
+        "f0afb5e8-286d-4c88-bb88-72221459bb02"
+      ]
+    },
+    "f0afb5e8-286d-4c88-bb88-72221459bb02": {
+      "id": "f0afb5e8-286d-4c88-bb88-72221459bb02",
+      "message": {
+        "id": "f0afb5e8-286d-4c88-bb88-72221459bb02",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930008.29,
+        "update_time": 1789930014.794711,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "CENTRIX AI | GPT-6 ASTRA – PRO\n\n[🔥](https://static.xx.fbcdn.net/images/emoji.php/v9/t50/1/16/1f525.png)Chỉ 520.000đ/tháng — nhận 200 USD tín dụng API mỗi chu kỳ 30 ngày.\n\nTừ sáng tạo nội dung, phân tích thông tin đến hỗ trợ lập trình — CentriX AI giúp bạn đưa AI vào công việc hằng ngày với chi phí tối ưu và cách sử dụng linh hoạt.\n\n[💰](https://static.xx.fbcdn.net/images/emoji.php/v9/t5a/1/16/1f4b0.png)NHẬN ×10 TÍN DỤNG, TỐI ƯU CHI PHÍ\n\nGói 20 USD, nhận 200 USD tín dụng sử dụng trong hệ thống CentriX AI. Đồng thời, giá sử dụng model trên CentriX App giảm đến 80%, tùy model và đã áp dụng trong bảng giá.\n\nMỘT GÓI CENTRIX AI — BA CÁCH SỬ DỤNG\n\n[🖥️](https://static.xx.fbcdn.net/images/emoji.php/v9/t81/1/16/1f5a5.png) CentriX App: Ứng dụng tích hợp các dịch vụ AI, hỗ trợ viết bài, soạn email, phát triển ý tưởng và phân tích thông tin. Có phiên bản cho Windows, Mac Intel và Mac dùng chip Apple Silicon.\n\n[🌐](https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1/16/1f310.png) CentriX Agent: Làm việc cùng AI Agent ngay trên trình duyệt hoặc ứng dụng dành cho Windows và macOS, hỗ trợ triển khai công việc từ ý tưởng đến từng bước thực hiện.\n\n[💻](https://static.xx.fbcdn.net/images/emoji.php/v9/t8c/1/16/1f4bb.png) Code & API: Tích hợp AI vào ứng dụng, công cụ và quy trình riêng qua API; sử dụng công cụ CLI để hỗ trợ lập trình, giải thích mã nguồn và tìm hướng xử lý lỗi.\n\nTIẾT KIỆM DÀI HẠN, HỖ TRỢ XUYÊN SUỐT\n\n[🎁](https://static.xx.fbcdn.net/images/emoji.php/v9/t84/1/16/1f381.png) Đăng ký 12 tháng, tiết kiệm 1.040.000đ, tương đương khoảng 17% so với thanh toán từng tháng. Được hướng dẫn cài đặt, hỗ trợ kỹ thuật và bảo hành dịch vụ trong thời hạn gói.\n\nCentriX AI — không chỉ hỏi đáp, mà hỗ trợ bạn hoàn thành công việc mỗi ngày.\n\n[👉](https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/1f449.png) Nhắn tin “ASTRA PRO” cho CentriX để được tư vấn và đăng ký.\n\nDịch vụ và tín dụng sử dụng trong hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.\n\n\n\ndùng các icon này cho mình"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": [],
+            "render_format": "markdown"
+          },
+          "request_id": "731ded04-3c00-401d-9458-8fb071fc866e",
+          "message_source": null,
+          "turn_exchange_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "working_turn_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "turn_id": "4527d427-3db8-41a1-a07d-55ad098e9580",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "66159857-4074-4fae-837e-3e69ef343db9",
+      "children": [
+        "1055beb9-dd59-4ad1-bc39-832053ad12d2"
+      ]
+    },
+    "1055beb9-dd59-4ad1-bc39-832053ad12d2": {
+      "id": "1055beb9-dd59-4ad1-bc39-832053ad12d2",
+      "message": {
+        "id": "1055beb9-dd59-4ad1-bc39-832053ad12d2",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789930012.148186,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 1m 42s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-731ded04-3c00-401d-9458-8fb071fc866e:JP",
+          "parent_id": "f0afb5e8-286d-4c88-bb88-72221459bb02",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "working_turn_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "8fcb93e3-a352-4197-9ea2-6c624e5b202f",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789930012.148186,
+          "cot_version": "v5",
+          "request_id": "731ded04-3c00-401d-9458-8fb071fc866e",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 102,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f0afb5e8-286d-4c88-bb88-72221459bb02",
+      "children": [
+        "a3027b6b-f970-4272-b785-e287b69c2a99"
+      ]
+    },
+    "a3027b6b-f970-4272-b785-e287b69c2a99": {
+      "id": "a3027b6b-f970-4272-b785-e287b69c2a99",
+      "message": {
+        "id": "a3027b6b-f970-4272-b785-e287b69c2a99",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930024.027411,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Định dạng lại gói Extra High",
+              "content": "Mình sẽ giữ đúng kiểu trình bày có icon như mẫu Pro, đồng thời nhấn mạnh thời lượng 5 tiếng, quyền lợi đi kèm và mức giá 40 USD để nội dung rõ ràng, nổi bật hơn.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Định dạng lại gói Extra High",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "f335ffc6-e8c3-448b-8954-c78f880fac9c"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c0248084733ba7d8b735634740a6",
+          "message_type": "next",
+          "turn_exchange_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "working_turn_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789930016.233993,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "8fcb93e3-a352-4197-9ea2-6c624e5b202f",
+          "parent_id": "1055beb9-dd59-4ad1-bc39-832053ad12d2",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1055beb9-dd59-4ad1-bc39-832053ad12d2",
+      "children": [
+        "6dd8b5a6-8e4a-4434-a4ef-869e21f8b212"
+      ]
+    },
+    "6dd8b5a6-8e4a-4434-a4ef-869e21f8b212": {
+      "id": "6dd8b5a6-8e4a-4434-a4ef-869e21f8b212",
+      "message": {
+        "id": "6dd8b5a6-8e4a-4434-a4ef-869e21f8b212",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930043.933776,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Định dạng gói Extra High",
+              "content": "Mình sẽ áp dụng đúng bộ icon trong mẫu Pro cho gói Extra High, giữ nội dung nổi bật, dễ đọc và nhấn mạnh thời lượng 5 tiếng cùng mức giá 40 USD.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã định dạng gói Extra High",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "71e1c64b-ad69-4fb0-ad18-2a1950b31d66"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c0248084733ba7d8b735634740a6",
+          "message_type": "next",
+          "turn_exchange_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "working_turn_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789930016.233993,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "8fcb93e3-a352-4197-9ea2-6c624e5b202f",
+          "parent_id": "a3027b6b-f970-4272-b785-e287b69c2a99",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a3027b6b-f970-4272-b785-e287b69c2a99",
+      "children": [
+        "0bc4237f-8f25-591e-b231-617b43ef0817"
+      ]
+    },
+    "0bc4237f-8f25-591e-b231-617b43ef0817": {
+      "id": "0bc4237f-8f25-591e-b231-617b43ef0817",
+      "message": {
+        "id": "0bc4237f-8f25-591e-b231-617b43ef0817",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930114.317699,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 1m 42s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 102,
+          "turn_exchange_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "working_turn_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "reasoning_start_time": 1789930012.148186,
+          "reasoning_end_time": 1789930114.317699,
+          "turn_id": "8fcb93e3-a352-4197-9ea2-6c624e5b202f",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6dd8b5a6-8e4a-4434-a4ef-869e21f8b212",
+      "children": [
+        "b982f62d-8fa3-412b-83fb-9fabd55a39f5"
+      ]
+    },
+    "b982f62d-8fa3-412b-83fb-9fabd55a39f5": {
+      "id": "b982f62d-8fa3-412b-83fb-9fabd55a39f5",
+      "message": {
+        "id": "b982f62d-8fa3-412b-83fb-9fabd55a39f5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930114.317699,
+        "update_time": 1789930130.552541,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**CENTRIX AI | GPT-6 ASTRA – EXTRA HIGH**\n\n🔥 **Chỉ 130.000đ/tháng — nhận 40 USD tín dụng sử dụng trên CentriX AI.**\n\nTừ sáng tạo nội dung, phân tích thông tin đến hỗ trợ lập trình — **CentriX AI** giúp bạn đưa AI vào công việc hằng ngày với chi phí tối ưu và cách sử dụng linh hoạt.\n\n💰 **TỐI ƯU CHI PHÍ SỬ DỤNG**\n\nGiá sử dụng model trên **CentriX App giảm đến 80%**, giúp bạn tận dụng tín dụng cho nhiều công việc hơn. Mức giảm tùy model và đã áp dụng trong bảng giá.\n\n**MỘT GÓI CENTRIX AI — BA CÁCH SỬ DỤNG**\n\n🖥️ **CentriX App:** Viết bài, soạn email, phát triển ý tưởng và phân tích thông tin trên ứng dụng dành cho Windows và macOS.\n\n🌐 **CentriX Agent:** Làm việc cùng AI Agent trên trình duyệt hoặc ứng dụng, hỗ trợ triển khai công việc từ ý tưởng đến từng bước thực hiện.\n\n💻 **Code & API:** Tích hợp AI vào ứng dụng, công cụ và quy trình riêng; sử dụng công cụ CLI để hỗ trợ lập trình và xử lý lỗi.\n\n🎁 **HỖ TRỢ TRONG SUỐT THỜI HẠN GÓI**\n\nĐược hướng dẫn cài đặt, hỗ trợ kỹ thuật và bảo hành dịch vụ trong thời hạn sử dụng.\n\n**CentriX AI — không chỉ hỏi đáp, mà hỗ trợ bạn hoàn thành công việc mỗi ngày.**\n\n👉 **Nhắn tin “ASTRA EXTRA HIGH” cho CentriX để được tư vấn và đăng ký.**\n\n*Dịch vụ và tín dụng sử dụng trong hệ thống CentriX AI, không phải gói nâng cấp tài khoản ChatGPT cá nhân.*\n\n#CentriXAI #CentriX #GPT6Astra #AIChoCongViec"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c0248084733ba7d8b735634740a6",
+          "message_type": "next",
+          "turn_exchange_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "working_turn_id": "78d0e385-bb23-4fb4-8871-af099b480441",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "8fcb93e3-a352-4197-9ea2-6c624e5b202f",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-731ded04-3c00-401d-9458-8fb071fc866e:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "0bc4237f-8f25-591e-b231-617b43ef0817",
+      "children": [
+        "24cec75e-a6e3-4500-b055-7f5df3e47604"
+      ]
+    },
+    "24cec75e-a6e3-4500-b055-7f5df3e47604": {
+      "id": "24cec75e-a6e3-4500-b055-7f5df3e47604",
+      "message": {
+        "id": "24cec75e-a6e3-4500-b055-7f5df3e47604",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930193.874,
+        "update_time": 1789930200.456222,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_00000000b2b08206a4dbe50d80a8d3a4",
+              "size_bytes": 379199,
+              "width": 1491,
+              "height": 1192,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "viết cho mình gói này"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_00000000b2b08206a4dbe50d80a8d3a4",
+              "size": 379199,
+              "name": "48f71b3a-f8af-4fba-83eb-d25831659883.png",
+              "mime_type": "image/png",
+              "width": 1491,
+              "height": 1192,
+              "source": "local",
+              "library_file_id": "libfile_050710a2ae50819185b3a7b231b8ef2b",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "9c00820e-f305-40f9-b04b-7596d66a88cc",
+          "message_source": null,
+          "turn_exchange_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "working_turn_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "turn_id": "1bf87b68-6670-40a1-a131-ee4a758db14c",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b982f62d-8fa3-412b-83fb-9fabd55a39f5",
+      "children": [
+        "7b62fdaf-5055-4771-b1cd-0547811a76fb"
+      ]
+    },
+    "7b62fdaf-5055-4771-b1cd-0547811a76fb": {
+      "id": "7b62fdaf-5055-4771-b1cd-0547811a76fb",
+      "message": {
+        "id": "7b62fdaf-5055-4771-b1cd-0547811a76fb",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789930197.984544,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 54s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-9c00820e-f305-40f9-b04b-7596d66a88cc:JP",
+          "parent_id": "24cec75e-a6e3-4500-b055-7f5df3e47604",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "working_turn_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "1284993e-02b1-4c21-bb62-552249a418cc",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789930197.984544,
+          "cot_version": "v5",
+          "request_id": "9c00820e-f305-40f9-b04b-7596d66a88cc",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 54,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "24cec75e-a6e3-4500-b055-7f5df3e47604",
+      "children": [
+        "d49e1ba4-d807-4167-8f0f-7be9d7f89751"
+      ]
+    },
+    "d49e1ba4-d807-4167-8f0f-7be9d7f89751": {
+      "id": "d49e1ba4-d807-4167-8f0f-7be9d7f89751",
+      "message": {
+        "id": "d49e1ba4-d807-4167-8f0f-7be9d7f89751",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930209.004298,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Soạn nội dung quảng bá",
+              "content": "Mình đang viết nội dung Facebook bằng tiếng Việt, giữ phong cách chuyên nghiệp, cô đọng và có biểu tượng. Mình chỉ dùng thông tin nhìn thấy trong ảnh, tránh tự thêm ưu đãi hoặc hạn mức chưa được xác nhận.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Soạn nội dung quảng bá",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "98da927f-8703-4f05-afe3-576aba4e303b"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c027561e74b599c995a536f8f399",
+          "message_type": "next",
+          "turn_exchange_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "working_turn_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789930201.4788713,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "1284993e-02b1-4c21-bb62-552249a418cc",
+          "parent_id": "7b62fdaf-5055-4771-b1cd-0547811a76fb",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7b62fdaf-5055-4771-b1cd-0547811a76fb",
+      "children": [
+        "624343dc-2b27-47e9-92ab-35f16d377cf2"
+      ]
+    },
+    "624343dc-2b27-47e9-92ab-35f16d377cf2": {
+      "id": "624343dc-2b27-47e9-92ab-35f16d377cf2",
+      "message": {
+        "id": "624343dc-2b27-47e9-92ab-35f16d377cf2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930214.71297,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Tóm lược nội dung",
+              "content": "Mình sẽ soạn bài quảng bá dựa đúng thông tin trong ảnh: gói Claude API, giá 130.000đ/tháng và ưu đãi 12 tháng giảm 260.000đ. Mình sẽ không tự thêm hạn mức, tín dụng hay quyền lợi chưa được xác nhận.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã tóm lược nội dung",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "c88dcf84-148c-4ef8-b0b5-44df6d3d5312"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0c027561e74b599c995a536f8f399",
+          "message_type": "next",
+          "turn_exchange_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "working_turn_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789930201.4788713,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "1284993e-02b1-4c21-bb62-552249a418cc",
+          "parent_id": "d49e1ba4-d807-4167-8f0f-7be9d7f89751",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d49e1ba4-d807-4167-8f0f-7be9d7f89751",
+      "children": [
+        "3c320bb2-ebdf-524b-b512-67f8a5ff7150"
+      ]
+    },
+    "3c320bb2-ebdf-524b-b512-67f8a5ff7150": {
+      "id": "3c320bb2-ebdf-524b-b512-67f8a5ff7150",
+      "message": {
+        "id": "3c320bb2-ebdf-524b-b512-67f8a5ff7150",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930252.77609,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 54s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 54,
+          "turn_exchange_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "working_turn_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "reasoning_start_time": 1789930197.984544,
+          "reasoning_end_time": 1789930252.77609,
+          "turn_id": "1284993e-02b1-4c21-bb62-552249a418cc",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "624343dc-2b27-47e9-92ab-35f16d377cf2",
+      "children": [
+        "73868a6d-6ae7-4243-afa2-5f0f2c063974"
+      ]
+    },
+    "73868a6d-6ae7-4243-afa2-5f0f2c063974": {
+      "id": "73868a6d-6ae7-4243-afa2-5f0f2c063974",
+      "message": {
+        "id": "73868a6d-6ae7-4243-afa2-5f0f2c063974",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789930252.77609,
+        "update_time": 1789930257.786945,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**CENTRIX AI | CLAUDE API – OPUS 5 & SONNET 5**\n\n🔥 **Trải nghiệm Claude Opus 5 & Sonnet 5 ngay trên CentriX AI, chỉ 130.000đ/tháng.**\n\nTừ sáng tạo nội dung, phân tích tài liệu đến hỗ trợ lập trình — **CentriX AI** giúp bạn đưa AI vào công việc hằng ngày với cách sử dụng linh hoạt.\n\n**MỘT GÓI CENTRIX AI — BA CÁCH SỬ DỤNG**\n\n🖥️ **CentriX App:** Viết bài, soạn email, phát triển ý tưởng và phân tích thông tin trên ứng dụng dành cho Windows và macOS.\n\n🌐 **CentriX Agent:** Làm việc cùng AI Agent trên trình duyệt hoặc ứng dụng, hỗ trợ triển khai công việc từ ý tưởng đến từng bước thực hiện.\n\n💻 **Code & API:** Tích hợp Claude vào ứng dụng, công cụ và quy trình riêng qua API; sử dụng công cụ CLI để hỗ trợ viết code, giải thích mã nguồn và tìm hướng xử lý lỗi.\n\n💰 **ĐĂNG KÝ DÀI HẠN, TIẾT KIỆM THÊM**\n\nChọn **gói 12 tháng, tiết kiệm 260.000đ** so với thanh toán từng tháng. Ưu đãi đã được tính trong giá gói.\n\n🎁 **HỖ TRỢ TRONG SUỐT THỜI HẠN GÓI**\n\nĐược hướng dẫn cài đặt, hỗ trợ kỹ thuật và bảo hành dịch vụ trong thời hạn sử dụng.\n\n**CentriX AI — không chỉ hỏi đáp, mà hỗ trợ bạn hoàn thành công việc mỗi ngày.**\n\n👉 **Nhắn tin “CLAUDE API” cho CentriX để được tư vấn và đăng ký.**\n\n*Dịch vụ sử dụng trên hệ thống CentriX AI, không phải gói nâng cấp tài khoản Claude cá nhân.*\n\n#CentriXAI #CentriX #ClaudeAPI #Opus5 #Sonnet5"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0c027561e74b599c995a536f8f399",
+          "message_type": "next",
+          "turn_exchange_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "working_turn_id": "40f37b52-e438-46cb-8f13-7912d3f47a72",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "1284993e-02b1-4c21-bb62-552249a418cc",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-9c00820e-f305-40f9-b04b-7596d66a88cc:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "3c320bb2-ebdf-524b-b512-67f8a5ff7150",
+      "children": []
+    }
+  },
+  "current_node": "73868a6d-6ae7-4243-afa2-5f0f2c063974",
+  "context_truncation_continuation": null
+}

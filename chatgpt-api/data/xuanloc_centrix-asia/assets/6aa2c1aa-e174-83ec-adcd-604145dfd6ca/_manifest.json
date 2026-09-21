@@ -1,0 +1,38 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_000000002678820e93389a21a6cb9433",
+    "content_type": "image_asset_pointer",
+    "width": 2048,
+    "height": 1169,
+    "size_bytes": 164301,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2c1aa-e174-83ec-adcd-604145dfd6ca/9b6a885e-b527-4552-bb15-2ee7b3a05de3.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000025cc82109d434879cc157ab7",
+    "content_type": "image_asset_pointer",
+    "width": 577,
+    "height": 394,
+    "size_bytes": 18324,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2c1aa-e174-83ec-adcd-604145dfd6ca/f7b7ad3f-997b-47dd-9582-e85a57684f82.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000a5e0820cb8675c5005ce771a",
+    "content_type": "image_asset_pointer",
+    "width": 860,
+    "height": 744,
+    "size_bytes": 60948,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2c1aa-e174-83ec-adcd-604145dfd6ca/71d61935-f27e-4f41-834f-b9138dd46b5b.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000028588243b5cd0e055b393a5d",
+    "content_type": "image_asset_pointer",
+    "width": 835,
+    "height": 858,
+    "size_bytes": 91071,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2c1aa-e174-83ec-adcd-604145dfd6ca/5cabda87-c7d3-40a9-84a4-db21208999e3.png"
+  }
+]

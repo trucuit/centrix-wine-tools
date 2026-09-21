@@ -1,0 +1,3331 @@
+{
+  "title": "Kiểm tra cập nhật GPT 2.5",
+  "create_time": 1789721993.843053,
+  "update_time": 1789723447.419423,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aacfd88-58b0-83ec-ae9d-cf5414215aaa",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://docs.github.com/en/rest/repos/repos#get-a-repository",
+    "https://docs.github.com/en/rest/actions/artifacts?apiVersion=2022-11-28#download-an-artifact",
+    "https://docs.github.com/en/graphql/reference/mutations#unresolvereviewthread",
+    "https://github.example.com/api/v3/repos/octo/repo",
+    "https://images.openai.com/static-rsc-1/vSJk9-on4b42C6iMiD81SjTswnigEbqZHTwyWRW-trNeOA7wyFdsXxnyaTNk6yxkVq7TjwmIXqLC_s_C-21qZITdlEABn2QW604oP_-lOIeHsMqomFOqFwKYcw8don6akAvlzdUTGhx3yljggIXg297zM4HiRVzCpHl7gdMgr260QMNbiYyFcjEnfwRY2jdDBc2EAhO8eBLx1KUw6S05JA",
+    "https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/about-github-enterprise-cloud-with-data-residency#api-access",
+    "https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28#re-run-a-job-from-a-workflow-run",
+    "https://docs.github.com/en/rest/issues/issues?apiVersion=2022-11-28#lock-an-issue",
+    "https://docs.github.com/en/rest/issues/assignees?apiVersion=2022-11-28#add-assignees-to-an-issue",
+    "https://ubuntu.com/esm",
+    "https://images.openai.com/static-rsc-1/SOTcIQRAhV51H2jINHLmMsWnChUAHdKGoMQVIILNpTrLaePaKtmXHeOb6wh6lVELxZqTrcyHCcsE5mG0R2_Zs2ix1NqedBXHBFPeJ5tuVozOqPzqTM_7QMkj2b2gfuKVSbpsEBOwZ3DXetBAXlqPF4MGkz_hAQ1thEiWm6tPiAT0JEMjyyd9jhZqCmDNjikBe5YM_XsLlXRoFSt9bfPCxg",
+    "https://docs.github.com/en/rest/pulls/review-requests?apiVersion=2022-11-28#request-reviewers-for-a-pull-request",
+    "https://docs.github.com/en/rest/issues/labels?apiVersion=2022-11-28#add-labels-to-an-issue",
+    "https://docs.github.com/en/rest/actions/workflow-jobs?apiVersion=2022-11-28#list-jobs-for-a-workflow-run",
+    "https://docs.github.com/en/graphql/reference/mutations#markpullrequestreadyforreview",
+    "https://images.openai.com/static-rsc-1/7N5P_GUZL_C8u-fFqEIkPvcBW3CcyHV457YS8iyenw5vAR1HkhSrTRaksRa-5M6J2CwPubkU22d8aI9ZcXP-8YZiGhHD39FP7pDZFsXDPHaxkvEcPBTe6ZOxp9tjLzNrFQazm5kznMBGStWTzX5gUAolPexiGeDzsbUarDwuu93ayWMp0OapAt9Mk6H1j-_oCaIhFrHVc1J9XTJQo41umjQZToYhRkPr0cDx6I4GOnc",
+    "https://images.openai.com/static-rsc-1/VAv6lJuCvSiV150QzwftVE8t9KaLSipLw8SWm4TMO7hs5uiA2DeCoKmrdq0TF1XstDD1xdHBh8Zv47mb1MFn3YkAIpIX9CyhbFQhFMsFhlBu-kRY2XAs0eGyAzwSG41hZ6JjO1wn8Qgj4UhRa-TzMetUnms94mkXYbJl6ZTcEleMh5ADi2KJa2jcA2Lkif49",
+    "https://docs.github.com/en/rest/pulls/review-requests?apiVersion=2022-11-28#remove-requested-reviewers-from-a-pull-request",
+    "https://images.openai.com/static-rsc-1/qpwmtIoaEePvWbdoGj2jbNOS07DMX5HJjgxr9CS5FbrAcEYHe0RphcoTO_AkNR7dPUXiOVzzsnQlO3YqLLUd4CkYzMgOXv1GUl3i7-8uhX8LAKybePsNN1Fe7MAr1HIJ",
+    "https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28#re-run-failed-jobs-from-a-workflow-run",
+    "https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#create-a-pull-request",
+    "https://docs.github.com/en/graphql/reference/mutations#enablepullrequestautomerge",
+    "https://raw.githubusercontent.com/owner/repo/main/README.md",
+    "https://docs.github.com/en/rest/actions/workflow-jobs?apiVersion=2022-11-28#download-job-logs-for-a-workflow-run-job",
+    "https://github.com/owner/repo/blob/main/README.md",
+    "https://docs.github.com/en/rest/pulls/reviews?apiVersion=2022-11-28",
+    "https://docs.github.com/en/graphql/reference/mutations#convertpullrequesttodraft",
+    "https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#delete-a-file",
+    "https://docs.github.com/en/graphql/reference/mutations#dismisspullrequestreview",
+    "https://images.openai.com/static-rsc-1/DMhRCzf9eywtx8LqN74BWO57Y1l7fp8jLmjkERj74MZdFFwV2OfPhq4CYT00G8IZk04DttePxosBa2X4rVCKpM7mRh0RRV0UVEipCXKsByemvtTxz5us2fnw1fLrlpLCHFt8trfQR6D3YWVEqnUctWSSgBp2S19MIvozGbA9oK5nFsPRUr9aaWfGm3zSRFQ4",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "https://docs.github.com/en/rest/issues/assignees?apiVersion=2022-11-28#remove-assignees-from-an-issue",
+    "https://docs.github.com/en/graphql/reference/objects#pullrequestreviewthread",
+    "https://docs.github.com/en/graphql/reference/objects#pullrequestreview",
+    "https://github.com/router-for-me/CLIProxyAPI.git",
+    "https://images.openai.com/static-rsc-1/mJQ-FH0eRzoBKrgXNVx3WzQzt7SkHt8S55R3ERL8v-KovaISNJf-84BHALLhhBO7Jl4UUcwXSRAgfIVdbUa6ct5TrQGxBMhcWSMpOJeDt-x1QwBUdU_EahusIjB86EWVh0aT4ZjYZKXCaTujX-ZWMi8JJcmZAeFs-OwoCviFXutfFQx5U3wAO3h26pBHH4rwA7DLgHQXoNl2HjPz6hvybA",
+    "https://docs.github.com/en/rest/issues/labels?apiVersion=2022-11-28#remove-a-label-from-an-issue",
+    "https://images.openai.com/static-rsc-1/d4t3SzW626pWWYubYWe-molh63nr86YySSU9XIUqfsWL-9hlS8ZzKezS7oCtqiIbiePTGpB_NLYKbEg0f0YvP-9z5LVq_zEEl79Fm5sNycq_-0CCPpAJxGp32WB756SqGoWVdW2X_ZEhFyjGWBgdSbu8OJ94BdOMvrRlodq81cPFEmJr1DjifTOuQvUaIWRy",
+    "https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28#list-workflow-runs-for-a-repository",
+    "api.github.com",
+    "https://api.github.com/repos/openai/openai",
+    "https://get2fa.vn/",
+    "https://api.github.com/repos/owner/repo/contents/README.md",
+    "https://docs.github.com/en/rest/actions/workflow-jobs?apiVersion=2022-11-28#get-a-job-for-a-workflow-run",
+    "https://docs.github.com/en/rest/issues/comments?apiVersion=2022-11-28",
+    "https://www.openai.com",
+    "https://docs.github.com/en/rest/actions/artifacts?apiVersion=2022-11-28#list-workflow-run-artifacts",
+    "https://private-user-images.githubusercontent.com",
+    "https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents",
+    "https://docs.github.com/en/graphql/reference/mutations#resolvereviewthread",
+    "https://docs.github.com/en/rest/pulls/comments?apiVersion=2022-11-28",
+    "https://docs.github.com/en/rest/issues/issues?apiVersion=2022-11-28#update-an-issue",
+    "https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#update-a-pull-request",
+    "https://images.openai.com/static-rsc-1/Unm_JwjychP1fh7OKRGTe1xC_5_RF_scrUsP0sxWgk1tFbccbJlxSxu_oW2CCp5y4cBleVUl18z0DChsDwqYSRLq26xJILNcK2y2yWYMibGpUPW_WQd9-zxpdRtg4h9FNf-fptqdBK7rXPIve9mHPZf7TsW29NRte7cRK-SaBbIxvB-9r8VUirTOeSQRlYzL",
+    "https://docs.github.com/en/rest/issues/issues?apiVersion=2022-11-28#create-an-issue",
+    "https://github.com/openai/openai/pulls/123",
+    "https://docs.github.com/en/enterprise-server@latest/rest/using-the-rest-api/getting-started-with-the-rest-api",
+    "https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#merge-a-pull-request",
+    "https://docs.github.com/en/rest/issues/issues?apiVersion=2022-11-28#unlock-an-issue"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-6-pro",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "d2803d87-b857-4082-9b95-a990a04a5460"
+      ]
+    },
+    "d2803d87-b857-4082-9b95-a990a04a5460": {
+      "id": "d2803d87-b857-4082-9b95-a990a04a5460",
+      "message": {
+        "id": "d2803d87-b857-4082-9b95-a990a04a5460",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789721991.216,
+        "update_time": 1789722002.476429,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "https://github.com/router-for-me/CLIProxyAPI.git cập nhât gpt 2.5 chưa bạn"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "plugin:connector_76869538009648d5b282a4bb21c3d157"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": [
+              {
+                "id": "https://github.com/router-for-me/CLIProxyAPI.git",
+                "inline_reference_type": "url",
+                "symbol": "resourceReference",
+                "startIndex": 0,
+                "endIndex": 48
+              }
+            ]
+          },
+          "request_id": "132f3117-ab3e-4b51-bfdf-7f2a9c67b5ee",
+          "message_source": null,
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "turn_id": "432dff9a-5890-4651-91c3-f31e03ca1e03",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "d727b165-eaba-4334-b429-a617a190385f",
+        "27da085b-0de7-4928-a92d-b6c83a32448d"
+      ]
+    },
+    "27da085b-0de7-4928-a92d-b6c83a32448d": {
+      "id": "27da085b-0de7-4928-a92d-b6c83a32448d",
+      "message": {
+        "id": "27da085b-0de7-4928-a92d-b6c83a32448d",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1789721994.798861,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Đã xử lý trong 2m 1s",
+          "initial_text": "Đang suy luận",
+          "summarization_headline": "",
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-132f3117-ab3e-4b51-bfdf-7f2a9c67b5ee:JP",
+          "parent_id": "d2803d87-b857-4082-9b95-a990a04a5460",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "poll_suppress_reconnect_banner": true,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "model_slug": "gpt-6-pro",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721994.798861,
+          "cot_version": "v5",
+          "request_id": "132f3117-ab3e-4b51-bfdf-7f2a9c67b5ee",
+          "message_type": "next",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "finished_duration_sec": 121,
+          "pro_skipped": false,
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d2803d87-b857-4082-9b95-a990a04a5460",
+      "children": []
+    },
+    "d727b165-eaba-4334-b429-a617a190385f": {
+      "id": "d727b165-eaba-4334-b429-a617a190385f",
+      "message": {
+        "id": "d727b165-eaba-4334-b429-a617a190385f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722008.889619,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Em kiểm tra bản mới nhất và danh sách model của CLIProxyAPI để xác nhận GPT 2.5 đã được hỗ trợ chưa nhé."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "parent_id": "3d386899-74e2-4869-a3ea-46857c20e753",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "is_thinking_preamble_message": true,
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_switcher_deny": [],
+          "can_save": true
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "d2803d87-b857-4082-9b95-a990a04a5460",
+      "children": [
+        "faa6c13a-78c8-445f-b18c-970a1a59d2c1"
+      ]
+    },
+    "faa6c13a-78c8-445f-b18c-970a1a59d2c1": {
+      "id": "faa6c13a-78c8-445f-b18c-970a1a59d2c1",
+      "message": {
+        "id": "faa6c13a-78c8-445f-b18c-970a1a59d2c1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722012.161066,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Interacted with GitHub",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "512ce913-2491-43a4-8756-8badfcc79243"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "source_message_ids": [
+              "961d5fcb-094b-438d-98e2-b1ce6cdf853d"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "github",
+          "tool_icons": [
+            "/images/ecosystem/apps/github/icon.png"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "resolved_model_slug": "gpt-6-pro",
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "d727b165-eaba-4334-b429-a617a190385f",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d727b165-eaba-4334-b429-a617a190385f",
+      "children": [
+        "3b1cd575-fe67-4e83-b566-602785536e99"
+      ]
+    },
+    "3b1cd575-fe67-4e83-b566-602785536e99": {
+      "id": "3b1cd575-fe67-4e83-b566-602785536e99",
+      "message": {
+        "id": "3b1cd575-fe67-4e83-b566-602785536e99",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722010.389439,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "search_queries": [
+            {
+              "type": "search",
+              "q": "site:github.com/router-for-me/CLIProxyAPI \"gpt-2.5\""
+            },
+            {
+              "type": "search",
+              "q": "site:github.com/router-for-me/CLIProxyAPI \"gpt-5.2\""
+            },
+            {
+              "type": "search",
+              "q": "site:openai.com \"GPT-2.5\""
+            }
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "faa6c13a-78c8-445f-b18c-970a1a59d2c1",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "faa6c13a-78c8-445f-b18c-970a1a59d2c1",
+      "children": [
+        "87f63bcf-2858-4fd8-9a11-752828890f77"
+      ]
+    },
+    "87f63bcf-2858-4fd8-9a11-752828890f77": {
+      "id": "87f63bcf-2858-4fd8-9a11-752828890f77",
+      "message": {
+        "id": "87f63bcf-2858-4fd8-9a11-752828890f77",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789722011.8690565,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPI/issues/1572",
+                  "title": "Reasoning Error · Issue #1572 · router-for-me/CLIProxyAPI",
+                  "snippet": "Reasoning Error · Issue #1572 · router-for-me/CLIProxyAPI router-for-me / CLIProxyAPI Public Notifications Fork Reasoning Error #1572 Closed alexx-ftw opened on Feb 12 [2026-02-13 04:11:54] [e2d51c...",
+                  "ref_id": {
+                    "turn_index": 397070,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1770940800.0,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/6se_6EFjTlXW1Zdd9WqRHsDI5iR15Up35687vqeGPQNNfoHTA3sJD0S6ae1laqmm2ld3XIc287EEcpQ9AjC2Ez1fqUyJ4Byyg_MiwSWOF5eFz28NFKnRwbG_1KFFtauthJrtZVF6Q0nfqmWuYXv-NnyxqEw56L9400KrCq8373Y6tYRTGJ37pXhdGYpl-SyCTNzJUVJmf7oydmuP7LOYQg",
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPI/issues/636",
+                  "title": "Large prompt failures w/ Claude Code vs Codex routes (gpt-5.2): cloudcode 'Prompt is too long' + codex SSE missing response.completed · Issue #636 · router-for-me/CLIProxyAPI",
+                  "snippet": "Large prompt failures w/ Claude Code vs Codex routes (gpt-5.2): cloudcode 'Prompt is too long' + codex SSE missing response.completed · Issue #636 · router-for-me/CLIProxyAPI router-for-me / CLIPro...",
+                  "ref_id": {
+                    "turn_index": 397070,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1766227077.0,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/Kc4FzE35oZVPslHtY8WrD2lvUBwvWLkD5FhnWbXRKB08WasINczoiIa0cwRzpjFRfUd2uPb8OVTeJaGBn286zQUqzrWEJRan5KKxPvMYvEimpagV80VYQYnHtRBw9S80eeA1cncMNTwQ74CL_rj5BCYOFdyicGc6Sq_17xeir5Ibk043TS-R0dxSX8NavvO-",
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPI/issues/3680",
+                  "title": "Codex/Responses path (incl. gpt-image-2) uses a non-uTLS HTTP client → intermittently blocked by Cloudflare (403 challenge); Claude path unaffected · Issue #3680 · router-for-me/CLIProxyAPI",
+                  "snippet": "Codex/Responses path (incl. gpt-image-2) uses a non-uTLS HTTP client → intermittently blocked by Cloudflare (403 challenge); Claude path unaffected · Issue #3680 · router-for-me/CLIProxyAPI router-...",
+                  "ref_id": {
+                    "turn_index": 397070,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": 1780393620.0,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/P-g0iV6bU9URYr9Qshmc23XN9IJEJ29BHiC-IvoPmJhpYbTdFad2PxHbvVe46RNfkr7mYeF8WToidETEwe2UyRVkLyXEt2II22Uf0raKilmP1vWrs3ZKwYC1TTnSN1Zg9Z6JOMf5x9DMnQULqK_Aew-DYJ9UkcKS_3HpKWBbb9E3bW-qEzrMr-APEQ_M8eI0YNIL09hmiRfoRjXVQMTofg",
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPI/issues/493",
+                  "title": "Add support for gpt-5,2 · Issue #493 · router-for-me/CLIProxyAPI",
+                  "snippet": "Add support for gpt-5,2 · Issue #493 · router-for-me/CLIProxyAPI router-for-me / CLIProxyAPI Public Notifications Fork Add support for gpt-5,2 #493 Closed xinjianzhanghao opened on Dec 11, 2025 Gpt...",
+                  "ref_id": {
+                    "turn_index": 397070,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/index/gpt-2-1-5b-release/",
+                  "title": "GPT-2: 1.5B release | OpenAI",
+                  "snippet": "GPT-2: 1.5B release | OpenAI November 5, 2019 Release GPT‐2: 1.5B release Read paper GPT-2 model Detector model Illustration: Ben Barry More Resources Model card Listen to article 4:59 Share As the...",
+                  "ref_id": {
+                    "turn_index": 397070,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1572912000.0,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/rokuHXL6rwqLo_vcde4jkdlUmNh4cxW0MmxKeEeFmnO_3LnE6ImZ7yAmvnWVTgyIHf2tNffFKVEO-xIUgMj5PZzT8CqfO-4ab9PAsVLy3v2dbMEsm4tro4TGZw4aVRQoyP6dqdF1hgvvZZybl6wJ4hx8KKsbm1Cz5Mp-wPJkK2-i6Y-4yw85UTi5rHVAUl9YNjmO99mcNpKlY_sBQbMZCNalV8VTgw9M8CXvS8BFDiw",
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/index/gpt-2-6-month-follow-up/",
+                  "title": "GPT-2: 6-month follow-up | OpenAI",
+                  "snippet": "GPT-2: 6-month follow-up | OpenAI August 20, 2019 Publication GPT‐2: 6-month follow-up Read paper View code Legal agreement Illustration: Ben Barry Listen to article 4:47 Share Key things we’ve lea...",
+                  "ref_id": {
+                    "turn_index": 397070,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": 1566259200.0,
+                  "attribution": "openai.com"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aacfd9bfe4c8330967f11980caa1c2f",
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm 2 trang web"
+          ],
+          "reasoning_title": "Đang tìm kiếm 2 trang web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "github.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/issues/1572",
+                    "title": "Reasoning Error · Issue #1572 · router-for-me/CLIProxyAPI",
+                    "snippet": "Reasoning Error · Issue #1572 · router-for-me/CLIProxyAPI router-for-me / CLIProxyAPI Public Notifications Fork Reasoning Error #1572 Closed alexx-ftw opened on Feb 12 [2026-02-13 04:11:54] [e2d51c...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1770940800.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/6se_6EFjTlXW1Zdd9WqRHsDI5iR15Up35687vqeGPQNNfoHTA3sJD0S6ae1laqmm2ld3XIc287EEcpQ9AjC2Ez1fqUyJ4Byyg_MiwSWOF5eFz28NFKnRwbG_1KFFtauthJrtZVF6Q0nfqmWuYXv-NnyxqEw56L9400KrCq8373Y6tYRTGJ37pXhdGYpl-SyCTNzJUVJmf7oydmuP7LOYQg",
+                    "attribution": "github.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/issues/636",
+                    "title": "Large prompt failures w/ Claude Code vs Codex routes (gpt-5.2): cloudcode 'Prompt is too long' + codex SSE missing response.completed · Issue #636 · router-for-me/CLIProxyAPI",
+                    "snippet": "Large prompt failures w/ Claude Code vs Codex routes (gpt-5.2): cloudcode 'Prompt is too long' + codex SSE missing response.completed · Issue #636 · router-for-me/CLIProxyAPI router-for-me / CLIPro...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1766227077.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/Kc4FzE35oZVPslHtY8WrD2lvUBwvWLkD5FhnWbXRKB08WasINczoiIa0cwRzpjFRfUd2uPb8OVTeJaGBn286zQUqzrWEJRan5KKxPvMYvEimpagV80VYQYnHtRBw9S80eeA1cncMNTwQ74CL_rj5BCYOFdyicGc6Sq_17xeir5Ibk043TS-R0dxSX8NavvO-",
+                    "attribution": "github.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/issues/3680",
+                    "title": "Codex/Responses path (incl. gpt-image-2) uses a non-uTLS HTTP client → intermittently blocked by Cloudflare (403 challenge); Claude path unaffected · Issue #3680 · router-for-me/CLIProxyAPI",
+                    "snippet": "Codex/Responses path (incl. gpt-image-2) uses a non-uTLS HTTP client → intermittently blocked by Cloudflare (403 challenge); Claude path unaffected · Issue #3680 · router-for-me/CLIProxyAPI router-...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": 1780393620.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/P-g0iV6bU9URYr9Qshmc23XN9IJEJ29BHiC-IvoPmJhpYbTdFad2PxHbvVe46RNfkr7mYeF8WToidETEwe2UyRVkLyXEt2II22Uf0raKilmP1vWrs3ZKwYC1TTnSN1Zg9Z6JOMf5x9DMnQULqK_Aew-DYJ9UkcKS_3HpKWBbb9E3bW-qEzrMr-APEQ_M8eI0YNIL09hmiRfoRjXVQMTofg",
+                    "attribution": "github.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/issues/493",
+                    "title": "Add support for gpt-5,2 · Issue #493 · router-for-me/CLIProxyAPI",
+                    "snippet": "Add support for gpt-5,2 · Issue #493 · router-for-me/CLIProxyAPI router-for-me / CLIProxyAPI Public Notifications Fork Add support for gpt-5,2 #493 Closed xinjianzhanghao opened on Dec 11, 2025 Gpt...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "github.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/gpt-2-1-5b-release/",
+                    "title": "GPT-2: 1.5B release | OpenAI",
+                    "snippet": "GPT-2: 1.5B release | OpenAI November 5, 2019 Release GPT‐2: 1.5B release Read paper GPT-2 model Detector model Illustration: Ben Barry More Resources Model card Listen to article 4:59 Share As the...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": 1572912000.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/rokuHXL6rwqLo_vcde4jkdlUmNh4cxW0MmxKeEeFmnO_3LnE6ImZ7yAmvnWVTgyIHf2tNffFKVEO-xIUgMj5PZzT8CqfO-4ab9PAsVLy3v2dbMEsm4tro4TGZw4aVRQoyP6dqdF1hgvvZZybl6wJ4hx8KKsbm1Cz5Mp-wPJkK2-i6Y-4yw85UTi5rHVAUl9YNjmO99mcNpKlY_sBQbMZCNalV8VTgw9M8CXvS8BFDiw",
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/gpt-2-6-month-follow-up/",
+                    "title": "GPT-2: 6-month follow-up | OpenAI",
+                    "snippet": "GPT-2: 6-month follow-up | OpenAI August 20, 2019 Publication GPT‐2: 6-month follow-up Read paper View code Legal agreement Illustration: Ben Barry Listen to article 4:47 Share Key things we’ve lea...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": 1566259200.0,
+                    "attribution": "openai.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "4dc33aa2-8a89-4372-bb71-66864a0b1a6a",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3b1cd575-fe67-4e83-b566-602785536e99",
+      "children": [
+        "eef55c9d-d945-4458-93e5-d700adee0b60"
+      ]
+    },
+    "eef55c9d-d945-4458-93e5-d700adee0b60": {
+      "id": "eef55c9d-d945-4458-93e5-d700adee0b60",
+      "message": {
+        "id": "eef55c9d-d945-4458-93e5-d700adee0b60",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722023.872931,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 2 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "b8004aa1-b433-40bd-be6c-88839956b54c"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "github.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/issues/1572",
+                    "title": "Reasoning Error · Issue #1572 · router-for-me/CLIProxyAPI",
+                    "snippet": "Reasoning Error · Issue #1572 · router-for-me/CLIProxyAPI router-for-me / CLIProxyAPI Public Notifications Fork Reasoning Error #1572 Closed alexx-ftw opened on Feb 12 [2026-02-13 04:11:54] [e2d51c...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1770940800.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/6se_6EFjTlXW1Zdd9WqRHsDI5iR15Up35687vqeGPQNNfoHTA3sJD0S6ae1laqmm2ld3XIc287EEcpQ9AjC2Ez1fqUyJ4Byyg_MiwSWOF5eFz28NFKnRwbG_1KFFtauthJrtZVF6Q0nfqmWuYXv-NnyxqEw56L9400KrCq8373Y6tYRTGJ37pXhdGYpl-SyCTNzJUVJmf7oydmuP7LOYQg",
+                    "attribution": "github.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/issues/636",
+                    "title": "Large prompt failures w/ Claude Code vs Codex routes (gpt-5.2): cloudcode 'Prompt is too long' + codex SSE missing response.completed · Issue #636 · router-for-me/CLIProxyAPI",
+                    "snippet": "Large prompt failures w/ Claude Code vs Codex routes (gpt-5.2): cloudcode 'Prompt is too long' + codex SSE missing response.completed · Issue #636 · router-for-me/CLIProxyAPI router-for-me / CLIPro...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1766227077.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/Kc4FzE35oZVPslHtY8WrD2lvUBwvWLkD5FhnWbXRKB08WasINczoiIa0cwRzpjFRfUd2uPb8OVTeJaGBn286zQUqzrWEJRan5KKxPvMYvEimpagV80VYQYnHtRBw9S80eeA1cncMNTwQ74CL_rj5BCYOFdyicGc6Sq_17xeir5Ibk043TS-R0dxSX8NavvO-",
+                    "attribution": "github.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/issues/3680",
+                    "title": "Codex/Responses path (incl. gpt-image-2) uses a non-uTLS HTTP client → intermittently blocked by Cloudflare (403 challenge); Claude path unaffected · Issue #3680 · router-for-me/CLIProxyAPI",
+                    "snippet": "Codex/Responses path (incl. gpt-image-2) uses a non-uTLS HTTP client → intermittently blocked by Cloudflare (403 challenge); Claude path unaffected · Issue #3680 · router-for-me/CLIProxyAPI router-...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": 1780393620.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/P-g0iV6bU9URYr9Qshmc23XN9IJEJ29BHiC-IvoPmJhpYbTdFad2PxHbvVe46RNfkr7mYeF8WToidETEwe2UyRVkLyXEt2II22Uf0raKilmP1vWrs3ZKwYC1TTnSN1Zg9Z6JOMf5x9DMnQULqK_Aew-DYJ9UkcKS_3HpKWBbb9E3bW-qEzrMr-APEQ_M8eI0YNIL09hmiRfoRjXVQMTofg",
+                    "attribution": "github.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/issues/493",
+                    "title": "Add support for gpt-5,2 · Issue #493 · router-for-me/CLIProxyAPI",
+                    "snippet": "Add support for gpt-5,2 · Issue #493 · router-for-me/CLIProxyAPI router-for-me / CLIProxyAPI Public Notifications Fork Add support for gpt-5,2 #493 Closed xinjianzhanghao opened on Dec 11, 2025 Gpt...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "github.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/gpt-2-1-5b-release/",
+                    "title": "GPT-2: 1.5B release | OpenAI",
+                    "snippet": "GPT-2: 1.5B release | OpenAI November 5, 2019 Release GPT‐2: 1.5B release Read paper GPT-2 model Detector model Illustration: Ben Barry More Resources Model card Listen to article 4:59 Share As the...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": 1572912000.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/rokuHXL6rwqLo_vcde4jkdlUmNh4cxW0MmxKeEeFmnO_3LnE6ImZ7yAmvnWVTgyIHf2tNffFKVEO-xIUgMj5PZzT8CqfO-4ab9PAsVLy3v2dbMEsm4tro4TGZw4aVRQoyP6dqdF1hgvvZZybl6wJ4hx8KKsbm1Cz5Mp-wPJkK2-i6Y-4yw85UTi5rHVAUl9YNjmO99mcNpKlY_sBQbMZCNalV8VTgw9M8CXvS8BFDiw",
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/gpt-2-6-month-follow-up/",
+                    "title": "GPT-2: 6-month follow-up | OpenAI",
+                    "snippet": "GPT-2: 6-month follow-up | OpenAI August 20, 2019 Publication GPT‐2: 6-month follow-up Read paper View code Legal agreement Illustration: Ben Barry Listen to article 4:47 Share Key things we’ve lea...",
+                    "ref_id": {
+                      "turn_index": 397070,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": 1566259200.0,
+                    "attribution": "openai.com"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "3b1cd575-fe67-4e83-b566-602785536e99",
+              "4dc33aa2-8a89-4372-bb71-66864a0b1a6a",
+              "87f63bcf-2858-4fd8-9a11-752828890f77"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=openai.com&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "resolved_model_slug": "gpt-6-pro",
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "87f63bcf-2858-4fd8-9a11-752828890f77",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "87f63bcf-2858-4fd8-9a11-752828890f77",
+      "children": [
+        "403c4f12-7732-4f9f-98c3-7bd0e3235294"
+      ]
+    },
+    "403c4f12-7732-4f9f-98c3-7bd0e3235294": {
+      "id": "403c4f12-7732-4f9f-98c3-7bd0e3235294",
+      "message": {
+        "id": "403c4f12-7732-4f9f-98c3-7bd0e3235294",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722024.347213,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã truy xuất registry GitHub và xác minh GPT-Image 2.5",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "0a2ca734-1034-44ff-9610-aa0ba242e5b5"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "source_message_ids": [
+              "5d2d5db1-e4a9-4e94-827b-288b61847dc9"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "github",
+          "tool_icons": [
+            "/images/ecosystem/apps/github/icon.png"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "resolved_model_slug": "gpt-6-pro",
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "eef55c9d-d945-4458-93e5-d700adee0b60",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "eef55c9d-d945-4458-93e5-d700adee0b60",
+      "children": [
+        "a6c7a991-2e90-40bb-b932-864ebd4499ec"
+      ]
+    },
+    "a6c7a991-2e90-40bb-b932-864ebd4499ec": {
+      "id": "a6c7a991-2e90-40bb-b932-864ebd4499ec",
+      "message": {
+        "id": "a6c7a991-2e90-40bb-b932-864ebd4499ec",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722021.675384,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "reasoning_titles": [
+            "Đang tìm kiếm GPT Image 2.5"
+          ],
+          "reasoning_title": "Đang tìm kiếm GPT Image 2.5",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "search_queries": [
+            {
+              "type": "search",
+              "q": "GPT Image 2.5"
+            }
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "403c4f12-7732-4f9f-98c3-7bd0e3235294",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "403c4f12-7732-4f9f-98c3-7bd0e3235294",
+      "children": [
+        "dbdc8d8b-db24-4a07-a7bb-354a84935011"
+      ]
+    },
+    "dbdc8d8b-db24-4a07-a7bb-354a84935011": {
+      "id": "dbdc8d8b-db24-4a07-a7bb-354a84935011",
+      "message": {
+        "id": "dbdc8d8b-db24-4a07-a7bb-354a84935011",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789722023.7452972,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+                  "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                  "snippet": "Introducing ChatGPT Images 2.5 | OpenAI September 8, 2026 Product IntroducingChatGPT Images 2.5Ch a tGPT Images 2.5 Sharper details, faster generation, more precise editing, and better tools for cr...",
+                  "ref_id": {
+                    "turn_index": 660893,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1788833100.0,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/Ue2xTFBsq8axlSUNFkXdxdS74q2R3AB4eSa2VHC3ACbWqcwjjHNkSg156RP254Htt30AWaTnevEgHPTONbjs2wTEZCHoRHlYWtQ1jU3VE2kVzAnSx5-zErZBB4uSV_YWPhPSeH24cogLaKtshxq3tRZd2YZHBa6BcugItVfqsONf-KG1SaoY_U3v98xZK3sqYAmmHEC--pY4Fln0J-IhYg",
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/kn-IN/index/introducing-chatgpt-images-2-5/",
+                  "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                  "snippet": "Introducing ChatGPT Images 2.5 | OpenAI OpenAI ಸೆಪ್ಟೆಂಬರ್ 8, 2026 ಉತ್ಪನ್ನ Introducing ChatGPT Images 2.5IntroducingChatGPTImages2.5ChatGPTImages2.5 Sharper details, faster generation, more precise...",
+                  "ref_id": {
+                    "turn_index": 660893,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1789027200.0,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/is-IS/index/introducing-chatgpt-images-2-5/",
+                  "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                  "snippet": "Introducing ChatGPT Images 2.5 | OpenAI OpenAI 8. september 2026 Vara Introducing ChatGPT Images 2.5IntroducingChatGPTImages2.5ChatGPTImages2.5 Sharper details, faster generation, more precise edit...",
+                  "ref_id": {
+                    "turn_index": 660893,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1788825600.0,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/EyrBJL31eOO1Ugt50hdyGTf7zcadvyR6Z2NwlesrPxa-e6zFtlVWszHn0S5_nvZnBriVrck4jKNvZpqc4lIEDfb3_8Ci_5UfOIeg3ckz2hjvZzhTq2_2TiJ64Ak1QlArKSslNSuFEBlSLeY7YEFQn2rvmpZnYnsMlBzjdteG2VbfeEoN1Ms02SG334UB-WsrRVSSacojIkV05LykffQ7yQ",
+                  "attribution": "openai.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.7",
+                  "title": "Release v7.3.7 · router-for-me/CLIProxyAPI · GitHub",
+                  "snippet": "Total lines: 224\n",
+                  "ref_id": {
+                    "turn_index": 660893,
+                    "ref_type": "view",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/MEin8RNPUI_x5mZUcR5QFW3DFIJEWfW5ux47XuuyB_fHpKvx9M7LTaqpw4vJe9-LdfjBMjnSvj1BYHQ1ZQyQbgggzVijUCLhiuZfPKP1pndLMLRZ0owGgsOCztdPrPYwspPxoB9mVw3S3OYkfMIfWkhdMGUXBtr-xxGy6Hm-OSlR3LCt5oXtjQ_dhydJFhlVVe70zQJEJIt52-G1DQkZ8EBwvQENKbJjtJt09XtHqOc",
+                  "attribution": "github.com"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aacfd9bfe4c8330967f11980caa1c2f",
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm 2 trang web"
+          ],
+          "reasoning_title": "Đang tìm kiếm 2 trang web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+                    "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                    "snippet": "Introducing ChatGPT Images 2.5 | OpenAI September 8, 2026 Product IntroducingChatGPT Images 2.5Ch a tGPT Images 2.5 Sharper details, faster generation, more precise editing, and better tools for cr...",
+                    "ref_id": {
+                      "turn_index": 660893,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1788833100.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/Ue2xTFBsq8axlSUNFkXdxdS74q2R3AB4eSa2VHC3ACbWqcwjjHNkSg156RP254Htt30AWaTnevEgHPTONbjs2wTEZCHoRHlYWtQ1jU3VE2kVzAnSx5-zErZBB4uSV_YWPhPSeH24cogLaKtshxq3tRZd2YZHBa6BcugItVfqsONf-KG1SaoY_U3v98xZK3sqYAmmHEC--pY4Fln0J-IhYg",
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/kn-IN/index/introducing-chatgpt-images-2-5/",
+                    "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                    "snippet": "Introducing ChatGPT Images 2.5 | OpenAI OpenAI ಸೆಪ್ಟೆಂಬರ್ 8, 2026 ಉತ್ಪನ್ನ Introducing ChatGPT Images 2.5IntroducingChatGPTImages2.5ChatGPTImages2.5 Sharper details, faster generation, more precise...",
+                    "ref_id": {
+                      "turn_index": 660893,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1789027200.0,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/is-IS/index/introducing-chatgpt-images-2-5/",
+                    "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                    "snippet": "Introducing ChatGPT Images 2.5 | OpenAI OpenAI 8. september 2026 Vara Introducing ChatGPT Images 2.5IntroducingChatGPTImages2.5ChatGPTImages2.5 Sharper details, faster generation, more precise edit...",
+                    "ref_id": {
+                      "turn_index": 660893,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": 1788825600.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/EyrBJL31eOO1Ugt50hdyGTf7zcadvyR6Z2NwlesrPxa-e6zFtlVWszHn0S5_nvZnBriVrck4jKNvZpqc4lIEDfb3_8Ci_5UfOIeg3ckz2hjvZzhTq2_2TiJ64Ak1QlArKSslNSuFEBlSLeY7YEFQn2rvmpZnYnsMlBzjdteG2VbfeEoN1Ms02SG334UB-WsrRVSSacojIkV05LykffQ7yQ",
+                    "attribution": "openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "github.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.7",
+                    "title": "Release v7.3.7 · router-for-me/CLIProxyAPI · GitHub",
+                    "snippet": "Total lines: 224\n",
+                    "ref_id": {
+                      "turn_index": 660893,
+                      "ref_type": "view",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/MEin8RNPUI_x5mZUcR5QFW3DFIJEWfW5ux47XuuyB_fHpKvx9M7LTaqpw4vJe9-LdfjBMjnSvj1BYHQ1ZQyQbgggzVijUCLhiuZfPKP1pndLMLRZ0owGgsOCztdPrPYwspPxoB9mVw3S3OYkfMIfWkhdMGUXBtr-xxGy6Hm-OSlR3LCt5oXtjQ_dhydJFhlVVe70zQJEJIt52-G1DQkZ8EBwvQENKbJjtJt09XtHqOc",
+                    "attribution": "github.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "572174e4-b87a-4130-b5dd-40436dd5f557",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a6c7a991-2e90-40bb-b932-864ebd4499ec",
+      "children": [
+        "0845f8a6-df78-468e-9755-0b45e323a58d"
+      ]
+    },
+    "0845f8a6-df78-468e-9755-0b45e323a58d": {
+      "id": "0845f8a6-df78-468e-9755-0b45e323a58d",
+      "message": {
+        "id": "0845f8a6-df78-468e-9755-0b45e323a58d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722032.309973,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Kiểm tra bản phát hành",
+              "content": "Em đang đối chiếu thay đổi trong repo để xác nhận GPT Image 2.5, gồm các biến thể thường, Flare và Sunburst. Em sẽ kiểm tra bản phát hành, mã định nghĩa mô hình và tệp thay đổi trước khi kết luận.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã kiểm tra bản phát hành",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "cebfbd14-d203-4506-81c8-5517e2f5df38"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "dbdc8d8b-db24-4a07-a7bb-354a84935011",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "dbdc8d8b-db24-4a07-a7bb-354a84935011",
+      "children": [
+        "7b2e3fd3-913e-4ea5-99f5-2865d4d2e956"
+      ]
+    },
+    "7b2e3fd3-913e-4ea5-99f5-2865d4d2e956": {
+      "id": "7b2e3fd3-913e-4ea5-99f5-2865d4d2e956",
+      "message": {
+        "id": "7b2e3fd3-913e-4ea5-99f5-2865d4d2e956",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722036.899645,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 2 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "d1246851-8cfa-4b10-8648-2b6b27f36014"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+                    "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                    "snippet": "Introducing ChatGPT Images 2.5 | OpenAI September 8, 2026 Product IntroducingChatGPT Images 2.5Ch a tGPT Images 2.5 Sharper details, faster generation, more precise editing, and better tools for cr...",
+                    "ref_id": {
+                      "turn_index": 660893,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1788833100.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/Ue2xTFBsq8axlSUNFkXdxdS74q2R3AB4eSa2VHC3ACbWqcwjjHNkSg156RP254Htt30AWaTnevEgHPTONbjs2wTEZCHoRHlYWtQ1jU3VE2kVzAnSx5-zErZBB4uSV_YWPhPSeH24cogLaKtshxq3tRZd2YZHBa6BcugItVfqsONf-KG1SaoY_U3v98xZK3sqYAmmHEC--pY4Fln0J-IhYg",
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/kn-IN/index/introducing-chatgpt-images-2-5/",
+                    "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                    "snippet": "Introducing ChatGPT Images 2.5 | OpenAI OpenAI ಸೆಪ್ಟೆಂಬರ್ 8, 2026 ಉತ್ಪನ್ನ Introducing ChatGPT Images 2.5IntroducingChatGPTImages2.5ChatGPTImages2.5 Sharper details, faster generation, more precise...",
+                    "ref_id": {
+                      "turn_index": 660893,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1789027200.0,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/is-IS/index/introducing-chatgpt-images-2-5/",
+                    "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                    "snippet": "Introducing ChatGPT Images 2.5 | OpenAI OpenAI 8. september 2026 Vara Introducing ChatGPT Images 2.5IntroducingChatGPTImages2.5ChatGPTImages2.5 Sharper details, faster generation, more precise edit...",
+                    "ref_id": {
+                      "turn_index": 660893,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": 1788825600.0,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/EyrBJL31eOO1Ugt50hdyGTf7zcadvyR6Z2NwlesrPxa-e6zFtlVWszHn0S5_nvZnBriVrck4jKNvZpqc4lIEDfb3_8Ci_5UfOIeg3ckz2hjvZzhTq2_2TiJ64Ak1QlArKSslNSuFEBlSLeY7YEFQn2rvmpZnYnsMlBzjdteG2VbfeEoN1Ms02SG334UB-WsrRVSSacojIkV05LykffQ7yQ",
+                    "attribution": "openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "github.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.7",
+                    "title": "Release v7.3.7 · router-for-me/CLIProxyAPI · GitHub",
+                    "snippet": "Total lines: 224\n",
+                    "ref_id": {
+                      "turn_index": 660893,
+                      "ref_type": "view",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/MEin8RNPUI_x5mZUcR5QFW3DFIJEWfW5ux47XuuyB_fHpKvx9M7LTaqpw4vJe9-LdfjBMjnSvj1BYHQ1ZQyQbgggzVijUCLhiuZfPKP1pndLMLRZ0owGgsOCztdPrPYwspPxoB9mVw3S3OYkfMIfWkhdMGUXBtr-xxGy6Hm-OSlR3LCt5oXtjQ_dhydJFhlVVe70zQJEJIt52-G1DQkZ8EBwvQENKbJjtJt09XtHqOc",
+                    "attribution": "github.com"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "a6c7a991-2e90-40bb-b932-864ebd4499ec",
+              "572174e4-b87a-4130-b5dd-40436dd5f557",
+              "dbdc8d8b-db24-4a07-a7bb-354a84935011"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "resolved_model_slug": "gpt-6-pro",
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "0845f8a6-df78-468e-9755-0b45e323a58d",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0845f8a6-df78-468e-9755-0b45e323a58d",
+      "children": [
+        "a04cb51f-22c6-4cdd-aab3-eafd8a12c45b"
+      ]
+    },
+    "a04cb51f-22c6-4cdd-aab3-eafd8a12c45b": {
+      "id": "a04cb51f-22c6-4cdd-aab3-eafd8a12c45b",
+      "message": {
+        "id": "a04cb51f-22c6-4cdd-aab3-eafd8a12c45b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722037.574652,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã đối chiếu bản phát hành GPT Image 2.5",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "4714148d-3fc0-46ca-91a2-203a87e63127"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "source_message_ids": [
+              "8a440bd8-1866-4457-b97d-2695857ba3ce"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "github",
+          "tool_icons": [
+            "/images/ecosystem/apps/github/icon.png"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "resolved_model_slug": "gpt-6-pro",
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "7b2e3fd3-913e-4ea5-99f5-2865d4d2e956",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7b2e3fd3-913e-4ea5-99f5-2865d4d2e956",
+      "children": [
+        "7578ef66-397c-4c66-9859-d9d1063938d6"
+      ]
+    },
+    "7578ef66-397c-4c66-9859-d9d1063938d6": {
+      "id": "7578ef66-397c-4c66-9859-d9d1063938d6",
+      "message": {
+        "id": "7578ef66-397c-4c66-9859-d9d1063938d6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722034.311019,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "a04cb51f-22c6-4cdd-aab3-eafd8a12c45b",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "a04cb51f-22c6-4cdd-aab3-eafd8a12c45b",
+      "children": [
+        "c1bc5cd9-e514-4912-9814-a033e0b0704f"
+      ]
+    },
+    "c1bc5cd9-e514-4912-9814-a033e0b0704f": {
+      "id": "c1bc5cd9-e514-4912-9814-a033e0b0704f",
+      "message": {
+        "id": "c1bc5cd9-e514-4912-9814-a033e0b0704f",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789722036.976195,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.7",
+                  "title": "Release v7.3.7 · router-for-me/CLIProxyAPI · GitHub",
+                  "snippet": "Total lines: 224\n",
+                  "ref_id": {
+                    "turn_index": 418313,
+                    "ref_type": "view",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/OAi_RfylyHKS_CZQjCAq9Ua15eC6eatHD_GeH7S4S4V8POnaKztP8CUDhEwk-yO70btQOZSmfRb-WQwnXBgWkiNDtlx9xIfE9Fh7m2LKXIS6-xLN9Wyd42eQ1FbcvHE6l0p5qX8SIVMHiIZj3UEtJyzzrgWwciuS8x3zrRbheTISVM4FRVcswEPh9byguiGJ_ZY46gMQ8U6O8u0jKF39R67T2YeN7T11cJSV5yBFrn4",
+                  "attribution": "github.com"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aacfd9bfe4c8330967f11980caa1c2f",
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm github.com"
+          ],
+          "reasoning_title": "Đang tìm kiếm github.com",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "github.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.7",
+                    "title": "Release v7.3.7 · router-for-me/CLIProxyAPI · GitHub",
+                    "snippet": "Total lines: 224\n",
+                    "ref_id": {
+                      "turn_index": 418313,
+                      "ref_type": "view",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/OAi_RfylyHKS_CZQjCAq9Ua15eC6eatHD_GeH7S4S4V8POnaKztP8CUDhEwk-yO70btQOZSmfRb-WQwnXBgWkiNDtlx9xIfE9Fh7m2LKXIS6-xLN9Wyd42eQ1FbcvHE6l0p5qX8SIVMHiIZj3UEtJyzzrgWwciuS8x3zrRbheTISVM4FRVcswEPh9byguiGJ_ZY46gMQ8U6O8u0jKF39R67T2YeN7T11cJSV5yBFrn4",
+                    "attribution": "github.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "7578ef66-397c-4c66-9859-d9d1063938d6",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7578ef66-397c-4c66-9859-d9d1063938d6",
+      "children": [
+        "c8c1cbb5-a43e-4105-9ef2-29a3fef989ee"
+      ]
+    },
+    "c8c1cbb5-a43e-4105-9ef2-29a3fef989ee": {
+      "id": "c8c1cbb5-a43e-4105-9ef2-29a3fef989ee",
+      "message": {
+        "id": "c8c1cbb5-a43e-4105-9ef2-29a3fef989ee",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722046.57443,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đối chiếu phiên bản",
+              "content": "Em đang xác minh đúng thẻ phát hành và thay đổi liên quan, rồi sẽ trả lời ngắn gọn liệu GPT Image 2.5 đã được hỗ trợ hay chưa. Em cũng sẽ phân biệt khả năng tạo và chỉnh sửa ảnh.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã đối chiếu các phiên bản",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "9e6dadc7-e08c-4000-9371-a420308a1231"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "c1bc5cd9-e514-4912-9814-a033e0b0704f",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c1bc5cd9-e514-4912-9814-a033e0b0704f",
+      "children": [
+        "3ecfba94-a05b-4bef-b38f-ccc2a5c4e98f"
+      ]
+    },
+    "3ecfba94-a05b-4bef-b38f-ccc2a5c4e98f": {
+      "id": "3ecfba94-a05b-4bef-b38f-ccc2a5c4e98f",
+      "message": {
+        "id": "3ecfba94-a05b-4bef-b38f-ccc2a5c4e98f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722056.644785,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 1 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "2722c5f9-7152-4963-b08c-5ecdbf1e946d"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "github.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.7",
+                    "title": "Release v7.3.7 · router-for-me/CLIProxyAPI · GitHub",
+                    "snippet": "Total lines: 224\n",
+                    "ref_id": {
+                      "turn_index": 418313,
+                      "ref_type": "view",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "thumbnail_url": "https://images.openai.com/static-rsc-1/OAi_RfylyHKS_CZQjCAq9Ua15eC6eatHD_GeH7S4S4V8POnaKztP8CUDhEwk-yO70btQOZSmfRb-WQwnXBgWkiNDtlx9xIfE9Fh7m2LKXIS6-xLN9Wyd42eQ1FbcvHE6l0p5qX8SIVMHiIZj3UEtJyzzrgWwciuS8x3zrRbheTISVM4FRVcswEPh9byguiGJ_ZY46gMQ8U6O8u0jKF39R67T2YeN7T11cJSV5yBFrn4",
+                    "attribution": "github.com"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "7578ef66-397c-4c66-9859-d9d1063938d6",
+              "c1bc5cd9-e514-4912-9814-a033e0b0704f"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=github.com&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "jawbone",
+              "notification_channel_name": "Tasks",
+              "notification_priority": 4
+            }
+          ],
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "resolved_model_slug": "gpt-6-pro",
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "parent_id": "c8c1cbb5-a43e-4105-9ef2-29a3fef989ee",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c8c1cbb5-a43e-4105-9ef2-29a3fef989ee",
+      "children": [
+        "598f0a82-b82f-406b-876e-7268a7e8ef65"
+      ]
+    },
+    "598f0a82-b82f-406b-876e-7268a7e8ef65": {
+      "id": "598f0a82-b82f-406b-876e-7268a7e8ef65",
+      "message": {
+        "id": "598f0a82-b82f-406b-876e-7268a7e8ef65",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722065.324786,
+        "update_time": null,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã xác nhận CLIProxyAPI hỗ trợ GPT Image 2.5",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "67149659-a4f0-4d68-81d1-268b3daf5654"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "source_message_ids": [
+              "f7e3d31e-ca0e-44f1-b6e0-10b8bb03d801"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "github",
+          "tool_icons": [
+            "/images/ecosystem/apps/github/icon.png"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.4064538,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "resolved_model_slug": "gpt-6-pro",
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": false,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3ecfba94-a05b-4bef-b38f-ccc2a5c4e98f",
+      "children": [
+        "bdeb787b-829d-4352-a36a-bf6ceecce96e"
+      ]
+    },
+    "bdeb787b-829d-4352-a36a-bf6ceecce96e": {
+      "id": "bdeb787b-829d-4352-a36a-bf6ceecce96e",
+      "message": {
+        "id": "bdeb787b-829d-4352-a36a-bf6ceecce96e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"paths\":[\"GitHub\"],\"query\":\"search\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "api_tool.list_resources",
+        "channel": "commentary"
+      },
+      "parent": "598f0a82-b82f-406b-876e-7268a7e8ef65",
+      "children": [
+        "100be432-6777-4042-b976-2bb9dc330ddd"
+      ]
+    },
+    "100be432-6777-4042-b976-2bb9dc330ddd": {
+      "id": "100be432-6777-4042-b976-2bb9dc330ddd",
+      "message": {
+        "id": "100be432-6777-4042-b976-2bb9dc330ddd",
+        "author": {
+          "role": "tool",
+          "name": "api_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "bdeb787b-829d-4352-a36a-bf6ceecce96e",
+      "children": [
+        "04527a28-a165-471d-9aa6-be98001b12f2"
+      ]
+    },
+    "04527a28-a165-471d-9aa6-be98001b12f2": {
+      "id": "04527a28-a165-471d-9aa6-be98001b12f2",
+      "message": {
+        "id": "04527a28-a165-471d-9aa6-be98001b12f2",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Đồng bộ model GPT mới nhất với CLIProxyAPI",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "100be432-6777-4042-b976-2bb9dc330ddd",
+      "children": [
+        "7889c106-a2ac-400a-bcb7-b8f61bc7e96f"
+      ]
+    },
+    "7889c106-a2ac-400a-bcb7-b8f61bc7e96f": {
+      "id": "7889c106-a2ac-400a-bcb7-b8f61bc7e96f",
+      "message": {
+        "id": "7889c106-a2ac-400a-bcb7-b8f61bc7e96f",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Resource uri: /response/turn1\nShowing 2 of 13 lines.\nResponse output was truncated at a line boundary to fit the tool response budget.",
+            "Citation Marker: fileciteturn1file0\n",
+            "[L1] {\n[L2]   \"content\": \"{\\\"url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/390996147\\\",\\\"assets_url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/390996147/assets\\\",\\\"upload_url\\\":\\\"https://uploads.github.com/repos/router-for-me/CLIProxyAPI/releases/390996147/assets{?name,label}\\\",\\\"html_url\\\":\\\"https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.7\\\",\\\"id\\\":390996147,\\\"author\\\":{\\\"login\\\":\\\"github-actions[bot]\\\",\\\"id\\\":41898282,\\\"node_id\\\":\\\"MDM6Qm90NDE4OTgyODI=\\\",\\\"avatar_url\\\":\\\"https://avatars.githubusercontent.com/in/15368?v=4\\\",\\\"gravatar_id\\\":\\\"\\\",\\\"url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D\\\",\\\"html_url\\\":\\\"https://github.com/apps/github-actions\\\",\\\"followers_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/followers\\\",\\\"following_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}\\\",\\\"gists_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}\\\",\\\"starred_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}\\\",\\\"subscriptions_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions\\\",\\\"organizations_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/orgs\\\",\\\"repos_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/repos\\\",\\\"events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}\\\",\\\"received_events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/received_events\\\",\\\"type\\\":\\\"Bot\\\",\\\"user_view_type\\\":\\\"public\\\",\\\"site_admin\\\":false},\\\"node_id\\\":\\\"RE_kwDOPFM7E84XTiCz\\\",\\\"tag_name\\\":\\\"v7.3.7\\\",\\\"target_commitish\\\":\\\"main\\\",\\\"name\\\":\\\"v7.3.7\\\",\\\"draft\\\":false,\\\"immutable\\\":false,\\\"prerelease\\\":false,\\\"created_at\\\":\\\"2026-09-17T19:17:06Z\\\",\\\"updated_at\\\":\\\"2026-09-17T19:29:42Z\\\",\\\"published_at\\\":\\\"2026-09-17T19:19:20Z\\\",\\\"assets\\\":[{\\\"url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/assets/570940532\\\",\\\"id\\\":570940532,\\\"node_id\\\":\\\"RA_kwDOPFM7E84iB9x0\\\",\\\"name\\\":\\\"checksums.txt\\\",\\\"label\\\":\\\"\\\",\\\"uploader\\\":{\\\"login\\\":\\\"github-actions[bot]\\\",\\\"id\\\":41898282,\\\"node_id\\\":\\\"MDM6Qm90NDE4OTgyODI=\\\",\\\"avatar_url\\\":\\\"https://avatars.githubusercontent.com/in/15368?v=4\\\",\\\"gravatar_id\\\":\\\"\\\",\\\"url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D\\\",\\\"html_url\\\":\\\"https://github.com/apps/github-actions\\\",\\\"followers_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/followers\\\",\\\"following_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}\\\",\\\"gists_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}\\\",\\\"starred_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}\\\",\\\"subscriptions_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions\\\",\\\"organizations_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/orgs\\\",\\\"repos_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/repos\\\",\\\"events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}\\\",\\\"received_events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/received_events\\\",\\\"type\\\":\\\"Bot\\\",\\\"user_view_type\\\":\\\"public\\\",\\\"site_admin\\\":false},\\\"content_type\\\":\\\"text/plain; charset=utf-8\\\",\\\"state\\\":\\\"uploaded\\\",\\\"size\\\":1074,\\\"digest\\\":\\\"sha256:3550a435b0100ff694dad3698b8f9298be337d0a5041a8dab201bc6f2a794225\\\",\\\"download_count\\\":1249,\\\"created_at\\\":\\\"2026-09-17T19:29:41Z\\\",\\\"updated_at\\\":\\\"2026-09-17T19:29:42Z\\\",\\\"browser_download_url\\\":\\\"https://github.com/router-for-me/CLIProxyAPI/releases/download/v7.3.7/checksums.txt\\\"},{\\\"url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/assets/570927106\\\",\\\"id\\\":570927106,\\\"node_id\\\":\\\"RA_kwDOPFM7E84iB6gC\\\",\\\"name\\\":\\\"CLIProxyAPI_7.3.7_darwin_aarch64.tar.gz\\\",\\\"label\\\":\\\"\\\",\\\"uploader\\\":{\\\"login\\\":\\\"github-actions[bot]\\\",\\\"id\\\":41898282,\\\"node_id\\\":\\\"MDM6Qm90NDE4OTgyODI=\\\",\\\"avatar_url\\\":\\\"https://avatars.githubusercontent.com/in/15368?v=4\\\",\\\"gravatar_id\\\":\\\"\\\",\\\"url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D\\\",\\\"html_url\\\":\\\"https://github.com/apps/github-actions\\\",\\\"followers_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/followers\\\",\\\"following_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}\\\",\\\"gists_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}\\\",\\\"starred_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}\\\",\\\"subscriptions_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions\\\",\\\"organizations_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/orgs\\\",\\\"repos_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/repos\\\",\\\"events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}\\\",\\\"received_events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/received_events\\\",\\\"type\\\":\\\"Bot\\\",\\\"user_view_type\\\":\\\"public\\\",\\\"site_admin\\\":false},\\\"content_type\\\":\\\"application/x-gtar\\\",\\\"state\\\":\\\"uploaded\\\",\\\"size\\\":20637026,\\\"digest\\\":\\\"sha256:15269902173e99b834b8577a520ddf8f89fbb4a224afd2230384c1890b06875f\\\",\\\"download_count\\\":541,\\\"created_at\\\":\\\"2026-09-17T19:21:15Z\\\",\\\"updated_at\\\":\\\"2026-09-17T19:21:16Z\\\",\\\"browser_download_url\\\":\\\"https://github.com/router-for-me/CLIProxyAPI/releases/download/v7.3.7/CLIProxyAPI_7.3.7_darwin_aarch64.tar.gz\\\"},{\\\"url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/assets/570929334\\\",\\\"id\\\":570929334,\\\"node_id\\\":\\\"RA_kwDOPFM7E84iB7C2\\\",\\\"name\\\":\\\"CLIProxyAPI_7.3.7_darwin_amd64.tar.gz\\\",\\\"label\\\":\\\"\\\",\\\"uploader\\\":{\\\"login\\\":\\\"github-actions[bot]\\\",\\\"id\\\":41898282,\\\"node_id\\\":\\\"MDM6Qm90NDE4OTgyODI=\\\",\\\"avatar_url\\\":\\\"https://avatars.githubusercontent.com/in/15368?v=4\\\",\\\"gravatar_id\\\":\\\"\\\",\\\"url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D\\\",\\\"html_url\\\":\\\"https://github.com/apps/github-actions\\\",\\\"followers_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/followers\\\",\\\"following_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}\\\",\\\"gists_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}\\\",\\\"starred_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}\\\",\\\"subscriptions_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions\\\",\\\"organizations_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/orgs\\\",\\\"repos_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/repos\\\",\\\"events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}\\\",\\\"received_events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/received_events\\\",\\\"type\\\":\\\"Bot\\\",\\\"user_view_type\\\":\\\"public\\\",\\\"site_admin\\\":false},\\\"content_type\\\":\\\"application/x-gtar\\\",\\\"state\\\":\\\"uploaded\\\",\\\"size\\\":22350154,\\\"digest\\\":\\\"sha256:7b20a8988afe1dff0a5f3cd3d7fd30300576d630506d747e74ce25dfc46bb2af\\\",\\\"download_count\\\":71,\\\"created_at\\\":\\\"2026-09-17T19:22:52Z\\\",\\\"updated_at\\\":\\\"2026-09-17T19:22:53Z\\\",\\\"browser_download_url\\\":\\\"https://github.com/router-for-me/CLIProxyAPI/releases/download/v7.3.7/CLIProxyAPI_7.3.7_darwin_amd64.tar.gz\\\"},{\\\"url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/assets/570926796\\\",\\\"id\\\":570926796,\\\"node_id\\\":\\\"RA_kwDOPFM7E84iB6bM\\\",\\\"name\\\":\\\"CLIProxyAPI_7.3.7_freebsd_aarch64_no-plugin.tar.gz\\\",\\\"label\\\":\\\"\\\",\\\"uploader\\\":{\\\"login\\\":\\\"github-actions[bot]\\\",\\\"id\\\":41898282,\\\"node_id\\\":\\\"MDM6Qm90NDE4OTgyODI=\\\",\\\"avatar_url\\\":\\\"https://avatars.githubusercontent.com/in/15368?v=4\\\",\\\"gravatar_id\\\":\\\"\\\",\\\"url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D\\\",\\\"html_url\\\":\\\"https://github.com/apps/github-actions\\\",\\\"followers_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/followers\\\",\\\"following_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}\\\",\\\"gists_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}\\\",\\\"starred_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}\\\",\\\"subscriptions_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions\\\",\\\"organizations_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/orgs\\\",\\\"repos_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/repos\\\",\\\"events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}\\\",\\\"received_events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/received_events\\\",\\\"type\\\":\\\"Bot\\\",\\\"user_view_type\\\":\\\"public\\\",\\\"site_admin\\\":false},\\\"content_type\\\":\\\"application/x-gtar\\\",\\\"state\\\":\\\"uploaded\\\",\\\"size\\\":20056984,\\\"digest\\\":\\\"sha256:9125c082b6651306ca26788e75394baf7651c0fa820ca916b68f4e231cfe579a\\\",\\\"download_count\\\":17,\\\"created_at\\\":\\\"2026-09-17T19:21:01Z\\\",\\\"updated_at\\\":\\\"2026-09-17T19:21:03Z\\\",\\\"browser_download_url\\\":\\\"https://github.com/router-for-me/CLIProxyAPI/releases/download/v7.3.7/CLIProxyAPI_7.3.7_freebsd_aarch64_no-plugin.tar.gz\\\"},{\\\"url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/assets/570927441\\\",\\\"id\\\":570927441,\\\"node_id\\\":\\\"RA_kwDOPFM7E84iB6lR\\\",\\\"name\\\":\\\"CLIProxyAPI_7.3.7_freebsd_amd64.tar.gz\\\",\\\"label\\\":\\\"\\\",\\\"uploader\\\":{\\\"login\\\":\\\"github-actions[bot]\\\",\\\"id\\\":41898282,\\\"node_id\\\":\\\"MDM6Qm90NDE4OTgyODI=\\\",\\\"avatar_url\\\":\\\"https://avatars.githubusercontent.com/in/15368?v=4\\\",\\\"gravatar_id\\\":\\\"\\\",\\\"url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D\\\",\\\"html_url\\\":\\\"https://github.com/apps/github-actions\\\",\\\"followers_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/followers\\\",\\\"following_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}\\\",\\\"gists_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}\\\",\\\"starred_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}\\\",\\\"subscriptions_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions\\\",\\\"organizations_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/orgs\\\",\\\"repos_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/repos\\\",\\\"events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}\\\",\\\"received_events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/received_events\\\",\\\"type\\\":\\\"Bot\\\",\\\"user_view_type\\\":\\\"public\\\",\\\"site_admin\\\":false},\\\"content_type\\\":\\\"application/x-gtar\\\",\\\"state\\\":\\\"uploaded\\\",\\\"size\\\":22371117,\\\"digest\\\":\\\"sha256:9f364afae7c23226e6af6c32c0e2f19b1fc64d5dd0090c80f233246af90fdff6\\\",\\\"download_count\\\":25,\\\"created_at\\\":\\\"2026-09-17T19:21:30Z\\\",\\\"updated_at\\\":\\\"2026-09-17T19:21:36Z\\\",\\\"browser_download_url\\\":\\\"https://github.com/router-for-me/CLIProxyAPI/releases/download/v7.3.7/CLIProxyAPI_7.3.7_freebsd_amd64.tar.gz\\\"},{\\\"url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/assets/570927077\\\",\\\"id\\\":570927077,\\\"node_id\\\":\\\"RA_kwDOPFM7E84iB6fl\\\",\\\"name\\\":\\\"CLIProxyAPI_7.3.7_linux_aarch64.tar.gz\\\",\\\"label\\\":\\\"\\\",\\\"uploader\\\":{\\\"login\\\":\\\"github-actions[bot]\\\",\\\"id\\\":41898282,\\\"node_id\\\":\\\"MDM6Qm90NDE4OTgyODI=\\\",\\\"avatar_url\\\":\\\"https://avatars.githubusercontent.com/in/15368?v=4\\\",\\\"gravatar_id\\\":\\\"\\\",\\\"url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D\\\",\\\"html_url\\\":\\\"https://github.com/apps/github-actions\\\",\\\"followers_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/followers\\\",\\\"following_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}\\\",\\\"gists_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}\\\",\\\"starred_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}\\\",\\\"subscriptions_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions\\\",\\\"organizations_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/orgs\\\",\\\"repos_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/repos\\\",\\\"events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}\\\",\\\"received_events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/received_events\\\",\\\"type\\\":\\\"Bot\\\",\\\"user_view_type\\\":\\\"public\\\",\\\"site_admin\\\":false},\\\"content_type\\\":\\\"application/x-gtar\\\",\\\"state\\\":\\\"uploaded\\\",\\\"size\\\":20189547,\\\"digest\\\":\\\"sha256:442aad130260cc22a75d2b230826e0b2185e92baf5ef8ae57b849ae694dddf2a\\\",\\\"download_count\\\":113,\\\"created_at\\\":\\\"2026-09-17T19:21:14Z\\\",\\\"updated_at\\\":\\\"2026-09-17T19:29:26Z\\\",\\\"browser_download_url\\\":\\\"https://github.com/router-for-me/CLIProxyAPI/releases/download/v7.3.7/CLIProxyAPI_7.3.7_linux_aarch64.tar.gz\\\"},{\\\"url\\\":\\\"https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/assets/570926851\\\",\\\"id\\\":570926851,\\\"node_id\\\":\\\"RA_kwDOPFM7E84iB6cD\\\",\\\"name\\\":\\\"CLIProxyAPI_7.3.7_linux_aarch64_no-plugin.tar.gz\\\",\\\"label\\\":\\\"\\\",\\\"uploader\\\":{\\\"login\\\":\\\"github-actions[bot]\\\",\\\"id\\\":41898282,\\\"node_id\\\":\\\"MDM6Qm90NDE4OTgyODI=\\\",\\\"avatar_url\\\":\\\"https://avatars.githubusercontent.com/in/15368?v=4\\\",\\\"gravatar_id\\\":\\\"\\\",\\\"url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D\\\",\\\"html_url\\\":\\\"https://github.com/apps/github-actions\\\",\\\"followers_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/followers\\\",\\\"following_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}\\\",\\\"gists_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}\\\",\\\"starred_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}\\\",\\\"subscriptions_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions\\\",\\\"organizations_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/orgs\\\",\\\"repos_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/repos\\\",\\\"events_url\\\":\\\"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}\\\",\\\"... (truncated)"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "cc78f562-284d-4e77-b0d9-b05fc54fd462",
+            "title": "latest",
+            "url": "https://api.github.com/repos/router-for-me/CLIProxyAPI/releases/latest",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/fetch",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Đánh giá mô hình và hình ảnh mới nhất",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "04527a28-a165-471d-9aa6-be98001b12f2",
+      "children": [
+        "655678d8-e1dc-4346-8ad3-350b5f5931fa"
+      ]
+    },
+    "655678d8-e1dc-4346-8ad3-350b5f5931fa": {
+      "id": "655678d8-e1dc-4346-8ad3-350b5f5931fa",
+      "message": {
+        "id": "655678d8-e1dc-4346-8ad3-350b5f5931fa",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Citation Marker: fileciteturn2file0\n",
+            "[L1] {\n[L2]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/handlers_routing.go\",\n[L3] ...\n[L4]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/handlers_routing.go\",\n[L5]   \"display_title\": \"sdk/api/handlers/handlers_routing.go\",\n[L6]   \"text_matches\": [\n[L7] ...\n[L8]       \"fragment\": \"\\nfunc isOpenAIImageOnlyModel(model string) bool {\\n\\tswitch strings.ToLower(strings.TrimSpace(routeModelBaseName(model))) {\\n\\tcase \\\"gpt-image-1.5\\\", \\\"gpt-image-2\\\", \\\"gpt-image-2.5-flare\\\", \\\"gpt-image-2.5-sunburst\\\", \\\"gpt-image-2.5\\\", \\\"grok-imagine-image\\\", \\\"grok-imagine-image-quality\\\", \\\"grok-imagine-image-2.0\\\":\\n\\t\\treturn true\\n\\tdefault:\\n\\t\\treturn false\",\n[L9]       \"matches\": [\n[L10] ...\n[L11]           \"text\": \"gpt-image-2.5\",\n[L12] ...\n[L13]           \"text\": \"gpt-image-2.5\",\n[L14] ...\n[L15]           \"text\": \"gpt-image-2.5\","
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "01ae3978-ff09-4c00-b832-be726689cc6e",
+            "title": "sdk/api/handlers/handlers_routing.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/handlers_routing.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Tìm kiếm repo hình ảnh hỗ trợ GPT-5.2 compact",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "7889c106-a2ac-400a-bcb7-b8f61bc7e96f",
+      "children": [
+        "02e5a77e-653a-4892-9477-8a7d80ae32e2"
+      ]
+    },
+    "02e5a77e-653a-4892-9477-8a7d80ae32e2": {
+      "id": "02e5a77e-653a-4892-9477-8a7d80ae32e2",
+      "message": {
+        "id": "02e5a77e-653a-4892-9477-8a7d80ae32e2",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Citation Marker: fileciteturn2file1\n",
+            "[L16] {\n[L17]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/registry/model_definitions.go\",\n[L18] ...\n[L19]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/registry/model_definitions.go\",\n[L20]   \"display_title\": \"internal/registry/model_definitions.go\",\n[L21]   \"text_matches\": [\n[L22] ...\n[L23]       \"fragment\": \"const (\\n\\tcodexBuiltinImage15ModelID         = \\\"gpt-image-1.5\\\"\\n\\tcodexBuiltinImageModelID           = \\\"gpt-image-2\\\"\\n\\tcodexBuiltinImage25FlareModelID    = \\\"gpt-image-2.5-flare\\\"\\n\\tcodexBuiltinImage25SunburstModelID = \\\"gpt-image-2.5-sunburst\\\"\\n\\tcodexBuiltinImage25ModelID         = \\\"gpt-image-2.5\\\"\\n\\txaiBuiltinImageModelID             = \\\"grok-imagine-image\\\"\",\n[L24]       \"matches\": [\n[L25] ...\n[L26]           \"text\": \"gpt-image-2.5\",\n[L27] ...\n[L28]           \"text\": \"gpt-image-2.5\",\n[L29] ...\n[L30]           \"text\": \"gpt-image-2.5\","
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "e0f5d187-e166-46b5-90cb-21097d061e77",
+            "title": "internal/registry/model_definitions.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/registry/model_definitions.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Tìm kiếm repo hình ảnh hỗ trợ GPT-5.2 compact",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "655678d8-e1dc-4346-8ad3-350b5f5931fa",
+      "children": [
+        "1f80461f-dc6d-4b8a-aa80-93d5f9d52976"
+      ]
+    },
+    "1f80461f-dc6d-4b8a-aa80-93d5f9d52976": {
+      "id": "1f80461f-dc6d-4b8a-aa80-93d5f9d52976",
+      "message": {
+        "id": "1f80461f-dc6d-4b8a-aa80-93d5f9d52976",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Citation Marker: fileciteturn2file2\n",
+            "[L31] {\n[L32]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/client/codex/models/models.go\",\n[L33] ...\n[L34]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/client/codex/models/models.go\",\n[L35]   \"display_title\": \"internal/client/codex/models/models.go\",\n[L36]   \"text_matches\": [\n[L37] ...\n[L38]       \"fragment\": \"\\t\\ttarget = strings.TrimSpace(target[idx+1:])\\n\\t}\\n\\tswitch target {\\n\\tcase \\\"grok-imagine-image-quality\\\", \\\"gpt-image-1.5\\\", \\\"gpt-image-2\\\", \\\"gpt-image-2.5-flare\\\", \\\"gpt-image-2.5-sunburst\\\", \\\"gpt-image-2.5\\\", \\\"grok-imagine-image\\\", \\\"grok-imagine-image-2.0\\\", \\\"grok-imagine-video\\\", \\\"grok-imagine-video-1.5\\\", \\\"grok-imagine-video-1.5-preview\\\":\\n\\t\\tentry[\\\"visibility\\\"] = \\\"hide\\\"\\n\\t}\\n}\",\n[L39]       \"matches\": [\n[L40] ...\n[L41]           \"text\": \"gpt-image-2.5\",\n[L42] ...\n[L43]           \"text\": \"gpt-image-2.5\",\n[L44] ...\n[L45]           \"text\": \"gpt-image-2.5\","
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "0eb731f7-9709-4fba-af0c-08c57350f23d",
+            "title": "internal/client/codex/models/models.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/client/codex/models/models.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Tìm kiếm repo hình ảnh hỗ trợ GPT-5.2 compact",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "02e5a77e-653a-4892-9477-8a7d80ae32e2",
+      "children": [
+        "6a2f5e62-89af-48ae-accf-fb1ef87a81c1"
+      ]
+    },
+    "6a2f5e62-89af-48ae-accf-fb1ef87a81c1": {
+      "id": "6a2f5e62-89af-48ae-accf-fb1ef87a81c1",
+      "message": {
+        "id": "6a2f5e62-89af-48ae-accf-fb1ef87a81c1",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Citation Marker: fileciteturn2file3\n",
+            "[L46] {\n[L47]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/runtime/executor/codex_openai_images.go\",\n[L48]   \"path\": \"internal/runtime/executor/codex_openai_images.go\",\n[L49]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/runtime/executor/codex_openai_images.go\",\n[L50]   \"display_title\": \"internal/runtime/executor/codex_openai_images.go\",\n[L51]   \"text_matches\": [\n[L52] ...\n[L53]       \"fragment\": \"\\tcodexDirectImagesGenerations = \\\"/images/generations\\\"\\n\\tcodexDirectImagesEdit        = \\\"/images/edits\\\"\\n\\tcodexGPTImage15Model         = \\\"gpt-image-1.5\\\"\\n\\tcodexGPTImage25FlareModel    = \\\"gpt-image-2.5-flare\\\"\\n\\tcodexGPTImage25SunburstModel = \\\"gpt-image-2.5-sunburst\\\"\\n\\tcodexGPTImage25Model         = \\\"gpt-image-2.5\\\"\\n\\tcodexOpenAIImagesMainModel   = \\\"gpt-5.4-mini\\\"\",\n[L54]       \"matches\": [\n[L55] ...\n[L56]           \"text\": \"gpt-image-2.5\",\n[L57] ...\n[L58]           \"text\": \"gpt-image-2.5\",\n[L59] ...\n[L60]           \"text\": \"gpt-image-2.5\","
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "6d95f426-1a17-45fc-8d47-aa5b2cabbdc0",
+            "title": "internal/runtime/executor/codex_openai_images.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/internal/runtime/executor/codex_openai_images.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Tìm kiếm repo hình ảnh hỗ trợ GPT-5.2 compact",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "1f80461f-dc6d-4b8a-aa80-93d5f9d52976",
+      "children": [
+        "fffe8fc5-215e-45cc-8296-186c10189d73"
+      ]
+    },
+    "fffe8fc5-215e-45cc-8296-186c10189d73": {
+      "id": "fffe8fc5-215e-45cc-8296-186c10189d73",
+      "message": {
+        "id": "fffe8fc5-215e-45cc-8296-186c10189d73",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Citation Marker: fileciteturn2file4\n",
+            "Compact result:\n[L61] {\n[L62]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/openai/openai_images_handlers.go\",\n[L63]   \"path\": \"sdk/api/handlers/openai/openai_images_handlers.go\",\n[L64]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/openai/openai_images_handlers.go\",\n[L65]   \"display_title\": \"sdk/api/handlers/openai/openai_images_handlers.go\",\n[L66]   \"text_matches\": [\n[L67]     {\n[L68]       \"property\": \"content\",\n[L69]       \"fragment\": \"\\tdefaultImagesMainModel      = \\\"gpt-5.4-mini\\\"\\n\\tgptImage15Model             = \\\"gpt-image-1.5\\\"\\n\\tdefaultImagesToolModel      = \\\"gpt-image-2\\\"\\n\\tgptImage25FlareModel        = \\\"gpt-image-2.5-flare\\\"\\n\\tgptImage25SunburstModel     = \\\"gpt-image-2.5-sunburst\\\"\\n\\tgptImage2...\n[L70]       \"matches\": [\n[L71]         {\n[L72]           \"text\": \"gpt-image-2.5\",\nFull entry omitted because the tool response token budget was exhausted."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "a60a2c12-c8f3-4ca0-bd8e-c3efaf9f87d7",
+            "title": "sdk/api/handlers/openai/openai_images_handlers.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/openai/openai_images_handlers.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Tìm kiếm repo hình ảnh hỗ trợ GPT-5.2 compact",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "6a2f5e62-89af-48ae-accf-fb1ef87a81c1",
+      "children": [
+        "a152f761-0298-45c3-8997-152584b0e68a"
+      ]
+    },
+    "a152f761-0298-45c3-8997-152584b0e68a": {
+      "id": "a152f761-0298-45c3-8997-152584b0e68a",
+      "message": {
+        "id": "a152f761-0298-45c3-8997-152584b0e68a",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Citation Marker: fileciteturn2file5\n",
+            "Compact result:\n[L76] {\n[L77]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/cliproxy/service_codex_models_test.go\",\n[L78]   \"path\": \"sdk/cliproxy/service_codex_models_test.go\",\n[L79]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/cliproxy/service_codex_models_test.go\",\n[L80]   \"display_title\": \"sdk/cliproxy/service_codex_models_test.go\",\n[L81]   \"text_matches\": [\n[L82]     {\n[L83]       \"property\": \"content\",\n[L84]       \"fragment\": \"\\t\\t\\tname:        \\\"defaults without explicit models\\\",\\n\\t\\t\\tentry:       config.CodexKey{APIKey: \\\"default-key\\\"},\\n\\t\\t\\twantIDs:     codexModelIDSet(defaultModels),\\n\\t\\t\\twantPresent: []string{\\\"gpt-image-1.5\\\", \\\"gpt-image-2\\\", \\\"gpt-image-2.5-flare\\\", \\\"gpt-image-2.5-s...\n[L85]       \"matches\": [\n[L86]         {\n[L87]           \"text\": \"gpt-image-2.5\",\nFull entry omitted because the tool response token budget was exhausted."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "ae5339a4-3980-4833-9bc7-73f380628dec",
+            "title": "sdk/cliproxy/service_codex_models_test.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/cliproxy/service_codex_models_test.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Tìm kiếm repo hình ảnh hỗ trợ GPT-5.2 compact",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "fffe8fc5-215e-45cc-8296-186c10189d73",
+      "children": [
+        "8b076747-f66d-4e98-b01c-053ce2c2afe4"
+      ]
+    },
+    "8b076747-f66d-4e98-b01c-053ce2c2afe4": {
+      "id": "8b076747-f66d-4e98-b01c-053ce2c2afe4",
+      "message": {
+        "id": "8b076747-f66d-4e98-b01c-053ce2c2afe4",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Citation Marker: fileciteturn2file6\n",
+            "Compact result:\n[L91] {\n[L92]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/cliproxy/config_model_display_name_test.go\",\n[L93]   \"path\": \"sdk/cliproxy/config_model_display_name_test.go\",\n[L94]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/cliproxy/config_model_display_name_test.go\",\n[L95]   \"display_title\": \"sdk/cliproxy/config_model_display_name_test.go\",\n[L96]   \"text_matches\": [\n[L97]     {\n[L98]       \"property\": \"content\",\n[L99]       \"fragment\": \"\\t\\t\\tdefaultIDs[model.ID] = struct{}{}\\n\\t\\t}\\n\\t}\\n\\tfor _, modelID := range []string{\\\"gpt-image-1.5\\\", \\\"gpt-image-2\\\", \\\"gpt-image-2.5-flare\\\", \\\"gpt-image-2.5-sunburst\\\", \\\"gpt-image-2.5\\\"} {\\n\\t\\tif _, ok := defaultIDs[modelID]; !ok {\\n\\t\\t\\tt.Errorf(\\\"missing default mo...\n[L100]       \"matches\": [\n[L101]         {\n[L102]           \"text\": \"gpt-image-2.5\",\nFull entry omitted because the tool response token budget was exhausted."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "4ccf70be-8c17-47e7-8ea1-27a70c85c707",
+            "title": "sdk/cliproxy/config_model_display_name_test.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/cliproxy/config_model_display_name_test.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Tìm kiếm repo hình ảnh hỗ trợ GPT-5.2 compact",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "a152f761-0298-45c3-8997-152584b0e68a",
+      "children": [
+        "9790664f-a61a-4df9-b137-fc20e3085068"
+      ]
+    },
+    "9790664f-a61a-4df9-b137-fc20e3085068": {
+      "id": "9790664f-a61a-4df9-b137-fc20e3085068",
+      "message": {
+        "id": "9790664f-a61a-4df9-b137-fc20e3085068",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Citation Marker: fileciteturn2file7\n",
+            "Compact result:\n[L106] {\n[L107]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/handlers_request_details_test.go\",\n[L108]   \"path\": \"sdk/api/handlers/handlers_request_details_test.go\",\n[L109]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/handlers_request_details_test.go\",\n[L110]   \"display_title\": \"sdk/api/handlers/handlers_request_details_test.go\",\n[L111]   \"text_matches\": [\n[L112]     {\n[L113]       \"property\": \"content\",\n[L114]       \"fragment\": \"\\t\\t\\\"codex/gpt-image-2.5-flare\\\",\\n\\t\\t\\\"gpt-image-2.5-sunburst\\\",\\n\\t\\t\\\"codex/gpt-image-2.5-sunburst\\\",\",\n[L115]       \"matches\": [\n[L116]         {\n[L117]           \"text\": \"gpt-image-2.5\",\nFull entry omitted because the tool response token budget was exhausted."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "106d1c27-7c4e-4915-be35-c9024d1b9fcd",
+            "title": "sdk/api/handlers/handlers_request_details_test.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/b773607e3e7756dc6020a291825e4eb08899595a/sdk/api/handlers/handlers_request_details_test.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Tìm kiếm repo hình ảnh hỗ trợ GPT-5.2 compact",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "8b076747-f66d-4e98-b01c-053ce2c2afe4",
+      "children": [
+        "769b6484-6ecd-462a-bb62-1eb491ee80bf"
+      ]
+    },
+    "769b6484-6ecd-462a-bb62-1eb491ee80bf": {
+      "id": "769b6484-6ecd-462a-bb62-1eb491ee80bf",
+      "message": {
+        "id": "769b6484-6ecd-462a-bb62-1eb491ee80bf",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/search_commits",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Kiểm tra hỗ trợ GPT Image 2.5 trong bản phát hành",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "9790664f-a61a-4df9-b137-fc20e3085068",
+      "children": [
+        "5e407862-7183-4164-891f-fc0b7e108775"
+      ]
+    },
+    "5e407862-7183-4164-891f-fc0b7e108775": {
+      "id": "5e407862-7183-4164-891f-fc0b7e108775",
+      "message": {
+        "id": "5e407862-7183-4164-891f-fc0b7e108775",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "Resource uri: /response/turn4\nShowing 10 of 13 lines.\nResponse output was truncated at a line boundary to fit the tool response budget.",
+            "Citation Marker: fileciteturn4file0\n",
+            "[L1] {\n[L2]   \"content\": \"package handlers\\n\\nimport (\\n\\t\\\"errors\\\"\\n\\t\\\"fmt\\\"\\n\\t\\\"net/http\\\"\\n\\t\\\"strings\\\"\\n\\n\\t\\\"github.com/tidwall/sjson\\\"\\n\\n\\t. \\\"github.com/router-for-me/CLIProxyAPI/v7/internal/constant\\\"\\n\\t\\\"github.com/router-for-me/CLIProxyAPI/v7/internal/interfaces\\\"\\n\\t\\\"github.com/router-for-me/CLIProxyAPI/v7/internal/thinking\\\"\\n\\t\\\"github.com/router-for-me/CLIProxyAPI/v7/internal/util\\\"\\n\\tcoreexecutor \\\"github.com/router-for-me/CLIProxyAPI/v7/sdk/cliproxy/executor\\\"\\n\\t\\\"github.com/router-for-me/CLIProxyAPI/v7/sdk/pluginapi\\\"\\n\\t\\\"golang.org/x/net/context\\\"\\n)\\n\\n// PluginModelRouterHost routes matching requests to a plugin executor, the router's own executor,\\n// or a built-in provider before model-to-provider resolution and auth selection.\\ntype PluginModelRouterHost interface {\\n\\tRouteModel(context.Context, pluginapi.ModelRouteRequest) (pluginapi.ModelRouteResponse, bool)\\n}\\n\\ntype pluginModelRouterSkipHost interface {\\n\\tRouteModelExcept(context.Context, pluginapi.ModelRouteRequest, string) (pluginapi.ModelRouteResponse, bool)\\n}\\n\\ntype modelRouterDetector interface {\\n\\tHasModelRouters() bool\\n}\\n\\ntype modelRouterSkipDetector interface {\\n\\tHasModelRoutersExcept(string) bool\\n}\\n\\nfunc preferExecutionProvider(providers []string, preferred string) []string {\\n\\tpreferred = strings.ToLower(strings.TrimSpace(preferred))\\n\\tif preferred == \\\"\\\" || len(providers) < 2 {\\n\\t\\treturn providers\\n\\t}\\n\\tpreferredIndex := -1\\n\\tfor i := range providers {\\n\\t\\tif strings.ToLower(strings.TrimSpace(providers[i])) == preferred {\\n\\t\\t\\tpreferredIndex = i\\n\\t\\t\\tbreak\\n\\t\\t}\\n\\t}\\n\\tif preferredIndex <= 0 {\\n\\t\\treturn providers\\n\\t}\\n\\tout := make([]string, 0, len(providers))\\n\\tout = append(out, providers[preferredIndex])\\n\\tout = append(out, providers[:preferredIndex]...)\\n\\tout = append(out, providers[preferredIndex+1:]...)\\n\\treturn out\\n}\\n\\nfunc adjustExecutionProvidersForEntryProtocol(entryProtocol string, providers []string) []string {\\n\\tif entryProtocol == Interactions {\\n\\t\\treturn preferExecutionProvider(providers, GeminiInteractions)\\n\\t}\\n\\tif supportsNativeInteractionsEntryProtocol(entryProtocol) {\\n\\t\\treturn providers\\n\\t}\\n\\treturn excludeExecutionProvider(providers, GeminiInteractions)\\n}\\n\\nfunc supportsNativeInteractionsEntryProtocol(entryProtocol string) bool {\\n\\tswitch entryProtocol {\\n\\tcase Interactions, OpenAI, OpenaiResponse, Claude, Gemini:\\n\\t\\treturn true\\n\\tdefault:\\n\\t\\treturn false\\n\\t}\\n}\\n\\nfunc excludeExecutionProvider(providers []string, excluded string) []string {\\n\\texcluded = strings.ToLower(strings.TrimSpace(excluded))\\n\\tif excluded == \\\"\\\" || len(providers) == 0 {\\n\\t\\treturn providers\\n\\t}\\n\\texcludedIndex := -1\\n\\tfor i := range providers {\\n\\t\\tif strings.ToLower(strings.TrimSpace(providers[i])) == excluded {\\n\\t\\t\\texcludedIndex = i\\n\\t\\t\\tbreak\\n\\t\\t}\\n\\t}\\n\\tif excludedIndex == -1 {\\n\\t\\treturn providers\\n\\t}\\n\\tout := make([]string, 0, len(providers)-1)\\n\\tout = append(out, providers[:excludedIndex]...)\\n\\tout = append(out, providers[excludedIndex+1:]...)\\n\\treturn out\\n}\\n\\nfunc (h *BaseAPIHandler) getRequestDetails(modelName string) (providers []string, normalizedModel string, err *interfaces.ErrorMessage) {\\n\\treturn h.getRequestDetailsWithOptions(modelName, false)\\n}\\n\\nfunc validateNativeInteractionsExecution(entryProtocol string, execOptions modelExecutionOptions, routeDecision modelRouteDecision) *interfaces.ErrorMessage {\\n\\tforcedProvider := strings.ToLower(strings.TrimSpace(execOptions.ForcedProvider))\\n\\tif forcedProvider == \\\"\\\" || entryProtocol != Interactions {\\n\\t\\treturn nil\\n\\t}\\n\\tif routeDecision.ExecutorPluginID != \\\"\\\" {\\n\\t\\treturn nativeInteractionsExecutionError()\\n\\t}\\n\\tif routeProvider := strings.ToLower(strings.TrimSpace(routeDecision.Provider)); routeProvider != \\\"\\\" && routeProvider != forcedProvider {\\n\\t\\treturn nativeInteractionsExecutionError()\\n\\t}\\n\\treturn nil\\n}\\n\\nfunc nativeInteractionsExecutionError() *interfaces.ErrorMessage {\\n\\treturn &interfaces.ErrorMessage{\\n\\t\\tStatusCode: http.StatusBadRequest,\\n\\t\\tError:      fmt.Errorf(\\\"agent is only supported for native interactions execution\\\"),\\n\\t}\\n}\\n\\n// providersForExecution resolves the providers and normalized model for a request. When a model\\n// router selected a built-in provider, it skips model->provider resolution and uses the router's\\n// provider (with an optional target model); otherwise it falls back to the registry-based path.\\nfunc (h *BaseAPIHandler) providersForExecution(modelName, originalRequestedModel string, allowImageModel bool, routeDecision modelRouteDecision, execOptions modelExecutionOptions) ([]string, string, *interfaces.ErrorMessage) {\\n\\tforcedProvider := strings.ToLower(strings.TrimSpace(execOptions.ForcedProvider))\\n\\tif forcedProvider != \\\"\\\" {\\n\\t\\tif routeDecision.ExecutorPluginID != \\\"\\\" {\\n\\t\\t\\treturn nil, \\\"\\\", nativeInteractionsExecutionError()\\n\\t\\t}\\n\\t\\tif routeProvider := strings.ToLower(strings.TrimSpace(routeDecision.Provider)); routeProvider != \\\"\\\" && routeProvider != forcedProvider {\\n\\t\\t\\treturn nil, \\\"\\\", nativeInteractionsExecutionError()\\n\\t\\t}\\n\\t\\tnormalizedModel := strings.TrimSpace(modelName)\\n\\t\\tif normalizedModel == \\\"\\\" {\\n\\t\\t\\tnormalizedModel = strings.TrimSpace(originalRequestedModel)\\n\\t\\t}\\n\\t\\tif errMsg := h.validateImageOnlyModel(normalizedModel, allowImageModel); errMsg != nil {\\n\\t\\t\\treturn nil, \\\"\\\", errMsg\\n\\t\\t}\\n\\t\\treturn []string{forcedProvider}, normalizedModel, nil\\n\\t}\\n\\tif routeDecision.Provider != \\\"\\\" {\\n\\t\\tnormalizedModel := originalRequestedModel\\n\\t\\tif routeDecision.Model != \\\"\\\" {\\n\\t\\t\\tnormalizedModel = routeDecision.Model\\n\\t\\t}\\n\\t\\tif errMsg := h.validateImageOnlyModel(normalizedModel, allowImageModel); errMsg != nil {\\n\\t\\t\\treturn nil, \\\"\\\", errMsg\\n\\t\\t}\\n\\t\\treturn []string{routeDecision.Provider}, normalizedModel, nil\\n\\t}\\n\\treturn h.getRequestDetailsWithOptions(modelName, allowImageModel)\\n}\\n\\nfunc (h *BaseAPIHandler) getRequestDetailsWithOptions(modelName string, allowImageModel bool) (providers []string, normalizedModel string, err *interfaces.ErrorMessage) {\\n\\tresolvedModelName := modelName\\n\\tinitialSuffix := thinking.ParseSuffix(modelName)\\n\\tif initialSuffix.ModelName == \\\"auto\\\" {\\n\\t\\tif h != nil && h.AuthManager != nil && h.AuthManager.HomeEnabled() {\\n\\t\\t\\tresolvedModelName = modelName\\n\\t\\t} else {\\n\\t\\t\\tresolvedBase := util.ResolveAutoModel(initialSuffix.ModelName)\\n\\t\\t\\tif initialSuffix.HasSuffix {\\n\\t\\t\\t\\tresolvedModelName = fmt.Sprintf(\\\"%s(%s)\\\", resolvedBase, initialSuffix.RawSuffix)\\n\\t\\t\\t} else {\\n\\t\\t\\t\\tresolvedModelName = resolvedBase\\n\\t\\t\\t}\\n\\t\\t}\\n\\t} else {\\n\\t\\tif h != nil && h.AuthManager != nil && h.AuthManager.HomeEnabled() {\\n\\t\\t\\tresolvedModelName = modelName\\n\\t\\t} else {\\n\\t\\t\\tresolvedModelName = util.ResolveAutoModel(modelName)\\n\\t\\t}\\n\\t}\\n\\n\\tparsed := thinking.ParseSuffix(resolvedModelName)\\n\\tbaseModel := strings.TrimSpace(parsed.ModelName)\\n\\n\\tif errMsg := h.validateImageOnlyModel(baseModel, allowImageModel); errMsg != nil {\\n\\t\\treturn nil, \\\"\\\", errMsg\\n\\t}\\n\\n\\tif h != nil && h.AuthManager != nil && h.AuthManager.HomeEnabled() {\\n\\t\\treturn []string{\\\"home\\\"}, resolvedModelName, nil\\n\\t}\\n\\n\\tproviders = util.GetProviderName(baseModel)\\n\\t// Fallback: if baseModel has no provider but differs from resolvedModelName,\\n\\t// try using the full model name. This handles edge cases where custom models\\n\\t// may be registered with their full suffixed name (e.g., \\\"my-model(8192)\\\").\\n\\t// Evaluated in Story 11.8: This fallback is intentionally preserved to support\\n\\t// custom model registrations that include thinking suffixes.\\n\\tif len(providers) == 0 && baseModel != resolvedModelName {\\n\\t\\tproviders = util.GetProviderName(resolvedModelName)\\n\\t}\\n\\n\\tif len(providers) == 0 {\\n\\t\\t// The client asked for a model this proxy cannot route. Report it as a request\\n\\t\\t// error so streaming clients receive an actionable message instead of a\\n\\t\\t// gateway failure they would keep retrying. 400 is used rather than 404 to keep\\n\\t\\t// it distinguishable from an unregistered HTTP route.\\n\\t\\t// The model name is client supplied, so it is inserted through sjson rather\\n\\t\\t// than formatted into the JSON literal: an unescaped quote would otherwise\\n\\t\\t// corrupt the body or let the caller overwrite the error code.\\n\\t\\tbody := `{\\\"error\\\":{\\\"message\\\":\\\"\\\",\\\"type\\\":\\\"invalid_request_error\\\",\\\"code\\\":\\\"model_not_found\\\",\\\"param\\\":\\\"model\\\"}}`\\n\\t\\tbody, errSet := sjson.Set(body, \\\"error.message\\\", \\\"unknown provider for model \\\"+modelName)\\n\\t\\tif errSet != nil {\\n\\t\\t\\tbody = `{\\\"error\\\":{\\\"message\\\":\\\"unknown provider for model\\\",\\\"type\\\":\\\"invalid_request_error\\\",\\\"code\\\":\\\"model_not_found\\\",\\\"param\\\":\\\"model\\\"}}`\\n\\t\\t}\\n\\t\\treturn nil, \\\"\\\", &interfaces.ErrorMessage{\\n\\t\\t\\tStatusCode: http.StatusBadRequest,\\n\\t\\t\\tError:      errors.New(body),\\n\\t\\t}\\n\\t}\\n\\n\\t// The thinking suffix is preserved in the model name itself, so no\\n\\t// metadata-based configuration passing is needed.\\n\\treturn providers, resolvedModelName, nil\\n}\\n\\nfunc (h *BaseAPIHandler) validateImageOnlyModel(modelName string, allowImageModel bool) *interfaces.ErrorMessage {\\n\\tbaseModel := strings.TrimSpace(thinking.ParseSuffix(modelName).ModelName)\\n\\tif baseModel == \\\"\\\" {\\n\\t\\tbaseModel = strings.TrimSpace(modelName)\\n\\t}\\n\\tif isOpenAIImageOnlyModel(baseModel) && !allowImageModel {\\n\\t\\treturn &interfaces.ErrorMessage{\\n\\t\\t\\tStatusCode: http.StatusServiceUnavailable,\\n\\t\\t\\tError:      fmt.Errorf(\\\"model %s is only supported on /v1/images/generations and /v1/images/edits\\\", routeModelBaseName(baseModel)),\\n\\t\\t}\\n\\t}\\n\\treturn nil\\n}\\n\\nfunc isOpenAIImageOnlyModel(model string) bool {\\n\\tswitch strings.ToLower(strings.TrimSpace(routeModelBaseName(model))) {\\n\\tcase \\\"gpt-image-1.5\\\", \\\"gpt-image-2\\\", \\\"gpt-image-2.5-flare\\\", \\\"gpt-image-2.5-sunburst\\\", \\\"gpt-image-2.5\\\", \\\"grok-imagine-image\\\", \\\"grok-imagine-image-quality\\\", \\\"grok-imagine-image-2.0\\\":\\n\\t\\treturn true\\n\\tdefault:\\n\\t\\treturn false\\n\\t}\\n}\\n\\nfunc routeModelBaseName(model string) string {\\n\\tmodel = strings.TrimSpace(model)\\n\\tif idx := strings.LastIndex(model, \\\"/\\\"); idx >= 0 && idx < len(model)-1 {\\n\\t\\treturn strings.TrimSpace(model[idx+1:])\\n\\t}\\n\\treturn model\\n}\\n\\nfunc cloneBytes(src []byte) []byte {\\n\\tif len(src) == 0 {\\n\\t\\treturn nil\\n\\t}\\n\\tdst := make([]byte, len(src))\\n\\tcopy(dst, src)\\n\\treturn dst\\n}\\n\\nfunc (h *BaseAPIHandler) modelRouterHost() PluginModelRouterHost {\\n\\tif h == nil {\\n\\t\\treturn nil\\n\\t}\\n\\tif !isNilPluginModelRouterHost(h.ModelRouterHost) {\\n\\t\\treturn h.ModelRouterHost\\n\\t}\\n\\thost := h.interceptorHost()\\n\\tif host == nil {\\n\\t\\treturn nil\\n\\t}\\n\\trouter, ok := host.(PluginModelRouterHost)\\n\\tif !ok {\\n\\t\\treturn nil\\n\\t}\\n\\treturn router\\n}\\n\\ntype modelRouteDecision struct {\\n\\tExecutorPluginID string\\n\\tProvider         string\\n\\tModel            string\\n}\\n\\nfunc routeModel(ctx context.Context, host PluginModelRouterHost, req pluginapi.ModelRouteRequest, skipPluginID string) (pluginapi.ModelRouteResponse, bool) {\\n\\tif host == nil {\\n\\t\\treturn pluginapi.ModelRouteResponse{}, false\\n\\t}\\n\\tskipPluginID = strings.TrimSpace(skipPluginID)\\n\\tif skipPluginID != \\\"\\\" {\\n\\t\\tif skipper, ok := host.(pluginModelRouterSkipHost); ok {\\n\\t\\t\\treturn skipper.RouteModelExcept(ctx, req, skipPluginID)\\n\\t\\t}\\n\\t\\treturn pluginapi.ModelRouteResponse{}, false\\n\\t}\\n\\treturn host.RouteModel(ctx, req)\\n}\\n\\nfunc modelRoutersEnabled(host PluginModelRouterHost, skipPluginID string) bool {\\n\\tif host == nil {\\n\\t\\treturn false\\n\\t}\\n\\tskipPluginID = strings.TrimSpace(skipPluginID)\\n\\tif skipPluginID != \\\"\\\" {\\n\\t\\tif _, ok := host.(pluginModelRouterSkipHost); !ok {\\n\\t\\t\\treturn false\\n\\t\\t}\\n\\t\\tif detector, ok := host.(modelRouterSkipDetector); ok {\\n\\t\\t\\treturn detector.HasModelRoutersExcept(skipPluginID)\\n\\t\\t}\\n\\t}\\n\\tif detector, ok := host.(modelRouterDetector); ok {\\n\\t\\treturn detector.HasModelRouters()\\n\\t}\\n\\t// No detector: treat routing as disabled (same conservative default as before any\\n\\t// ModelRouter existed). Hosts that route must implement HasModelRouters (pluginhost.Host does).\\n\\treturn false\\n}\\n\\nfunc (h *BaseAPIHandler) applyModelRouter(ctx context.Context, handlerType, modelName string, rawJSON []byte, stream bool, execOptions modelExecutionOptions) modelRouteDecision {\\n\\tvar decision modelRouteDecision\\n\\thost := h.modelRouterHost()\\n\\tif host == nil || !modelRoutersEnabled(host, execOptions.SkipRouterPluginID) {\\n\\t\\treturn decision\\n\\t}\\n\\tmeta := requestExecutionMetadata(ctx)\\n\\tmeta[coreexecutor.RequestedModelMetadataKey] = modelName\\n\\taddModelExecutionSourceMetadata(meta, execOptions.InternalSource)\\n\\tresp, ok := routeModel(ctx, host, pluginapi.ModelRouteRequest{\\n\\t\\tSourceFormat:   handlerType,\\n\\t\\tRequestedModel: modelName,\\n\\t\\tStream:         stream,\\n\\t\\tHeaders:        modelExecutionHeaders(ctx, execOptions.Headers),\\n\\t\\tQuery:          modelExecutionQuery(ctx, execOptions.Query),\\n\\t\\tBody:           cloneBytes(rawJSON),\\n\\t\\tMetadata:       meta,\\n\\t}, execOptions.SkipRouterPluginID)\\n\\tif !ok || !resp.Handled {\\n\\t\\treturn decision\\n\\t}\\n\\tswitch resp.TargetKind {\\n\\tcase pluginapi.ModelRouteTargetSelf, pluginapi.ModelRouteTargetExecutor:\\n\\t\\tdecision.ExecutorPluginID = strings.TrimSpace(resp.Target)\\n\\tcase pluginapi.ModelRouteTargetProvider:\\n\\t\\tdecision.Provider = strings.ToLower(strings.TrimSpace(resp.Target))\\n\\t\\tdecision.Model = strings.TrimSpace(resp.TargetModel)\\n\\t}\\n\\treturn decision\\n}\\n\",\n[L3]   \"title\": \"handlers_routing.go\",\n[L4]   \"modified_date\": \"2026-09-10T02:40:53Z\",\n[L5]   \"url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/v7.3.7/sdk/api/handlers/handlers_routing.go\",\n[L6]   \"display_url\": \"https://github.com/router-for-me/CLIProxyAPI/blob/v7.3.7/sdk/api/handlers/handlers_routing.go\",\n[L7]   \"display_title\": \"handlers_routing.go\",\n[L8]   \"structuredContent\": {\n[L9]     \"title\": \"handlers_routing.go\",\n[L10]     \"content\": \"package handlers\\n\\nimport (\\n\\t\\\"errors\\\"\\n\\t\\\"fmt\\\"\\n\\t\\\"net/http\\\"\\n\\t\\\"strings\\\"\\n\\n\\t\\\"github.com/tidwall/sjson\\\"\\n\\n\\t. \\\"github.com/router-for-me/CLIProxyAPI/v7/internal/constant\\\"\\n\\t\\\"github.com/router-for-me/CLIProxyAPI/v7/internal/interfaces\\\"\\n\\t\\\"github.com/router-for-me/CLIProxyAPI/v7/internal/thinking\\\"\\n\\t\\\"github.com/router-for-me/CLIProxyAPI/v7/internal/util\\\"\\n\\tcoreexecutor \\\"github.com/router-for-me/CLIProxyAPI/v7/sdk/cliproxy/executor\\\"\\n\\t\\\"github.com/router-for-me/CLIProxyAPI/v7/sdk/pluginapi\\\"\\n\\t\\\"golang.org/x/net/context\\\"\\n)\\n\\n// PluginModelRouterHost routes matching requests to a plugin executor, the router's own executor,\\n// or a built-in provider before model-to-provider resolution and auth selection.\\ntype PluginModelRouterHost interface {\\n\\tRouteModel(context.Context, pluginapi.ModelRouteRequest) (pluginapi.ModelRouteResponse, bool)\\n}\\n\\ntype pluginModelRouterSkipHost interface {\\n\\tRouteModelExcept(context.Context, pluginapi.ModelRouteRequest, string) (pluginapi.ModelRouteResponse, bool)\\n}\\n\\ntype modelRouterDetector interface {\\n\\tHasModelRouters() bool\\n}\\n\\ntype modelRouterSkipDetector interface {\\n\\tHasModelRoutersExcept(string) bool\\n}\\n\\nfunc preferExecutionProvider(providers []string, preferred... (truncated)"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citation_metadata": {
+            "id": "661f7d90-825a-49c5-8227-e7fa07a9bd1e",
+            "title": "handlers_routing.go",
+            "url": "https://github.com/router-for-me/CLIProxyAPI/blob/v7.3.7/sdk/api/handlers/handlers_routing.go",
+            "created_at": null,
+            "last_modified_at": null,
+            "__connector_id": "connector_76869538009648d5b282a4bb21c3d157"
+          },
+          "invoked_plugin": {},
+          "invoked_resource": {
+            "resource_uri": "/connector_76869538009648d5b282a4bb21c3d157/link_6a9828e929208191a8b0cb71878f70a6/fetch",
+            "publish_status": "published",
+            "app_name": "GitHub"
+          },
+          "resolved_model_slug": "gpt-6-pro",
+          "chime_version": 2,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "reasoning_title": "Phân tích định tuyến handler API CLIProxyAPI",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789721999.112553,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "769b6484-6ecd-462a-bb62-1eb491ee80bf",
+      "children": [
+        "229f9c4a-5b58-5518-b0e4-84bc20322ff4"
+      ]
+    },
+    "229f9c4a-5b58-5518-b0e4-84bc20322ff4": {
+      "id": "229f9c4a-5b58-5518-b0e4-84bc20322ff4",
+      "message": {
+        "id": "229f9c4a-5b58-5518-b0e4-84bc20322ff4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789722116.234118,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 2m 1s"
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 121,
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "reasoning_start_time": 1789721994.798861,
+          "reasoning_end_time": 1789722116.234118,
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5e407862-7183-4164-891f-fc0b7e108775",
+      "children": [
+        "e2e7d821-fed8-4825-a5bc-8e809e4a2f3a"
+      ]
+    },
+    "e2e7d821-fed8-4825-a5bc-8e809e4a2f3a": {
+      "id": "e2e7d821-fed8-4825-a5bc-8e809e4a2f3a",
+      "message": {
+        "id": "e2e7d821-fed8-4825-a5bc-8e809e4a2f3a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1789722116.234118,
+        "update_time": 1789723447.380787,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Có rồi anh — với GPT Image 2.5 (model tạo ảnh), CLIProxyAPI đã cập nhật hỗ trợ.** Em đang hiểu “GPT 2.5” anh hỏi là dòng tạo ảnh này. Các model đã có cả trong bản phát hành, không chỉ trên nhánh phát triển. fileciteturn4file0L2-L6\n\n**Bản mới nhất lúc em kiểm tra:** `v7.3.7`, phát hành rạng sáng **18/09/2026 theo giờ Việt Nam**. fileciteturn1file0L2-L2\n\nCác tên model đã được bổ sung:\n```text\ngpt-image-2.5\ngpt-image-2.5-flare\ngpt-image-2.5-sunburst\n```\nDanh sách này được khai báo trực tiếp trong mã nguồn của repo. fileciteturn2file1L17-L23\n\n**Lưu ý khi gọi API:** những model này dùng endpoint **tạo ảnh** `/v1/images/generations` hoặc **chỉnh sửa ảnh** `/v1/images/edits`, **không gọi như model chat thông thường** qua `/v1/chat/completions`. Mã nguồn có kiểm tra và báo lỗi khi gọi sai endpoint. fileciteturn4file0L2-L2\n\nEm xác nhận được phần hỗ trợ trong repo; chưa kiểm thử trực tiếp bằng tài khoản hoặc máy chủ của anh ạ."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "content_references": [
+            {
+              "matched_text": "fileciteturn4file0L2-L6",
+              "prefix": null,
+              "start_idx": 209,
+              "end_idx": 236,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "fileciteturn1file0L2-L2",
+              "prefix": null,
+              "start_idx": 336,
+              "end_idx": 363,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "fileciteturn2file1L17-L23",
+              "prefix": null,
+              "start_idx": 528,
+              "end_idx": 557,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "fileciteturn4file0L2-L2",
+              "prefix": null,
+              "start_idx": 816,
+              "end_idx": 843,
+              "safe_urls": [],
+              "refs": [],
+              "alt": null,
+              "prompt_text": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": " ",
+              "prefix": null,
+              "start_idx": 948,
+              "end_idx": 949,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [],
+              "has_images": false
+            }
+          ],
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/yangyuyu666/CLIProxyAPI?utm_source=chatgpt.com",
+                  "title": "GitHub - yangyuyu666/CLIProxyAPI · GitHub",
+                  "snippet": "docker-compose.yml go.mod go.mod go.sum go.sum start-cpa-last.log start-cpa-last.log start-cpa.bat start-cpa.bat start-cpa.ps1 start-cpa.ps1 View all files CLI Proxy API English | 中文 | 日本語 A proxy...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/skyline66/cliproxyapi?utm_source=chatgpt.com",
+                  "title": "GitHub - skyline66/cliproxyapi · GitHub",
+                  "snippet": "GitHub - skyline66/cliproxyapi · GitHub skyline66 / cliproxyapi Public Fork 0 0 Name Name Last commit message Last commit date static static.gitignore.gitignore DEPLOYMENT.md DEPLOYMENT.md LICENSE...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/enderzcx/CLIProxyAPI-Extended?utm_source=chatgpt.com",
+                  "title": "GitHub - enderzcx/CLIProxyAPI-Extended: Added Kiro/Antigravity/Cline/Ollama. Full Compatible in Cursor/Copilot. Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API · GitHub",
+                  "snippet": "GitHub - enderzcx/CLIProxyAPI-Extended: Added Kiro/Antigravity/Cline/Ollama. Full Compatible in Cursor/Copilot. Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Cla...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/tungcorn/CLIProxyAPI?utm_source=chatgpt.com",
+                  "title": "GitHub - tungcorn/CLIProxyAPI: Go proxy server providing OpenAI/Gemini/Claude/Codex compatible APIs. Optimized for DeepSeek reasoning models from 3rd-party providers like OpenCode Zen. · GitHub",
+                  "snippet": "GitHub - tungcorn/CLIProxyAPI: Go proxy server providing OpenAI/Gemini/Claude/Codex compatible APIs. Optimized for DeepSeek reasoning models from 3rd-party providers like OpenCode Zen. · GitHub tun...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/HALDRO/CLIProxyAPI-Extended?utm_source=chatgpt.com",
+                  "title": "GitHub - HALDRO/CLIProxyAPI-Extended: Added Kiro/Antigravity/Cline/Ollama. Full Compatible in Cursor/Copilot. Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API · GitHub",
+                  "snippet": "GitHub - HALDRO/CLIProxyAPI-Extended: Added Kiro/Antigravity/Cline/Ollama. Full Compatible in Cursor/Copilot. Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claud...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": 1769558400,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/Unm_JwjychP1fh7OKRGTe1xC_5_RF_scrUsP0sxWgk1tFbccbJlxSxu_oW2CCp5y4cBleVUl18z0DChsDwqYSRLq26xJILNcK2y2yWYMibGpUPW_WQd9-zxpdRtg4h9FNf-fptqdBK7rXPIve9mHPZf7TsW29NRte7cRK-SaBbIxvB-9r8VUirTOeSQRlYzL",
+                  "thumbnail_source": "og_image",
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPI?utm_source=chatgpt.com",
+                  "title": "GitHub - router-for-me/CLIProxyAPI: Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.6 Series, Grok 4.5, Claude model through API · GitHub",
+                  "snippet": "service. CLIProxyAPI is a proxy server that provides OpenAI/Gemini/Claude/Codex/Grok compatible API interfaces for CLI. You can access the following providers locally and with multiple CLI accounts...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/VAv6lJuCvSiV150QzwftVE8t9KaLSipLw8SWm4TMO7hs5uiA2DeCoKmrdq0TF1XstDD1xdHBh8Zv47mb1MFn3YkAIpIX9CyhbFQhFMsFhlBu-kRY2XAs0eGyAzwSG41hZ6JjO1wn8Qgj4UhRa-TzMetUnms94mkXYbJl6ZTcEleMh5ADi2KJa2jcA2Lkif49",
+                  "thumbnail_source": "og_image",
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPIDocs/blob/main/docs/en/hands-on/tutorial-1.md?utm_source=chatgpt.com",
+                  "title": "CLIProxyAPIDocs/docs/en/hands-on/tutorial-1.md at main · router-for-me/CLIProxyAPIDocs · GitHub",
+                  "snippet": "CLIProxyAPIDocs/docs/en/hands-on/tutorial-1.md at main · router-for-me/CLIProxyAPIDocs · GitHub router-for-me / CLIProxyAPIDocs Public 13 Star 7 CLIProxyAPIDocs / docs / en / hands-on / tutorial-1....",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/router-for-me/CLIProxyAPI/blob/main/README.md?utm_source=chatgpt.com",
+                  "title": "CLIProxyAPI/README.md at main · router-for-me/CLIProxyAPI · GitHub",
+                  "snippet": "日本語 If you want to use CLIProxyAPI on your desktop, we recommend our EasyCLIProxyAPI desktop client. It provides a graphical configuration UI, automatic updates, system tray integration, and one-cl...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": null,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/d4t3SzW626pWWYubYWe-molh63nr86YySSU9XIUqfsWL-9hlS8ZzKezS7oCtqiIbiePTGpB_NLYKbEg0f0YvP-9z5LVq_zEEl79Fm5sNycq_-0CCPpAJxGp32WB756SqGoWVdW2X_ZEhFyjGWBgdSbu8OJ94BdOMvrRlodq81cPFEmJr1DjifTOuQvUaIWRy",
+                  "thumbnail_source": "og_image",
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/qyhonly52-crypto/CLIProxyAPI?utm_source=chatgpt.com",
+                  "title": "GitHub - qyhonly52-crypto/CLIProxyAPI: CLIProxyAPI · GitHub",
+                  "snippet": "README_JA.md config.example.yaml config.example.yaml docker-build.ps1 docker-build.ps1 docker-build.sh docker-build.sh docker-compose.yml docker-compose.yml go.mod go.mod go.sum go.sum View all fil...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/jtnetcc/CLIProxyAPI?utm_source=chatgpt.com",
+                  "title": "GitHub - jtnetcc/CLIProxyAPI: Mirror of router-for-me/CLIProxyAPI · GitHub",
+                  "snippet": "support with provider routing Streaming and non-streaming responses Function calling/tools support Multimodal input support (text and images) Multiple accounts with round-robin load balancing (Gemi...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/btcjon/cliproxyapi?utm_source=chatgpt.com",
+                  "title": "GitHub - btcjon/cliproxyapi: CLIProxyAPI VPS configuration - OAuth proxy for 25+ AI models · GitHub",
+                  "snippet": "GitHub - btcjon/cliproxyapi: CLIProxyAPI VPS configuration - OAuth proxy for 25+ AI models · GitHub btcjon / cliproxyapi Public Notifications Fork 0 Star 0 main Code Name Name Last commit message L...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 21
+                  },
+                  "pub_date": 1764082860,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/phat3122480042/CLIProxy?utm_source=chatgpt.com",
+                  "title": "GitHub - phat3122480042/CLIProxy",
+                  "snippet": "a reliable and efficient API relay service provider, offering relay services for Claude Code, Codex, Gemini, and more. PackyCode provides special discounts for our software users: register using th...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 22
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/jtnetcc/CLIProxyAPI/blob/main/README.md?utm_source=chatgpt.com",
+                  "title": "CLIProxyAPI/README.md at main · jtnetcc/CLIProxyAPI · GitHub",
+                  "snippet": "CLIProxyAPI/README.md at main · jtnetcc/CLIProxyAPI · GitHub jtnetcc / CLIProxyAPI Public Notifications Fork 0 Star 0 Files main.github assets auths cmd docs examples internal sdk test.dockerignore...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 24
+                  },
+                  "pub_date": null,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/lqdflying/cliProxy?utm_source=chatgpt.com",
+                  "title": "GitHub - lqdflying/cliProxy · GitHub",
+                  "snippet": "GitHub - lqdflying/cliProxy · GitHub lqdflying / cliProxy Public Notifications Fork 0 Star 0 main Code lqdflying and cursoragent docs: soften Responses bridge limitation rule language 9950a48 · 3 m...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 27
+                  },
+                  "pub_date": 1778402880,
+                  "attribution": "github.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "go.dev",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://pkg.go.dev/github.com/luispater/CLIProxyAPI/v5?utm_source=chatgpt.com",
+                  "title": "CLIProxyAPI module - github.com/luispater/CLIProxyAPI/v5 - Go Packages",
+                  "snippet": "CLIProxyAPI module - github.com/luispater/CLIProxyAPI/v5 - Go Packages Discover Packages github.com/luispater/CLIProxyAPI/v5 CLIProxyAPI module Version: v5.2.6 Latest Published: Sep 21, 2025 Licens...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1758412800,
+                  "attribution": "go.dev"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://pkg.go.dev/github.com/router-for-me/CLIProxyAPI/v7?utm_source=chatgpt.com",
+                  "title": "CLIProxyAPI module - github.com/router-for-me/CLIProxyAPI/v7 - Go Packages",
+                  "snippet": "desktop client. It provides a graphical configuration UI, automatic updates, system tray integration, and one-click start/stop for the CLIProxyAPI service. CLIProxyAPI is a proxy server that provid...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 25
+                  },
+                  "pub_date": 1788048000,
+                  "attribution": "go.dev"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/index/introducing-chatgpt-images-2-5/?utm_source=chatgpt.com",
+                  "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+                  "snippet": "Introducing ChatGPT Images 2.5 | OpenAI September 8, 2026 Product IntroducingChatGPT Images 2.5Ch a tGPT Images 2.5 Sharper details, faster generation, more precise editing, and better tools for cr...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1788833100,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/vSJk9-on4b42C6iMiD81SjTswnigEbqZHTwyWRW-trNeOA7wyFdsXxnyaTNk6yxkVq7TjwmIXqLC_s_C-21qZITdlEABn2QW604oP_-lOIeHsMqomFOqFwKYcw8don6akAvlzdUTGhx3yljggIXg297zM4HiRVzCpHl7gdMgr260QMNbiYyFcjEnfwRY2jdDBc2EAhO8eBLx1KUw6S05JA",
+                  "thumbnail_source": "og_image",
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/vi-VN/index/introducing-chatgpt-images-2-5/?utm_source=chatgpt.com",
+                  "title": "Giới thiệu Hình ảnh ChatGPT 2.5 | OpenAI",
+                  "snippet": "Giới thiệu Hình ảnh ChatGPT 2.5 | OpenAI OpenAI 8 tháng 9, 2026 Sản phẩm Giới thiệu Hình ảnh ChatGPT 2.5Giới thiệuHìnhảnhChatGPT2.5HìnhảnhChatGPT2.5 Chi tiết sắc nét hơn, tạo ảnh nhanh hơn, chỉnh s...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1789563600,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/mJQ-FH0eRzoBKrgXNVx3WzQzt7SkHt8S55R3ERL8v-KovaISNJf-84BHALLhhBO7Jl4UUcwXSRAgfIVdbUa6ct5TrQGxBMhcWSMpOJeDt-x1QwBUdU_EahusIjB86EWVh0aT4ZjYZKXCaTujX-ZWMi8JJcmZAeFs-OwoCviFXutfFQx5U3wAO3h26pBHH4rwA7DLgHQXoNl2HjPz6hvybA",
+                  "thumbnail_source": "og_image",
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://community.openai.com/t/introducing-gpt-images-2-5-in-the-api-and-chatgpt/1395897?utm_source=chatgpt.com",
+                  "title": "Introducing GPT Images 2.5 in the API and ChatGPT - Announcements - OpenAI Developer Community",
+                  "snippet": "Introducing GPT Images 2.5 in the API and ChatGPT - Announcements - OpenAI Developer Community Introducing GPT Images 2.5 in the API and ChatGPT Announcements chatgpt, api, image-generation VeitB S...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1788894720,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/DMhRCzf9eywtx8LqN74BWO57Y1l7fp8jLmjkERj74MZdFFwV2OfPhq4CYT00G8IZk04DttePxosBa2X4rVCKpM7mRh0RRV0UVEipCXKsByemvtTxz5us2fnw1fLrlpLCHFt8trfQR6D3YWVEqnUctWSSgBp2S19MIvozGbA9oK5nFsPRUr9aaWfGm3zSRFQ4",
+                  "thumbnail_source": "og_image",
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst?utm_source=chatgpt.com",
+                  "title": "GPT-Image-2.5 Sunburst Model | OpenAI API",
+                  "snippet": "GPT-Image-2.5 Sunburst Model | OpenAI API Models GPT-Image-2.5 Sunburst Default Our most capable model for image generation and editing Our most capable model for image generation and editing Compa...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": 1788825600,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/qpwmtIoaEePvWbdoGj2jbNOS07DMX5HJjgxr9CS5FbrAcEYHe0RphcoTO_AkNR7dPUXiOVzzsnQlO3YqLLUd4CkYzMgOXv1GUl3i7-8uhX8LAKybePsNN1Fe7MAr1HIJ",
+                  "thumbnail_source": "og_image",
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare?utm_source=chatgpt.com",
+                  "title": "GPT-Image-2.5 Flare Model | OpenAI API",
+                  "snippet": "GPT-Image-2.5 Flare Model | OpenAI API Models GPT-Image-2.5 Flare Default Fast, high-quality everyday image generation Fast, high-quality everyday image generation Compare Performance Higher Speed...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": 1788825600,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://deploymentsafety.openai.com/chatgpt-images-2-5/introduction?utm_source=chatgpt.com",
+                  "title": "ChatGPT Images 2.5 System Card - OpenAI Deployment Safety Hub",
+                  "snippet": "ChatGPT Images 2.5 System Card - OpenAI Deployment Safety Hub Home ChatGPT Images 2.5 System Card View PDF↗ Published September 8, 2026 ChatGPT Images 2.5 System Card Introduction Introduction Mode...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": 1788825600,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://deploymentsafety.openai.com/chatgpt-images-2-5/model-data-and-training?utm_source=chatgpt.com",
+                  "title": "ChatGPT Images 2.5 System Card - OpenAI Deployment Safety Hub",
+                  "snippet": "ChatGPT Images 2.5 System Card - OpenAI Deployment Safety Hub Home ChatGPT Images 2.5 System Card View PDF↗ Published September 8, 2026 ChatGPT Images 2.5 System Card Introduction Observed Safety C...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": 1788833100,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst.md?utm_source=chatgpt.com",
+                  "title": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst.md",
+                  "snippet": "# GPT-Image-2.5 Sunburst > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL. > Our most cap...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/zh-Hans-CN/index/introducing-chatgpt-images-2-5/?utm_source=chatgpt.com",
+                  "title": "隆重推出 ChatGPT 图像 2.5 | OpenAI",
+                  "snippet": "隆重推出 ChatGPT 图像 2.5 | OpenAI 2026年9月8日 产品 隆重推出ChatGPT 图像 2.5ChatGPT 图像 2.5 细节更清晰、生成更迅速、编辑更精准,并提供更出色的创作与分享工具 00:00 聆听文章 8:28 分享 创作过程中的图像保真度 精准编辑 多轮编辑一致性 智能与风格改进 用 Sketch 将创意绘制成真 优化提示词结构,获得更佳结果 分享你的最...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 20
+                  },
+                  "pub_date": 1788998400,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/SOTcIQRAhV51H2jINHLmMsWnChUAHdKGoMQVIILNpTrLaePaKtmXHeOb6wh6lVELxZqTrcyHCcsE5mG0R2_Zs2ix1NqedBXHBFPeJ5tuVozOqPzqTM_7QMkj2b2gfuKVSbpsEBOwZ3DXetBAXlqPF4MGkz_hAQ1thEiWm6tPiAT0JEMjyyd9jhZqCmDNjikBe5YM_XsLlXRoFSt9bfPCxg",
+                  "thumbnail_source": "og_image",
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare.md?utm_source=chatgpt.com",
+                  "title": "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare.md",
+                  "snippet": "# GPT-Image-2.5 Flare > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL. > Fast, high-qual...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 23
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/pt-BR/index/introducing-chatgpt-images-2-5/?utm_source=chatgpt.com",
+                  "title": "Apresentamos o ChatGPT Imagens 2.5 | OpenAI",
+                  "snippet": "Apresentamos o ChatGPT Imagens 2.5 | OpenAI 8 de setembro de 2026 Produto ApresentamosChatGPT Imagens 2.5ChatGPT Imagen s 2.5 Detalhes mais nítidos, geração mais rápida, edição mais precisa e ferra...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 26
+                  },
+                  "pub_date": 1788998400,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/index/gpt-2-1-5b-release/?utm_source=chatgpt.com",
+                  "title": "GPT-2: 1.5B release | OpenAI",
+                  "snippet": "GPT-2: 1.5B release | OpenAI November 5, 2019 Release GPT‐2: 1.5B release Read paper GPT-2 model Detector model Illustration: Ben Barry More Resources Model card Listen to article 4:59 Share As the...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 28
+                  },
+                  "pub_date": 1572912000,
+                  "thumbnail_url": "https://images.openai.com/static-rsc-1/7N5P_GUZL_C8u-fFqEIkPvcBW3CcyHV457YS8iyenw5vAR1HkhSrTRaksRa-5M6J2CwPubkU22d8aI9ZcXP-8YZiGhHD39FP7pDZFsXDPHaxkvEcPBTe6ZOxp9tjLzNrFQazm5kznMBGStWTzX5gUAolPexiGeDzsbUarDwuu93ayWMp0OapAt9Mk6H1j-_oCaIhFrHVc1J9XTJQo41umjQZToYhRkPr0cDx6I4GOnc",
+                  "thumbnail_source": "og_image",
+                  "attribution": "openai.com"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://images.openai.com/static-rsc-1/7N5P_GUZL_C8u-fFqEIkPvcBW3CcyHV457YS8iyenw5vAR1HkhSrTRaksRa-5M6J2CwPubkU22d8aI9ZcXP-8YZiGhHD39FP7pDZFsXDPHaxkvEcPBTe6ZOxp9tjLzNrFQazm5kznMBGStWTzX5gUAolPexiGeDzsbUarDwuu93ayWMp0OapAt9Mk6H1j-_oCaIhFrHVc1J9XTJQo41umjQZToYhRkPr0cDx6I4GOnc",
+            "https://images.openai.com/static-rsc-1/DMhRCzf9eywtx8LqN74BWO57Y1l7fp8jLmjkERj74MZdFFwV2OfPhq4CYT00G8IZk04DttePxosBa2X4rVCKpM7mRh0RRV0UVEipCXKsByemvtTxz5us2fnw1fLrlpLCHFt8trfQR6D3YWVEqnUctWSSgBp2S19MIvozGbA9oK5nFsPRUr9aaWfGm3zSRFQ4",
+            "https://images.openai.com/static-rsc-1/SOTcIQRAhV51H2jINHLmMsWnChUAHdKGoMQVIILNpTrLaePaKtmXHeOb6wh6lVELxZqTrcyHCcsE5mG0R2_Zs2ix1NqedBXHBFPeJ5tuVozOqPzqTM_7QMkj2b2gfuKVSbpsEBOwZ3DXetBAXlqPF4MGkz_hAQ1thEiWm6tPiAT0JEMjyyd9jhZqCmDNjikBe5YM_XsLlXRoFSt9bfPCxg",
+            "https://images.openai.com/static-rsc-1/Unm_JwjychP1fh7OKRGTe1xC_5_RF_scrUsP0sxWgk1tFbccbJlxSxu_oW2CCp5y4cBleVUl18z0DChsDwqYSRLq26xJILNcK2y2yWYMibGpUPW_WQd9-zxpdRtg4h9FNf-fptqdBK7rXPIve9mHPZf7TsW29NRte7cRK-SaBbIxvB-9r8VUirTOeSQRlYzL",
+            "https://images.openai.com/static-rsc-1/VAv6lJuCvSiV150QzwftVE8t9KaLSipLw8SWm4TMO7hs5uiA2DeCoKmrdq0TF1XstDD1xdHBh8Zv47mb1MFn3YkAIpIX9CyhbFQhFMsFhlBu-kRY2XAs0eGyAzwSG41hZ6JjO1wn8Qgj4UhRa-TzMetUnms94mkXYbJl6ZTcEleMh5ADi2KJa2jcA2Lkif49",
+            "https://images.openai.com/static-rsc-1/d4t3SzW626pWWYubYWe-molh63nr86YySSU9XIUqfsWL-9hlS8ZzKezS7oCtqiIbiePTGpB_NLYKbEg0f0YvP-9z5LVq_zEEl79Fm5sNycq_-0CCPpAJxGp32WB756SqGoWVdW2X_ZEhFyjGWBgdSbu8OJ94BdOMvrRlodq81cPFEmJr1DjifTOuQvUaIWRy",
+            "https://images.openai.com/static-rsc-1/mJQ-FH0eRzoBKrgXNVx3WzQzt7SkHt8S55R3ERL8v-KovaISNJf-84BHALLhhBO7Jl4UUcwXSRAgfIVdbUa6ct5TrQGxBMhcWSMpOJeDt-x1QwBUdU_EahusIjB86EWVh0aT4ZjYZKXCaTujX-ZWMi8JJcmZAeFs-OwoCviFXutfFQx5U3wAO3h26pBHH4rwA7DLgHQXoNl2HjPz6hvybA",
+            "https://images.openai.com/static-rsc-1/qpwmtIoaEePvWbdoGj2jbNOS07DMX5HJjgxr9CS5FbrAcEYHe0RphcoTO_AkNR7dPUXiOVzzsnQlO3YqLLUd4CkYzMgOXv1GUl3i7-8uhX8LAKybePsNN1Fe7MAr1HIJ",
+            "https://images.openai.com/static-rsc-1/vSJk9-on4b42C6iMiD81SjTswnigEbqZHTwyWRW-trNeOA7wyFdsXxnyaTNk6yxkVq7TjwmIXqLC_s_C-21qZITdlEABn2QW604oP_-lOIeHsMqomFOqFwKYcw8don6akAvlzdUTGhx3yljggIXg297zM4HiRVzCpHl7gdMgr260QMNbiYyFcjEnfwRY2jdDBc2EAhO8eBLx1KUw6S05JA"
+          ],
+          "citations": [
+            {
+              "start_ix": 209,
+              "end_ix": 236,
+              "citation_format_type": "berry_file_search",
+              "invalid_reason": "API tool citation id is not a valid file id: 661f7d90-825a-49c5-8227-e7fa07a9bd1e"
+            },
+            {
+              "start_ix": 336,
+              "end_ix": 363,
+              "citation_format_type": "berry_file_search",
+              "invalid_reason": "API tool citation id is not a valid file id: cc78f562-284d-4e77-b0d9-b05fc54fd462"
+            },
+            {
+              "start_ix": 528,
+              "end_ix": 557,
+              "citation_format_type": "berry_file_search",
+              "invalid_reason": "API tool citation id is not a valid file id: e0f5d187-e166-46b5-90cb-21097d061e77"
+            },
+            {
+              "start_ix": 816,
+              "end_ix": 843,
+              "citation_format_type": "berry_file_search",
+              "invalid_reason": "API tool citation id is not a valid file id: 661f7d90-825a-49c5-8227-e7fa07a9bd1e"
+            }
+          ],
+          "resolved_model_slug": "gpt-6-pro",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0b3be69c071d6a0320d36be9d4b02",
+          "message_type": "next",
+          "turn_exchange_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "working_turn_id": "7edd4822-f16f-4249-ac69-eaf301a270e4",
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_freshness_max_mins": 120,
+          "poll_interval_ms": 10000,
+          "model_slug": "gpt-6-pro",
+          "default_model_slug": "gpt-6-pro",
+          "thinking_effort": "standard",
+          "can_save": true,
+          "cot_version": "v5",
+          "turn_id": "4d57a325-134e-4bec-a860-03470955eaf0",
+          "targeted_feedback": {
+            "category": "pro"
+          },
+          "async_source": "saserver-japaneast-prod.fck9d:bon-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-132f3117-ab3e-4b51-bfdf-7f2a9c67b5ee:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "229f9c4a-5b58-5518-b0e4-84bc20322ff4",
+      "children": []
+    }
+  },
+  "current_node": "e2e7d821-fed8-4825-a5bc-8e809e4a2f3a",
+  "context_truncation_continuation": null
+}

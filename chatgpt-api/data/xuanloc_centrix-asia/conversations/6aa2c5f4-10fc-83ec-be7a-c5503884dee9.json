@@ -1,0 +1,1216 @@
+{
+  "title": "Hướng dẫn khôi phục tài khoản Microsoft",
+  "create_time": 1789052413.22946,
+  "update_time": 1789052462.513168,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa2c5f4-10fc-83ec-be7a-c5503884dee9",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://www.apple.com/",
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account",
+    "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+    "https://support.microsoft.com/vi-vn/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com",
+    "https://www.openai.com",
+    "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com",
+    "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues",
+    "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account?utm_source=chatgpt.com",
+    "https://docs.google.com/document/d/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "d98b11b3-84dd-4222-8081-7e7726d65750"
+      ]
+    },
+    "d98b11b3-84dd-4222-8081-7e7726d65750": {
+      "id": "d98b11b3-84dd-4222-8081-7e7726d65750",
+      "message": {
+        "id": "d98b11b3-84dd-4222-8081-7e7726d65750",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789052417.595,
+        "update_time": 1789052465.011141,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_00000000304c82309d780b6f5e929de2",
+              "size_bytes": 2675895,
+              "width": 2048,
+              "height": 1330,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "hướng dẫn"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_00000000304c82309d780b6f5e929de2",
+              "size": 2675895,
+              "name": "5504ba6c-9020-4443-b3f4-563eb192f1a6.png",
+              "mime_type": "image/png",
+              "width": 2048,
+              "height": 1330,
+              "source": "local",
+              "library_file_id": "libfile_d8c75a3f1be481919ede361bf9fec7e5",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "turn_id": "3120de37-6921-42df-8be5-d5b64cfc6e3f",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2aadf32a-55ae-497f-9d26-9d7e976cb170:JP",
+          "request_id": "wfr_01a08bd5417c73a38f041ef0097dc2b8",
+          "message_source": null,
+          "turn_exchange_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "working_turn_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "0c256e36-835d-4242-9d25-fd3d2d5dd287"
+      ]
+    },
+    "0c256e36-835d-4242-9d25-fd3d2d5dd287": {
+      "id": "0c256e36-835d-4242-9d25-fd3d2d5dd287",
+      "message": {
+        "id": "0c256e36-835d-4242-9d25-fd3d2d5dd287",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789052437.511551,
+        "update_time": 1789052439.398632,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Hướng dẫn khôi phục tài khoản",
+              "content": "Microsoft đang tạm chặn yêu cầu khôi phục vì phát hiện hoạt động bất thường. Tôi khuyên bạn ngừng thử liên tục, tắt VPN, dùng thiết bị và mạng quen thuộc, rồi thử lại sau. Nếu vẫn bị chặn, hãy dùng biểu mẫu khôi phục hoặc trình hỗ trợ đăng nhập chính thức của Microsoft.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Đã hướng dẫn khôi phục tài khoản",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "d0581496-dbd2-4f7c-bb70-dcfa29fa5be2"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a08bd5417c73a38f041ef0097dc2b8",
+          "message_type": "next",
+          "turn_exchange_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "working_turn_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "28114215-88f9-43cc-9cf2-b9c27fcf4687",
+          "turn_id": "ea4b653e-5e0d-40ef-b614-f3b24af357dd",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789052430.2626154,
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2aadf32a-55ae-497f-9d26-9d7e976cb170:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d98b11b3-84dd-4222-8081-7e7726d65750",
+      "children": [
+        "3d92bcd0-16fb-450c-8219-3c675b9513c4"
+      ]
+    },
+    "3d92bcd0-16fb-450c-8219-3c675b9513c4": {
+      "id": "3d92bcd0-16fb-450c-8219-3c675b9513c4",
+      "message": {
+        "id": "3d92bcd0-16fb-450c-8219-3c675b9513c4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789052439.571514,
+        "update_time": 1789052439.571514,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a08bd5417c73a38f041ef0097dc2b8",
+          "message_type": "next",
+          "turn_exchange_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "working_turn_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "af9bfb95-4e1e-4cd8-9e43-4dac8a64a3ff",
+          "turn_id": "ea4b653e-5e0d-40ef-b614-f3b24af357dd",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789052430.2626154,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2aadf32a-55ae-497f-9d26-9d7e976cb170:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "0c256e36-835d-4242-9d25-fd3d2d5dd287",
+      "children": [
+        "020cad21-6b5a-4d50-b879-7ba28968eb13"
+      ]
+    },
+    "020cad21-6b5a-4d50-b879-7ba28968eb13": {
+      "id": "020cad21-6b5a-4d50-b879-7ba28968eb13",
+      "message": {
+        "id": "020cad21-6b5a-4d50-b879-7ba28968eb13",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789052439.827124,
+        "update_time": 1789052439.827124,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "support.microsoft.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+                  "title": "Help with the Microsoft account recovery form | Microsoft Support",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 831109,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "support.microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account",
+                  "title": "What happens if there's an unusual sign-in to your account | Microsoft Support",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 831109,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "attribution": "support.microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-is-the-recent-activity-page",
+                  "title": "What is the Recent activity page? | Microsoft Support",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 831109,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "support.microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues",
+                  "title": "Troubleshoot Microsoft verification code issues | Microsoft Support",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 831109,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "support.microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-US/accounts-billing/manage/account-recovery-unsuccessful",
+                  "title": "Account recovery unsuccessful | Microsoft Support",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 831109,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "support.microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/vi-vn/accounts-billing/manage/account-recovery-unsuccessful",
+                  "title": "Khôi phục tài khoản không thành công | Microsoft Support",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 831109,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "support.microsoft.com"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aa2c615a6888329bf63247d812bf904",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a08bd5417c73a38f041ef0097dc2b8",
+          "message_type": "next",
+          "turn_exchange_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "working_turn_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "66987503-4dcb-4471-9292-5184ef542bcc",
+          "turn_id": "ea4b653e-5e0d-40ef-b614-f3b24af357dd",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm support.microsoft.com"
+          ],
+          "reasoning_title": "Đang tìm kiếm support.microsoft.com",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=support.microsoft.com&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "support.microsoft.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+                    "title": "Help with the Microsoft account recovery form | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account",
+                    "title": "What happens if there's an unusual sign-in to your account | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-is-the-recent-activity-page",
+                    "title": "What is the Recent activity page? | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues",
+                    "title": "Troubleshoot Microsoft verification code issues | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-US/accounts-billing/manage/account-recovery-unsuccessful",
+                    "title": "Account recovery unsuccessful | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/vi-vn/accounts-billing/manage/account-recovery-unsuccessful",
+                    "title": "Khôi phục tài khoản không thành công | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789052430.2626154,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2aadf32a-55ae-497f-9d26-9d7e976cb170:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3d92bcd0-16fb-450c-8219-3c675b9513c4",
+      "children": [
+        "4f7dae23-a665-4bc6-afc5-048f2c05a1d6"
+      ]
+    },
+    "4f7dae23-a665-4bc6-afc5-048f2c05a1d6": {
+      "id": "4f7dae23-a665-4bc6-afc5-048f2c05a1d6",
+      "message": {
+        "id": "4f7dae23-a665-4bc6-afc5-048f2c05a1d6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789052441.392361,
+        "update_time": 1789052446.758049,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Tiếp tục khôi phục",
+              "content": "Tôi sẽ hướng dẫn theo thông báo này: Microsoft đang tạm khóa yêu cầu khôi phục do hoạt động bất thường. Hãy dừng thử liên tục, tắt VPN, dùng thiết bị và mạng quen thuộc, rồi thử lại sau. Nếu vẫn lỗi, mở trang hỗ trợ đăng nhập hoặc biểu mẫu khôi phục chính thức của Microsoft.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Xử lý chặn khôi phục",
+              "content": "Tôi đang tách lỗi “Abuse” khỏi lỗi mật khẩu: đây là chặn bảo mật tạm thời. Hãy ngừng gửi yêu cầu, tắt VPN, dùng thiết bị/mạng quen thuộc và thử lại sau. Nếu vẫn lỗi, dùng Sign-in Helper; cuối cùng điền biểu mẫu khôi phục với thông tin chính xác nhất.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Tiếp tục xử lý chặn khôi phục",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "af9bfb95-4e1e-4cd8-9e43-4dac8a64a3ff"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a08bd5417c73a38f041ef0097dc2b8",
+          "message_type": "next",
+          "turn_exchange_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "working_turn_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "020cad21-6b5a-4d50-b879-7ba28968eb13",
+          "turn_id": "ea4b653e-5e0d-40ef-b614-f3b24af357dd",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789052430.2626154,
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2aadf32a-55ae-497f-9d26-9d7e976cb170:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "020cad21-6b5a-4d50-b879-7ba28968eb13",
+      "children": [
+        "3c76eaf2-6f04-4fc4-be9d-0f0f04b94fc3"
+      ]
+    },
+    "3c76eaf2-6f04-4fc4-be9d-0f0f04b94fc3": {
+      "id": "3c76eaf2-6f04-4fc4-be9d-0f0f04b94fc3",
+      "message": {
+        "id": "3c76eaf2-6f04-4fc4-be9d-0f0f04b94fc3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789052446.765964,
+        "update_time": 1789052446.765964,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 1 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "636c78b3-bb4b-4f7b-96fb-5899d213ead8"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "support.microsoft.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+                    "title": "Help with the Microsoft account recovery form | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account",
+                    "title": "What happens if there's an unusual sign-in to your account | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-is-the-recent-activity-page",
+                    "title": "What is the Recent activity page? | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues",
+                    "title": "Troubleshoot Microsoft verification code issues | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/en-US/accounts-billing/manage/account-recovery-unsuccessful",
+                    "title": "Account recovery unsuccessful | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://support.microsoft.com/vi-vn/accounts-billing/manage/account-recovery-unsuccessful",
+                    "title": "Khôi phục tài khoản không thành công | Microsoft Support",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 831109,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "support.microsoft.com"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "3d92bcd0-16fb-450c-8219-3c675b9513c4",
+              "66987503-4dcb-4471-9292-5184ef542bcc",
+              "020cad21-6b5a-4d50-b879-7ba28968eb13"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=support.microsoft.com&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789052430.2626154,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a08bd5417c73a38f041ef0097dc2b8",
+          "message_type": "next",
+          "turn_exchange_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "working_turn_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "4f7dae23-a665-4bc6-afc5-048f2c05a1d6",
+          "turn_id": "ea4b653e-5e0d-40ef-b614-f3b24af357dd",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2aadf32a-55ae-497f-9d26-9d7e976cb170:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4f7dae23-a665-4bc6-afc5-048f2c05a1d6",
+      "children": [
+        "fdbbf03f-4774-43fa-89fa-7135a846e5b6"
+      ]
+    },
+    "fdbbf03f-4774-43fa-89fa-7135a846e5b6": {
+      "id": "fdbbf03f-4774-43fa-89fa-7135a846e5b6",
+      "message": {
+        "id": "fdbbf03f-4774-43fa-89fa-7135a846e5b6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789052446.772749,
+        "update_time": 1789052446.772749,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 16s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 16,
+          "reasoning_start_time": 1789052430.2626154,
+          "reasoning_end_time": 1789052446.7471728,
+          "reasoning_recap_type": "collapse",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a08bd5417c73a38f041ef0097dc2b8",
+          "message_type": "next",
+          "turn_exchange_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "working_turn_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "3c76eaf2-6f04-4fc4-be9d-0f0f04b94fc3",
+          "turn_id": "ea4b653e-5e0d-40ef-b614-f3b24af357dd",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2aadf32a-55ae-497f-9d26-9d7e976cb170:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3c76eaf2-6f04-4fc4-be9d-0f0f04b94fc3",
+      "children": [
+        "cd2c4006-f744-433d-af28-51da66a48e3b"
+      ]
+    },
+    "cd2c4006-f744-433d-af28-51da66a48e3b": {
+      "id": "cd2c4006-f744-433d-af28-51da66a48e3b",
+      "message": {
+        "id": "cd2c4006-f744-433d-af28-51da66a48e3b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1789052446.777004,
+        "update_time": 1789052465.012307,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Anh đang gặp lỗi **“Account recovery has been blocked”** — Microsoft đã **chặn tạm thời quá trình khôi phục tài khoản vì phát hiện hoạt động bất thường**. Nguyên nhân thường là đổi IP/thiết bị, dùng VPN, đăng nhập nhiều nơi hoặc yêu cầu mã/xác minh quá nhiều lần. citeturn831109search1turn831109search3\n\nAnh xử lý theo thứ tự này:\n\n1. **Tạm ngưng thử khôi phục liên tục**, không bấm gửi mã hoặc recovery nhiều lần nữa. Microsoft xác nhận việc yêu cầu mã lặp lại có thể tiếp tục kích hoạt cơ chế chặn. citeturn831109search3\n2. **Tắt VPN/Proxy**, sau đó dùng **máy và mạng Wi-Fi mà tài khoản này thường đăng nhập trước đây**. Nếu có thiết bị cũ từng đăng nhập tài khoản thì ưu tiên dùng thiết bị đó.\n3. Thử **đăng nhập Microsoft bình thường**. Nếu Microsoft cho lựa chọn gửi mã về email/số điện thoại bảo mật thì xác minh theo phương thức đó.\n4. Nếu vẫn không vào được, sử dụng **Microsoft Sign-in Helper** trước; nếu cần thì tiếp tục bằng **Account Recovery Form**. Microsoft khuyến nghị điền biểu mẫu trên thiết bị và tại địa điểm từng dùng tài khoản trước đây. citeturn831109search0  \n   urlHướng dẫn khôi phục tài khoản Microsoft chính thứchttps://support.microsoft.com/vi-vn/accounts-billing/manage/help-with-the-microsoft-account-recovery-form\n5. Khi điền Recovery Form, cung cấp càng chính xác càng tốt: **mật khẩu cũ, thông tin tài khoản, dịch vụ Microsoft từng dùng, email liên hệ có thể nhận thư**. Microsoft cho biết kết quả thường được gửi về email liên hệ trong vòng **24 giờ sau khi biểu mẫu được gửi thành công**. citeturn831109search0\n\n**Quan trọng:** dòng trong ảnh không có nghĩa tài khoản đã bị khóa vĩnh viễn. Nếu đây là chặn do hoạt động/xác minh bất thường, Microsoft cho biết một số trường hợp sẽ **tự được gỡ sau một khoảng thời gian**, nhưng họ không công bố một thời gian cố định. Vì vậy không nên thử liên tục. citeturn831109search3\n\nNếu tài khoản này đang dùng để **nhận Microsoft 365 Family**, thì đây là **lỗi bảo mật của tài khoản Microsoft**, không phải lỗi của link mời Family. Sau khi tài khoản đăng nhập lại bình thường mới tiếp tục nhận lời mời được."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "content_references": [
+            {
+              "matched_text": "citeturn831109search1turn831109search3",
+              "prefix": null,
+              "start_idx": 264,
+              "end_idx": 306,
+              "safe_urls": [
+                "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues",
+                "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com",
+                "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account",
+                "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([Hỗ Trợ Microsoft](https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "What happens if there's an unusual sign-in to your account | Microsoft Support",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account?utm_source=chatgpt.com",
+                  "attribution": "Hỗ Trợ Microsoft",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "Troubleshoot Microsoft verification code issues | Microsoft Support",
+                      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "Hỗ Trợ Microsoft"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "citeturn831109search3",
+              "prefix": null,
+              "start_idx": 505,
+              "end_idx": 529,
+              "safe_urls": [
+                "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues",
+                "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([Hỗ Trợ Microsoft](https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Troubleshoot Microsoft verification code issues | Microsoft Support",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com",
+                  "attribution": "Hỗ Trợ Microsoft",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "citeturn831109search0",
+              "prefix": null,
+              "start_idx": 1069,
+              "end_idx": 1093,
+              "safe_urls": [
+                "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+                "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([Hỗ Trợ Microsoft](https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Help with the Microsoft account recovery form | Microsoft Support",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com",
+                  "attribution": "Hỗ Trợ Microsoft",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "urlHướng dẫn khôi phục tài khoản Microsoft chính thứchttps://support.microsoft.com/vi-vn/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+              "prefix": null,
+              "start_idx": 1099,
+              "end_idx": 1261,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "[Hướng dẫn khôi phục tài khoản Microsoft chính thức](https://support.microsoft.com/vi-vn/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com)",
+              "prompt_text": null,
+              "type": "url",
+              "title": "Hướng dẫn khôi phục tài khoản Microsoft chính thức",
+              "item": {
+                "title": "Hướng dẫn khôi phục tài khoản Microsoft chính thức",
+                "url": "https://support.microsoft.com/vi-vn/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com",
+                "attribution": "support.microsoft.com",
+                "pub_date": null,
+                "snippet": null,
+                "attribution_segments": null,
+                "supporting_websites": [],
+                "refs": [],
+                "hue": null,
+                "attributions": null
+              },
+              "layout": null,
+              "logo": null
+            },
+            {
+              "matched_text": "citeturn831109search0",
+              "prefix": null,
+              "start_idx": 1541,
+              "end_idx": 1565,
+              "safe_urls": [
+                "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+                "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([Hỗ Trợ Microsoft](https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Help with the Microsoft account recovery form | Microsoft Support",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com",
+                  "attribution": "Hỗ Trợ Microsoft",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "citeturn831109search3",
+              "prefix": null,
+              "start_idx": 1853,
+              "end_idx": 1877,
+              "safe_urls": [
+                "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues",
+                "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([Hỗ Trợ Microsoft](https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Troubleshoot Microsoft verification code issues | Microsoft Support",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com",
+                  "attribution": "Hỗ Trợ Microsoft",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": " ",
+              "prefix": null,
+              "start_idx": 2104,
+              "end_idx": 2105,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "What happens if there's an unusual sign-in to your account | Microsoft Support",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account?utm_source=chatgpt.com",
+                  "attribution": "Hỗ Trợ Microsoft"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "microsoft.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/security/what-is-the-recent-activity-page?utm_source=chatgpt.com",
+                  "title": "What is the Recent activity page? | Microsoft Support",
+                  "snippet": "WHAT IS THE RECENT ACTIVITY PAGE?  Applies To  Microsoft account Microsoft account dashboard  The Recent activity page shows you when and where you've used your Microsoft account within the last 30 d...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-US/accounts-billing/manage/account-recovery-unsuccessful?utm_source=chatgpt.com",
+                  "title": "Account recovery unsuccessful | Microsoft Support",
+                  "snippet": "ACCOUNT RECOVERY UNSUCCESSFUL  Image  Get help with Copilot  If your Microsoft account recovery request wasn't granted, you can keep trying as many times as you want, up to two times per day.  Import...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/vi-vn/accounts-billing/manage/account-recovery-unsuccessful?utm_source=chatgpt.com",
+                  "title": "Khôi phục tài khoản không thành công | Microsoft Support",
+                  "snippet": "KHÔI PHỤC TÀI KHOẢN KHÔNG THÀNH CÔNG  Nếu yêu cầu khôi phục tài khoản Microsoft của bạn chưa được cấp, bạn có thể tiếp tục thử bao nhiêu lần tùy thích, tối đa hai lần mỗi ngày.  Quan trọng  * Chúng t...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/how-to-recover-a-hacked-or-compromised-microsoft-account?utm_source=chatgpt.com",
+                  "title": "How to recover a hacked or compromised Microsoft account | Microsoft Support",
+                  "snippet": "HOW TO RECOVER A HACKED OR COMPROMISED MICROSOFT ACCOUNT  Applies To  Microsoft account Outlook.com  Image  Get help with Copilot  If your account has been hacked, use our sign-in helper tool below t...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/microsoft-account-has-been-locked?utm_source=chatgpt.com",
+                  "title": "Microsoft account has been locked | Microsoft Support",
+                  "snippet": "MICROSOFT ACCOUNT HAS BEEN LOCKED  Applies To  Microsoft account  Image  Get help with Copilot  If you tried to sign in to your account and received a message that it's been locked, it's because acti...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-US/accounts-billing/manage/my-username-and-password-have-stopped-working?utm_source=chatgpt.com",
+                  "title": "My username and password have stopped working | Microsoft Support",
+                  "snippet": "MY USERNAME AND PASSWORD HAVE STOPPED WORKING  Applies To  Microsoft account  Image  Get help with Copilot  IF YOU CAN'T SIGN IN WITH A CORRECT PASSWORD  If your username or password have stopped wor...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/manage/i-can-t-sign-in-to-my-microsoft-account?utm_source=chatgpt.com",
+                  "title": "I can't sign in to my Microsoft account | Microsoft Support",
+                  "snippet": "I CAN'T SIGN IN TO MY MICROSOFT ACCOUNT  Applies To  Microsoft account Outlook 2024 Outlook 2024 for Mac Outlook 2021 Outlook 2021 for Mac Outlook 2019 Outlook 2016 Microsoft 365 for home Outlook.com...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/vi-vn/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account?utm_source=chatgpt.com",
+                  "title": "Điều gì xảy ra nếu có đăng nhập bất thường vào tài khoản của bạn | Microsoft Support",
+                  "snippet": "ĐIỀU GÌ XẢY RA NẾU CÓ ĐĂNG NHẬP BẤT THƯỜNG VÀO TÀI KHOẢN CỦA BẠN  Áp dụng cho  Bảng điều khiển tài khoản Microsoft  Microsoft ưu tiên bảo mật tài khoản và hoạt động để ngăn mọi người đăng nhập mà khô...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://support.microsoft.com/en-us/accounts-billing/work-school/common-problems-with-two-step-verification-for-a-work-or-school-account?utm_source=chatgpt.com",
+                  "title": "Common problems with two-step verification for a work or school account | Microsoft Support",
+                  "snippet": "COMMON PROBLEMS WITH TWO-STEP VERIFICATION FOR A WORK OR SCHOOL ACCOUNT  Applies To  Microsoft Entra Verified ID  Image  Get help with Copilot  There are a number of possible explanations for why ver...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "microsoft.com"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form",
+            "https://support.microsoft.com/en-us/accounts-billing/manage/help-with-the-microsoft-account-recovery-form?utm_source=chatgpt.com",
+            "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues",
+            "https://support.microsoft.com/en-us/accounts-billing/manage/troubleshoot-microsoft-verification-code-issues?utm_source=chatgpt.com",
+            "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account",
+            "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account?utm_source=chatgpt.com"
+          ],
+          "citations": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a08bd5417c73a38f041ef0097dc2b8",
+          "message_type": "next",
+          "turn_exchange_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "working_turn_id": "2aadf32a-55ae-497f-9d26-9d7e976cb170",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "fdbbf03f-4774-43fa-89fa-7135a846e5b6",
+          "turn_id": "ea4b653e-5e0d-40ef-b614-f3b24af357dd",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2aadf32a-55ae-497f-9d26-9d7e976cb170:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "fdbbf03f-4774-43fa-89fa-7135a846e5b6",
+      "children": []
+    }
+  },
+  "current_node": "cd2c4006-f744-433d-af28-51da66a48e3b",
+  "context_truncation_continuation": null
+}

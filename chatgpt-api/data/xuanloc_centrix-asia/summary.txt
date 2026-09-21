@@ -1,0 +1,29 @@
+╔══════════════════════════════════════════════════════════════╗
+║  ChatGPT API Fetch Summary                                  ║
+╚══════════════════════════════════════════════════════════════╝
+
+  📧 Email:          xuanloc@centrix.asia
+  👤 Name:           Tran Xuan Loc
+  💎 Plan:           team
+  🏢 Account ID:     4f52e72f-9c16-4d87-b9ff-785c1029aa7a
+  🆔 User ID:        user-TPQ6L3DWAAqXOfnFz2d9xhR8
+  ⏰ Token expires:  232.9h remaining
+  📅 Fetched at:     2026-09-21 23:27:05 +0700
+  📁 Auth file:      /Users/tructt/Public/Projects/centrix-wine-tools/vps-auths/codex-64d43abd-xuanloc@centrix.asia-team.json
+
+── API Results ────────────────────────────────────────────────
+  1. link-session:     HTTP 200 (6 cookies)
+  2. conversations:    HTTP 200 (51 items)
+  3. accounts:         HTTP 200
+  4. conv details:     50/50 ok
+     assets found:     91
+     assets downloaded:86
+
+── Output Files ───────────────────────────────────────────────
+  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/session.json
+  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/conversations.json
+  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/accounts.json
+  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/conversations/<id>.json    (full detail per conversation)
+  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/assets/<id>/<filename>     (downloaded images & files)
+  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/assets/<id>/_manifest.json (asset manifest per conversation)
+  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/summary.txt

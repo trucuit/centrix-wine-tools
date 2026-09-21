@@ -1,0 +1,237 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_000000007b00820aadc7d9e8ad35644d",
+    "content_type": "image_asset_pointer",
+    "width": 1080,
+    "height": 1080,
+    "size_bytes": 727830,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/57544e23-8fa6-4767-9a75-ee744bbdaf0c.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000081481f5bacee7fd75c451ef",
+    "content_type": "image_asset_pointer",
+    "width": 1280,
+    "height": 1280,
+    "size_bytes": 41170,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/claude.webp"
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000002d80822fad34ff480b9d0888",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1344244,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Biểu tượng mặt trời Opus 5 hiện đại.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000004a8820783e06556533f4695",
+    "content_type": "image_asset_pointer",
+    "width": 1080,
+    "height": 1080,
+    "size_bytes": 727830,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/59989b9b-daea-4403-bc40-e9905cec0f22.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000bf9c820cab3c59ba4cec49c1",
+    "content_type": "image_asset_pointer",
+    "width": 1280,
+    "height": 1280,
+    "size_bytes": 41170,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/claude(1).webp"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000180c81f8bb4ccdfc7216dfde",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1013877,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Thẻ quảng bá Opus 5 & Sonnet 5.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000f9708211aa501ed90f1191b0",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1245100,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Quảng cáo Claude Opus 5 & Sonnet 5.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000007ba48207a005585280540521",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1287694,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/image-markup-preview.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000011b8822fa7253b569334e54b",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1280293,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Thẻ quảng bá Opus 5 và Sonnet 5.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000a8ec82309c83ecab451fb5d9",
+    "content_type": "image_asset_pointer",
+    "width": 1080,
+    "height": 1080,
+    "size_bytes": 727830,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/e4b5e096-92c8-4b93-9ab4-cd6888142840.png"
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_00000000826482099ef7782b177d0165",
+    "name": "grok.svg",
+    "mime_type": "image/svg+xml",
+    "size": 756
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000400081f6b5a2959264ba6cdc",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 883882,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Grok-4.6: Giao diện công nghệ tương lai.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000006588209bd2a8170c87be6c1",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1073838,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Thẻ quảng bá Grok-4.6 neon xanh.png"
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_0000000053a88211ac52f5c8c1c9cd8e",
+    "name": "gemini-color.svg",
+    "mime_type": "image/svg+xml",
+    "size": 2836
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000539882119406558aaaf2723a",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 830148,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Thẻ Gemini 3.8 Flash neon hiện đại.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000dfcc81fbb79cd93c3a528b88",
+    "content_type": "image_asset_pointer",
+    "width": 640,
+    "height": 640,
+    "size_bytes": 108522,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/eed18fbb-949b-4b30-86c5-637107f0b0aa.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000f33c8209a1d00125ef8fca5e",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1393446,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Thẻ Copilot AI neon cao cấp.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000008f6882068d52e3fd2ac58baf",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1302120,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Tinh thần neon Copilot AI.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000025208211b9dd04ff3d8568fc",
+    "content_type": "image_asset_pointer",
+    "width": 1080,
+    "height": 1080,
+    "size_bytes": 727830,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/939caa01-c3cf-41af-87ab-dac96a00615a.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000105c8207a519b1ff133715b8",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 850875,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Áp phích quảng cáo GPT-6 Astra neon xanh.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000ef9081f4a5eae85b1599a11b",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 853909,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Áp phích Copilot AI neon hiện đại.png"
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_0000000026a0822fab6e6389096c688e",
+    "name": "perplexity.svg",
+    "mime_type": "image/svg+xml",
+    "size": 609
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000963c81f59c03d8cb5b1750fb",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1212832,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Thẻ quảng bá Perplexity Sonar Pro.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000dacc8211b069cda5503643a3",
+    "content_type": "image_asset_pointer",
+    "width": 2048,
+    "height": 2048,
+    "size_bytes": 2818297,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/79c1c118-c428-431b-88a8-7a86df4a335c.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000002d248211a6e498e7750dd828",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1185029,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Thẻ quảng bá Google AI Pro tối giản.png"
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_00000000432082309091de10fa82898b",
+    "name": "deepseek-color.svg",
+    "mime_type": "image/svg+xml",
+    "size": 2164
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000a3848230a27997a7c67c84f9",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1191547,
+    "local_path": "chatgpt-api/data/xuanloc_centrix-asia/assets/6aa2f9a6-2f44-83ec-ae59-3929d29344c3/Thẻ Deepseek Pro hiện đại reng rỡ.png"
+  }
+]

@@ -1,0 +1,2631 @@
+{
+  "title": "Giải thích effort ChatGPT",
+  "create_time": 1789122861.554797,
+  "update_time": 1789122901.078146,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa3d92b-9364-83ec-84d6-187f1dc22e59",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://docs.google.com/document/d/",
+    "https://developers.openai.com/api/docs/guides/latest-model?utm_source=chatgpt.com",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com",
+    "https://www.apple.com/",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://www.openai.com",
+    "https://developers.openai.com/api/docs/guides/latest-model"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "0450068c-543a-4aa3-b40c-0c3d24481799"
+      ]
+    },
+    "0450068c-543a-4aa3-b40c-0c3d24481799": {
+      "id": "0450068c-543a-4aa3-b40c-0c3d24481799",
+      "message": {
+        "id": "0450068c-543a-4aa3-b40c-0c3d24481799",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789122876.201,
+        "update_time": 1789122900.627108,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_0000000056ac81f5858d6d09c1de84f7",
+              "size_bytes": 8033,
+              "width": 343,
+              "height": 169,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_00000000698881f8af5775fa2a81f1d1",
+              "size_bytes": 16036,
+              "width": 461,
+              "height": 167,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "list effort của chatgpt là gì vậy bạn"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_0000000056ac81f5858d6d09c1de84f7",
+              "size": 8033,
+              "name": "ed4ede7d-66a6-4105-a761-50259f2daba9.png",
+              "mime_type": "image/png",
+              "width": 343,
+              "height": 169,
+              "source": "local",
+              "library_file_id": "libfile_82d0bbdd5c6481918782209352540b5b",
+              "is_big_paste": false
+            },
+            {
+              "id": "file_00000000698881f8af5775fa2a81f1d1",
+              "size": 16036,
+              "name": "dd7978ec-3b48-4a75-944d-70b2a9109058.png",
+              "mime_type": "image/png",
+              "width": 461,
+              "height": 167,
+              "source": "local",
+              "library_file_id": "libfile_6751b8932f7c8191846dc3117ee6c345",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "turn_id": "d247b169-8d0d-4834-a196-38b60cd0e7e5",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_source": null,
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "732c36e5-ffbf-43db-8b08-fd98f4b6a241"
+      ]
+    },
+    "732c36e5-ffbf-43db-8b08-fd98f4b6a241": {
+      "id": "732c36e5-ffbf-43db-8b08-fd98f4b6a241",
+      "message": {
+        "id": "732c36e5-ffbf-43db-8b08-fd98f4b6a241",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789122882.733809,
+        "update_time": 1789122882.733809,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_type": "next",
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "30762f87-c42d-4dcb-aed8-f9a1c8b38440",
+          "turn_id": "cfa34f7d-c730-410c-9066-629e2600eae7",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789122879.5331874,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "0450068c-543a-4aa3-b40c-0c3d24481799",
+      "children": [
+        "101fecb6-2116-427e-a1f7-0cd01d785bbb"
+      ]
+    },
+    "101fecb6-2116-427e-a1f7-0cd01d785bbb": {
+      "id": "101fecb6-2116-427e-a1f7-0cd01d785bbb",
+      "message": {
+        "id": "101fecb6-2116-427e-a1f7-0cd01d785bbb",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789122883.619875,
+        "update_time": 1789122883.619875,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "help.openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex",
+                  "title": "Managing usage with GPT-6 Astra in Work and Codex | OpenAI Help Center",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "help.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001275",
+                  "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "help.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-work-and-codex",
+                  "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "help.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-c%C3%B4ng-vi%E1%BB%87c-v%C3%A0-codex",
+                  "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "help.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001415",
+                  "title": "Biểu phí ChatGPT (giá Enterprise dựa trên token) | OpenAI Help Center",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "help.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001354",
+                  "title": "GPT-5.6 và GPT-6 Pro trong ChatGPT | OpenAI Help Center",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": null,
+                  "attribution": "help.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/en/articles/20001354",
+                  "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "help.openai.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/products/release-notes/",
+                  "title": "Release Notes | OpenAI | OpenAI",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/vi-VN/products/release-notes/",
+                  "title": "Ghi chú phát hành | OpenAI | OpenAI",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/index/gpt-6-astra/",
+                  "title": "GPT-6 Astra: A new generation of intelligence | OpenAI",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "developers.openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+                  "title": "GPT-6 Astra Model | OpenAI API",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": null,
+                  "attribution": "developers.openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://developers.openai.com/api/docs/guides/latest-model",
+                  "title": "Model guidance | OpenAI API",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 153253,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": null,
+                  "attribution": "developers.openai.com"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aa3d9429e788326ba5b9712bc72c652",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_type": "next",
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "b2891e88-6257-47af-9384-9f99b97927b4",
+          "turn_id": "cfa34f7d-c730-410c-9066-629e2600eae7",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm 3 trang web"
+          ],
+          "reasoning_title": "Đang tìm kiếm 3 trang web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=help.openai.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=developers.openai.com&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "help.openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex",
+                    "title": "Managing usage with GPT-6 Astra in Work and Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-work-and-codex",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-c%C3%B4ng-vi%E1%BB%87c-v%C3%A0-codex",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001415",
+                    "title": "Biểu phí ChatGPT (giá Enterprise dựa trên token) | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 9
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001354",
+                    "title": "GPT-5.6 và GPT-6 Pro trong ChatGPT | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/en/articles/20001354",
+                    "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 11
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/products/release-notes/",
+                    "title": "Release Notes | OpenAI | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/vi-VN/products/release-notes/",
+                    "title": "Ghi chú phát hành | OpenAI | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/gpt-6-astra/",
+                    "title": "GPT-6 Astra: A new generation of intelligence | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 8
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "developers.openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+                    "title": "GPT-6 Astra Model | OpenAI API",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "developers.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://developers.openai.com/api/docs/guides/latest-model",
+                    "title": "Model guidance | OpenAI API",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "developers.openai.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789122879.5331874,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "732c36e5-ffbf-43db-8b08-fd98f4b6a241",
+      "children": [
+        "ec5ce9b6-6125-47e6-b01b-6315267da9ec"
+      ]
+    },
+    "ec5ce9b6-6125-47e6-b01b-6315267da9ec": {
+      "id": "ec5ce9b6-6125-47e6-b01b-6315267da9ec",
+      "message": {
+        "id": "ec5ce9b6-6125-47e6-b01b-6315267da9ec",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789122887.370708,
+        "update_time": 1789122887.370708,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_type": "next",
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "577b8e4b-b781-4e9a-b583-290c866a1af3",
+          "turn_id": "cfa34f7d-c730-410c-9066-629e2600eae7",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "help.openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex",
+                    "title": "Managing usage with GPT-6 Astra in Work and Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-work-and-codex",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-c%C3%B4ng-vi%E1%BB%87c-v%C3%A0-codex",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001415",
+                    "title": "Biểu phí ChatGPT (giá Enterprise dựa trên token) | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 9
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001354",
+                    "title": "GPT-5.6 và GPT-6 Pro trong ChatGPT | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/en/articles/20001354",
+                    "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 11
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/products/release-notes/",
+                    "title": "Release Notes | OpenAI | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/vi-VN/products/release-notes/",
+                    "title": "Ghi chú phát hành | OpenAI | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/gpt-6-astra/",
+                    "title": "GPT-6 Astra: A new generation of intelligence | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 8
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "developers.openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+                    "title": "GPT-6 Astra Model | OpenAI API",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "developers.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://developers.openai.com/api/docs/guides/latest-model",
+                    "title": "Model guidance | OpenAI API",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "developers.openai.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789122879.5331874,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "101fecb6-2116-427e-a1f7-0cd01d785bbb",
+      "children": [
+        "1c65c8ab-d3ba-400e-a7a3-109f2edb33d2"
+      ]
+    },
+    "1c65c8ab-d3ba-400e-a7a3-109f2edb33d2": {
+      "id": "1c65c8ab-d3ba-400e-a7a3-109f2edb33d2",
+      "message": {
+        "id": "1c65c8ab-d3ba-400e-a7a3-109f2edb33d2",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1789122888.025563,
+        "update_time": 1789122888.025563,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "www.reddit.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.reddit.com/r/codex/comments/1wagpil/gpt6_astra_best_reasoning_effort/",
+                  "title": "GPT-6 Astra best reasoning effort?",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "reddit",
+                    "ref_index": 34
+                  },
+                  "pub_date": 1788849611.63,
+                  "attribution": "www.reddit.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "note.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/drake1222/n/nb94c67cb4827?hl=en",
+                  "title": "For ChatGPT Plus Users Who Ran Out of Limits in 20 Minutes: 7 Effective Steps Recommended by Overseas Power Users to Minimize Token Consumption and Maximize Results with GPT-6 Astra｜どれいくl AIを成果に変える仕事術",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1788825600.0,
+                  "attribution": "note.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/creator_tomo/n/na2c25e8cc17a?hl=en",
+                  "title": "GPT-6 Astra is now available for all plans. However, be aware of the \"where you can use it\" and the \"distributed reset rights\"｜Tomo",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": 1788566400.0,
+                  "attribution": "note.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/teto_66/n/nc5e317971aa0?hl=en",
+                  "title": "Mastering ChatGPT from Scratch!｜Teto66",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1785628800.0,
+                  "attribution": "note.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/duke_technology/n/n69757b47bdc4",
+                  "title": "GPT-6 Astraの推論レベル、どれを使う？LowからUltraまでの公式説明と僕の使い分け｜Duke",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": 1788912000.0,
+                  "attribution": "note.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "heyoonow.tistory.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://heyoonow.tistory.com/300",
+                  "title": "GPT-6 Astra Light·Medium·High·Ultra·Max 차이와 GPT-5.6 Sol·Terra 가격 비교",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1788739200.0,
+                  "attribution": "heyoonow.tistory.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "ai-revolution.co.jp",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://ai-revolution.co.jp/media/gpt-6-astra-reasoning-effort/",
+                  "title": "GPT-6 Astraのreasoning effort設定ガイド｜low=Sol high相当・medium推奨の理由とコスト最適化〖2026年9月〗 | AI革命株式会社",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1788739200.0,
+                  "attribution": "ai-revolution.co.jp"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "jab-guyver.co.kr",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://jab-guyver.co.kr/7434?category=1142687",
+                  "title": "GPT-6 Astra 사용법｜Plus·Pro에서 안 보일 때 Work·Codex 설정방법",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": 1788998400.0,
+                  "attribution": "jab-guyver.co.kr"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "linux.do",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://linux.do/t/topic/2866739?tl=en%EF%BC%8C%E7%81%B5%E6%84%9F%E4%B8%80%E9%97%AA%EF%BC%8C%E8%BF%98%E6%84%A3%E7%9D%80%E5%B9%B2%E5%98%9B%EF%BC%8C%E6%88%91%E6%90%9Ewindsurf",
+                  "title": "雷达站的数据够了。GPT-6-Astra各个思考档位的分数差距这么小吗？low102 ~ ultra110 - 搞七捻三 - LINUX DO",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1788739200.0,
+                  "attribution": "linux.do"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.sotwe.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.sotwe.com/HiASSea?lang=tr",
+                  "title": "dæv @HiASSea - Twitter Kullanıcısı | Sotwe",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 128746,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "www.sotwe.com"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6aa3d9429e788326ba5b9712bc72c652",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_type": "next",
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "1c70355a-c8ca-47a8-990d-5c06aebaf092",
+          "turn_id": "cfa34f7d-c730-410c-9066-629e2600eae7",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=www.reddit.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=note.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=heyoonow.tistory.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=ai-revolution.co.jp&sz=128",
+            "https://www.google.com/s2/favicons?domain=jab-guyver.co.kr&sz=128",
+            "https://www.google.com/s2/favicons?domain=linux.do&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.sotwe.com&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "help.openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex",
+                    "title": "Managing usage with GPT-6 Astra in Work and Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-work-and-codex",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-c%C3%B4ng-vi%E1%BB%87c-v%C3%A0-codex",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001415",
+                    "title": "Biểu phí ChatGPT (giá Enterprise dựa trên token) | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 9
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001354",
+                    "title": "GPT-5.6 và GPT-6 Pro trong ChatGPT | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/en/articles/20001354",
+                    "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 11
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/products/release-notes/",
+                    "title": "Release Notes | OpenAI | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/vi-VN/products/release-notes/",
+                    "title": "Ghi chú phát hành | OpenAI | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/gpt-6-astra/",
+                    "title": "GPT-6 Astra: A new generation of intelligence | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 8
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "developers.openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+                    "title": "GPT-6 Astra Model | OpenAI API",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "developers.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://developers.openai.com/api/docs/guides/latest-model",
+                    "title": "Model guidance | OpenAI API",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "developers.openai.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1789122879.5331874,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ec5ce9b6-6125-47e6-b01b-6315267da9ec",
+      "children": [
+        "ac6fbc2c-18a9-406b-ac75-475cc815d65d"
+      ]
+    },
+    "ac6fbc2c-18a9-406b-ac75-475cc815d65d": {
+      "id": "ac6fbc2c-18a9-406b-ac75-475cc815d65d",
+      "message": {
+        "id": "ac6fbc2c-18a9-406b-ac75-475cc815d65d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789122889.975679,
+        "update_time": 1789122891.328198,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Xác định mức suy luận",
+              "content": "Mình đang đối chiếu cách gọi trong giao diện với các mức effort hiện hành. Có vẻ “Light” và “Ultra” là nhãn mức suy luận, tương ứng nhanh/ít suy luận và chậm/nhiều suy luận; tên chính xác có thể tùy phiên bản ứng dụng.",
+              "chunks": [],
+              "finished": true
+            },
+            {
+              "summary": "Xác định mức suy luận",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "145dc7c0-7518-4bcd-8440-d78160be0d01"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_type": "next",
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "145dc7c0-7518-4bcd-8440-d78160be0d01",
+          "turn_id": "cfa34f7d-c730-410c-9066-629e2600eae7",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1789122879.5331874,
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "can_save": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1c65c8ab-d3ba-400e-a7a3-109f2edb33d2",
+      "children": [
+        "f4c220f0-9f85-491a-ba43-5a4f3525a325"
+      ]
+    },
+    "f4c220f0-9f85-491a-ba43-5a4f3525a325": {
+      "id": "f4c220f0-9f85-491a-ba43-5a4f3525a325",
+      "message": {
+        "id": "f4c220f0-9f85-491a-ba43-5a4f3525a325",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789122891.3368,
+        "update_time": 1789122891.3368,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 3 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "c6904435-fa88-45c0-a764-a173d81bb9c2"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "help.openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex",
+                    "title": "Managing usage with GPT-6 Astra in Work and Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-work-and-codex",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-c%C3%B4ng-vi%E1%BB%87c-v%C3%A0-codex",
+                    "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 6
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001415",
+                    "title": "Biểu phí ChatGPT (giá Enterprise dựa trên token) | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 9
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/vi-vn/articles/20001354",
+                    "title": "GPT-5.6 và GPT-6 Pro trong ChatGPT | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 10
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://help.openai.com/en/articles/20001354",
+                    "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 11
+                    },
+                    "pub_date": null,
+                    "attribution": "help.openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/products/release-notes/",
+                    "title": "Release Notes | OpenAI | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/vi-VN/products/release-notes/",
+                    "title": "Ghi chú phát hành | OpenAI | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://openai.com/index/gpt-6-astra/",
+                    "title": "GPT-6 Astra: A new generation of intelligence | OpenAI",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 8
+                    },
+                    "pub_date": null,
+                    "attribution": "openai.com"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "developers.openai.com",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+                    "title": "GPT-6 Astra Model | OpenAI API",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": null,
+                    "attribution": "developers.openai.com"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://developers.openai.com/api/docs/guides/latest-model",
+                    "title": "Model guidance | OpenAI API",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 153253,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    },
+                    "pub_date": null,
+                    "attribution": "developers.openai.com"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "732c36e5-ffbf-43db-8b08-fd98f4b6a241",
+              "7c47f4a4-07f1-45d9-bfb1-c2d726eb3d46",
+              "101fecb6-2116-427e-a1f7-0cd01d785bbb"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=help.openai.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+            "https://www.google.com/s2/favicons?domain=developers.openai.com&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1789122879.5331874,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_type": "next",
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "ac6fbc2c-18a9-406b-ac75-475cc815d65d",
+          "turn_id": "cfa34f7d-c730-410c-9066-629e2600eae7",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ac6fbc2c-18a9-406b-ac75-475cc815d65d",
+      "children": [
+        "9fe0c9ff-5134-4f76-a332-bb0349e94083"
+      ]
+    },
+    "9fe0c9ff-5134-4f76-a332-bb0349e94083": {
+      "id": "9fe0c9ff-5134-4f76-a332-bb0349e94083",
+      "message": {
+        "id": "9fe0c9ff-5134-4f76-a332-bb0349e94083",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789122891.348383,
+        "update_time": 1789122891.348383,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 11s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 11,
+          "reasoning_start_time": 1789122879.5331874,
+          "reasoning_end_time": 1789122891.3169045,
+          "reasoning_recap_type": "collapse",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_type": "next",
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "f4c220f0-9f85-491a-ba43-5a4f3525a325",
+          "turn_id": "cfa34f7d-c730-410c-9066-629e2600eae7",
+          "hide_inline_actions": true,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f4c220f0-9f85-491a-ba43-5a4f3525a325",
+      "children": [
+        "18b3f8a6-543a-46e1-b8b8-de14cf56a929"
+      ]
+    },
+    "18b3f8a6-543a-46e1-b8b8-de14cf56a929": {
+      "id": "18b3f8a6-543a-46e1-b8b8-de14cf56a929",
+      "message": {
+        "id": "18b3f8a6-543a-46e1-b8b8-de14cf56a929",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1789122891.35315,
+        "update_time": 1789122899.128237,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Đúng rồi anh. Với **GPT-6 Astra** như giao diện anh gửi, danh sách **Reasoning Effort** từ nhẹ → mạnh là:\n\n1. **Light**\n2. **Medium**\n3. **High**\n4. **Extra High**\n5. **Ultra**\n\nNếu anh đang cần **map sang API cho CetriX**, GPT-6 Astra hiện hỗ trợ 5 giá trị `reasoning.effort`: `low`, `medium`, `high`, `xhigh`, `max`. citeturn153253search2turn153253search7\n\nCó thể bố trí UI như sau:\n\n| Hiển thị trên UI | Giá trị API |\n|---|---|\n| ⚡ **Light** | `low` |\n| **Medium** | `medium` |\n| **High** | `high` |\n| **Extra High** | `xhigh` |\n| ✦ **Ultra** | `max` |\n\n**Ultra** là mức cao nhất trên slider kiểu giao diện anh đang làm; còn phía API thì giá trị cao nhất được OpenAI gọi là **`max`**.\n\nNếu anh muốn làm giống ảnh ChatGPT thì em đề xuất giữ đúng **Light → Medium → High → Extra High → Ultra**, nhìn dễ hiểu hơn `Low/XHigh/Max`."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "content_references": [
+            {
+              "matched_text": "citeturn153253search2turn153253search7",
+              "prefix": null,
+              "start_idx": 319,
+              "end_idx": 361,
+              "safe_urls": [
+                "https://developers.openai.com/api/docs/guides/latest-model",
+                "https://developers.openai.com/api/docs/guides/latest-model?utm_source=chatgpt.com",
+                "https://developers.openai.com/api/docs/models/gpt-6-astra",
+                "https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([OpenAI Developers](https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "GPT-6 Astra Model | OpenAI API",
+                  "url": "https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com",
+                  "attribution": "OpenAI Developers",
+                  "pub_date": null,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "Model guidance | OpenAI API",
+                      "url": "https://developers.openai.com/api/docs/guides/latest-model?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "OpenAI Developers"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 7
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": " ",
+              "prefix": null,
+              "start_idx": 833,
+              "end_idx": 834,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "GPT-6 Astra Model | OpenAI API",
+                  "url": "https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com",
+                  "attribution": "OpenAI Developers"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "openai.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex?utm_source=chatgpt.com",
+                  "title": "Managing usage with GPT-6 Astra in Work and Codex | OpenAI Help Center",
+                  "snippet": "MANAGING USAGE WITH GPT-6 ASTRA IN WORK AND CODEX  Updated: 1 hour ago  OVERVIEW  GPT-6 Astra is designed for especially demanding work. This guide explains your Work and Codex allowance, model and r...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/products/release-notes/?utm_source=chatgpt.com",
+                  "title": "Release Notes | OpenAI | OpenAI",
+                  "snippet": "RELEASE NOTES  Copy RSS feed URL  * [Button: All] * [Button: ChatGPT] * [Button: Codex] * [Button: API]  Filter  Sort  [Input: Search]  API  Sep 3, 2026  GA  INTRODUCING GPT-6 ASTRA  Today we’re intr...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001275?utm_source=chatgpt.com",
+                  "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                  "snippet": "Trang này được dịch bằng máy học. Xem bài viết gốc bằng tiếng Anh.  Nhận xét về bản dịch này  CHATGPT CÔNG VIỆC VÀ CODEX  Dùng Trò chuyện hoặc Công việc trong ChatGPT, hoặc chuyển sang Codex để phát...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/vi-VN/products/release-notes/?utm_source=chatgpt.com",
+                  "title": "Ghi chú phát hành | OpenAI | OpenAI",
+                  "snippet": "GHI CHÚ PHÁT HÀNH  Sao chép URL nguồn cấp RSS  * [Button: Tất cả] * [Button: ChatGPT] * [Button: Codex] * [Button: API]  Lọc  Sắp xếp  [Input: Tìm kiếm]  API  3 thg 9, 2026  GA  GIỚI THIỆU GPT-6 ASTR...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-work-and-codex?utm_source=chatgpt.com",
+                  "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                  "snippet": "CHATGPT CÔNG VIỆC VÀ CODEX  Dùng Trò chuyện hoặc Công việc trong ChatGPT, hoặc chuyển sang Codex để phát triển phần mềm.  Đã cập nhật: 16 hours ago  GPT‑6 Astra bắt đầu được triển khai hôm nay cho cá...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001275-chatgpt-c%C3%B4ng-vi%E1%BB%87c-v%C3%A0-codex?utm_source=chatgpt.com",
+                  "title": "ChatGPT Công việc và Codex | OpenAI Help Center",
+                  "snippet": "CHATGPT CÔNG VIỆC VÀ CODEX  Dùng Trò chuyện hoặc Công việc trong ChatGPT, hoặc chuyển sang Codex để phát triển phần mềm.  Đã cập nhật: 10 hours ago  GPT‑6 Pro, vận hành trên GPT‑6 Astra, đang được tr...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://developers.openai.com/api/docs/guides/latest-model?utm_source=chatgpt.com",
+                  "title": "Model guidance | OpenAI API",
+                  "snippet": "MODEL GUIDANCE  Learn best practices, features, and migration guidance for OpenAI models.  Copy Page  GPT-6 Astra GPT-5.6 GPT-5.5 GPT-5.4 GPT-5.3 Codex GPT-5.2 GPT-5.1 GPT-5 GPT-4.1  USING GPT-6 ASTR...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/index/gpt-6-astra/?utm_source=chatgpt.com",
+                  "title": "GPT-6 Astra: A new generation of intelligence | OpenAI",
+                  "snippet": "GPT-6 ASTRA: A NEW GENERATION OF INTELLIGENCE  A NEW GENERATION OF INTELLIGENCE  We’re introducing GPT‑6 Astra, the world’s most intelligent and aligned model.  GPT‑6 Astra brings together years of r...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001415?utm_source=chatgpt.com",
+                  "title": "Biểu phí ChatGPT (giá Enterprise dựa trên token) | OpenAI Help Center",
+                  "snippet": "BIỂU PHÍ CHATGPT (GIÁ ENTERPRISE DỰA TRÊN TOKEN)  Tìm hiểu cách áp dụng đơn giá token cho các mô hình và tính năng ChatGPT trong Trò chuyện, ChatGPT Công việc và Codex  Đã cập nhật: 6 hours ago  GPT‑...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001354?utm_source=chatgpt.com",
+                  "title": "GPT-5.6 và GPT-6 Pro trong ChatGPT | OpenAI Help Center",
+                  "snippet": "GPT-5.6 VÀ GPT-6 PRO TRONG CHATGPT  Tìm hiểu cách GPT-5.6 và GPT-6 Pro hoạt động trong ChatGPT, các tùy chọn có trong từng gói, cũng như giới hạn sử dụng và phạm vi cung cấp.  Đã cập nhật: 11 hours a...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/en/articles/20001354?utm_source=chatgpt.com",
+                  "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+                  "snippet": "3. GPT-5.6 and GPT-6 Pro in ChatGPT  GPT-5.6 AND GPT-6 PRO IN CHATGPT  Learn how GPT-5.6 and GPT-6 Pro work in ChatGPT, which options are available by plan, and how usage limits and availability work....",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt?utm_source=chatgpt.com",
+                  "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+                  "snippet": "GPT-5.6 AND GPT-6 PRO IN CHATGPT  Learn how GPT-5.6 and GPT-6 Pro work in ChatGPT, which options are available by plan, and how usage limits and availability work.  Updated: 8 minutes ago  GPT‑6 Astr...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/en/articles/11481834-cha?utm_source=chatgpt.com",
+                  "title": "ChatGPT Rate Card (Business, Enterprise/Edu credit-based pricing) | OpenAI Help Center",
+                  "snippet": "CHATGPT RATE CARD (BUSINESS, ENTERPRISE/EDU CREDIT-BASED PRICING)  Learn how credit rates work for ChatGPT Chat, Work, and Codex for Business & Enterprise/Edu plans.  Updated: 4 hours ago  GPT‑6 Pro,...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/20001354-gpt-56-trong-chatgpt?utm_source=chatgpt.com",
+                  "title": "GPT-5.6 và GPT-6 Pro trong ChatGPT | OpenAI Help Center",
+                  "snippet": "Trang này được dịch bằng máy học. Xem bài viết gốc bằng tiếng Anh.  GPT-5.6 VÀ GPT-6 PRO TRONG CHATGPT  Tìm hiểu cách GPT-5.6 và GPT-6 Pro hoạt động trong ChatGPT, các tùy chọn có trong từng gói, cũn...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/vi-vn/articles/11481834-b%E1%BA%A3ng-gi%C3%A1-chatgpt-gi%C3%A1-theo-credit-cho-business-enterpriseedu?utm_source=chatgpt.com",
+                  "title": "Bảng giá ChatGPT (giá theo credit cho Business, Enterprise/Edu) | OpenAI Help Center",
+                  "snippet": "BẢNG GIÁ CHATGPT (GIÁ THEO CREDIT CHO BUSINESS, ENTERPRISE/EDU)  Tìm hiểu cách tính mức phí credit cho ChatGPT Trò chuyện, Công việc và Codex trong các gói Business và Enterprise/Edu.  Đã cập nhật: 6...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help.openai.com/en/articles/11481834-chatgpt-rate-card-business-enterpriseedu/?utm_source=chatgpt.com",
+                  "title": "ChatGPT Rate Card (Business, Enterprise/Edu credit-based pricing) | OpenAI Help Center",
+                  "snippet": "CHATGPT RATE CARD (BUSINESS, ENTERPRISE/EDU CREDIT-BASED PRICING)  Learn how credit rates work for ChatGPT Chat, Work, and Codex for Business & Enterprise/Edu plans.  Updated: 14 minutes ago  GPT‑6 P...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://deploymentsafety.openai.com/gpt-6-astra/vision?utm_source=chatgpt.com",
+                  "title": "GPT-6 Astra System Card - OpenAI Deployment Safety Hub",
+                  "snippet": "96†^{1}】  * * *  1. GPT-6 Astra is intended to be used in accordance with OpenAI’s Usage Policies, Service Terms, and Terms of Use. These policies apply universally to OpenAI services and are designed...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://openai.com/vi-VN/index/safety-overview-gpt-6-astra/?utm_source=chatgpt.com",
+                  "title": "Tổng quan về an toàn: GPT-6 Astra | OpenAI",
+                  "snippet": "3 tháng 9, 2026  TỔNG QUAN VỀ AN TOÀN: GPT‑6 ASTRA  Hôm nay, chúng tôi ra mắt GPT‑6 Astra, mô hình mạnh nhất mà chúng tôi từng triển khai rộng rãi. Astra là mô hình đầu tiên của chúng tôi đạt đạt cấp...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": 1788393600.0,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help-lb.openai.com/en/articles/12003714-chatgpt-business-models-limits?utm_source=chatgpt.com",
+                  "title": "ChatGPT Business models and limits | OpenAI Help Center",
+                  "snippet": "The plan offers two types of seats: Standard and Premium, which include usage for ChatGPT features such as thinking models, coding, and agentic features. Premium seats offer more included usage for Ch...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help-lb.openai.com/en/articles/20001354?utm_source=chatgpt.com",
+                  "title": "GPT-5.6 and GPT-6 Pro in ChatGPT | OpenAI Help Center",
+                  "snippet": "GPT-5.6 AND GPT-6 PRO IN CHATGPT  Learn how GPT-5.6 and GPT-6 Pro work in ChatGPT, which options are available by plan, and how usage limits and availability work.  Updated: yesterday  GPT‑6 Pro, pow...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help-lb.openai.com/en/articles/6825453-chatgpt-kiad%C3%A1si-megjegyz%C3%A9sek?utm_source=chatgpt.com",
+                  "title": "ChatGPT — Release Notes | OpenAI Help Center",
+                  "snippet": "CHATGPT — RELEASE NOTES  A changelog of the latest updates and release notes for ChatGPT  Updated: 3 hours ago  SEPTEMBER 10, 2026  DATA PLUGIN IN CHATGPT WORK AND CODEX  The Data plugin helps you an...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://help-lb.openai.com/en/articles/20001478-reviewing-work-and-codex-usage-and-using-personal-analytics-in-chatgpt-desktop?utm_source=chatgpt.com",
+                  "title": "Reviewing Work and Codex usage and using Personal Analytics in ChatGPT Desktop | OpenAI Help Center",
+                  "snippet": "REVIEWING WORK AND CODEX USAGE AND USING PERSONAL ANALYTICS IN CHATGPT DESKTOP  Learn how to review Work and Codex credit usage, check monthly usage limits, and use Personal Analytics to explore acti...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 23
+                  },
+                  "pub_date": null,
+                  "attribution": "openai.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "note.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/drake1222/n/nb94c67cb4827?hl=en&utm_source=chatgpt.com",
+                  "title": "For ChatGPT Plus Users Who Ran Out of Limits in 20 Minutes: 7 Effective Steps Recommended by Overseas Power Users to Minimize Token Consumption and Maximize Results with GPT-6 Astra｜どれいくl AIを成果に変える仕事術",
+                  "snippet": "1: BREAK CONVERSATIONS DOWN BY 'WORK UNIT'  This has the biggest impact. After seeing the breakdown, I think the reason is self-explanatory.  The more work you pile into a single conversation, the mor...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1788825600.0,
+                  "attribution": "note.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/creator_tomo/n/na2c25e8cc17a?hl=en&utm_source=chatgpt.com",
+                  "title": "GPT-6 Astra is now available for all plans. However, be aware of the \"where you can use it\" and the \"distributed reset rights\"｜Tomo",
+                  "snippet": "3. WHAT HAPPENS TO THE USAGE QUOTA?  > Across the plans Astra will be included in the normal usage allocation and you will be able to use 100% of it towards Astra. > > — Tibo (@thsottiaux) September 3...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": 1788566400.0,
+                  "attribution": "note.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/teto_66/n/nc5e317971aa0?hl=en&utm_source=chatgpt.com",
+                  "title": "Mastering ChatGPT from Scratch!｜Teto66",
+                  "snippet": "HOW TO SWITCH MODELS, ETC.: WORK EDITION  The main models available in ChatGPT Work are explained below.  > GPT-6 Astra: The most high-performance model for difficult tasks spanning multiple steps, su...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1785628800.0,
+                  "attribution": "note.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/duke_technology/n/n69757b47bdc4?utm_source=chatgpt.com",
+                  "title": "GPT-6 Astraの推論レベル、どれを使う？LowからUltraまでの公式説明と僕の使い分け｜Duke",
+                  "snippet": "Image: 見出し画像  GPT-6 ASTRAの推論レベル、どれを使う？LOWからULTRAまでの公式説明と僕の使い分け  [Button: 2 ]  Duke  2026年9月9日 02:15  Astraの設定を開くと、Low、Medium、High、XHigh、Max、Ultra。選択肢が多いと、「結局、一番上にしておけばいいのかな」と思ってしまいます。  僕も今は、高い設定をかなり積...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": 1788912000.0,
+                  "attribution": "note.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://note.com/inoue_industries/n/n6d454e4a35cc?hl=en&utm_source=chatgpt.com",
+                  "title": "Neither good settings nor AI employees will appear unless you go looking for them｜事業鍛造家の井上",
+                  "snippet": "NEITHER GOOD SETTINGS NOR AI EMPLOYEES WILL APPEAR UNLESS YOU GO LOOKING FOR THEM  事業鍛造家の井上  2026年8月21日 17:55  I am Inoue, a business forger.  There was a time when I thought that if I just installed...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 24
+                  },
+                  "pub_date": 1787270400.0,
+                  "attribution": "note.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "tistory.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://heyoonow.tistory.com/300?utm_source=chatgpt.com",
+                  "title": "GPT-6 Astra Light·Medium·High·Ultra·Max 차이와 GPT-5.6 Sol·Terra 가격 비교",
+                  "snippet": "GPT-6 ASTRA LIGHT·MEDIUM·HIGH·ULTRA·MAX 차이와 GPT-5.6 SOL·TERRA 가격 비교  by 헤이나우   GPT-6 Astra와 GPT-5.6 Sol·Terra는 성능뿐 아니라 토큰 가격에서 차이가 크다. 특히 Astra의 Light·High·Ultra·Max 같은 표기는 별도 모델이라기보다 추론 강도와 관련된 설정이므...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1788739200.0,
+                  "attribution": "tistory.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "ai-revolution.co.jp",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://ai-revolution.co.jp/media/gpt-6-astra-reasoning-effort/?utm_source=chatgpt.com",
+                  "title": "GPT-6 Astraのreasoning effort設定ガイド｜low=Sol high相当・medium推奨の理由とコスト最適化〖2026年9月〗 | AI革命株式会社",
+                  "snippet": "AIツール2026年9月更新  GPT-6 ASTRAのREASONING EFFORT設定ガイド｜LOW=SOL HIGH相当・MEDIUM推奨の理由とコスト最適化〖2026年9月〗  公開日: 2026/09/07  Image: GPT-6 Astraのreasoning effort設定ガイド｜low=Sol high相当・medium推奨の理由とコスト最適化〖2026年9月〗  この記...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1788739200.0,
+                  "attribution": "ai-revolution.co.jp"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "jab-guyver.co.kr",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://jab-guyver.co.kr/7434?category=1142687&utm_source=chatgpt.com",
+                  "title": "GPT-6 Astra 사용법｜Plus·Pro에서 안 보일 때 Work·Codex 설정방법",
+                  "snippet": "GPT-6 ASTRA 사용법｜PLUS·PRO에서 안 보일 때 WORK·CODEX 설정방법  잡가이버 2026. 9. 10.  반응형  GPT-6 ASTRA 사용법｜PLUS·PRO에서 안 보일 때 해결  GPT-6 Astra 사용법은 어렵지 않습니다. ChatGPT나 Codex의 모델 선택기에서 Astra를 고른 뒤, 해결할 문제와 원하는 결과를 구체적으로...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": 1788998400.0,
+                  "attribution": "jab-guyver.co.kr"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "linux.do",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://linux.do/t/topic/2866739?tl=en%EF%BC%8C%E7%81%B5%E6%84%9F%E4%B8%80%E9%97%AA%EF%BC%8C%E8%BF%98%E6%84%A3%E7%9D%80%E5%B9%B2%E5%98%9B%EF%BC%8C%E6%88%91%E6%90%9Ewindsurf&utm_source=chatgpt.com",
+                  "title": "雷达站的数据够了。GPT-6-Astra各个思考档位的分数差距这么小吗？low102 ~ ultra110 - 搞七捻三 - LINUX DO",
+                  "snippet": "雷达站的数据够了。GPT-6-ASTRA各个思考档位的分数差距这么小吗？LOW102 ~ ULTRA110  搞七捻三  人工智能, 纯水  sq4537 (呆) 2026 年9 月 7 日 03:45 1  image1920×684 306 KB  官方推荐中档位看来都保守了呢  luna的low是咋回事 Image: :rofl:  2 个赞  GPT-6 Astra是真变强了，还是把糖果...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1788739200.0,
+                  "attribution": "linux.do"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "sotwe.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.sotwe.com/HiASSea?lang=tr&utm_source=chatgpt.com",
+                  "title": "dæv @HiASSea - Twitter Kullanıcısı | Sotwe",
+                  "snippet": "DÆV  @HIASSEA  swe. swiftUI, flutter, NodeJS.  dreaming with open eyes  Twitter'a katıldığı tarih November 2018  2K Takip Edilen  1.5K Takipçi  12.1K Gönderi  dæv @HiASSea  yaklaşık 5 saat önce  🤣 sa...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": null,
+                  "attribution": "sotwe.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "yahoo.co.jp",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&p=gpt5.6+sol+ultra&rkf=1&utm_source=chatgpt.com",
+                  "title": "「gpt5.6 sol ultra」のX（旧Twitter）検索結果 - Yahoo!リアルタイム検索",
+                  "snippet": "*   *   * 9月8日(火) 11:07  メニューを開く  Astraやばい。Ultraだとトークン燃えすぎてしんどいけど、軽でも十分GPT5.6Solよりつよい！ とくに日本語の出力がまともになっててうれしい！  Airi@aiko_dj  *   *   * 9月7日(月) 13:26  メニューを開く  astraの推論レベルをどう調整すべきか？ GPT5.6 Sol高よりも、GPT...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "yahoo.co.jp"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "mashreqdevelopments.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://ttifloorcare.mashreqdevelopments.com/?_=%2Fdocs%2Fmodels%23aU4iOhb7bFv5Y%2FtuyCuiW2BOMToR7yAb%2BA%3D%3D&utm_source=chatgpt.com",
+                  "title": "Models | ChatGPT Learn",
+                  "snippet": "CHOOSE A MODEL  Use the model switcher below the composer to choose an available model and reasoning effort.  Higher reasoning effort can improve results for complex tasks, but it takes longer and use...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "mashreqdevelopments.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "zamantika.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://zamantika.com/de/petergyang/status/2095985302049604069?utm_source=chatgpt.com",
+                  "title": "Peter Yang: \"Astra medium or Astra high?\" | Zamantika",
+                  "snippet": "GIF  English  0  0  0  211  RG1234@Simonsdad3·5d  @petergyang ultra always  Übersetzen  English  0  0  0  62  David@SpotTheTrend·4d  @petergyang Ultra, but not for everything, just for critical areas...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": null,
+                  "attribution": "zamantika.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "github.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/openai/codex/issues/34388?utm_source=chatgpt.com",
+                  "title": "Add an explicit Smart Mode for automatic model and reasoning-effort selection · Issue #34388 · openai/codex · GitHub",
+                  "snippet": "ADD AN EXPLICIT SMART MODE FOR AUTOMATIC MODEL AND REASONING-EFFORT SELECTION #34388  New issue  Copy link  New issue  Copy link  Open  Open  Add an explicit Smart Mode for automatic model and reason...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": 1784505600.0,
+                  "attribution": "github.com"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://github.com/openai/codex/issues/42301?utm_source=chatgpt.com",
+                  "title": "Android Remote reasoning-effort mismatch: mobile Max/Ultra appears as Medium on Windows Desktop · Issue #42301 · openai/codex · GitHub",
+                  "snippet": "ANDROID REMOTE REASONING-EFFORT MISMATCH: MOBILE MAX/ULTRA APPEARS AS MEDIUM ON WINDOWS DESKTOP #42301  New issue  Copy link  New issue  Copy link  Open  Open  Android Remote reasoning-effort mismatc...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 20
+                  },
+                  "pub_date": 1788307200.0,
+                  "attribution": "github.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "ai-mindset.ai",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.ai-mindset.ai/chatgpt-cheatsheet?utm_source=chatgpt.com",
+                  "title": "ChatGPT Ultimate Capabilities Cheatsheet — AI Mindset",
+                  "snippet": "Two transcription models shipped on July 28, 2026  GPT Transcribe handles file transcription and final transcripts at $0.0045 per minute. GPT Live Transcribe handles low-latency streaming at $0.017 pe...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": 1788480000.0,
+                  "attribution": "ai-mindset.ai"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "sebastianraschka.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms?utm_source=chatgpt.com",
+                  "title": "Controlling Reasoning Effort in LLMs",
+                  "snippet": "5. HOW “REASONING EFFORT” SETTINGS WORK  In this section, I want to provide a brief overview of how the different reasoning effort toggles may be implemented, which have been introduced in models like...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": 1784332800.0,
+                  "attribution": "sebastianraschka.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "digitalapplied.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.digitalapplied.com/blog/thinking-effort-dials-consumer-ai-explained?utm_source=chatgpt.com",
+                  "title": "Effort Dials Arrive: Think Buttons and Sliders Explained",
+                  "snippet": "AI Development Industry Guide 17 min read Published August 7, 2026  Four vendors · four different ladders · three level names they all share  EFFORT DIALS ARRIVE: THINK BUTTONS AND SLIDERS EXPLAINED...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": 1786060800.0,
+                  "attribution": "digitalapplied.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "scriptception.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://scriptception.com/guides/posts/gpt-5-6-model-effort-cost-guide.html?utm_source=chatgpt.com",
+                  "title": "Using GPT-5.6: Model, Effort, and Cost Guide | SCRIPTCEPTION",
+                  "snippet": "USING GPT-5.6: MODEL, EFFORT, AND COST GUIDE  Choose GPT-5.6 Sol, Terra, or Luna; match reasoning effort to the task; and control usage across Chat, Work, Codex, CLI, and the API.  Joshua Russell  20...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "pub_date": 1783728000.0,
+                  "attribution": "scriptception.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "codexissues.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://codexissues.com/issue/30585-ultra-sends-reasoning-effort-max-but-backend-rejects-max?utm_source=chatgpt.com",
+                  "title": "Ultra sends reasoning.effort=max, but backend rejects max. · openai/codex #30585",
+                  "snippet": "WHAT ISSUE ARE YOU SEEING?  The `/model` command gives me the option `ultra` for reasoning effort on `gpt-5.6-sol`, but when I select that I get the following error:  `{ \"type\": \"error\", \"error\": { \"t...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 21
+                  },
+                  "pub_date": 1782691200.0,
+                  "attribution": "codexissues.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "substack.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://aiblewmymind.substack.com/p/how-to-use-the-new-chatgpt-complete?utm_source=chatgpt.com",
+                  "title": "How to Use the New ChatGPT: Complete Guide (Work, Codex, GPT-5.6)",
+                  "snippet": "If that sounds familiar, it should. Most of it mirrors what already exists in the Claude ecosystem, close enough to feel like replicas of what you’re used to working with there. But since Work launch...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 22
+                  },
+                  "pub_date": 1784419200.0,
+                  "attribution": "substack.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "devopsschool.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.devopsschool.com/blog/the-master-guide-to-chatgpt-and-codex/?utm_source=chatgpt.com",
+                  "title": "The Master Guide to ChatGPT and Codex",
+                  "snippet": "Rule: Do not use a long Chat conversation as a substitute for Work, a Project, Deep Research, or Codex when the task naturally belongs there.  1.2 CHOOSE THE MODEL SECOND  As of July 28, 2026:  * GPT...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 25
+                  },
+                  "pub_date": 1785196800.0,
+                  "attribution": "devopsschool.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "mcpchannel.ai",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.mcpchannel.ai/discover/64fe8d9b-1749-4350-ae35-8dab7c41fb36?utm_source=chatgpt.com",
+                  "title": "mcpchannel.ai — Discover & Use MCPs",
+                  "snippet": "ADVANCED FEATURES  THINKING KEYWORDS  > [!Note] `ultrathink` is the only documented prompt keyword for a one-turn request for deeper reasoning. Phrases such as `think`, `think hard`, and `think harder...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 26
+                  },
+                  "pub_date": 1788998400.0,
+                  "attribution": "mcpchannel.ai"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "chihhung.github.io",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://chihhung.github.io/Blog/posts/%E6%95%99%E5%AD%B8/ai%E9%96%8B%E7%99%BC/openai-codex%E7%94%9F%E6%85%8B%E7%B3%BB%E6%95%99%E5%AD%B8%E6%89%8B%E5%86%8A/?utm_source=chatgpt.com",
+                  "title": "OpenAI Codex生態系教學手冊 | Eric 個人部落格",
+                  "snippet": "4.2 REASONING EFFORT 推理強度#  概念  同一個模型，可以用不同的「思考深度」跑。這是 Codex 最容易被忽略但影響最大的設定之一。  UI 標籤與設定值的官方對照〖Official〗  > ⚠️ Version Note：本節已於 2026-09-09 更正 > > 本手冊 v2.0 曾記載「官方未提供標籤對照表」。該敘述已不再成立——官方模型頁現已明確給出 UI 標籤與...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 27
+                  },
+                  "pub_date": 1788912000.0,
+                  "attribution": "chihhung.github.io"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "shoptherite.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://shoptherite.com/?_=%2Fhytime%2Fdsh-thinking-effort%23twhA%2FDXBZl%2FXcdax7koclrAR&utm_source=chatgpt.com",
+                  "title": "GitHub - hytime/dsh-thinking-effort: A DeepSeek Harness plugin for reasoning-effort defaults and protocol-aware gateway compatibility settings for llm-pi-ai models. · GitHub",
+                  "snippet": "FEATURES  Feature  | Description --- | --- Default levels  | Adds `off`, `high`, and `max` without overwriting custom values Per-model editor  | Select levels and configure gateway values for both cat...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 28
+                  },
+                  "pub_date": null,
+                  "attribution": "shoptherite.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "swhan0329.github.io",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://swhan0329.github.io/codex-101/?utm_source=chatgpt.com",
+                  "title": "Codex 101 — OpenAI Codex Practical Guide for Real Work",
+                  "snippet": "ASTRA · SOL · TERRA · LUNA, 작업에 맞게 선택  내 계정의 Power부터 확인 Astra · Sol · Terra · Luna  계정의 기본 Power에서 시작하세요. Astra 배포 대상 Pro·Business($100)·Enterprise의 앱·웹 옵션은 Terra Light → Sol Light → Sol Medium → Astr...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 29
+                  },
+                  "pub_date": 1788998400.0,
+                  "attribution": "swhan0329.github.io"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "getpromptsnap.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://getpromptsnap.com/?utm_source=chatgpt.com",
+                  "title": "Get Prompt Snap - Explore Amazing AI-Generated Images",
+                  "snippet": "Lighting should be soft and natural, interacting correctly with both subject and reflection. Add subtle imperfections like slight smudges or grain in the mirror. Ensure perfect blending of identity wi...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 30
+                  },
+                  "pub_date": 1781395200.0,
+                  "attribution": "getpromptsnap.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "iziraa.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://iziraa.com/gpt-5-6-in-chatgpt/?utm_source=chatgpt.com",
+                  "title": "GPT-5.6 in ChatGPT: What Changed—and Is It Actually Better? - Iziraa",
+                  "snippet": "KEY TAKEAWAYS ABOUT GPT-5.6 IN CHATGPT  * GPT-5.6 is a family containing Sol, Terra and Luna, not a single identical model. * GPT-5.6 Sol is the flagship reasoning model; Sol Pro targets the most diff...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 31
+                  },
+                  "pub_date": 1786320000.0,
+                  "attribution": "iziraa.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "nomaedigital.com",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://developers.nomaedigital.com/feed?utm_source=chatgpt.com",
+                  "title": "Video Feed · Nomae Developers",
+                  "snippet": "CODEX JUST GOT BETTER FOR DEVELOPERS  7 min  Developers struggle to ship ambitious projects and keep work organized beyond individual code edits. Codex is now integrated into ChatGPT and centered on G...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 32
+                  },
+                  "pub_date": null,
+                  "attribution": "nomaedigital.com"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "webiano.digital",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://webiano.digital/openai-splits-its-lineup-into-sol-terra-and-luna-while-washington-gates-the-rollout/?utm_source=chatgpt.com",
+                  "title": "OpenAI splits its lineup into Sol, Terra and Luna while Washington gates the rollout",
+                  "snippet": "Done carelessly, frequent cache writes on shifting prefixes can erase the savings, because you keep paying the write premium without accumulating read discounts. The change rewards teams that treat pr...",
+                  "ref_id": {
+                    "turn_index": 1,
+                    "ref_type": "search",
+                    "ref_index": 33
+                  },
+                  "pub_date": 1782864000.0,
+                  "attribution": "webiano.digital"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://developers.openai.com/api/docs/guides/latest-model",
+            "https://developers.openai.com/api/docs/guides/latest-model?utm_source=chatgpt.com",
+            "https://developers.openai.com/api/docs/models/gpt-6-astra",
+            "https://developers.openai.com/api/docs/models/gpt-6-astra?utm_source=chatgpt.com"
+          ],
+          "citations": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a09008524c7ebc8f492881e9ff93ad",
+          "message_type": "next",
+          "turn_exchange_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "working_turn_id": "fd5c2411-d41b-4719-9da9-ce4549b7b1a9",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "9fe0c9ff-5134-4f76-a332-bb0349e94083",
+          "turn_id": "cfa34f7d-c730-410c-9066-629e2600eae7",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fd5c2411-d41b-4719-9da9-ce4549b7b1a9:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "9fe0c9ff-5134-4f76-a332-bb0349e94083",
+      "children": []
+    }
+  },
+  "current_node": "18b3f8a6-543a-46e1-b8b8-de14cf56a929",
+  "context_truncation_continuation": null
+}

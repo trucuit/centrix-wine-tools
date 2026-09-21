@@ -1,0 +1,20 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_00000000f9b481f89c8a524a2d13cb98",
+    "content_type": "image_asset_pointer",
+    "width": 660,
+    "height": 880,
+    "size_bytes": 620444,
+    "local_path": "/Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/account_4f034bd0289/assets/6aad4ad8-3360-83ec-892b-17467b0ef46e/d33c92ad-f9d9-4ed6-a9d2-1eecbb24379d.png"
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000007c388211875715861d3a9023",
+    "content_type": "image_asset_pointer",
+    "width": 1122,
+    "height": 1402,
+    "size_bytes": 1902521,
+    "local_path": "/Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/account_4f034bd0289/assets/6aad4ad8-3360-83ec-892b-17467b0ef46e/Bìa tạp chí thời trang ÉLÉGANCE.png"
+  }
+]

@@ -1,0 +1,176 @@
+{
+  "title": "New chat",
+  "create_time": 1789459330.983045,
+  "update_time": 1789459446.617353,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa8fb5c-035c-83ec-b5cf-f9b400ceb791",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5.5-wm",
+  "atlas_mode_enabled": null,
+  "conversation_origin": "tpp",
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "67de507a-92d7-4052-a5a4-5ddc8893e1e2"
+      ]
+    },
+    "67de507a-92d7-4052-a5a4-5ddc8893e1e2": {
+      "id": "67de507a-92d7-4052-a5a4-5ddc8893e1e2",
+      "message": {
+        "id": "67de507a-92d7-4052-a5a4-5ddc8893e1e2",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789459295.772,
+        "update_time": 1789459447.744159,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "cHÀO BẠN"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "turn_id": "053411ca-e876-4316-b902-76753dca97ce",
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-04031b80-86a7-40b6-819e-198ebda66365:NZ",
+          "request_id": "wfr_01a0a415df847e35a84bbb18fd052183",
+          "message_source": null,
+          "turn_exchange_id": "04031b80-86a7-40b6-819e-198ebda66365",
+          "working_turn_id": "04031b80-86a7-40b6-819e-198ebda66365",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "c11cedb4-0d19-4877-9cb4-5a38cc5e7bfa",
+        "bb9525d7-6e96-45ea-8196-2ac7f0bc63ed"
+      ]
+    },
+    "c11cedb4-0d19-4877-9cb4-5a38cc5e7bfa": {
+      "id": "c11cedb4-0d19-4877-9cb4-5a38cc5e7bfa",
+      "message": {
+        "id": "c11cedb4-0d19-4877-9cb4-5a38cc5e7bfa",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789459336.575527,
+        "update_time": 1789459348.861405,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [],
+          "source_analysis_msg_id": "c11cedb4-0d19-4877-9cb4-5a38cc5e7bfa"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "chime_version": 3,
+          "thinking_effort": "standard",
+          "reasoning_start_time": 1789459335.1699107,
+          "cot_version": "v5",
+          "parent_id": "c8268ef3-8c98-4192-b35a-2812b44fc9a1",
+          "model_slug": "gpt-5.5-wm",
+          "turn_exchange_id": "04031b80-86a7-40b6-819e-198ebda66365",
+          "working_turn_id": "04031b80-86a7-40b6-819e-198ebda66365",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "turn_id": "fc4a2ec8-3021-4319-8290-d0f83b969de8",
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-04031b80-86a7-40b6-819e-198ebda66365:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "67de507a-92d7-4052-a5a4-5ddc8893e1e2",
+      "children": []
+    },
+    "bb9525d7-6e96-45ea-8196-2ac7f0bc63ed": {
+      "id": "bb9525d7-6e96-45ea-8196-2ac7f0bc63ed",
+      "message": {
+        "id": "bb9525d7-6e96-45ea-8196-2ac7f0bc63ed",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789459435.647959,
+        "update_time": 1789459447.744511,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [],
+          "source_analysis_msg_id": "bb9525d7-6e96-45ea-8196-2ac7f0bc63ed"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "chime_version": 3,
+          "thinking_effort": "standard",
+          "reasoning_start_time": 1789459435.1229215,
+          "cot_version": "v5",
+          "parent_id": "dcc1cac7-1ac5-4c99-9f41-e5f52b52496b",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "996bc0f5-8046-4f09-ae2f-a15b0d839fa5",
+          "working_turn_id": "996bc0f5-8046-4f09-ae2f-a15b0d839fa5",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "turn_id": "7c6ad431-ca8f-48b2-8670-16060211a7ff",
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-996bc0f5-8046-4f09-ae2f-a15b0d839fa5:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "67de507a-92d7-4052-a5a4-5ddc8893e1e2",
+      "children": []
+    }
+  },
+  "current_node": "bb9525d7-6e96-45ea-8196-2ac7f0bc63ed",
+  "context_truncation_continuation": null
+}

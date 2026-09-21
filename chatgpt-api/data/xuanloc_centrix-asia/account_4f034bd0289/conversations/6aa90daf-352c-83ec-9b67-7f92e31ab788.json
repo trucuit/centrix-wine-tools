@@ -1,0 +1,181 @@
+{
+  "title": "Viết lại thông tin",
+  "create_time": 1789463984.713461,
+  "update_time": 1789790260.004933,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa90daf-352c-83ec-9b67-7f92e31ab788",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.openai.com",
+    "https://www.apple.com/",
+    "mailto:anhtran8301@gmail.com",
+    "https://docs.google.com/document/d/",
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "0c4a0fa8-1279-4bd9-bdec-dd0e3ab0f839"
+      ]
+    },
+    "0c4a0fa8-1279-4bd9-bdec-dd0e3ab0f839": {
+      "id": "0c4a0fa8-1279-4bd9-bdec-dd0e3ab0f839",
+      "message": {
+        "id": "0c4a0fa8-1279-4bd9-bdec-dd0e3ab0f839",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789463983.865,
+        "update_time": 1789463989.931576,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_00000000651c820bba84f10c26346291",
+              "size_bytes": 21922,
+              "width": 251,
+              "height": 133,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "viết lại cho mình thông tin"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_00000000651c820bba84f10c26346291",
+              "size": 21922,
+              "name": "ed7ada8d-ee14-4b0d-a663-2e45ad4deb12.png",
+              "mime_type": "image/png",
+              "width": 251,
+              "height": 133,
+              "source": "local",
+              "library_file_id": "libfile_5a229697208081919d00397ba3404c12",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "a70ee90f-b7c0-4a55-af5a-30a7493e8408",
+          "message_source": null,
+          "turn_exchange_id": "7fcd163e-011c-4c3e-a526-a58d02d1467c",
+          "working_turn_id": "7fcd163e-011c-4c3e-a526-a58d02d1467c",
+          "turn_id": "6a074e18-f303-49d1-b438-d00d5ee47c54",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "80837c96-2cff-49fe-97c9-6480cffba7dd"
+      ]
+    },
+    "80837c96-2cff-49fe-97c9-6480cffba7dd": {
+      "id": "80837c96-2cff-49fe-97c9-6480cffba7dd",
+      "message": {
+        "id": "80837c96-2cff-49fe-97c9-6480cffba7dd",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1789463986.679219,
+        "update_time": 1789790259.823533,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Thông tin trong ảnh:\n\n**Email:** anhtran8301@gmail.com  \n**Mật khẩu:** Tuananh@123"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "a70ee90f-b7c0-4a55-af5a-30a7493e8408",
+          "message_type": "next",
+          "turn_exchange_id": "7fcd163e-011c-4c3e-a526-a58d02d1467c",
+          "working_turn_id": "7fcd163e-011c-4c3e-a526-a58d02d1467c",
+          "model_slug": "gpt-5-6",
+          "default_model_slug": "gpt-5-6",
+          "can_save": true,
+          "parent_id": "1dff025c-a845-48ba-ab02-c46cadc90c05",
+          "turn_id": "16ad7f94-d436-4905-b0fd-3e4572645a83",
+          "safe_urls": [
+            "mailto:anhtran8301@gmail.com"
+          ],
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "0c4a0fa8-1279-4bd9-bdec-dd0e3ab0f839",
+      "children": []
+    }
+  },
+  "current_node": "80837c96-2cff-49fe-97c9-6480cffba7dd",
+  "context_truncation_continuation": null
+}
