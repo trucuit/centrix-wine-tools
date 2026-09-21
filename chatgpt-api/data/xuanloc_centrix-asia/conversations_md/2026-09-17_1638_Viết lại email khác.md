@@ -3,16 +3,31 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-17 16:38:10 · **Updated:** 2026-09-17 16:39:04
 > **ID:** `6aabb500-0b44-83ec-b91e-cd8570843453`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-17 16:38:11
+> ### 👤 User · 2026-09-17 16:38:11
+>
+>
+> ![Image (945x2048)](../assets/6aabb500-0b44-83ec-b91e-cd8570843453/36fe7db4-4e0d-4635-843c-ba7c19759d94.png)
+>
+> viết lại email khác cho mình
 
-
-![Image (945x2048)](../assets/6aabb500-0b44-83ec-b91e-cd8570843453/36fe7db4-4e0d-4635-843c-ba7c19759d94.png)
-
-viết lại email khác cho mình
-
-![36fe7db4-4e0d-4635-843c-ba7c19759d94.png](../assets/6aabb500-0b44-83ec-b91e-cd8570843453/36fe7db4-4e0d-4635-843c-ba7c19759d94.png)
+> ![36fe7db4-4e0d-4635-843c-ba7c19759d94.png](../assets/6aabb500-0b44-83ec-b91e-cd8570843453/36fe7db4-4e0d-4635-843c-ba7c19759d94.png)
 
 ---
 
@@ -31,9 +46,9 @@ Nếu anh muốn kiểu **email ngẫu nhiên giống tài khoản khách hàng*
 
 ---
 
-### 👤 User · 2026-09-17 16:38:55
-
-bạn viết email trong ảnh cho mình để mình copy
+> ### 👤 User · 2026-09-17 16:38:55
+>
+> bạn viết email trong ảnh cho mình để mình copy
 
 ---
 

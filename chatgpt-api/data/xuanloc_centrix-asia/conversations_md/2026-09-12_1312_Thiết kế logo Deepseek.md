@@ -3,18 +3,33 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-12 13:12:51 · **Updated:** 2026-09-12 13:13:55
 > **ID:** `6aa4ed62-1b2c-83ec-ac1e-736c94330744`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-12 13:12:53
+> ### 👤 User · 2026-09-12 13:12:53
+>
+>
+> ![Image (1080x1080)](../assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/Tai-khoan-ChatGPT-Pro-200-1-thang-GPT-o1-Pro-–-Tai-khoan-Share(1).webp)
+>
+> Vẽ cho mình Logo và thông tin Deepseek vào khung này thay cho mình @Tạo hình ảnh 
 
+> ![deepseek-color.svg](../assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/deepseek-color.svg)
 
-![Image (1080x1080)](../assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/Tai-khoan-ChatGPT-Pro-200-1-thang-GPT-o1-Pro-–-Tai-khoan-Share(1).webp)
-
-Vẽ cho mình Logo và thông tin Deepseek vào khung này thay cho mình @Tạo hình ảnh 
-
-![deepseek-color.svg](../assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/deepseek-color.svg)
-
-![Tai-khoan-ChatGPT-Pro-200-1-thang-GPT-o1-Pro-–-Tai-khoan-Share(1).webp](../assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/Tai-khoan-ChatGPT-Pro-200-1-thang-GPT-o1-Pro-–-Tai-khoan-Share(1).webp)
+> ![Tai-khoan-ChatGPT-Pro-200-1-thang-GPT-o1-Pro-–-Tai-khoan-Share(1).webp](../assets/6aa4ed62-1b2c-83ec-ac1e-736c94330744/Tai-khoan-ChatGPT-Pro-200-1-thang-GPT-o1-Pro-–-Tai-khoan-Share(1).webp)
 
 ---
 

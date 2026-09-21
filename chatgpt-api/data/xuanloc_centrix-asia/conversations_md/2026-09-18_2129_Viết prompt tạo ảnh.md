@@ -3,11 +3,26 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-18 21:29:46 · **Updated:** 2026-09-18 21:34:59
 > **ID:** `6aad4ad8-3360-83ec-892b-17467b0ef46e`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-18 21:29:52
-
-viết cho mình prompt tạo ảnh người mẫu
+> ### 👤 User · 2026-09-18 21:29:52
+>
+> viết cho mình prompt tạo ảnh người mẫu
 
 ---
 
@@ -27,9 +42,9 @@ Nếu anh muốn, em có thể viết riêng cho anh **5 kiểu prompt người 
 
 ---
 
-### 👤 User · 2026-09-18 21:30:19
-
-Tạp chí vo gì ấy
+> ### 👤 User · 2026-09-18 21:30:19
+>
+> Tạp chí vo gì ấy
 
 ---
 
@@ -45,14 +60,14 @@ Nếu anh muốn, em viết luôn cho anh **prompt tạo ảnh bìa tạp chí V
 
 ---
 
-### 👤 User · 2026-09-18 21:31:47
+> ### 👤 User · 2026-09-18 21:31:47
+>
+>
+> ![Image (660x880)](../assets/6aad4ad8-3360-83ec-892b-17467b0ef46e/d33c92ad-f9d9-4ed6-a9d2-1eecbb24379d.png)
+>
+> dạng tạp chí như này, cô gái phương đông
 
-
-![Image (660x880)](../assets/6aad4ad8-3360-83ec-892b-17467b0ef46e/d33c92ad-f9d9-4ed6-a9d2-1eecbb24379d.png)
-
-dạng tạp chí như này, cô gái phương đông
-
-![d33c92ad-f9d9-4ed6-a9d2-1eecbb24379d.png](../assets/6aad4ad8-3360-83ec-892b-17467b0ef46e/d33c92ad-f9d9-4ed6-a9d2-1eecbb24379d.png)
+> ![d33c92ad-f9d9-4ed6-a9d2-1eecbb24379d.png](../assets/6aad4ad8-3360-83ec-892b-17467b0ef46e/d33c92ad-f9d9-4ed6-a9d2-1eecbb24379d.png)
 
 ---
 
@@ -95,9 +110,9 @@ You can visually inspect the generated image directly in the tool result above. 
 
 ---
 
-### 👤 User · 2026-09-18 21:33:52
-
-viết prompt cho mình
+> ### 👤 User · 2026-09-18 21:33:52
+>
+> viết prompt cho mình
 
 ---
 

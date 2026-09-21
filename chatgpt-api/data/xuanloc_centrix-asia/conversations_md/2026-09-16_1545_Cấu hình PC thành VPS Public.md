@@ -3,16 +3,31 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-16 15:45:19 · **Updated:** 2026-09-19 10:36:28
 > **ID:** `6aaa5719-3460-83ec-a1ff-db9169daf426`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-16 15:46:09
-
-Bạn cho mình hỏi là mình đã mua gói FPT wifi doanh nghiệp mua đủ IP Front
-118.69.78.15
-IP Route
-118.69.40.112/30 
-
-thì làm sao để mình biến 1 PC thành VPS ip public
+> ### 👤 User · 2026-09-16 15:46:09
+>
+> Bạn cho mình hỏi là mình đã mua gói FPT wifi doanh nghiệp mua đủ IP Front
+> 118.69.78.15
+> IP Route
+> 118.69.40.112/30 
+>
+> thì làm sao để mình biến 1 PC thành VPS ip public
 
 ---
 
@@ -162,9 +177,9 @@ Anh chỉ cần gửi cho em **model modem/router FPT đang dùng hoặc ảnh t
 
 ---
 
-### 👤 User · 2026-09-16 15:47:07
-
-Vậy máy tính nó tự có IP khác thì xữ lý sao
+> ### 👤 User · 2026-09-16 15:47:07
+>
+> Vậy máy tính nó tự có IP khác thì xữ lý sao
 
 ---
 
@@ -294,11 +309,11 @@ Nếu mục tiêu của anh là **mỗi PC có một IP Public giống VPS**, th
 
 ---
 
-### 👤 User · 2026-09-16 15:49:15
-
-118.69.40.112/30 
-
-112 mà
+> ### 👤 User · 2026-09-16 15:49:15
+>
+> 118.69.40.112/30 
+>
+> 112 mà
 
 ---
 
@@ -337,9 +352,9 @@ Nếu anh gửi em **ảnh thông tin FPT cấp IP Front + IP Route** hoặc **m
 
 ---
 
-### 👤 User · 2026-09-16 15:49:47
-
-gán được cho bao nhiêu máy
+> ### 👤 User · 2026-09-16 15:49:47
+>
+> gán được cho bao nhiêu máy
 
 ---
 
@@ -368,9 +383,9 @@ Nếu anh muốn khoảng **5–6 PC mỗi máy một Public IP riêng**, nên x
 
 ---
 
-### 👤 User · 2026-09-16 15:50:19
-
-Sao bên đó nói 4 Route mà
+> ### 👤 User · 2026-09-16 15:50:19
+>
+> Sao bên đó nói 4 Route mà
 
 ---
 
@@ -411,9 +426,9 @@ Nếu họ trả lời **`.112` và `.115` cũng dùng được**, thì đây kh
 
 ---
 
-### 👤 User · 2026-09-16 15:51:03
-
-Vậy mình setup cho PC như nào
+> ### 👤 User · 2026-09-16 15:51:03
+>
+> Vậy mình setup cho PC như nào
 
 ---
 
@@ -591,16 +606,16 @@ Nếu anh gửi **model router FPT/MikroTik đang dùng hoặc ảnh trang quả
 
 ---
 
-### 👤 User · 2026-09-16 15:52:32
-
-
-
-| IPTheo chuẩn subnet /30 | |
-| ----------------------- | ------------------------------------------------------------ |
-| `118.69.40.112` | Network |
-| `118.69.40.113` | Usable |
-| `118.69.40.114` | Usable |
-| `118.69.40.115` | Broadcast<br><br>4 cái này thì cáo này dùng được thật cho PC |
+> ### 👤 User · 2026-09-16 15:52:32
+>
+>
+>
+> | IPTheo chuẩn subnet /30 | |
+> | ----------------------- | ------------------------------------------------------------ |
+> | `118.69.40.112` | Network |
+> | `118.69.40.113` | Usable |
+> | `118.69.40.114` | Usable |
+> | `118.69.40.115` | Broadcast<br><br>4 cái này thì cáo này dùng được thật cho PC |
 
 ---
 
@@ -651,12 +666,12 @@ Nếu anh gửi em **model router đang nối FPT**, ví dụ MikroTik/TP-Link/D
 
 ---
 
-### 👤 User · 2026-09-16 15:53:35
-
-Còn 
-
-| <br>IP Address | 118.69.78.15 |
-| -------------- | ------------ |
+> ### 👤 User · 2026-09-16 15:53:35
+>
+> Còn 
+>
+> | <br>IP Address | 118.69.78.15 |
+> | -------------- | ------------ |
 
 ---
 

@@ -3,67 +3,82 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-14 14:25:02 · **Updated:** 2026-09-14 14:25:19
 > **ID:** `6aa7a14b-7e28-83ec-a296-2582482ddf3b`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-14 14:24:59
-
-Hello,
-
-
-
-Thank you for reaching out to OpenAI Support.
-
-
-
-We understand that purchases sometimes do not work out as expected, and we’re sorry to hear that you would like to cancel this subscription. We have documented that the 24-seat purchase was made in error and that you intended to purchase a different number of seats for your company.
-
-
-
-After reviewing the request, please note that ChatGPT subscription fees are non-refundable, as outlined in our Terms of Use. Because of this, we’re unable to approve a refund for the 85,668,000 VND payment associated with Invoice 2MNJI1GM-0001.
-
-
-
-If you would like to cancel the current ChatGPT Business subscription to prevent future renewal charges, you can do so directly from ChatGPT:
-
-Sign in to ChatGPT.
-Open your Workspace settings.
-Select Billing.
-Select Manage plan.
-Choose Cancel subscription and complete the confirmation.
-You can also refer to our Help Center article for cancellation guidance:
-
-Canceling your ChatGPT subscription
-
-
-
-Alternatively, if you would prefer Support to assist with the cancellation, please reply to this email and confirm that you would like us to cancel the affected Business subscription. We can then proceed through the applicable cancellation process.
-
-
-
-Please note that cancellation and refund are separate actions. While we are unable to refund the subscription fee, cancellation can prevent the subscription from renewing for another billing period.
-
-
-
-The refund request should be documented as not approved because ChatGPT subscription fees are non-refundable under the applicable Terms of Use.
-
-
-
-Thank you for your understanding. Please let us know whether you would like to cancel the subscription yourself or have us assist with the cancellation.
-
-
-
-If you have any other questions or concerns, please let us know. We're here to help.
-
-
-
-Best regards,
-
-Angel Marie G.
-
-OpenAI Support
-
-
-dịch
+> ### 👤 User · 2026-09-14 14:24:59
+>
+> Hello,
+>
+>
+>
+> Thank you for reaching out to OpenAI Support.
+>
+>
+>
+> We understand that purchases sometimes do not work out as expected, and we’re sorry to hear that you would like to cancel this subscription. We have documented that the 24-seat purchase was made in error and that you intended to purchase a different number of seats for your company.
+>
+>
+>
+> After reviewing the request, please note that ChatGPT subscription fees are non-refundable, as outlined in our Terms of Use. Because of this, we’re unable to approve a refund for the 85,668,000 VND payment associated with Invoice 2MNJI1GM-0001.
+>
+>
+>
+> If you would like to cancel the current ChatGPT Business subscription to prevent future renewal charges, you can do so directly from ChatGPT:
+>
+> Sign in to ChatGPT.
+> Open your Workspace settings.
+> Select Billing.
+> Select Manage plan.
+> Choose Cancel subscription and complete the confirmation.
+> You can also refer to our Help Center article for cancellation guidance:
+>
+> Canceling your ChatGPT subscription
+>
+>
+>
+> Alternatively, if you would prefer Support to assist with the cancellation, please reply to this email and confirm that you would like us to cancel the affected Business subscription. We can then proceed through the applicable cancellation process.
+>
+>
+>
+> Please note that cancellation and refund are separate actions. While we are unable to refund the subscription fee, cancellation can prevent the subscription from renewing for another billing period.
+>
+>
+>
+> The refund request should be documented as not approved because ChatGPT subscription fees are non-refundable under the applicable Terms of Use.
+>
+>
+>
+> Thank you for your understanding. Please let us know whether you would like to cancel the subscription yourself or have us assist with the cancellation.
+>
+>
+>
+> If you have any other questions or concerns, please let us know. We're here to help.
+>
+>
+>
+> Best regards,
+>
+> Angel Marie G.
+>
+> OpenAI Support
+>
+>
+> dịch
 
 ---
 

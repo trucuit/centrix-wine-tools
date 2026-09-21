@@ -221,6 +221,20 @@ def convert_conversation(json_path: Path, assets_dir: Path = None, md_dir: Path 
     lines.append(f"# {title}\n")
     lines.append(f"> **Model:** `{model}` · **Created:** {created} · **Updated:** {updated}")
     lines.append(f"> **ID:** `{conv_id}`\n")
+    lines.append("""<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>\n""")
     lines.append("---\n")
 
     msg_count = 0
@@ -253,28 +267,28 @@ def convert_conversation(json_path: Path, assets_dir: Path = None, md_dir: Path 
         time_info = f" · {msg_time}" if msg_time != "?" else ""
 
         if role == "user":
-            lines.append(f"### {emoji} {label}{time_info}\n")
+            lines.append(f"> ### {emoji} {label}{time_info}\n>")
+            if text.strip():
+                user_content = "\n".join(f"> {l}" if l.strip() else ">" for l in text.splitlines())
+                lines.append(f"{user_content}\n")
+            else:
+                lines.append(">\n")
         elif role == "assistant":
             lines.append(f"### {emoji} {label}{model_info}{time_info}\n")
+            if text.strip():
+                lines.append(f"{text}\n")
         elif role == "tool":
-            tool_id = metadata.get("tool_call_id", "")
             lines.append(f"### {emoji} Tool{time_info}\n")
+            if text.strip():
+                lines.append(f"<details><summary>Tool output</summary>\n\n{text}\n</details>\n")
         else:
             lines.append(f"### {emoji} {label}{time_info}\n")
-
-        # Format content
-        if text.strip():
-            if role == "user":
-                lines.append(f"{text}\n")
-            elif role == "assistant":
-                lines.append(f"{text}\n")
-            elif role == "tool":
-                lines.append(f"<details><summary>Tool output</summary>\n\n{text}\n</details>\n")
-            else:
+            if text.strip():
                 lines.append(f"{text}\n")
 
         # Attachments
         attachments = metadata.get("attachments", [])
+        pfx = "> " if role == "user" else ""
         for att in attachments:
             name = att.get("name", "file")
             mime = att.get("mime_type", "")
@@ -289,11 +303,11 @@ def convert_conversation(json_path: Path, assets_dir: Path = None, md_dir: Path 
 
             if local_file:
                 if mime.startswith("image/"):
-                    lines.append(f"![{name}]({local_file})\n")
+                    lines.append(f"{pfx}![{name}]({local_file})\n")
                 else:
-                    lines.append(f"📎 [{name}]({local_file}) `{mime}`\n")
+                    lines.append(f"{pfx}📎 [{name}]({local_file}) `{mime}`\n")
             else:
-                lines.append(f"> 📎 *{name}* (`{mime}`) — `{fid[:20]}…`\n")
+                lines.append(f"{pfx}📎 *{name}* (`{mime}`) — `{fid[:20]}…`\n")
 
         lines.append("---\n")
 

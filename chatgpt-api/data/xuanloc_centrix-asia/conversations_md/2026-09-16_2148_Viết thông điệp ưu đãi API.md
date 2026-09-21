@@ -3,11 +3,26 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-16 21:48:18 · **Updated:** 2026-09-17 15:06:48
 > **ID:** `6aaaac30-bb00-83ec-9fc8-f3b559960127`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-16 21:49:03
-
-TRả 5$ nhận được 50$ sử dụng api của ChatGPT và được giảm thêm 80% bảng giá model thì nói thế nào để cho khách hiểu lợi bạn
+> ### 👤 User · 2026-09-16 21:49:03
+>
+> TRả 5$ nhận được 50$ sử dụng api của ChatGPT và được giảm thêm 80% bảng giá model thì nói thế nào để cho khách hiểu lợi bạn
 
 ---
 
@@ -36,9 +51,9 @@ Nếu **50 USD credit thực sự được áp dụng đồng thời với mức
 
 ---
 
-### 👤 User · 2026-09-17 15:04:08
-
-mình cần ngắn gọn dễ hiểu
+> ### 👤 User · 2026-09-17 15:04:08
+>
+> mình cần ngắn gọn dễ hiểu
 
 ---
 
@@ -53,9 +68,9 @@ Chỉ **5 USD** → nhận **50 USD tín dụng API**
 
 ---
 
-### 👤 User · 2026-09-17 15:04:21
-
-Làm rõ ưu đãi 250 USD tương đương
+> ### 👤 User · 2026-09-17 15:04:21
+>
+> Làm rõ ưu đãi 250 USD tương đương
 
 ---
 
@@ -72,9 +87,9 @@ Nếu muốn, mình có thể rút tiếp thành **1 câu bán hàng cực ngắ
 
 ---
 
-### 👤 User · 2026-09-17 15:04:43
-
-giá tiêu chuẩn và hãng đang bán lẻ
+> ### 👤 User · 2026-09-17 15:04:43
+>
+> giá tiêu chuẩn và hãng đang bán lẻ
 
 ---
 
@@ -89,13 +104,13 @@ Chỉ **5 USD** → nhận **50 USD tín dụng API**
 
 ---
 
-### 👤 User · 2026-09-17 15:05:03
-
-Chỉ **5 USD** → nhận **50 USD tín dụng AI**
-
-- **giảm 80% so với giá tiêu chuẩn hãng đang bán lẻ**.
-
-👉 Tức **50 USD tín dụng có sức dùng tương đương khoảng 250 USD** theo giá bán lẻ của hãng.
+> ### 👤 User · 2026-09-17 15:05:03
+>
+> Chỉ **5 USD** → nhận **50 USD tín dụng AI**
+>
+> - **giảm 80% so với giá tiêu chuẩn hãng đang bán lẻ**.
+>
+> 👉 Tức **50 USD tín dụng có sức dùng tương đương khoảng 250 USD** theo giá bán lẻ của hãng.
 
 ---
 
@@ -115,13 +130,12 @@ Em có thể viết thêm một bản **ngắn hơn, kiểu headline quảng cá
 
 ---
 
-### 👤 User · 2026-09-17 15:06:31
+> ### 👤 User · 2026-09-17 15:06:31
+>
+>
+> ![Image (762x791)](../assets/6aaaac30-bb00-83ec-9fc8-f3b559960127/55c11556-42cf-4d51-915a-acb37d410d21.png)
 
-
-![Image (762x791)](../assets/6aaaac30-bb00-83ec-9fc8-f3b559960127/55c11556-42cf-4d51-915a-acb37d410d21.png)
-
-
-![55c11556-42cf-4d51-915a-acb37d410d21.png](../assets/6aaaac30-bb00-83ec-9fc8-f3b559960127/55c11556-42cf-4d51-915a-acb37d410d21.png)
+> ![55c11556-42cf-4d51-915a-acb37d410d21.png](../assets/6aaaac30-bb00-83ec-9fc8-f3b559960127/55c11556-42cf-4d51-915a-acb37d410d21.png)
 
 ---
 

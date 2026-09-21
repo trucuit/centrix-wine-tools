@@ -3,11 +3,26 @@
 > **Model:** `gpt-6-pro` · **Created:** 2026-09-17 23:10:52 · **Updated:** 2026-09-17 23:23:42
 > **ID:** `6aac110b-5480-83ec-aa6a-dca2f39e896a`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-17 23:10:49
-
-@Tìm kiếm trên mạng Tìm cho mình 20 tiêu đề hot nhất và các model của gemini trong tháng 9 và tháng 8 vừa qua, và các thông tin sản phẩm AI mới nhất. Viết cho mình file excel 20 tiêu đề, 20 từ khóa để viết SEO
+> ### 👤 User · 2026-09-17 23:10:49
+>
+> @Tìm kiếm trên mạng Tìm cho mình 20 tiêu đề hot nhất và các model của gemini trong tháng 9 và tháng 8 vừa qua, và các thông tin sản phẩm AI mới nhất. Viết cho mình file excel 20 tiêu đề, 20 từ khóa để viết SEO
 
 ---
 

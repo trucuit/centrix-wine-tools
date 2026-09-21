@@ -3,16 +3,31 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-15 18:17:46 · **Updated:** 2026-09-19 10:39:44
 > **ID:** `6aa92957-02c4-83ec-a533-92459ca5ee79`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-15 18:17:58
+> ### 👤 User · 2026-09-15 18:17:58
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1506.jpeg)
+>
+> Mật khẩu này mình nhập vào báo sai thì mình cần làm gì
 
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1506.jpeg)
-
-Mật khẩu này mình nhập vào báo sai thì mình cần làm gì
-
-![IMG_1506.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1506.jpeg)
+> ![IMG_1506.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1506.jpeg)
 
 ---
 
@@ -36,9 +51,9 @@ Nếu anh muốn, anh chụp cho em **màn hình đang báo “sai mật khẩu�
 
 ---
 
-### 👤 User · 2026-09-15 18:18:45
-
-Có thể reset modum không
+> ### 👤 User · 2026-09-15 18:18:45
+>
+> Có thể reset modum không
 
 ---
 
@@ -57,9 +72,9 @@ Nếu anh muốn, em có thể hướng dẫn anh **cách lấy lại/đổi m�
 
 ---
 
-### 👤 User · 2026-09-15 18:19:54
-
-Mình cần vào 2. 168.1.1 bằng admin / 37832DB26D để cấu hình cho ip tĩnh
+> ### 👤 User · 2026-09-15 18:19:54
+>
+> Mình cần vào 2. 168.1.1 bằng admin / 37832DB26D để cấu hình cho ip tĩnh
 
 ---
 
@@ -86,14 +101,14 @@ Nếu anh nói cho em anh đang muốn **IP tĩnh cho máy/server nội bộ** h
 
 ---
 
-### 👤 User · 2026-09-15 18:20:42
+> ### 👤 User · 2026-09-15 18:20:42
+>
+>
+> ![Image (1242x2688)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1507.png)
+>
+> Vẫn báo sai
 
-
-![Image (1242x2688)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1507.png)
-
-Vẫn báo sai
-
-![IMG_1507.png](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1507.png)
+> ![IMG_1507.png](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1507.png)
 
 ---
 
@@ -117,14 +132,14 @@ Nếu mục đích của anh là **gán IP cố định cho server/máy tính, v
 
 ---
 
-### 👤 User · 2026-09-15 19:07:52
+> ### 👤 User · 2026-09-15 19:07:52
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_7AF41A25-FE87-4997-B9A2-0BA2CB6DF542.jpeg)
+>
+> Mình vừa reset lại wifi và hiện tại mình đang không dùng được
 
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_7AF41A25-FE87-4997-B9A2-0BA2CB6DF542.jpeg)
-
-Mình vừa reset lại wifi và hiện tại mình đang không dùng được
-
-![IMG_7AF41A25-FE87-4997-B9A2-0BA2CB6DF542.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_7AF41A25-FE87-4997-B9A2-0BA2CB6DF542.jpeg)
+> ![IMG_7AF41A25-FE87-4997-B9A2-0BA2CB6DF542.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_7AF41A25-FE87-4997-B9A2-0BA2CB6DF542.jpeg)
 
 ---
 
@@ -176,19 +191,19 @@ Sau khi Internet hoạt động trở lại, em sẽ hướng dẫn anh tiếp p
 
 ---
 
-### 👤 User · 2026-09-15 19:10:04
+> ### 👤 User · 2026-09-15 19:10:04
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_39C9A27A-CE2C-4C01-A9A1-2519D64A3639.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1CCB70A7-9A0E-42C1-9023-370174559843.jpeg)
+>
+> A13.11 mình vào không có mạng
 
+> ![IMG_39C9A27A-CE2C-4C01-A9A1-2519D64A3639.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_39C9A27A-CE2C-4C01-A9A1-2519D64A3639.jpeg)
 
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_39C9A27A-CE2C-4C01-A9A1-2519D64A3639.jpeg)
-
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1CCB70A7-9A0E-42C1-9023-370174559843.jpeg)
-
-A13.11 mình vào không có mạng
-
-![IMG_39C9A27A-CE2C-4C01-A9A1-2519D64A3639.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_39C9A27A-CE2C-4C01-A9A1-2519D64A3639.jpeg)
-
-![IMG_1CCB70A7-9A0E-42C1-9023-370174559843.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1CCB70A7-9A0E-42C1-9023-370174559843.jpeg)
+> ![IMG_1CCB70A7-9A0E-42C1-9023-370174559843.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1CCB70A7-9A0E-42C1-9023-370174559843.jpeg)
 
 ---
 
@@ -218,13 +233,12 @@ Với ảnh trước của anh, **GPON = Up và ONU = O5**, nên đường quang
 
 ---
 
-### 👤 User · 2026-09-15 19:10:36
+> ### 👤 User · 2026-09-15 19:10:36
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_6B2757EF-1B3C-43C5-834E-EEB9742E554F.jpeg)
 
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_6B2757EF-1B3C-43C5-834E-EEB9742E554F.jpeg)
-
-
-![IMG_6B2757EF-1B3C-43C5-834E-EEB9742E554F.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_6B2757EF-1B3C-43C5-834E-EEB9742E554F.jpeg)
+> ![IMG_6B2757EF-1B3C-43C5-834E-EEB9742E554F.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_6B2757EF-1B3C-43C5-834E-EEB9742E554F.jpeg)
 
 ---
 
@@ -264,9 +278,9 @@ Sau khi WAN hiện **Connected** và có Gateway/DNS, lúc đó `A13.11` cũng c
 
 ---
 
-### 👤 User · 2026-09-15 19:11:17
-
-Mình tự cấu hình được không
+> ### 👤 User · 2026-09-15 19:11:17
+>
+> Mình tự cấu hình được không
 
 ---
 
@@ -300,39 +314,39 @@ Nếu anh còn **mã hợp đồng/tài khoản đường truyền**, mình có 
 
 ---
 
-### 👤 User · 2026-09-15 19:15:06
+> ### 👤 User · 2026-09-15 19:15:06
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1512.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1511.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1510.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1509.jpeg)
+>
+>
+> ![Image (1242x2688)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1507(1).png)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1508.jpeg)
+>
+> Hướng dẫn lại cho mình
 
+> ![IMG_1512.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1512.jpeg)
 
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1512.jpeg)
+> ![IMG_1511.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1511.jpeg)
 
+> ![IMG_1510.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1510.jpeg)
 
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1511.jpeg)
+> ![IMG_1509.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1509.jpeg)
 
+> ![IMG_1507(1).png](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1507(1).png)
 
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1510.jpeg)
-
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1509.jpeg)
-
-
-![Image (1242x2688)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1507(1).png)
-
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1508.jpeg)
-
-Hướng dẫn lại cho mình
-
-![IMG_1512.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1512.jpeg)
-
-![IMG_1511.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1511.jpeg)
-
-![IMG_1510.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1510.jpeg)
-
-![IMG_1509.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1509.jpeg)
-
-![IMG_1507(1).png](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1507(1).png)
-
-![IMG_1508.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1508.jpeg)
+> ![IMG_1508.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1508.jpeg)
 
 ---
 
@@ -418,53 +432,52 @@ Khi đó Internet sẽ hoạt động trở lại.
 
 ---
 
-### 👤 User · 2026-09-15 19:16:16
+> ### 👤 User · 2026-09-15 19:16:16
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1521.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1520.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1519.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1518.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1517.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1516.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1515.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1514.jpeg)
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1513.jpeg)
 
+> ![IMG_1521.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1521.jpeg)
 
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1521.jpeg)
+> ![IMG_1520.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1520.jpeg)
 
+> ![IMG_1519.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1519.jpeg)
 
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1520.jpeg)
+> ![IMG_1518.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1518.jpeg)
 
+> ![IMG_1517.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1517.jpeg)
 
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1519.jpeg)
+> ![IMG_1516.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1516.jpeg)
 
+> ![IMG_1515.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1515.jpeg)
 
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1518.jpeg)
+> ![IMG_1514.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1514.jpeg)
 
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1517.jpeg)
-
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1516.jpeg)
-
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1515.jpeg)
-
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1514.jpeg)
-
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1513.jpeg)
-
-
-![IMG_1521.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1521.jpeg)
-
-![IMG_1520.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1520.jpeg)
-
-![IMG_1519.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1519.jpeg)
-
-![IMG_1518.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1518.jpeg)
-
-![IMG_1517.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1517.jpeg)
-
-![IMG_1516.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1516.jpeg)
-
-![IMG_1515.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1515.jpeg)
-
-![IMG_1514.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1514.jpeg)
-
-![IMG_1513.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1513.jpeg)
+> ![IMG_1513.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_1513.jpeg)
 
 ---
 
@@ -527,9 +540,9 @@ Và phần **IP tĩnh nội bộ** anh cần ban đầu thì em đã thấy đú
 
 ---
 
-### 👤 User · 2026-09-15 19:19:10
-
-Có trên modem không bạn
+> ### 👤 User · 2026-09-15 19:19:10
+>
+> Có trên modem không bạn
 
 ---
 
@@ -556,9 +569,9 @@ Nếu anh có **hợp đồng FPT hoặc mã khách hàng**, gửi ảnh phần 
 
 ---
 
-### 👤 User · 2026-09-15 19:21:46
-
-Cái này mặt định trong wifi có không bạn
+> ### 👤 User · 2026-09-15 19:21:46
+>
+> Cái này mặt định trong wifi có không bạn
 
 ---
 
@@ -579,9 +592,9 @@ Nếu anh muốn, em có thể chỉ anh cách kiểm tra xem **modem AX3000HV2 
 
 ---
 
-### 👤 User · 2026-09-15 19:22:26
-
-Xem giúp mình
+> ### 👤 User · 2026-09-15 19:22:26
+>
+> Xem giúp mình
 
 ---
 
@@ -609,14 +622,14 @@ Anh có thể **chụp màn hình `Status → System Log` gửi em trước**, e
 
 ---
 
-### 👤 User · 2026-09-15 19:29:14
+> ### 👤 User · 2026-09-15 19:29:14
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_F8AECB6B-DF92-4FB7-9F0B-9A04B547ED4D.jpeg)
+>
+> Đây là mặc định của fpt
 
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_F8AECB6B-DF92-4FB7-9F0B-9A04B547ED4D.jpeg)
-
-Đây là mặc định của fpt
-
-![IMG_F8AECB6B-DF92-4FB7-9F0B-9A04B547ED4D.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_F8AECB6B-DF92-4FB7-9F0B-9A04B547ED4D.jpeg)
+> ![IMG_F8AECB6B-DF92-4FB7-9F0B-9A04B547ED4D.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_F8AECB6B-DF92-4FB7-9F0B-9A04B547ED4D.jpeg)
 
 ---
 
@@ -642,9 +655,9 @@ Nếu anh muốn, em có thể hướng dẫn anh **kiểm tra trong Developer T
 
 ---
 
-### 👤 User · 2026-09-15 19:31:41
-
-Làm sao để kích hoạt mạng
+> ### 👤 User · 2026-09-15 19:31:41
+>
+> Làm sao để kích hoạt mạng
 
 ---
 
@@ -685,9 +698,11 @@ Anh có thể nói với tổng đài đúng câu:
 
 ---
 
-### 👤 User · 2026-09-15 19:43:23
+> ### 👤 User · 2026-09-15 19:43:23
+>
+>
 
-📎 [BIEN_BAN-DIEN-TU-4e3080f1af1664b1026793a52edcde4f.pdf](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/BIEN_BAN-DIEN-TU-4e3080f1af1664b1026793a52edcde4f.pdf) `application/pdf`
+> 📎 [BIEN_BAN-DIEN-TU-4e3080f1af1664b1026793a52edcde4f.pdf](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/BIEN_BAN-DIEN-TU-4e3080f1af1664b1026793a52edcde4f.pdf) `application/pdf`
 
 ---
 
@@ -1582,13 +1597,13 @@ Nếu anh muốn, em có thể **tìm tiếp trong hợp đồng xem có mã kh�
 
 ---
 
-### 👤 User · 2026-09-15 19:51:00
-
- Sgfdl-251208-7914 
-
-Pass: aev7914
-
-Mình nhập rồi
+> ### 👤 User · 2026-09-15 19:51:00
+>
+>  Sgfdl-251208-7914 
+>
+> Pass: aev7914
+>
+> Mình nhập rồi
 
 ---
 
@@ -1614,14 +1629,14 @@ Nếu vẫn hiện **Not Connected / N/A**, anh bấm **Reconnect PPPoE Server**
 
 ---
 
-### 👤 User · 2026-09-15 19:55:17
+> ### 👤 User · 2026-09-15 19:55:17
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_21A8E85E-94BE-4AD0-A8D1-790EED5A6310.jpeg)
+>
+> Nhập xong rồi sao bạn
 
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_21A8E85E-94BE-4AD0-A8D1-790EED5A6310.jpeg)
-
-Nhập xong rồi sao bạn
-
-![IMG_21A8E85E-94BE-4AD0-A8D1-790EED5A6310.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_21A8E85E-94BE-4AD0-A8D1-790EED5A6310.jpeg)
+> ![IMG_21A8E85E-94BE-4AD0-A8D1-790EED5A6310.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_21A8E85E-94BE-4AD0-A8D1-790EED5A6310.jpeg)
 
 ---
 
@@ -1652,13 +1667,12 @@ Nếu vẫn là **Not Connected / N/A**, anh chụp đúng phần **WAN Status**
 
 ---
 
-### 👤 User · 2026-09-15 19:56:19
+> ### 👤 User · 2026-09-15 19:56:19
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_BA089C40-AF7B-46F6-B105-A46DBC25451C.jpeg)
 
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_BA089C40-AF7B-46F6-B105-A46DBC25451C.jpeg)
-
-
-![IMG_BA089C40-AF7B-46F6-B105-A46DBC25451C.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_BA089C40-AF7B-46F6-B105-A46DBC25451C.jpeg)
+> ![IMG_BA089C40-AF7B-46F6-B105-A46DBC25451C.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_BA089C40-AF7B-46F6-B105-A46DBC25451C.jpeg)
 
 ---
 
@@ -1692,13 +1706,12 @@ Anh gửi em ảnh **Status → System Log** là em đọc tiếp được ngay 
 
 ---
 
-### 👤 User · 2026-09-15 20:19:52
+> ### 👤 User · 2026-09-15 20:19:52
+>
+>
+> ![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_DC77EB94-41B0-40FA-96D6-00DC12687351.jpeg)
 
-
-![Image (1152x1536)](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_DC77EB94-41B0-40FA-96D6-00DC12687351.jpeg)
-
-
-![IMG_DC77EB94-41B0-40FA-96D6-00DC12687351.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_DC77EB94-41B0-40FA-96D6-00DC12687351.jpeg)
+> ![IMG_DC77EB94-41B0-40FA-96D6-00DC12687351.jpeg](../assets/6aa92957-02c4-83ec-a533-92459ca5ee79/IMG_DC77EB94-41B0-40FA-96D6-00DC12687351.jpeg)
 
 ---
 
@@ -1734,9 +1747,9 @@ Nếu anh muốn tự kiểm tra thêm trước khi gọi FPT, em có thể hư�
 
 ---
 
-### 👤 User · 2026-09-15 20:44:30
-
-Có thể xữ lý mà không cần gọi không
+> ### 👤 User · 2026-09-15 20:44:30
+>
+> Có thể xữ lý mà không cần gọi không
 
 ---
 

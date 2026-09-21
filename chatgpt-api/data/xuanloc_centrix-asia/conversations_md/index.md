@@ -1,6 +1,6 @@
 # 📚 ChatGPT Conversations Index
 
-> Generated: 2026-09-21 23:41:44 · Sorted: **newest first**
+> Generated: 2026-09-21 23:48:17 · Sorted: **newest first**
 
 | # | Date | Title | Model | Messages |
 |---|------|-------|-------|----------|
@@ -67,5 +67,10 @@
 | 61 | 2026-09-10 21:41:49 | [Viết lời xin lỗi khách hàng](2026-09-10_2141_Viết lời xin lỗi khách hàng.md) | `gpt-5-6-thinking` | 18 |
 | 62 | 2026-09-10 20:58:12 | [Repo bán token](2026-09-10_2058_Repo bán token.md) | `gpt-5-6-thinking` | 71 |
 | 63 | 2026-09-10 20:26:14 | [Viết CSS ẩn mục](2026-09-10_2026_Viết CSS ẩn mục.md) | `gpt-5-6-thinking` | 4 |
+| 64 | 2026-09-10 18:41:44 | [Giải thích lỗi SIM iPhone](2026-09-10_1841_Giải thích lỗi SIM iPhone.md) | `gpt-5-6-thinking` | 7 |
+| 65 | 2026-09-09 19:52:20 | [Viết lại thông tin](2026-09-09_1952_Viết lại thông tin.md) | `gpt-5-6` | 3 |
+| 66 | 2026-09-09 17:26:54 | [Tính giá trước VAT](2026-09-09_1726_Tính giá trước VAT.md) | `gpt-5-6-thinking` | 12 |
+| 67 | 2026-09-09 15:01:54 | [Đề nghị thanh toán nghiệm thu](2026-09-09_1501_Đề nghị thanh toán nghiệm thu.md) | `gpt-5-6-thinking` | 27 |
+| 68 | 2026-09-09 14:14:11 | [Viết lại thông tin](2026-09-09_1414_Viết lại thông tin.md) | `gpt-5-6` | 10 |
 
-*63 conversations*
+*68 conversations*

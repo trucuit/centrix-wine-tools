@@ -3,16 +3,31 @@
 > **Model:** `gpt-5-6` · **Created:** 2026-09-15 16:33:47 · **Updated:** 2026-09-15 16:38:50
 > **ID:** `6aa910fa-0410-83ec-8298-e4cd73b1234e`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-15 16:33:48
+> ### 👤 User · 2026-09-15 16:33:48
+>
+>
+> ![Image (590x1280)](../assets/6aa910fa-0410-83ec-8298-e4cd73b1234e/d090fdd9-3b64-4f28-8bb1-0317bab7f0b0.png)
+>
+> viết lại
 
-
-![Image (590x1280)](../assets/6aa910fa-0410-83ec-8298-e4cd73b1234e/d090fdd9-3b64-4f28-8bb1-0317bab7f0b0.png)
-
-viết lại
-
-![d090fdd9-3b64-4f28-8bb1-0317bab7f0b0.png](../assets/6aa910fa-0410-83ec-8298-e4cd73b1234e/d090fdd9-3b64-4f28-8bb1-0317bab7f0b0.png)
+> ![d090fdd9-3b64-4f28-8bb1-0317bab7f0b0.png](../assets/6aa910fa-0410-83ec-8298-e4cd73b1234e/d090fdd9-3b64-4f28-8bb1-0317bab7f0b0.png)
 
 ---
 
@@ -27,14 +42,14 @@ Thông tin trong ảnh:
 
 ---
 
-### 👤 User · 2026-09-15 16:37:55
+> ### 👤 User · 2026-09-15 16:37:55
+>
+>
+> ![Image (979x479)](../assets/6aa910fa-0410-83ec-8298-e4cd73b1234e/4f3abba3-608d-4928-a405-431cb09c3416.png)
+>
+> đây là gì vậy bạn
 
-
-![Image (979x479)](../assets/6aa910fa-0410-83ec-8298-e4cd73b1234e/4f3abba3-608d-4928-a405-431cb09c3416.png)
-
-đây là gì vậy bạn
-
-![4f3abba3-608d-4928-a405-431cb09c3416.png](../assets/6aa910fa-0410-83ec-8298-e4cd73b1234e/4f3abba3-608d-4928-a405-431cb09c3416.png)
+> ![4f3abba3-608d-4928-a405-431cb09c3416.png](../assets/6aa910fa-0410-83ec-8298-e4cd73b1234e/4f3abba3-608d-4928-a405-431cb09c3416.png)
 
 ---
 
@@ -58,9 +73,9 @@ Nếu **không thấy CentriX trong Task Manager mà nó vẫn báo lỗi**, anh
 
 ---
 
-### 👤 User · 2026-09-15 16:38:31
-
-làm sao để tắt hết
+> ### 👤 User · 2026-09-15 16:38:31
+>
+> làm sao để tắt hết
 
 ---
 

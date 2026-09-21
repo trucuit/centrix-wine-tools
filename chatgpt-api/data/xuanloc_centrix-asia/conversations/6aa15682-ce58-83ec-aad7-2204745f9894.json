@@ -1,0 +1,180 @@
+{
+  "title": "Viết lại thông tin",
+  "create_time": 1788958340.778836,
+  "update_time": 1788958412.932981,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa15682-ce58-83ec-aad7-2204745f9894",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://huggingface.co/huggingface",
+    "mailto:dra-info@dailove.co.jp",
+    "https://www.openai.com",
+    "https://www.apple.com/",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://docs.google.com/document/d/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "0228e151-bf45-40c9-af28-f318fa2a9185"
+      ]
+    },
+    "0228e151-bf45-40c9-af28-f318fa2a9185": {
+      "id": "0228e151-bf45-40c9-af28-f318fa2a9185",
+      "message": {
+        "id": "0228e151-bf45-40c9-af28-f318fa2a9185",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788958346.371,
+        "update_time": 1788958361.603502,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_000000002bf88211ba7b08f1834aaf82",
+              "size_bytes": 371751,
+              "width": 1162,
+              "height": 680,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "viết lại thông tin cho mình"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_000000002bf88211ba7b08f1834aaf82",
+              "size": 371751,
+              "name": "d70197e8-c165-4a47-97e5-cb730a7f5fd7.png",
+              "mime_type": "image/png",
+              "width": 1162,
+              "height": 680,
+              "source": "local",
+              "library_file_id": "libfile_69f9e51bf80081918e6738ec20ea26a1",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "7cdae4f8-5848-4cfb-bf19-d49edda85200",
+          "message_source": null,
+          "turn_exchange_id": "7f13baf8-bcf2-4d5a-b92e-cae63aa1e976",
+          "working_turn_id": "7f13baf8-bcf2-4d5a-b92e-cae63aa1e976",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "cbaf0410-eb44-4c7d-8de7-b2ca08e9beaf"
+      ]
+    },
+    "cbaf0410-eb44-4c7d-8de7-b2ca08e9beaf": {
+      "id": "cbaf0410-eb44-4c7d-8de7-b2ca08e9beaf",
+      "message": {
+        "id": "cbaf0410-eb44-4c7d-8de7-b2ca08e9beaf",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788958350.212145,
+        "update_time": 1788958412.908861,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Anh, em viết lại đầy đủ thông tin trong ảnh như sau:\n\n### THÔNG TIN CÔNG TY\n\n**Tiếng Việt**\n\n**CÔNG TY TNHH DIA RUBBER ASIA**\n\n- **Địa chỉ:** Đường số 6, KCN Nhơn Trạch III - Giai đoạn 2, Xã Nhơn Trạch, Tỉnh Đồng Nai, Việt Nam\n- **Mã số thuế:** 3603496175\n- **Điện thoại:** +84-251-368-6637\n- **Email:** dra-info@dailove.co.jp\n\n**English**\n\n**DIA RUBBER ASIA CO., LTD**\n\n- **Address:** Road 6, Nhon Trach III IP - Phase 2, Nhon Trach Commune, Dong Nai Province, Viet Nam"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "7cdae4f8-5848-4cfb-bf19-d49edda85200",
+          "message_type": "next",
+          "turn_exchange_id": "7f13baf8-bcf2-4d5a-b92e-cae63aa1e976",
+          "working_turn_id": "7f13baf8-bcf2-4d5a-b92e-cae63aa1e976",
+          "model_slug": "gpt-5-6",
+          "default_model_slug": "gpt-5-6",
+          "can_save": true,
+          "parent_id": "ceeaae28-5870-4be0-9459-83972b4e471c",
+          "safe_urls": [
+            "mailto:dra-info@dailove.co.jp"
+          ],
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "0228e151-bf45-40c9-af28-f318fa2a9185",
+      "children": []
+    }
+  },
+  "current_node": "cbaf0410-eb44-4c7d-8de7-b2ca08e9beaf",
+  "context_truncation_continuation": null
+}

@@ -55,6 +55,9 @@ wine-prefix-centrix/
 # Expect scripts with credentials
 *.exp
 
+# Duplicate multi-account cache
+chatgpt-api/data/**/account_*/
+
 
 
 

@@ -3,13 +3,28 @@
 > **Model:** `gpt-6-pro` · **Created:** 2026-09-17 23:45:09 · **Updated:** 2026-09-17 23:50:01
 > **ID:** `6aac1913-d194-83ec-9396-bd386f60da04`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-17 23:45:05
+> ### 👤 User · 2026-09-17 23:45:05
+>
+> Viết caption đăng facebook và ytoutube cho centrix giúp mình
 
-Viết caption đăng facebook và ytoutube cho centrix giúp mình
-
-📎 [CentriX Final.mp4](../assets/6aac1913-d194-83ec-9396-bd386f60da04/CentriX Final.mp4) `video/mp4`
+> 📎 [CentriX Final.mp4](../assets/6aac1913-d194-83ec-9396-bd386f60da04/CentriX Final.mp4) `video/mp4`
 
 ---
 

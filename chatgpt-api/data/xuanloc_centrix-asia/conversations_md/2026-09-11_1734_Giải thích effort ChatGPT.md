@@ -3,21 +3,36 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-11 17:34:21 · **Updated:** 2026-09-11 17:35:01
 > **ID:** `6aa3d92b-9364-83ec-84d6-187f1dc22e59`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-11 17:34:36
+> ### 👤 User · 2026-09-11 17:34:36
+>
+>
+> ![Image (343x169)](../assets/6aa3d92b-9364-83ec-84d6-187f1dc22e59/ed4ede7d-66a6-4105-a761-50259f2daba9.png)
+>
+>
+> ![Image (461x167)](../assets/6aa3d92b-9364-83ec-84d6-187f1dc22e59/dd7978ec-3b48-4a75-944d-70b2a9109058.png)
+>
+> list effort của chatgpt là gì vậy bạn
 
+> ![ed4ede7d-66a6-4105-a761-50259f2daba9.png](../assets/6aa3d92b-9364-83ec-84d6-187f1dc22e59/ed4ede7d-66a6-4105-a761-50259f2daba9.png)
 
-![Image (343x169)](../assets/6aa3d92b-9364-83ec-84d6-187f1dc22e59/ed4ede7d-66a6-4105-a761-50259f2daba9.png)
-
-
-![Image (461x167)](../assets/6aa3d92b-9364-83ec-84d6-187f1dc22e59/dd7978ec-3b48-4a75-944d-70b2a9109058.png)
-
-list effort của chatgpt là gì vậy bạn
-
-![ed4ede7d-66a6-4105-a761-50259f2daba9.png](../assets/6aa3d92b-9364-83ec-84d6-187f1dc22e59/ed4ede7d-66a6-4105-a761-50259f2daba9.png)
-
-![dd7978ec-3b48-4a75-944d-70b2a9109058.png](../assets/6aa3d92b-9364-83ec-84d6-187f1dc22e59/dd7978ec-3b48-4a75-944d-70b2a9109058.png)
+> ![dd7978ec-3b48-4a75-944d-70b2a9109058.png](../assets/6aa3d92b-9364-83ec-84d6-187f1dc22e59/dd7978ec-3b48-4a75-944d-70b2a9109058.png)
 
 ---
 

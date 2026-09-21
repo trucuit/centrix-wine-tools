@@ -1,0 +1,643 @@
+{
+  "title": "Viết lại thông tin",
+  "create_time": 1788938051.011511,
+  "update_time": 1788942773.429277,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa10741-8a1c-83ec-92f1-cda4bf58093a",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://huggingface.co/huggingface",
+    "https://docs.google.com/document/d/",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://www.openai.com",
+    "https://www.apple.com/",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "a724a974-f76c-46e9-996f-d1624425d26d"
+      ]
+    },
+    "a724a974-f76c-46e9-996f-d1624425d26d": {
+      "id": "a724a974-f76c-46e9-996f-d1624425d26d",
+      "message": {
+        "id": "a724a974-f76c-46e9-996f-d1624425d26d",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788938050.085,
+        "update_time": 1788938061.764485,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_000000009f7481f58b572b7c581b9a5c",
+              "size_bytes": 79519,
+              "width": 1137,
+              "height": 826,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "viết lại cho mình"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_000000009f7481f58b572b7c581b9a5c",
+              "size": 79519,
+              "name": "a3a9a635-cb7f-4718-a376-a0238e20ce5b.png",
+              "mime_type": "image/png",
+              "width": 1137,
+              "height": 826,
+              "source": "local",
+              "library_file_id": "libfile_5d53b73d1d108191a6d43f194c93eb08",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "7e7b6958-783d-49ca-84e2-e0088191e503",
+          "message_source": null,
+          "turn_exchange_id": "1327294a-28b8-4d05-b94a-e4d15d711746",
+          "working_turn_id": "1327294a-28b8-4d05-b94a-e4d15d711746",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "c1564314-47f7-47bf-ac8e-b017aa43de50"
+      ]
+    },
+    "c1564314-47f7-47bf-ac8e-b017aa43de50": {
+      "id": "c1564314-47f7-47bf-ac8e-b017aa43de50",
+      "message": {
+        "id": "c1564314-47f7-47bf-ac8e-b017aa43de50",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788938057.397837,
+        "update_time": 1788938057.397837,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 2 giây"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 1,
+          "reasoning_start_time": 1788938055.7000034,
+          "reasoning_end_time": 1788938057.3857148,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "search_result_groups": [],
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "7e7b6958-783d-49ca-84e2-e0088191e503",
+          "message_type": "next",
+          "turn_exchange_id": "1327294a-28b8-4d05-b94a-e4d15d711746",
+          "working_turn_id": "1327294a-28b8-4d05-b94a-e4d15d711746",
+          "resolved_model_slug": "gpt-5-6",
+          "model_slug": "gpt-5-6",
+          "default_model_slug": "gpt-5-6",
+          "can_save": false,
+          "parent_id": "73c67c82-8d48-49b7-b8c3-0bc44aa3ffba",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a724a974-f76c-46e9-996f-d1624425d26d",
+      "children": [
+        "8e165153-a29d-44f8-bd72-d58651676be2"
+      ]
+    },
+    "8e165153-a29d-44f8-bd72-d58651676be2": {
+      "id": "8e165153-a29d-44f8-bd72-d58651676be2",
+      "message": {
+        "id": "8e165153-a29d-44f8-bd72-d58651676be2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788938057.407256,
+        "update_time": 1788938062.67175,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "UltraViewer 6.6.133 - Free\n\n**ID của bạn:** 215 270 830  \n**Mật khẩu:** bqn8x1"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-auto-thinking",
+          "cot_version": "v5",
+          "search_result_groups": [],
+          "conversation_followup_suggestions_eligible": true,
+          "model_slug": "gpt-5-6-thinking",
+          "request_id": "7e7b6958-783d-49ca-84e2-e0088191e503",
+          "message_type": "next",
+          "turn_exchange_id": "1327294a-28b8-4d05-b94a-e4d15d711746",
+          "working_turn_id": "1327294a-28b8-4d05-b94a-e4d15d711746",
+          "default_model_slug": "gpt-5-6",
+          "can_save": true,
+          "parent_id": "c1564314-47f7-47bf-ac8e-b017aa43de50",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "c1564314-47f7-47bf-ac8e-b017aa43de50",
+      "children": [
+        "d538d147-49b3-4502-a291-c34bd93b0b27"
+      ]
+    },
+    "d538d147-49b3-4502-a291-c34bd93b0b27": {
+      "id": "d538d147-49b3-4502-a291-c34bd93b0b27",
+      "message": {
+        "id": "d538d147-49b3-4502-a291-c34bd93b0b27",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788938272.277,
+        "update_time": 1788938285.391977,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_00000000851481f59883ec39038ccf6c",
+              "size_bytes": 131899,
+              "width": 1250,
+              "height": 962,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "làm sao để tắt toàn bộ app để cài lại bản mới b"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_00000000851481f59883ec39038ccf6c",
+              "size": 131899,
+              "name": "336ef09f-cb19-406d-8059-9be76e58fe3b.png",
+              "mime_type": "image/png",
+              "width": 1250,
+              "height": 962,
+              "source": "local",
+              "library_file_id": "libfile_2601fb4fa03c8191961fa99670ec77a6",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "1bc8f614-f923-480b-b0c1-10e63b707676",
+          "message_source": null,
+          "turn_exchange_id": "017b7023-2ab1-4637-9767-57dd8786757b",
+          "working_turn_id": "017b7023-2ab1-4637-9767-57dd8786757b",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8e165153-a29d-44f8-bd72-d58651676be2",
+      "children": [
+        "a1de3a95-de32-43a5-a0b7-089cec9786fe"
+      ]
+    },
+    "a1de3a95-de32-43a5-a0b7-089cec9786fe": {
+      "id": "a1de3a95-de32-43a5-a0b7-089cec9786fe",
+      "message": {
+        "id": "a1de3a95-de32-43a5-a0b7-089cec9786fe",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788938278.485823,
+        "update_time": 1788938285.393074,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Được anh. Lỗi trong ảnh là **CentriX vẫn đang chạy nền**, nên bộ cài không thể đóng app để cập nhật.\n\nAnh làm cách nhanh nhất như sau:\n\n1. Nhấn **Ctrl + Shift + Esc** để mở **Task Manager**.\n2. Trong **Processes** hoặc **Details**, tìm tất cả tiến trình liên quan đến:\n   - `CentriX`\n   - `CentriX.exe`\n   - Nếu có nhiều tiến trình CentriX thì tắt **tất cả**.\n3. Chuột phải → **End task**.\n4. Quay lại cửa sổ cài đặt → bấm **Retry**.\n\nNếu muốn chắc chắn bằng lệnh, mở **Command Prompt (CMD) bằng Run as administrator** rồi chạy:\n\n```bat\ntaskkill /F /IM CentriX.exe /T\n```\n\nNếu không biết chính xác tên `.exe`, có thể kiểm tra bằng:\n\n```bat\ntasklist | findstr /I \"CentriX\"\n```\n\nSau khi không còn tiến trình CentriX, bấm **Retry** là cài bản `0.1.391` tiếp được.\n\nNếu **End task xong mà CentriX tự bật lại**, khả năng app của anh có **background process / auto-start / updater**. Anh gửi em ảnh tab **Details trong Task Manager** khi tìm `CentriX`, em chỉ anh chính xác tiến trình nào cần kill."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6",
+          "code_blocks": {
+            "0": {
+              "id": "u3cr5o",
+              "edited": false,
+              "previewable": false,
+              "preview_language": null
+            },
+            "1": {
+              "id": "3rcprg",
+              "edited": false,
+              "previewable": false,
+              "preview_language": null
+            }
+          },
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "1bc8f614-f923-480b-b0c1-10e63b707676",
+          "message_type": "next",
+          "turn_exchange_id": "017b7023-2ab1-4637-9767-57dd8786757b",
+          "working_turn_id": "017b7023-2ab1-4637-9767-57dd8786757b",
+          "model_slug": "gpt-5-6",
+          "default_model_slug": "gpt-5-6",
+          "can_save": true,
+          "parent_id": "d341a389-69fe-46ef-bff8-0c81108df4c9",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "d538d147-49b3-4502-a291-c34bd93b0b27",
+      "children": [
+        "a7cc894f-eecc-44be-8fea-1369ae3c98a0"
+      ]
+    },
+    "a7cc894f-eecc-44be-8fea-1369ae3c98a0": {
+      "id": "a7cc894f-eecc-44be-8fea-1369ae3c98a0",
+      "message": {
+        "id": "a7cc894f-eecc-44be-8fea-1369ae3c98a0",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788938312.753,
+        "update_time": 1788938321.622252,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_00000000d8f4820b81ba1a1170d5d915",
+              "size_bytes": 82776,
+              "width": 959,
+              "height": 810,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_00000000d8f4820b81ba1a1170d5d915",
+              "size": 82776,
+              "name": "dd202675-16ed-483e-963e-15ba8979adc4.png",
+              "mime_type": "image/png",
+              "width": 959,
+              "height": 810,
+              "source": "local",
+              "library_file_id": "libfile_a2c8da1a31248191bf39d1e5cbe7af76",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "a850b00b-7f10-4da5-a497-d265f089cc21",
+          "message_source": null,
+          "turn_exchange_id": "52978f97-6f5a-4760-bf03-f01131de9168",
+          "working_turn_id": "52978f97-6f5a-4760-bf03-f01131de9168",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a1de3a95-de32-43a5-a0b7-089cec9786fe",
+      "children": [
+        "eb6bcd9c-6efe-4bcd-9853-5d9a411e5fcf"
+      ]
+    },
+    "eb6bcd9c-6efe-4bcd-9853-5d9a411e5fcf": {
+      "id": "eb6bcd9c-6efe-4bcd-9853-5d9a411e5fcf",
+      "message": {
+        "id": "eb6bcd9c-6efe-4bcd-9853-5d9a411e5fcf",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788938315.087198,
+        "update_time": 1788938326.804848,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Lỗi này khác lúc nãy anh. CentriX đã tắt, nhưng bộ cài **không ghi đè được file**:\n\n`C:\\Program Files\\CentriX\\Uninstall CentriX.exe`\n\nKhả năng cao là **thiếu quyền Administrator** hoặc file uninstall đang bị Windows giữ.\n\nAnh làm theo cách này:\n\n1. Bấm **Abort** để thoát bộ cài hiện tại.\n2. Mở **CMD → Run as administrator**.\n3. Chạy lần lượt:\n\n```bat\ntaskkill /F /IM CentriX.exe /T\ntaskkill /F /IM \"Uninstall CentriX.exe\" /T\n```\n\nNếu báo `not found` thì không sao.\n\nSau đó thử xóa file đang bị kẹt:\n\n```bat\ndel /F /Q \"C:\\Program Files\\CentriX\\Uninstall CentriX.exe\"\n```\n\nRồi chuột phải file:\n\n`CentriX-Setup-0.1.391.exe`\n\n→ **Run as administrator** để cài lại.\n\nNếu lệnh `del` báo **Access is denied**, chạy thêm:\n\n```bat\ntakeown /F \"C:\\Program Files\\CentriX\\Uninstall CentriX.exe\"\nicacls \"C:\\Program Files\\CentriX\\Uninstall CentriX.exe\" /grant Administrators:F\ndel /F /Q \"C:\\Program Files\\CentriX\\Uninstall CentriX.exe\"\n```\n\n**Không nên bấm Ignore**, vì sẽ bỏ qua việc cập nhật file uninstaller và có thể khiến bản cài CentriX bị lỗi về sau.\n\nNếu anh muốn **xóa sạch toàn bộ CentriX rồi cài mới hoàn toàn**, em có thể đưa anh một đoạn CMD duy nhất để kill toàn bộ process + xóa thư mục `Program Files\\CentriX` + dọn bản cũ."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6",
+          "code_blocks": {
+            "0": {
+              "id": "qp7yc0",
+              "edited": false,
+              "previewable": false,
+              "preview_language": null
+            },
+            "1": {
+              "id": "7rdr0q",
+              "edited": false,
+              "previewable": false,
+              "preview_language": null
+            },
+            "2": {
+              "id": "vbr46s",
+              "edited": false,
+              "previewable": false,
+              "preview_language": null
+            }
+          },
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "a850b00b-7f10-4da5-a497-d265f089cc21",
+          "message_type": "next",
+          "turn_exchange_id": "52978f97-6f5a-4760-bf03-f01131de9168",
+          "working_turn_id": "52978f97-6f5a-4760-bf03-f01131de9168",
+          "model_slug": "gpt-5-6",
+          "default_model_slug": "gpt-5-6",
+          "can_save": true,
+          "parent_id": "a7cc894f-eecc-44be-8fea-1369ae3c98a0",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "a7cc894f-eecc-44be-8fea-1369ae3c98a0",
+      "children": [
+        "8d735946-5891-47bd-82d0-0235f384ce66"
+      ]
+    },
+    "8d735946-5891-47bd-82d0-0235f384ce66": {
+      "id": "8d735946-5891-47bd-82d0-0235f384ce66",
+      "message": {
+        "id": "8d735946-5891-47bd-82d0-0235f384ce66",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788942353.405,
+        "update_time": 1788942362.389069,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_00000000c2bc81f5a01471660cb07092",
+              "size_bytes": 3523923,
+              "width": 942,
+              "height": 2048,
+              "fovea": null,
+              "metadata": {
+                "dalle": null,
+                "gizmo": null,
+                "generation": null,
+                "segmentation": null,
+                "container_pixel_height": null,
+                "container_pixel_width": null,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "viết lại email"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "attachments": [
+            {
+              "id": "file_00000000c2bc81f5a01471660cb07092",
+              "size": 3523923,
+              "name": "dba303f3-5ec9-4776-a104-1fa6047717ad.png",
+              "mime_type": "image/png",
+              "width": 942,
+              "height": 2048,
+              "source": "local",
+              "library_file_id": "libfile_300ffaf0a6c08191afbd1e5bcf02ddb2",
+              "is_big_paste": false
+            }
+          ],
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "request_id": "c02c76fe-cf04-4fda-aed5-6f9c09f9c7c9",
+          "message_source": null,
+          "turn_exchange_id": "07f26649-7df0-4eb5-b331-1b3c4d033b0b",
+          "working_turn_id": "07f26649-7df0-4eb5-b331-1b3c4d033b0b",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "eb6bcd9c-6efe-4bcd-9853-5d9a411e5fcf",
+      "children": [
+        "42b9bee0-bab5-401f-a545-422a3de0c27e"
+      ]
+    },
+    "42b9bee0-bab5-401f-a545-422a3de0c27e": {
+      "id": "42b9bee0-bab5-401f-a545-422a3de0c27e",
+      "message": {
+        "id": "42b9bee0-bab5-401f-a545-422a3de0c27e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788942359.557066,
+        "update_time": 1788942773.387877,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Email: **nnsanh.thpt.ntb@gmail.com**"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "c02c76fe-cf04-4fda-aed5-6f9c09f9c7c9",
+          "message_type": "next",
+          "turn_exchange_id": "07f26649-7df0-4eb5-b331-1b3c4d033b0b",
+          "working_turn_id": "07f26649-7df0-4eb5-b331-1b3c4d033b0b",
+          "model_slug": "gpt-5-6",
+          "default_model_slug": "gpt-5-6",
+          "can_save": true,
+          "parent_id": "d28cf0cf-131e-45ad-93cd-d7f2beb26986",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "8d735946-5891-47bd-82d0-0235f384ce66",
+      "children": []
+    }
+  },
+  "current_node": "42b9bee0-bab5-401f-a545-422a3de0c27e",
+  "context_truncation_continuation": null
+}

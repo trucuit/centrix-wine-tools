@@ -3,11 +3,26 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-19 14:27:03 · **Updated:** 2026-09-19 14:28:55
 > **ID:** `6aae3945-c8e4-83ec-8bc7-f946e21e7a33`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-19 14:27:02
-
-doanh nghiệp việt nam muốn hõ trợ thanh toán từ stripe thì sao
+> ### 👤 User · 2026-09-19 14:27:02
+>
+> doanh nghiệp việt nam muốn hõ trợ thanh toán từ stripe thì sao
 
 ---
 
@@ -66,9 +81,9 @@ Nếu anh muốn, em có thể làm tiếp cho anh **một sơ đồ hoàn chỉ
 
 ---
 
-### 👤 User · 2026-09-19 14:28:18
-
-Dùng pháp nhân tại Sing sẽ mất bao nhiêu tiền
+> ### 👤 User · 2026-09-19 14:28:18
+>
+> Dùng pháp nhân tại Sing sẽ mất bao nhiêu tiền
 
 ---
 

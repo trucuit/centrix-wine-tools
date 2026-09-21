@@ -3,13 +3,28 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-15 22:25:20 · **Updated:** 2026-09-15 22:26:29
 > **ID:** `6aa9635e-2594-83ec-a64c-0dd3aa27e645`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-15 22:24:55
-
-Hiện tại bên mình đang có sự cố từ nhà mạng, sáng mai mới giải quyết được ạ, Sáng mai bạn dùng lại giúp mình với ạ
-
-viết lại hay hơn
+> ### 👤 User · 2026-09-15 22:24:55
+>
+> Hiện tại bên mình đang có sự cố từ nhà mạng, sáng mai mới giải quyết được ạ, Sáng mai bạn dùng lại giúp mình với ạ
+>
+> viết lại hay hơn
 
 ---
 
@@ -27,9 +42,9 @@ Nếu anh muốn, em có thể viết thêm một bản **ngắn gọn hơn, ki�
 
 ---
 
-### 👤 User · 2026-09-15 22:26:15
-
-bỏ từ nhé thay bằng nha, dạ, hhoạc ạ
+> ### 👤 User · 2026-09-15 22:26:15
+>
+> bỏ từ nhé thay bằng nha, dạ, hhoạc ạ
 
 ---
 

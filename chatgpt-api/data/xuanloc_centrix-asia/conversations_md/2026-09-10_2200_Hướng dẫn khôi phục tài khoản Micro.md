@@ -3,16 +3,31 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-10 22:00:13 · **Updated:** 2026-09-10 22:01:02
 > **ID:** `6aa2c5f4-10fc-83ec-be7a-c5503884dee9`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-10 22:00:17
+> ### 👤 User · 2026-09-10 22:00:17
+>
+>
+> ![Image (2048x1330)](../assets/6aa2c5f4-10fc-83ec-be7a-c5503884dee9/5504ba6c-9020-4443-b3f4-563eb192f1a6.png)
+>
+> hướng dẫn
 
-
-![Image (2048x1330)](../assets/6aa2c5f4-10fc-83ec-be7a-c5503884dee9/5504ba6c-9020-4443-b3f4-563eb192f1a6.png)
-
-hướng dẫn
-
-![5504ba6c-9020-4443-b3f4-563eb192f1a6.png](../assets/6aa2c5f4-10fc-83ec-be7a-c5503884dee9/5504ba6c-9020-4443-b3f4-563eb192f1a6.png)
+> ![5504ba6c-9020-4443-b3f4-563eb192f1a6.png](../assets/6aa2c5f4-10fc-83ec-be7a-c5503884dee9/5504ba6c-9020-4443-b3f4-563eb192f1a6.png)
 
 ---
 

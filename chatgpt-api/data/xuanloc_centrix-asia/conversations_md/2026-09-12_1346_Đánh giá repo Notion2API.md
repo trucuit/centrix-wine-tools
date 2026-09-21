@@ -3,15 +3,30 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-12 13:46:48 · **Updated:** 2026-09-12 13:49:44
 > **ID:** `6aa4f556-172c-83ec-8f64-20360e173840`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-12 13:47:18
-
-https://github.com/lza6/notion-2api.git
-https://github.com/maverickxone/notion2api.git
-https://github.com/GALIAIS/Notion2API.git
-
-Xem giúp mình phần repo nào ok
+> ### 👤 User · 2026-09-12 13:47:18
+>
+> https://github.com/lza6/notion-2api.git
+> https://github.com/maverickxone/notion2api.git
+> https://github.com/GALIAIS/Notion2API.git
+>
+> Xem giúp mình phần repo nào ok
 
 ---
 

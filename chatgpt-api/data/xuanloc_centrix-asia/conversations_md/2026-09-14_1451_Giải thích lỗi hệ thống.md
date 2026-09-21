@@ -3,16 +3,31 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-14 14:51:14 · **Updated:** 2026-09-14 14:51:35
 > **ID:** `6aa7a76f-3b60-83ec-b239-698743a73bfb`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-14 14:51:14
+> ### 👤 User · 2026-09-14 14:51:14
+>
+>
+> ![Image (882x623)](../assets/6aa7a76f-3b60-83ec-b239-698743a73bfb/e15c9e3e-99e2-4121-98d4-d52ffbd87c2c.png)
+>
+> đây là lỗi gì
 
-
-![Image (882x623)](../assets/6aa7a76f-3b60-83ec-b239-698743a73bfb/e15c9e3e-99e2-4121-98d4-d52ffbd87c2c.png)
-
-đây là lỗi gì
-
-![e15c9e3e-99e2-4121-98d4-d52ffbd87c2c.png](../assets/6aa7a76f-3b60-83ec-b239-698743a73bfb/e15c9e3e-99e2-4121-98d4-d52ffbd87c2c.png)
+> ![e15c9e3e-99e2-4121-98d4-d52ffbd87c2c.png](../assets/6aa7a76f-3b60-83ec-b239-698743a73bfb/e15c9e3e-99e2-4121-98d4-d52ffbd87c2c.png)
 
 ---
 

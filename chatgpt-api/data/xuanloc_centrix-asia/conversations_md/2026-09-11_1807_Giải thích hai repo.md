@@ -3,14 +3,29 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-11 18:07:21 · **Updated:** 2026-09-11 18:19:17
 > **ID:** `6aa3e0e6-0f40-83ec-8ba1-5aaffa9d553f`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-11 18:07:26
-
-https://github.com/HugoAleOlguin/Scribd-Downloader-Premium.git
-https://github.com/themrsami/scribd-downloader.git
-
-giải htichs cho mình 2 cái này
+> ### 👤 User · 2026-09-11 18:07:26
+>
+> https://github.com/HugoAleOlguin/Scribd-Downloader-Premium.git
+> https://github.com/themrsami/scribd-downloader.git
+>
+> giải htichs cho mình 2 cái này
 
 ---
 
@@ -843,11 +858,11 @@ Có một điểm cần hiểu đúng: cả hai chủ yếu **tái tạo nội d
 
 ---
 
-### 👤 User · 2026-09-11 18:13:57
-
-Scribd-Downloader-Premium 
-
-tải được mọi file không cần mua gói à bạn
+> ### 👤 User · 2026-09-11 18:13:57
+>
+> Scribd-Downloader-Premium 
+>
+> tải được mọi file không cần mua gói à bạn
 
 ---
 
@@ -871,9 +886,9 @@ Nếu anh muốn, anh có thể **phân tích chính xác đoạn code xác đ�
 
 ---
 
-### 👤 User · 2026-09-11 18:18:23
-
-Tìm giúp mình tools download freepik chỉ cần nhập url thôi, trên vps thì mình sẽ login sẵn tài khoản premium
+> ### 👤 User · 2026-09-11 18:18:23
+>
+> Tìm giúp mình tools download freepik chỉ cần nhập url thôi, trên vps thì mình sẽ login sẵn tài khoản premium
 
 ---
 

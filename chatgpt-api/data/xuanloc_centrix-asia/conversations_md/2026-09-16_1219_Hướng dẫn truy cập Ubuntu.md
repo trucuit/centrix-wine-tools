@@ -3,11 +3,26 @@
 > **Model:** `gpt-5-6-thinking` · **Created:** 2026-09-16 12:19:42 · **Updated:** 2026-09-16 12:20:12
 > **ID:** `6aaa26ec-77c4-83ec-b0c8-b907fad34982`
 
+<style>
+blockquote {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+  color: inherit !important;
+}
+blockquote h3 {
+  margin-top: 0 !important;
+  color: #60a5fa !important;
+}
+</style>
+
 ---
 
-### 👤 User · 2026-09-16 12:19:58
-
-hướng dẫn truy cập vào máy unutu ver
+> ### 👤 User · 2026-09-16 12:19:58
+>
+> hướng dẫn truy cập vào máy unutu ver
 
 ---
 
