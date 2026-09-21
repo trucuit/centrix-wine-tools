@@ -41,20 +41,58 @@ main() {
   fi
 
   local auth_files=()
+  local custom_delay=""
 
-  if [[ "${1:-}" == "--all" ]]; then
-    while IFS= read -r f; do
-      auth_files+=("$f")
-    done < <(find "$VPS_AUTHS_DIR" -maxdepth 1 -name 'codex-*.json' -type f 2>/dev/null | sort)
-    [[ ${#auth_files[@]} -eq 0 ]] && { echo "❌ Không tìm thấy codex-*.json trong $VPS_AUTHS_DIR"; exit 1; }
-  elif [[ -n "${1:-}" && -f "${1:-}" ]]; then
-    auth_files+=("$(cd "$(dirname "$1")" && pwd)/$(basename "$1")")
-  else
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --delay|-d)
+        custom_delay="${2:-}"
+        [[ -z "$custom_delay" ]] && { echo "❌ Thiếu giá trị delay. Ví dụ: --delay 55"; exit 1; }
+        shift 2
+        ;;
+      --all)
+        while IFS= read -r f; do
+          auth_files+=("$f")
+        done < <(find "$VPS_AUTHS_DIR" -maxdepth 1 -name 'codex-*.json' -type f 2>/dev/null | sort)
+        shift
+        ;;
+      -h|--help)
+        echo "Cách dùng:"
+        echo "  $0                           # Tự chọn file auth đầu tiên"
+        echo "  $0 <path/to/codex-auth.json> # Chỉ định file auth cụ thể"
+        echo "  $0 --all                     # Fetch cho tất cả tài khoản"
+        echo "  $0 <file> --delay 55         # Tùy chỉnh khoảng cách giữa các request (mặc định: 55s)"
+        exit 0
+        ;;
+      -*)
+        echo "❌ Tùy chọn không hợp lệ: $1"
+        exit 1
+        ;;
+      *)
+        if [[ -f "$1" ]]; then
+          auth_files+=("$(cd "$(dirname "$1")" && pwd)/$(basename "$1")")
+        else
+          echo "❌ Không tìm thấy file: $1"
+          exit 1
+        fi
+        shift
+        ;;
+    esac
+  done
+
+  if [[ ${#auth_files[@]} -eq 0 ]]; then
     local first
     first="$(find "$VPS_AUTHS_DIR" -maxdepth 1 -name 'codex-*.json' -type f 2>/dev/null | sort | head -1)"
-    [[ -z "$first" ]] && { echo "❌ Không tìm thấy codex-*.json"; exit 1; }
+    [[ -z "$first" ]] && { echo "❌ Không tìm thấy codex-*.json trong $VPS_AUTHS_DIR"; exit 1; }
     auth_files+=("$first")
   fi
+
+  if [[ -n "$custom_delay" ]]; then
+    export FETCH_DELAY="$custom_delay"
+  else
+    export FETCH_DELAY="${FETCH_DELAY:-55.0}"
+  fi
+  echo -e "\033[36m⏱️  Pacing delay: ${FETCH_DELAY}s giữa các hội thoại (chống 429 triệt để)\033[0m"
 
   local ok=0 fail=0
   for f in "${auth_files[@]}"; do
@@ -68,8 +106,8 @@ main() {
         ((ok++)) || true
         break
       else
-        echo -e "\033[33m⚠️ Quá trình bị gián đoạn (Rate limit 429 / mạng). Chờ 30s cooldown và tiếp tục tải từ điểm dừng...\033[0m"
-        sleep 30
+        echo -e "\033[33m⚠️ Quá trình bị gián đoạn (Rate limit 429 / mạng). Chờ 90s cooldown và tiếp tục tải từ điểm dừng...\033[0m"
+        sleep 90
         ((attempt++)) || true
       fi
     done

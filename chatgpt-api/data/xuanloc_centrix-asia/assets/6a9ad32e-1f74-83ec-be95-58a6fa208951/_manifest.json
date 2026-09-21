@@ -1,0 +1,34 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_000000001bcc81f5982d708a49112262",
+    "content_type": "image_asset_pointer",
+    "width": 1122,
+    "height": 1402,
+    "size_bytes": 1548367
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000890c81f5be3cbf3d30f1a47c",
+    "content_type": "image_asset_pointer",
+    "width": 1122,
+    "height": 1402,
+    "size_bytes": 1493226
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000001ef88211a2baecf78062de15",
+    "content_type": "image_asset_pointer",
+    "width": 1122,
+    "height": 1402,
+    "size_bytes": 1591550
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000003e508230ac5f1fd7616fa6d8",
+    "content_type": "image_asset_pointer",
+    "width": 1122,
+    "height": 1402,
+    "size_bytes": 1595025
+  }
+]

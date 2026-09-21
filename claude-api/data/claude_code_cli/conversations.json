@@ -1,0 +1,632 @@
+{
+  "source": "Claude Code CLI",
+  "exported_at": "2026-09-22T00:07:49.043712",
+  "total_sessions": 27,
+  "items": [
+    {
+      "id": "1ae9e720-7dc8-471e-a6a1-56bb0294eef0",
+      "title": "hi",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-21T16:53:46.946Z",
+      "updated_at": "2026-09-21T16:53:51.274Z",
+      "created_fmt": "2026-09-21 16:53:46",
+      "models": [
+        "<synthetic>"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/1ae9e720-7dc8-471e-a6a1-56bb0294eef0.json",
+      "md_file": "conversations_md/2026-09-21_1653_hi.md",
+      "filename": "2026-09-21_1653_hi.md"
+    },
+    {
+      "id": "ac7cd7a7-1407-4f40-9ba7-739fc2ce4c54",
+      "title": "hi",
+      "project": "/Users/tructt/Public",
+      "short_project": "Public",
+      "created_at": "2026-09-21T15:32:15.953Z",
+      "updated_at": "2026-09-21T15:32:20.104Z",
+      "created_fmt": "2026-09-21 15:32:15",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/ac7cd7a7-1407-4f40-9ba7-739fc2ce4c54.json",
+      "md_file": "conversations_md/2026-09-21_1532_hi.md",
+      "filename": "2026-09-21_1532_hi.md"
+    },
+    {
+      "id": "2e21d685-72d7-4973-819b-0bc2faa7ce50",
+      "title": "say pong",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-21T15:31:20.513Z",
+      "updated_at": "2026-09-21T15:31:24.197Z",
+      "created_fmt": "2026-09-21 15:31:20",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/2e21d685-72d7-4973-819b-0bc2faa7ce50.json",
+      "md_file": "conversations_md/2026-09-21_1531_say pong.md",
+      "filename": "2026-09-21_1531_say pong.md"
+    },
+    {
+      "id": "2008e248-b8ec-4810-ac1a-d6fb9f7f1617",
+      "title": "hi",
+      "project": "/Users/tructt/Public",
+      "short_project": "Public",
+      "created_at": "2026-09-21T15:29:08.562Z",
+      "updated_at": "2026-09-21T15:29:14.397Z",
+      "created_fmt": "2026-09-21 15:29:08",
+      "models": [
+        "<synthetic>"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/2008e248-b8ec-4810-ac1a-d6fb9f7f1617.json",
+      "md_file": "conversations_md/2026-09-21_1529_hi.md",
+      "filename": "2026-09-21_1529_hi.md"
+    },
+    {
+      "id": "af702a25-f885-439f-82dc-4b9f73420a68",
+      "title": "hi",
+      "project": "/Users/tructt/Public",
+      "short_project": "Public",
+      "created_at": "2026-09-12T10:07:23.449Z",
+      "updated_at": "2026-09-12T10:07:28.162Z",
+      "created_fmt": "2026-09-12 10:07:23",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/af702a25-f885-439f-82dc-4b9f73420a68.json",
+      "md_file": "conversations_md/2026-09-12_1007_hi.md",
+      "filename": "2026-09-12_1007_hi.md"
+    },
+    {
+      "id": "001ba2ab-d604-42a7-8d43-5bf3f5bf417c",
+      "title": "ping",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T10:04:43.440Z",
+      "updated_at": "2026-09-12T10:04:50.807Z",
+      "created_fmt": "2026-09-12 10:04:43",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/001ba2ab-d604-42a7-8d43-5bf3f5bf417c.json",
+      "md_file": "conversations_md/2026-09-12_1004_ping.md",
+      "filename": "2026-09-12_1004_ping.md"
+    },
+    {
+      "id": "b568511c-7b3e-404d-b136-14ae00635bb9",
+      "title": "Say hi",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T10:00:40.281Z",
+      "updated_at": "2026-09-12T10:00:44.842Z",
+      "created_fmt": "2026-09-12 10:00:40",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/b568511c-7b3e-404d-b136-14ae00635bb9.json",
+      "md_file": "conversations_md/2026-09-12_1000_Say hi.md",
+      "filename": "2026-09-12_1000_Say hi.md"
+    },
+    {
+      "id": "9b5cc50d-1158-4d1a-ad3a-55103ffb1ef4",
+      "title": "ping",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:52:41.158Z",
+      "updated_at": "2026-09-12T09:52:50.103Z",
+      "created_fmt": "2026-09-12 09:52:41",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/9b5cc50d-1158-4d1a-ad3a-55103ffb1ef4.json",
+      "md_file": "conversations_md/2026-09-12_0952_ping.md",
+      "filename": "2026-09-12_0952_ping.md"
+    },
+    {
+      "id": "b24c7f05-5907-48da-8bbb-cfd9ca7c609c",
+      "title": "hi",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:51:51.344Z",
+      "updated_at": "2026-09-12T09:52:04.850Z",
+      "created_fmt": "2026-09-12 09:51:51",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/b24c7f05-5907-48da-8bbb-cfd9ca7c609c.json",
+      "md_file": "conversations_md/2026-09-12_0951_hi.md",
+      "filename": "2026-09-12_0951_hi.md"
+    },
+    {
+      "id": "5a95c67c-2a8c-406f-a122-574d7bdc972a",
+      "title": "Say OK",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:51:09.522Z",
+      "updated_at": "2026-09-12T09:51:14.238Z",
+      "created_fmt": "2026-09-12 09:51:09",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/5a95c67c-2a8c-406f-a122-574d7bdc972a.json",
+      "md_file": "conversations_md/2026-09-12_0951_Say OK.md",
+      "filename": "2026-09-12_0951_Say OK.md"
+    },
+    {
+      "id": "beb1fb32-7cea-4428-a69d-8856eaca30e2",
+      "title": "hi",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:50:34.089Z",
+      "updated_at": "2026-09-12T09:50:43.626Z",
+      "created_fmt": "2026-09-12 09:50:34",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/beb1fb32-7cea-4428-a69d-8856eaca30e2.json",
+      "md_file": "conversations_md/2026-09-12_0950_hi.md",
+      "filename": "2026-09-12_0950_hi.md"
+    },
+    {
+      "id": "061e6c7e-48b3-4827-9513-87d93c80041b",
+      "title": "ping",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:43:50.731Z",
+      "updated_at": "2026-09-12T09:43:59.112Z",
+      "created_fmt": "2026-09-12 09:43:50",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/061e6c7e-48b3-4827-9513-87d93c80041b.json",
+      "md_file": "conversations_md/2026-09-12_0943_ping.md",
+      "filename": "2026-09-12_0943_ping.md"
+    },
+    {
+      "id": "86df69f4-f32f-4f92-b5c7-5d69116ef57c",
+      "title": "ping",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:43:36.001Z",
+      "updated_at": "2026-09-12T09:43:40.733Z",
+      "created_fmt": "2026-09-12 09:43:36",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/86df69f4-f32f-4f92-b5c7-5d69116ef57c.json",
+      "md_file": "conversations_md/2026-09-12_0943_ping.md",
+      "filename": "2026-09-12_0943_ping.md"
+    },
+    {
+      "id": "707105cd-7864-4053-aec0-e7325ec4941a",
+      "title": "Model and account identification",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:43:07.354Z",
+      "updated_at": "2026-09-12T09:43:17.018Z",
+      "created_fmt": "2026-09-12 09:43:07",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 3
+      },
+      "json_file": "conversations/707105cd-7864-4053-aec0-e7325ec4941a.json",
+      "md_file": "conversations_md/2026-09-12_0943_Model and account identification.md",
+      "filename": "2026-09-12_0943_Model and account identification.md"
+    },
+    {
+      "id": "9c2b1cc2-891c-4f4a-95b6-0f33735035ca",
+      "title": "Hello in three words",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:42:48.567Z",
+      "updated_at": "2026-09-12T09:42:51.229Z",
+      "created_fmt": "2026-09-12 09:42:48",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/9c2b1cc2-891c-4f4a-95b6-0f33735035ca.json",
+      "md_file": "conversations_md/2026-09-12_0942_Hello in three words.md",
+      "filename": "2026-09-12_0942_Hello in three words.md"
+    },
+    {
+      "id": "d8789fee-62d9-4bf7-8d23-c9602484943c",
+      "title": "ping",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:42:27.848Z",
+      "updated_at": "2026-09-12T09:42:29.427Z",
+      "created_fmt": "2026-09-12 09:42:27",
+      "models": [
+        "<synthetic>"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/d8789fee-62d9-4bf7-8d23-c9602484943c.json",
+      "md_file": "conversations_md/2026-09-12_0942_ping.md",
+      "filename": "2026-09-12_0942_ping.md"
+    },
+    {
+      "id": "c7ff3f4c-a63f-4b3c-a223-2d89ac2566d3",
+      "title": "hi",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:41:51.937Z",
+      "updated_at": "2026-09-12T09:41:53.575Z",
+      "created_fmt": "2026-09-12 09:41:51",
+      "models": [
+        "<synthetic>"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/c7ff3f4c-a63f-4b3c-a223-2d89ac2566d3.json",
+      "md_file": "conversations_md/2026-09-12_0941_hi.md",
+      "filename": "2026-09-12_0941_hi.md"
+    },
+    {
+      "id": "67e8f4b6-4179-43a9-aa20-7656e1404725",
+      "title": "hi",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:37:41.995Z",
+      "updated_at": "2026-09-12T09:37:52.444Z",
+      "created_fmt": "2026-09-12 09:37:41",
+      "models": [
+        "<synthetic>"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 2,
+        "assistant_messages": 2,
+        "tool_calls": 0,
+        "total_records": 4
+      },
+      "json_file": "conversations/67e8f4b6-4179-43a9-aa20-7656e1404725.json",
+      "md_file": "conversations_md/2026-09-12_0937_hi.md",
+      "filename": "2026-09-12_0937_hi.md"
+    },
+    {
+      "id": "00f1db5c-0a5e-4fbb-904f-4ea395b35454",
+      "title": "hi",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-09-12T09:36:48.675Z",
+      "updated_at": "2026-09-12T09:36:51.385Z",
+      "created_fmt": "2026-09-12 09:36:48",
+      "models": [
+        "<synthetic>"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/00f1db5c-0a5e-4fbb-904f-4ea395b35454.json",
+      "md_file": "conversations_md/2026-09-12_0936_hi.md",
+      "filename": "2026-09-12_0936_hi.md"
+    },
+    {
+      "id": "bcb74071-e24c-4bb4-8cdd-41f56a358f17",
+      "title": "hi",
+      "project": "/Users/tructt/Public",
+      "short_project": "Public",
+      "created_at": "2026-09-12T05:21:55.667Z",
+      "updated_at": "2026-09-12T05:21:58.753Z",
+      "created_fmt": "2026-09-12 05:21:55",
+      "models": [
+        "<synthetic>"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/bcb74071-e24c-4bb4-8cdd-41f56a358f17.json",
+      "md_file": "conversations_md/2026-09-12_0521_hi.md",
+      "filename": "2026-09-12_0521_hi.md"
+    },
+    {
+      "id": "82c58266-baa6-44fb-b875-d726d8343c38",
+      "title": "Udemy - Digital Transformation Practitioner",
+      "project": "/Users/tructt/Public",
+      "short_project": "Public",
+      "created_at": "2026-09-06T06:58:38.514Z",
+      "updated_at": "2026-09-08T04:16:30.505Z",
+      "created_fmt": "2026-09-06 06:58:38",
+      "models": [
+        "claude-opus-5",
+        "claude-sonnet-5",
+        "<synthetic>"
+      ],
+      "tools_used": [
+        "AskUserQuestion",
+        "mcp__Claude_Browser__browser_batch",
+        "mcp__Claude_Browser__computer",
+        "mcp__Claude_Browser__find",
+        "mcp__Claude_Browser__get_page_text",
+        "mcp__Claude_Browser__javascript_tool",
+        "mcp__Claude_Browser__navigate",
+        "mcp__Claude_Browser__read_console_messages",
+        "mcp__Claude_Browser__read_network_requests",
+        "mcp__Claude_Browser__read_page",
+        "mcp__Claude_Browser__screenshot",
+        "mcp__Claude_Browser__tabs_close",
+        "mcp__Claude_Browser__tabs_context",
+        "mcp__Claude_Browser__tabs_create"
+      ],
+      "stats": {
+        "human_prompts": 13,
+        "assistant_messages": 4401,
+        "tool_calls": 3217,
+        "total_records": 7632
+      },
+      "json_file": "conversations/82c58266-baa6-44fb-b875-d726d8343c38.json",
+      "md_file": "conversations_md/2026-09-06_0658_Udemy - Digital Transformation Practitioner.md",
+      "filename": "2026-09-06_0658_Udemy - Digital Transformation Practitioner.md"
+    },
+    {
+      "id": "8a09e306-57ba-4590-beb6-324389d82cee",
+      "title": "Bạn là tác nhân soạn giáo trình. Nhiệm vụ: viết lại trọn vẹn 10 l",
+      "project": "/Users/tructt/Public/digital-transformation-study",
+      "short_project": "digital-transformation-study",
+      "created_at": "2026-09-05T15:36:50.030Z",
+      "updated_at": "2026-09-05T15:36:50.003Z",
+      "created_fmt": "2026-09-05 15:36:50",
+      "models": [
+        "<synthetic>"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/8a09e306-57ba-4590-beb6-324389d82cee.json",
+      "md_file": "conversations_md/2026-09-05_1536_Bạn là tác nhân soạn giáo trình. Nhiệm vụ viết lại trọn.md",
+      "filename": "2026-09-05_1536_Bạn là tác nhân soạn giáo trình. Nhiệm vụ viết lại trọn.md"
+    },
+    {
+      "id": "9ac66e8d-10c9-4e5f-99ac-f812b35c9ddc",
+      "title": "hi",
+      "project": "/Users/tructt/Public/Projects/digital-banking-masterclass",
+      "short_project": "digital-banking-masterclass",
+      "created_at": "2026-08-31T14:35:31.109Z",
+      "updated_at": "2026-08-31T14:35:36.252Z",
+      "created_fmt": "2026-08-31 14:35:31",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/9ac66e8d-10c9-4e5f-99ac-f812b35c9ddc.json",
+      "md_file": "conversations_md/2026-08-31_1435_hi.md",
+      "filename": "2026-08-31_1435_hi.md"
+    },
+    {
+      "id": "63d967c5-5408-47f5-a3fd-f86c4baac0db",
+      "title": "hi",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-08-30T13:26:36.664Z",
+      "updated_at": "2026-08-30T13:26:44.781Z",
+      "created_fmt": "2026-08-30 13:26:36",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 1,
+        "tool_calls": 0,
+        "total_records": 2
+      },
+      "json_file": "conversations/63d967c5-5408-47f5-a3fd-f86c4baac0db.json",
+      "md_file": "conversations_md/2026-08-30_1326_hi.md",
+      "filename": "2026-08-30_1326_hi.md"
+    },
+    {
+      "id": "692fcdf9-3178-49ee-bece-7d9b521c27ce",
+      "title": "Settings.json remote control configuration",
+      "project": "/Users/tructt/Public",
+      "short_project": "Public",
+      "created_at": "2026-08-30T08:55:32.008Z",
+      "updated_at": "2026-08-30T08:56:12.336Z",
+      "created_fmt": "2026-08-30 08:55:32",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [
+        "Bash",
+        "Edit",
+        "Read"
+      ],
+      "stats": {
+        "human_prompts": 1,
+        "assistant_messages": 13,
+        "tool_calls": 7,
+        "total_records": 22
+      },
+      "json_file": "conversations/692fcdf9-3178-49ee-bece-7d9b521c27ce.json",
+      "md_file": "conversations_md/2026-08-30_0855_Settings.json remote control configuration.md",
+      "filename": "2026-08-30_0855_Settings.json remote control configuration.md"
+    },
+    {
+      "id": "a121cd77-8041-4af3-a0ac-5c5a8beb6be1",
+      "title": "MCP startup failures",
+      "project": "/Users/tructt/Public",
+      "short_project": "Public",
+      "created_at": "2026-08-30T08:54:37.737Z",
+      "updated_at": "2026-08-31T03:07:16.205Z",
+      "created_fmt": "2026-08-30 08:54:37",
+      "models": [
+        "claude-opus-5"
+      ],
+      "tools_used": [
+        "Bash"
+      ],
+      "stats": {
+        "human_prompts": 4,
+        "assistant_messages": 39,
+        "tool_calls": 16,
+        "total_records": 59
+      },
+      "json_file": "conversations/a121cd77-8041-4af3-a0ac-5c5a8beb6be1.json",
+      "md_file": "conversations_md/2026-08-30_0854_MCP startup failures.md",
+      "filename": "2026-08-30_0854_MCP startup failures.md"
+    },
+    {
+      "id": "903fe081-5677-46a5-846f-54612846f7b1",
+      "title": "centrix-service-api run all",
+      "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "short_project": "centrix-wine-tools",
+      "created_at": "2026-08-30T07:47:26.347Z",
+      "updated_at": "2026-08-30T09:32:43.215Z",
+      "created_fmt": "2026-08-30 07:47:26",
+      "models": [
+        "claude-opus-5",
+        "<synthetic>"
+      ],
+      "tools_used": [
+        "AskUserQuestion",
+        "Bash",
+        "Edit",
+        "Read",
+        "TaskStop",
+        "ToolSearch"
+      ],
+      "stats": {
+        "human_prompts": 11,
+        "assistant_messages": 263,
+        "tool_calls": 114,
+        "total_records": 388
+      },
+      "json_file": "conversations/903fe081-5677-46a5-846f-54612846f7b1.json",
+      "md_file": "conversations_md/2026-08-30_0747_centrix-service-api run all.md",
+      "filename": "2026-08-30_0747_centrix-service-api run all.md"
+    }
+  ]
+}

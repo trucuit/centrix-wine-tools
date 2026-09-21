@@ -1,0 +1,189 @@
+{
+  "title": "Viết lại tin nhắn WiFi",
+  "create_time": 1788762208.22082,
+  "update_time": 1788762217.690986,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6a9e5812-1bb0-83ec-9783-1284c6c6bc21",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://huggingface.co/huggingface",
+    "https://www.openai.com",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://docs.google.com/document/d/",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://www.apple.com/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "16c400fd-6be4-4421-bd53-bf56093ab17d": {
+      "id": "16c400fd-6be4-4421-bd53-bf56093ab17d",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c9851820-9d25-4f97-9b58-60decbfe11cb"
+      ]
+    },
+    "c9851820-9d25-4f97-9b58-60decbfe11cb": {
+      "id": "c9851820-9d25-4f97-9b58-60decbfe11cb",
+      "message": {
+        "id": "c9851820-9d25-4f97-9b58-60decbfe11cb",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788762205.932136,
+        "update_time": 1788762217.645776,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Anh Bảo ơi wifi đợt mới em đổi gói cao hơn giá 325k/tháng từ tháng 6-9 là 3 tháng 975k/2 là của anh 487k á anh\n\nTháng 9 này em chuyển đi, anh dùng tiếp hợp đồng wifi không ạ nếu anh dùng tiếp thì em chuyển qua cho anh nha anh, còn không thì em huỷ ạ"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "triggered_by_system_hint_suggestion": false,
+          "dictation": false,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-6d2dbb19-428d-4ae7-bbc7-4c0aff61a610:NZ",
+          "request_id": "wfr_01a07a8806e577a299be1a8f1959ecfc",
+          "message_source": null,
+          "turn_exchange_id": "6d2dbb19-428d-4ae7-bbc7-4c0aff61a610",
+          "working_turn_id": "6d2dbb19-428d-4ae7-bbc7-4c0aff61a610",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "16c400fd-6be4-4421-bd53-bf56093ab17d",
+      "children": [
+        "f73cada6-948b-4960-b094-6490a827703c"
+      ]
+    },
+    "f73cada6-948b-4960-b094-6490a827703c": {
+      "id": "f73cada6-948b-4960-b094-6490a827703c",
+      "message": {
+        "id": "f73cada6-948b-4960-b094-6490a827703c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788762210.399037,
+        "update_time": 1788762210.399037,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 2 giây"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 2,
+          "reasoning_start_time": 1788762208.118112,
+          "reasoning_end_time": 1788762210.3935213,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a07a8806e577a299be1a8f1959ecfc",
+          "message_type": "next",
+          "turn_exchange_id": "6d2dbb19-428d-4ae7-bbc7-4c0aff61a610",
+          "working_turn_id": "6d2dbb19-428d-4ae7-bbc7-4c0aff61a610",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "deb38937-bf87-4f5a-98f0-0bdcea45fdb8",
+          "hide_inline_actions": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-6d2dbb19-428d-4ae7-bbc7-4c0aff61a610:NZ",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c9851820-9d25-4f97-9b58-60decbfe11cb",
+      "children": [
+        "442363ea-8dd0-49b0-b4d1-25d886eb4ff3"
+      ]
+    },
+    "442363ea-8dd0-49b0-b4d1-25d886eb4ff3": {
+      "id": "442363ea-8dd0-49b0-b4d1-25d886eb4ff3",
+      "message": {
+        "id": "442363ea-8dd0-49b0-b4d1-25d886eb4ff3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788762210.403433,
+        "update_time": 1788762217.474258,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Mình viết lại tự nhiên, rõ ràng hơn như này anh:\n\n:::writing{variant=\"chat_message\" id=\"48317\" title=\"Tin nhắn gửi anh Bảo\"}\nAnh Bảo ơi, đợt trước em có đổi gói WiFi lên gói cao hơn, giá **325.000đ/tháng**. Tổng 3 tháng vừa rồi là **975.000đ**, chia đôi thì phần của anh là **487.500đ** nha anh.\n\nTháng 9 này em chuyển đi rồi nên em hỏi anh có muốn **dùng tiếp hợp đồng WiFi** không ạ? Nếu anh dùng tiếp thì em làm thủ tục chuyển hợp đồng qua cho anh luôn, còn nếu anh không dùng nữa thì em sẽ làm thủ tục huỷ ạ.\n:::\n\nNếu anh muốn, mình có thể sửa thành giọng **thân thiết hơn, bớt giống đòi tiền** một chút."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a07a8806e577a299be1a8f1959ecfc",
+          "message_type": "next",
+          "turn_exchange_id": "6d2dbb19-428d-4ae7-bbc7-4c0aff61a610",
+          "working_turn_id": "6d2dbb19-428d-4ae7-bbc7-4c0aff61a610",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "f73cada6-948b-4960-b094-6490a827703c",
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-6d2dbb19-428d-4ae7-bbc7-4c0aff61a610:NZ",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "f73cada6-948b-4960-b094-6490a827703c",
+      "children": []
+    }
+  },
+  "current_node": "442363ea-8dd0-49b0-b4d1-25d886eb4ff3",
+  "context_truncation_continuation": null
+}

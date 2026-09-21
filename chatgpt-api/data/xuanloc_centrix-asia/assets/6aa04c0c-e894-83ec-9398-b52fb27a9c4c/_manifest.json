@@ -1,0 +1,37 @@
+[
+  {
+    "type": "attachment",
+    "file_id": "file_00000000f1d881fabf041d00ee23de6b",
+    "name": "user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a/dffaa61ef84f4dc5b1a14af0d4d9a92c/mnt/data/docx_render/page-1.png",
+    "mime_type": "image/png",
+    "size": 112673
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_00000000d88081f5b216b83f56aae4ff",
+    "name": "user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a/dffaa61ef84f4dc5b1a14af0d4d9a92c/mnt/data/docx_render/page-2.png",
+    "mime_type": "image/png",
+    "size": 244842
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_000000001c0081f590e3122e4a58e9c4",
+    "name": "user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a/dffaa61ef84f4dc5b1a14af0d4d9a92c/mnt/data/docx_render/page-3.png",
+    "mime_type": "image/png",
+    "size": 221074
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_00000000f6148206a18f4e0fd5a93ac2",
+    "name": "user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a/dffaa61ef84f4dc5b1a14af0d4d9a92c/mnt/data/docx_render/page-4.png",
+    "mime_type": "image/png",
+    "size": 323663
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_00000000c08c820bb67ae7b0873d5030",
+    "name": "Văn bản đã dán (1)(20260909-035307).txt",
+    "mime_type": "text/plain",
+    "size": 37820
+  }
+]

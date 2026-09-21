@@ -1,0 +1,39 @@
+{
+  "id": "d8789fee-62d9-4bf7-8d23-c9602484943c",
+  "title": "ping",
+  "project": "/Users/tructt/Public/Projects/centrix-wine-tools",
+  "short_project": "centrix-wine-tools",
+  "cwd": "/Users/tructt/Public/Projects/centrix-wine-tools",
+  "git_branch": "main",
+  "created_at": "2026-09-12T09:42:27.848Z",
+  "updated_at": "2026-09-12T09:42:29.427Z",
+  "models": [
+    "<synthetic>"
+  ],
+  "tools_used": [],
+  "stats": {
+    "human_prompts": 1,
+    "assistant_messages": 1,
+    "tool_calls": 0,
+    "total_records": 2
+  },
+  "turns": [
+    {
+      "type": "human",
+      "timestamp": "2026-09-12T09:42:28.739Z",
+      "text": "ping",
+      "cwd": "/Users/tructt/Public/Projects/centrix-wine-tools",
+      "git_branch": "main",
+      "uuid": "3240d6cf-9d71-4ab1-a466-9b024371e3fa"
+    },
+    {
+      "type": "assistant",
+      "timestamp": "2026-09-12T09:42:29.427Z",
+      "model": "<synthetic>",
+      "text": "Your organization has disabled Claude subscription access for Claude Code · Use an Anthropic API key instead, or ask your admin to enable access",
+      "tool_calls": [],
+      "thinking": "",
+      "uuid": "4a6545e5-f57c-4c84-b687-324290820170"
+    }
+  ]
+}

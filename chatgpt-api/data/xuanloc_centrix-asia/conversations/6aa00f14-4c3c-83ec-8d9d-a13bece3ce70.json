@@ -1,0 +1,952 @@
+{
+  "title": "Code game rắn săn mồi",
+  "create_time": 1788874525.626745,
+  "update_time": 1788874660.441588,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa00f14-4c3c-83ec-8d9d-a13bece3ce70",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://huggingface.co/huggingface"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-6-astra-wm",
+  "atlas_mode_enabled": null,
+  "conversation_origin": "tpp",
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "0f5252c3-586d-4497-8878-78e77f86db35"
+      ]
+    },
+    "0f5252c3-586d-4497-8878-78e77f86db35": {
+      "id": "0f5252c3-586d-4497-8878-78e77f86db35",
+      "message": {
+        "id": "0f5252c3-586d-4497-8878-78e77f86db35",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874516.509,
+        "update_time": 1788874662.885987,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Bạn dùng model nào code cho mình game rắn săn mồi html css  "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "request_id": "wfr_01a0813ae76b732aa170c50e1ce35a57",
+          "message_source": null,
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "66b5480b-cf68-4d1d-9e69-45fc64d9fc47"
+      ]
+    },
+    "66b5480b-cf68-4d1d-9e69-45fc64d9fc47": {
+      "id": "66b5480b-cf68-4d1d-9e69-45fc64d9fc47",
+      "message": {
+        "id": "66b5480b-cf68-4d1d-9e69-45fc64d9fc47",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874527.53435,
+        "update_time": 1788874527.53435,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [],
+          "source_analysis_msg_id": "66b5480b-cf68-4d1d-9e69-45fc64d9fc47"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "chime_version": 3,
+          "thinking_effort": "standard",
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "8140f72b-630d-46f7-8808-9ffb5338abc0",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0f5252c3-586d-4497-8878-78e77f86db35",
+      "children": [
+        "9ef00741-2127-52be-9568-d1c2ae9b3eb9"
+      ]
+    },
+    "9ef00741-2127-52be-9568-d1c2ae9b3eb9": {
+      "id": "9ef00741-2127-52be-9568-d1c2ae9b3eb9",
+      "message": {
+        "id": "9ef00741-2127-52be-9568-d1c2ae9b3eb9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874534.306508,
+        "update_time": 1788874535.82942,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Mình là Codex; phiên này không hiển thị chính xác tên model đang chạy. Mình sẽ tạo cho anh game rắn săn mồi trong một file HTML, gồm CSS và JavaScript, mở bằng trình duyệt là chơi được ạ."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "chime_version": 3,
+          "is_thinking_preamble_message": true,
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "thinking_effort": "standard",
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "66b5480b-cf68-4d1d-9e69-45fc64d9fc47",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": true
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "66b5480b-cf68-4d1d-9e69-45fc64d9fc47",
+      "children": [
+        "9a3bec5d-ad0f-5d25-982e-b0bea7520a73"
+      ]
+    },
+    "9a3bec5d-ad0f-5d25-982e-b0bea7520a73": {
+      "id": "9a3bec5d-ad0f-5d25-982e-b0bea7520a73",
+      "message": {
+        "id": "9a3bec5d-ad0f-5d25-982e-b0bea7520a73",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874540.562139,
+        "update_time": 1788874542.082286,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Game sẽ có điểm số, kỷ lục, ba mức tốc độ và nút điều khiển trên điện thoại. Mình dùng kỹ năng Library để tạo file tải xuống cho anh."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "chime_version": 3,
+          "is_thinking_preamble_message": true,
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "thinking_effort": "standard",
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "9ef00741-2127-52be-9568-d1c2ae9b3eb9",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": true
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "9ef00741-2127-52be-9568-d1c2ae9b3eb9",
+      "children": [
+        "50606770-ced4-481f-b222-6ad8191fdbad"
+      ]
+    },
+    "50606770-ced4-481f-b222-6ad8191fdbad": {
+      "id": "50606770-ced4-481f-b222-6ad8191fdbad",
+      "message": {
+        "id": "50606770-ced4-481f-b222-6ad8191fdbad",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874632.324427,
+        "update_time": 1788874632.324427,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "bash -lc /bin/bash -lc \"cat > ran-san-moi.html <<'EOF'\n<\"'!doctype html>\n<html lang=\"vi\">\n<head>\n<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Rắn săn mồi • Snake Garden</title>\n<style>\n*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 15% 0%,#1d4938,transparent 55%),#0b1713;color:#edf5e8;font:16px system-ui,sans-serif;display:grid;place-items:center;padding:24px}main{width:min(100%,560px)}header{display:flex;align-items:center;justify-content:space-between;gap:16px}.eyebrow{color:#a4d888;font-size:11px;letter-spacing:3px;font-weight:700}h1{font-size:36px;letter-spacing:-1.5px;margin:6px 0}p{color:#a3b4a9;font-size:14px;line-height:1.6}.badge{border:1px solid #3b5546;border-radius:30px;padding:8px 12px;color:#b8d4ae;font-size:12px;white-space:nowrap}.stats{display:flex;gap:12px;margin:22px 0 16px}.stat{flex:1;background:#192b23;border:1px solid #304638;border-radius:16px;padding:12px 18px}.stat span{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#a3b4a9}.stat strong{display:block;font-size:29px;margin-top:2px}.board{position:relative;overflow:hidden;border:1px solid #456047;border-radius:20px;background:#101f18;box-shadow:0 20px 60px #0004}canvas{display:block;width:100%;aspect-ratio:1;touch-action:none}.overlay{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:24px;background:#0b1713c9;backdrop-filter:blur(3px)}.overlay[hidden]{display:none}.overlay h2{font-size:28px;margin:0}.overlay p{max-width:300px;margin:12px auto 20px}button,select{font:inherit;border-radius:12px;border:1px solid #405846;cursor:pointer;background:#20352a;color:#eef5e8;padding:12px 16px}button:hover{filter:brightness(1.16)}button:focus-visible,select:focus-visible{outline:3px solid #d2fb91;outline-offset:3px}.primary{background:#c5ef8b;color:#152414;border:0;font-weight:750}.toolbar{display:flex;gap:10px;margin:16px 0;align-items:center;flex-wrap:wrap}.toolbar label{color:#acbfb0;font-size:13px}select{flex:1;min-width:100px}.dpad{display:grid;grid-template-columns:repeat(3,52px);gap:6px;justify-content:center;margin-top:18px}.dpad button{touch-action:manipulation;padding:10px;font-size:20px}.dpad button:first-child{grid-column:2}.dpad button:nth-child(2){grid-column:1}.hint{text-align:center;font-size:12px;margin:18px 0 0;color:#91a396}@media(max-width:430px){body{padding:16px}h1{font-size:29px}.badge{display:none}.toolbar button{padding:12px}.stats{margin-top:16px}}\n</style>\n</head>\n<body>\n<main>\n<header><div><div class=\"eyebrow\">SNAKE GARDEN / 01</div><h1>Rắn săn mồi<span style=\"color:#c5ef8b\">.</span></h1></div><span class=\"badge\">● Chơi ngoại tuyến</span></header>\n<p>Ăn thật nhiều. Lớn thật nhanh. Đừng cắn đuôi!</p>\n<section class=\"stats\" aria-label=\"Điểm số\"><div class=\"stat\"><span>Điểm của bạn</span><strong id=\"score\">0</strong></div><div class=\"stat\"><span>Kỷ lục</span><strong id=\"best\">0</strong></div></section>\n<div class=\"board\"><canvas id=\"board\" width=\"600\" height=\"600\" aria-label=\"Bàn chơi rắn săn mồi\"></canvas><div class=\"overlay\" id=\"overlay\"><h2 id=\"title\">Một miếng nữa thôi!</h2><p id=\"message\">Dùng phím mũi tên, WASD hoặc vuốt trên màn hình để điều khiển rắn.</p><button class=\"primary\" id=\"play\">Bắt đầu chơi →</button></div></div>\n<div class=\"toolbar\"><label for=\"speed\">Tốc độ</label><select id=\"speed\"><option value=\"170\">Thư giãn</option><option value=\"115\" selected>Vừa sức</option><option value=\"75\">Thử thách</option></select><button id=\"pause\">Tạm dừng</button><button id=\"restart\">Chơi lại ↻</button></div>\n<div class=\"dpad\" aria-label=\"Điều khiển\"><button data-dir=\"up\" aria-label=\"Lên\">↑</button><button data-dir=\"left\" aria-label=\"Trái\">←</button><button data-dir=\"down\" aria-label=\"Xuống\">↓</button><button data-dir=\"right\" aria-label=\"Phải\">→</button></div>\n<p class=\"hint\">Mũi tên / WASD: di chuyển · Space: tạm dừng<br>Chạm tường hoặc chạm thân là kết thúc. Mỗi quả +10 điểm.</p>\n</main>\n<script>\n'\"'use strict';\nconst \"'$=id=>document.getElementById(id),canvas=$('\"'board'),ctx=canvas.getContext('2d');\nconst N=20,S=30,dirs={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};\nlet snake,food,dir,queue=[],score=0,best=0,state='ready',timer;\ntry{best=Math.max(0,Number(localStorage.getItem('snake-garden-best'))||0)}catch{}\n\"'$('\"'best').textContent=best;\nfunction reset(){snake=[{x:9,y:10},{x:8,y:10},{x:7,y:10}];dir=dirs.right;queue=[];score=0;\"'$('\"'score').textContent=0;spawnFood();draw()}\nfunction spawnFood(){const free=[];for(let y=0;y<N;y++)for(let x=0;x<N;x++)if(\"'!snake.some(p=>p.x===x&&p.y===y))free.push({x,y});food=free[Math.floor(Math.random()*free.length)]||null}\nfunction tile(x,y,color,pad=2){ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x*S+pad,y*S+pad,S-pad*2,S-pad*2,7);ctx.fill()}\nfunction draw(){ctx.fillStyle='\"'#101f18';ctx.fillRect(0,0,600,600);ctx.strokeStyle='#ffffff06';ctx.lineWidth=1;for(let i=1;i<N;i++){ctx.beginPath();ctx.moveTo(i*S,0);ctx.lineTo(i*S,600);ctx.moveTo(0,i*S);ctx.lineTo(600,i*S);ctx.stroke()}if(food){ctx.shadowColor='#ff9479';ctx.shadowBlur=16;tile(food.x,food.y,'#ff9479',5);ctx.shadowBlur=0}snake.forEach((p,i)=>tile(p.x,p.y,i===0?'#e1ffab':i%2?'#abd875':'#99c969'));const h=snake[0];ctx.fillStyle='#21331c';for(const side of [-1,1]){ctx.beginPath();ctx.arc(h.x*S+15+dir.x*6+(dir.y?side*5:0),h.y*S+15+dir.y*6+(dir.x?side*5:0),2.5,0,Math.PI*2);ctx.fill()}}\nfunction show(title,message,button){\"'$('\"'title').textContent=title;\"'$('\"'message').textContent=message;\"'$('\"'play').textContent=button;\"'$('\"'overlay').hidden=false}\nfunction schedule(){clearTimeout(timer);if(state==='running')timer=setTimeout(tick,Number(\"'$('\"'speed').value))}\nfunction start(){clearTimeout(timer);reset();state='running';\"'$('\"'overlay').hidden=true;\"'$('\"'pause').textContent='Tạm dừng';schedule()}\nfunction end(won=false){state='over';clearTimeout(timer);show(won?'Bạn đã chinh phục khu vườn\"'!'\"':'Hết đường rồi\"'!'\"',\"'`Bạn đạt ${score} điểm. Kỷ lục: ${best} điểm.`,'\"'Chơi lại →')}\nfunction tick(){if(state\"'!=='\"'running')return;if(queue.length)dir=queue.shift();const head={x:snake[0].x+dir.x,y:snake[0].y+dir.y};const eat=food&&head.x===food.x&&head.y===food.y;const body=eat?snake:snake.slice(0,-1);if(head.x<0||head.x>=N||head.y<0||head.y>=N||body.some(p=>p.x===head.x&&p.y===head.y)){end();return}snake.unshift(head);if(eat){score+=10;\"'$('\"'score').textContent=score;if(score>best){best=score;\"'$('\"'best').textContent=best;try{localStorage.setItem('snake-garden-best',String(best))}catch{}}spawnFood()}else snake.pop();draw();if(\"'!food){end(true);return}schedule()}\nfunction steer(name){if(state!=='\"'running')return;const next=dirs[name],last=queue.length?queue[queue.length-1]:dir;if(queue.length<2&&(next.x\"'!==last.x||next.y!==last.y)&&next.x!==-last.x&&next.y!==-last.y)queue.push(next)}\nfunction pause(){if(state==='\"'running'){state='paused';clearTimeout(timer);\"'$('\"'pause').textContent='Tiếp tục';show('Nghỉ một chút','Khu vườn vẫn đang đợi bạn.','Tiếp tục →')}else if(state==='paused'){state='running';\"'$('\"'overlay').hidden=true;\"'$('\"'pause').textContent='Tạm dừng';schedule()}}\n\"'$('\"'play').onclick=()=>state==='paused'?pause():start();\"'$('\"'restart').onclick=start;\"'$('\"'pause').onclick=pause;\"'$('\"'speed').onchange=schedule;\ndocument.querySelectorAll('[data-dir]').forEach(b=>b.onclick=()=>steer(b.dataset.dir));\ndocument.addEventListener('keydown',e=>{if(['SELECT','INPUT','TEXTAREA'].includes(e.target.tagName))return;const keys={ArrowUp:'up',w:'up',ArrowDown:'down',s:'down',ArrowLeft:'left',a:'left',ArrowRight:'right',d:'right'};const k=keys[e.key]||keys[e.key.toLowerCase()];if(k){e.preventDefault();steer(k)}else if(e.code==='Space'&&e.target.tagName\"'!=='\"'BUTTON'){e.preventDefault();if(state==='ready'||state==='over')start();else pause()}});\nlet touch=null;canvas.addEventListener('pointerdown',e=>{touch={x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointerup',e=>{if(\"'!touch)return;const dx=e.clientX-touch.x,dy=e.clientY-touch.y;touch=null;if(Math.max(Math.abs(dx),Math.abs(dy))>15)steer(Math.abs(dx)>Math.abs(dy)?dx>0?'\"'right':'left':dy>0?'down':'up')});canvas.addEventListener('pointercancel',()=>touch=null);\ndocument.addEventListener('visibilitychange',()=>{if(document.hidden&&state==='running')pause()});reset();\n</script>\n</body></html>\nEOF\nnode -e \\\"const fs=require('fs');const s=fs.readFileSync('ran-san-moi.html','utf8').match(/<script>([\\\\\\\\s\\\\\\\\S]*?)<\\\\/script>/)[1];new Function(s);console.log('JavaScript syntax OK');\\\"\""
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "run-command"
+          ],
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                "items": [
+                  {
+                    "item_id": "exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                    "kind": "command",
+                    "count": 1,
+                    "status": "in_progress"
+                  }
+                ]
+              }
+            ]
+          },
+          "chime_version": 3,
+          "reasoning_titles": [
+            "Tạo trò chơi rắn săn mồi HTML"
+          ],
+          "reasoning_title": "Tạo trò chơi rắn săn mồi HTML",
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "9a3bec5d-ad0f-5d25-982e-b0bea7520a73",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "container.exec",
+        "channel": null
+      },
+      "parent": "9a3bec5d-ad0f-5d25-982e-b0bea7520a73",
+      "children": [
+        "2459a9c3-ce8a-4600-882d-c608f45c01f7"
+      ]
+    },
+    "2459a9c3-ce8a-4600-882d-c608f45c01f7": {
+      "id": "2459a9c3-ce8a-4600-882d-c608f45c01f7",
+      "message": {
+        "id": "2459a9c3-ce8a-4600-882d-c608f45c01f7",
+        "author": {
+          "role": "tool",
+          "name": "container.exec",
+          "metadata": {}
+        },
+        "create_time": 1788874632.433585,
+        "update_time": 1788874632.433585,
+        "content": {
+          "content_type": "execution_output",
+          "text": "JavaScript syntax OK\n"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "run-command"
+          ],
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                "items": [
+                  {
+                    "item_id": "exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                    "kind": "command",
+                    "count": 1,
+                    "status": "completed"
+                  }
+                ]
+              }
+            ]
+          },
+          "chime_version": 3,
+          "reasoning_titles": null,
+          "reasoning_title": null,
+          "aggregate_result": {
+            "final_expression_output": "JavaScript syntax OK\n",
+            "status": "success",
+            "messages": []
+          },
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "50606770-ced4-481f-b222-6ad8191fdbad",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "50606770-ced4-481f-b222-6ad8191fdbad",
+      "children": [
+        "27fa8f8c-dca6-475b-bd48-2a45b948bf68"
+      ]
+    },
+    "27fa8f8c-dca6-475b-bd48-2a45b948bf68": {
+      "id": "27fa8f8c-dca6-475b-bd48-2a45b948bf68",
+      "message": {
+        "id": "27fa8f8c-dca6-475b-bd48-2a45b948bf68",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874632.942513,
+        "update_time": 1788874632.942513,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Tạo trò chơi rắn săn mồi bằng HTML",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "b0eb500a-bab4-4de8-ab4d-8d84597362ea"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                "items": [
+                  {
+                    "item_id": "exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                    "kind": "command",
+                    "count": 1,
+                    "status": "completed"
+                  }
+                ]
+              }
+            ]
+          },
+          "inline_cot_expandable_content": {
+            "source_message_ids": [
+              "50606770-ced4-481f-b222-6ad8191fdbad",
+              "2459a9c3-ce8a-4600-882d-c608f45c01f7"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "container",
+          "tool_icons": [
+            "run-command"
+          ],
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "2459a9c3-ce8a-4600-882d-c608f45c01f7",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2459a9c3-ce8a-4600-882d-c608f45c01f7",
+      "children": [
+        "b82deae9-b718-5219-88d9-7f18cacc215a"
+      ]
+    },
+    "b82deae9-b718-5219-88d9-7f18cacc215a": {
+      "id": "b82deae9-b718-5219-88d9-7f18cacc215a",
+      "message": {
+        "id": "b82deae9-b718-5219-88d9-7f18cacc215a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874633.054134,
+        "update_time": 1788874633.054134,
+        "content": {
+          "content_type": "code",
+          "language": "python3",
+          "response_format_name": null,
+          "text": "{\"path\":\"/connector_openai_library/implicit_link::connector_openai_library/create_library_file\",\"args\":{\"file\":\"/workspace/scratch/6fdec40e0836/ran-san-moi.html\"}}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                "items": [
+                  {
+                    "item_id": "exec-b9e48c2f-03c1-42d9-ab52-d6bd2b376fc7",
+                    "kind": "integration",
+                    "count": 1,
+                    "status": "in_progress",
+                    "connector": {
+                      "id": "connector_openai_library",
+                      "name": "Library"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "chime_version": 3,
+          "tool_icons": [
+            "library"
+          ],
+          "reasoning_titles": [
+            "Tạo trò chơi rắn săn mồi HTML"
+          ],
+          "reasoning_title": "Tạo trò chơi rắn săn mồi HTML",
+          "connector_tool_payload": "{\"path\":\"/connector_openai_library/implicit_link::connector_openai_library/create_library_file\",\"args\":{\"file\":\"/workspace/scratch/6fdec40e0836/ran-san-moi.html\"}}",
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "27fa8f8c-dca6-475b-bd48-2a45b948bf68",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "api_tool.call_tool",
+        "channel": null
+      },
+      "parent": "27fa8f8c-dca6-475b-bd48-2a45b948bf68",
+      "children": [
+        "e7561699-1889-5607-8530-8a53863a1f41"
+      ]
+    },
+    "e7561699-1889-5607-8530-8a53863a1f41": {
+      "id": "e7561699-1889-5607-8530-8a53863a1f41",
+      "message": {
+        "id": "e7561699-1889-5607-8530-8a53863a1f41",
+        "author": {
+          "role": "tool",
+          "name": "api_tool.call_tool",
+          "metadata": {}
+        },
+        "create_time": 1788874639.523481,
+        "update_time": 1788874639.523481,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": ""
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "invoked_resource": {
+            "resource_uri": "/connector_openai_library/implicit_link::connector_openai_library/create_library_file",
+            "connector_id": "connector_openai_library",
+            "app_name": "Library"
+          },
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                "items": [
+                  {
+                    "item_id": "exec-b9e48c2f-03c1-42d9-ab52-d6bd2b376fc7",
+                    "kind": "integration",
+                    "count": 1,
+                    "status": "completed",
+                    "connector": {
+                      "id": "connector_openai_library",
+                      "name": "Library"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "chime_version": 3,
+          "reasoning_title": "Tạo trò chơi rắn săn mồi HTML",
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "b82deae9-b718-5219-88d9-7f18cacc215a",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "b82deae9-b718-5219-88d9-7f18cacc215a",
+      "children": [
+        "174fb803-b884-403f-a45b-f84dcdf75954"
+      ]
+    },
+    "174fb803-b884-403f-a45b-f84dcdf75954": {
+      "id": "174fb803-b884-403f-a45b-f84dcdf75954",
+      "message": {
+        "id": "174fb803-b884-403f-a45b-f84dcdf75954",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874646.575018,
+        "update_time": 1788874646.575018,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tạo trò chơi rắn săn mồi bằng HTML",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "a6ddc924-7c5e-4f76-9268-8b53ba270367"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-85a6db36-9295-441f-bdf8-78bd25d17e47",
+                "items": [
+                  {
+                    "item_id": "exec-b9e48c2f-03c1-42d9-ab52-d6bd2b376fc7",
+                    "kind": "integration",
+                    "count": 1,
+                    "status": "in_progress",
+                    "connector": {
+                      "id": "connector_openai_library",
+                      "name": "Library"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "inline_cot_expandable_content": {
+            "source_message_ids": [
+              "b82deae9-b718-5219-88d9-7f18cacc215a"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "library",
+          "tool_icons": [
+            "library"
+          ],
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "e7561699-1889-5607-8530-8a53863a1f41",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e7561699-1889-5607-8530-8a53863a1f41",
+      "children": [
+        "fa5875e8-048f-4f56-9bd5-9c722a257f18"
+      ]
+    },
+    "fa5875e8-048f-4f56-9bd5-9c722a257f18": {
+      "id": "fa5875e8-048f-4f56-9bd5-9c722a257f18",
+      "message": {
+        "id": "fa5875e8-048f-4f56-9bd5-9c722a257f18",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874646.991477,
+        "update_time": 1788874646.991477,
+        "content": {
+          "content_type": "code",
+          "language": "unknown",
+          "response_format_name": null,
+          "text": "bash -lc /bin/bash -lc \"python3 /root/.codex/plugins/cache/openai-curated-remote/openai-library/0.1.54/skills/library/scripts/library_file_transfer.py apply-xattrs /workspace/scratch/6fdec40e0836/ran-san-moi.html libfile_da1a7ca0a4fc8191a29b0f1985ef3115 <<'JSON'\n[{\\\"name\\\":\\\"user.library-file-version\\\",\\\"value\\\":\\\"0\\\"}]\nJSON\""
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "run-command"
+          ],
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-4e8a7adf-f0e5-43cf-b5e1-46ba1e2233ab",
+                "items": [
+                  {
+                    "item_id": "exec-4e8a7adf-f0e5-43cf-b5e1-46ba1e2233ab",
+                    "kind": "command",
+                    "count": 1,
+                    "status": "in_progress"
+                  }
+                ]
+              }
+            ]
+          },
+          "chime_version": 3,
+          "reasoning_titles": [
+            "Đồng bộ thuộc tính tệp thư viện"
+          ],
+          "reasoning_title": "Đồng bộ thuộc tính tệp thư viện",
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "174fb803-b884-403f-a45b-f84dcdf75954",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "container.exec",
+        "channel": null
+      },
+      "parent": "174fb803-b884-403f-a45b-f84dcdf75954",
+      "children": [
+        "ae633ccf-0a2a-4b9b-89a1-2db4e869a88b"
+      ]
+    },
+    "ae633ccf-0a2a-4b9b-89a1-2db4e869a88b": {
+      "id": "ae633ccf-0a2a-4b9b-89a1-2db4e869a88b",
+      "message": {
+        "id": "ae633ccf-0a2a-4b9b-89a1-2db4e869a88b",
+        "author": {
+          "role": "tool",
+          "name": "container.exec",
+          "metadata": {}
+        },
+        "create_time": 1788874647.102199,
+        "update_time": 1788874647.102199,
+        "content": {
+          "content_type": "execution_output",
+          "text": "/workspace/scratch/6fdec40e0836/ran-san-moi.html\n"
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "run-command"
+          ],
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-4e8a7adf-f0e5-43cf-b5e1-46ba1e2233ab",
+                "items": [
+                  {
+                    "item_id": "exec-4e8a7adf-f0e5-43cf-b5e1-46ba1e2233ab",
+                    "kind": "command",
+                    "count": 1,
+                    "status": "completed"
+                  }
+                ]
+              }
+            ]
+          },
+          "chime_version": 3,
+          "reasoning_titles": null,
+          "reasoning_title": null,
+          "aggregate_result": {
+            "final_expression_output": "/workspace/scratch/6fdec40e0836/ran-san-moi.html\n",
+            "status": "success",
+            "messages": []
+          },
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "fa5875e8-048f-4f56-9bd5-9c722a257f18",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fa5875e8-048f-4f56-9bd5-9c722a257f18",
+      "children": [
+        "f4b8232c-1e66-493d-85dc-2114414c82ce"
+      ]
+    },
+    "f4b8232c-1e66-493d-85dc-2114414c82ce": {
+      "id": "f4b8232c-1e66-493d-85dc-2114414c82ce",
+      "message": {
+        "id": "f4b8232c-1e66-493d-85dc-2114414c82ce",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874648.994449,
+        "update_time": 1788874648.994449,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã đồng bộ thuộc tính tệp thư viện",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "1508caed-0745-4eec-91ba-ed82e92471e0"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "work_activity": {
+            "groups": [
+              {
+                "group_id": "01a0813b-14b1-7f42-b01a-cb17198fb24d:exec-4e8a7adf-f0e5-43cf-b5e1-46ba1e2233ab",
+                "items": [
+                  {
+                    "item_id": "exec-4e8a7adf-f0e5-43cf-b5e1-46ba1e2233ab",
+                    "kind": "command",
+                    "count": 1,
+                    "status": "completed"
+                  }
+                ]
+              }
+            ]
+          },
+          "inline_cot_expandable_content": {
+            "source_message_ids": [
+              "fa5875e8-048f-4f56-9bd5-9c722a257f18",
+              "ae633ccf-0a2a-4b9b-89a1-2db4e869a88b"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "container",
+          "tool_icons": [
+            "run-command"
+          ],
+          "reasoning_start_time": 1788874526.9892697,
+          "cot_version": "v5",
+          "parent_id": "ae633ccf-0a2a-4b9b-89a1-2db4e869a88b",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ae633ccf-0a2a-4b9b-89a1-2db4e869a88b",
+      "children": [
+        "15605c91-fe9b-4110-8dc0-d22bc4834d08"
+      ]
+    },
+    "15605c91-fe9b-4110-8dc0-d22bc4834d08": {
+      "id": "15605c91-fe9b-4110-8dc0-d22bc4834d08",
+      "message": {
+        "id": "15605c91-fe9b-4110-8dc0-d22bc4834d08",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874648.99859,
+        "update_time": 1788874648.99859,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 2m 2s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 122,
+          "reasoning_start_time": 1788874526.9892697,
+          "reasoning_end_time": 1788874648.9912999,
+          "reasoning_recap_type": "collapse",
+          "cot_version": "v5",
+          "parent_id": "f4b8232c-1e66-493d-85dc-2114414c82ce",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f4b8232c-1e66-493d-85dc-2114414c82ce",
+      "children": [
+        "af80873d-ed4b-50f4-9591-fcaef1b8b224"
+      ]
+    },
+    "af80873d-ed4b-50f4-9591-fcaef1b8b224": {
+      "id": "af80873d-ed4b-50f4-9591-fcaef1b8b224",
+      "message": {
+        "id": "af80873d-ed4b-50f4-9591-fcaef1b8b224",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788874649.002068,
+        "update_time": 1788874662.886428,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Mình là **Codex**, nhưng không thấy tên model cụ thể của phiên này ạ.\n\nĐã code xong game bằng **HTML + CSS + JavaScript**, có điểm số, lưu kỷ lục và 3 tốc độ.\n\n👉 [Tải game rắn săn mồi](sandbox:/workspace/scratch/6fdec40e0836/ran-san-moi.html)\n\nAnh mở file bằng Chrome hoặc Edge để chơi:\n- **Mũi tên / WASD:** di chuyển.\n- **Space:** tạm dừng.\n- Điện thoại: vuốt hoặc dùng nút điều hướng."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "thinking_effort": "standard",
+          "cot_version": "v5",
+          "content_references": [],
+          "parent_id": "15605c91-fe9b-4110-8dc0-d22bc4834d08",
+          "model_slug": "gpt-6-astra-wm",
+          "turn_exchange_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "working_turn_id": "0db9c440-4a9c-44e6-a316-34e8b932bbc7",
+          "poll_freshness_max_mins": 240,
+          "poll_interval_ms": 10000,
+          "poll_on_websocket_inactivity_ms": 30000,
+          "poll_suppress_reconnect_banner": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-0db9c440-4a9c-44e6-a316-34e8b932bbc7:NZ",
+          "model_switcher_deny": [],
+          "can_save": true
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "15605c91-fe9b-4110-8dc0-d22bc4834d08",
+      "children": []
+    }
+  },
+  "current_node": "af80873d-ed4b-50f4-9591-fcaef1b8b224",
+  "context_truncation_continuation": null
+}

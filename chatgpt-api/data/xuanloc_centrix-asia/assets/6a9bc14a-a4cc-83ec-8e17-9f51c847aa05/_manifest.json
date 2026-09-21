@@ -1,0 +1,82 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_00000000fcf081f580a9c7d20c004d85",
+    "content_type": "image_asset_pointer",
+    "width": 1080,
+    "height": 1080,
+    "size_bytes": 17832
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000007de881fbbd4850e5a9870833",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 851129
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000002cc81f5b844d8a5a5536eb3",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 864641
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000b8b4821193b217ddd3acd7e4",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 952442
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000ee1c82098fb46f454be706aa",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 927123
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000ac2881f5bfc1e1455ed03592",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 1020802
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000d75081fb841a583fba79168b",
+    "content_type": "image_asset_pointer",
+    "width": 512,
+    "height": 512,
+    "size_bytes": 16766
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000838c81fbaa58a50feceed245",
+    "content_type": "image_asset_pointer",
+    "width": 1080,
+    "height": 1080,
+    "size_bytes": 84402
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000033dc8230ab4f97a83046100f",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 894049
+  },
+  {
+    "type": "image",
+    "file_id": "file_000000003db48230a96a501e6384d349",
+    "content_type": "image_asset_pointer",
+    "width": 1254,
+    "height": 1254,
+    "size_bytes": 948240
+  }
+]

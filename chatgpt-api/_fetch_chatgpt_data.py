@@ -177,10 +177,13 @@ def api_accounts_check(session: cffi_requests.Session, token: str, account_id: s
     return result
 
 
+RATE_LIMIT_DELAYS = [60, 120, 300, 600]
+
+
 def api_conversation_detail(session: cffi_requests.Session, token: str,
                             account_id: str, conversation_id: str,
                             max_retries: int = 5) -> dict:
-    """API 4: GET /backend-api/conversation/{id} — full conversation detail (with 429 retry)."""
+    """API 4: GET /backend-api/conversation/{id} — full conversation detail (with 429 backoff)."""
     url = f"{BASE_URL}/backend-api/conversation/{conversation_id}"
     headers = {
         "Authorization": f"Bearer {token}",
@@ -200,7 +203,7 @@ def api_conversation_detail(session: cffi_requests.Session, token: str,
                 return {"status": 200, "conversation_id": conversation_id, "body": resp.text[:500]}
         elif resp.status_code == 429:
             retry_after = resp.headers.get("retry-after")
-            wait_time = int(retry_after) if retry_after and retry_after.isdigit() else (30 * (attempt + 1))
+            wait_time = int(retry_after) if retry_after and retry_after.isdigit() else RATE_LIMIT_DELAYS[min(attempt, len(RATE_LIMIT_DELAYS) - 1)]
             log_warn(f"Rate limited (429). Chờ {wait_time}s hồi phục trước khi thử lại ({attempt+1}/{max_retries})...")
             time.sleep(wait_time)
         else:
@@ -211,22 +214,29 @@ def api_conversation_detail(session: cffi_requests.Session, token: str,
 
 def api_file_download_url(session: cffi_requests.Session, token: str,
                           account_id: str, file_id: str,
-                          max_retries: int = 3) -> dict | None:
-    """Get download URL for a file/image asset (with 429 retry)."""
+                          max_retries: int = 4) -> dict | None:
+    """Get download URL for a file/image asset (with 429 backoff)."""
     url = f"{BASE_URL}/backend-api/files/{file_id}/download"
     headers = {
         "Authorization": f"Bearer {token}",
         "ChatGPT-Account-Id": account_id,
     }
     for attempt in range(max_retries):
-        resp = session.get(url, headers=headers)
+        try:
+            resp = session.get(url, headers=headers, timeout=20)
+        except Exception:
+            time.sleep(2)
+            continue
+
         if resp.status_code == 200:
             try:
                 return resp.json()
             except Exception:
                 return None
         elif resp.status_code == 429:
-            time.sleep(3 * (attempt + 1))
+            wait_time = RATE_LIMIT_DELAYS[min(attempt, len(RATE_LIMIT_DELAYS) - 1)]
+            log_warn(f"Asset rate limited (429). Chờ {wait_time}s hồi phục ({attempt+1}/{max_retries})...")
+            time.sleep(wait_time)
         else:
             break
     return None
@@ -325,7 +335,7 @@ def fetch_conversation_details(
     session: cffi_requests.Session, token: str, account_id: str,
     conversations: list[dict], out_dir: Path,
 ) -> dict:
-    """Fetch detail + download assets for all conversations."""
+    """Fetch detail for all conversations (Phase 1) then download assets (Phase 2)."""
     conv_dir = out_dir / "conversations"
     conv_dir.mkdir(parents=True, exist_ok=True)
     assets_dir = out_dir / "assets"
@@ -333,6 +343,16 @@ def fetch_conversation_details(
 
     stats = {"total": len(conversations), "ok": 0, "fail": 0,
              "assets_found": 0, "assets_downloaded": 0, "skipped": 0}
+
+    # ── Phase 1: Fetch all conversation detail JSONs ──────────────────────
+    base_delay = float(os.environ.get("FETCH_DELAY", "55.0"))
+    current_delay = base_delay
+    consecutive_ok = 0
+
+    print(f"\n{B}── Pha 1: Tải chi tiết {len(conversations)} cuộc hội thoại (JSON) ──{X}")
+    print(f"{D}   Pacing: {current_delay:.1f}s/req (chống 429 triệt để theo chu kỳ hồi phục token){X}")
+
+    pending_assets_manifests = []
 
     for i, conv in enumerate(conversations):
         cid = conv.get("id", "")
@@ -353,13 +373,13 @@ def fetch_conversation_details(
             except Exception:
                 pass
 
-        # Fetch detail
+        # Fetch detail with 429 backoff
         r = api_conversation_detail(session, token, account_id, cid)
 
         if r["status"] != 200:
             print(f"  {R}✗{X} {idx} {title} — HTTP {r['status']}")
             stats["fail"] += 1
-            time.sleep(0.3)
+            time.sleep(2.0)
             continue
 
         detail = r.get("data", {})
@@ -368,54 +388,73 @@ def fetch_conversation_details(
         # Save detail JSON
         detail_file.write_text(json.dumps(detail, indent=2, ensure_ascii=False), encoding="utf-8")
 
-        # Extract and download assets
+        # Extract assets & save manifest (delay actual file download to Phase 2)
         assets = extract_assets_from_detail(detail)
         stats["assets_found"] += len(assets)
-
-        downloaded = 0
-        for asset in assets:
-            file_id = asset.get("file_id", "")
-            if not file_id:
-                continue
-
-            # Get download URL
-            dl_info = api_file_download_url(session, token, account_id, file_id)
-            if not dl_info:
-                continue
-
-            dl_url = dl_info.get("download_url", "")
-            file_name = dl_info.get("file_name") or f"{file_id}"
-            mime = dl_info.get("mime_type", "")
-
-            # Determine extension
-            if "." not in file_name:
-                ext_map = {
-                    "image/png": ".png", "image/jpeg": ".jpg", "image/gif": ".gif",
-                    "image/webp": ".webp", "application/pdf": ".pdf",
-                    "text/plain": ".txt", "text/csv": ".csv",
-                }
-                file_name += ext_map.get(mime, "")
-
-            dest = assets_dir / cid / file_name
-            if dl_url and download_file(session, dl_url, dest):
-                downloaded += 1
-                asset["local_path"] = str(dest)
-            time.sleep(0.2)
-
-        stats["assets_downloaded"] += downloaded
         stats["ok"] += 1
 
-        asset_info = f", {len(assets)} assets ({downloaded} ⬇)" if assets else ""
-        print(f"  {G}✓{X} {idx} {title} — {msg_count} msgs{asset_info}")
-
-        # Save asset manifest for this conversation
         if assets:
             manifest = assets_dir / cid / "_manifest.json"
             manifest.parent.mkdir(parents=True, exist_ok=True)
             manifest.write_text(json.dumps(assets, indent=2, ensure_ascii=False), encoding="utf-8")
+            pending_assets_manifests.append((cid, manifest))
 
-        # Rate limit: safe delay between conversations to stay under 40 req/min
-        time.sleep(1.5)
+        asset_info = f", {len(assets)} assets detected" if assets else ""
+        print(f"  {G}✓{X} {idx} {title} — {msg_count} msgs{asset_info}")
+
+        # Safe delay between conversation details to let Token Bucket refill
+        print(f"  {D}⏳ Chờ {current_delay:.0f}s hồi phục token trước hội thoại tiếp theo...{X}")
+        time.sleep(current_delay)
+
+    # ── Phase 2: Download pending assets (images, attachments) ───────────
+    print(f"\n{B}── Pha 2: Tải các file đính kèm & hình ảnh (Assets) ──{X}")
+    # Collect all manifest files across all conversations
+    manifest_files = list(assets_dir.glob("*/_manifest.json"))
+    total_assets_to_check = 0
+    missing_assets = []
+
+    ext_map = {
+        "image/png": ".png", "image/jpeg": ".jpg", "image/gif": ".gif",
+        "image/webp": ".webp", "application/pdf": ".pdf",
+        "text/plain": ".txt", "text/csv": ".csv",
+    }
+
+    for m_path in manifest_files:
+        try:
+            m_data = json.loads(m_path.read_text(encoding="utf-8"))
+            cid = m_path.parent.name
+            for item in m_data:
+                total_assets_to_check += 1
+                fid = item.get("file_id", "")
+                if not fid:
+                    continue
+                file_name = item.get("name") or fid
+                mime = item.get("mime_type", "")
+                if "." not in file_name and mime in ext_map:
+                    file_name += ext_map[mime]
+                dest = assets_dir / cid / file_name
+                if not dest.exists() or dest.stat().st_size == 0:
+                    missing_assets.append((cid, item, m_path, dest))
+                else:
+                    stats["assets_downloaded"] += 1
+        except Exception:
+            pass
+
+    if missing_assets:
+        print(f"ℹ️  Phát hiện {len(missing_assets)} assets cần tải (đã có {stats['assets_downloaded']}/{total_assets_to_check})...")
+        print(f"{D}   Pacing: 2.0s/asset để giữ an toàn tuyệt đối{X}")
+        for j, (cid, item, m_path, dest) in enumerate(missing_assets):
+            fid = item.get("file_id", "")
+            dl_info = api_file_download_url(session, token, account_id, fid)
+            if dl_info:
+                dl_url = dl_info.get("download_url", "")
+                if dl_url and download_file(session, dl_url, dest):
+                    stats["assets_downloaded"] += 1
+                    item["local_path"] = str(dest)
+                    print(f"  {G}⬇{X} [{j+1}/{len(missing_assets)}] {dest.name} ({dest.stat().st_size:,} bytes)")
+            time.sleep(2.0)
+    else:
+        print(f"✅ Toàn bộ {stats['assets_downloaded']} assets đã có sẵn đầy đủ.")
 
     return stats
 
@@ -476,29 +515,33 @@ def fetch_for_auth(auth_file: str, base_output_dir: str) -> bool:
     (out_dir / "session.json").write_text(json.dumps(r1, indent=2, ensure_ascii=False))
 
     # ── API 2: conversations ─────────────────────────────────────────────
-    log_step("API 2: GET /backend-api/conversations")
-    log_info("Tải danh sách hội thoại...")
+    conv_cache = out_dir / "conversations.json"
+    r2 = None
+    if conv_cache.exists() and conv_cache.stat().st_size > 1000:
+        try:
+            cached_data = json.loads(conv_cache.read_text(encoding="utf-8"))
+            items = cached_data.get("items", [])
+            if len(items) > 50:
+                log_step("API 2: conversations.json (Sử dụng cache có sẵn)")
+                r2 = {"status": 200, "data": cached_data, "total": len(items), "items_count": len(items)}
+                log_ok(f"{len(items)} conversations đã có trong cache → bỏ qua re-fetch danh sách")
+        except Exception:
+            r2 = None
 
-    r2 = api_conversations(session, token, account_id)
-
-    if r2["status"] == 200:
-        total = r2.get("total", "?")
-        count = r2.get("items_count", 0)
-        log_ok(f"{total} conversations (hiển thị {count}) → conversations.json")
-
-        items = r2.get("data", {}).get("items", [])
-        for item in items[:10]:
-            title = (item.get("title") or "Untitled")[:50]
-            cid = item.get("id", "?")[:12]
-            updated = (item.get("update_time") or "?")[:19]
-            print(f"  📝 {title}  │  {cid}…  │  {updated}")
-
-        (out_dir / "conversations.json").write_text(
-            json.dumps(r2.get("data", {}), indent=2, ensure_ascii=False))
-    else:
-        log_error(f"Conversations thất bại (HTTP {r2['status']})")
-        (out_dir / "conversations.json").write_text(
-            json.dumps(r2, indent=2, ensure_ascii=False))
+    if not r2 or r2.get("status") != 200:
+        log_step("API 2: GET /backend-api/conversations")
+        log_info("Tải danh sách hội thoại...")
+        r2 = api_conversations(session, token, account_id)
+        if r2["status"] == 200:
+            total = r2.get("total", "?")
+            count = r2.get("items_count", 0)
+            log_ok(f"{total} conversations (hiển thị {count}) → conversations.json")
+            (out_dir / "conversations.json").write_text(
+                json.dumps(r2.get("data", {}), indent=2, ensure_ascii=False))
+        else:
+            log_error(f"Conversations thất bại (HTTP {r2['status']})")
+            (out_dir / "conversations.json").write_text(
+                json.dumps(r2, indent=2, ensure_ascii=False))
 
     # ── API 3: accounts/check ────────────────────────────────────────────
     log_step("API 3: GET /backend-api/accounts/check")
@@ -544,9 +587,8 @@ def fetch_for_auth(auth_file: str, base_output_dir: str) -> bool:
     log_step("API 6: Discover ChatGPT Projects")
     log_info("Tìm kiếm conversations thuộc Projects...")
 
-    r_proj = api_conversations(session, token, account_id, limit=100)
-    if r_proj["status"] == 200:
-        proj_items = r_proj.get("data", {}).get("items", [])
+    proj_items = conv_items
+    if proj_items:
         # Extract unique project_ids (from context_scopes_v2 or conversation fields)
         project_map = {}  # project_id -> list of conversation items
         for item in proj_items:

@@ -1,0 +1,430 @@
+{
+  "title": "Tạo ảnh con vịt",
+  "create_time": 1788929295.646127,
+  "update_time": 1788929341.41164,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa0e50d-1810-83ec-ad31-dcd60c15ed53",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://huggingface.co/huggingface",
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "3e064256-2231-4ba1-991f-dbde7fb612d5"
+      ]
+    },
+    "3e064256-2231-4ba1-991f-dbde7fb612d5": {
+      "id": "3e064256-2231-4ba1-991f-dbde7fb612d5",
+      "message": {
+        "id": "3e064256-2231-4ba1-991f-dbde7fb612d5",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788929296.939,
+        "update_time": 1788929303.08034,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "tạo cho mình ảnh con vịt"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-035e032b-4324-4d3f-86a2-882ed89afa79:NZ",
+          "request_id": "wfr_01a0847ebb407a02878a1e87c965dfca",
+          "message_source": null,
+          "turn_exchange_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "working_turn_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "0b3ccc91-d5f9-47ef-8e41-9063f4f13862"
+      ]
+    },
+    "0b3ccc91-d5f9-47ef-8e41-9063f4f13862": {
+      "id": "0b3ccc91-d5f9-47ef-8e41-9063f4f13862",
+      "message": {
+        "id": "0b3ccc91-d5f9-47ef-8e41-9063f4f13862",
+        "author": {
+          "role": "tool",
+          "name": "t2uay3k.sj1i4kz",
+          "metadata": {}
+        },
+        "create_time": 1788929299.679416,
+        "update_time": 1788929340.784688,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_000000000e70820b93a837732b6719e0",
+              "mime_type": "image/png",
+              "size_bytes": 2305142,
+              "width": 1312,
+              "height": 1199,
+              "fovea": null,
+              "metadata": {
+                "dalle": {
+                  "gen_id": "5139d188-0344-4139-8322-dbc07066de06",
+                  "prompt": "",
+                  "seed": null,
+                  "parent_gen_id": null,
+                  "edit_op": null,
+                  "serialization_title": "DALL-E generation metadata"
+                },
+                "gizmo": null,
+                "generation": {
+                  "gen_id": "5139d188-0344-4139-8322-dbc07066de06",
+                  "gen_size": "smimage",
+                  "gen_size_v2": "24",
+                  "seed": null,
+                  "parent_gen_id": null,
+                  "height": 1199,
+                  "width": 1312,
+                  "transparent_background": false,
+                  "is_sticker": false,
+                  "is_purchasable": null,
+                  "purchase_hints": null,
+                  "serialization_title": "Image Generation metadata",
+                  "orientation": "landscape",
+                  "projection": "rectilinear"
+                },
+                "segmentation": null,
+                "container_pixel_height": 1199,
+                "container_pixel_width": 1312,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "ghostrider": {
+            "status": "final",
+            "is_feature_trial": false
+          },
+          "parent_id": "3e064256-2231-4ba1-991f-dbde7fb612d5",
+          "turn_exchange_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "working_turn_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "image_gen_title": "Vịt con vàng bên hồ lúc hoàng hôn",
+          "cot_version": "v5",
+          "async_source": "saserver-newzealandnorth-prod.fck9d:ghostrider-user-TPQ6L3DWAAqXOfnFz2d9xhR8__4f52e72f-9c16-4d87-b9ff-785c1029aa7a-wfr_01a0847ebb407a02878a1e87c965dfca:NZ",
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "image_gen",
+              "notification_channel_name": "ImageGen",
+              "notification_priority": 4
+            }
+          ],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "3e064256-2231-4ba1-991f-dbde7fb612d5",
+      "children": [
+        "b30d0b69-a678-4ada-b1ed-de2452695ce0"
+      ]
+    },
+    "b30d0b69-a678-4ada-b1ed-de2452695ce0": {
+      "id": "b30d0b69-a678-4ada-b1ed-de2452695ce0",
+      "message": {
+        "id": "b30d0b69-a678-4ada-b1ed-de2452695ce0",
+        "author": {
+          "role": "tool",
+          "name": "t2uay3k.sj1i4kz",
+          "metadata": {}
+        },
+        "create_time": 1788929330.5607724,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://file_000000000e70820b93a837732b6719e0",
+              "mime_type": "image/png",
+              "size_bytes": 2305142,
+              "width": 1312,
+              "height": 1199,
+              "fovea": null,
+              "metadata": {
+                "dalle": {
+                  "gen_id": "5139d188-0344-4139-8322-dbc07066de06",
+                  "prompt": "",
+                  "seed": null,
+                  "parent_gen_id": null,
+                  "edit_op": null,
+                  "serialization_title": "DALL-E generation metadata"
+                },
+                "gizmo": null,
+                "generation": {
+                  "gen_id": "5139d188-0344-4139-8322-dbc07066de06",
+                  "gen_size": "smimage",
+                  "gen_size_v2": "24",
+                  "seed": null,
+                  "parent_gen_id": null,
+                  "height": 1199,
+                  "width": 1312,
+                  "transparent_background": false,
+                  "is_sticker": false,
+                  "is_purchasable": null,
+                  "purchase_hints": null,
+                  "serialization_title": "Image Generation metadata",
+                  "orientation": "landscape",
+                  "projection": "rectilinear"
+                },
+                "segmentation": null,
+                "container_pixel_height": 1199,
+                "container_pixel_width": 1312,
+                "emu_omit_glimpse_image": null,
+                "emu_patches_override": null,
+                "lpe_keep_patch_ijhw": null,
+                "lpe_delta_encoding_channel": null,
+                "sanitized": false,
+                "asset_pointer_link": null,
+                "watermarked_asset_pointer": null,
+                "is_no_auth_placeholder": null
+              }
+            },
+            "Model caption: A bright, heartwarming, photorealistic/ultra-cute nature scene: a close-up, wide-aperture, shallow-depth-of-field image of a fluffy yellow duckling by a pond at golden-hour light, with a peaceful pastoral background. Overall scene: a small duckling stands on grassy ground near the edge of a calm pond or lake, with sparkling reflections of sunlight on the water, surrounded by natural elements like rocks, flowers, reeds, and a distant landscape with trees and a hint of a cottage or house and hills/mountains, with a warm sunset or sunrise glow in the sky. Main subject: a single duckling (baby duck), bright yellow downy fluff, standing in the foreground near the camera, facing slightly toward the viewer with an open beak as if “smiling” or chirping (mouth open), large dark shiny eyes, orange/pinkish-orange bill and orange webbed feet/legs visible, small rounded body, soft feathers catching the light; it looks cute, cheerful, curious, and is centered/foreground-left-to-center with its head turned slightly and beak open, giving an expressive, happy look. Objects and surroundings: the duckling stands on green grass with small white daisy-like flowers (white petals with yellow centers) and clover-like greenery; a rocky stone or boulder is visible nearby (foreground right and left-ish), and taller green reeds or grasses rise near the water’s edge on the left; the pond/lake behind the duckling shows gentle ripples and reflections of sky and nearby trees; in the right-to-center background, sunlight glows near the horizon, with warm golden tones and a bright sunlit area reflecting on the water; blurred trees and bushes line the far shore, with a small house/cottage-like building (with a roof, rustic look) in the distance, and rolling hills or a mountain silhouette beyond; lily-pad-like plants or floating greenery can be seen on the water; the composition uses shallow depth of field with the duckling sharply in focus and the background softly blurred, warm pastel sky with a few clouds, and a cozy countryside pond vibe with natural lighting and a dreamy, idyllic atmosphere."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "image_gen_title": "Vịt con vàng bên hồ lúc hoàng hôn",
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "image_gen",
+              "notification_channel_name": "ImageGen",
+              "notification_priority": 4
+            }
+          ],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "cot_version": "v5",
+          "model_slug": "gpt-5-4-thinking",
+          "request_id": "wfr_01a0847ede617eb4b6a9dca370a8e976",
+          "message_type": "next",
+          "turn_exchange_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "working_turn_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "is_visually_hidden_from_conversation": true,
+          "parent_id": "aedb72fa-3270-4808-90ae-c6efa3fba592",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "0b3ccc91-d5f9-47ef-8e41-9063f4f13862",
+      "children": [
+        "3e38e100-bf81-4dc5-8818-d9e0eb6bdcb2"
+      ]
+    },
+    "3e38e100-bf81-4dc5-8818-d9e0eb6bdcb2": {
+      "id": "3e38e100-bf81-4dc5-8818-d9e0eb6bdcb2",
+      "message": {
+        "id": "3e38e100-bf81-4dc5-8818-d9e0eb6bdcb2",
+        "author": {
+          "role": "tool",
+          "name": "t2uay3k.sj1i4kz",
+          "metadata": {}
+        },
+        "create_time": 1788929334.7918236,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Generated images from the last `image_gen.text2im` call were saved at:\n- /mnt/data/ghostwriter_images/generated/a_bright_heartwarming_photorealistic_ultra_cute_1.png (wxh = 1312 x 1199, exact aspect ratio 1312:1199)\n\nYou can visually inspect the generated image directly in the tool result above. Only reopen the saved path if you need programmatic processing or want to pass the image into another tool call."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "cot_version": "v5",
+          "model_slug": "gpt-5-4-thinking",
+          "request_id": "wfr_01a0847ede617eb4b6a9dca370a8e976",
+          "message_type": "next",
+          "turn_exchange_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "working_turn_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "is_visually_hidden_from_conversation": true,
+          "parent_id": "b30d0b69-a678-4ada-b1ed-de2452695ce0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "commentary"
+      },
+      "parent": "b30d0b69-a678-4ada-b1ed-de2452695ce0",
+      "children": [
+        "c1db46f7-0209-4b9a-b9c2-efa2372d5182"
+      ]
+    },
+    "c1db46f7-0209-4b9a-b9c2-efa2372d5182": {
+      "id": "c1db46f7-0209-4b9a-b9c2-efa2372d5182",
+      "message": {
+        "id": "c1db46f7-0209-4b9a-b9c2-efa2372d5182",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788929335.986098,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for 32s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 32,
+          "reasoning_start_time": 1788929303.9764233,
+          "reasoning_end_time": 1788929335.9854963,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0847ede617eb4b6a9dca370a8e976",
+          "message_type": "next",
+          "turn_exchange_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "working_turn_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "model_slug": "gpt-5-4-auto-thinking",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "3e38e100-bf81-4dc5-8818-d9e0eb6bdcb2",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3e38e100-bf81-4dc5-8818-d9e0eb6bdcb2",
+      "children": [
+        "7e54d0c2-749e-4fcb-8a41-4e416fd989a5"
+      ]
+    },
+    "7e54d0c2-749e-4fcb-8a41-4e416fd989a5": {
+      "id": "7e54d0c2-749e-4fcb-8a41-4e416fd989a5",
+      "message": {
+        "id": "7e54d0c2-749e-4fcb-8a41-4e416fd989a5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788929334.79146,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-4-auto-thinking",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "model_slug": "gpt-5-4-thinking",
+          "request_id": "wfr_01a0847ede617eb4b6a9dca370a8e976",
+          "message_type": "next",
+          "turn_exchange_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "working_turn_id": "035e032b-4324-4d3f-86a2-882ed89afa79",
+          "requested_model_slug": "gpt-5-4-auto-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "is_visually_hidden_from_conversation": true,
+          "parent_id": "c1db46f7-0209-4b9a-b9c2-efa2372d5182",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "c1db46f7-0209-4b9a-b9c2-efa2372d5182",
+      "children": []
+    }
+  },
+  "current_node": "7e54d0c2-749e-4fcb-8a41-4e416fd989a5",
+  "context_truncation_continuation": null
+}

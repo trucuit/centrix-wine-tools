@@ -1,0 +1,48 @@
+{
+  "id": "ac7cd7a7-1407-4f40-9ba7-739fc2ce4c54",
+  "title": "hi",
+  "project": "/Users/tructt/Public",
+  "short_project": "Public",
+  "cwd": "/Users/tructt/Public",
+  "git_branch": "HEAD",
+  "created_at": "2026-09-21T15:32:15.953Z",
+  "updated_at": "2026-09-21T15:32:20.104Z",
+  "models": [
+    "claude-opus-5"
+  ],
+  "tools_used": [],
+  "stats": {
+    "human_prompts": 1,
+    "assistant_messages": 2,
+    "tool_calls": 0,
+    "total_records": 3
+  },
+  "turns": [
+    {
+      "type": "human",
+      "timestamp": "2026-09-21T15:32:17.665Z",
+      "text": "hi",
+      "cwd": "/Users/tructt/Public",
+      "git_branch": "HEAD",
+      "uuid": "1d5b0146-5447-4bcb-8273-1f8dfcbee5b6"
+    },
+    {
+      "type": "assistant",
+      "timestamp": "2026-09-21T15:32:19.568Z",
+      "model": "claude-opus-5",
+      "text": "",
+      "tool_calls": [],
+      "thinking": "",
+      "uuid": "8f11bacb-e818-4239-b239-d1d7d56e1355"
+    },
+    {
+      "type": "assistant",
+      "timestamp": "2026-09-21T15:32:19.830Z",
+      "model": "claude-opus-5",
+      "text": "Chào bạn! Hôm nay mình giúp gì cho bạn?",
+      "tool_calls": [],
+      "thinking": "",
+      "uuid": "2e18c288-57a0-4a95-afd7-046532571776"
+    }
+  ]
+}

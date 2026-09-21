@@ -1,0 +1,33 @@
+╔══════════════════════════════════════════════════════════════╗
+║  Claude Code CLI Sessions Export Summary                     ║
+╚══════════════════════════════════════════════════════════════╝
+
+  💻 Host OS:        macOS (tructt)
+  📁 Source Dir:     /Users/tructt/.claude/projects
+  📅 Exported at:    2026-09-22 00:07:49
+  📊 Total Sessions: 27
+  💬 Human Prompts:  53
+  🤖 Asst Responses: 4750
+  🛠️  Tool Actions:   3354
+  📑 Total Records:  8159
+
+── Projects Covered ───────────────────────────────────────────
+  • /Users/tructt/Public/Projects/centrix-wine-tools        : 18 session(s)
+  • /Users/tructt/Public                                    :  7 session(s)
+  • /Users/tructt/Public/digital-transformation-study       :  1 session(s)
+  • /Users/tructt/Public/Projects/digital-banking-masterclass :  1 session(s)
+
+── Models Used ────────────────────────────────────────────────
+  • claude-opus-5                            : 19 session(s)
+  • <synthetic>                              : 10 session(s)
+  • claude-sonnet-5                          :  1 session(s)
+
+── Output Structure ───────────────────────────────────────────
+  /Users/tructt/Public/Projects/centrix-wine-tools/claude-api/data/claude_code_cli/conversations.json            (Toàn bộ danh sách metadata)
+  /Users/tructt/Public/Projects/centrix-wine-tools/claude-api/data/claude_code_cli/conversations/<id>.json       (Chi tiết đầy đủ dữ liệu phiên)
+  /Users/tructt/Public/Projects/centrix-wine-tools/claude-api/data/claude_code_cli/conversations_md/<file>.md    (Bản xem Markdown định dạng đẹp)
+  /Users/tructt/Public/Projects/centrix-wine-tools/claude-api/data/claude_code_cli/conversations_md/index.md     (Mục lục Markdown tra cứu)
+  /Users/tructt/Public/Projects/centrix-wine-tools/claude-api/data/claude_code_cli/history.jsonl                 (Lưu trữ 1,580 lệnh CLI lịch sử)
+  /Users/tructt/Public/Projects/centrix-wine-tools/claude-api/data/claude_code_cli/summary.txt                   (File tóm tắt này)
+
+════════════════════════════════════════════════════════════════

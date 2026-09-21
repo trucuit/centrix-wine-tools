@@ -1,0 +1,4578 @@
+{
+  "title": "Dị ứng tôm bầu xanh",
+  "create_time": 1788632317.238329,
+  "update_time": 1788634982.641031,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6a9c5cc6-3c60-83ec-b0b1-3c2da8812cc1",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://docs.google.com/document/d/",
+    "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf?utm_source=chatgpt.com",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf",
+    "https://www.apple.com/",
+    "https://www.nhs.uk/conditions/anaphylaxis/",
+    "https://www.nhs.uk/conditions/food-allergy/?utm_source=chatgpt.com",
+    "https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com",
+    "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf?utm_source=chatgpt.com",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/?utm_source=chatgpt.com",
+    "https://huggingface.co/huggingface",
+    "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf?utm_source=chatgpt.com",
+    "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/",
+    "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+    "https://www.openai.com",
+    "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf",
+    "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf",
+    "https://www.nhs.uk/conditions/food-allergy/",
+    "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/?utm_source=chatgpt.com"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": "maple",
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "559fc2f7-b628-4c46-9cfc-765db9921f3a": {
+      "id": "559fc2f7-b628-4c46-9cfc-765db9921f3a",
+      "message": null,
+      "parent": null,
+      "children": [
+        "70b111c0-ec29-4605-a485-7216c220756f"
+      ]
+    },
+    "70b111c0-ec29-4605-a485-7216c220756f": {
+      "id": "70b111c0-ec29-4605-a485-7216c220756f",
+      "message": {
+        "id": "70b111c0-ec29-4605-a485-7216c220756f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632315.138369,
+        "update_time": 1788632328.705678,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Tôm bầu xanh ăn vào có bị dị ứng ngứa và nóng và nổi mẫn đỏ không"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "dictation": false,
+          "triggered_by_system_hint_suggestion": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-6418b583-6d5b-427c-a0f4-d61842c8964f:JP",
+          "request_id": "wfr_01a072ca6669778695f965b74395e380",
+          "message_source": null,
+          "turn_exchange_id": "6418b583-6d5b-427c-a0f4-d61842c8964f",
+          "working_turn_id": "6418b583-6d5b-427c-a0f4-d61842c8964f",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "559fc2f7-b628-4c46-9cfc-765db9921f3a",
+      "children": [
+        "97cdf8c7-3cd8-4067-8ab9-faaadb4fc06a"
+      ]
+    },
+    "97cdf8c7-3cd8-4067-8ab9-faaadb4fc06a": {
+      "id": "97cdf8c7-3cd8-4067-8ab9-faaadb4fc06a",
+      "message": {
+        "id": "97cdf8c7-3cd8-4067-8ab9-faaadb4fc06a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632320.925381,
+        "update_time": 1788632320.925381,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong vài giây"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 3,
+          "reasoning_start_time": 1788632317.1393046,
+          "reasoning_end_time": 1788632320.920156,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "request_id": "wfr_01a072ca6669778695f965b74395e380",
+          "message_type": "next",
+          "turn_exchange_id": "6418b583-6d5b-427c-a0f4-d61842c8964f",
+          "working_turn_id": "6418b583-6d5b-427c-a0f4-d61842c8964f",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "49d3acf0-1e30-4e48-8ec7-bfc4743818bf",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-6418b583-6d5b-427c-a0f4-d61842c8964f:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "70b111c0-ec29-4605-a485-7216c220756f",
+      "children": [
+        "1cbad14a-9e30-4699-a1d9-46d790c96e29"
+      ]
+    },
+    "1cbad14a-9e30-4699-a1d9-46d790c96e29": {
+      "id": "1cbad14a-9e30-4699-a1d9-46d790c96e29",
+      "message": {
+        "id": "1cbad14a-9e30-4699-a1d9-46d790c96e29",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632320.930441,
+        "update_time": 1788632328.706498,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Có anh. Nếu **tôm bầu xanh là một loại tôm/giáp xác**, thì hoàn toàn có thể gây **dị ứng thức ăn**, với biểu hiện như **ngứa, cảm giác nóng/bừng người, nổi mẩn đỏ hoặc mề đay** sau khi ăn.\n\nNếu anh vừa ăn và đang có các triệu chứng này, anh nên **ngừng ăn ngay và theo dõi sát**. Nếu chỉ nổi mẩn/ngứa nhẹ thì thường chưa phải tình trạng nguy hiểm, nhưng nếu xuất hiện **sưng môi/lưỡi/họng, khó thở, khò khè, nghẹn cổ, chóng mặt/ngất hoặc nôn ói nhiều**, cần **gọi 115 hoặc đến cấp cứu ngay**, vì có thể là phản vệ.\n\nNếu anh chụp **ảnh vùng đang nổi mẩn** và cho em biết **ăn tôm cách đây bao lâu, hiện có khó thở/sưng môi hay không**, em có thể giúp anh đánh giá mức độ khẩn cấp."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "request_id": "wfr_01a072ca6669778695f965b74395e380",
+          "message_type": "next",
+          "turn_exchange_id": "6418b583-6d5b-427c-a0f4-d61842c8964f",
+          "working_turn_id": "6418b583-6d5b-427c-a0f4-d61842c8964f",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "97cdf8c7-3cd8-4067-8ab9-faaadb4fc06a",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-6418b583-6d5b-427c-a0f4-d61842c8964f:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "97cdf8c7-3cd8-4067-8ab9-faaadb4fc06a",
+      "children": [
+        "bce95d61-f659-4aaa-afa4-cbf414bb4473"
+      ]
+    },
+    "bce95d61-f659-4aaa-afa4-cbf414bb4473": {
+      "id": "bce95d61-f659-4aaa-afa4-cbf414bb4473",
+      "message": {
+        "id": "bce95d61-f659-4aaa-afa4-cbf414bb4473",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632406.9671822,
+        "update_time": 1788632422.004321,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Nên uống thuốc gì"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "triggered_by_system_hint_suggestion": false,
+          "dictation": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2a054906-3300-4ad4-8a28-a6f6e828c5c4:JP",
+          "request_id": "wfr_01a072cc8b5a7d8bb47185a71243c239",
+          "message_source": null,
+          "turn_exchange_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "working_turn_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1cbad14a-9e30-4699-a1d9-46d790c96e29",
+      "children": [
+        "4084a065-055a-4755-870d-130e95d1f4e0"
+      ]
+    },
+    "4084a065-055a-4755-870d-130e95d1f4e0": {
+      "id": "4084a065-055a-4755-870d-130e95d1f4e0",
+      "message": {
+        "id": "4084a065-055a-4755-870d-130e95d1f4e0",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632412.966107,
+        "update_time": 1788632412.966107,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đang xử trí mề đay",
+              "content": "Tôi sẽ giữ lời khuyên an toàn: nếu khó thở, sưng môi/lưỡi/họng, chóng mặt hoặc nôn ói, hãy gọi cấp cứu ngay. Nếu chỉ nổi mẩn ngứa nhẹ, có thể hỏi dược sĩ về cetirizine hoặc loratadine; không tự phối hợp nhiều thuốc.",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "9343060a-8480-4c06-87c7-7a401d6f6d03"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [],
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cc8b5a7d8bb47185a71243c239",
+          "message_type": "next",
+          "turn_exchange_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "working_turn_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "8a02da5b-b2b1-4e93-99f4-256ca1696e13",
+          "summary_type": "raw_cot",
+          "classifier_response": "default",
+          "reasoning_start_time": 1788632408.5772398,
+          "permissions": [
+            {
+              "type": "notification",
+              "status": "requested",
+              "notification_channel_id": "thinking",
+              "notification_channel_name": "Thinking",
+              "notification_priority": 4
+            }
+          ],
+          "skip_reasoning_title": "Bỏ qua",
+          "can_save": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2a054906-3300-4ad4-8a28-a6f6e828c5c4:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bce95d61-f659-4aaa-afa4-cbf414bb4473",
+      "children": [
+        "c24c0884-206a-4ae5-a70b-3dce1efef994"
+      ]
+    },
+    "c24c0884-206a-4ae5-a70b-3dce1efef994": {
+      "id": "c24c0884-206a-4ae5-a70b-3dce1efef994",
+      "message": {
+        "id": "c24c0884-206a-4ae5-a70b-3dce1efef994",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632414.953053,
+        "update_time": 1788632414.953053,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cc8b5a7d8bb47185a71243c239",
+          "message_type": "next",
+          "turn_exchange_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "working_turn_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "cafc2cc9-7c89-42ee-8da6-3516730bfb52",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1788632408.5772398,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2a054906-3300-4ad4-8a28-a6f6e828c5c4:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "4084a065-055a-4755-870d-130e95d1f4e0",
+      "children": [
+        "d03f85ed-4d9d-4399-9b5d-3c08e9724325"
+      ]
+    },
+    "d03f85ed-4d9d-4399-9b5d-3c08e9724325": {
+      "id": "d03f85ed-4d9d-4399-9b5d-3c08e9724325",
+      "message": {
+        "id": "d03f85ed-4d9d-4399-9b5d-3c08e9724325",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1788632414.977278,
+        "update_time": 1788632414.977278,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "college.acaai.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf",
+                  "title": "ANAPHYLAXIS _Flyer",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 24
+                  },
+                  "pub_date": 1444403382.0,
+                  "attribution": "college.acaai.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+                  "title": "About cetirizine",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1739750400.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+                  "title": "Side effects of cetirizine",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1739836800.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/antihistamines/",
+                  "title": "Antihistamines",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1684195200.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+                  "title": "Anaphylaxis",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": 1687305600.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/hives/",
+                  "title": "Hives",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1714089600.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/",
+                  "title": "How and when to take cetirizine",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": 1739836800.0,
+                  "attribution": "www.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "annualmeeting.acaai.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://annualmeeting.acaai.org/2024/documents/ORAL_ABSTRACTS_ONLY.pdf",
+                  "title": "ANAI4791_LR",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 25
+                  },
+                  "pub_date": 1728832335.0,
+                  "attribution": "annualmeeting.acaai.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.elft.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.elft.nhs.uk/sites/default/files/2023-09/emergency_treatment_of_anaphylaxis_may_2021_0.pdf",
+                  "title": "Emergency treatment of anaphylaxis Guidelines for",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 563916,
+                    "ref_type": "search",
+                    "ref_index": 26
+                  },
+                  "pub_date": 1620131422.0,
+                  "attribution": "www.elft.nhs.uk"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6a9c5d5d03888330b6996264a48f3d1c",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cc8b5a7d8bb47185a71243c239",
+          "message_type": "next",
+          "turn_exchange_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "working_turn_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "9c086333-7945-404e-a8bf-6287ee114202",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm 4 trang web"
+          ],
+          "reasoning_title": "Đang tìm kiếm 4 trang web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=college.acaai.org&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.nhs.uk&sz=128",
+            "https://www.google.com/s2/favicons?domain=annualmeeting.acaai.org&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.elft.nhs.uk&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "college.acaai.org",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf",
+                    "title": "ANAPHYLAXIS _Flyer",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 24
+                    },
+                    "pub_date": 1444403382.0,
+                    "attribution": "college.acaai.org"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.nhs.uk",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+                    "title": "About cetirizine",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1739750400.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+                    "title": "Side effects of cetirizine",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1739836800.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/medicines/antihistamines/",
+                    "title": "Antihistamines",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": 1684195200.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+                    "title": "Anaphylaxis",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": 1687305600.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/hives/",
+                    "title": "Hives",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": 1714089600.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/",
+                    "title": "How and when to take cetirizine",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": 1739836800.0,
+                    "attribution": "www.nhs.uk"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "annualmeeting.acaai.org",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://annualmeeting.acaai.org/2024/documents/ORAL_ABSTRACTS_ONLY.pdf",
+                    "title": "ANAI4791_LR",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 25
+                    },
+                    "pub_date": 1728832335.0,
+                    "attribution": "annualmeeting.acaai.org"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.elft.nhs.uk",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.elft.nhs.uk/sites/default/files/2023-09/emergency_treatment_of_anaphylaxis_may_2021_0.pdf",
+                    "title": "Emergency treatment of anaphylaxis Guidelines for",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 26
+                    },
+                    "pub_date": 1620131422.0,
+                    "attribution": "www.elft.nhs.uk"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1788632408.5772398,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2a054906-3300-4ad4-8a28-a6f6e828c5c4:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c24c0884-206a-4ae5-a70b-3dce1efef994",
+      "children": [
+        "e0dd1609-6630-4943-a884-a94b5fb51365"
+      ]
+    },
+    "e0dd1609-6630-4943-a884-a94b5fb51365": {
+      "id": "e0dd1609-6630-4943-a884-a94b5fb51365",
+      "message": {
+        "id": "e0dd1609-6630-4943-a884-a94b5fb51365",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632414.98259,
+        "update_time": 1788632414.98259,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 4 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "90ec6dee-6a23-452f-abe7-d17d01d42cac"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "college.acaai.org",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf",
+                    "title": "ANAPHYLAXIS _Flyer",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 24
+                    },
+                    "pub_date": 1444403382.0,
+                    "attribution": "college.acaai.org"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.nhs.uk",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+                    "title": "About cetirizine",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1739750400.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+                    "title": "Side effects of cetirizine",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1739836800.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/medicines/antihistamines/",
+                    "title": "Antihistamines",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": 1684195200.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+                    "title": "Anaphylaxis",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    "pub_date": 1687305600.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/hives/",
+                    "title": "Hives",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 4
+                    },
+                    "pub_date": 1714089600.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/",
+                    "title": "How and when to take cetirizine",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    },
+                    "pub_date": 1739836800.0,
+                    "attribution": "www.nhs.uk"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "annualmeeting.acaai.org",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://annualmeeting.acaai.org/2024/documents/ORAL_ABSTRACTS_ONLY.pdf",
+                    "title": "ANAI4791_LR",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 25
+                    },
+                    "pub_date": 1728832335.0,
+                    "attribution": "annualmeeting.acaai.org"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.elft.nhs.uk",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.elft.nhs.uk/sites/default/files/2023-09/emergency_treatment_of_anaphylaxis_may_2021_0.pdf",
+                    "title": "Emergency treatment of anaphylaxis Guidelines for",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 563916,
+                      "ref_type": "search",
+                      "ref_index": 26
+                    },
+                    "pub_date": 1620131422.0,
+                    "attribution": "www.elft.nhs.uk"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "c24c0884-206a-4ae5-a70b-3dce1efef994",
+              "9c086333-7945-404e-a8bf-6287ee114202",
+              "d03f85ed-4d9d-4399-9b5d-3c08e9724325"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=college.acaai.org&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.nhs.uk&sz=128",
+            "https://www.google.com/s2/favicons?domain=annualmeeting.acaai.org&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.elft.nhs.uk&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1788632408.5772398,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "request_id": "wfr_01a072cc8b5a7d8bb47185a71243c239",
+          "message_type": "next",
+          "turn_exchange_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "working_turn_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "d03f85ed-4d9d-4399-9b5d-3c08e9724325",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2a054906-3300-4ad4-8a28-a6f6e828c5c4:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d03f85ed-4d9d-4399-9b5d-3c08e9724325",
+      "children": [
+        "8ccd97ff-ece4-4a17-bb84-16c4f8dfd7f2"
+      ]
+    },
+    "8ccd97ff-ece4-4a17-bb84-16c4f8dfd7f2": {
+      "id": "8ccd97ff-ece4-4a17-bb84-16c4f8dfd7f2",
+      "message": {
+        "id": "8ccd97ff-ece4-4a17-bb84-16c4f8dfd7f2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632414.987449,
+        "update_time": 1788632414.987449,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 6s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 6,
+          "reasoning_start_time": 1788632408.5772398,
+          "reasoning_end_time": 1788632414.904256,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cc8b5a7d8bb47185a71243c239",
+          "message_type": "next",
+          "turn_exchange_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "working_turn_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "e0dd1609-6630-4943-a884-a94b5fb51365",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2a054906-3300-4ad4-8a28-a6f6e828c5c4:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e0dd1609-6630-4943-a884-a94b5fb51365",
+      "children": [
+        "f4cb88d5-b805-4c8c-89a8-2a7dc4e1f139"
+      ]
+    },
+    "f4cb88d5-b805-4c8c-89a8-2a7dc4e1f139": {
+      "id": "f4cb88d5-b805-4c8c-89a8-2a7dc4e1f139",
+      "message": {
+        "id": "f4cb88d5-b805-4c8c-89a8-2a7dc4e1f139",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1788632414.990208,
+        "update_time": 1788632422.005761,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Nếu anh **chỉ ngứa/nổi mẩn đỏ hoặc mề đay nhẹ**, không khó thở, không sưng môi/lưỡi/họng, người lớn thường có thể dùng **cetirizine 10 mg, 1 viên/ngày**. Đây là thuốc kháng histamine dùng cho mề đay và dị ứng; một số người vẫn có thể buồn ngủ nên tránh lái xe nếu thấy buồn ngủ. citeturn563916search0turn563916search5\n\nAnh **không nên tự uống nhiều loại thuốc dị ứng cùng lúc** và không nên tự dùng corticoid/kháng sinh chỉ để xử lý mẩn ngứa. Nếu anh có bệnh thận, đang dùng thuốc khác hoặc từng dị ứng thuốc, nên hỏi dược sĩ/bác sĩ trước khi dùng.\n\nQuan trọng nhất: nếu có **khó thở, khò khè, nghẹn/căng họng, sưng môi/lưỡi, chóng mặt, lả người hoặc ngất**, đừng chờ thuốc uống có tác dụng — đây có thể là **phản vệ**, cần gọi **115/đi cấp cứu ngay**. Thuốc kháng histamine không phải điều trị đầu tay cho phản vệ. citeturn563916search3turn563916search24\n\nNếu anh cho em biết **hiện tại anh đang ngứa/mẩn ở đâu, có sưng môi hoặc khó thở không và ăn tôm cách đây bao lâu**, em sẽ giúp anh đánh giá ngay mức độ cần đi viện."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "content_references": [
+            {
+              "matched_text": "citeturn563916search0turn563916search5",
+              "prefix": null,
+              "start_idx": 279,
+              "end_idx": 321,
+              "safe_urls": [
+                "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+                "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/?utm_source=chatgpt.com",
+                "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/",
+                "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([nhs.uk](https://www.nhs.uk/medicines/cetirizine/about-cetirizine/?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "About cetirizine",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/?utm_source=chatgpt.com",
+                  "attribution": "nhs.uk",
+                  "pub_date": 1739750400.0,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "How and when to take cetirizine",
+                      "url": "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "nhs.uk"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 5
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "citeturn563916search3turn563916search24",
+              "prefix": null,
+              "start_idx": 820,
+              "end_idx": 863,
+              "safe_urls": [
+                "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf",
+                "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf?utm_source=chatgpt.com",
+                "https://www.nhs.uk/conditions/anaphylaxis/",
+                "https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([nhs.uk](https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Anaphylaxis",
+                  "url": "https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com",
+                  "attribution": "nhs.uk",
+                  "pub_date": 1687305600.0,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "ANAPHYLAXIS _Flyer",
+                      "url": "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "college.acaai.org"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 3
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 24
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": " ",
+              "prefix": null,
+              "start_idx": 1030,
+              "end_idx": 1031,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "About cetirizine",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/?utm_source=chatgpt.com",
+                  "attribution": "nhs.uk"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "www.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/?utm_source=chatgpt.com",
+                  "title": "Side effects of cetirizine",
+                  "snippet": "SIDE EFFECTS OF CETIRIZINE - BRAND NAMES: ALLACAN, BENADRYL ALLERGY, PIRITEZE ALLERGY, ZIRTEK ALLERGY  Like all medicines, cetirizine can cause side effects, although not everyone gets them.  COMMON...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1739836800.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/antihistamines/?utm_source=chatgpt.com",
+                  "title": "Antihistamines",
+                  "snippet": "ANTIHISTAMINES  Antihistamines are medicines often used to relieve symptoms of allergies, such as hay fever, hives, conjunctivitis and reactions to insect bites or stings.  They're also sometimes use...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1684195200.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/hives/?utm_source=chatgpt.com",
+                  "title": "Hives",
+                  "snippet": "HIVES  Hives rashes usually get better within a few days. You can often treat hives yourself.  SYMPTOMS OF HIVES  The main symptom of hives is an itchy rash.  The rash can:  * be raised bumps or patc...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1714089600.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/?utm_source=chatgpt.com",
+                  "title": "How and when to take cetirizine",
+                  "snippet": "HOW AND WHEN TO TAKE CETIRIZINE - BRAND NAMES: ALLACAN, BENADRYL ALLERGY, PIRITEZE ALLERGY, ZIRTEK ALLERGY  If you or your child have been prescribed cetirizine, follow your doctor's instructions abo...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": 1739836800.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/allergies/?utm_source=chatgpt.com",
+                  "title": "Allergies",
+                  "snippet": "ALLERGIES  An allergy is where your body reacts to something that's normally harmless like food, pollen, dust, insect bites or animals. The symptoms can be mild, but for some people they can be very...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1772668800.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/common-questions-about-cetirizine/?utm_source=chatgpt.com",
+                  "title": "Common questions about cetirizine",
+                  "snippet": "COMMON QUESTIONS ABOUT CETIRIZINE - BRAND NAMES: ALLACAN, BENADRYL ALLERGY, PIRITEZE ALLERGY, ZIRTEK ALLERGY  How does cetirizine work?  Cetirizine is a type of medicine called an antihistamine. When...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": 1739836800.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/cetirizine/who-can-and-cannot-take-cetirizine/?utm_source=chatgpt.com",
+                  "title": "Who can and cannot take cetirizine",
+                  "snippet": "WHO CAN AND CANNOT TAKE CETIRIZINE - BRAND NAMES: ALLACAN, BENADRYL ALLERGY, PIRITEZE ALLERGY, ZIRTEK ALLERGY  WHO CAN TAKE CETIRIZINE  Most adults can take cetirizine.  Most children can take certai...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": 1739836800.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/angioedema/?utm_source=chatgpt.com",
+                  "title": "Angioedema",
+                  "snippet": "ANGIOEDEMA  Angioedema is sudden swelling that's often caused by an allergic reaction. It can be very serious if your throat becomes swollen and your breathing is affected. Treatment can help keep th...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": 1787616000.0,
+                  "attribution": "www.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "acaai.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/content/anaphylaxis-101-diagnosis-and-management?utm_source=chatgpt.com",
+                  "title": "Anaphylaxis 101: Diagnosis and Management | College Learning Connection",
+                  "snippet": "ANAPHYLAXIS 101: DIAGNOSIS AND MANAGEMENT  ImageThis slide deck and accompanying speaker guide were created to help keep primary care clinicians, advanced practice providers, and emergency room clini...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": null,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://college.acaai.org/practice-parameters-and-other-guidelines/?utm_source=chatgpt.com",
+                  "title": "Practice Parameters and Other Guidelines - ACAAI Member",
+                  "snippet": "PRACTICE PARAMETERS AND OTHER GUIDELINES  Resources | August 31, 2026  Practice Parameters and Other Guidelines  PRACTICE PARAMETERS  Practice Parameters Practice Parameters are developed by the Join...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": 1788134400.0,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/node/14851?utm_source=chatgpt.com",
+                  "title": "EAC 2025 - Update in Allergy, Asthma & Immunology | College Learning Connection",
+                  "snippet": "EAC 2025 - UPDATE IN ALLERGY, ASTHMA & IMMUNOLOGY  EAC 2025 - UPDATE IN ALLERGY, ASTHMA & IMMUNOLOGY  Palm Beach, FL US  May 29, 2025 to June 1, 2025  * Overview * Program * Venue * Faculty * Accredi...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": null,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/microcme?utm_source=chatgpt.com",
+                  "title": "MicroCME 26 Menu | College Learning Connection",
+                  "snippet": "MICROCME 26 MENU  Image  The College is pleased to offer these 15 to 30 minute MicroCME 2026 modules that will give you CME designed to fit your busy schedule. Continue to visit this page as NEW Micr...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": null,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/content/topical-resources?utm_source=chatgpt.com",
+                  "title": "Topical Resources | College Learning Connection",
+                  "snippet": "TOPICAL RESOURCES  ANAPHYLAXIS  TOP  * Anaphylaxis Action Plan * ASCIA Guidelines - Acute Management of Anaphylaxis * Food Allergy & Anaphylaxis Emergency Care Plan  ASTHMA  TOP  * 2026 GINA Strategy...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": null,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/content/practice-parameters?utm_source=chatgpt.com",
+                  "title": "Practice Parameters | College Learning Connection",
+                  "snippet": "COLLEGE LEARNING CONNECTION - ALLERGY & ASTHMA EDUCATION PROGRAMS  YOU ARE HERE  PRACTICE PARAMETERS  Links to Curated Resources for Allergy and Immunology  Practice Parameters:  * Anaphylaxis * Anap...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": null,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://college.acaai.org/woman-presents-with-rash/?utm_source=chatgpt.com",
+                  "title": "Woman presents with rash - ACAAI Member",
+                  "snippet": "WOMAN PRESENTS WITH RASH  New Allergists | August 19, 2026  Woman presents with rash  A 72-year-old female presented to the allergy clinic as a new patient with a chief complaint of rashes. She has a...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": 1787097600.0,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/node/14387?utm_source=chatgpt.com",
+                  "title": "Eastern Food Allergy & Comorbidity Conference 2025 (EFACC) | College Learning Connection",
+                  "snippet": "10:45-11:15    Omalizumab for food allergy: Risks and benefits – Shahzad Mustafa, MD  11:15-11:45    Sublingual immunotherapy for food allergy: How and when to use – Edwin Kim, MD  11:45-12:15    Epic...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": null,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/content/anaphylaxis?utm_source=chatgpt.com",
+                  "title": "Anaphylaxis/Angioedema | College Learning Connection",
+                  "snippet": "ANAPHYLAXIS/ANGIOEDEMA  PRACTICE PARAMETERS  Practice parameters, as developed by the Joint Task Force on Practice Parameters, are documents that establish boundaries for appropriate patient care. Th...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": null,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/node/14886?utm_source=chatgpt.com",
+                  "title": "Anaphylaxis: The Changing Treatment Landscape (AAN) | College Learning Connection",
+                  "snippet": "ANAPHYLAXIS: THE CHANGING TREATMENT LANDSCAPE (AAN)  ANAPHYLAXIS: THE CHANGING TREATMENT LANDSCAPE (AAN)  * Overview * Faculty * Accreditation * Register/Take course  Price: FREE for members and non-...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "pub_date": 1749686400.0,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/content/demand-2025-sunday-pm-general-sessions?utm_source=chatgpt.com",
+                  "title": "On Demand 2025 Sunday PM General Sessions | College Learning Connection",
+                  "snippet": "ON DEMAND 2025 SUNDAY PM GENERAL SESSIONS  ON DEMAND 2025 SUNDAY PM GENERAL SESSIONS  * Overview * Faculty * Accreditation * Register/Take course  This collection covers general sessions from Sunday'...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 22
+                  },
+                  "pub_date": null,
+                  "attribution": "acaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.acaai.org/content/anaphylaxis-update-and-treatment-options-cme?utm_source=chatgpt.com",
+                  "title": "Anaphylaxis Update and Treatment Options (CME) | College Learning Connection",
+                  "snippet": "ANAPHYLAXIS UPDATE AND TREATMENT OPTIONS (CME)  ANAPHYLAXIS UPDATE AND TREATMENT OPTIONS (CME)  * Overview * Faculty * Accreditation * Register/Take course  Expert faculty address the rising prevalen...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 23
+                  },
+                  "pub_date": 1737504000.0,
+                  "attribution": "acaai.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "uhsussex.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.uhsussex.nhs.uk/resources/urticaria-and-angioedema/?utm_source=chatgpt.com",
+                  "title": "Urticaria and Angioedema - University Hospitals Sussex NHS Foundation Trust",
+                  "snippet": "URTICARIA AND ANGIOEDEMA  Information about paediatric (children's) urticaria (allergic rash) and angioedema (swelling)  Download and print as a PDF (349kB pdf)  ON THIS PAGE  1. What is urticaria? 2...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 20
+                  },
+                  "pub_date": 1744848000.0,
+                  "attribution": "uhsussex.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "fhft.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.fhft.nhs.uk/patients-and-visitors/patient-information-library/emergency-treatment-allergic-reactions-and-anaphylaxis?utm_source=chatgpt.com",
+                  "title": "Emergency Treatment of Allergic Reactions and Anaphylaxis :: Frimley Health NHS Foundation Trust",
+                  "snippet": "Image: This picture shows 4 different types of treatment. There is an Emerade, EpiPen, Jext.  WHAT IS AN ALLERGIC REACTION?  An allergic reaction occurs when the body’s immune system reacts to a norm...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 21
+                  },
+                  "pub_date": 1730419200.0,
+                  "attribution": "fhft.nhs.uk"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf",
+            "https://college.acaai.org/sites/default/files/Resources/151010_anaphylaxis_flyer.pdf?utm_source=chatgpt.com",
+            "https://www.nhs.uk/conditions/anaphylaxis/",
+            "https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com",
+            "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+            "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/?utm_source=chatgpt.com",
+            "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/",
+            "https://www.nhs.uk/medicines/cetirizine/how-and-when-to-take-cetirizine/?utm_source=chatgpt.com"
+          ],
+          "citations": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cc8b5a7d8bb47185a71243c239",
+          "message_type": "next",
+          "turn_exchange_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "working_turn_id": "2a054906-3300-4ad4-8a28-a6f6e828c5c4",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "8ccd97ff-ece4-4a17-bb84-16c4f8dfd7f2",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-2a054906-3300-4ad4-8a28-a6f6e828c5c4:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "8ccd97ff-ece4-4a17-bb84-16c4f8dfd7f2",
+      "children": [
+        "a1c44ed6-d054-482f-8418-234b136c9b17"
+      ]
+    },
+    "a1c44ed6-d054-482f-8418-234b136c9b17": {
+      "id": "a1c44ed6-d054-482f-8418-234b136c9b17",
+      "message": {
+        "id": "a1c44ed6-d054-482f-8418-234b136c9b17",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632443.225214,
+        "update_time": 1788632459.807387,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Môi chưa xưng mà bị giật giật"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "dictation": false,
+          "triggered_by_system_hint_suggestion": false,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fb24aa26-c9eb-4e5f-9abb-e647274f3ce7:JP",
+          "request_id": "wfr_01a072cce9f0743687e1f6d417adb35b",
+          "message_source": null,
+          "turn_exchange_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "working_turn_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f4cb88d5-b805-4c8c-89a8-2a7dc4e1f139",
+      "children": [
+        "28abf0c0-2a73-4880-aaa7-13e86dd7c6cd"
+      ]
+    },
+    "28abf0c0-2a73-4880-aaa7-13e86dd7c6cd": {
+      "id": "28abf0c0-2a73-4880-aaa7-13e86dd7c6cd",
+      "message": {
+        "id": "28abf0c0-2a73-4880-aaa7-13e86dd7c6cd",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632451.020404,
+        "update_time": 1788632451.020404,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200012
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cce9f0743687e1f6d417adb35b",
+          "message_type": "next",
+          "turn_exchange_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "working_turn_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "a0d2ae87-4a1f-41c7-88b0-90b73fe93fd5",
+          "reasoning_titles": [
+            "Đang tìm kiếm trên web"
+          ],
+          "reasoning_title": "Đang tìm kiếm trên web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "globe"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1788632445.3688471,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fb24aa26-c9eb-4e5f-9abb-e647274f3ce7:JP",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "web.run",
+        "channel": null
+      },
+      "parent": "a1c44ed6-d054-482f-8418-234b136c9b17",
+      "children": [
+        "8cda0fd9-db28-425a-96a7-e54fe6a052d8"
+      ]
+    },
+    "8cda0fd9-db28-425a-96a7-e54fe6a052d8": {
+      "id": "8cda0fd9-db28-425a-96a7-e54fe6a052d8",
+      "message": {
+        "id": "8cda0fd9-db28-425a-96a7-e54fe6a052d8",
+        "author": {
+          "role": "tool",
+          "name": "web.run",
+          "metadata": {
+            "real_author": "tool:web.run"
+          }
+        },
+        "create_time": 1788632451.624082,
+        "update_time": 1788632451.624082,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "www.aaaai.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf",
+                  "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 302210,
+                    "ref_type": "search",
+                    "ref_index": 24
+                  },
+                  "pub_date": 1290578041.0,
+                  "attribution": "www.aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf",
+                  "title": "What You Should Know About Food Allergy",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 302210,
+                    "ref_type": "search",
+                    "ref_index": 25
+                  },
+                  "pub_date": 1737663716.0,
+                  "attribution": "www.aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.aaaai.org/aaaai/media/medialibrary/pdf%20documents/practice%20and%20parameters/food-allergy-guidelines-dec-2010.pdf",
+                  "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 302210,
+                    "ref_type": "search",
+                    "ref_index": 26
+                  },
+                  "pub_date": 1290578041.0,
+                  "attribution": "www.aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/2015-Anaphylaxis-PP-Update.pdf",
+                  "title": "Anaphylaxis-a practice parameter update 2015",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 302210,
+                    "ref_type": "search",
+                    "ref_index": 27
+                  },
+                  "pub_date": null,
+                  "attribution": "www.aaaai.org"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "www.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+                  "title": "Anaphylaxis",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 302210,
+                    "ref_type": "search",
+                    "ref_index": 0
+                  },
+                  "pub_date": 1687305600.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/food-allergy/",
+                  "title": "Food allergy",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 302210,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1787184000.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/food-intolerance/",
+                  "title": "Food intolerance",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 302210,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1781740800.0,
+                  "attribution": "www.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "mft.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://mft.nhs.uk/app/uploads/2026/05/AAI-PIL-2018.pdf",
+                  "title": "Anaphylaxis",
+                  "snippet": "",
+                  "ref_id": {
+                    "turn_index": 302210,
+                    "ref_type": "search",
+                    "ref_index": 28
+                  },
+                  "pub_date": 1612788950.0,
+                  "attribution": "mft.nhs.uk"
+                }
+              ]
+            }
+          ],
+          "debug_sonic_thread_id": "thread_6a9c5d82ecb883309cb5fc578465792b",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "hide_inline_actions": true,
+          "disable_turn_actions": true,
+          "chime_version": 1,
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cce9f0743687e1f6d417adb35b",
+          "message_type": "next",
+          "turn_exchange_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "working_turn_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "parent_id": "77d221c3-bb30-43c6-9e0f-300eee59bc60",
+          "reasoning_title_content_transition": "numeric",
+          "reasoning_titles": [
+            "Đang tìm kiếm 3 trang web"
+          ],
+          "reasoning_title": "Đang tìm kiếm 3 trang web",
+          "reasoning_status": "is_reasoning",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=www.aaaai.org&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.nhs.uk&sz=128",
+            "https://www.google.com/s2/favicons?domain=mft.nhs.uk&sz=128"
+          ],
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "www.aaaai.org",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf",
+                    "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 24
+                    },
+                    "pub_date": 1290578041.0,
+                    "attribution": "www.aaaai.org"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf",
+                    "title": "What You Should Know About Food Allergy",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 25
+                    },
+                    "pub_date": 1737663716.0,
+                    "attribution": "www.aaaai.org"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.aaaai.org/aaaai/media/medialibrary/pdf%20documents/practice%20and%20parameters/food-allergy-guidelines-dec-2010.pdf",
+                    "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 26
+                    },
+                    "pub_date": 1290578041.0,
+                    "attribution": "www.aaaai.org"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/2015-Anaphylaxis-PP-Update.pdf",
+                    "title": "Anaphylaxis-a practice parameter update 2015",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 27
+                    },
+                    "pub_date": null,
+                    "attribution": "www.aaaai.org"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.nhs.uk",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+                    "title": "Anaphylaxis",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1687305600.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/food-allergy/",
+                    "title": "Food allergy",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1787184000.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/food-intolerance/",
+                    "title": "Food intolerance",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": 1781740800.0,
+                    "attribution": "www.nhs.uk"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "mft.nhs.uk",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://mft.nhs.uk/app/uploads/2026/05/AAI-PIL-2018.pdf",
+                    "title": "Anaphylaxis",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 28
+                    },
+                    "pub_date": 1612788950.0,
+                    "attribution": "mft.nhs.uk"
+                  }
+                ]
+              }
+            ]
+          },
+          "classifier_response": "default",
+          "reasoning_start_time": 1788632445.3688471,
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fb24aa26-c9eb-4e5f-9abb-e647274f3ce7:JP",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "28abf0c0-2a73-4880-aaa7-13e86dd7c6cd",
+      "children": [
+        "682f74ef-2bdb-468b-9950-b70859785fdf"
+      ]
+    },
+    "682f74ef-2bdb-468b-9950-b70859785fdf": {
+      "id": "682f74ef-2bdb-468b-9950-b70859785fdf",
+      "message": {
+        "id": "682f74ef-2bdb-468b-9950-b70859785fdf",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632453.210735,
+        "update_time": 1788632453.210735,
+        "content": {
+          "content_type": "thoughts",
+          "thoughts": [
+            {
+              "summary": "Đã tìm kiếm 3 trang web",
+              "content": "",
+              "chunks": [],
+              "finished": true
+            }
+          ],
+          "source_analysis_msg_id": "2e568580-ae52-4919-92db-a58a77bea038"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "inline_cot_expandable_content": {
+            "search_result_groups": [
+              {
+                "type": "search_result_group",
+                "domain": "www.aaaai.org",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf",
+                    "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 24
+                    },
+                    "pub_date": 1290578041.0,
+                    "attribution": "www.aaaai.org"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf",
+                    "title": "What You Should Know About Food Allergy",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 25
+                    },
+                    "pub_date": 1737663716.0,
+                    "attribution": "www.aaaai.org"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.aaaai.org/aaaai/media/medialibrary/pdf%20documents/practice%20and%20parameters/food-allergy-guidelines-dec-2010.pdf",
+                    "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 26
+                    },
+                    "pub_date": 1290578041.0,
+                    "attribution": "www.aaaai.org"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/2015-Anaphylaxis-PP-Update.pdf",
+                    "title": "Anaphylaxis-a practice parameter update 2015",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 27
+                    },
+                    "pub_date": null,
+                    "attribution": "www.aaaai.org"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "www.nhs.uk",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+                    "title": "Anaphylaxis",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    "pub_date": 1687305600.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/food-allergy/",
+                    "title": "Food allergy",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    },
+                    "pub_date": 1787184000.0,
+                    "attribution": "www.nhs.uk"
+                  },
+                  {
+                    "type": "search_result",
+                    "url": "https://www.nhs.uk/conditions/food-intolerance/",
+                    "title": "Food intolerance",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 2
+                    },
+                    "pub_date": 1781740800.0,
+                    "attribution": "www.nhs.uk"
+                  }
+                ]
+              },
+              {
+                "type": "search_result_group",
+                "domain": "mft.nhs.uk",
+                "entries": [
+                  {
+                    "type": "search_result",
+                    "url": "https://mft.nhs.uk/app/uploads/2026/05/AAI-PIL-2018.pdf",
+                    "title": "Anaphylaxis",
+                    "snippet": "",
+                    "ref_id": {
+                      "turn_index": 302210,
+                      "ref_type": "search",
+                      "ref_index": 28
+                    },
+                    "pub_date": 1612788950.0,
+                    "attribution": "mft.nhs.uk"
+                  }
+                ]
+              }
+            ],
+            "source_message_ids": [
+              "28abf0c0-2a73-4880-aaa7-13e86dd7c6cd",
+              "9aa6150d-5f41-461f-982f-d927af045a79",
+              "8cda0fd9-db28-425a-96a7-e54fe6a052d8"
+            ]
+          },
+          "reasoning_status": "is_reasoning",
+          "tool_summary_type": "web",
+          "tool_icons": [
+            "https://www.google.com/s2/favicons?domain=www.aaaai.org&sz=128",
+            "https://www.google.com/s2/favicons?domain=www.nhs.uk&sz=128",
+            "https://www.google.com/s2/favicons?domain=mft.nhs.uk&sz=128"
+          ],
+          "classifier_response": "default",
+          "reasoning_start_time": 1788632445.3688471,
+          "cot_version": "v5",
+          "skip_reasoning_title": "Bỏ qua",
+          "request_id": "wfr_01a072cce9f0743687e1f6d417adb35b",
+          "message_type": "next",
+          "turn_exchange_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "working_turn_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "8279ea85-b016-4aa9-8b1d-ad59df11343f",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fb24aa26-c9eb-4e5f-9abb-e647274f3ce7:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8cda0fd9-db28-425a-96a7-e54fe6a052d8",
+      "children": [
+        "2ab8f819-cb99-41fd-af93-4bfcfea602db"
+      ]
+    },
+    "2ab8f819-cb99-41fd-af93-4bfcfea602db": {
+      "id": "2ab8f819-cb99-41fd-af93-4bfcfea602db",
+      "message": {
+        "id": "2ab8f819-cb99-41fd-af93-4bfcfea602db",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788632453.216281,
+        "update_time": 1788632453.216281,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 7s"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 7,
+          "reasoning_start_time": 1788632445.3688471,
+          "reasoning_end_time": 1788632453.2039857,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cce9f0743687e1f6d417adb35b",
+          "message_type": "next",
+          "turn_exchange_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "working_turn_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "682f74ef-2bdb-468b-9950-b70859785fdf",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fb24aa26-c9eb-4e5f-9abb-e647274f3ce7:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "682f74ef-2bdb-468b-9950-b70859785fdf",
+      "children": [
+        "c9c67805-0a8f-464e-bdc7-60436c094282"
+      ]
+    },
+    "c9c67805-0a8f-464e-bdc7-60436c094282": {
+      "id": "c9c67805-0a8f-464e-bdc7-60436c094282",
+      "message": {
+        "id": "c9c67805-0a8f-464e-bdc7-60436c094282",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {
+            "real_author": "tool:web"
+          }
+        },
+        "create_time": 1788632453.220036,
+        "update_time": 1788632459.808657,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Anh, **môi giật giật nhưng chưa sưng không phải dấu hiệu điển hình của dị ứng nặng**. Tuy nhiên vì anh vừa ăn tôm và đã có **ngứa/nóng/nổi mẩn đỏ**, mình vẫn nên theo dõi kỹ vì phản ứng dị ứng có thể tiến triển nhanh. citeturn302210search0turn302210search1\n\nNếu hiện tại anh **thở bình thường, không nghẹn cổ, không sưng môi/lưỡi, không chóng mặt**, anh có thể:\n- Ngừng ăn tôm và các món liên quan.\n- Nếu chưa uống thuốc dị ứng: có thể dùng **cetirizine 10 mg, 1 viên** để giảm ngứa/mề đay.\n- Nên có người ở gần và theo dõi tình trạng, không tự lái xe nếu thấy choáng hoặc buồn ngủ.\n\n**Gọi 115/đi cấp cứu ngay** nếu bắt đầu có **môi/lưỡi/họng sưng, cảm giác cổ họng thắt lại, khó nuốt, khò khè/khó thở, chóng mặt hoặc lả người**. Thuốc kháng histamine chỉ giúp ngứa và mề đay, **không thay thế adrenaline khi xảy ra phản vệ**. citeturn302210search24turn302210search25\n\nNếu anh nói cho em biết **anh ăn tôm cách đây bao nhiêu phút/giờ và mẩn đỏ hiện đang lan hay giảm**, em đánh giá mức độ hiện tại cho anh."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "content_references": [
+            {
+              "matched_text": "citeturn302210search0turn302210search1",
+              "prefix": null,
+              "start_idx": 218,
+              "end_idx": 260,
+              "safe_urls": [
+                "https://www.nhs.uk/conditions/anaphylaxis/",
+                "https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com",
+                "https://www.nhs.uk/conditions/food-allergy/",
+                "https://www.nhs.uk/conditions/food-allergy/?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([nhs.uk](https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Anaphylaxis",
+                  "url": "https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com",
+                  "attribution": "nhs.uk",
+                  "pub_date": 1687305600.0,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "Food allergy",
+                      "url": "https://www.nhs.uk/conditions/food-allergy/?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "nhs.uk"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 0
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 1
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": "citeturn302210search24turn302210search25",
+              "prefix": null,
+              "start_idx": 831,
+              "end_idx": 875,
+              "safe_urls": [
+                "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf",
+                "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf?utm_source=chatgpt.com",
+                "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf",
+                "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf?utm_source=chatgpt.com"
+              ],
+              "refs": [],
+              "alt": "([aaaai.org](https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf?utm_source=chatgpt.com))",
+              "prompt_text": null,
+              "type": "grouped_webpages",
+              "items": [
+                {
+                  "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+                  "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf?utm_source=chatgpt.com",
+                  "attribution": "aaaai.org",
+                  "pub_date": 1290578041.0,
+                  "snippet": "",
+                  "attribution_segments": null,
+                  "supporting_websites": [
+                    {
+                      "title": "What You Should Know About Food Allergy",
+                      "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf?utm_source=chatgpt.com",
+                      "pub_date": null,
+                      "snippet": "",
+                      "attribution": "aaaai.org"
+                    }
+                  ],
+                  "refs": [
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 24
+                    },
+                    {
+                      "turn_index": 0,
+                      "ref_type": "search",
+                      "ref_index": 25
+                    }
+                  ],
+                  "hue": null,
+                  "attributions": null
+                }
+              ],
+              "fallback_items": null,
+              "status": "done",
+              "error": null,
+              "style": null
+            },
+            {
+              "matched_text": " ",
+              "prefix": null,
+              "start_idx": 1014,
+              "end_idx": 1015,
+              "safe_urls": [],
+              "refs": [],
+              "alt": "",
+              "prompt_text": null,
+              "type": "sources_footnote",
+              "sources": [
+                {
+                  "title": "Anaphylaxis",
+                  "url": "https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com",
+                  "attribution": "nhs.uk"
+                },
+                {
+                  "title": "Guidelines for the Diagnosis and Management of Food Allergy in the United States: Report of the NIAID-Sponsored Expert Panel",
+                  "url": "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf?utm_source=chatgpt.com",
+                  "attribution": "aaaai.org"
+                }
+              ],
+              "has_images": false
+            }
+          ],
+          "search_result_groups": [
+            {
+              "type": "search_result_group",
+              "domain": "www.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/food-allergy/?utm_source=chatgpt.com",
+                  "title": "Food allergy",
+                  "snippet": "FOOD ALLERGY  A food allergy is where your body reacts to certain foods. It's often mild, but can be very serious for some people.  SYMPTOMS OF A FOOD ALLERGY  Symptoms of a food allergy can affect a...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 1
+                  },
+                  "pub_date": 1787184000.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/food-intolerance/?utm_source=chatgpt.com",
+                  "title": "Food intolerance",
+                  "snippet": "FOOD INTOLERANCE  A food intolerance is when you have difficulty digesting certain foods or ingredients in food. It's not usually serious, but eating the food you're intolerant to can make you feel u...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 2
+                  },
+                  "pub_date": 1781740800.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/allergies/?utm_source=chatgpt.com",
+                  "title": "Allergies",
+                  "snippet": "ALLERGIES  An allergy is where your body reacts to something that's normally harmless like food, pollen, dust, insect bites or animals. The symptoms can be mild, but for some people they can be very...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 3
+                  },
+                  "pub_date": 1772668800.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/conditions/angioedema/?utm_source=chatgpt.com",
+                  "title": "Angioedema",
+                  "snippet": "ANGIOEDEMA  Angioedema is sudden swelling that's often caused by an allergic reaction. It can be very serious if your throat becomes swollen and your breathing is affected. Treatment can help keep th...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 7
+                  },
+                  "pub_date": 1787616000.0,
+                  "attribution": "www.nhs.uk"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://www.nhs.uk/medicines/antihistamines/?utm_source=chatgpt.com",
+                  "title": "Antihistamines",
+                  "snippet": "ANTIHISTAMINES  Antihistamines are medicines often used to relieve symptoms of allergies, such as hay fever, hives, conjunctivitis and reactions to insect bites or stings.  They're also sometimes use...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 9
+                  },
+                  "pub_date": 1684195200.0,
+                  "attribution": "www.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "wales.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://111.wales.nhs.uk/FoodAllergy/?utm_source=chatgpt.com",
+                  "title": "NHS 111 Wales - Health A-Z : Food Allergy",
+                  "snippet": "FOOD ALLERGY  [Input]  OVERVIEW  Image: Food Allergy  Image: Food Allergy  A food allergy is where your body reacts to certain foods. It's often mild, but can be very serious for some people.  SYMPTO...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 4
+                  },
+                  "pub_date": 1772064000.0,
+                  "attribution": "wales.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "allergynorthwest.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://allergynorthwest.nhs.uk/resources/allergy-leaflets/oral-allergy-syndrome/?utm_source=chatgpt.com",
+                  "title": "Oral Allergy Syndrome (Food Pollen Syndrome) - North West Allergy Network",
+                  "snippet": "WHAT IS ORAL ALLERGY SYNDROME/ FOOD POLLEN ALLERGY SYNDROME?  Download Leaflet  Oral allergy syndrome (OAS) is an allergy to one or more usually fresh fruits or vegetables. It is a common food-relate...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 5
+                  },
+                  "pub_date": 1475781644.0,
+                  "attribution": "allergynorthwest.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "cuh.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.cuh.nhs.uk/patient-information/emergency-treatment-of-allergic-reactions/?utm_source=chatgpt.com",
+                  "title": "Emergency treatment of allergic reactions | CUH",
+                  "snippet": "EMERGENCY TREATMENT OF ALLERGIC REACTIONS  PATIENT INFORMATION A-Z  [Button: Print this page]  The following will be completed by the doctor treating your child:  . . . . . . . . . . . . . . . . . ....",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 6
+                  },
+                  "pub_date": 1601856000.0,
+                  "attribution": "cuh.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "fhft.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.fhft.nhs.uk/patients-and-visitors/patient-information-library/emergency-treatment-allergic-reactions-and-anaphylaxis/submit/7561?utm_source=chatgpt.com",
+                  "title": "Emergency Treatment of Allergic Reactions and Anaphylaxis :: Frimley Health NHS Foundation Trust",
+                  "snippet": "Image: This picture shows 4 different types of treatment. There is an Emerade, EpiPen, Jext.  WHAT IS AN ALLERGIC REACTION?  An allergic reaction occurs when the body’s immune system reacts to a norm...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 8
+                  },
+                  "pub_date": 1730419200.0,
+                  "attribution": "fhft.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "wchc.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.wchc.nhs.uk/health-care/health/allergies/allergies/?utm_source=chatgpt.com",
+                  "title": "Health A to Z - Wirral Community Health and Care NHS Foundation Trust",
+                  "snippet": "HEALTH A TO Z: ALLERGIES  Find out about allergies, including typical symptoms, common allergies, when to get emergency medical help and allergy testing and treatments.  Things that cause allergic re...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 10
+                  },
+                  "pub_date": 1772755200.0,
+                  "attribution": "wchc.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "leedsth.nhs.uk",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://www.leedsth.nhs.uk/services/allergy-and-clinical-immunology/gp-and-secondary-care-information/gp-and-secondary-care-information-2/?utm_source=chatgpt.com",
+                  "title": "GP and Secondary Care Information - Page 2 - Leeds Teaching Hospitals NHS Trust",
+                  "snippet": "GP AND SECONDARY CARE INFORMATION – PAGE 2  Allergy and Immunology referral guidelines  < PREVIOUS PAGE  ADVERSE REACTIONS TO INSECT BITES  Bee and wasp stings can cause life threatening anaphylaxis,...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 11
+                  },
+                  "pub_date": 1750809600.0,
+                  "attribution": "leedsth.nhs.uk"
+                }
+              ]
+            },
+            {
+              "type": "search_result_group",
+              "domain": "aaaai.org",
+              "entries": [
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/anaphylaxis-urticaria-and-angioedema/stock-epi?utm_source=chatgpt.com",
+                  "title": "How (and Why!) to Prescribe Stock Epinephrine to Schools and Early Childhood Centers | AAAAI Education Center",
+                  "snippet": "HOW (AND WHY!) TO PRESCRIBE STOCK EPINEPHRINE TO SCHOOLS AND EARLY CHILDHOOD CENTERS  HOW (AND WHY!) TO PRESCRIBE STOCK EPINEPHRINE TO SCHOOLS AND EARLY CHILDHOOD CENTERS  * Overview * Faculty * Accr...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 12
+                  },
+                  "pub_date": 1681171200.0,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://allergist.aaaai.org/virtual-allergist/?utm_source=chatgpt.com",
+                  "title": "Check Your Symptoms | AAAAI",
+                  "snippet": "AAAAI’s The Virtual Allergist^{®} can give you valuable information about your allergy and asthma symptoms, and a visit to an allergist may bring relief. To get started, find the area on the illustra...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 13
+                  },
+                  "pub_date": null,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/focusonfoodallergy?utm_source=chatgpt.com",
+                  "title": "Focus on Food Allergy | AAAAI Education Center",
+                  "snippet": "AAAAI EDUCATION CENTER  FOCUS ON FOOD ALLERGY  Image: Focus on Food Allergy Logo  Focus on Food Allergy is a series of interactive online courses that aim to improve diagnosis, testing, and treatment...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 14
+                  },
+                  "pub_date": null,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/aim/node/5947?utm_source=chatgpt.com",
+                  "title": "AIM Virtual Patient - Anaphylaxis in an Atopic Child | AAAAI Education Center",
+                  "snippet": "AIM VIRTUAL PATIENT - ANAPHYLAXIS IN AN ATOPIC CHILD  AIM VIRTUAL PATIENT - ANAPHYLAXIS IN AN ATOPIC CHILD  * Overview * Accreditation * Register/Take course  A six-year-old patient with a history of...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 15
+                  },
+                  "pub_date": 1344816000.0,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/anaphylaxis-urticaria-and-angioedema/fdeia?utm_source=chatgpt.com",
+                  "title": "Food-Dependent Exercise-Induced Anaphylaxis | AAAAI Education Center",
+                  "snippet": "YOU ARE HERE  FOOD-DEPENDENT EXERCISE-INDUCED ANAPHYLAXIS  FOOD-DEPENDENT EXERCISE-INDUCED ANAPHYLAXIS  * Overview * Faculty * Accreditation * Register/Take course  This is an interactive course that...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 16
+                  },
+                  "pub_date": 1473724800.0,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/aim/content/aim-virtual-patient-anaphylaxis-atopic-child?utm_source=chatgpt.com",
+                  "title": "AIM Virtual Patient - Anaphylaxis in an Atopic Child (2015) | AAAAI Education Center",
+                  "snippet": "AIM VIRTUAL PATIENT - ANAPHYLAXIS IN AN ATOPIC CHILD (2015)  AIM VIRTUAL PATIENT - ANAPHYLAXIS IN AN ATOPIC CHILD (2015)  * Overview * Register/Take course  A six-year-old patient with a history of a...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 17
+                  },
+                  "pub_date": 1435622400.0,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/anaphylaxis-urticaria-and-angioedema/2808_2018VJC?utm_source=chatgpt.com",
+                  "title": "2808: Anaphylaxis Across the Allergy Spectrum (MOC) | AAAAI Education Center",
+                  "snippet": "YOU ARE HERE  2808: ANAPHYLAXIS ACROSS THE ALLERGY SPECTRUM (MOC)  2808: ANAPHYLAXIS ACROSS THE ALLERGY SPECTRUM (MOC)  * Overview * Faculty * Accreditation * Register/Take course  This course is par...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 18
+                  },
+                  "pub_date": 1527552000.0,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/resources-for-a-i-clinicians/reactionguidance_COVID-19?utm_source=chatgpt.com",
+                  "title": "AAAAI COVID-19 Response Task Force Guidance on Administration of COVID-19 Vaccines Related to Concerns of Allergic Reactions | AAAAI Education Center",
+                  "snippet": "YOU ARE HERE  AAAAI COVID-19 RESPONSE TASK FORCE GUIDANCE ON ADMINISTRATION OF COVID-19 VACCINES RELATED TO CONCERNS OF ALLERGIC REACTIONS  Given widespread reports of allergic and anaphylactic react...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 19
+                  },
+                  "pub_date": null,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/podcasts/2020PPanaphylaxis?utm_source=chatgpt.com",
+                  "title": "Episode 33: Anaphylaxis Update: What's New in the 2020 Practice Parameter | AAAAI Education Center",
+                  "snippet": "EPISODE 33: ANAPHYLAXIS UPDATE: WHAT'S NEW IN THE 2020 PRACTICE PARAMETER  EPISODE 33: ANAPHYLAXIS UPDATE: WHAT'S NEW IN THE 2020 PRACTICE PARAMETER  * Overview * Faculty * Accreditation * Register/T...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 20
+                  },
+                  "pub_date": 1597190400.0,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/anaphylaxis-urticaria-and-angioedema?utm_source=chatgpt.com",
+                  "title": "AAAAI Education Center |",
+                  "snippet": "AAAAI EDUCATION CENTER  ANAPHYLAXIS, URTICARIA, AND ANGIOEDEMA  ANAPHYLAXIS, URTICARIA, AND ANGIOEDEMA COURSES  Activity Title  | Credit  | Cost --- | --- | --- Hidden in Plain Sight: A Comprehensive...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 21
+                  },
+                  "pub_date": 1501545600.0,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/allergic-and-immunologic-skin-diseases/Allergic_immskindis?utm_source=chatgpt.com",
+                  "title": "Allergic and Immunologic Skin Diseases | AAAAI Education Center",
+                  "snippet": "YOU ARE HERE  ALLERGIC AND IMMUNOLOGIC SKIN DISEASES  ALLERGIC AND IMMUNOLOGIC SKIN DISEASE COURSES  Activity Title  | Credit  | Cost --- | --- | --- Skin in the Game: Clinical Pearls for Contact Der...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 22
+                  },
+                  "pub_date": 1501545600.0,
+                  "attribution": "aaaai.org"
+                },
+                {
+                  "type": "search_result",
+                  "url": "https://education.aaaai.org/comment/9?utm_source=chatgpt.com",
+                  "title": "AH Education | AAAAI Education Center",
+                  "snippet": "3) Finally - does anyone have a standarised chart/measure to look at symptom improvement in adults with EoE?    Thanks    Carina Venter  Carina Venter replied on Thu, 10/03/2013 - 5:12am  * Log in...",
+                  "ref_id": {
+                    "turn_index": 0,
+                    "ref_type": "search",
+                    "ref_index": 23
+                  },
+                  "pub_date": 1379376000.0,
+                  "attribution": "aaaai.org"
+                }
+              ]
+            }
+          ],
+          "safe_urls": [
+            "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf",
+            "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Allergist%20Resources/Statements%20and%20Practice%20Parameters/Food-allergy-guidelines-Dec-2010.pdf?utm_source=chatgpt.com",
+            "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf",
+            "https://www.aaaai.org/Aaaai/media/Media-Library-PDFs/Tools%20for%20the%20Public/School%20Tools/What-you-Should-Know-about-Anaphylaxis.pdf?utm_source=chatgpt.com",
+            "https://www.nhs.uk/conditions/anaphylaxis/",
+            "https://www.nhs.uk/conditions/anaphylaxis/?utm_source=chatgpt.com",
+            "https://www.nhs.uk/conditions/food-allergy/",
+            "https://www.nhs.uk/conditions/food-allergy/?utm_source=chatgpt.com"
+          ],
+          "citations": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "cot_version": "v5",
+          "request_id": "wfr_01a072cce9f0743687e1f6d417adb35b",
+          "message_type": "next",
+          "turn_exchange_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "working_turn_id": "fb24aa26-c9eb-4e5f-9abb-e647274f3ce7",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "2ab8f819-cb99-41fd-af93-4bfcfea602db",
+          "async_source": "saserver-japaneast-prod.fck9d:conversation-turn-fb24aa26-c9eb-4e5f-9abb-e647274f3ce7:JP",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "2ab8f819-cb99-41fd-af93-4bfcfea602db",
+      "children": [
+        "f7ec27d7-82b8-427e-b664-5b5768d07c54"
+      ]
+    },
+    "f7ec27d7-82b8-427e-b664-5b5768d07c54": {
+      "id": "f7ec27d7-82b8-427e-b664-5b5768d07c54",
+      "message": {
+        "id": "f7ec27d7-82b8-427e-b664-5b5768d07c54",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634227.528838,
+        "update_time": 1788634229.51672,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Bạn cho mình hỏi tại sao ăn tôm bầu lại bị dị ứng bình thường ăn các loại tôm khác không bị dị ứng hả bạn",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "d79776f8-575e-4c18-859a-dcfa33c9c53a",
+          "model_slug": "bidi",
+          "voice_session_id": "FBA7E6B8-40CB-4516-85C5-92718C33A78B",
+          "request_id": "5e3138f2-7f6a-491f-8222-eb667299b753.qEoGvY",
+          "message_source": null,
+          "turn_exchange_id": "e648e717-0961-4c27-af23-7f882e9e22f3",
+          "working_turn_id": "e648e717-0961-4c27-af23-7f882e9e22f3",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c9c67805-0a8f-464e-bdc7-60436c094282",
+      "children": [
+        "34b07521-8614-49f1-8e02-e2bfd8865f16"
+      ]
+    },
+    "34b07521-8614-49f1-8e02-e2bfd8865f16": {
+      "id": "34b07521-8614-49f1-8e02-e2bfd8865f16",
+      "message": {
+        "id": "34b07521-8614-49f1-8e02-e2bfd8865f16",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634227.802312,
+        "update_time": 1788634229.517141,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Để mình xem nhé... Có vài lý do có thể giải thích tại sao anh bị dị ứng với tôm bầu xanh mà không bị dị ứng với các loại tôm khác. Mỗi loại tôm có thành phần protein hơi khác. Cơ thể anh có thể nhạy với một số protein đặc thù trong tôm bầu xanh, mà các loại khác thì lại ít hơn. Thêm nữa, tôm cũng có thể mang theo yếu tố khác như là thức ăn của tôm, vi khuẩn, độc tố từ bảo quản không tốt hoặc là chất bảo quản trong quá trình chế biến, và những thứ đó cũng có thể gây ra phản ứng. Và dị ứng thì cũng có thể xuất hiện bất cứ lúc nào, dù trước đây ăn không sao. Mình hỏi thêm để xem có đúng là do tôm không nhé... anh ăn tôm bầu hấp hay nướng? Và triệu chứng bắt đầu sau bao lâu?",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "d79776f8-575e-4c18-859a-dcfa33c9c53a",
+          "model_slug": "bidi",
+          "voice_session_id": "FBA7E6B8-40CB-4516-85C5-92718C33A78B",
+          "turn_exchange_id": "e648e717-0961-4c27-af23-7f882e9e22f3",
+          "working_turn_id": "e648e717-0961-4c27-af23-7f882e9e22f3",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f7ec27d7-82b8-427e-b664-5b5768d07c54",
+      "children": [
+        "3ff6c48c-d63a-425f-95e4-65f18e2a05ba"
+      ]
+    },
+    "3ff6c48c-d63a-425f-95e4-65f18e2a05ba": {
+      "id": "3ff6c48c-d63a-425f-95e4-65f18e2a05ba",
+      "message": {
+        "id": "3ff6c48c-d63a-425f-95e4-65f18e2a05ba",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634251.639881,
+        "update_time": 1788634253.356897,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Chào bạn",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "69fd919e-99bd-47ca-af8a-7627add257ab",
+          "model_slug": "bidi",
+          "voice_session_id": "3D1987EE-744F-401A-8844-2AE9F6261979",
+          "request_id": "85bcd381-d2e5-4135-90c3-603247fb59c8.mjgwiL",
+          "message_source": null,
+          "turn_exchange_id": "f7fadb5b-5e86-47f7-b089-7646987e327c",
+          "working_turn_id": "f7fadb5b-5e86-47f7-b089-7646987e327c",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "34b07521-8614-49f1-8e02-e2bfd8865f16",
+      "children": [
+        "8894173b-1a3c-4c49-9cb8-901b38fd2bd8"
+      ]
+    },
+    "8894173b-1a3c-4c49-9cb8-901b38fd2bd8": {
+      "id": "8894173b-1a3c-4c49-9cb8-901b38fd2bd8",
+      "message": {
+        "id": "8894173b-1a3c-4c49-9cb8-901b38fd2bd8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634251.900301,
+        "update_time": 1788634253.357203,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Chào anh! Có gì mình giúp anh nhé?",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "69fd919e-99bd-47ca-af8a-7627add257ab",
+          "model_slug": "bidi",
+          "voice_session_id": "3D1987EE-744F-401A-8844-2AE9F6261979",
+          "turn_exchange_id": "f7fadb5b-5e86-47f7-b089-7646987e327c",
+          "working_turn_id": "f7fadb5b-5e86-47f7-b089-7646987e327c",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3ff6c48c-d63a-425f-95e4-65f18e2a05ba",
+      "children": [
+        "1f5e7741-d081-41ec-adfb-aea1dfa47d61"
+      ]
+    },
+    "1f5e7741-d081-41ec-adfb-aea1dfa47d61": {
+      "id": "1f5e7741-d081-41ec-adfb-aea1dfa47d61",
+      "message": {
+        "id": "1f5e7741-d081-41ec-adfb-aea1dfa47d61",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634328.686392,
+        "update_time": 1788634330.235243,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Chào bạn",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "c39c13f9-0816-4f83-9773-e1bc33cfa36f",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.qyObsR",
+          "message_source": null,
+          "turn_exchange_id": "014af3d6-2c52-400d-b1d4-8cbe1f475185",
+          "working_turn_id": "014af3d6-2c52-400d-b1d4-8cbe1f475185",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8894173b-1a3c-4c49-9cb8-901b38fd2bd8",
+      "children": [
+        "fcb68323-402e-4318-bacf-37cae948d741"
+      ]
+    },
+    "fcb68323-402e-4318-bacf-37cae948d741": {
+      "id": "fcb68323-402e-4318-bacf-37cae948d741",
+      "message": {
+        "id": "fcb68323-402e-4318-bacf-37cae948d741",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634329.000397,
+        "update_time": 1788634330.235683,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Chào anh! Anh cần mình hỗ trợ gì thêm không?",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "c39c13f9-0816-4f83-9773-e1bc33cfa36f",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "turn_exchange_id": "014af3d6-2c52-400d-b1d4-8cbe1f475185",
+          "working_turn_id": "014af3d6-2c52-400d-b1d4-8cbe1f475185",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1f5e7741-d081-41ec-adfb-aea1dfa47d61",
+      "children": [
+        "b4da0441-1a9f-48f0-b409-25ae8af7bc82"
+      ]
+    },
+    "b4da0441-1a9f-48f0-b409-25ae8af7bc82": {
+      "id": "b4da0441-1a9f-48f0-b409-25ae8af7bc82",
+      "message": {
+        "id": "b4da0441-1a9f-48f0-b409-25ae8af7bc82",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634337.048048,
+        "update_time": 1788634338.859272,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Chào bạn Mình ăn tôm... à tôm kho. Tôm kho khô",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "fcb68323-402e-4318-bacf-37cae948d741",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.fTyfBS",
+          "message_source": null,
+          "turn_exchange_id": "324907fa-2c9d-4d92-882f-524e0980467a",
+          "working_turn_id": "324907fa-2c9d-4d92-882f-524e0980467a",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fcb68323-402e-4318-bacf-37cae948d741",
+      "children": [
+        "2daf569d-c819-4665-83e7-3c4e8405de44"
+      ]
+    },
+    "2daf569d-c819-4665-83e7-3c4e8405de44": {
+      "id": "2daf569d-c819-4665-83e7-3c4e8405de44",
+      "message": {
+        "id": "2daf569d-c819-4665-83e7-3c4e8405de44",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634337.441937,
+        "update_time": 1788634338.85966,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Dạ.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "b4da0441-1a9f-48f0-b409-25ae8af7bc82",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "turn_exchange_id": "324907fa-2c9d-4d92-882f-524e0980467a",
+          "working_turn_id": "324907fa-2c9d-4d92-882f-524e0980467a",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b4da0441-1a9f-48f0-b409-25ae8af7bc82",
+      "children": [
+        "dfec4fae-0e67-4d9b-8eaf-263e11b708db"
+      ]
+    },
+    "dfec4fae-0e67-4d9b-8eaf-263e11b708db": {
+      "id": "dfec4fae-0e67-4d9b-8eaf-263e11b708db",
+      "message": {
+        "id": "dfec4fae-0e67-4d9b-8eaf-263e11b708db",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634398.163731,
+        "update_time": 1788634399.83743,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Sau đó bỏ tủ lạnh. Xong rồi dùng lò vi sóng hấp lên ăn thì bị dị ứng",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "2daf569d-c819-4665-83e7-3c4e8405de44",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.mJeclN",
+          "message_source": null,
+          "turn_exchange_id": "07bdc175-12fb-4c67-b15c-9c4ba5503822",
+          "working_turn_id": "07bdc175-12fb-4c67-b15c-9c4ba5503822",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2daf569d-c819-4665-83e7-3c4e8405de44",
+      "children": [
+        "8edced6f-0367-4c73-bd37-a7670b1dd358"
+      ]
+    },
+    "8edced6f-0367-4c73-bd37-a7670b1dd358": {
+      "id": "8edced6f-0367-4c73-bd37-a7670b1dd358",
+      "message": {
+        "id": "8edced6f-0367-4c73-bd37-a7670b1dd358",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634398.524652,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " À. Cái này để mình xem...",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "dfec4fae-0e67-4d9b-8eaf-263e11b708db",
+          "turn_exchange_id": "07bdc175-12fb-4c67-b15c-9c4ba5503822",
+          "is_thinking_preamble_message": true,
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "07bdc175-12fb-4c67-b15c-9c4ba5503822",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "dfec4fae-0e67-4d9b-8eaf-263e11b708db",
+      "children": [
+        "bb4f0931-cb59-4b3e-bcfd-7702a0de9539"
+      ]
+    },
+    "bb4f0931-cb59-4b3e-bcfd-7702a0de9539": {
+      "id": "bb4f0931-cb59-4b3e-bcfd-7702a0de9539",
+      "message": {
+        "id": "bb4f0931-cb59-4b3e-bcfd-7702a0de9539",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634398.52653,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for a couple of seconds"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_start_time": 1788634343.1510785,
+          "reasoning_end_time": 1788634345.3407135,
+          "finished_duration_sec": 2,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "chime_version": 1,
+          "reasoning_status": "reasoning_ended",
+          "reasoning_group_id": "d342cab5-aaa9-48ea-b351-adb8e305a944",
+          "turn_exchange_id": "07bdc175-12fb-4c67-b15c-9c4ba5503822",
+          "parent_id": "8edced6f-0367-4c73-bd37-a7670b1dd358",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "07bdc175-12fb-4c67-b15c-9c4ba5503822",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8edced6f-0367-4c73-bd37-a7670b1dd358",
+      "children": [
+        "08c33f72-af6f-49fe-a793-4d97f106a560"
+      ]
+    },
+    "08c33f72-af6f-49fe-a793-4d97f106a560": {
+      "id": "08c33f72-af6f-49fe-a793-4d97f106a560",
+      "message": {
+        "id": "08c33f72-af6f-49fe-a793-4d97f106a560",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634398.527918,
+        "update_time": 1788634399.837988,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " À. Cái này để mình xem... Tôm kho để tủ lạnh rồi hâm lại mà bị ngứa hoặc nổi mẩn thì có 2 khả năng chính. Một là dị ứng với tôm, dù trước đây không sao, nhưng mà cơ thể vẫn có thể dị ứng với một loại tôm nhất định. Hoặc là một lần ăn cụ thể. Hai là do bảo quản hoặc hâm không đều, gây kích ứng kiểu ngộ độc thực phẩm nhẹ. Trường hợp này thì nên ngưng ăn phần tôm đó, bỏ luôn phần còn lại và theo dõi sát triệu chứng. Nếu có sưng môi, khó thở, khò khè, chóng mặt hoặc mẩn lan nhanh thì nên đi cấp cứu ngay. Còn nếu chỉ ngứa nhẹ mà anh chưa uống thuốc và không có chống chỉ định, có thể hỏi dược sĩ về thuốc kháng dị ứng thông thường và tiếp tục theo dõi.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "bb4f0931-cb59-4b3e-bcfd-7702a0de9539",
+          "turn_exchange_id": "07bdc175-12fb-4c67-b15c-9c4ba5503822",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "07bdc175-12fb-4c67-b15c-9c4ba5503822",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "bb4f0931-cb59-4b3e-bcfd-7702a0de9539",
+      "children": [
+        "eef56dfd-c7f9-4b3b-b8c4-80fb9ae4ef40"
+      ]
+    },
+    "eef56dfd-c7f9-4b3b-b8c4-80fb9ae4ef40": {
+      "id": "eef56dfd-c7f9-4b3b-b8c4-80fb9ae4ef40",
+      "message": {
+        "id": "eef56dfd-c7f9-4b3b-b8c4-80fb9ae4ef40",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634433.034342,
+        "update_time": 1788634434.944631,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Mình bị sưng môi và ngứa toàn thân",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "08c33f72-af6f-49fe-a793-4d97f106a560",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.mAcQDx",
+          "message_source": null,
+          "turn_exchange_id": "b3875bba-b5fe-43a5-9788-300e457e3cea",
+          "working_turn_id": "b3875bba-b5fe-43a5-9788-300e457e3cea",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "08c33f72-af6f-49fe-a793-4d97f106a560",
+      "children": [
+        "9d355cc4-bc27-400b-9aca-f9045edb1742"
+      ]
+    },
+    "9d355cc4-bc27-400b-9aca-f9045edb1742": {
+      "id": "9d355cc4-bc27-400b-9aca-f9045edb1742",
+      "message": {
+        "id": "9d355cc4-bc27-400b-9aca-f9045edb1742",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634433.403377,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Anh đợi",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "eef56dfd-c7f9-4b3b-b8c4-80fb9ae4ef40",
+          "turn_exchange_id": "b3875bba-b5fe-43a5-9788-300e457e3cea",
+          "is_thinking_preamble_message": true,
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "b3875bba-b5fe-43a5-9788-300e457e3cea",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "eef56dfd-c7f9-4b3b-b8c4-80fb9ae4ef40",
+      "children": [
+        "1aa946e7-4e3a-46f2-af65-44d79bd714fe"
+      ]
+    },
+    "1aa946e7-4e3a-46f2-af65-44d79bd714fe": {
+      "id": "1aa946e7-4e3a-46f2-af65-44d79bd714fe",
+      "message": {
+        "id": "1aa946e7-4e3a-46f2-af65-44d79bd714fe",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634433.405053,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for a couple of seconds"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_start_time": 1788634401.9789767,
+          "reasoning_end_time": 1788634403.0769882,
+          "finished_duration_sec": 1,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "chime_version": 1,
+          "reasoning_status": "reasoning_ended",
+          "reasoning_group_id": "46858ef0-07ca-4c6d-9de5-dd0d77808129",
+          "turn_exchange_id": "b3875bba-b5fe-43a5-9788-300e457e3cea",
+          "parent_id": "9d355cc4-bc27-400b-9aca-f9045edb1742",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "b3875bba-b5fe-43a5-9788-300e457e3cea",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9d355cc4-bc27-400b-9aca-f9045edb1742",
+      "children": [
+        "bcbb6a1c-de67-4fbe-90c7-a82fb5a9f524"
+      ]
+    },
+    "bcbb6a1c-de67-4fbe-90c7-a82fb5a9f524": {
+      "id": "bcbb6a1c-de67-4fbe-90c7-a82fb5a9f524",
+      "message": {
+        "id": "bcbb6a1c-de67-4fbe-90c7-a82fb5a9f524",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634433.406617,
+        "update_time": 1788634434.944955,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Anh đợi chút... Với tình huống sưng môi kèm ngứa toàn thân sau khi ăn tôm như anh nói, đây có thể là phản ứng dị ứng nặng. Anh nên đi cấp cứu ngay hoặc gọi 115, nhất là nếu có bất kỳ khó thở, tức ngực, nghẹn cổ hoặc chóng mặt. Trong lúc chờ, ngừng ăn ngay, đừng tự lái xe, nhờ người nhà ở cạnh theo dõi giúp. Nếu trước đây bác sĩ có kê bút tiêm adrenaline thì dùng ngay theo hướng dẫn.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "1aa946e7-4e3a-46f2-af65-44d79bd714fe",
+          "turn_exchange_id": "b3875bba-b5fe-43a5-9788-300e457e3cea",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "b3875bba-b5fe-43a5-9788-300e457e3cea",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "1aa946e7-4e3a-46f2-af65-44d79bd714fe",
+      "children": [
+        "c2ad9e89-b300-4d17-a34b-d5416ac4eccb"
+      ]
+    },
+    "c2ad9e89-b300-4d17-a34b-d5416ac4eccb": {
+      "id": "c2ad9e89-b300-4d17-a34b-d5416ac4eccb",
+      "message": {
+        "id": "c2ad9e89-b300-4d17-a34b-d5416ac4eccb",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634478.728,
+        "update_time": 1788634480.496663,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Mà mình đã uống thuốc rồi nhưng mà bao lâu thì nó sẽ hết giảm triệu chứng",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "28ea5684-078c-457a-854b-43594c1eab83",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.tdxRbJ",
+          "message_source": null,
+          "turn_exchange_id": "7f397220-278b-4396-a884-2b6e351406e0",
+          "working_turn_id": "7f397220-278b-4396-a884-2b6e351406e0",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bcbb6a1c-de67-4fbe-90c7-a82fb5a9f524",
+      "children": [
+        "28ea5684-078c-457a-854b-43594c1eab83"
+      ]
+    },
+    "28ea5684-078c-457a-854b-43594c1eab83": {
+      "id": "28ea5684-078c-457a-854b-43594c1eab83",
+      "message": {
+        "id": "28ea5684-078c-457a-854b-43594c1eab83",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634479.100028,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for a couple of seconds"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_start_time": 1788634436.3321247,
+          "reasoning_end_time": 1788634437.6894617,
+          "finished_duration_sec": 1,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "chime_version": 1,
+          "reasoning_status": "reasoning_ended",
+          "reasoning_group_id": "90e2b710-6c2f-4fa2-9d77-4d94541acafb",
+          "turn_exchange_id": "7f397220-278b-4396-a884-2b6e351406e0",
+          "parent_id": "c2ad9e89-b300-4d17-a34b-d5416ac4eccb",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "7f397220-278b-4396-a884-2b6e351406e0",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c2ad9e89-b300-4d17-a34b-d5416ac4eccb",
+      "children": [
+        "eab37edc-496c-4fb5-999c-d8f813460b44"
+      ]
+    },
+    "eab37edc-496c-4fb5-999c-d8f813460b44": {
+      "id": "eab37edc-496c-4fb5-999c-d8f813460b44",
+      "message": {
+        "id": "eab37edc-496c-4fb5-999c-d8f813460b44",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634479.10164,
+        "update_time": 1788634480.49704,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Để mình coi. Anh, dù đã uống thuốc thì với triệu chứng sưng môi và ngứa toàn thân như anh nói thì vẫn nên đi cấp cứu ngay hoặc gọi 115. Thuốc uống có thể chỉ giảm ngứa sau khoảng 30 phút đến 1–2 giờ, nhưng không đảm bảo ngăn phản ứng nặng. Nếu đã 30–60 phút mà không giảm, hoặc sưng tăng lên, mẩn lan thêm, hoặc có khó thở, nghẹn cổ, chóng mặt thì đừng chờ đợi mà đi cấp cứu ngay nha anh. Trong lúc chờ, ngồi nghỉ, không nằm một mình, nhờ người ở cạnh và chuẩn bị thông tin đã ăn gì, uống thuốc gì, lúc nào, để báo cho bác sĩ.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "28ea5684-078c-457a-854b-43594c1eab83",
+          "turn_exchange_id": "7f397220-278b-4396-a884-2b6e351406e0",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "7f397220-278b-4396-a884-2b6e351406e0",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "28ea5684-078c-457a-854b-43594c1eab83",
+      "children": [
+        "fab813ff-07ba-4332-b45b-d1cba0000aa9"
+      ]
+    },
+    "fab813ff-07ba-4332-b45b-d1cba0000aa9": {
+      "id": "fab813ff-07ba-4332-b45b-d1cba0000aa9",
+      "message": {
+        "id": "fab813ff-07ba-4332-b45b-d1cba0000aa9",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634512.802275,
+        "update_time": 1788634514.736928,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " là ngồi hay là nằm",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "eab37edc-496c-4fb5-999c-d8f813460b44",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.FZDRlO",
+          "message_source": null,
+          "turn_exchange_id": "62f9ac16-8892-4b4e-a9f0-d31d0fa42dd9",
+          "working_turn_id": "62f9ac16-8892-4b4e-a9f0-d31d0fa42dd9",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "eab37edc-496c-4fb5-999c-d8f813460b44",
+      "children": [
+        "dcfce100-7d32-426d-a859-82b7f91a14e8"
+      ]
+    },
+    "dcfce100-7d32-426d-a859-82b7f91a14e8": {
+      "id": "dcfce100-7d32-426d-a859-82b7f91a14e8",
+      "message": {
+        "id": "dcfce100-7d32-426d-a859-82b7f91a14e8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634513.163686,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Để mình xem",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "fab813ff-07ba-4332-b45b-d1cba0000aa9",
+          "turn_exchange_id": "62f9ac16-8892-4b4e-a9f0-d31d0fa42dd9",
+          "is_thinking_preamble_message": true,
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "62f9ac16-8892-4b4e-a9f0-d31d0fa42dd9",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fab813ff-07ba-4332-b45b-d1cba0000aa9",
+      "children": [
+        "a69ef9e6-8b25-4c61-ab88-8a0cf8e43bc4"
+      ]
+    },
+    "a69ef9e6-8b25-4c61-ab88-8a0cf8e43bc4": {
+      "id": "a69ef9e6-8b25-4c61-ab88-8a0cf8e43bc4",
+      "message": {
+        "id": "a69ef9e6-8b25-4c61-ab88-8a0cf8e43bc4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634513.165492,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for a second"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_start_time": 1788634485.3624642,
+          "reasoning_end_time": 1788634486.2679925,
+          "finished_duration_sec": 0,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "chime_version": 1,
+          "reasoning_status": "reasoning_ended",
+          "reasoning_group_id": "88b83d29-f5ea-45c4-be7f-a4d556fa2e54",
+          "turn_exchange_id": "62f9ac16-8892-4b4e-a9f0-d31d0fa42dd9",
+          "parent_id": "dcfce100-7d32-426d-a859-82b7f91a14e8",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "62f9ac16-8892-4b4e-a9f0-d31d0fa42dd9",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "dcfce100-7d32-426d-a859-82b7f91a14e8",
+      "children": [
+        "1dda4593-3a9d-409a-9aa0-a0d92121aed5"
+      ]
+    },
+    "1dda4593-3a9d-409a-9aa0-a0d92121aed5": {
+      "id": "1dda4593-3a9d-409a-9aa0-a0d92121aed5",
+      "message": {
+        "id": "1dda4593-3a9d-409a-9aa0-a0d92121aed5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634513.166755,
+        "update_time": 1788634514.737312,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Để mình xem. Anh nên ngồi tựa lưng hoặc nằm nghiêng tùy cảm giác. Nếu đang tỉnh và thở bình thường thì ngồi tựa thoải mái, nới lỏng cổ áo. Nếu chóng mặt, lả người thì nằm xuống và kê chân cao nhẹ. Nếu buồn nôn hoặc sợ ói thì nằm nghiêng một bên để tránh sặc. Quan trọng là không ở một mình và đi cấp cứu ngay giúp mình nhé.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "a69ef9e6-8b25-4c61-ab88-8a0cf8e43bc4",
+          "turn_exchange_id": "62f9ac16-8892-4b4e-a9f0-d31d0fa42dd9",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "62f9ac16-8892-4b4e-a9f0-d31d0fa42dd9",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "a69ef9e6-8b25-4c61-ab88-8a0cf8e43bc4",
+      "children": [
+        "ff100f8a-93d2-4230-a74d-da7a805801af"
+      ]
+    },
+    "ff100f8a-93d2-4230-a74d-da7a805801af": {
+      "id": "ff100f8a-93d2-4230-a74d-da7a805801af",
+      "message": {
+        "id": "ff100f8a-93d2-4230-a74d-da7a805801af",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634530.527077,
+        "update_time": 1788634532.094327,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Huyết áp một trăm... một trăm ba mươi tám",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "1dda4593-3a9d-409a-9aa0-a0d92121aed5",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.WULGgG",
+          "message_source": null,
+          "turn_exchange_id": "c32748d8-bb12-4761-afba-3c1afc30774d",
+          "working_turn_id": "c32748d8-bb12-4761-afba-3c1afc30774d",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1dda4593-3a9d-409a-9aa0-a0d92121aed5",
+      "children": [
+        "936c3b7e-0558-4529-8431-6bddcfcc29b3"
+      ]
+    },
+    "936c3b7e-0558-4529-8431-6bddcfcc29b3": {
+      "id": "936c3b7e-0558-4529-8431-6bddcfcc29b3",
+      "message": {
+        "id": "936c3b7e-0558-4529-8431-6bddcfcc29b3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634530.882993,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Để",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "ff100f8a-93d2-4230-a74d-da7a805801af",
+          "turn_exchange_id": "c32748d8-bb12-4761-afba-3c1afc30774d",
+          "is_thinking_preamble_message": true,
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "c32748d8-bb12-4761-afba-3c1afc30774d",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ff100f8a-93d2-4230-a74d-da7a805801af",
+      "children": [
+        "a2d6f6ad-37fb-460d-9b40-b8ef5a70ada7"
+      ]
+    },
+    "a2d6f6ad-37fb-460d-9b40-b8ef5a70ada7": {
+      "id": "a2d6f6ad-37fb-460d-9b40-b8ef5a70ada7",
+      "message": {
+        "id": "a2d6f6ad-37fb-460d-9b40-b8ef5a70ada7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634530.885563,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for a second"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_start_time": 1788634517.9351225,
+          "reasoning_end_time": 1788634518.6711924,
+          "finished_duration_sec": 0,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "chime_version": 1,
+          "reasoning_status": "reasoning_ended",
+          "reasoning_group_id": "2aa1fff9-7bc3-4257-9b53-6f9935af4685",
+          "turn_exchange_id": "c32748d8-bb12-4761-afba-3c1afc30774d",
+          "parent_id": "936c3b7e-0558-4529-8431-6bddcfcc29b3",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "c32748d8-bb12-4761-afba-3c1afc30774d",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "936c3b7e-0558-4529-8431-6bddcfcc29b3",
+      "children": [
+        "651c733a-75a1-40ca-a681-d6a7e4fa885f"
+      ]
+    },
+    "651c733a-75a1-40ca-a681-d6a7e4fa885f": {
+      "id": "651c733a-75a1-40ca-a681-d6a7e4fa885f",
+      "message": {
+        "id": "651c733a-75a1-40ca-a681-d6a7e4fa885f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634530.887356,
+        "update_time": 1788634532.094642,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Để mình... Anh nói “một trăm... một trăm ba mươi tám” tức là huyết áp tâm thu khoảng 138 đúng không? Chỉ số đó tự nó thì...",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "a2d6f6ad-37fb-460d-9b40-b8ef5a70ada7",
+          "turn_exchange_id": "c32748d8-bb12-4761-afba-3c1afc30774d",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "c32748d8-bb12-4761-afba-3c1afc30774d",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "a2d6f6ad-37fb-460d-9b40-b8ef5a70ada7",
+      "children": [
+        "56d403de-afe3-4fc1-8128-f3ecfd56f0f9"
+      ]
+    },
+    "56d403de-afe3-4fc1-8128-f3ecfd56f0f9": {
+      "id": "56d403de-afe3-4fc1-8128-f3ecfd56f0f9",
+      "message": {
+        "id": "56d403de-afe3-4fc1-8128-f3ecfd56f0f9",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634528.8014767,
+        "update_time": 1788634565.173717,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Đúng rồi",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "651c733a-75a1-40ca-a681-d6a7e4fa885f",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.xxCQHk",
+          "message_source": null,
+          "turn_exchange_id": "7319470d-0730-4ec8-8e5d-907c92b8218e",
+          "working_turn_id": "7319470d-0730-4ec8-8e5d-907c92b8218e",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "651c733a-75a1-40ca-a681-d6a7e4fa885f",
+      "children": [
+        "ef0cda36-f417-437d-9ade-909ad87a7455"
+      ]
+    },
+    "ef0cda36-f417-437d-9ade-909ad87a7455": {
+      "id": "ef0cda36-f417-437d-9ade-909ad87a7455",
+      "message": {
+        "id": "ef0cda36-f417-437d-9ade-909ad87a7455",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634563.385623,
+        "update_time": 1788634565.174093,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Chỉ số đó tự nó thì chưa phải là huyết áp thấp, nhưng với sưng môi và ngứa toàn thân sau ăn tôm thì vẫn có nguy cơ phản vệ. Mình thật sự khuyên anh đi cấp cứu ngay để được theo dõi và xử trí kịp thời. Trong lúc chờ, anh ngồi tựa lưng thở chậm, nới lỏng áo, đừng đi lại nhiều, nhờ người nhà ở cạnh và gọi hỗ trợ y tế ngay giúp mình nhé. Nếu có khó thở, nghẹn cổ, tức ngực, chóng mặt, buồn nôn thì nói rõ khi gọi cấp cứu.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "56d403de-afe3-4fc1-8128-f3ecfd56f0f9",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "turn_exchange_id": "7319470d-0730-4ec8-8e5d-907c92b8218e",
+          "working_turn_id": "7319470d-0730-4ec8-8e5d-907c92b8218e",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "56d403de-afe3-4fc1-8128-f3ecfd56f0f9",
+      "children": [
+        "2a2ce8ae-7d20-494c-824c-45ae6d970fac"
+      ]
+    },
+    "2a2ce8ae-7d20-494c-824c-45ae6d970fac": {
+      "id": "2a2ce8ae-7d20-494c-824c-45ae6d970fac",
+      "message": {
+        "id": "2a2ce8ae-7d20-494c-824c-45ae6d970fac",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634605.367178,
+        "update_time": 1788634607.515597,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Ừ... Hiện tại là mình đang bị sưng... sưng cả mặt luôn",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "ef0cda36-f417-437d-9ade-909ad87a7455",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.LveGKi",
+          "message_source": null,
+          "turn_exchange_id": "4317384a-33c5-48f9-b83d-b8dca5d7dfcf",
+          "working_turn_id": "4317384a-33c5-48f9-b83d-b8dca5d7dfcf",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ef0cda36-f417-437d-9ade-909ad87a7455",
+      "children": [
+        "ffa5b5a9-950d-4b2d-b6f8-944c2166c01e"
+      ]
+    },
+    "ffa5b5a9-950d-4b2d-b6f8-944c2166c01e": {
+      "id": "ffa5b5a9-950d-4b2d-b6f8-944c2166c01e",
+      "message": {
+        "id": "ffa5b5a9-950d-4b2d-b6f8-944c2166c01e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634605.7399,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Cái này...",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "2a2ce8ae-7d20-494c-824c-45ae6d970fac",
+          "turn_exchange_id": "4317384a-33c5-48f9-b83d-b8dca5d7dfcf",
+          "is_thinking_preamble_message": true,
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "4317384a-33c5-48f9-b83d-b8dca5d7dfcf",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2a2ce8ae-7d20-494c-824c-45ae6d970fac",
+      "children": [
+        "4ec5c67d-09f8-4662-ae67-39144dc1f1d9"
+      ]
+    },
+    "4ec5c67d-09f8-4662-ae67-39144dc1f1d9": {
+      "id": "4ec5c67d-09f8-4662-ae67-39144dc1f1d9",
+      "message": {
+        "id": "4ec5c67d-09f8-4662-ae67-39144dc1f1d9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634605.741948,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for a couple of seconds"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_start_time": 1788634574.8225179,
+          "reasoning_end_time": 1788634576.132631,
+          "finished_duration_sec": 1,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "chime_version": 1,
+          "reasoning_status": "reasoning_ended",
+          "reasoning_group_id": "4278e21a-1a6c-4e82-9945-85ea296d9768",
+          "turn_exchange_id": "4317384a-33c5-48f9-b83d-b8dca5d7dfcf",
+          "parent_id": "ffa5b5a9-950d-4b2d-b6f8-944c2166c01e",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "4317384a-33c5-48f9-b83d-b8dca5d7dfcf",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ffa5b5a9-950d-4b2d-b6f8-944c2166c01e",
+      "children": [
+        "ee1dd6c7-1191-47aa-80fc-63b59f41a20c"
+      ]
+    },
+    "ee1dd6c7-1191-47aa-80fc-63b59f41a20c": {
+      "id": "ee1dd6c7-1191-47aa-80fc-63b59f41a20c",
+      "message": {
+        "id": "ee1dd6c7-1191-47aa-80fc-63b59f41a20c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634605.743429,
+        "update_time": 1788634607.516012,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Cái này... Anh ơi, sưng cả mặt là dấu hiệu nặng, rất có thể là phản vệ. Anh gọi 115 ngay hoặc nhờ người chở đi cấp cứu liền bây giờ. Trong lúc chờ, ngồi tựa lưng, nới lỏng quần áo, không tự lái xe, có người ở cạnh liên tục. Nếu bắt đầu khó thở, nghẹn cổ, khò khè, chóng mặt thì báo ngay cho người nhà rằng tôi nghi phản vệ cần cấp cứu ngay.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "4ec5c67d-09f8-4662-ae67-39144dc1f1d9",
+          "turn_exchange_id": "4317384a-33c5-48f9-b83d-b8dca5d7dfcf",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "4317384a-33c5-48f9-b83d-b8dca5d7dfcf",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "4ec5c67d-09f8-4662-ae67-39144dc1f1d9",
+      "children": [
+        "3fa1382d-72a4-4aa4-b794-678678cf7e04"
+      ]
+    },
+    "3fa1382d-72a4-4aa4-b794-678678cf7e04": {
+      "id": "3fa1382d-72a4-4aa4-b794-678678cf7e04",
+      "message": {
+        "id": "3fa1382d-72a4-4aa4-b794-678678cf7e04",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634645.492745,
+        "update_time": 1788634647.439718,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Cái này uống thuốc rồi đợi đi được không",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "ee1dd6c7-1191-47aa-80fc-63b59f41a20c",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.IzcGXs",
+          "message_source": null,
+          "turn_exchange_id": "ee18a43b-526b-4cd0-a660-bd28bb21a1bb",
+          "working_turn_id": "ee18a43b-526b-4cd0-a660-bd28bb21a1bb",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ee1dd6c7-1191-47aa-80fc-63b59f41a20c",
+      "children": [
+        "527883fb-2864-4e51-9382-f2a7dc493400"
+      ]
+    },
+    "527883fb-2864-4e51-9382-f2a7dc493400": {
+      "id": "527883fb-2864-4e51-9382-f2a7dc493400",
+      "message": {
+        "id": "527883fb-2864-4e51-9382-f2a7dc493400",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634645.866844,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Đợi",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "3fa1382d-72a4-4aa4-b794-678678cf7e04",
+          "turn_exchange_id": "ee18a43b-526b-4cd0-a660-bd28bb21a1bb",
+          "is_thinking_preamble_message": true,
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "ee18a43b-526b-4cd0-a660-bd28bb21a1bb",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3fa1382d-72a4-4aa4-b794-678678cf7e04",
+      "children": [
+        "7b647114-d4e9-4bc0-8c72-3503c92e7e0d"
+      ]
+    },
+    "7b647114-d4e9-4bc0-8c72-3503c92e7e0d": {
+      "id": "7b647114-d4e9-4bc0-8c72-3503c92e7e0d",
+      "message": {
+        "id": "7b647114-d4e9-4bc0-8c72-3503c92e7e0d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634645.868578,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for a second"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_start_time": 1788634608.9525483,
+          "reasoning_end_time": 1788634609.7487137,
+          "finished_duration_sec": 0,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "chime_version": 1,
+          "reasoning_status": "reasoning_ended",
+          "reasoning_group_id": "414e8fce-70ca-474e-889a-b97cfb88c7c1",
+          "turn_exchange_id": "ee18a43b-526b-4cd0-a660-bd28bb21a1bb",
+          "parent_id": "527883fb-2864-4e51-9382-f2a7dc493400",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "ee18a43b-526b-4cd0-a660-bd28bb21a1bb",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "527883fb-2864-4e51-9382-f2a7dc493400",
+      "children": [
+        "d30e42e5-ea2e-45cc-9bc1-9e868f5442f9"
+      ]
+    },
+    "d30e42e5-ea2e-45cc-9bc1-9e868f5442f9": {
+      "id": "d30e42e5-ea2e-45cc-9bc1-9e868f5442f9",
+      "message": {
+        "id": "d30e42e5-ea2e-45cc-9bc1-9e868f5442f9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634645.869901,
+        "update_time": 1788634647.440111,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Đợi mình... Không, không nên đợi đâu anh. Sưng cả mặt sau khi ăn tôm là dấu hiệu nặng rồi, thuốc uống có thể không đủ và tình trạng có thể xấu đi bất ngờ. Bây giờ anh gọi 115 ngay hoặc nhờ người đưa đi cấp cứu ngay giúp mình, đừng chờ thuốc ngấm. Ngồi tựa lưng, nới lỏng áo, có người ở cạnh, không tự lái xe. Nói rõ với người nhà hoặc cấp cứu rằng: ‘Tôi sưng mặt, sưng môi, ngứa toàn thân sau khi ăn tôm, nghi phản vệ.’ Cái này ưu tiên đi viện ngay nha.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "7b647114-d4e9-4bc0-8c72-3503c92e7e0d",
+          "turn_exchange_id": "ee18a43b-526b-4cd0-a660-bd28bb21a1bb",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "ee18a43b-526b-4cd0-a660-bd28bb21a1bb",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "7b647114-d4e9-4bc0-8c72-3503c92e7e0d",
+      "children": [
+        "3d93d5bf-4575-4a94-879c-afe2f4264bc6"
+      ]
+    },
+    "3d93d5bf-4575-4a94-879c-afe2f4264bc6": {
+      "id": "3d93d5bf-4575-4a94-879c-afe2f4264bc6",
+      "message": {
+        "id": "3d93d5bf-4575-4a94-879c-afe2f4264bc6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634947.207952,
+        "update_time": 1788634948.884821,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Tốt",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "d30e42e5-ea2e-45cc-9bc1-9e868f5442f9",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.jNNMDg",
+          "message_source": null,
+          "turn_exchange_id": "46462f24-8479-42aa-9df5-57b1f1631c69",
+          "working_turn_id": "46462f24-8479-42aa-9df5-57b1f1631c69",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d30e42e5-ea2e-45cc-9bc1-9e868f5442f9",
+      "children": [
+        "ed0cbc1a-ed2d-41a6-9c69-a5d10087e167"
+      ]
+    },
+    "ed0cbc1a-ed2d-41a6-9c69-a5d10087e167": {
+      "id": "ed0cbc1a-ed2d-41a6-9c69-a5d10087e167",
+      "message": {
+        "id": "ed0cbc1a-ed2d-41a6-9c69-a5d10087e167",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634947.550575,
+        "update_time": 1788634948.885131,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Tốt, anh giữ máy và gọi115 ngay giúp mình nha. Không tự lái xe, nhờ người ở cạnh. Mang theo thuốc đã uống để bác sĩ xem, nói rõ là sưng mặt, sưng môi, ngứa toàn thân sau khi ăn tôm. Đi ngay giúp mình nhé.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "3d93d5bf-4575-4a94-879c-afe2f4264bc6",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "turn_exchange_id": "46462f24-8479-42aa-9df5-57b1f1631c69",
+          "working_turn_id": "46462f24-8479-42aa-9df5-57b1f1631c69",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3d93d5bf-4575-4a94-879c-afe2f4264bc6",
+      "children": [
+        "c8946d11-1b7f-47d0-b641-d80c427e22ee"
+      ]
+    },
+    "c8946d11-1b7f-47d0-b641-d80c427e22ee": {
+      "id": "c8946d11-1b7f-47d0-b641-d80c427e22ee",
+      "message": {
+        "id": "c8946d11-1b7f-47d0-b641-d80c427e22ee",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634982.166248,
+        "update_time": 1788634984.99045,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Hiện tại là mình đã bị sưng môi",
+              "direction": "in",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "ed0cbc1a-ed2d-41a6-9c69-a5d10087e167",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "request_id": "b094ea62-43fb-4ea5-8a50-26e6ebea60d9.wiHHTl",
+          "message_source": null,
+          "turn_exchange_id": "4fd9ab93-c884-4335-9c0f-cfacef1b0763",
+          "working_turn_id": "4fd9ab93-c884-4335-9c0f-cfacef1b0763",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ed0cbc1a-ed2d-41a6-9c69-a5d10087e167",
+      "children": [
+        "d986fa08-55a2-4ef0-a29a-e1be7e49be79"
+      ]
+    },
+    "d986fa08-55a2-4ef0-a29a-e1be7e49be79": {
+      "id": "d986fa08-55a2-4ef0-a29a-e1be7e49be79",
+      "message": {
+        "id": "d986fa08-55a2-4ef0-a29a-e1be7e49be79",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634982.586789,
+        "update_time": null,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Đợt mình xem...",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "c8946d11-1b7f-47d0-b641-d80c427e22ee",
+          "turn_exchange_id": "4fd9ab93-c884-4335-9c0f-cfacef1b0763",
+          "is_thinking_preamble_message": true,
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "4fd9ab93-c884-4335-9c0f-cfacef1b0763",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c8946d11-1b7f-47d0-b641-d80c427e22ee",
+      "children": [
+        "10d6e282-1f88-4e46-b38d-4de97cbd78f2"
+      ]
+    },
+    "10d6e282-1f88-4e46-b38d-4de97cbd78f2": {
+      "id": "10d6e282-1f88-4e46-b38d-4de97cbd78f2",
+      "message": {
+        "id": "10d6e282-1f88-4e46-b38d-4de97cbd78f2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634982.58831,
+        "update_time": null,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Worked for a second"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_start_time": 1788634953.6343646,
+          "reasoning_end_time": 1788634954.5720925,
+          "finished_duration_sec": 0,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "chime_version": 1,
+          "reasoning_status": "reasoning_ended",
+          "reasoning_group_id": "21c14374-1a49-4e7f-a417-d29feb6bbc57",
+          "turn_exchange_id": "4fd9ab93-c884-4335-9c0f-cfacef1b0763",
+          "parent_id": "d986fa08-55a2-4ef0-a29a-e1be7e49be79",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "4fd9ab93-c884-4335-9c0f-cfacef1b0763",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d986fa08-55a2-4ef0-a29a-e1be7e49be79",
+      "children": [
+        "9a049487-268e-4eb9-a0fe-2518802bb58b"
+      ]
+    },
+    "9a049487-268e-4eb9-a0fe-2518802bb58b": {
+      "id": "9a049487-268e-4eb9-a0fe-2518802bb58b",
+      "message": {
+        "id": "9a049487-268e-4eb9-a0fe-2518802bb58b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788634982.589445,
+        "update_time": 1788634984.990774,
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            {
+              "content_type": "audio_transcription",
+              "text": " Đợt mình xem... Anh, đã sưng môi rồi thì không chờ nữa nha. Gọi 115 ngay hoặc nhờ người nhà đưa đi cấp cứu ngay. Không tự chạy xe, không nằm một mình. Nói rõ với người nhà: ‘Tôi sưng môi, sưng mặt, ngứa toàn thân sau ăn tôm, nghi phản vệ.’ Giờ ưu tiên đi viện ngay nhé. Mình dừng ở đây để anh tập trung gọi cấp cứu liền nhé.",
+              "direction": "out",
+              "decoding_id": null
+            }
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "bidi_voice_fem_message": true,
+          "voice_mode_message": true,
+          "parent_id": "10d6e282-1f88-4e46-b38d-4de97cbd78f2",
+          "turn_exchange_id": "4fd9ab93-c884-4335-9c0f-cfacef1b0763",
+          "model_slug": "bidi",
+          "voice_session_id": "9ED9AA4F-95F0-4231-99D9-43F1372652B5",
+          "working_turn_id": "4fd9ab93-c884-4335-9c0f-cfacef1b0763",
+          "model_switcher_deny": [],
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "10d6e282-1f88-4e46-b38d-4de97cbd78f2",
+      "children": []
+    }
+  },
+  "current_node": "9a049487-268e-4eb9-a0fe-2518802bb58b",
+  "context_truncation_continuation": null
+}

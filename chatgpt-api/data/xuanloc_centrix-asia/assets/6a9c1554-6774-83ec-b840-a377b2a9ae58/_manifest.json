@@ -1,0 +1,26 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_00000000570481f8a2b0f2c92977c8a7",
+    "content_type": "image_asset_pointer",
+    "width": 1242,
+    "height": 2688,
+    "size_bytes": 958926
+  },
+  {
+    "type": "image",
+    "file_id": "file_0000000024d4820ca00e02f18c04309f",
+    "content_type": "image_asset_pointer",
+    "width": 1479,
+    "height": 927,
+    "size_bytes": 111410
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000adcc82119bc33d4b87e2aa5d",
+    "content_type": "image_asset_pointer",
+    "width": 941,
+    "height": 1672,
+    "size_bytes": 1287333
+  }
+]

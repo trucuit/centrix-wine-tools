@@ -1,0 +1,18 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_00000000d4d88230b3951a8985a0fb49",
+    "content_type": "image_asset_pointer",
+    "width": 2048,
+    "height": 1109,
+    "size_bytes": 477185
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000395c8211817ae249393a4968",
+    "content_type": "image_asset_pointer",
+    "width": 1122,
+    "height": 1402,
+    "size_bytes": 1562100
+  }
+]

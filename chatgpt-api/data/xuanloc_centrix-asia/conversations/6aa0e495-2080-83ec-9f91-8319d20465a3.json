@@ -1,0 +1,191 @@
+{
+  "title": "Chào hỏi hỗ trợ",
+  "create_time": 1788929175.221759,
+  "update_time": 1788929193.58061,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6aa0e495-2080-83ec-9f91-8319d20465a3",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://huggingface.co/huggingface",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://www.openai.com",
+    "https://www.apple.com/",
+    "https://docs.google.com/document/d/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "ab6615f4-a49e-4b6f-a1c2-651fe212d0db"
+      ]
+    },
+    "ab6615f4-a49e-4b6f-a1c2-651fe212d0db": {
+      "id": "ab6615f4-a49e-4b6f-a1c2-651fe212d0db",
+      "message": {
+        "id": "ab6615f4-a49e-4b6f-a1c2-651fe212d0db",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788929174.878,
+        "update_time": 1788929192.766751,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Chào bạn"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-f12139d6-bcdd-4cab-bf75-39942db09c50:NZ",
+          "request_id": "wfr_01a0847ce6ae754dac40721318782928",
+          "message_source": null,
+          "turn_exchange_id": "f12139d6-bcdd-4cab-bf75-39942db09c50",
+          "working_turn_id": "f12139d6-bcdd-4cab-bf75-39942db09c50",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "d7cd11eb-01c6-4590-bc79-6ec73c4db557"
+      ]
+    },
+    "d7cd11eb-01c6-4590-bc79-6ec73c4db557": {
+      "id": "d7cd11eb-01c6-4590-bc79-6ec73c4db557",
+      "message": {
+        "id": "d7cd11eb-01c6-4590-bc79-6ec73c4db557",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788929188.02298,
+        "update_time": 1788929188.02298,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong 2 giây"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 1,
+          "reasoning_start_time": 1788929186.3635497,
+          "reasoning_end_time": 1788929188.01533,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0847ce6ae754dac40721318782928",
+          "message_type": "next",
+          "turn_exchange_id": "f12139d6-bcdd-4cab-bf75-39942db09c50",
+          "working_turn_id": "f12139d6-bcdd-4cab-bf75-39942db09c50",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "41d12214-ffbe-4e20-a3cc-8a245a87d02b",
+          "hide_inline_actions": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-f12139d6-bcdd-4cab-bf75-39942db09c50:NZ",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ab6615f4-a49e-4b6f-a1c2-651fe212d0db",
+      "children": [
+        "072efed4-fe5e-4c98-8c6f-cea4d0687c74"
+      ]
+    },
+    "072efed4-fe5e-4c98-8c6f-cea4d0687c74": {
+      "id": "072efed4-fe5e-4c98-8c6f-cea4d0687c74",
+      "message": {
+        "id": "072efed4-fe5e-4c98-8c6f-cea4d0687c74",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788929188.02774,
+        "update_time": 1788929192.576796,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Chào anh 👋 Hôm nay anh cần mình hỗ trợ gì ạ?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a0847ce6ae754dac40721318782928",
+          "message_type": "next",
+          "turn_exchange_id": "f12139d6-bcdd-4cab-bf75-39942db09c50",
+          "working_turn_id": "f12139d6-bcdd-4cab-bf75-39942db09c50",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "d7cd11eb-01c6-4590-bc79-6ec73c4db557",
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-f12139d6-bcdd-4cab-bf75-39942db09c50:NZ",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "d7cd11eb-01c6-4590-bc79-6ec73c4db557",
+      "children": []
+    }
+  },
+  "current_node": "072efed4-fe5e-4c98-8c6f-cea4d0687c74",
+  "context_truncation_continuation": null
+}

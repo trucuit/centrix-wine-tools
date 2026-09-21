@@ -1,0 +1,25 @@
+[
+  {
+    "type": "image",
+    "file_id": "file_0000000072e88211b90ac6117744c713",
+    "content_type": "image_asset_pointer",
+    "width": 1977,
+    "height": 335,
+    "size_bytes": 69264
+  },
+  {
+    "type": "attachment",
+    "file_id": "file_00000000ee3081f5aea09a946daa8082",
+    "name": "Hop_dong_lao_dong_24_thang_Le_Phan_Trung_Bao (1).docx",
+    "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 26232
+  },
+  {
+    "type": "image",
+    "file_id": "file_00000000323882118f6255b68667568c",
+    "content_type": "image_asset_pointer",
+    "width": 1861,
+    "height": 1043,
+    "size_bytes": 225206
+  }
+]

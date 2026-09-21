@@ -1,0 +1,191 @@
+{
+  "title": "Giải thích lỗi model quá tải",
+  "create_time": 1788763256.779295,
+  "update_time": 1788763268.865429,
+  "moderation_results": [],
+  "plugin_ids": null,
+  "conversation_id": "6a9e5c72-8244-83ec-a9c5-f3b13b4f9a9f",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://www.openai.com",
+    "https://huggingface.co/huggingface",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://www.apple.com/",
+    "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
+    "https://docs.google.com/document/d/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "gpt-5-6-thinking",
+  "atlas_mode_enabled": null,
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_temporary_chat": false,
+  "is_do_not_remember": false,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "cbeb675f-bfcc-45b8-8105-d694c57c611d"
+      ]
+    },
+    "cbeb675f-bfcc-45b8-8105-d694c57c611d": {
+      "id": "cbeb675f-bfcc-45b8-8105-d694c57c611d",
+      "message": {
+        "id": "cbeb675f-bfcc-45b8-8105-d694c57c611d",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788763252.858,
+        "update_time": 1788763268.837247,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Selected model is at capacity. Please try a different model.\n\nRetry in 5s\n\nnày là lỗi gì bạn"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_sources": [],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-241e07fa-3198-4550-b6c0-bfacf2e7c436:NZ",
+          "request_id": "wfr_01a07a991f6c798c97472f0f7802228b",
+          "message_source": null,
+          "turn_exchange_id": "241e07fa-3198-4550-b6c0-bfacf2e7c436",
+          "working_turn_id": "241e07fa-3198-4550-b6c0-bfacf2e7c436",
+          "can_save": false
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "22a87c12-7938-47de-9ba3-ca3e407de47a"
+      ]
+    },
+    "22a87c12-7938-47de-9ba3-ca3e407de47a": {
+      "id": "22a87c12-7938-47de-9ba3-ca3e407de47a",
+      "message": {
+        "id": "22a87c12-7938-47de-9ba3-ca3e407de47a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788763260.654417,
+        "update_time": 1788763260.654417,
+        "content": {
+          "content_type": "reasoning_recap",
+          "content": "Đã xử lý trong vài giây"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "reasoning_status": "reasoning_ended",
+          "finished_duration_sec": 3,
+          "reasoning_start_time": 1788763256.6939008,
+          "reasoning_end_time": 1788763260.6496654,
+          "reasoning_recap_type": "hide_all",
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a07a991f6c798c97472f0f7802228b",
+          "message_type": "next",
+          "turn_exchange_id": "241e07fa-3198-4550-b6c0-bfacf2e7c436",
+          "working_turn_id": "241e07fa-3198-4550-b6c0-bfacf2e7c436",
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": false,
+          "parent_id": "b7f4bcc0-f444-4ce5-ab67-c696981e0279",
+          "hide_inline_actions": true,
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-241e07fa-3198-4550-b6c0-bfacf2e7c436:NZ",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cbeb675f-bfcc-45b8-8105-d694c57c611d",
+      "children": [
+        "286be05a-a694-499c-94c6-6b49208a3dd1"
+      ]
+    },
+    "286be05a-a694-499c-94c6-6b49208a3dd1": {
+      "id": "286be05a-a694-499c-94c6-6b49208a3dd1",
+      "message": {
+        "id": "286be05a-a694-499c-94c6-6b49208a3dd1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1788763260.657739,
+        "update_time": 1788763268.440839,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Đây là lỗi **model đang quá tải / hết năng lực phục vụ tạm thời** bạn ạ.\n\nThông báo:\n\n> **Selected model is at capacity. Please try a different model. Retry in 5s**\n\nnghĩa là model bạn đang chọn hiện có quá nhiều request cùng lúc, nên hệ thống chưa nhận thêm yêu cầu mới. Đây **không nhất thiết là lỗi tài khoản hay hết credit**.\n\nBạn có thể xử lý bằng cách:\n- Chờ khoảng **5–30 giây** rồi Retry.\n- Đổi sang **model khác** rồi thử lại.\n- Nếu bạn đang gọi qua API/CetriX, nên thêm cơ chế **retry + exponential backoff**.\n- Nếu lỗi xuất hiện liên tục nhiều phút thì kiểm tra xem model đó có đang bị giới hạn theo khu vực/provider hoặc có sự cố dịch vụ hay không.\n\nNếu bạn gửi mình **ảnh lỗi đầy đủ hoặc đoạn log/API response**, mình có thể xác định giúp bạn đây là lỗi từ **OpenAI, provider trung gian hay CetriX**."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "resolved_model_slug": "gpt-5-6-thinking",
+          "search_result_groups": [],
+          "cot_version": "v5",
+          "conversation_followup_suggestions_eligible": true,
+          "request_id": "wfr_01a07a991f6c798c97472f0f7802228b",
+          "message_type": "next",
+          "turn_exchange_id": "241e07fa-3198-4550-b6c0-bfacf2e7c436",
+          "working_turn_id": "241e07fa-3198-4550-b6c0-bfacf2e7c436",
+          "model_slug": "gpt-5-6-thinking",
+          "default_model_slug": "gpt-5-6-thinking",
+          "thinking_effort": "max",
+          "can_save": true,
+          "parent_id": "22a87c12-7938-47de-9ba3-ca3e407de47a",
+          "async_source": "saserver-newzealandnorth-prod.fck9d:conversation-turn-241e07fa-3198-4550-b6c0-bfacf2e7c436:NZ",
+          "model_switcher_deny": []
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "22a87c12-7938-47de-9ba3-ca3e407de47a",
+      "children": []
+    }
+  },
+  "current_node": "286be05a-a694-499c-94c6-6b49208a3dd1",
+  "context_truncation_continuation": null
+}
