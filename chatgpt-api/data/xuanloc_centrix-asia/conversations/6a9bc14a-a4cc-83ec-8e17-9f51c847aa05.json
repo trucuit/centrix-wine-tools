@@ -11,10 +11,10 @@
   "is_archived": false,
   "is_starred": null,
   "safe_urls": [
-    "https://huggingface.co/huggingface",
-    "https://www.apple.com/",
     "https://www.openai.com",
     "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://huggingface.co/huggingface",
+    "https://www.apple.com/",
     "https://docs.google.com/document/d/"
   ],
   "blocked_urls": [],

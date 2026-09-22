@@ -5,7 +5,8 @@
     "content_type": "image_asset_pointer",
     "width": 1122,
     "height": 1402,
-    "size_bytes": 1548367
+    "size_bytes": 1548367,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9ad32e-1f74-83ec-be95-58a6fa208951/Báo giá dịch vụ chatgpt.png"
   },
   {
     "type": "image",
@@ -13,7 +14,8 @@
     "content_type": "image_asset_pointer",
     "width": 1122,
     "height": 1402,
-    "size_bytes": 1493226
+    "size_bytes": 1493226,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9ad32e-1f74-83ec-be95-58a6fa208951/image-gen-1(20260904-143035).png"
   },
   {
     "type": "image",
@@ -21,7 +23,8 @@
     "content_type": "image_asset_pointer",
     "width": 1122,
     "height": 1402,
-    "size_bytes": 1591550
+    "size_bytes": 1591550,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9ad32e-1f74-83ec-be95-58a6fa208951/image-gen-2(10).png"
   },
   {
     "type": "image",
@@ -29,6 +32,7 @@
     "content_type": "image_asset_pointer",
     "width": 1122,
     "height": 1402,
-    "size_bytes": 1595025
+    "size_bytes": 1595025,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9ad32e-1f74-83ec-be95-58a6fa208951/image-gen-3(9).png"
   }
 ]

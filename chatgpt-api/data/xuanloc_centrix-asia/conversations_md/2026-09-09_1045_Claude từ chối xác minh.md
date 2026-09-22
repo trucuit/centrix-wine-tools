@@ -23,11 +23,11 @@ blockquote h3 {
 > ### 👤 User · 2026-09-09 10:46:32
 >
 >
-> > 🖼️ *Image (589x1280)* — `file_00000000bcd4820b915ae25bc…`
+> ![Image (589x1280)](../assets/6aa0d675-86c0-83ec-810c-b558e129fb54/2fbc1b94-9b6b-49b3-a457-012334e918e7.png)
 >
 > claude từ chối xác minh thi sao bạn
 
-> 📎 *2fbc1b94-9b6b-49b3-a457-012334e918e7.png* (`image/png`) — `file_00000000bcd4820…`
+> ![2fbc1b94-9b6b-49b3-a457-012334e918e7.png](../assets/6aa0d675-86c0-83ec-810c-b558e129fb54/2fbc1b94-9b6b-49b3-a457-012334e918e7.png)
 
 ---
 

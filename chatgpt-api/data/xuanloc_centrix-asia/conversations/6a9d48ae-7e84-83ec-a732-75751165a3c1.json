@@ -11,12 +11,12 @@
   "is_archived": false,
   "is_starred": null,
   "safe_urls": [
-    "https://www.apple.com/",
-    "https://www.openai.com",
+    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
     "https://docs.google.com/document/d/",
-    "https://developers.openai.com/api/docs/models/gpt-6-astra",
     "https://huggingface.co/huggingface",
-    "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/"
+    "https://www.openai.com",
+    "https://www.apple.com/",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra"
   ],
   "blocked_urls": [],
   "default_model_slug": "gpt-5-6-thinking",

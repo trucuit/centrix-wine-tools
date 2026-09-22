@@ -23,11 +23,11 @@ blockquote h3 {
 > ### 👤 User · 2026-09-08 17:09:53
 >
 >
-> > 🖼️ *Image (1564x1128)* — `file_00000000874881f8acac20b9e…`
+> ![Image (1564x1128)](../assets/6a9fdef2-455c-83ec-a5b3-008ddf9ff01c/7c104fde-6e99-4c3f-83d0-af8c572bd6bd.png)
 >
 > đọc thông tin giúp mình
 
-> 📎 *7c104fde-6e99-4c3f-83d0-af8c572bd6bd.png* (`image/png`) — `file_00000000874881f…`
+> ![7c104fde-6e99-4c3f-83d0-af8c572bd6bd.png](../assets/6a9fdef2-455c-83ec-a5b3-008ddf9ff01c/7c104fde-6e99-4c3f-83d0-af8c572bd6bd.png)
 
 ---
 
@@ -45,9 +45,9 @@ Anh chỉ gửi ID và password này cho người hỗ trợ mà anh tin tưởn
 > ### 👤 User · 2026-09-08 17:37:21
 >
 >
-> > 🖼️ *Image (1722x1096)* — `file_00000000e764820bbfbe9eb44…`
+> ![Image (1722x1096)](../assets/6a9fdef2-455c-83ec-a5b3-008ddf9ff01c/f03af28b-f69c-453b-8cb8-aceeae4d1cea.png)
 
-> 📎 *f03af28b-f69c-453b-8cb8-aceeae4d1cea.png* (`image/png`) — `file_00000000e764820…`
+> ![f03af28b-f69c-453b-8cb8-aceeae4d1cea.png](../assets/6a9fdef2-455c-83ec-a5b3-008ddf9ff01c/f03af28b-f69c-453b-8cb8-aceeae4d1cea.png)
 
 ---
 

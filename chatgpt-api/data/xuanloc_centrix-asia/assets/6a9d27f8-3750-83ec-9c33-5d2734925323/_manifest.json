@@ -5,14 +5,16 @@
     "content_type": "image_asset_pointer",
     "width": 1977,
     "height": 335,
-    "size_bytes": 69264
+    "size_bytes": 69264,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9d27f8-3750-83ec-9c33-5d2734925323/d0dee967-8f2c-4bfd-9d36-b2b839e63e37.png"
   },
   {
     "type": "attachment",
     "file_id": "file_00000000ee3081f5aea09a946daa8082",
     "name": "Hop_dong_lao_dong_24_thang_Le_Phan_Trung_Bao (1).docx",
     "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "size": 26232
+    "size": 26232,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9d27f8-3750-83ec-9c33-5d2734925323/Hop_dong_lao_dong_24_thang_Le_Phan_Trung_Bao (1).docx"
   },
   {
     "type": "image",
@@ -20,6 +22,7 @@
     "content_type": "image_asset_pointer",
     "width": 1861,
     "height": 1043,
-    "size_bytes": 225206
+    "size_bytes": 225206,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9d27f8-3750-83ec-9c33-5d2734925323/4717906e-876a-46cd-9276-81d17f8c0725.png"
   }
 ]

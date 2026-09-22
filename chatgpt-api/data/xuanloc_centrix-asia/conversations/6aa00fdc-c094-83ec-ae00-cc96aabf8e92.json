@@ -12,10 +12,10 @@
   "is_starred": null,
   "safe_urls": [
     "https://huggingface.co/huggingface",
+    "https://ran-san-moi-arcade.business-8426.chatgpt.site",
     "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
-    "https://developers.openai.com/api/docs/models/gpt-6-astra",
     "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
-    "https://ran-san-moi-arcade.business-8426.chatgpt.site"
+    "https://developers.openai.com/api/docs/models/gpt-6-astra"
   ],
   "blocked_urls": [],
   "default_model_slug": "gpt-6-astra-wm",

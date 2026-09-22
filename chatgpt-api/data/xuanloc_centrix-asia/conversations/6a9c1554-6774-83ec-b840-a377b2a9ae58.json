@@ -11,11 +11,11 @@
   "is_archived": false,
   "is_starred": null,
   "safe_urls": [
-    "https://docs.google.com/document/d/",
+    "https://www.apple.com/",
     "https://huggingface.co/huggingface",
     "https://www.openai.com",
-    "https://www.apple.com/",
-    "https://developers.openai.com/api/docs/models/gpt-6-astra"
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://docs.google.com/document/d/"
   ],
   "blocked_urls": [],
   "default_model_slug": "gpt-5-6-thinking",

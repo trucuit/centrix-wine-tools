@@ -11,12 +11,12 @@
   "is_archived": false,
   "is_starred": null,
   "safe_urls": [
-    "https://huggingface.co/huggingface",
-    "https://www.openai.com",
-    "https://aka.ms/28086ae7fa8041128a8bdcd2",
-    "https://docs.google.com/document/d/",
     "https://www.apple.com/",
-    "https://developers.openai.com/api/docs/models/gpt-6-astra"
+    "https://docs.google.com/document/d/",
+    "https://www.openai.com",
+    "https://huggingface.co/huggingface",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://aka.ms/28086ae7fa8041128a8bdcd2"
   ],
   "blocked_urls": [],
   "default_model_slug": "gpt-5-6-thinking",

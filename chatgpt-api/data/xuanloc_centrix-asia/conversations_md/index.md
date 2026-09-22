@@ -1,6 +1,6 @@
 # 📚 ChatGPT Conversations Index
 
-> Generated: 2026-09-22 00:20:43 · Sorted: **newest first**
+> Generated: 2026-09-21 23:48:17 · Sorted: **newest first**
 
 | # | Date | Title | Model | Messages |
 |---|------|-------|-------|----------|
@@ -72,35 +72,5 @@
 | 66 | 2026-09-09 17:26:54 | [Tính giá trước VAT](2026-09-09_1726_Tính giá trước VAT.md) | `gpt-5-6-thinking` | 12 |
 | 67 | 2026-09-09 15:01:54 | [Đề nghị thanh toán nghiệm thu](2026-09-09_1501_Đề nghị thanh toán nghiệm thu.md) | `gpt-5-6-thinking` | 27 |
 | 68 | 2026-09-09 14:14:11 | [Viết lại thông tin](2026-09-09_1414_Viết lại thông tin.md) | `gpt-5-6` | 10 |
-| 69 | 2026-09-09 12:08:25 | [Tính tổng tài khoản](2026-09-09_1208_Tính tổng tài khoản.md) | `gpt-5-6-thinking` | 4 |
-| 70 | 2026-09-09 11:48:15 | [Tạo ảnh con vịt](2026-09-09_1148_Tạo ảnh con vịt.md) | `gpt-5-6-thinking` | 7 |
-| 71 | 2026-09-09 11:47:23 | [Hỏi về danh tính](2026-09-09_1147_Hỏi về danh tính.md) | `gpt-5-6-thinking` | 4 |
-| 72 | 2026-09-09 11:46:15 | [Chào hỏi hỗ trợ](2026-09-09_1146_Chào hỏi hỗ trợ.md) | `gpt-5-6-thinking` | 4 |
-| 73 | 2026-09-09 11:39:05 | [Dịch thông báo giới hạn](2026-09-09_1139_Dịch thông báo giới hạn.md) | `gpt-5-6-thinking` | 4 |
-| 74 | 2026-09-09 11:21:33 | [Thuế VAT dịch vụ phần mềm](2026-09-09_1121_Thuế VAT dịch vụ phần mềm.md) | `gpt-5-6-thinking` | 246 |
-| 75 | 2026-09-09 10:45:59 | [Claude từ chối xác minh](2026-09-09_1045_Claude từ chối xác minh.md) | `gpt-5-6-thinking` | 10 |
-| 76 | 2026-09-09 00:55:27 | [Chào hỏi hỗ trợ](2026-09-09_0055_Chào hỏi hỗ trợ.md) | `gpt-5-6-thinking` | 34 |
-| 77 | 2026-09-09 00:35:25 | [Tìm extension đọc API](2026-09-09_0035_Tìm extension đọc API.md) | `gpt-5-6-thinking` | 22 |
-| 78 | 2026-09-08 23:22:08 | [Viết CSS ẩn Notion AI](2026-09-08_2322_Viết CSS ẩn Notion AI.md) | `gpt-5-6-thinking` | 4 |
-| 79 | 2026-09-08 20:38:49 | [Code game rắn săn mồi](2026-09-08_2038_Code game rắn săn mồi.md) | `gpt-6-astra-wm` | 74 |
-| 80 | 2026-09-08 20:35:25 | [Code game rắn săn mồi](2026-09-08_2035_Code game rắn săn mồi.md) | `gpt-6-astra-wm` | 16 |
-| 81 | 2026-09-08 20:31:01 | [Code game rắn săn mồi](2026-09-08_2031_Code game rắn săn mồi.md) | `gpt-6-astra-wm` | 16 |
-| 82 | 2026-09-08 17:10:16 | [Đọc thông tin TeamViewer](2026-09-08_1710_Đọc thông tin TeamViewer.md) | `gpt-5.5-wm` | 9 |
-| 83 | 2026-09-07 16:37:35 | [Viết lại STK](2026-09-07_1637_Viết lại STK.md) | `gpt-5-6-thinking` | 6 |
-| 84 | 2026-09-07 13:40:56 | [Giải thích lỗi model quá tải](2026-09-07_1340_Giải thích lỗi model quá tải.md) | `gpt-5-6-thinking` | 4 |
-| 85 | 2026-09-07 13:23:28 | [Viết lại tin nhắn WiFi](2026-09-07_1323_Viết lại tin nhắn WiFi.md) | `gpt-5-6-thinking` | 4 |
-| 86 | 2026-09-07 11:53:52 | [Tính giá trước VAT](2026-09-07_1153_Tính giá trước VAT.md) | `gpt-5-6-thinking` | 5 |
-| 87 | 2026-09-06 18:04:22 | [Đọc lại email](2026-09-06_1804_Đọc lại email.md) | `gpt-5-6-thinking` | 4 |
-| 88 | 2026-09-06 15:44:56 | [Viết lại bảng lương](2026-09-06_1544_Viết lại bảng lương.md) | `gpt-5-6-thinking` | 22 |
-| 89 | 2026-09-06 01:18:37 | [Dị ứng tôm bầu xanh](2026-09-06_0118_Dị ứng tôm bầu xanh.md) | `gpt-5-6-thinking` | 60 |
-| 90 | 2026-09-06 00:14:46 | [Tính giảm 8%](2026-09-06_0014_Tính giảm 8.md) | `gpt-5-6-thinking` | 28 |
-| 91 | 2026-09-06 00:11:07 | [Xuất hóa đơn người tiêu dùng](2026-09-06_0011_Xuất hóa đơn người tiêu dùng.md) | `gpt-5-6-thinking` | 15 |
-| 92 | 2026-09-05 21:32:10 | [Rút gọn hướng dẫn
-](2026-09-05_2132_Rút gọn hướng dẫn.md) | `gpt-5-6-thinking` | 7 |
-| 93 | 2026-09-05 20:13:39 | [Xem ảnh quảng cáo](2026-09-05_2013_Xem ảnh quảng cáo.md) | `gpt-5-6-thinking` | 11 |
-| 94 | 2026-09-05 20:02:24 | [Sửa phím Win Fn F87](2026-09-05_2002_Sửa phím Win Fn F87.md) | `gpt-5-6-thinking` | 29 |
-| 95 | 2026-09-05 14:22:34 | [Viết lại ưu đãi gói cước](2026-09-05_1422_Viết lại ưu đãi gói cước.md) | `gpt-5-6-thinking` | 14 |
-| 96 | 2026-09-05 14:16:02 | [Gói GPT6 Astra](2026-09-05_1416_Gói GPT6 Astra.md) | `gpt-5-6-thinking` | 33 |
-| 97 | 2026-09-04 21:18:27 | [Viết danh sách gói AI](2026-09-04_2118_Viết danh sách gói AI.md) | `gpt-5-6-thinking` | 33 |
 
-*97 conversations*
+*68 conversations*

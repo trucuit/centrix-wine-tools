@@ -11,16 +11,16 @@
   "is_archived": false,
   "is_starred": null,
   "safe_urls": [
-    "https://www.apple.com/",
-    "https://docs.google.com/document/d/",
-    "https://m.thuvienphapluat.vn/van-ban/lao-dong-tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?utm_source=chatgpt.com",
+    "https://huggingface.co/huggingface",
     "https://m.thuvienphapluat.vn/van-ban/lao-dong-tien-luong/Bo-Luat-lao-dong-2019-333670.aspx",
     "https://developers.openai.com/api/docs/models/gpt-6-astra",
-    "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Nghi-dinh-145-2020-ND-CP-huong-dan-Bo-luat-Lao-dong-ve-dieu-kien-lao-dong-quan-he-lao-dong-459400.aspx?tab=7",
-    "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Nghi-dinh-145-2020-ND-CP-huong-dan-Bo-luat-Lao-dong-ve-dieu-kien-lao-dong-quan-he-lao-dong-459400.aspx?tab=7&utm_source=chatgpt.com",
+    "https://docs.google.com/document/d/",
     "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
+    "https://www.apple.com/",
     "https://www.openai.com",
-    "https://huggingface.co/huggingface"
+    "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Nghi-dinh-145-2020-ND-CP-huong-dan-Bo-luat-Lao-dong-ve-dieu-kien-lao-dong-quan-he-lao-dong-459400.aspx?tab=7&utm_source=chatgpt.com",
+    "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Nghi-dinh-145-2020-ND-CP-huong-dan-Bo-luat-Lao-dong-ve-dieu-kien-lao-dong-quan-he-lao-dong-459400.aspx?tab=7",
+    "https://m.thuvienphapluat.vn/van-ban/lao-dong-tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?utm_source=chatgpt.com"
   ],
   "blocked_urls": [],
   "default_model_slug": "gpt-5-6-thinking",

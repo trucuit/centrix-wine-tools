@@ -5,7 +5,8 @@
     "content_type": "image_asset_pointer",
     "width": 1242,
     "height": 2688,
-    "size_bytes": 958926
+    "size_bytes": 958926,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9c1554-6774-83ec-b840-a377b2a9ae58/IMG_1409.png"
   },
   {
     "type": "image",
@@ -13,7 +14,8 @@
     "content_type": "image_asset_pointer",
     "width": 1479,
     "height": 927,
-    "size_bytes": 111410
+    "size_bytes": 111410,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9c1554-6774-83ec-b840-a377b2a9ae58/3a5e2e16-fade-4638-8908-e3525c8c472b.png"
   },
   {
     "type": "image",
@@ -21,6 +23,7 @@
     "content_type": "image_asset_pointer",
     "width": 941,
     "height": 1672,
-    "size_bytes": 1287333
+    "size_bytes": 1287333,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9c1554-6774-83ec-b840-a377b2a9ae58/Áp phích CetriX Agent GPT-6 Astra.png"
   }
 ]

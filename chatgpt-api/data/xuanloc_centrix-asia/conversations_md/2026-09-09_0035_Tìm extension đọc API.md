@@ -253,11 +253,11 @@ Nếu mục tiêu của anh là **mở một website AI rồi lấy ra toàn b�
 > ### 👤 User · 2026-09-09 01:04:12
 >
 >
-> > 🖼️ *Image (773x523)* — `file_00000000d6b481f896ca2743f…`
+> ![Image (773x523)](../assets/6aa0475b-570c-83ec-b12e-13cdf83a4908/21c59645-b687-4226-8626-e7508b3a0b7e.png)
 >
 > Requestly dùng sao vậy có cả app nữa
 
-> 📎 *21c59645-b687-4226-8626-e7508b3a0b7e.png* (`image/png`) — `file_00000000d6b481f…`
+> ![21c59645-b687-4226-8626-e7508b3a0b7e.png](../assets/6aa0475b-570c-83ec-b12e-13cdf83a4908/21c59645-b687-4226-8626-e7508b3a0b7e.png)
 
 ---
 

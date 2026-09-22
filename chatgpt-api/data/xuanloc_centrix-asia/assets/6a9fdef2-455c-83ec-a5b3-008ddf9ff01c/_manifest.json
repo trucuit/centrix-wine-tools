@@ -5,7 +5,8 @@
     "content_type": "image_asset_pointer",
     "width": 1564,
     "height": 1128,
-    "size_bytes": 407852
+    "size_bytes": 407852,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9fdef2-455c-83ec-a5b3-008ddf9ff01c/7c104fde-6e99-4c3f-83d0-af8c572bd6bd.png"
   },
   {
     "type": "image",
@@ -13,6 +14,7 @@
     "content_type": "image_asset_pointer",
     "width": 1722,
     "height": 1096,
-    "size_bytes": 463259
+    "size_bytes": 463259,
+    "local_path": "/Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/6a9fdef2-455c-83ec-a5b3-008ddf9ff01c/f03af28b-f69c-453b-8cb8-aceeae4d1cea.png"
   }
 ]

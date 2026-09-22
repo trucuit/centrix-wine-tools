@@ -12,12 +12,12 @@
   "is_starred": null,
   "safe_urls": [
     "https://dantri.com.vn/cong-nghe/openai-ra-mat-gpt-6-astra-mo-hinh-tri-tue-nhan-tao-nguy-hiem-nhat-20260904120227240.htm",
-    "https://huggingface.co/huggingface",
     "https://www.openai.com",
-    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://huggingface.co/huggingface",
+    "https://www.apple.com/",
     "https://docs.google.com/document/d/",
     "https://helpv4.meinvoice.vn/kb/xuat-hoa-don-cho-khach-le-ca-nhan-nguoi-nuoc-ngoai-nghi-dinh-70-2026-nd-cp/",
-    "https://www.apple.com/"
+    "https://developers.openai.com/api/docs/models/gpt-6-astra"
   ],
   "blocked_urls": [],
   "default_model_slug": "gpt-5-6-thinking",
