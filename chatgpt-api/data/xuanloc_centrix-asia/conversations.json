@@ -1,6 +1,293 @@
 {
   "items": [
     {
+      "id": "6ab28a02-778c-83ec-b64f-0f8c64da583c",
+      "title": "Tạo ảnh Grok 4.7",
+      "create_time": "2026-09-22T14:00:36.076300Z",
+      "update_time": "2026-09-22T14:34:21.943978Z",
+      "latest_assistant_turn_created_at": null,
+      "pinned_time": null,
+      "mapping": null,
+      "current_node": null,
+      "conversation_template_id": null,
+      "gizmo_id": null,
+      "is_archived": false,
+      "is_starred": null,
+      "is_temporary_chat": false,
+      "is_do_not_remember": false,
+      "memory_scope": "global_enabled",
+      "context_scopes": null,
+      "context_scopes_v2": {
+        "context_scopes": [
+          {
+            "is_siloed": false,
+            "scope_namespace": "global",
+            "sub_scope": null,
+            "key": null,
+            "key_timestamp": null,
+            "key_scoped_access_claim": null
+          }
+        ]
+      },
+      "workspace_id": "4f52e72f-9c16-4d87-b9ff-785c1029aa7a",
+      "async_status": null,
+      "safe_urls": [],
+      "blocked_urls": [],
+      "conversation_origin": null,
+      "trial_conversation_type": null,
+      "is_automation_conversation": false,
+      "snippet": null,
+      "summary_metadata": null,
+      "sugar_item_id": null,
+      "sugar_item_visible": false
+    },
+    {
+      "id": "6ab2510b-a674-83ec-82ad-14b5f33aaa50",
+      "title": "Viết lại thông tin chuyển khoản",
+      "create_time": "2026-09-22T09:57:33.228663Z",
+      "update_time": "2026-09-22T09:59:20.142824Z",
+      "latest_assistant_turn_created_at": null,
+      "pinned_time": null,
+      "mapping": null,
+      "current_node": null,
+      "conversation_template_id": null,
+      "gizmo_id": null,
+      "is_archived": false,
+      "is_starred": null,
+      "is_temporary_chat": false,
+      "is_do_not_remember": false,
+      "memory_scope": "global_enabled",
+      "context_scopes": null,
+      "context_scopes_v2": {
+        "context_scopes": [
+          {
+            "is_siloed": false,
+            "scope_namespace": "global",
+            "sub_scope": null,
+            "key": null,
+            "key_timestamp": null,
+            "key_scoped_access_claim": null
+          }
+        ]
+      },
+      "workspace_id": "4f52e72f-9c16-4d87-b9ff-785c1029aa7a",
+      "async_status": null,
+      "safe_urls": [],
+      "blocked_urls": [],
+      "conversation_origin": null,
+      "trial_conversation_type": null,
+      "is_automation_conversation": false,
+      "snippet": null,
+      "summary_metadata": null,
+      "sugar_item_id": null,
+      "sugar_item_visible": false
+    },
+    {
+      "id": "6ab23ee6-c750-83ec-bfe6-e0bed023c005",
+      "title": "Viết lại hợp đồng phụ lục",
+      "create_time": "2026-09-22T08:40:07.658620Z",
+      "update_time": "2026-09-22T08:40:34.937018Z",
+      "latest_assistant_turn_created_at": null,
+      "pinned_time": null,
+      "mapping": null,
+      "current_node": null,
+      "conversation_template_id": null,
+      "gizmo_id": null,
+      "is_archived": false,
+      "is_starred": null,
+      "is_temporary_chat": false,
+      "is_do_not_remember": false,
+      "memory_scope": "global_enabled",
+      "context_scopes": null,
+      "context_scopes_v2": {
+        "context_scopes": [
+          {
+            "is_siloed": false,
+            "scope_namespace": "global",
+            "sub_scope": null,
+            "key": null,
+            "key_timestamp": null,
+            "key_scoped_access_claim": null
+          }
+        ]
+      },
+      "workspace_id": "4f52e72f-9c16-4d87-b9ff-785c1029aa7a",
+      "async_status": null,
+      "safe_urls": [],
+      "blocked_urls": [],
+      "conversation_origin": null,
+      "trial_conversation_type": null,
+      "is_automation_conversation": false,
+      "snippet": null,
+      "summary_metadata": null,
+      "sugar_item_id": null,
+      "sugar_item_visible": false
+    },
+    {
+      "id": "6ab230a9-baec-83ec-a648-bb9d7c9dcc3d",
+      "title": "Kiểm tra Grok 4.7",
+      "create_time": "2026-09-22T07:39:22.905546Z",
+      "update_time": "2026-09-22T07:40:04.923012Z",
+      "latest_assistant_turn_created_at": null,
+      "pinned_time": null,
+      "mapping": null,
+      "current_node": null,
+      "conversation_template_id": null,
+      "gizmo_id": null,
+      "is_archived": false,
+      "is_starred": null,
+      "is_temporary_chat": false,
+      "is_do_not_remember": false,
+      "memory_scope": "global_enabled",
+      "context_scopes": null,
+      "context_scopes_v2": {
+        "context_scopes": [
+          {
+            "is_siloed": false,
+            "scope_namespace": "global",
+            "sub_scope": null,
+            "key": null,
+            "key_timestamp": null,
+            "key_scoped_access_claim": null
+          }
+        ]
+      },
+      "workspace_id": "4f52e72f-9c16-4d87-b9ff-785c1029aa7a",
+      "async_status": null,
+      "safe_urls": [],
+      "blocked_urls": [],
+      "conversation_origin": null,
+      "trial_conversation_type": null,
+      "is_automation_conversation": false,
+      "snippet": null,
+      "summary_metadata": null,
+      "sugar_item_id": null,
+      "sugar_item_visible": false
+    },
+    {
+      "id": "6ab2112a-26cc-83ec-a7f0-04fba923d25d",
+      "title": "Vẽ giới thiệu Grok 4.7",
+      "create_time": "2026-09-22T05:24:58.943374Z",
+      "update_time": "2026-09-22T07:17:55.212333Z",
+      "latest_assistant_turn_created_at": null,
+      "pinned_time": null,
+      "mapping": null,
+      "current_node": null,
+      "conversation_template_id": null,
+      "gizmo_id": null,
+      "is_archived": false,
+      "is_starred": null,
+      "is_temporary_chat": false,
+      "is_do_not_remember": false,
+      "memory_scope": "global_enabled",
+      "context_scopes": null,
+      "context_scopes_v2": {
+        "context_scopes": [
+          {
+            "is_siloed": false,
+            "scope_namespace": "global",
+            "sub_scope": null,
+            "key": null,
+            "key_timestamp": null,
+            "key_scoped_access_claim": null
+          }
+        ]
+      },
+      "workspace_id": "4f52e72f-9c16-4d87-b9ff-785c1029aa7a",
+      "async_status": null,
+      "safe_urls": [],
+      "blocked_urls": [],
+      "conversation_origin": null,
+      "trial_conversation_type": null,
+      "is_automation_conversation": false,
+      "snippet": null,
+      "summary_metadata": null,
+      "sugar_item_id": null,
+      "sugar_item_visible": false
+    },
+    {
+      "id": "6ab21297-979c-83ec-ae1d-134ac5c306fe",
+      "title": "Vẽ lại logo CentriX",
+      "create_time": "2026-09-22T05:31:04.845665Z",
+      "update_time": "2026-09-22T05:32:37.731080Z",
+      "latest_assistant_turn_created_at": null,
+      "pinned_time": null,
+      "mapping": null,
+      "current_node": null,
+      "conversation_template_id": null,
+      "gizmo_id": null,
+      "is_archived": false,
+      "is_starred": null,
+      "is_temporary_chat": false,
+      "is_do_not_remember": false,
+      "memory_scope": "global_enabled",
+      "context_scopes": null,
+      "context_scopes_v2": {
+        "context_scopes": [
+          {
+            "is_siloed": false,
+            "scope_namespace": "global",
+            "sub_scope": null,
+            "key": null,
+            "key_timestamp": null,
+            "key_scoped_access_claim": null
+          }
+        ]
+      },
+      "workspace_id": "4f52e72f-9c16-4d87-b9ff-785c1029aa7a",
+      "async_status": null,
+      "safe_urls": [],
+      "blocked_urls": [],
+      "conversation_origin": null,
+      "trial_conversation_type": null,
+      "is_automation_conversation": false,
+      "snippet": null,
+      "summary_metadata": null,
+      "sugar_item_id": null,
+      "sugar_item_visible": false
+    },
+    {
+      "id": "6ab16dca-7988-83ec-9802-06f6f9bdb567",
+      "title": "Chỉnh câu hỏi MVP",
+      "create_time": "2026-09-21T17:47:56.195379Z",
+      "update_time": "2026-09-21T17:48:41.500743Z",
+      "latest_assistant_turn_created_at": null,
+      "pinned_time": null,
+      "mapping": null,
+      "current_node": null,
+      "conversation_template_id": null,
+      "gizmo_id": null,
+      "is_archived": false,
+      "is_starred": null,
+      "is_temporary_chat": false,
+      "is_do_not_remember": false,
+      "memory_scope": "global_enabled",
+      "context_scopes": null,
+      "context_scopes_v2": {
+        "context_scopes": [
+          {
+            "is_siloed": false,
+            "scope_namespace": "global",
+            "sub_scope": null,
+            "key": null,
+            "key_timestamp": null,
+            "key_scoped_access_claim": null
+          }
+        ]
+      },
+      "workspace_id": "4f52e72f-9c16-4d87-b9ff-785c1029aa7a",
+      "async_status": null,
+      "safe_urls": [],
+      "blocked_urls": [],
+      "conversation_origin": null,
+      "trial_conversation_type": null,
+      "is_automation_conversation": false,
+      "snippet": null,
+      "summary_metadata": null,
+      "sugar_item_id": null,
+      "sugar_item_visible": false
+    },
+    {
       "id": "6ab121bd-5f5c-83ec-9acd-a86ab0ae73a1",
       "title": "Viết lại CCCD địa chỉ",
       "create_time": "2026-09-21T12:23:27.469414Z",
@@ -24273,5 +24560,5 @@
       "sugar_item_visible": false
     }
   ],
-  "total": 592
+  "total": 599
 }

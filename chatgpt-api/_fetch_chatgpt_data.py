@@ -10,6 +10,7 @@ Usage:
 import json
 import sys
 import os
+import re
 import base64
 import time
 import math
@@ -280,6 +281,7 @@ def extract_assets_from_detail(detail: dict) -> list[dict]:
                             "type": "image",
                             "file_id": file_id,
                             "content_type": ct,
+                            "mime_type": part.get("mime_type", "image/png"),
                             "width": part.get("width"),
                             "height": part.get("height"),
                             "size_bytes": part.get("size_bytes"),
@@ -295,6 +297,7 @@ def extract_assets_from_detail(detail: dict) -> list[dict]:
                                     "type": "generated_image",
                                     "file_id": fid,
                                     "content_type": sub.get("content_type", "image"),
+                                    "mime_type": sub.get("mime_type", "image/png"),
                                     "width": sub.get("width"),
                                     "height": sub.get("height"),
                                     "size_bytes": sub.get("size_bytes"),
@@ -331,6 +334,85 @@ def extract_assets_from_detail(detail: dict) -> list[dict]:
     return assets
 
 
+def _friendly_basename(title: str, create_time, cid: str) -> str:
+    """Generate friendly basename: 2026-09-22_2218_Title_cid8.
+    Same naming convention as conversations_md."""
+    safe_title = "".join(c if c.isalnum() or c in " _-" else "_" for c in (title or "Untitled")).strip()[:35]
+    safe_title = re.sub(r"_+", "_", safe_title).strip("_")
+    cid_short = cid[:8]
+    try:
+        if isinstance(create_time, (int, float)) and create_time > 0:
+            date_prefix = datetime.fromtimestamp(create_time).strftime("%Y-%m-%d_%H%M")
+        elif isinstance(create_time, str) and create_time:
+            dt = datetime.fromisoformat(create_time.replace("Z", "+00:00"))
+            date_prefix = dt.strftime("%Y-%m-%d_%H%M")
+        else:
+            date_prefix = "0000-00-00_0000"
+    except Exception:
+        date_prefix = "0000-00-00_0000"
+    return f"{date_prefix}_{safe_title}_{cid_short}"
+
+
+def _load_cid_map(out_dir: Path) -> dict:
+    """Load cid → friendly_basename map."""
+    map_file = out_dir / "_cid_map.json"
+    if map_file.exists():
+        try:
+            return json.loads(map_file.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def _save_cid_map(out_dir: Path, cid_map: dict):
+    """Save cid → friendly_basename map."""
+    map_file = out_dir / "_cid_map.json"
+    map_file.write_text(json.dumps(cid_map, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def _day_prefix(friendly: str) -> str:
+    """Extract YYYY-MM-DD from friendly basename like 2026-09-22_2100_Title_cid8."""
+    m = re.match(r'^(\d{4}-\d{2}-\d{2})', friendly)
+    return m.group(1) if m else "0000-00-00"
+
+
+def _resolve_conv_file(conv_dir: Path, cid: str, cid_map: dict) -> Path:
+    """Resolve conversation file path: try monthly/friendly, flat/friendly, flat/cid."""
+    if cid in cid_map:
+        friendly = cid_map[cid]
+        month = _day_prefix(friendly)
+        # Monthly subdir (new format)
+        monthly = conv_dir / month / f"{friendly}.json"
+        if monthly.exists():
+            return monthly
+        # Flat friendly (old format)
+        flat = conv_dir / f"{friendly}.json"
+        if flat.exists():
+            return flat
+    # Legacy: bare cid
+    legacy = conv_dir / f"{cid}.json"
+    if legacy.exists():
+        return legacy
+    return None
+
+
+def _resolve_assets_dir(assets_dir: Path, cid: str, cid_map: dict) -> Path:
+    """Resolve assets subdirectory: try monthly/friendly, flat/friendly, flat/cid."""
+    if cid in cid_map:
+        friendly = cid_map[cid]
+        month = _day_prefix(friendly)
+        monthly = assets_dir / month / friendly
+        if monthly.exists():
+            return monthly
+        flat = assets_dir / friendly
+        if flat.exists():
+            return flat
+    legacy = assets_dir / cid
+    if legacy.exists():
+        return legacy
+    return None
+
+
 def fetch_conversation_details(
     session: cffi_requests.Session, token: str, account_id: str,
     conversations: list[dict], out_dir: Path,
@@ -340,6 +422,9 @@ def fetch_conversation_details(
     conv_dir.mkdir(parents=True, exist_ok=True)
     assets_dir = out_dir / "assets"
     assets_dir.mkdir(parents=True, exist_ok=True)
+
+    # Load cid → friendly name map
+    cid_map = _load_cid_map(out_dir)
 
     stats = {"total": len(conversations), "ok": 0, "fail": 0,
              "assets_found": 0, "assets_downloaded": 0, "skipped": 0}
@@ -357,10 +442,22 @@ def fetch_conversation_details(
     for i, conv in enumerate(conversations):
         cid = conv.get("id", "")
         title = (conv.get("title") or "Untitled")[:40]
+        ct = conv.get("create_time", "")
         idx = f"[{i+1}/{len(conversations)}]"
-        detail_file = conv_dir / f"{cid}.json"
 
-        # Check if already downloaded and valid
+        # Generate friendly basename and register in map
+        friendly = _friendly_basename(title, ct, cid)
+        cid_map[cid] = friendly
+        day = _day_prefix(friendly)
+        conv_day_dir = conv_dir / day
+        conv_day_dir.mkdir(parents=True, exist_ok=True)
+        detail_file = conv_day_dir / f"{friendly}.json"
+
+        # Check if already downloaded (monthly, flat, or legacy cid name)
+        existing = _resolve_conv_file(conv_dir, cid, cid_map)
+        if existing and existing != detail_file:
+            # Move legacy/flat file to monthly subdir
+            existing.rename(detail_file)
         if detail_file.exists() and detail_file.stat().st_size > 100:
             try:
                 detail = json.loads(detail_file.read_text(encoding="utf-8"))
@@ -385,7 +482,7 @@ def fetch_conversation_details(
         detail = r.get("data", {})
         msg_count = len(detail.get("mapping", {}))
 
-        # Save detail JSON
+        # Save detail JSON into monthly subdir
         detail_file.write_text(json.dumps(detail, indent=2, ensure_ascii=False), encoding="utf-8")
 
         # Extract assets & save manifest (delay actual file download to Phase 2)
@@ -393,9 +490,18 @@ def fetch_conversation_details(
         stats["assets_found"] += len(assets)
         stats["ok"] += 1
 
+        # Assets dir also uses monthly subdir
+        asset_day_dir = assets_dir / day
+        asset_day_dir.mkdir(parents=True, exist_ok=True)
+        asset_subdir = asset_day_dir / friendly
+        # Move legacy asset dir if exists
+        legacy_asset_dir = _resolve_assets_dir(assets_dir, cid, cid_map)
+        if legacy_asset_dir and legacy_asset_dir != asset_subdir:
+            legacy_asset_dir.rename(asset_subdir)
+
         if assets:
-            manifest = assets_dir / cid / "_manifest.json"
-            manifest.parent.mkdir(parents=True, exist_ok=True)
+            asset_subdir.mkdir(parents=True, exist_ok=True)
+            manifest = asset_subdir / "_manifest.json"
             manifest.write_text(json.dumps(assets, indent=2, ensure_ascii=False), encoding="utf-8")
             pending_assets_manifests.append((cid, manifest))
 
@@ -406,10 +512,26 @@ def fetch_conversation_details(
         print(f"  {D}⏳ Chờ {current_delay:.0f}s hồi phục token trước hội thoại tiếp theo...{X}")
         time.sleep(current_delay)
 
+    # Save cid_map after Phase 1
+    _save_cid_map(out_dir, cid_map)
+
     # ── Phase 2: Download pending assets (images, attachments) ───────────
     print(f"\n{B}── Pha 2: Tải các file đính kèm & hình ảnh (Assets) ──{X}")
-    # Collect all manifest files across all conversations
-    manifest_files = list(assets_dir.glob("*/_manifest.json"))
+    # Collect manifests ONLY from conversations processed in this run (Phase 1)
+    filtered_friendly_names = {cid_map.get(conv.get("id", ""), "") for conv in conversations}
+    manifest_files = []
+    for day_dir in assets_dir.iterdir():
+        if day_dir.is_dir() and re.match(r'^\d{4}-\d{2}-\d{2}$', day_dir.name):
+            for cid_dir in day_dir.iterdir():
+                if cid_dir.is_dir() and cid_dir.name in filtered_friendly_names:
+                    m = cid_dir / "_manifest.json"
+                    if m.exists():
+                        manifest_files.append(m)
+    # Also add any new manifests from Phase 1
+    for cid, m_path in pending_assets_manifests:
+        if m_path.exists() and m_path not in manifest_files:
+            manifest_files.append(m_path)
+
     total_assets_to_check = 0
     missing_assets = []
 
@@ -430,9 +552,17 @@ def fetch_conversation_details(
                     continue
                 file_name = item.get("name") or fid
                 mime = item.get("mime_type", "")
-                if "." not in file_name and mime in ext_map:
-                    file_name += ext_map[mime]
+                # Default extension for images without mime
+                if "." not in file_name:
+                    if mime in ext_map:
+                        file_name += ext_map[mime]
+                    elif item.get("type") in ("image", "generated_image", "dalle_generated"):
+                        file_name += ".png"  # safe default
                 dest = assets_dir / cid / file_name
+                # Rename extensionless legacy file if it exists
+                bare_file = assets_dir / cid / fid
+                if bare_file.exists() and bare_file != dest and not dest.exists():
+                    bare_file.rename(dest)
                 if not dest.exists() or dest.stat().st_size == 0:
                     missing_assets.append((cid, item, m_path, dest))
                 else:
@@ -570,6 +700,27 @@ def fetch_for_auth(auth_file: str, base_output_dir: str) -> bool:
     if r2["status"] == 200:
         conv_items = r2.get("data", {}).get("items", [])
 
+    # ── Filter by FETCH_DAYS ──────────────────────────────────────────────
+    fetch_days = int(os.environ.get("FETCH_DAYS", "3"))
+    if conv_items and fetch_days > 0:
+        from datetime import timedelta
+        cutoff = datetime.now(timezone.utc) - timedelta(days=fetch_days)
+        original_count = len(conv_items)
+        filtered = []
+        for item in conv_items:
+            ut = item.get("update_time") or item.get("create_time") or ""
+            if not ut:
+                filtered.append(item)
+                continue
+            try:
+                item_time = datetime.fromisoformat(ut.replace("Z", "+00:00"))
+                if item_time >= cutoff:
+                    filtered.append(item)
+            except Exception:
+                filtered.append(item)
+        conv_items = filtered
+        log_info(f"Lọc {len(conv_items)}/{original_count} conversations trong {fetch_days} ngày gần nhất")
+
     detail_stats = {"total": 0, "ok": 0, "fail": 0, "assets_found": 0, "assets_downloaded": 0}
     if conv_items:
         log_step(f"API 4: Fetch {len(conv_items)} conversation details + assets")
@@ -663,14 +814,14 @@ def fetch_for_auth(auth_file: str, base_output_dir: str) -> bool:
   {out_dir}/summary.txt
 """
     (out_dir / "summary.txt").write_text(summary)
-    # ── Convert conversations to Markdown ────────────────────────────────
-    md_converter = Path(__file__).resolve().parent / "convert_conversations_to_md.py"
-    if md_converter.exists():
-        log_step("Convert all conversations to Markdown")
+    # ── Convert conversations to HTML ─────────────────────────────────
+    html_converter = Path(__file__).resolve().parent / "convert_conversations_to_html.py"
+    if html_converter.exists():
+        log_step("Convert all conversations to HTML")
         try:
-            subprocess.run([sys.executable, str(md_converter), str(out_dir / "conversations"), str(out_dir / "assets")], check=False)
+            subprocess.run([sys.executable, str(html_converter), str(out_dir / "conversations"), str(out_dir / "assets")], check=False)
         except Exception as e:
-            log_warn(f"Convert MD warning: {e}")
+            log_warn(f"Convert HTML warning: {e}")
 
     print()
     print(f"{B}{G}🎉 Hoàn tất fetch cho {email}!{X}")

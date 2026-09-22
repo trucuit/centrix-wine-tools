@@ -16,6 +16,7 @@ import sys
 import time
 from datetime import datetime
 from pathlib import Path
+import subprocess
 
 try:
     from curl_cffi import requests as cffi_requests
@@ -366,6 +367,7 @@ def fetch_for_auth(auth_file: str, base_output_dir: str) -> bool:
         if detail:
             ok_count += 1
             conv_file = conv_dir / f"{cid}.json"
+            conv_file.parent.mkdir(parents=True, exist_ok=True)
             conv_file.write_text(json.dumps(detail, indent=2, ensure_ascii=False), encoding="utf-8")
 
             # Tải tệp đính kèm (assets)

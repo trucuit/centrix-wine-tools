@@ -7,23 +7,23 @@
   💎 Plan:           team
   🏢 Account ID:     4f52e72f-9c16-4d87-b9ff-785c1029aa7a
   🆔 User ID:        user-TPQ6L3DWAAqXOfnFz2d9xhR8
-  ⏰ Token expires:  232.9h remaining
-  📅 Fetched at:     2026-09-21 23:27:05 +0700
-  📁 Auth file:      /Users/tructt/Public/Projects/centrix-wine-tools/vps-auths/codex-64d43abd-xuanloc@centrix.asia-team.json
+  ⏰ Token expires:  208.9h remaining
+  📅 Fetched at:     2026-09-22 23:20:08 +0700
+  📁 Auth file:      /Volumes/m2/apps/windows/vps-auths/codex-64d43abd-xuanloc@centrix.asia-team.json
 
 ── API Results ────────────────────────────────────────────────
   1. link-session:     HTTP 200 (6 cookies)
-  2. conversations:    HTTP 200 (51 items)
+  2. conversations:    HTTP 200 (599 items)
   3. accounts:         HTTP 200
-  4. conv details:     50/50 ok
-     assets found:     91
-     assets downloaded:86
+  4. conv details:     7/7 ok
+     assets found:     13
+     assets downloaded:13
 
 ── Output Files ───────────────────────────────────────────────
-  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/session.json
-  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/conversations.json
-  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/accounts.json
-  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/conversations/<id>.json    (full detail per conversation)
-  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/assets/<id>/<filename>     (downloaded images & files)
-  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/assets/<id>/_manifest.json (asset manifest per conversation)
-  /Users/tructt/Public/Projects/centrix-wine-tools/chatgpt-api/data/xuanloc_centrix-asia/summary.txt
+  /Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/session.json
+  /Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/conversations.json
+  /Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/accounts.json
+  /Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/conversations/<id>.json    (full detail per conversation)
+  /Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/<id>/<filename>     (downloaded images & files)
+  /Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/assets/<id>/_manifest.json (asset manifest per conversation)
+  /Volumes/m2/apps/windows/chatgpt-api/data/xuanloc_centrix-asia/summary.txt
