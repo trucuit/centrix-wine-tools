@@ -60,3 +60,7 @@ centrix-backend/.env
    ==
 
    [api-proxy.centrix.asia/management.html#/oauth](https://api-proxy.centrix.asia/management.html#/oauth)
+
+[pbf-epyc-22118.azdigihost.com:2083/cpsess5024022496/frontend/jupiter/index.html?login=1&amp;post_login=79557711308096](https://pbf-epyc-22118.azdigihost.com:2083/cpsess5024022496/frontend/jupiter/index.html?login=1&post_login=79557711308096)
+
+`gxtyprak`/ `Centrix2026@@`

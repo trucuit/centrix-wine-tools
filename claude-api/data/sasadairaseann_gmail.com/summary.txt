@@ -2,13 +2,13 @@
 ║  Claude Cloud Fetch Result (FAILED)                          ║
 ╚══════════════════════════════════════════════════════════════╝
 
-  File nguồn:   /Users/tructt/Public/Projects/centrix-wine-tools/vps-auths/claude-9608579a-sasadairaseann@gmail.com.json
+  File nguồn:   /Volumes/m2/apps/windows/vps-auths/claude-9608579a-sasadairaseann@gmail.com.json
   Email:        sasadairaseann@gmail.com
   Org ID:       4d08d558-0b17-472c-a29a-39f88ba00b35
   Loại auth:    oauth_token
   Cloud URL:    https://claude.ai/api/organizations/4d08d558-0b17-472c-a29a-39f88ba00b35/chat_conversations
   HTTP Status:  401
-  Phản hồi:     {"type":"error","error":{"type":"authentication_error","message":"OAuth access token has been revoked."},"request_id":null}
-  Thời gian:    2026-09-22 00:18:28
+  Phản hồi:     {"type":"error","error":{"type":"authentication_error","message":"Request token does not carry a required scope","details":{"error_visibility":"user_facing"}},"request_id":"req_011CfJhM7vNTPmxQjh2is9xi"}
+  Thời gian:    2026-09-22 22:14:37
 
 ════════════════════════════════════════════════════════════════
