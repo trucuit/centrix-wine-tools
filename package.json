@@ -1,0 +1,29 @@
+{
+  "name": "centrix-ai-tools",
+  "version": "1.2.0",
+  "description": "Intelligent Windows runtime emulation, AI-augmented crash diagnostics, and headless developer environment for macOS",
+  "main": "src/index.js",
+  "bin": {
+    "centrix": "./bin/centrix.js"
+  },
+  "scripts": {
+    "start": "node bin/centrix.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "wine",
+    "macos",
+    "apple-silicon",
+    "ai",
+    "claude-ai",
+    "developer-tools",
+    "emulation",
+    "dxvk",
+    "moltenvk"
+  ],
+  "author": "Truc Tran <founder@centrix.ai>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
